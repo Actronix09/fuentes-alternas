@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agua CDMX · Atipicidad del consumo contra reportes ciudadanos</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="">
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+<header class="cabecera">
+  <p class="etiqueta">Fuente alterna · Sistema 2 de 3</p>
+  <h1>Consumo de agua en la CDMX: el puntaje de atipicidad frente a los reportes reales</h1>
+  <p class="sub">El paper prioriza inspecciones con el puntaje <em>A<sub>g</sub> = |x<sub>g</sub> − μ| / (σ + ε)</em>
+    (consumo de cada colonia contra las de su alcaldía), pero no tenía reportes reales para evaluarlo. Aquí se
+    evalúa contra los reportes ciudadanos de SACMEX: falta de agua, fugas y mala calidad, ubicados en su colonia.</p>
+</header>
+
+<main>
+  <form id="filtros" class="filtros" aria-label="Filtros del tablero">
+    <label>Tipo de reporte
+      <select name="tipo">
+        <option selected>Falta de agua</option><option>Fuga</option><option>Mala calidad</option>
+      </select>
+    </label>
+    <label>Periodo de los reportes
+      <select name="periodo">
+        <option value="2019-01-01,2019-06-30" selected>1er semestre 2019 (el del consumo)</option>
+        <option value="2019-01-01,2019-12-31">2019</option>
+        <option value="2018-01-01,2018-12-31">2018</option>
+        <option value="2020-01-01,2020-12-31">2020</option>
+        <option value="2021-01-01,2021-12-31">2021</option>
+        <option value="2022-01-01,2022-12-31">2022</option>
+        <option value="2023-01-01,2023-12-31">2023</option>
+        <option value="2018-01-01,2024-12-31">2018–2024 completo</option>
+      </select>
+    </label>
+    <label>Alcaldía
+      <select name="alcaldia"><option value="">Toda la ciudad</option></select>
+    </label>
+    <button type="submit">Aplicar</button>
+    <span class="alcance" id="disponibilidad">Los filtros acotan todo el tablero.</span>
+  </form>
+  <p id="aviso" class="nota" role="alert"></p>
+
+  <section class="kpis" id="kpis" aria-live="polite"></section>
+
+  <section class="rejilla">
+    <div class="panel">
+      <h2>¿El puntaje encuentra las colonias con más reportes?</h2>
+      <div class="grafica alta"><canvas id="g-pr"></canvas></div>
+      <p class="nota">Curva precisión–exhaustividad: se recorren las colonias de la más atípica a la menos atípica.
+        Una colonia es «positiva» si su número de reportes por manzana está en el cuartil superior de la ciudad.
+        La línea fina es el azar (la proporción de positivas).</p>
+    </div>
+    <div class="panel">
+      <h2>Colonias en el cuartil superior de reportes, por clase de puntaje</h2>
+      <div class="grafica alta"><canvas id="g-clases"></canvas></div>
+      <p class="nota">Si el puntaje funcionara, las clases altas tendrían mucho más que el 25 % esperado por azar.</p>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-cabecera">
+      <h2>Mapa de colonias</h2>
+      <span class="nota" id="nota-mapa"></span>
+    </div>
+    <div id="mapa" class="mapa"></div>
+    <div class="mapa-leyenda">
+      <label><input type="radio" name="color" value="a_g" checked> Color por A<sub>g</sub> del paper</label>
+      <label><input type="radio" name="color" value="a_g_norm"> Color por A<sub>g</sub> por manzana</label>
+      <label><input type="checkbox" id="ver-puntos"> Ver reportes individuales (muestra de hasta 4,000)</label>
+      <span>Tamaño = reportes por manzana</span>
+    </div>
+    <div class="escala" id="escala"></div>
+  </section>
+
+  <section class="panel"><h2>Reportes por mes y tipo</h2>
+    <div class="grafica"><canvas id="g-serie"></canvas></div>
+    <p class="nota">Reportes de agua potable ubicados (o todos, si el filtro es toda la ciudad). El sistema anterior a
+      2022 no registraba fugas antes de 2021.</p></section>
+
+  <section class="panel"><h2>Las 47 colonias más atípicas según el paper</h2>
+    <p class="nota">47 es el punto de operación que usa el paper. «Cuartil superior» indica si la colonia de verdad
+      está entre las que más reportes tienen por manzana.</p>
+    <div class="tabla-scroll"><table id="t-top"></table></div></section>
+
+  <section class="rejilla">
+    <div class="panel"><h2>Por alcaldía</h2>
+      <p class="nota">ρ de Spearman entre el puntaje y los reportes por manzana, dentro de cada alcaldía.</p>
+      <div class="tabla-scroll"><table id="t-alcaldias"></table></div></div>
+    <div class="panel"><h2>¿Cómo se ubicó cada reporte en su colonia?</h2>
+      <p class="nota">Primero por nombre (alcaldía y colonia normalizadas); si no coincide, por la manzana más
+        cercana a menos de 1 km, con una rejilla de 0.01° como índice espacial.</p>
+      <div class="tabla-scroll"><table id="t-ubicacion"></table></div></div>
+  </section>
+
+  <section class="panel"><h2>Bitácora del ETL (última ejecución)</h2><div class="tabla-scroll"><table id="t-bitacora"></table></div></section>
+
+  <section class="panel fuentes"><h2>Fuentes y cómo citarlas</h2><ul id="fuentes"></ul></section>
+</main>
+
+<footer class="pie">Prototipo académico · Bases de Datos · ESCOM-IPN. Mapa base © colaboradores de OpenStreetMap.</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"
+        integrity="sha384-NrKB+u6Ts6AtkIhwPixiKTzgSKNblyhlk0Sohlgar9UHUBzai/sgnNNWWd291xqt" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='comun.js') }}"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

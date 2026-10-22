@@ -1,0 +1,319 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+1930-02-26T02:29:20.560Z,30.192,-116.011,15,5.75,mw,,,,,iscgem,iscgem907238,2022-04-25T22:25:18.489Z,"26 km SSW of Luis Rodríguez (El Vergel), Mexico",earthquake,,25,0.47,,reviewed,iscgem,iscgem
+1930-02-26T02:30:00.000Z,33,-115.5,,5,ml,,,,,ushis,ushis837,2018-06-04T20:43:44.000Z,"3 km NE of Brawley, California",earthquake,,,,,reviewed,ushis,ric
+1930-03-01T23:44:00.000Z,33,-115.5,,4.5,ml,,,,,ushis,ushis838,2018-06-04T20:43:44.000Z,"3 km NE of Brawley, California",earthquake,,,,,reviewed,ushis,ric
+1930-03-02T01:50:00.000Z,33,-115.5,,4.5,ml,,,,,ushis,ushis839,2018-06-04T20:43:44.000Z,"3 km NE of Brawley, California",earthquake,,,,,reviewed,ushis,cdmg
+1930-05-10T22:11:10.760Z,23.412,-106.938,15,5.94,mw,,,,,iscgem,iscgem907380,2022-04-25T22:28:18.461Z,"50 km WSW of El Quelite, Mexico",earthquake,,25,0.34,,reviewed,iscgem,iscgem
+1930-07-07T13:33:12.570Z,14.182,-90.334,15,6.16,mw,,,,,iscgem,iscgem907483,2022-04-25T22:30:17.658Z,"6 km W of Santa María Ixhuatán, Guatemala",earthquake,,37.8,0.2,,reviewed,iscgem,iscgem
+1930-07-14T22:40:39.670Z,14.113,-90.096,15,6.81,mw,,,,,iscgem,iscgem907498,2022-04-25T22:30:25.995Z,"8 km NNW of Moyuta, Guatemala",earthquake,,25,0.29,,reviewed,iscgem,iscgem
+1930-07-25T21:34:15.410Z,19.491,-105.548,15,5.75,mw,,,,,iscgem,iscgem907522,2022-04-25T22:30:47.694Z,"43 km WSW of José María Morelos, Mexico",earthquake,,0.9,0.2,,reviewed,iscgem,iscgem
+1930-10-19T12:17:00.000Z,30,-91,,4.2,mfa,,,,,ushis,ushis853,2026-08-21T02:09:51.047Z,"Near Napoleonville, Louisiana",earthquake,0,,,,reviewed,ushis,bar
+1930-11-28T07:32:55.350Z,18.748,-106.817,15,6.35,mw,,,,,iscgem,iscgem907769,2022-04-25T22:34:52.658Z,"199 km SW of La Cruz de Loreto, Mexico",earthquake,,12.7,0.2,,reviewed,iscgem,iscgem
+1930-11-30T21:30:42.180Z,18.154,-106.541,15,6.07,mw,,,,,iscgem,iscgem907771,2022-04-25T22:34:53.887Z,"214 km SW of Emiliano Zapata, Mexico",earthquake,,25,0.31,,reviewed,iscgem,iscgem
+1931-01-02T09:49:06.300Z,18.707,-107.479,20,6.81,mw,,,,,iscgem,iscgem906544,2022-04-25T22:10:58.642Z,"256 km SW of La Cruz de Loreto, Mexico",earthquake,,25,0.26,,reviewed,iscgem,iscgem
+1931-01-15T01:50:48.030Z,16.049,-96.486,35,7.6,mw,,,,,iscgem,iscgem906564,2022-04-25T22:11:24.263Z,"5 km SSW of San Miguel Suchixtepec, Mexico",earthquake,,8.6,0.3,,reviewed,iscgem,iscgem
+1931-01-16T19:19:59.200Z,16.107,-96.414,30,6.37,mw,,,,,iscgem,iscgem906570,2022-04-25T22:11:36.645Z,"2 km NNW of San Marcial Ozolotepec, Mexico",earthquake,,8.6,0.36,,reviewed,iscgem,iscgem
+1931-01-17T02:50:21.670Z,26.683,-110.469,10,6.74,mw,,,,,iscgem,iscgem906572,2022-04-25T22:11:42.589Z,"68 km SW of Paredón Colorado, Mexico",earthquake,,25,0.54,,reviewed,iscgem,iscgem
+1931-01-17T05:35:50.430Z,15.532,-96.528,15,5.97,mw,,,,,iscgem,iscgem906573,2022-04-25T22:11:48.558Z,"15 km SSW of Puerto Ángel, Mexico",earthquake,,8.2,0.67,,reviewed,iscgem,iscgem
+1931-01-23T05:52:10.260Z,16.212,-96.571,15,5.82,mw,,,,,iscgem,iscgem906586,2022-04-25T22:12:23.060Z,"5 km ENE of Santa Lucía, Mexico",earthquake,,8.6,0.37,,reviewed,iscgem,iscgem
+1931-01-29T17:10:17.170Z,14.555,-96.157,15,6.14,mw,,,,,iscgem,iscgem906600,2022-04-25T22:12:48.134Z,"128 km SSE of Puerto Ángel, Mexico",earthquake,,25,0.54,,reviewed,iscgem,iscgem
+1931-04-19T02:00:33.050Z,20.72,-108.627,15,5.96,mw,,,,,iscgem,iscgem906725,2022-04-25T22:16:06.136Z,"274 km SSE of Cabo San Lucas, Mexico",earthquake,,25,0.35,,reviewed,iscgem,iscgem
+1931-05-09T10:34:45.680Z,24.32,-108.5,15,6.04,mw,,,,,iscgem,iscgem906767,2022-04-25T22:17:00.229Z,"67 km WSW of Altata, Mexico",earthquake,,25,0.24,,reviewed,iscgem,iscgem
+1931-05-16T20:47:38.590Z,16.487,-97.066,25,6.07,mw,,,,,iscgem,iscgem906781,2022-04-25T22:17:13.407Z,"10 km WSW of Villa Sola de Vega, Mexico",earthquake,,3.9,0.2,,reviewed,iscgem,iscgem
+1931-06-21T12:23:10.040Z,18.229,-107.397,15,5.96,mw,,,,,iscgem,iscgem906830,2022-04-25T22:18:45.089Z,"off the coast of Jalisco, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1931-07-07T03:54:22.120Z,14.955,-95.828,15,5.88,mw,,,,,iscgem,iscgem906854,2022-04-25T22:19:01.349Z,"95 km SSE of Crucecita, Mexico",earthquake,,6.8,0.2,,reviewed,iscgem,iscgem
+1931-07-17T09:13:52.050Z,16.118,-96.827,35,6.07,mw,,,,,iscgem,iscgem906877,2022-04-25T22:19:15.944Z,"6 km NW of San Baltazar Loxicha, Mexico",earthquake,,14.2,0.39,,reviewed,iscgem,iscgem
+1931-08-16T11:40:26.250Z,30.712,-104.179,10,6.28,mw,,,,,iscgem,iscgem906944,2026-09-16T00:54:42.086Z,"The 1931 Valentine, Texas Earthquake",earthquake,,25,0.3,,reviewed,iscgem,iscgem
+1931-10-01T11:45:41.310Z,29.962,-114.563,15,6.3,mw,,,,,iscgem,iscgem907049,2022-04-25T22:22:48.648Z,"112 km E of El Rosario de Arriba, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1931-10-26T04:25:06.470Z,22.548,-108.505,10,6.04,mw,,,,,iscgem,iscgem907095,2022-04-25T22:23:44.755Z,"132 km ESE of La Playa, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1931-11-02T00:32:11.690Z,16.277,-96.641,35,6.48,mw,,,,,iscgem,iscgem907106,2022-04-25T22:23:51.071Z,"3 km S of Santa Catarina Cuixtla, Mexico",earthquake,,33.5,0.2,,reviewed,iscgem,iscgem
+1932-01-08T02:34:51.600Z,31.943,-115.6528333,6,4,mh,3,351,2.506,0.52,ci,ci3358410,2016-04-02T09:49:18.404Z,"55km SW of Alberto Oviedo Mota, B.C., MX",earthquake,22.44,31.61,,0,reviewed,ci,ci
+1932-01-11T17:24:32.020Z,31.796,-115.614,6,4,mh,0,341.5,1.749,0.19,ci,ci3361879,2016-01-27T18:51:37.570Z,"64km SW of Alberto Oviedo Mota, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1932-01-28T17:17:47.580Z,31.3858333,-116.515,6,4.59,mh,3,335,1.601,0.25,ci,ci3358503,2016-01-27T18:51:32.710Z,"37km S of Maneadero, B.C., MX",earthquake,6.36,31.61,0.021,3,reviewed,ci,ci
+1932-02-12T02:30:17.010Z,32.5,-115.333,6,3.7,ml,0,360,1.66,0.145,ci,ci3358583,2016-01-27T18:25:50.970Z,"7km SSE of Puebla, B.C., MX",earthquake,,,,12,reviewed,ci,ci
+1932-02-26T02:26:38.550Z,32.5045,-115.5348333,6,3.51,ml,2,330,1.493,0.2,ci,ci3358621,2016-01-27T18:46:52.910Z,"10km SSE of Progreso, B.C., MX",earthquake,2.04,31.61,0.088,12,reviewed,ci,ci
+1932-03-14T04:06:04.360Z,21.759,-108.676,15,6.19,mw,,,,,iscgem,iscgem906064,2022-04-25T22:03:29.219Z,"176 km SE of La Playa, Mexico",earthquake,,25,0.42,,reviewed,iscgem,iscgem
+1932-04-08T20:50:39.170Z,31.585,-116.2473333,6,3.57,ml,2,348,1.534,0.37,ci,ci3358744,2016-01-27T18:42:21.260Z,"34km ESE of Maneadero, B.C., MX",earthquake,7.15,31.61,0.157,8,reviewed,ci,ci
+1932-04-09T10:17:00.000Z,31.7,-96.4,,3.9,fa,,,,,ushis,ushis896,2018-06-04T20:43:44.000Z,"8 km ENE of Mexia, Texas",earthquake,,,,,reviewed,ushis,sc
+1932-04-24T06:10:55.070Z,25.082,-111.774,15,6.08,mw,,,,,iscgem,iscgem906116,2022-04-25T22:03:47.912Z,"12 km WNW of Ciudad Constitución, Mexico",earthquake,,25,0.41,,reviewed,iscgem,iscgem
+1932-04-29T16:52:27.900Z,31.8461667,-115.5501667,6,4.22,ml,2,341,1.763,0.47,ci,ci3358944,2016-01-27T18:51:10.140Z,"56km SW of Alberto Oviedo Mota, B.C., MX",earthquake,6.95,31.61,0.117,11,reviewed,ci,ci
+1932-06-03T10:36:58.080Z,19.795,-103.931,35,8.1,mw,,,,,iscgem,iscgem906183,2025-07-24T15:08:17.332Z,"1932 Jalisco, Mexico Earthquake",earthquake,,3.9,0.3,,reviewed,iscgem,iscgem
+1932-06-03T17:40:05.520Z,19.45,-105.404,15,5.76,mw,,,,,iscgem,iscgem906189,2022-04-25T22:05:15.905Z,"34 km SW of José María Morelos, Mexico",earthquake,,0.9,0.2,,reviewed,iscgem,iscgem
+1932-06-04T21:39:31.350Z,19.474,-105.338,15,5.77,mw,,,,,iscgem,iscgem906200,2022-04-25T22:05:28.058Z,"27 km SW of José María Morelos, Mexico",earthquake,,0.9,0.31,,reviewed,iscgem,iscgem
+1932-06-05T09:04:45.370Z,19.113,-104.61,25,6.05,mw,,,,,iscgem,iscgem906201,2022-04-25T22:05:34.291Z,"12 km SE of Barra de Navidad, Mexico",earthquake,,15,0.27,,reviewed,iscgem,iscgem
+1932-06-09T04:35:39.350Z,18.828,-105.159,20,5.82,mw,,,,,iscgem,iscgem906214,2022-04-25T22:05:55.045Z,"63 km SW of La Manzanilla, Mexico",earthquake,,11.2,0.69,,reviewed,iscgem,iscgem
+1932-06-16T21:35:23.010Z,31.7158333,-116.7036667,6,3.61,ml,3,347,1.236,0.66,ci,ci3359052,2016-01-27T18:46:59.910Z,"13km W of Maneadero, B.C., MX",earthquake,22.36,31.61,0.214,6,reviewed,ci,ci
+1932-06-18T10:12:32.930Z,19.087,-103.551,15,7.8,mw,,,,,iscgem,iscgem906234,2022-04-25T22:06:31.965Z,"7 km E of Los Tepames, Mexico",earthquake,,24.1,0.3,,reviewed,iscgem,iscgem
+1932-06-21T04:33:54.280Z,16.015,-95.847,35,5.91,mw,,,,,iscgem,iscgem906243,2022-04-25T22:06:45.307Z,"11 km NNW of El Coyul, Mexico",earthquake,,18.2,0.33,,reviewed,iscgem,iscgem
+1932-06-22T12:59:30.550Z,19.242,-104.383,25,7.7,mw,,,,,iscgem,iscgem906247,2022-04-25T22:06:56.900Z,"12 km NNE of La Central, Mexico",earthquake,,15,0.3,,reviewed,iscgem,iscgem
+1932-06-26T18:32:25.430Z,31.6301667,-116.149,6,3.64,ml,2,357,1.546,0.2,ci,ci3359073,2016-01-27T18:42:26.340Z,"41km ESE of Maneadero, B.C., MX",earthquake,18.17,31.61,0.129,11,reviewed,ci,ci
+1932-06-27T09:46:46.480Z,31.6736667,-116.1855,6,3.61,ml,2,356,1.492,1.4,ci,ci3359074,2016-01-27T18:42:26.800Z,"36km E of Maneadero, B.C., MX",earthquake,93.32,31.61,0.167,12,reviewed,ci,ci
+1932-06-27T10:07:21.220Z,31.5301667,-116.091,6,4.76,ml,2,347,1.655,0.09,ci,ci3359075,2016-01-27T18:42:27.260Z,"50km ESE of Maneadero, B.C., MX",earthquake,2.54,31.61,0.059,12,reviewed,ci,ci
+1932-06-27T10:16:08.380Z,31.3753333,-115.9831667,6,3.86,ml,2,358,1.834,2.12,ci,ci3359076,2016-01-27T18:42:27.750Z,"67km SE of Maneadero, B.C., MX",earthquake,99,31.61,0.214,12,reviewed,ci,ci
+1932-07-07T16:15:54.870Z,29.266,-113.269,10,6.85,mw,,,,,iscgem,iscgem906276,2022-04-25T22:07:16.833Z,"90 km SW of La Libertad, Mexico",earthquake,,25,0.35,,reviewed,iscgem,iscgem
+1932-07-12T19:24:11.160Z,26.162,-110.108,10,6.81,mw,,,,,iscgem,iscgem906288,2022-04-25T22:07:40.231Z,"79 km SSW of Etchoropo, Mexico",earthquake,,9.4,0.2,,reviewed,iscgem,iscgem
+1932-07-25T09:12:51.250Z,18.897,-103.897,20,6.82,mw,,,,,iscgem,iscgem906304,2022-04-25T22:07:57.836Z,"2 km SW of Tecomán, Mexico",earthquake,,11,0.26,,reviewed,iscgem,iscgem
+1932-08-25T08:05:45.850Z,18.904,-107.193,15,5.94,mw,,,,,iscgem,iscgem906350,2022-04-25T22:08:22.850Z,"219 km SW of La Cruz de Loreto, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1932-09-08T01:41:08.840Z,18.402,-104.19,15,6.16,mw,,,,,iscgem,iscgem906360,2022-04-25T22:08:25.335Z,"58 km SSW of Cuyutlán, Mexico",earthquake,,17.8,0.2,,reviewed,iscgem,iscgem
+1932-09-10T09:57:32.730Z,31.5173333,-116.7556667,6,4.11,ml,5,347,1.407,0.31,ci,ci3359281,2016-01-27T18:42:35.650Z,"28km SW of Maneadero, B.C., MX",earthquake,7.84,31.61,0.272,11,reviewed,ci,ci
+1932-09-20T16:21:22.810Z,31.7065,-115.412,6,4.12,ml,3,342,1.94,0.32,ci,ci3359298,2016-01-27T18:29:59.950Z,"62km SSW of Alberto Oviedo Mota, B.C., MX",earthquake,6.04,31.61,0.04,9,reviewed,ci,ci
+1932-10-08T07:47:11.780Z,32.1935,-115.6418333,6,4.02,ml,3,335,1.517,0.58,ci,ci3359318,2016-01-27T18:51:22.480Z,"43km S of Progreso, B.C., MX",earthquake,5.73,31.61,0.101,13,reviewed,ci,ci
+1932-10-08T21:15:48.940Z,32.6415,-115.4315,6,3.99,ml,3,328,1.552,0.56,ci,ci3359332,2016-01-27T18:55:56.010Z,"4km ESE of Mexicali, B.C., MX",earthquake,6.02,31.61,0.047,12,reviewed,ci,ci
+1932-10-09T04:33:58.700Z,32.6101667,-115.3155,6,3.79,ml,2,330,1.653,0.36,ci,ci3359344,2016-01-27T18:30:02.830Z,"6km NE of Puebla, B.C., MX",earthquake,4.26,31.61,0.107,11,reviewed,ci,ci
+1932-10-09T22:50:41.450Z,32.64,-115.43,6,4.47,ml,2,328,1.553,1.62,ci,ci3359345,2016-01-27T18:55:56.510Z,"4km ESE of Mexicali, B.C., MX",earthquake,99,31.61,0.078,11,reviewed,ci,ci
+1932-10-09T22:51:00.000Z,32.666,-115.5,16,4.5,ml,,,,,ushis,ushis910,2018-06-04T20:43:44.000Z,"1 km S of Calexico, California",earthquake,,,,,reviewed,ushis,pas
+1932-10-09T23:45:26.140Z,32.6483333,-115.6085,6,4.12,ml,4,327,1.403,0.49,ci,ci3359347,2016-01-27T18:38:16.310Z,"8km NNW of Progreso, B.C., MX",earthquake,5.58,31.61,0.108,12,reviewed,ci,ci
+1932-10-10T01:29:25.900Z,32.4558333,-115.3206667,6,4.25,ml,2,332,1.681,0.2,ci,ci3359348,2016-01-27T18:42:36.570Z,"12km SSE of Puebla, B.C., MX",earthquake,3.08,31.61,0.123,11,reviewed,ci,ci
+1932-10-10T19:53:09.180Z,32.6506667,-115.2883333,6,3.73,ml,2,329,1.67,0.2,ci,ci3359353,2016-01-27T18:42:37.060Z,"11km NNE of Puebla, B.C., MX",earthquake,2.73,31.61,0.123,9,reviewed,ci,ci
+1932-10-13T17:51:22.430Z,31.4861667,-116.218,6,3.93,ml,2,348,1.63,0.28,ci,ci3359366,2016-01-27T18:47:11.880Z,"42km SE of Maneadero, B.C., MX",earthquake,7.91,31.61,0.124,10,reviewed,ci,ci
+1932-10-20T09:20:16.680Z,31.2896667,-117.069,6,3.72,ml,3,348,1.577,0.96,ci,ci3359383,2016-01-27T18:30:03.830Z,"67km SW of Maneadero, B.C., MX",earthquake,39.67,31.61,0.207,8,reviewed,ci,ci
+1932-10-23T12:41:30.600Z,31.5031667,-116.229,6,3.7,ml,2,348,1.611,0.28,ci,ci3359397,2016-01-27T18:55:58.290Z,"40km SE of Maneadero, B.C., MX",earthquake,7.91,31.61,0.125,8,reviewed,ci,ci
+1932-11-17T06:02:55.650Z,18.462,-103.981,15,6.14,mw,,,,,iscgem,iscgem906457,2022-04-25T22:09:30.148Z,"42 km SW of Cerro de Ortega, Mexico",earthquake,,17.8,0.2,,reviewed,iscgem,iscgem
+1932-12-07T16:22:12.720Z,18.491,-104.25,15,6.8,mw,,,,,iscgem,iscgem906492,2022-04-25T22:09:54.846Z,"51 km SSW of Cuyutlán, Mexico",earthquake,,17.8,0.35,,reviewed,iscgem,iscgem
+1932-12-08T07:34:10.590Z,31.596,-116.0515,6,4.19,ml,4,346,1.624,0.55,ci,ci3359466,2016-01-27T18:42:42.640Z,"51km ESE of Maneadero, B.C., MX",earthquake,9.82,31.61,0.143,10,reviewed,ci,ci
+1933-01-18T18:53:20.060Z,32,-116.273,6,3.78,ml,0,360,2.67,0,ci,ci3359557,2016-01-27T18:28:46.080Z,"36km ENE of Ensenada, B.C., MX",earthquake,,,0.07,6,reviewed,ci,ci
+1933-01-27T16:27:54.610Z,31.078,-116.547,6,4.09,ml,0,360,3.354,0,ci,ci3359648,2016-01-27T18:41:23.230Z,"71km S of Maneadero, B.C., MX",earthquake,,,0.147,8,reviewed,ci,ci
+1933-04-09T03:58:19.340Z,18.673,-105.302,15,6.42,mw,,,,,iscgem,iscgem905507,2022-04-25T21:53:13.821Z,"86 km SW of La Manzanilla, Mexico",earthquake,,7.7,0.23,,reviewed,iscgem,iscgem
+1933-04-09T21:03:47.820Z,19.357,-106.999,15,6.01,mw,,,,,iscgem,iscgem905511,2022-04-25T21:53:26.949Z,"177 km WSW of La Cruz de Loreto, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1933-05-05T07:17:10.590Z,32.0006667,-115.0206667,6,3.77,ml,2,340,2.075,2.55,ci,ci3360434,2016-01-27T18:41:38.390Z,"22km S of Estacion Coahuila, B.C., MX",earthquake,22.14,31.61,0.091,6,reviewed,ci,ci
+1933-05-08T10:33:51.200Z,17.404,-100.908,30,6.7,mw,,,,,iscgem,iscgem905558,2022-04-25T21:54:34.251Z,"14 km N of San Luis de La Loma, Mexico",earthquake,,17.1,0.25,,reviewed,iscgem,iscgem
+1933-05-08T18:01:22.860Z,17.22,-100.78,30,5.99,mw,,,,,iscgem,iscgem905559,2022-04-25T21:54:35.888Z,"2 km WNW of Nuxco, Mexico",earthquake,,11.4,0.2,,reviewed,iscgem,iscgem
+1933-05-09T02:34:18.580Z,16.943,-100.442,30,5.87,mw,,,,,iscgem,iscgem905560,2022-04-25T21:54:37.267Z,"17 km S of Hacienda de Cabañas, Mexico",earthquake,,11.2,0.55,,reviewed,iscgem,iscgem
+1933-05-19T16:26:36.410Z,32.451,-115.6191667,6,4.27,ml,3,331,1.439,0.63,ci,ci3360648,2016-01-27T18:41:46.790Z,"15km SSW of Progreso, B.C., MX",earthquake,6.05,31.61,0.185,13,reviewed,ci,ci
+1933-06-16T00:57:09.070Z,25.993,-112.135,15,5.67,mw,,,,,iscgem,iscgem905642,2022-04-25T21:55:39.057Z,"78 km W of Loreto, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1933-07-04T10:09:24.100Z,31.598,-115.973,6,3.64,mh,0,360,3.145,0,ci,ci3360869,2016-01-27T18:33:24.570Z,"58km ESE of Maneadero, B.C., MX",earthquake,,,0.095,5,reviewed,ci,ci
+1933-07-04T13:49:56.230Z,31.63,-115.968,6,3.62,mh,0,360,3.121,0,ci,ci3360872,2016-01-27T18:41:54.730Z,"58km E of Maneadero, B.C., MX",earthquake,,,0.018,5,reviewed,ci,ci
+1933-07-09T05:34:22.130Z,17.758,-105.474,15,6,mw,,,,,iscgem,iscgem905683,2022-04-25T21:56:21.114Z,"180 km SSW of Barra de Navidad, Mexico",earthquake,,21.6,0.22,,reviewed,iscgem,iscgem
+1933-07-10T03:22:03.910Z,18.367,-103.947,15,6.44,mw,,,,,iscgem,iscgem905697,2022-04-25T21:56:39.320Z,"42 km WSW of La Placita de Morelos, Mexico",earthquake,,17.8,0.32,,reviewed,iscgem,iscgem
+1933-07-17T15:16:38.280Z,31.437,-116.1326667,6,3.82,mh,2,349,1.711,0.37,ci,ci3360957,2016-01-27T18:59:29.980Z,"52km SE of Maneadero, B.C., MX",earthquake,10.82,31.61,0.053,5,reviewed,ci,ci
+1933-08-16T14:52:14.220Z,31.417,-117.2623333,6,3.59,ml,3,347,2.571,0.65,ci,ci3361151,2016-01-27T18:42:01.560Z,"74km WSW of Maneadero, B.C., MX",earthquake,27.33,31.61,0.073,4,reviewed,ci,ci
+1933-08-19T17:47:09.970Z,31.9785,-116.1818333,6,3.8,mh,2,341,1.265,0.25,ci,ci3361157,2016-01-27T18:33:33.310Z,"43km ENE of Ensenada, B.C., MX",earthquake,7.62,31.61,0.097,5,reviewed,ci,ci
+1933-09-27T17:47:01.120Z,31.2261667,-117.0211667,6,4.09,ml,2,360,1.644,0.49,ci,ci3361353,2016-01-27T18:59:41.350Z,"70km SW of Maneadero, B.C., MX",earthquake,42.96,31.61,0.147,5,reviewed,ci,ci
+1933-10-02T16:52:56.100Z,32.6663333,-115.3575,6,3.56,ml,2,329,1.61,0.02,ci,ci3361425,2016-01-27T18:37:44.570Z,"10km E of Mexicali, B.C., MX",earthquake,1.67,31.61,0.07,7,reviewed,ci,ci
+1933-10-14T20:02:20.970Z,31.78,-115.9238333,6,3.63,ml,2,343,1.561,0.24,ci,ci3361541,2016-01-27T18:46:43.490Z,"61km E of Maneadero, B.C., MX",earthquake,5.11,31.61,0.075,6,reviewed,ci,ci
+1933-10-20T16:10:10.020Z,31.0966667,-116.2538333,6,4.03,ml,2,352,1.956,0.38,ci,ci3361569,2016-01-27T18:59:53.100Z,"75km SSE of Maneadero, B.C., MX",earthquake,14.75,31.61,0.072,9,reviewed,ci,ci
+1933-10-23T15:42:05.390Z,31.43,-117.097,6,3.97,ml,3,347,1.435,0.82,ci,ci3361577,2016-01-27T18:33:44.840Z,"60km WSW of Maneadero, B.C., MX",earthquake,99,31.61,0.132,6,reviewed,ci,ci
+1933-10-29T16:13:02.210Z,31.2011667,-115.6785,6,4.12,ml,4,348,2.13,0.63,ci,ci3361606,2016-01-27T18:59:55.370Z,"102km SE of Maneadero, B.C., MX",earthquake,29.22,31.61,0.139,10,reviewed,ci,ci
+1933-11-07T14:56:29.280Z,31.3718333,-116.5248333,6,4.12,ml,3,356,1.611,1.36,ci,ci3361635,2016-01-27T18:46:45.920Z,"39km S of Maneadero, B.C., MX",earthquake,99,31.61,0.069,10,reviewed,ci,ci
+1933-11-21T05:55:40.140Z,31.7511667,-115.7695,6,3.75,ml,3,342,1.676,0.28,ci,ci3361685,2016-01-27T18:59:59.010Z,"76km E of Maneadero, B.C., MX",earthquake,5.54,31.61,0.141,7,reviewed,ci,ci
+1933-11-29T08:39:44.830Z,31.4596667,-116.2403333,6,4.43,ml,3,349,1.643,0.29,ci,ci3361710,2016-01-27T19:00:00.360Z,"42km SE of Maneadero, B.C., MX",earthquake,7.75,31.61,0.134,12,reviewed,ci,ci
+1933-12-08T04:36:57.160Z,32.3886667,-115.3315,6,4.02,ml,2,333,1.69,0.11,ci,ci3361724,2016-01-27T18:42:16.200Z,"14km WNW of Delta, B.C., MX",earthquake,2.16,31.61,0.064,10,reviewed,ci,ci
+1933-12-10T15:51:23.760Z,32.5958333,-115.377,6,3.71,ml,2,330,1.605,0.44,ci,ci3361732,2016-01-27T18:55:32.580Z,"4km NNW of Puebla, B.C., MX",earthquake,6,31.61,0.134,12,reviewed,ci,ci
+1933-12-13T21:23:45.970Z,18.623,-104.468,20,6.66,mw,,,,,iscgem,iscgem905953,2022-04-25T22:01:18.147Z,"53 km SSW of El Colomo, Mexico",earthquake,,15.9,0.39,,reviewed,iscgem,iscgem
+1933-12-14T07:16:36.330Z,18.643,-103.47,30,6.38,mw,,,,,iscgem,iscgem905954,2022-04-25T22:01:23.599Z,"6 km NE of Aquila, Mexico",earthquake,,14.8,0.2,,reviewed,iscgem,iscgem
+1933-12-28T21:05:33.170Z,32.1065,-114.9461667,6,4.21,ml,3,354,2.775,0.61,ci,ci3361769,2016-01-27T18:51:04.510Z,"11km SSE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.209,12,reviewed,ci,ci
+1933-12-29T16:15:57.950Z,31.506,-116.226,6,3.72,ml,3,350,2.663,1.34,ci,ci3361773,2016-01-27T18:29:42.020Z,"40km SE of Maneadero, B.C., MX",earthquake,99,31.61,0.248,10,reviewed,ci,ci
+1934-01-04T21:53:00.000Z,32.7,-115.116,16,4.5,ml,,,,,ushis,ushis1016,2018-06-04T20:43:44.000Z,"9 km NNW of Ejido Netzahualcóyotl, Mexico",earthquake,,,,,reviewed,ushis,pas
+1934-01-04T21:53:26.700Z,31.9636667,-115.7236667,6,4.12,ml,3,339,1.575,0.57,ci,ci3361788,2016-01-27T18:32:20.920Z,"60km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,18.2,31.61,0.195,12,reviewed,ci,ci
+1934-01-12T01:25:52.080Z,31.4198333,-116.4331667,6,3.91,ml,2,351,1.599,0.12,ci,ci3361818,2016-01-27T18:36:28.120Z,"35km SSE of Maneadero, B.C., MX",earthquake,6.32,31.61,0.184,10,reviewed,ci,ci
+1934-01-19T09:55:53.620Z,23.038,-108.893,15,5.83,mw,,,,,iscgem,iscgem904752,2022-04-25T21:41:15.885Z,"79 km E of La Playa, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1934-01-28T19:10:10.630Z,16.985,-99.714,30,6.85,mw,,,,,iscgem,iscgem904763,2022-04-25T21:41:42.324Z,"near the coast of Guerrero, Mexico",earthquake,,14.3,0.2,,reviewed,iscgem,iscgem
+1934-02-11T15:15:48.410Z,32.3275,-114.9393333,6,3.89,ml,2,336,2.026,0.93,ci,ci3361973,2016-01-27T18:53:57.030Z,"16km NNE of Estacion Coahuila, B.C., MX",earthquake,12.29,31.61,0.102,10,reviewed,ci,ci
+1934-02-11T18:01:27.030Z,32.4331667,-114.9546667,6,3.98,ml,2,335,1.987,0.87,ci,ci3361974,2016-01-27T18:28:12.670Z,"9km SSW of Hermosillo, B.C., MX",earthquake,11.14,31.61,0.124,8,reviewed,ci,ci
+1934-02-14T22:18:36.080Z,19.013,-105.861,15,5.99,mw,,,,,iscgem,iscgem904795,2022-04-25T21:42:31.448Z,"102 km SW of José María Morelos, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1934-02-18T22:43:30.390Z,31.0843333,-116.2075,6,3.6,ml,2,352,1.984,0.37,ci,ci3361995,2016-01-27T18:53:58.400Z,"78km SSE of Maneadero, B.C., MX",earthquake,12.29,31.61,0.087,6,reviewed,ci,ci
+1934-02-25T04:46:25.170Z,31.9153333,-115.8998333,6,3.6,ml,2,340,1.485,0.39,ci,ci3362009,2016-01-27T18:40:49.340Z,"67km ENE of Maneadero, B.C., MX",earthquake,6.57,31.61,0.159,9,reviewed,ci,ci
+1934-04-03T17:52:54.150Z,31.2578333,-115.5053333,6,4.05,ml,2,347,2.183,0.37,ci,ci3362070,2016-01-27T18:36:37.270Z,"112km SSW of Alberto Oviedo Mota, B.C., MX",earthquake,8.43,31.61,0.05,6,reviewed,ci,ci
+1934-04-04T02:59:22.060Z,32.9375,-115.7561667,6,3.55,ml,3,319,1.262,0.1,ci,ci3362073,2016-01-27T18:28:16.970Z,"17km SW of Westmorland, CA",earthquake,4.08,31.61,0.164,12,reviewed,ci,ci
+1934-04-21T01:20:00.010Z,30.8866667,-115.7831667,6,3.71,ml,2,359,2.335,3.24,ci,ci10087134,2016-01-27T18:54:06.860Z,"119km SE of Maneadero, B.C., MX",earthquake,99,31.61,0.107,5,reviewed,ci,ci
+1934-06-22T18:33:47.050Z,18.071,-105.902,15,5.87,mw,,,,,iscgem,iscgem905005,2022-04-25T21:45:44.094Z,"175 km SW of Emiliano Zapata, Mexico",earthquake,,25,0.7,,reviewed,iscgem,iscgem
+1934-07-27T02:25:44.120Z,15.429,-92.432,15,5.86,mw,,,,,iscgem,iscgem905077,2022-04-25T21:46:51.333Z,"15 km NE of El Triunfo, Mexico",earthquake,,41.5,0.7,,reviewed,iscgem,iscgem
+1934-07-30T05:19:43.470Z,32.8251667,-116.8075,6,3.75,ml,3,342,1.258,0.4,ci,ci3362304,2016-01-27T18:36:46.710Z,"4km WSW of Alpine, CA",earthquake,6.78,31.61,0.107,11,reviewed,ci,ci
+1934-08-18T15:01:27.630Z,31.2308333,-116.012,6,4.29,ml,5,344,1.94,0.76,ci,ci3362343,2016-01-27T18:54:20.760Z,"75km SE of Maneadero, B.C., MX",earthquake,18.37,31.61,0.122,10,reviewed,ci,ci
+1934-08-26T01:31:31.260Z,22.677,-108.046,15,5.91,mw,,,,,iscgem,iscgem905122,2022-04-25T21:48:06.968Z,"171 km ESE of La Playa, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1934-09-15T06:56:56.430Z,20.485,-104.693,15,6.31,mw,,,,,iscgem,iscgem905174,2022-04-25T21:48:47.369Z,"10 km ESE of Mascota, Mexico",earthquake,,25,0.37,,reviewed,iscgem,iscgem
+1934-09-27T21:39:51.970Z,31.5773333,-116.0355,6,3.89,ml,3,346,1.647,0.56,ci,ci3362435,2016-01-27T18:58:49.750Z,"53km ESE of Maneadero, B.C., MX",earthquake,12.73,31.61,0.169,11,reviewed,ci,ci
+1934-10-29T02:34:47.720Z,26.051,-110.247,15,6.13,mw,,,,,iscgem,iscgem905238,2022-04-25T21:49:37.047Z,"92 km W of El Aguajito, Mexico",earthquake,,9.4,0.2,,reviewed,iscgem,iscgem
+1934-10-31T14:13:03.460Z,31.5925,-116.5751667,6,3.64,ml,4,348,1.392,0.76,ci,ci3362533,2016-01-27T18:28:34.950Z,"14km S of Maneadero, B.C., MX",earthquake,24.17,31.61,0.107,8,reviewed,ci,ci
+1934-11-08T06:45:13.900Z,31.2793333,-116.4408333,6,3.53,ml,2,352,1.724,0.31,ci,ci3362548,2016-01-27T18:45:37.030Z,"50km SSE of Maneadero, B.C., MX",earthquake,10.52,31.61,0.131,9,reviewed,ci,ci
+1934-11-13T14:22:40.940Z,31.3455,-116.1065,6,3.89,ml,2,349,1.8,0.17,ci,ci3362552,2016-01-27T18:45:37.490Z,"60km SE of Maneadero, B.C., MX",earthquake,5.45,31.61,0.076,10,reviewed,ci,ci
+1934-11-16T18:42:10.230Z,31.4956667,-115.9243333,6,3.64,ml,2,346,1.77,0.22,ci,ci3362561,2016-01-27T18:36:57.840Z,"66km ESE of Maneadero, B.C., MX",earthquake,5.76,31.61,0.178,8,reviewed,ci,ci
+1934-11-25T08:18:29.190Z,31.5008333,-116.0736667,6,5.1,ml,6,341,1.687,0.26,ci,ci3366201,2016-01-27T18:28:38.600Z,"52km ESE of Maneadero, B.C., MX",earthquake,99,31.61,0.11,10,reviewed,ci,ci
+1934-11-25T14:38:05.320Z,31.4213333,-116.4756667,6,3.91,ml,4,349,1.582,0.26,ci,ci3362583,2016-01-27T18:49:54.140Z,"34km SSE of Maneadero, B.C., MX",earthquake,12.32,31.61,0.102,12,reviewed,ci,ci
+1934-11-27T08:10:54.400Z,31.3661667,-117.2096667,6,3.56,ml,3,348,1.493,0.48,ci,ci3362588,2016-01-27T18:36:59.770Z,"72km WSW of Maneadero, B.C., MX",earthquake,20.77,31.61,0.054,9,reviewed,ci,ci
+1934-11-27T18:07:41.110Z,31.7065,-116.1773333,6,3.59,ml,3,345,1.471,0.36,ci,ci3362589,2016-01-27T18:32:50.650Z,"37km E of Maneadero, B.C., MX",earthquake,7.88,31.61,0.102,9,reviewed,ci,ci
+1934-11-30T02:05:16.820Z,18.494,-105.307,15,7.04,mw,,,,,iscgem,iscgem905294,2022-04-25T21:50:00.876Z,"102 km SW of Barra de Navidad, Mexico",earthquake,,7.7,0.3,,reviewed,iscgem,iscgem
+1934-12-02T09:31:28.810Z,31.6208333,-116.3653333,6,3.77,ml,4,348,1.45,0.49,ci,ci3362595,2016-01-27T18:32:51.140Z,"22km ESE of Maneadero, B.C., MX",earthquake,11.76,31.61,0.055,10,reviewed,ci,ci
+1934-12-02T18:05:27.270Z,31.3478333,-116.8845,6,3.51,ml,4,348,1.543,0.64,ci,ci3362598,2016-01-27T18:49:55.070Z,"51km SW of Maneadero, B.C., MX",earthquake,23.48,31.61,0.106,7,reviewed,ci,ci
+1934-12-03T02:38:31.810Z,14.81,-88.988,15,6.31,mw,,,,,iscgem,iscgem905298,2022-04-25T21:50:08.469Z,"5 km W of San Agustín, Honduras",earthquake,,4.3,0.26,,reviewed,iscgem,iscgem
+1934-12-07T18:41:46.640Z,31.4186667,-116.1856667,6,3.57,ml,2,350,1.702,0.26,ci,ci3362607,2016-01-27T18:45:41.170Z,"49km SE of Maneadero, B.C., MX",earthquake,8.98,31.61,0.068,8,reviewed,ci,ci
+1934-12-24T14:35:37.860Z,14.039,-90.615,30,5.96,mw,,,,,iscgem,iscgem905318,2022-04-25T21:50:45.830Z,"15 km NE of Iztapa, Guatemala",earthquake,,37.8,0.2,,reviewed,iscgem,iscgem
+1934-12-30T13:52:02.690Z,32,-114.9,6,6.33,ml,6,322,2.169,1.23,ci,ci3362651,2022-04-25T21:50:49.286Z,"24km SSE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.032,7,reviewed,ci,ci
+1934-12-30T14:30:10.610Z,32.25,-115,6,4.64,ml,5,329,2.645,3.69,ci,ci3362653,2016-01-27T18:49:58.320Z,"6km N of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.141,10,reviewed,ci,ci
+1934-12-30T15:05:22.260Z,32.25,-115,6,4.48,ml,4,337,1.999,4.66,ci,ci3362662,2016-01-27T18:28:43.790Z,"6km N of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.111,10,reviewed,ci,ci
+1934-12-30T15:35:02.480Z,32.25,-115,6,4.44,ml,4,337,1.999,5.81,ci,ci3362663,2016-01-27T18:45:42.110Z,"6km N of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.124,10,reviewed,ci,ci
+1934-12-30T18:25:09.720Z,32.25,-115,6,3.89,ml,4,337,1.999,4.52,ci,ci3362665,2016-01-27T18:28:44.260Z,"6km N of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.168,11,reviewed,ci,ci
+1934-12-30T18:38:36.290Z,32.3646667,-115.2596667,6,4.1,ml,4,333,1.755,1.45,ci,ci3362666,2016-01-27T18:54:33.330Z,"6km W of Delta, B.C., MX",earthquake,22.49,31.61,0.118,13,reviewed,ci,ci
+1934-12-30T19:23:04.950Z,32,-114.8,6,4.48,ml,4,340,2.247,1.38,ci,ci3362667,2016-01-27T18:54:34.240Z,"29km SE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.126,8,reviewed,ci,ci
+1934-12-31T18:45:43.920Z,32.18,-115.1755,6,6.42,ml,5,318,1.884,0.32,ci,ci3362656,2022-04-25T21:50:50.418Z,"5km S of Alberto Oviedo Mota, B.C., MX",earthquake,23.53,31.61,0.08,4,reviewed,ci,ci
+1934-12-31T20:06:44.320Z,32.25,-115.5,6,3.93,ml,4,334,1.603,6.81,ci,ci3362657,2016-01-27T18:54:33.780Z,"31km WSW of Delta, B.C., MX",earthquake,99,31.61,0.295,14,reviewed,ci,ci
+1934-12-31T21:03:33.100Z,32.25,-115,6,3.68,ml,5,317,1.999,5.15,ci,ci3362658,2016-01-27T18:28:45.170Z,"6km N of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.146,12,reviewed,ci,ci
+1934-12-31T22:24:43.690Z,32.5,-115,6,4.06,ml,5,332,2.486,4.07,ci,ci3362659,2016-01-27T18:41:21.480Z,"7km W of Hermosillo, B.C., MX",earthquake,99,31.61,0.241,12,reviewed,ci,ci
+1935-01-01T01:12:43.430Z,31,-114,6,3.93,ml,4,347,3.332,3.41,ci,ci3362661,2016-01-27T18:35:50.910Z,"163km SE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.184,8,reviewed,ci,ci
+1935-01-01T11:45:31.850Z,32.1725,-115.3011667,6,3.77,ml,2,337,1.788,0.32,ci,ci3362674,2016-01-27T18:27:26.280Z,"14km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,4.79,31.61,0.196,12,reviewed,ci,ci
+1935-01-01T15:23:38.420Z,31.0146667,-114.9346667,6,3.78,ml,2,348,2.699,1.33,ci,ci10086958,2016-01-27T18:57:43.020Z,"131km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.084,8,reviewed,ci,ci
+1935-01-04T21:59:52.580Z,31.9283333,-115.2,6,3.66,ml,2,340,1.972,0.71,ci,ci3362681,2016-01-27T18:44:33.260Z,"33km S of Alberto Oviedo Mota, B.C., MX",earthquake,11.34,31.61,0.107,8,reviewed,ci,ci
+1935-01-06T20:23:08.410Z,32.2986667,-115.1863333,6,3.99,ml,2,335,1.834,1.07,ci,ci3362691,2016-01-27T18:35:51.830Z,"6km S of Delta, B.C., MX",earthquake,12.79,31.61,0.131,14,reviewed,ci,ci
+1935-01-08T06:12:57.490Z,32.3088333,-115.2316667,6,3.62,ml,2,335,1.795,1.18,ci,ci3362694,2016-01-27T18:27:27.680Z,"6km SW of Delta, B.C., MX",earthquake,15.02,31.61,0.13,12,reviewed,ci,ci
+1935-01-13T02:24:42.600Z,31.7941667,-116.1166667,6,4.36,ml,5,337,1.437,0.33,ci,ci3362702,2016-01-27T18:31:44.990Z,"43km ENE of Maneadero, B.C., MX",earthquake,10.88,31.61,0.114,12,reviewed,ci,ci
+1935-01-15T07:38:24.650Z,30.7405,-116.747,6,3.75,ml,2,358,2.16,1.27,ci,ci10086962,2016-01-27T18:27:28.610Z,"110km S of Maneadero, B.C., MX",earthquake,92.05,31.61,0.125,7,reviewed,ci,ci
+1935-01-27T03:10:55.650Z,31.689,-116.1263333,6,3.52,ml,4,346,1.511,0.39,ci,ci3362719,2016-01-27T18:40:09.620Z,"42km E of Maneadero, B.C., MX",earthquake,16.73,31.61,0.051,8,reviewed,ci,ci
+1935-01-31T19:29:37.170Z,31.8,-116.3006667,6,3.63,ml,4,345,1.333,0.31,ci,ci3362726,2016-01-27T18:53:08.050Z,"27km ENE of Maneadero, B.C., MX",earthquake,7.08,31.61,0.184,9,reviewed,ci,ci
+1935-02-17T11:47:28.730Z,31.6611667,-115.2743333,6,3.61,ml,4,343,2.062,0.38,ci,ci3362749,2016-01-27T18:53:09.420Z,"64km S of Alberto Oviedo Mota, B.C., MX",earthquake,7.27,31.61,0.1,9,reviewed,ci,ci
+1935-02-24T01:44:57.990Z,31.784,-114.801,6,5.65,ml,4,342,2.339,0.48,ci,ci3362764,2020-07-09T21:39:41.092Z,"49km SSE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.172,11,reviewed,ci,ci
+1935-02-24T01:51:42.560Z,31.75,-114.8,6,4.26,ml,3,355,3.115,3.34,ci,ci3362762,2016-01-27T18:44:36.150Z,"53km SSE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.151,12,reviewed,ci,ci
+1935-02-24T02:10:17.310Z,31.9638333,-115.877,6,3.91,ml,4,339,1.47,0.83,ci,ci3362766,2016-01-27T18:35:55.960Z,"71km ENE of Maneadero, B.C., MX",earthquake,12.55,31.61,0.118,12,reviewed,ci,ci
+1935-02-24T03:18:32.880Z,31.75,-114.8,6,3.97,ml,3,355,3.115,0.57,ci,ci3362767,2016-01-27T18:27:31.700Z,"53km SSE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.076,10,reviewed,ci,ci
+1935-02-24T03:36:23.260Z,31.75,-114.8,6,3.85,ml,3,355,3.115,3.33,ci,ci3362768,2016-01-27T18:40:12.470Z,"53km SSE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.192,8,reviewed,ci,ci
+1935-02-24T04:54:21.990Z,32.2901667,-115.0378333,6,3.5,ml,3,355,2.594,0.72,ci,ci3362770,2016-04-02T06:34:03.078Z,"6km E of Guadalupe Victoria, B.C., MX",earthquake,36.94,31.61,,8,reviewed,ci,ci
+1935-02-24T08:19:40.110Z,31.9955,-114.5363333,6,4.36,ml,3,341,2.456,0.21,ci,ci3362774,2016-01-27T18:35:56.430Z,"49km ESE of Estacion Coahuila, B.C., MX",earthquake,4.04,31.61,0.16,12,reviewed,ci,ci
+1935-02-24T14:19:13.520Z,32.3773333,-114.9793333,6,3.96,ml,3,355,2.576,0.29,ci,ci3362779,2016-01-27T18:31:48.660Z,"16km NE of Guadalupe Victoria, B.C., MX",earthquake,16.46,31.61,0.411,13,reviewed,ci,ci
+1935-02-24T19:32:06.360Z,31.8216667,-115.9821667,6,3.68,ml,2,343,1.496,0.61,ci,ci3362782,2016-01-27T18:40:12.940Z,"56km ENE of Maneadero, B.C., MX",earthquake,11.36,31.61,0.148,9,reviewed,ci,ci
+1935-02-24T21:33:54.150Z,31.6776667,-115.9838333,6,4.02,ml,3,345,1.599,0.27,ci,ci3362783,2016-01-27T18:48:53.670Z,"55km E of Maneadero, B.C., MX",earthquake,5.76,31.61,0.123,10,reviewed,ci,ci
+1935-02-24T21:50:53.640Z,32.7011667,-114.8895,6,3.55,ml,3,356,2.448,0.63,ci,ci3362784,2016-01-27T18:44:36.610Z,"15km W of Los Algodones, B.C., MX",earthquake,47.66,31.61,0.227,9,reviewed,ci,ci
+1935-02-25T16:58:53.180Z,31.6455,-115.9591667,6,3.96,ml,2,345,1.637,0.49,ci,ci3362788,2016-01-27T18:57:47.580Z,"58km E of Maneadero, B.C., MX",earthquake,9.45,31.61,0.137,10,reviewed,ci,ci
+1935-02-26T17:35:32.170Z,31.5006667,-116.1733333,6,4.18,ml,3,348,1.639,0.29,ci,ci3362794,2016-01-27T18:53:10.790Z,"44km ESE of Maneadero, B.C., MX",earthquake,7.5,31.61,0.109,12,reviewed,ci,ci
+1935-02-27T00:00:55.930Z,31.5671667,-115.9625,6,4.08,ml,2,346,1.694,0.12,ci,ci3362796,2016-01-27T18:35:57.370Z,"60km ESE of Maneadero, B.C., MX",earthquake,4.2,31.61,0.101,12,reviewed,ci,ci
+1935-02-27T04:45:23.630Z,31.7596667,-115.9895,6,3.87,ml,2,344,1.536,0.3,ci,ci3362797,2016-01-27T18:27:32.080Z,"55km E of Maneadero, B.C., MX",earthquake,6.29,31.61,0.184,12,reviewed,ci,ci
+1935-03-01T04:21:13.210Z,31.9576667,-115.6925,6,4.09,ml,4,339,1.6,0.67,ci,ci3362800,2016-01-27T18:27:32.930Z,"58km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,10.19,31.61,0.138,10,reviewed,ci,ci
+1935-03-01T23:10:16.590Z,31.7836667,-115.9836667,6,4.13,ml,3,343,1.522,0.28,ci,ci3362802,2016-01-27T18:35:58.290Z,"56km E of Maneadero, B.C., MX",earthquake,5.66,31.61,0.126,11,reviewed,ci,ci
+1935-03-07T19:11:21.140Z,31.6638333,-116.2608333,6,3.91,ml,2,347,1.462,0.3,ci,ci3362827,2016-01-27T18:48:55.110Z,"30km ESE of Maneadero, B.C., MX",earthquake,7.82,31.61,0.121,12,reviewed,ci,ci
+1935-03-09T00:40:29.980Z,31.8126667,-114.708,6,3.64,ml,2,342,2.396,2.15,ci,ci3362831,2016-01-27T18:27:33.920Z,"51km SSE of Estacion Coahuila, B.C., MX",earthquake,27.85,31.61,0.183,7,reviewed,ci,ci
+1935-03-11T13:23:01.760Z,30.626,-116.9595,6,3.64,ml,2,359,2.245,0.64,ci,ci3362835,2016-01-27T18:48:56.030Z,"127km SSW of Maneadero, B.C., MX",earthquake,52.6,31.61,0.16,7,reviewed,ci,ci
+1935-03-22T03:29:14.070Z,32.1121667,-115.5273333,6,3.56,ml,2,342,1.64,0.14,ci,ci3362854,2016-01-27T18:57:50.320Z,"36km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,3.57,31.61,0.033,6,reviewed,ci,ci
+1935-04-05T23:40:57.800Z,30.3866667,-116.492,6,3.57,mh,2,357,2.553,0.71,ci,ci10084382,2016-01-27T18:42:55.500Z,"148km S of Maneadero, B.C., MX",earthquake,47.47,31.61,0.19,4,reviewed,ci,ci
+1935-04-06T16:41:06.480Z,31.8771667,-115.9218333,6,3.86,ml,2,341,1.496,0.74,ci,ci3362876,2016-01-27T18:53:16.760Z,"64km ENE of Maneadero, B.C., MX",earthquake,9.35,31.61,0.151,9,reviewed,ci,ci
+1935-04-20T22:21:02.870Z,32.1788333,-114.8983333,6,3.9,ml,2,338,2.104,0.2,ci,ci3362901,2016-01-27T18:27:38.590Z,"10km E of Estacion Coahuila, B.C., MX",earthquake,3.61,31.61,0.084,11,reviewed,ci,ci
+1935-04-21T05:31:12.550Z,32.1335,-115.5475,6,4.32,ml,3,337,1.615,0.7,ci,ci3362902,2016-01-27T18:53:18.580Z,"37km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,20.62,31.61,0.145,13,reviewed,ci,ci
+1935-04-21T05:35:16.400Z,31.768,-115.9731667,6,4.14,ml,3,343,1.539,0.35,ci,ci3362903,2016-01-27T18:57:53.210Z,"56km E of Maneadero, B.C., MX",earthquake,6.86,31.61,0.056,11,reviewed,ci,ci
+1935-04-21T05:48:51.130Z,31.6853333,-116.0793333,6,3.79,ml,3,346,1.54,0.53,ci,ci3362904,2016-01-27T18:31:54.820Z,"46km E of Maneadero, B.C., MX",earthquake,11.62,31.61,0.055,11,reviewed,ci,ci
+1935-04-21T06:03:53.160Z,31.7426667,-115.8966667,6,3.56,ml,2,343,1.603,0.1,ci,ci3362905,2016-01-27T18:31:55.310Z,"63km E of Maneadero, B.C., MX",earthquake,3.25,31.61,0.207,9,reviewed,ci,ci
+1935-04-24T18:51:44.780Z,15.106,-93.268,35,5.87,mw,,,,,iscgem,iscgem904250,2022-04-25T21:32:42.266Z,"39 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,,21.2,0.35,,reviewed,iscgem,iscgem
+1935-04-28T11:25:57.730Z,31.7121667,-115.9846667,6,3.56,ml,2,344,1.573,0.14,ci,ci3362922,2016-01-27T18:27:39.580Z,"55km E of Maneadero, B.C., MX",earthquake,3.98,31.61,0.149,10,reviewed,ci,ci
+1935-04-29T20:08:09.270Z,31.5938333,-116.4621667,6,5.06,ml,4,349,1.433,0.17,ci,ci3362926,2016-01-27T18:53:20.590Z,"17km SE of Maneadero, B.C., MX",earthquake,9.87,31.61,0.077,9,reviewed,ci,ci
+1935-04-29T21:49:25.540Z,31.6945,-116.507,6,3.76,ml,3,348,1.326,0.35,ci,ci3362931,2016-01-27T18:53:21.050Z,"6km ESE of Maneadero, B.C., MX",earthquake,16.23,31.61,0.147,8,reviewed,ci,ci
+1935-05-01T00:07:24.760Z,31.5503333,-116.6551667,6,4.18,ml,3,348,1.404,0.42,ci,ci3362938,2016-01-27T18:31:56.720Z,"20km SSW of Maneadero, B.C., MX",earthquake,13.41,31.61,0.136,10,reviewed,ci,ci
+1935-05-01T03:52:59.240Z,31.4586667,-116.8791667,6,3.51,ml,2,357,1.436,0.12,ci,ci3362939,2016-01-27T18:36:06.160Z,"41km SW of Maneadero, B.C., MX",earthquake,12.32,31.61,0.177,8,reviewed,ci,ci
+1935-05-01T06:54:55.260Z,31.6703333,-116.4856667,6,3.57,ml,2,349,1.356,0.29,ci,ci3362941,2016-01-27T18:57:56.650Z,"9km SE of Maneadero, B.C., MX",earthquake,8.62,31.61,0.151,8,reviewed,ci,ci
+1935-05-01T18:23:55.100Z,31.5356667,-116.6898333,6,3.63,ml,3,348,1.408,0.59,ci,ci3362943,2016-01-27T18:40:21.010Z,"23km SSW of Maneadero, B.C., MX",earthquake,21.2,31.61,0.11,9,reviewed,ci,ci
+1935-05-01T18:25:50.340Z,31.7048333,-116.5736667,6,4.05,ml,3,348,1.291,0.51,ci,ci3362944,2016-01-27T18:44:42.150Z,"2km SSW of Maneadero, B.C., MX",earthquake,13.77,31.61,0.081,8,reviewed,ci,ci
+1935-06-20T07:24:02.850Z,31.6756667,-116.044,6,3.75,ml,2,345,1.566,0.17,ci,ci3363043,2016-01-27T18:44:49.490Z,"50km E of Maneadero, B.C., MX",earthquake,4.16,31.61,0.094,12,reviewed,ci,ci
+1935-06-22T17:25:43.260Z,32.595,-117.9405,6,3.52,ml,4,289,0.6374,0.18,ci,ci3363048,2016-01-27T18:36:14.220Z,"45km ESE of San Clemente Is. (SE tip), CA",earthquake,5.09,31.61,0.179,13,reviewed,ci,ci
+1935-06-29T06:48:57.570Z,18.518,-103.786,25,6.85,mw,,,,,iscgem,iscgem904365,2022-04-25T21:33:52.798Z,"20 km W of La Placita de Morelos, Mexico",earthquake,,17.8,0.2,,reviewed,iscgem,iscgem
+1935-07-21T00:46:17.480Z,31.469,-115.4421667,6,3.66,ml,3,345,2.072,0.41,ci,ci3363087,2016-01-27T18:32:06.310Z,"88km SSW of Alberto Oviedo Mota, B.C., MX",earthquake,8.9,31.61,0.148,8,reviewed,ci,ci
+1935-07-23T19:11:11.880Z,32.682,-115.1155,6,3.95,ml,2,331,1.811,0.6,ci,ci3363097,2016-01-27T18:32:06.790Z,"18km NW of Tecolots, B.C., MX",earthquake,6.75,31.61,0.168,8,reviewed,ci,ci
+1935-08-04T02:24:20.940Z,16.29,-97.961,25,5.79,mw,,,,,iscgem,iscgem904451,2022-04-25T21:35:22.594Z,"5 km WSW of Santa María Huazolotitlán, Mexico",earthquake,,8.3,0.2,,reviewed,iscgem,iscgem
+1935-08-31T09:19:48.310Z,31.7188333,-115.9138333,6,3.57,ml,2,344,1.61,0.5,ci,ci3363150,2016-01-27T18:32:10.890Z,"62km E of Maneadero, B.C., MX",earthquake,9.15,31.61,0.119,8,reviewed,ci,ci
+1935-09-08T14:40:02.300Z,32.659,-115.2458333,6,4.52,ml,4,330,1.704,0.67,ci,ci3363165,2018-06-04T20:43:44.000Z,"15km NE of Puebla, B.C., MX",earthquake,6.04,31.61,0.148,11,reviewed,ci,ci
+1935-09-08T17:03:45.750Z,32.6076667,-115.4303333,6,4.58,ml,4,329,1.558,0.33,ci,ci3363166,2019-05-02T20:46:30.183Z,"6km SE of Mexicali, B.C., MX",earthquake,3.36,31.61,0.163,12,reviewed,ci,ci
+1935-09-08T18:51:11.540Z,32.6841667,-115.2128333,6,3.56,ml,2,330,1.729,0.52,ci,ci3363167,2016-01-27T18:53:36.090Z,"19km NE of Puebla, B.C., MX",earthquake,5.88,31.61,0.193,10,reviewed,ci,ci
+1935-09-10T08:07:55.640Z,32.7221667,-115.2326667,6,3.55,ml,2,330,1.708,0.42,ci,ci3363172,2016-01-27T18:27:54.480Z,"17km SE of Holtville, CA",earthquake,4.83,31.61,0.162,10,reviewed,ci,ci
+1935-09-11T14:08:36.140Z,32.5538333,-115.4856667,6,3.56,ml,2,330,1.523,0.75,ci,ci3363182,2016-01-27T18:53:37.790Z,"10km ESE of Progreso, B.C., MX",earthquake,8.38,31.61,0.095,10,reviewed,ci,ci
+1935-10-29T10:17:26.410Z,31.7313333,-117.5865,6,5.03,ml,5,336,1.163,0.14,ci,ci3363275,2016-01-27T18:32:15.840Z,"83km SW of Primo Tapia, B.C., MX",earthquake,4.65,31.61,0.151,11,reviewed,ci,ci
+1935-11-16T19:55:34.070Z,32.014,-116.034,6,3.83,ml,3,350,2.273,2.96,ci,ci3363308,2016-01-27T18:40:41.990Z,"58km ENE of Ensenada, B.C., MX",earthquake,99,31.61,0.168,14,reviewed,ci,ci
+1935-12-14T22:05:26.220Z,14.688,-92.438,35,7.31,mw,,,,,iscgem,iscgem904696,2022-05-09T22:49:03.745Z,"4 km SSW of Puerto Madero, Mexico",earthquake,,16.6,0.31,,reviewed,iscgem,iscgem
+1935-12-20T07:45:31.860Z,32.8111667,-115.2965,6,5.27,ml,5,301,1.649,0.21,ci,ci3363356,2019-05-02T20:46:32.275Z,"8km E of Holtville, CA",earthquake,2.51,31.61,0.158,11,reviewed,ci,ci
+1935-12-20T08:05:13.000Z,31.941,-115.204,6,3.69,ml,3,340,1.963,41.97,ci,ci3363362,2016-01-27T18:58:21.860Z,"32km S of Alberto Oviedo Mota, B.C., MX",earthquake,99,31.61,0.126,8,reviewed,ci,ci
+1935-12-20T11:18:46.760Z,31.2878333,-115.3645,6,3.82,ml,3,346,2.245,0.87,ci,ci3363366,2016-01-27T18:28:05.650Z,"106km S of Alberto Oviedo Mota, B.C., MX",earthquake,66.85,31.61,0.064,8,reviewed,ci,ci
+1935-12-21T11:51:11.240Z,14.25,-92.921,35,6,mw,,,,,iscgem,iscgem904715,2022-04-25T21:40:17.803Z,"74 km SW of Puerto Madero, Mexico",earthquake,,19.4,0.2,,reviewed,iscgem,iscgem
+1935-12-29T13:15:48.210Z,32.1363333,-115.5895,6,3.6,ml,3,336,1.582,0.91,ci,ci3363379,2016-01-27T18:40:44.730Z,"41km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,6.61,31.61,0.097,10,reviewed,ci,ci
+1936-01-02T03:54:49.210Z,32.7363333,-115.1163333,6,4.15,ml,4,330,1.805,0.19,ci,ci3363395,2016-01-27T18:48:16.250Z,"23km NNW of Tecolots, B.C., MX",earthquake,5.11,31.61,0.097,13,reviewed,ci,ci
+1936-01-02T04:05:17.050Z,32.7,-115,6,3.62,ml,4,332,1.906,1.47,ci,ci3363396,2016-01-27T18:35:23.290Z,"15km N of Tecolots, B.C., MX",earthquake,99,31.61,0.178,11,reviewed,ci,ci
+1936-01-02T22:36:10.180Z,32.7,-115,6,3.61,ml,2,332,1.906,4.69,ci,ci3363400,2016-01-27T18:52:39.250Z,"15km N of Tecolots, B.C., MX",earthquake,99,31.61,0.256,10,reviewed,ci,ci
+1936-01-03T14:07:31.240Z,32.8118333,-115.0685,6,4.03,ml,2,330,1.841,0.12,ci,ci3363402,2016-01-27T18:31:15.490Z,"28km NNW of Tecolots, B.C., MX",earthquake,2.13,31.61,0.174,12,reviewed,ci,ci
+1936-01-30T14:06:09.220Z,32.9688333,-115.1671667,6,3.77,ml,3,328,1.759,1.91,ci,ci3363431,2016-01-27T18:39:35.800Z,"26km NE of Holtville, CA",earthquake,32.79,31.61,0.159,12,reviewed,ci,ci
+1936-01-30T17:13:53.260Z,32.8421667,-114.8195,6,3.79,ml,2,333,2.049,0.85,ci,ci3363432,2016-04-02T13:49:44.267Z,"18km NNW of Los Algodones, B.C., MX",earthquake,10.08,31.61,0.137,12,reviewed,ci,ci
+1936-04-07T22:14:09.950Z,32.593,-115.1201667,6,3.87,ml,3,332,1.819,0.36,ci,ci3363528,2016-01-27T18:35:30.770Z,"13km WNW of Tecolots, B.C., MX",earthquake,9.77,31.61,0.134,12,reviewed,ci,ci
+1936-04-07T22:53:30.960Z,32.5,-115.05,6,4.68,ml,4,333,1.894,1.51,ci,ci3363529,2019-05-02T20:46:32.902Z,"10km SW of Tecolots, B.C., MX",earthquake,99,31.61,0.106,13,reviewed,ci,ci
+1936-04-07T23:26:53.950Z,32.4903333,-115.2381667,6,3.61,ml,3,332,1.74,0.94,ci,ci3363532,2016-01-27T18:35:31.690Z,"14km SE of Puebla, B.C., MX",earthquake,15.77,31.61,0.147,12,reviewed,ci,ci
+1936-04-08T00:38:50.330Z,31.5586667,-115.2875,6,3.77,ml,3,349,2.115,1.21,ci,ci3363533,2016-01-27T18:35:32.150Z,"75km S of Alberto Oviedo Mota, B.C., MX",earthquake,32.98,31.61,0.055,9,reviewed,ci,ci
+1936-04-08T18:41:14.250Z,32.5226667,-115.1036667,6,4.29,ml,3,333,1.845,0.23,ci,ci3363535,2016-01-27T18:52:43.870Z,"12km WSW of Tecolots, B.C., MX",earthquake,4.39,31.61,0.095,14,reviewed,ci,ci
+1936-04-14T13:49:57.550Z,32.4056667,-115.0056667,6,3.64,ml,3,335,1.951,1.71,ci,ci3363547,2016-01-27T18:39:40.440Z,"14km SSW of Hermosillo, B.C., MX",earthquake,30.58,31.61,0.187,12,reviewed,ci,ci
+1936-04-18T05:36:33.340Z,32.5941667,-115.109,6,4.08,ml,3,333,1.828,0.6,ci,ci3363555,2016-01-27T18:35:33.520Z,"12km WNW of Tecolots, B.C., MX",earthquake,12.47,31.61,0.192,13,reviewed,ci,ci
+1936-04-29T08:50:31.480Z,31.1676667,-116.0495,6,4.66,ml,5,346,1.976,0.18,ci,ci3363579,2016-01-27T18:44:09.730Z,"78km SE of Maneadero, B.C., MX",earthquake,14.98,31.61,0.073,11,reviewed,ci,ci
+1936-07-12T09:08:27.270Z,31.2748333,-116.0928333,6,3.67,ml,2,350,1.866,0.2,ci,ci3363708,2016-01-27T18:44:14.110Z,"67km SE of Maneadero, B.C., MX",earthquake,7.34,31.61,0.231,7,reviewed,ci,ci
+1936-07-31T17:41:12.580Z,23.821,-110.2,15,6.12,mw,,,,,iscgem,iscgem903763,2022-04-25T21:25:26.762Z,"28 km NE of Melitón Albáñez Domínguez, Mexico",earthquake,,25,0.26,,reviewed,iscgem,iscgem
+1936-08-18T07:07:15.310Z,18.5,-104.825,15,5.86,mw,,,,,iscgem,iscgem903791,2022-04-25T21:26:11.735Z,"79 km S of Barra de Navidad, Mexico",earthquake,,19.5,0.2,,reviewed,iscgem,iscgem
+1936-08-30T08:16:00.420Z,32.9758333,-116.4013333,6,3.62,ml,4,300,0.726,0.45,ci,ci3363767,2016-01-27T18:27:10.350Z,"21km NE of Pine Valley, CA",earthquake,4.08,31.61,0.139,13,reviewed,ci,ci
+1936-09-18T14:27:11.780Z,32.7653333,-115.6726667,6,3.89,ml,3,328,1.335,0.12,ci,ci3363821,2016-01-27T18:39:54.650Z,"11km WSW of El Centro, CA",earthquake,1.59,31.61,0.106,13,reviewed,ci,ci
+1936-09-18T14:40:28.120Z,32.801,-115.438,6,3.97,ml,3,329,1.53,0.32,ci,ci3363824,2018-06-04T20:43:44.000Z,"6km WSW of Holtville, CA",earthquake,3.32,31.61,0.066,13,reviewed,ci,ci
+1936-09-18T15:47:31.500Z,32.8308333,-115.5023333,6,3.7,ml,3,328,1.475,0.52,ci,ci3363827,2016-01-27T18:31:35.600Z,"6km ESE of Imperial, CA",earthquake,5.09,31.61,0.141,11,reviewed,ci,ci
+1936-09-18T16:51:16.100Z,32.7295,-115.6365,6,3.69,ml,3,329,1.369,0.64,ci,ci3363828,2016-01-27T18:44:22.050Z,"10km SW of El Centro, CA",earthquake,5.88,31.61,0.099,13,reviewed,ci,ci
+1936-10-12T13:56:31.160Z,32.991,-115.8665,6,4.02,ml,2,316,1.174,0.18,ci,ci3363894,2016-01-27T18:40:01.030Z,"23km WSW of Westmorland, CA",earthquake,2.59,31.61,0.068,13,reviewed,ci,ci
+1936-10-12T17:07:49.010Z,32.962,-115.8285,6,4.13,ml,2,317,1.203,0.05,ci,ci3363896,2016-01-27T18:52:55.930Z,"21km WSW of Westmorland, CA",earthquake,1.73,31.61,0.106,13,reviewed,ci,ci
+1936-12-05T02:05:28.550Z,32.2591667,-115.6636667,6,3.54,ml,4,334,1.472,0.66,ci,ci3364024,2016-01-27T18:53:01.920Z,"36km SSW of Progreso, B.C., MX",earthquake,6.84,31.61,0.153,10,reviewed,ci,ci
+1936-12-25T08:31:44.880Z,32.2413333,-114.9131667,6,4.01,ml,3,338,2.072,0.31,ci,ci3364055,2016-01-27T18:27:25.260Z,"10km ENE of Estacion Coahuila, B.C., MX",earthquake,4.77,31.61,0.206,9,reviewed,ci,ci
+1936-12-25T20:04:10.220Z,18.215,-105.288,15,6.11,mw,,,,,iscgem,iscgem903999,2022-04-25T21:30:45.649Z,"127 km SSW of Barra de Navidad, Mexico",earthquake,,21.6,0.2,,reviewed,iscgem,iscgem
+1937-01-08T12:46:26.280Z,31.766,-116.575,6,4.17,ml,3,347,1.236,0.42,ci,ci3364064,2016-01-27T18:35:00.040Z,"6km N of Maneadero, B.C., MX",earthquake,9.3,31.61,0.073,7,reviewed,ci,ci
+1937-01-08T16:23:45.140Z,31.7686667,-116.6636667,6,3.69,ml,3,347,1.201,0.34,ci,ci3364066,2016-01-27T18:43:34.090Z,"11km WNW of Maneadero, B.C., MX",earthquake,7.69,31.61,0.108,6,reviewed,ci,ci
+1937-02-27T01:29:17.570Z,31.7801667,-116.5991667,6,4.9,ml,5,346,1.214,0.45,ci,ci3364128,2016-01-27T18:52:16.960Z,"8km NNW of Maneadero, B.C., MX",earthquake,8.36,31.61,0.083,12,reviewed,ci,ci
+1937-03-01T10:36:09.990Z,31.7853333,-116.5348333,6,3.65,ml,4,348,1.235,0.41,ci,ci3364134,2016-01-27T18:26:36.270Z,"8km NNE of Maneadero, B.C., MX",earthquake,9.4,31.61,0.191,10,reviewed,ci,ci
+1937-06-13T23:23:56.150Z,16.02,-98.318,15,5.86,mw,,,,,iscgem,iscgem903113,2022-04-25T21:07:51.495Z,"27 km SSW of Corralero, Mexico",earthquake,,7.7,0.25,,reviewed,iscgem,iscgem
+1937-07-11T17:19:32.340Z,20.681,-108.462,15,6.16,mw,,,,,iscgem,iscgem903157,2022-04-25T21:09:30.854Z,"287 km SSE of Cabo San Lucas, Mexico",earthquake,,25,0.25,,reviewed,iscgem,iscgem
+1937-07-26T07:39:34.420Z,32.5873333,-115.7648333,6,3.57,ml,3,326,1.285,0.48,ci,ci3364328,2016-01-27T18:48:05.150Z,"17km W of Progreso, B.C., MX",earthquake,5.53,31.61,0.237,10,reviewed,ci,ci
+1937-08-10T22:39:06.310Z,32.9115,-116.805,6,3.56,ml,4,286,0.3809,0.2,ci,ci3364343,2016-01-27T18:48:07.890Z,"9km NNW of Alpine, CA",earthquake,2.3,31.61,0.139,13,reviewed,ci,ci
+1937-09-02T12:21:33.090Z,32.1623333,-114.9058333,6,3.58,ml,2,338,2.104,0.68,ci,ci3364385,2016-01-27T18:48:10.660Z,"10km ESE of Estacion Coahuila, B.C., MX",earthquake,9.13,31.61,0.229,8,reviewed,ci,ci
+1937-09-15T23:48:53.320Z,14.594,-91.273,15,6.43,mw,,,,,iscgem,iscgem903252,2022-04-25T21:16:42.351Z,"6 km SW of Santiago Atitlán, Guatemala",earthquake,,23.1,0.23,,reviewed,iscgem,iscgem
+1937-09-20T07:03:51.330Z,18.572,-105.445,15,6.01,mw,,,,,iscgem,iscgem903256,2022-04-25T21:16:45.615Z,"103 km SSW of Emiliano Zapata, Mexico",earthquake,,7.7,0.2,,reviewed,iscgem,iscgem
+1937-10-05T06:21:24.160Z,22.973,-108.663,10,6.44,mw,,,,,iscgem,iscgem903291,2022-04-25T21:17:14.300Z,"103 km E of La Playa, Mexico",earthquake,,25,0.53,,reviewed,iscgem,iscgem
+1937-10-06T09:47:18.610Z,18.456,-99.082,35,6.13,mw,,,,,iscgem,iscgem903293,2022-04-25T21:17:19.413Z,"8 km S of Valle de Vázquez, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1937-12-08T00:51:40.920Z,30.859,-117.0111667,6,3.77,ml,2,360,2.009,0.29,ci,ci3364482,2016-01-27T18:52:36.950Z,"104km SSW of Maneadero, B.C., MX",earthquake,27.18,31.61,0.005,7,reviewed,ci,ci
+1937-12-15T09:58:41.840Z,32.8871667,-115.7196667,6,4.16,ml,2,320,1.291,0.45,ci,ci3364488,2016-01-27T18:31:14.090Z,"15km WNW of Imperial, CA",earthquake,5.2,31.61,0.123,12,reviewed,ci,ci
+1937-12-22T03:37:21.020Z,17.57,-106.144,15,6.4,mw,,,,,iscgem,iscgem903399,2022-04-25T21:19:02.795Z,"236 km SSW of Emiliano Zapata, Mexico",earthquake,,25,0.26,,reviewed,iscgem,iscgem
+1937-12-23T13:18:03.460Z,16.656,-98.338,25,7.4,mw,,,,,iscgem,iscgem903401,2022-04-25T21:19:03.992Z,"3 km W of Huixtepec, Mexico",earthquake,,9.3,0.3,,reviewed,iscgem,iscgem
+1937-12-28T19:42:58.910Z,32.4565,-115.14,6,3.56,ml,3,355,2.421,0.6,ci,ci3364502,2016-01-27T18:52:38.340Z,"12km NNE of Delta, B.C., MX",earthquake,43.33,31.61,0.16,8,reviewed,ci,ci
+1937-12-31T17:41:28.990Z,16.274,-98.094,25,6.12,mw,,,,,iscgem,iscgem903417,2022-04-25T21:19:15.369Z,"7 km WNW of El Carrizo, Mexico",earthquake,,8.3,0.38,,reviewed,iscgem,iscgem
+1938-01-01T11:25:21.800Z,15.766,-98.347,15,5.82,mw,,,,,iscgem,iscgem902311,2022-04-25T20:51:44.866Z,"54 km SSW of Corralero, Mexico",earthquake,,7.7,0.43,,reviewed,iscgem,iscgem
+1938-01-02T22:27:23.380Z,16.207,-98.469,25,6.46,mw,,,,,iscgem,iscgem902317,2022-04-25T20:51:53.314Z,"14 km S of Santiago Tepextla, Mexico",earthquake,,7.7,0.39,,reviewed,iscgem,iscgem
+1938-04-12T16:24:33.210Z,32.5603333,-115.0473333,6,4.81,ml,3,333,1.885,0.5,ci,ci3364581,2016-01-27T18:30:42.010Z,"6km W of Tecolots, B.C., MX",earthquake,6.04,31.61,0.12,9,reviewed,ci,ci
+1938-04-12T18:27:28.090Z,32.5,-115,6,3.6,mh,3,355,2.486,5.24,ci,ci3364582,2016-01-27T18:47:43.340Z,"7km W of Hermosillo, B.C., MX",earthquake,99,31.61,0.053,7,reviewed,ci,ci
+1938-04-13T18:57:44.800Z,32.6356667,-115.2701667,6,3.72,ml,2,330,1.687,0.97,ci,ci3364584,2016-01-27T18:52:00.260Z,"11km NE of Puebla, B.C., MX",earthquake,10.63,31.61,0.206,7,reviewed,ci,ci
+1938-04-13T19:29:44.570Z,32.48,-115.2715,6,4.84,ml,3,332,1.715,0.35,ci,ci3364585,2019-05-02T20:46:34.240Z,"12km SE of Puebla, B.C., MX",earthquake,3.73,31.61,0.082,8,reviewed,ci,ci
+1938-04-17T03:47:18.360Z,32.469,-115.2603333,6,4.05,ml,3,332,1.727,0.52,ci,ci10084386,2016-01-27T18:56:38.120Z,"14km SE of Puebla, B.C., MX",earthquake,6.07,31.61,0.086,8,reviewed,ci,ci
+1938-05-03T02:15:26.330Z,18.327,-99.108,35,5.95,mw,,,,,iscgem,iscgem902470,2022-04-25T20:54:01.844Z,"3 km NNE of Chaucingo, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1938-05-11T14:44:51.160Z,16.698,-101.213,20,6.45,mw,,,,,iscgem,iscgem902480,2022-04-25T20:54:07.723Z,"71 km SSW of Papanoa, Mexico",earthquake,,13.8,0.45,,reviewed,iscgem,iscgem
+1938-05-28T13:29:33.680Z,32.5971667,-115.0305,6,3.61,ml,2,333,1.893,1,ci,ci3364625,2016-01-27T18:34:45.820Z,"6km NW of Tecolots, B.C., MX",earthquake,11.05,31.61,0.12,10,reviewed,ci,ci
+1938-06-03T14:02:23.660Z,32.5251667,-115.1551667,6,3.81,ml,2,333,1.802,0.8,ci,ci3364637,2016-01-27T18:30:44.340Z,"17km WSW of Tecolots, B.C., MX",earthquake,9.58,31.61,0.184,14,reviewed,ci,ci
+1938-06-03T14:14:19.170Z,32.1381667,-115.2833333,6,3.66,ml,2,337,1.816,0.66,ci,ci3364638,2016-01-27T18:34:46.950Z,"15km SW of Alberto Oviedo Mota, B.C., MX",earthquake,4.1,31.61,0.089,12,reviewed,ci,ci
+1938-06-03T14:38:33.080Z,32.2446667,-115.1655,6,4.19,ml,2,336,1.869,0.77,ci,ci3364635,2016-01-27T18:39:08.290Z,"2km NNE of Alberto Oviedo Mota, B.C., MX",earthquake,4.15,31.61,0.156,11,reviewed,ci,ci
+1938-06-03T15:22:46.190Z,32.2618333,-115.2511667,6,3.51,ml,3,336,1.795,0.74,ci,ci3364639,2016-01-27T18:34:47.340Z,"9km WNW of Alberto Oviedo Mota, B.C., MX",earthquake,5.91,31.61,0.072,8,reviewed,ci,ci
+1938-06-06T02:42:41.930Z,32.2728333,-115.1911667,6,4.92,ml,4,336,1.839,0.28,ci,ci3364641,2019-05-02T20:46:34.963Z,"5km NNW of Alberto Oviedo Mota, B.C., MX",earthquake,4.94,31.61,0.118,13,reviewed,ci,ci
+1938-06-06T12:35:11.720Z,32.2635,-115.1055,6,4.38,ml,3,336,1.91,0.21,ci,ci3364644,2016-01-27T18:43:21.410Z,"3km S of Guadalupe Victoria, B.C., MX",earthquake,3.39,31.61,0.181,11,reviewed,ci,ci
+1938-06-10T18:06:06.240Z,16.399,-97.963,25,5.91,mw,,,,,iscgem,iscgem902527,2022-04-25T20:55:06.036Z,"3 km SSE of Pinotepa de Don Luis, Mexico",earthquake,,8.3,0.2,,reviewed,iscgem,iscgem
+1938-06-28T19:17:46.430Z,18.41,-100.138,35,6.12,mw,,,,,iscgem,iscgem902554,2022-04-25T20:55:33.071Z,"7 km W of Acapetlahuaya, Mexico",earthquake,,10.1,0.24,,reviewed,iscgem,iscgem
+1938-07-04T21:59:46.880Z,32.9746667,-116.112,6,3.9,ml,4,309,0.967,0.56,ci,ci3364685,2016-01-27T18:52:06.220Z,"19km S of Ocotillo Wells, CA",earthquake,5.86,31.61,0.061,14,reviewed,ci,ci
+1938-07-22T07:48:11.800Z,18.658,-107.164,20,6.56,mw,,,,,iscgem,iscgem902598,2022-04-25T20:56:14.761Z,"233 km SW of La Cruz de Loreto, Mexico",earthquake,,12.7,0.31,,reviewed,iscgem,iscgem
+1938-10-12T12:31:22.610Z,31.7806667,-116.6953333,6,3.89,ml,4,347,1.179,0.64,ci,ci3364779,2016-01-27T18:30:50.870Z,"12km SW of Ensenada, B.C., MX",earthquake,17.39,31.61,0.126,12,reviewed,ci,ci
+1938-12-10T03:12:38.000Z,32.9261667,-115.6298333,6,3.98,ml,2,321,1.368,0.67,ci,ci3364822,2016-01-27T18:43:32.140Z,"10km NNW of Imperial, CA",earthquake,7.54,31.61,0.108,14,reviewed,ci,ci
+1938-12-15T00:02:35.760Z,32.5708333,-116.0686667,6,3.62,ml,3,324,1.041,0.8,ci,ci3364829,2016-01-27T18:52:13.660Z,"20km SSW of Ocotillo, CA",earthquake,19.9,31.61,0.033,10,reviewed,ci,ci
+1939-01-22T04:51:46.240Z,31.212,-116.349,6,3.66,ml,3,350,2.906,1.58,ci,ci3364865,2016-01-27T18:56:14.490Z,"60km SSE of Maneadero, B.C., MX",earthquake,99,31.61,0.071,7,reviewed,ci,ci
+1939-01-22T04:59:11.850Z,31.402,-116.166,6,4.28,ml,3,350,2.778,0.61,ci,ci3364866,2016-01-27T18:25:58.090Z,"52km SE of Maneadero, B.C., MX",earthquake,99,31.61,0.085,9,reviewed,ci,ci
+1939-01-28T07:22:41.590Z,31.4036667,-116.1456667,6,3.81,ml,2,349,1.733,0.28,ci,ci3364874,2016-01-27T18:25:58.970Z,"53km SE of Maneadero, B.C., MX",earthquake,8.56,31.61,0.065,10,reviewed,ci,ci
+1939-01-31T16:16:26.210Z,32.8028333,-115.7375,6,3.51,ml,4,322,1.278,0.41,ci,ci3364877,2016-01-27T18:34:28.000Z,"16km WSW of Imperial, CA",earthquake,6.99,31.61,0.03,7,reviewed,ci,ci
+1939-02-22T10:30:20.130Z,32.5123333,-115.971,6,3.69,ml,2,327,1.137,0.51,ci,ci3364899,2016-01-27T18:51:42.250Z,"25km S of Ocotillo, CA",earthquake,4.39,31.61,0.063,12,reviewed,ci,ci
+1939-03-21T13:50:55.870Z,32.7945,-115.2556667,6,4.11,ml,2,328,1.684,0.29,ci,ci3364929,2016-01-27T18:26:02.610Z,"12km E of Holtville, CA",earthquake,3.63,31.61,0.051,13,reviewed,ci,ci
+1939-03-25T02:59:13.470Z,32.9463333,-115.3005,6,4,ml,2,326,1.646,0.24,ci,ci3364934,2016-01-27T18:30:18.080Z,"17km NNE of Holtville, CA",earthquake,3.17,31.61,0.077,12,reviewed,ci,ci
+1939-03-25T03:25:17.860Z,32.7658333,-115.376,6,3.69,ml,2,328,1.585,0.17,ci,ci3364935,2016-01-27T18:38:37.920Z,"5km S of Holtville, CA",earthquake,2.08,31.61,0.156,13,reviewed,ci,ci
+1939-03-25T13:54:36.080Z,32.8251667,-115.3128333,6,3.63,ml,3,327,1.635,0.24,ci,ci3364936,2016-01-27T18:51:46.880Z,"6km ENE of Holtville, CA",earthquake,2.59,31.61,0.084,12,reviewed,ci,ci
+1939-04-15T15:52:28.920Z,32.5408333,-115.7073333,6,3.51,ml,4,328,1.343,0.18,ci,ci3364959,2016-01-27T18:30:19.980Z,"12km WSW of Progreso, B.C., MX",earthquake,5.49,31.61,0.157,12,reviewed,ci,ci
+1939-04-19T07:41:00.000Z,32.583,-117.8,16,4.5,ml,,,,,ushis,ushis1244,2018-06-04T20:43:44.000Z,"57 km WSW of La Jolla, California",earthquake,,,,,reviewed,ushis,pas
+1939-04-19T07:42:10.580Z,32.5281667,-117.8636667,6,3.98,ml,4,296,0.6131,0.16,ci,ci3364963,2016-01-27T18:38:38.760Z,"56km SE of San Clemente Is. (SE tip), CA",earthquake,2.32,31.61,0.222,12,reviewed,ci,ci
+1939-05-01T20:22:27.690Z,31.8573333,-117.5806667,6,4.32,ml,4,333,1.041,0.1,ci,ci3364974,2016-01-27T18:30:21.420Z,"74km SW of Rosarito, B.C., MX",earthquake,4.75,31.61,0.173,14,reviewed,ci,ci
+1939-05-01T23:53:09.380Z,32.0263333,-117.6841667,6,4.99,ml,4,327,0.9104,0.16,ci,ci3364975,2016-01-27T18:30:21.890Z,"70km WSW of Rosarito, B.C., MX",earthquake,5.24,31.61,0.285,14,reviewed,ci,ci
+1939-05-01T23:57:56.090Z,32.2251667,-116.508,6,4.52,ml,4,338,0.8956,0.33,ci,ci3364976,2016-01-27T18:47:27.760Z,"38km E of Primo Tapia, B.C., MX",earthquake,10.79,31.61,0.153,13,reviewed,ci,ci
+1939-05-02T01:00:26.590Z,31.6476667,-117.0863333,6,3.81,ml,4,346,1.221,0.16,ci,ci3364977,2016-01-27T18:30:22.370Z,"47km SW of El Sauzal, B.C., MX",earthquake,4.3,31.61,0.2,12,reviewed,ci,ci
+1939-05-02T11:48:53.680Z,31.6058333,-116.5936667,6,3.68,ml,4,348,1.373,0.25,ci,ci3364979,2016-01-27T18:30:22.830Z,"13km SSW of Maneadero, B.C., MX",earthquake,6.71,31.61,0.236,10,reviewed,ci,ci
+1939-05-02T13:14:54.020Z,29.241,-113.513,10,7.19,mw,,,,,iscgem,iscgem901929,2022-05-09T22:49:07.501Z,"92 km NNE of San Luis, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1939-05-03T08:28:22.610Z,32.1703333,-116.5561667,6,4.2,ml,4,340,0.9085,0.17,ci,ci3364983,2016-01-27T18:26:04.960Z,"32km NNE of El Sauzal, B.C., MX",earthquake,6.43,31.61,0.176,14,reviewed,ci,ci
+1939-05-03T23:58:08.380Z,31.8268333,-117.377,6,4.69,ml,4,340,1.039,0.22,ci,ci3364985,2016-01-27T18:38:41.040Z,"62km SW of Primo Tapia, B.C., MX",earthquake,7.78,31.61,0.196,14,reviewed,ci,ci
+1939-05-04T03:00:41.210Z,31.8726667,-117.066,6,3.74,ml,2,357,1.001,0.25,ci,ci3364987,2016-01-27T18:56:20.710Z,"36km W of El Sauzal, B.C., MX",earthquake,21.62,31.61,0.143,14,reviewed,ci,ci
+1939-05-09T06:27:56.400Z,31.8511667,-117.1653333,6,3.94,ml,4,345,1.012,0.17,ci,ci3364996,2016-01-27T18:30:24.650Z,"46km W of El Sauzal, B.C., MX",earthquake,7.15,31.61,0.263,14,reviewed,ci,ci
+1939-06-23T20:47:55.660Z,31.9438333,-116.8416667,6,4.2,ml,3,349,0.9811,0.53,ci,ci3365034,2016-01-27T18:51:50.990Z,"16km WNW of El Sauzal, B.C., MX",earthquake,16.63,31.61,0.225,14,reviewed,ci,ci
+1939-06-24T16:27:29.380Z,32.062,-117.516,6,5.25,ml,6,308,0.8292,0.44,ci,ci3365037,2016-01-27T18:26:06.370Z,"54km WSW of Rosarito, B.C., MX",earthquake,28.99,31.61,0.172,12,reviewed,ci,ci
+1939-09-26T08:35:18.730Z,31.778,-115.729,6,3.81,ml,2,351,2.608,1.56,ci,ci3365107,2016-04-01T20:53:07.461Z,"73km SW of Alberto Oviedo Mota, B.C., MX",earthquake,99,31.61,,11,reviewed,ci,ci
+1939-09-29T21:14:10.520Z,30.7798333,-115.5931667,6,4.01,ml,3,357,2.513,0.28,ci,ci3365112,2016-01-27T18:56:26.500Z,"139km SE of Maneadero, B.C., MX",earthquake,23.02,31.61,0.149,6,reviewed,ci,ci
+1939-11-06T16:15:19.710Z,30.5968333,-116.2841667,6,4.16,ml,4,351,2.406,0.62,ci,ci10086934,2016-01-27T18:56:28.920Z,"127km SSE of Maneadero, B.C., MX",earthquake,33.61,31.61,0.192,9,reviewed,ci,ci
+1939-11-12T18:49:00.350Z,32.664,-115.924,6,3.92,ml,3,351,1.799,0.63,ci,ci3365148,2016-01-27T18:56:29.330Z,"10km SE of Ocotillo, CA",earthquake,99,31.61,0.127,13,reviewed,ci,ci
+1939-12-05T08:30:15.210Z,14.406,-91.804,45,6.82,mw,,,,,iscgem,iscgem902250,2022-04-25T20:25:36.472Z,"17 km NE of Champerico, Guatemala",earthquake,,11.8,0.31,,reviewed,iscgem,iscgem
+1939-12-14T12:17:12.050Z,31.3546667,-115.4788333,6,4.23,ml,4,346,2.129,0.64,ci,ci3365169,2016-01-27T18:43:11.000Z,"101km SSW of Alberto Oviedo Mota, B.C., MX",earthquake,24.31,31.61,0.227,12,reviewed,ci,ci
+1939-12-22T06:59:21.350Z,29.662,-114.025,15,6.04,mw,,,,,iscgem,iscgem902277,2022-04-25T20:25:37.814Z,"131 km WSW of La Libertad, Mexico",earthquake,,25,0.31,,reviewed,iscgem,iscgem

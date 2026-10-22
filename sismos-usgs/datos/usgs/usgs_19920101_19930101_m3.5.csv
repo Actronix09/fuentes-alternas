@@ -1,0 +1,204 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+1992-01-02T11:45:35.610Z,32.336,-103.101,5,4.6,mb,,,,0.8,us,usp000519d,2020-08-29T01:11:55.698Z,"12 km SSE of Eunice, New Mexico",earthquake,,,,8,reviewed,us,us
+1992-01-08T18:04:42.640Z,15.551,-95.233,21.9,5,mb,,,,1.1,us,usp00051jb,2014-11-07T00:49:53.905Z,"59 km SSE of El Carrizal, Mexico",earthquake,,,,32,reviewed,us,us
+1992-01-09T04:03:18.030Z,17.063,-99.526,33,4.7,mb,,,,1.3,us,usp00051jv,2014-11-07T00:49:53.949Z,"2 km SW of La Palma, Mexico",earthquake,,,,11,reviewed,us,us
+1992-01-11T22:48:33.760Z,31.733,-115.861,5.842,3.85,ml,0,267,,0.637,ci,ci2039240,2016-02-10T21:01:28.869Z,"67km E of Maneadero, B.C., MX",earthquake,,,,6,reviewed,ci,ci
+1992-01-12T00:54:16.350Z,17.552,-101.08,71.4,4.4,mb,,,,1.6,us,usp00051pt,2014-11-07T00:49:54.505Z,"19 km N of Coyuquilla Norte, Mexico",earthquake,,13.2,,7,reviewed,us,us
+1992-01-13T05:34:18.490Z,15.43,-94.347,33,3.9,mb,,,,1.2,us,usp00051r6,2014-11-07T00:49:54.626Z,"82 km SW of Cabeza de Toro, Mexico",earthquake,,,,1,reviewed,us,us
+1992-01-13T10:56:25.190Z,16.387,-94.71,69.6,3.8,mb,,,,1.3,us,usp00051rf,2014-11-07T00:49:54.689Z,"4 km WNW of Guamúchil, Mexico",earthquake,,12.8,,2,reviewed,us,us
+1992-01-18T12:05:52.520Z,31.698,-115.853,5.842,3.9,ml,0,266.4,,0.612,ci,ci2039750,2016-02-10T03:18:18.843Z,"68km E of Maneadero, B.C., MX",earthquake,,,,8,reviewed,ci,ci
+1992-01-21T12:54:14.760Z,14.03,-91.038,63,4.3,mb,,,,1.2,us,usp000521f,2014-11-07T00:49:55.845Z,"6 km SSE of La Gomera, Guatemala",earthquake,,14,,8,reviewed,us,us
+1992-01-25T01:07:25.900Z,15.974,-95.895,33,3.5,mb,,,,1.1,us,usp0005271,2014-11-07T00:49:56.637Z,"11 km NW of El Coyul, Mexico",earthquake,,,,1,reviewed,us,us
+1992-01-26T04:39:11.310Z,17.081,-98.098,55.7,4.5,mb,,,,1,us,usp000528s,2014-11-07T00:49:56.802Z,"1 km ENE of Santa Cruz Yucucani, Mexico",earthquake,,5.6,,11,reviewed,us,us
+1992-01-27T16:58:32.030Z,15.903,-96.96,57.2,3.6,mb,,,,1.2,us,usp00052as,2014-11-07T00:49:57.209Z,"2 km WNW of Santa María Colotepec, Mexico",earthquake,,19.1,,1,reviewed,us,us
+1992-01-28T15:53:03.150Z,16.701,-94.143,130.8,4.5,mb,,,,0.9,us,usp00052bw,2014-11-07T00:49:57.311Z,"25 km NNW of Nueva Tenochtitlán (Rizo de Oro), Mexico",earthquake,,6.1,,6,reviewed,us,us
+1992-01-29T13:49:09.430Z,16.407,-97.272,58.7,4.4,mb,,,,1.5,us,usp00052cz,2014-11-07T00:49:57.409Z,"10 km NNE of Cieneguilla, Mexico",earthquake,,11.4,,3,reviewed,us,us
+1992-01-29T23:33:49.450Z,17.996,-105.058,33,3.6,mb,,,,0.8,us,usp00052dm,2014-11-07T00:49:57.597Z,"139 km SSW of Barra de Navidad, Mexico",earthquake,,,,4,reviewed,us,us
+1992-02-05T06:07:42.600Z,31.189,-116.87,6,3.9,mb,,,,,us,usp00052n1,2016-02-09T19:52:02.735Z,"61 km WSW of San Vicente, Mexico",earthquake,,,,2,reviewed,pas,us
+1992-02-05T14:21:12.040Z,14.645,-92.591,75.8,5.5,mw,,,,1,us,usp00052nk,2022-04-28T18:54:22.536Z,"20 km WSW of Puerto Madero, Mexico",earthquake,,6.2,,,reviewed,us,hrv
+1992-02-05T21:57:32.390Z,20.976,-108.349,10,3.8,mb,,,,0.9,us,usp00052p1,2014-11-07T00:50:03.609Z,"266 km SE of Cabo San Lucas, Mexico",earthquake,,,,6,reviewed,us,us
+1992-02-09T04:00:14.880Z,16.108,-95.61,33,4.8,mb,,,,0.8,us,usp00052tx,2014-11-07T00:50:04.866Z,"10 km NE of San Pedro Huamelula, Mexico",earthquake,,,,5,reviewed,us,us
+1992-02-10T07:24:21.980Z,14.24,-92.699,32.7,4.4,mb,,,,1.2,us,usp00052vd,2014-11-07T00:50:05.092Z,"60 km WSW of Brisas Barra de Suchiate, Mexico",earthquake,,,,10,reviewed,us,us
+1992-02-11T06:44:19.310Z,14.244,-90.639,72.5,4.2,mb,,,,1.3,us,usp00052x1,2014-11-07T00:50:05.297Z,"2 km NNE of Guanagazapa, Guatemala",earthquake,,34.1,,5,reviewed,us,us
+1992-02-12T11:56:53.600Z,17.798,-101.613,32,5.2,mw,,,,1.3,us,usp00052z6,2022-04-28T18:54:56.596Z,"7 km NNE of Pantla, Mexico",earthquake,,,,,reviewed,us,hrv
+1992-02-14T23:43:09.700Z,17.602,-102.05,52.6,3.7,mb,,,,1.3,us,usp0005332,2014-11-07T00:50:05.969Z,"42 km S of Petacalco, Mexico",earthquake,,12,,3,reviewed,us,us
+1992-02-15T18:47:55.560Z,16.087,-88.506,33,4.5,mb,,,,1.2,us,usp000534c,2014-11-07T00:50:06.150Z,"32 km E of Punta Gorda, Belize",earthquake,,,,8,reviewed,us,us
+1992-02-19T06:40:42.720Z,15.765,-93.921,76.5,4.3,mb,,,,1.6,us,usp000537y,2014-11-07T00:50:06.964Z,"24 km SW of Cabeza de Toro, Mexico",earthquake,,15.9,,2,reviewed,us,us
+1992-02-22T00:43:01.790Z,14.051,-92.094,72.6,4.6,mb,,,,0.9,us,usp00053cb,2014-11-07T00:50:07.541Z,"33 km SW of Champerico, Guatemala",earthquake,,4.4,,31,reviewed,us,us
+1992-02-27T11:55:51.770Z,15.489,-94.481,33,4.4,mb,,,,0.8,us,usp00053jm,2014-11-07T00:50:08.549Z,"82 km SSW of La Gloria, Mexico",earthquake,,,,4,reviewed,us,us
+1992-02-28T20:58:22.740Z,14.532,-93.145,45.9,5.1,ms,,,,1,us,usp00053mn,2014-11-07T00:50:08.759Z,"80 km WSW of Puerto Madero, Mexico",earthquake,,6.5,,2,reviewed,us,us
+1992-03-04T09:54:16.930Z,17.291,-101.509,33,3.8,mb,,,,0.6,us,usp00053ve,2014-11-07T00:50:13.939Z,"35 km SSW of Palos Blancos, Mexico",earthquake,,,,1,reviewed,us,us
+1992-03-10T00:02:55.390Z,30.617,-109.251,5,3.5,mb,,,,1.5,us,usp000542e,2014-11-07T00:50:15.146Z,"33 km WNW of Bavispe, Mexico",earthquake,,,,1,reviewed,us,us
+1992-03-10T06:14:39.720Z,16.273,-98.251,39.4,4.1,mb,,,,1.1,us,usp000542u,2014-11-07T00:50:15.182Z,"5 km S of El Ciruelo, Mexico",earthquake,,9.5,,3,reviewed,us,us
+1992-03-10T11:45:48.330Z,15.086,-98.039,33,3.7,mb,,,,1.1,us,usp000542y,2014-11-07T00:50:15.190Z,"117 km SSW of San José del Progreso, Mexico",earthquake,,,,3,reviewed,us,us
+1992-03-12T04:28:42.120Z,17.802,-93.417,33,4,mb,,,,1.6,us,usp0005457,2014-11-07T00:50:15.458Z,"3 km S of Libertad, Mexico",earthquake,,,,2,reviewed,us,us
+1992-03-16T17:58:57.270Z,14.228,-93.911,33,4.5,mb,,,,1,us,usp00054c8,2014-11-07T00:50:16.760Z,"157 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,,,,7,reviewed,us,us
+1992-03-17T06:44:02.290Z,14.459,-92.867,59.5,5.5,mw,,,,1.1,us,usp00054d9,2025-12-19T23:00:44.325Z,"56 km WSW of Puerto Madero, Mexico",earthquake,,5.6,,,reviewed,us,hrv
+1992-03-17T07:13:58.650Z,14.163,-93.174,33,4.4,mb,,,,1.4,us,usp00054da,2014-11-07T00:50:16.897Z,"101 km SW of Puerto Madero, Mexico",earthquake,,,,4,reviewed,us,us
+1992-03-18T04:49:34.120Z,14.954,-91.768,165.2,4.1,mb,,,,1.3,us,usp00054ee,2014-11-07T00:50:17.030Z,"1 km SSW of San Pedro Sacatepéquez, Guatemala",earthquake,,9.1,,3,reviewed,us,us
+1992-03-19T11:27:04.870Z,16.418,-95.252,96,4.7,mb,,,,0.8,us,usp00054gk,2014-11-07T00:50:17.436Z,"4 km NNW of Colonia San Luis, Mexico",earthquake,,4.9,,15,reviewed,us,us
+1992-03-19T17:08:27.440Z,18.209,-101.395,96.6,3.6,mb,,,,1.2,us,usp00054h0,2014-11-07T00:50:17.477Z,"17 km SW of Guayameo, Mexico",earthquake,,12.5,,1,reviewed,us,us
+1992-03-22T19:07:51.640Z,16.719,-94.079,147.8,4.1,mb,,,,1.3,us,usp00054pt,2014-11-07T00:50:18.219Z,"26 km WNW of Pomposo Castellanos, Mexico",earthquake,,11.8,,2,reviewed,us,us
+1992-03-23T11:00:03.560Z,29.254,-116.021,5.842,3.96,mh,0,343.3,,3.184,ci,ci2045514,2016-02-10T14:03:38.560Z,"279km S of Maneadero, B.C., MX",earthquake,,,,4,reviewed,ci,ci
+1992-03-24T01:34:24.600Z,16.094,-99.208,33,4.3,mb,,,,1.6,us,usp00054rj,2014-11-07T00:50:18.474Z,"61 km SSW of Copala, Mexico",earthquake,,,,2,reviewed,us,us
+1992-03-27T02:45:38.410Z,15.972,-98.679,22.7,3.6,mb,,,,0.7,us,usp00054wr,2014-11-07T00:50:19.269Z,"47 km SSW of Santiago Tepextla, Mexico",earthquake,,8.9,,1,reviewed,us,us
+1992-03-27T03:18:41.640Z,16.232,-98.625,22.2,4,mb,,,,1.2,us,usp00054ws,2014-11-07T00:50:19.271Z,"22 km SW of Montecillos, Mexico",earthquake,,8.4,,7,reviewed,us,us
+1992-03-28T08:24:22.260Z,15.409,-91.949,179.1,4.4,mb,,,,1,us,usp00054yn,2014-11-07T00:50:19.642Z,"0 km NW of Cuilco, Guatemala",earthquake,,,,9,reviewed,us,us
+1992-03-29T01:30:50.930Z,18.74,-106.976,33,4.3,mb,,,,1.1,us,usp00054zq,2014-11-07T00:50:19.738Z,"212 km SW of La Cruz de Loreto, Mexico",earthquake,,,,12,reviewed,us,us
+1992-03-29T12:33:28.160Z,15.45,-91.982,191,3.5,mb,,,,1.3,us,usp000550n,2014-11-07T00:50:19.849Z,"6 km NW of Cuilco, Guatemala",earthquake,,13,,1,reviewed,us,us
+1992-03-29T16:58:37.130Z,16.518,-100.009,33,3.7,mb,,,,1.1,us,usp000550z,2014-11-07T00:50:19.982Z,"38 km SSW of Acapulco de Juárez, Mexico",earthquake,,,,1,reviewed,us,us
+1992-03-30T08:28:46.700Z,19.382,-108.669,10,4.1,mb,,,,1.2,us,usp0005523,2014-11-07T00:50:20.093Z,"Revilla Gigedo Islands region",earthquake,,,,9,reviewed,us,us
+1992-03-31T04:16:48.860Z,16.588,-99.887,33,3.8,mb,,,,0.9,us,usp000553q,2014-11-07T00:50:20.333Z,"29 km S of Acapulco de Juárez, Mexico",earthquake,,,,1,reviewed,us,us
+1992-03-31T19:43:17.390Z,17.441,-101.095,49.6,4.7,mb,,,,1.3,us,usp000554u,2014-11-07T00:50:20.474Z,"7 km NNW of Coyuquilla Norte, Mexico",earthquake,,8.8,,15,reviewed,us,us
+1992-03-31T20:56:37.700Z,17.469,-101.119,48.1,5.4,mw,,,,1.1,us,usp000554y,2022-04-28T18:53:52.819Z,"11 km NW of Coyuquilla Norte, Mexico",earthquake,,5.8,,,reviewed,us,hrv
+1992-03-31T21:25:01.160Z,17.294,-101.125,50.2,4.7,mb,,,,0.9,us,usp0005551,2014-11-07T00:50:20.501Z,"9 km WSW of Papanoa, Mexico",earthquake,,10.9,,12,reviewed,us,us
+1992-04-01T00:31:52.350Z,17.51,-101.033,56.9,5.2,mw,,,,1.1,us,usp000555h,2025-12-19T22:59:46.431Z,"14 km N of Coyuquilla Norte, Mexico",earthquake,,5.9,,,reviewed,us,hrv
+1992-04-06T10:26:12.860Z,18.355,-95.596,28.1,3.6,mb,,,,1.3,us,usp00055d7,2014-11-07T00:50:25.189Z,"13 km ESE of Dos Bocas, Mexico",earthquake,,8.5,,1,reviewed,us,us
+1992-04-11T03:55:16.050Z,19.312,-108.656,10,4,mb,,,,1.2,us,usp00055mm,2014-11-07T00:50:26.687Z,"Revilla Gigedo Islands region",earthquake,,,,7,reviewed,us,us
+1992-04-11T04:16:18.150Z,32.227,-115.239,6.002,3.66,mc,0,250.3,,0.355,ci,ci2046960,2016-02-10T07:01:36.115Z,"6km W of Alberto Oviedo Mota, B.C., MX",earthquake,,,,13,reviewed,ci,ci
+1992-04-11T15:15:38.190Z,14.409,-93.218,33,4.3,mb,,,,1.6,us,usp00055ne,2014-11-07T00:50:26.754Z,"92 km WSW of Puerto Madero, Mexico",earthquake,,,,4,reviewed,us,us
+1992-04-11T15:29:00.830Z,14.281,-93.238,48.4,4.2,mb,,,,1.2,us,usp00055nf,2014-11-07T00:50:26.757Z,"100 km WSW of Puerto Madero, Mexico",earthquake,,11.8,,3,reviewed,us,us
+1992-04-14T01:31:05.740Z,28.12,-112.493,10,4.5,mb,,,,1.3,us,usp00055rz,2016-02-10T14:05:13.055Z,"89 km NNW of Santa Rosalía, Mexico",earthquake,,,,10,reviewed,us,us
+1992-04-18T18:05:47.660Z,17.826,-95.061,135.8,3.5,mb,,,,1.4,us,usp00055ze,2014-11-07T00:50:28.103Z,"5 km WNW of Aguilera, Mexico",earthquake,,15.9,,2,reviewed,us,us
+1992-04-20T11:44:29.270Z,19.503,-108.389,10,4.3,mb,,,,1.2,us,usp000561y,2014-11-07T00:50:28.414Z,"Revilla Gigedo Islands region",earthquake,,,,7,reviewed,us,us
+1992-04-21T13:32:38.550Z,17.646,-101.53,30.6,4.3,mb,,,,1.2,us,usp000563e,2014-11-07T00:50:28.550Z,"2 km E of Ixtapa-Zihuatanejo, Mexico",earthquake,,,,8,reviewed,us,us
+1992-04-22T06:11:13.130Z,16.212,-95.315,33,3.5,mb,,,,1.5,us,usp000564s,2014-11-07T00:50:28.683Z,"2 km S of Rincón Moreno, Mexico",earthquake,,,,1,reviewed,us,us
+1992-04-22T11:00:26.680Z,17.134,-96.582,64.2,4.8,mb,,,,0.9,us,usp0005654,2014-11-07T00:50:28.720Z,"9 km NNE of Santo Domingo Tomaltepec, Mexico",earthquake,,,,42,reviewed,us,us
+1992-04-25T06:24:37.130Z,31.722,-115.828,5.842,3.93,mc,0,247,,0.583,ci,ci2048405,2016-02-10T10:42:20.328Z,"70km E of Maneadero, B.C., MX",earthquake,,,,15,reviewed,ci,ci
+1992-04-26T20:53:36.810Z,16.714,-99.997,36.4,4.1,mb,,,,1.4,us,usp00056gm,2014-11-07T00:50:30.357Z,"17 km SSW of Acapulco de Juárez, Mexico",earthquake,,10,,5,reviewed,us,us
+1992-04-28T02:11:58.630Z,18.738,-102.901,89,4.3,mb,,,,1.5,us,usp00056ke,2014-11-07T00:50:30.637Z,"11 km W of Aguililla, Mexico",earthquake,,15,,1,reviewed,us,us
+1992-04-29T04:14:19.850Z,14.409,-93.132,66.4,3.6,mb,,,,1.3,us,usp00056nh,2014-11-07T00:50:30.841Z,"83 km WSW of Puerto Madero, Mexico",earthquake,,18.2,,1,reviewed,us,us
+1992-04-29T20:01:06.240Z,15.315,-92.755,131.5,3.7,mb,,,,1.1,us,usp00056pm,2014-11-07T00:50:30.958Z,"3 km W of Soconusco, Mexico",earthquake,,10.5,,1,reviewed,us,us
+1992-05-03T20:00:44.750Z,18.896,-102.511,107.3,4.5,mb,,,,1.2,us,usp00056ve,2014-11-07T00:50:34.499Z,"17 km SSW of Loma de los Hoyos, Mexico",earthquake,,7.8,,1,reviewed,us,us
+1992-05-11T00:25:33.490Z,16.227,-95.203,46.3,4.1,mb,,,,1.6,us,usp000575k,2014-11-07T00:50:36.765Z,"3 km SSE of La Noria, Mexico",earthquake,,10.5,,3,reviewed,us,us
+1992-05-12T06:07:06.670Z,23.925,-109.046,10,4.1,mb,,,,1.2,us,usp000577j,2014-11-07T00:50:36.942Z,"66 km ENE of La Rivera, Mexico",earthquake,,,,8,reviewed,us,us
+1992-05-12T06:08:14.810Z,23.906,-108.816,10,4.6,mb,,,,1,us,usp000577k,2014-11-07T00:50:36.945Z,"85 km ENE of La Rivera, Mexico",earthquake,,,,11,reviewed,us,us
+1992-05-12T06:32:28.770Z,23.823,-108.873,10,4.2,mb,,,,1.1,us,usp000577p,2014-11-07T00:50:36.954Z,"76 km ENE of La Rivera, Mexico",earthquake,,,,7,reviewed,us,us
+1992-05-15T08:35:08.290Z,16.878,-99.931,25.5,4.2,mb,,,,1.2,us,usp00057d6,2014-11-07T00:50:37.721Z,"3 km NW of Acapulco de Juárez, Mexico",earthquake,,,,6,reviewed,us,us
+1992-05-15T14:25:22.460Z,16.74,-100.061,29.5,3.9,mb,,,,1.3,us,usp00057dv,2014-11-07T00:50:37.763Z,"20 km SW of Acapulco de Juárez, Mexico",earthquake,,6.5,,1,reviewed,us,us
+1992-05-15T21:32:09.270Z,16.259,-98.494,26.1,4.8,mb,,,,1.1,us,usp00057ed,2014-11-07T00:50:37.799Z,"10 km SSW of Santiago Tepextla, Mexico",earthquake,,,,28,reviewed,us,us
+1992-05-19T10:04:19.790Z,15.953,-98.352,15.5,4.8,mb,,,,0.9,us,usp00057pm,2014-11-07T00:50:39.566Z,"36 km SSW of Corralero, Mexico",earthquake,,,,20,reviewed,us,us
+1992-05-22T14:09:31.180Z,27.359,-115.019,10,5.3,mw,,,,1.1,us,usp00057wy,2022-04-28T18:48:02.231Z,"38 km SSW of Bahía Tortugas, Mexico",earthquake,,,,,reviewed,us,hrv
+1992-05-22T14:10:02.880Z,29.766,-113.906,5.842,3.78,md,0,348,,11.741,ci,ci2053236,2016-02-10T17:54:41.405Z,"290km SSE of Estacion Coahuila, B.C., MX",earthquake,,,,1,reviewed,ci,ci
+1992-05-22T16:02:56.520Z,26.976,-115.122,10,4,mb,,,,0.9,us,usp00057x4,2014-11-07T00:50:40.653Z,"82 km SSW of Bahía Tortugas, Mexico",earthquake,,,,4,reviewed,us,us
+1992-05-24T12:22:25.850Z,32.822,-116.174,11.618,3.98,ml,0,89.5,,0.348,ci,ci2053458,2016-02-10T21:34:54.841Z,"20km WNW of Ocotillo, California",earthquake,,0.494,,6,reviewed,ci,ci
+1992-05-25T19:01:12.620Z,26.31,-110.435,10,5.1,ms,,,,1,us,usp000582r,2016-02-10T21:35:15.543Z,"90 km SW of Pozo Dulce, Mexico",earthquake,,,,7,reviewed,us,us
+1992-05-25T20:40:30.990Z,26.214,-110.493,10,5.2,mb,,,,0.9,us,usp000582z,2016-02-10T00:11:58.870Z,"88 km ENE of Loreto, Mexico",earthquake,,,,30,reviewed,us,us
+1992-05-25T21:47:18.410Z,25.924,-110.479,10,3.9,mb,,,,0.8,us,usp0005838,2014-11-07T00:50:41.409Z,"87 km E of Loreto, Mexico",earthquake,,,,4,reviewed,us,us
+1992-05-26T01:16:49.890Z,25.92,-110.684,10,4.2,mb,,,,1.2,us,usp000583f,2016-02-10T17:55:50.234Z,"67 km E of Loreto, Mexico",earthquake,,,,4,reviewed,us,us
+1992-05-26T18:52:01.390Z,25.982,-110.786,10,4,mb,,,,1.6,us,usp000584q,2014-11-07T00:50:41.561Z,"56 km E of Loreto, Mexico",earthquake,,,,5,reviewed,us,us
+1992-05-26T20:42:49.600Z,25.983,-110.492,10,4.5,ms,,,,1,us,usp000584u,2014-11-07T00:50:41.575Z,"85 km E of Loreto, Mexico",earthquake,,,,5,reviewed,us,us
+1992-05-27T10:56:54.180Z,30.54,-114.519,5.974,4.6,ml,0,322,,1.795,ci,ci2053758,2016-02-10T14:23:50.416Z,"190km SSE of Estacion Coahuila, B.C., MX",earthquake,,,,5,reviewed,ci,ci
+1992-05-27T22:34:00.290Z,30.493,-114.942,5.974,3.68,ml,0,318.3,,1.657,ci,ci3027056,2016-02-10T10:57:06.673Z,"189km S of Estacion Coahuila, B.C., MX",earthquake,,,,4,reviewed,ci,ci
+1992-05-28T07:39:41.810Z,18.369,-103.564,56.5,3.8,mb,,,,1.5,us,usp000587r,2014-11-07T00:50:42.169Z,"18 km S of La Placita de Morelos, Mexico",earthquake,,17.7,,2,reviewed,us,us
+1992-05-29T06:29:46.040Z,17.277,-101.124,52.5,4,mb,,,,1.4,us,usp00058b3,2014-11-07T00:50:42.551Z,"10 km WSW of Papanoa, Mexico",earthquake,,16.7,,2,reviewed,us,us
+1992-05-30T16:30:01.950Z,14.442,-92.931,54.9,6.3,mw,,,,1,us,usp00058dy,2022-04-28T18:48:23.609Z,"62 km WSW of Puerto Madero, Mexico",earthquake,,4.1,,,reviewed,us,hrv
+1992-05-30T16:43:23.740Z,14.177,-93.146,50.3,4.4,mb,,,,0.8,us,usp00058dz,2014-11-07T00:50:42.927Z,"98 km SW of Puerto Madero, Mexico",earthquake,,14,,4,reviewed,us,us
+1992-05-30T16:53:41.460Z,14.238,-92.94,53.7,4.3,mb,,,,1.2,us,usp00058e0,2014-11-07T00:50:42.929Z,"77 km SW of Puerto Madero, Mexico",earthquake,,15.2,,4,reviewed,us,us
+1992-05-30T16:59:59.110Z,14.297,-93.188,43,4.3,mb,,,,1.1,us,usp00058e1,2014-11-07T00:50:42.940Z,"95 km WSW of Puerto Madero, Mexico",earthquake,,13,,5,reviewed,us,us
+1992-05-30T18:31:50.570Z,14.156,-93.134,46.7,4.4,mb,,,,0.9,us,usp00058e4,2014-11-07T00:50:42.948Z,"99 km SW of Puerto Madero, Mexico",earthquake,,10.7,,4,reviewed,us,us
+1992-05-30T18:34:39.910Z,14.29,-92.928,54,4.6,mb,,,,1,us,usp00058e5,2014-11-07T00:50:42.950Z,"72 km SW of Puerto Madero, Mexico",earthquake,,7.7,,37,reviewed,us,us
+1992-05-30T19:34:48.170Z,14.197,-92.985,45.8,4.5,mb,,,,1,us,usp00058ea,2014-11-07T00:50:42.986Z,"83 km SW of Puerto Madero, Mexico",earthquake,,8.1,,27,reviewed,us,us
+1992-05-30T20:20:35.150Z,14.088,-93.085,14.7,4.5,mb,,,,1.1,us,usp00058eh,2014-11-07T00:50:43.007Z,"100 km SW of Puerto Madero, Mexico",earthquake,,6.5,,7,reviewed,us,us
+1992-05-30T23:00:06.170Z,14.049,-93.039,52.6,4.3,mb,,,,0.8,us,usp00058eu,2014-11-07T00:50:43.036Z,"99 km SW of Puerto Madero, Mexico",earthquake,,8.7,,22,reviewed,us,us
+1992-05-30T23:34:09.640Z,14.223,-92.981,51.2,4.6,mb,,,,1.1,us,usp00058ev,2014-11-07T00:50:43.040Z,"81 km SW of Puerto Madero, Mexico",earthquake,,6.9,,44,reviewed,us,us
+1992-05-31T01:56:31.290Z,14.347,-93.116,41.7,4.2,mb,,,,1.2,us,usp00058ex,2014-11-07T00:50:43.051Z,"85 km WSW of Puerto Madero, Mexico",earthquake,,11.7,,7,reviewed,us,us
+1992-05-31T02:02:22.040Z,14.004,-92.988,63.2,4.3,mb,,,,1,us,usp00058ey,2014-11-07T00:50:43.053Z,"100 km SW of Puerto Madero, Mexico",earthquake,,21.2,,1,reviewed,us,us
+1992-05-31T08:51:16.100Z,14.061,-92.997,49.4,4.1,mb,,,,1.2,us,usp00058fc,2014-11-07T00:50:43.103Z,"95 km SW of Puerto Madero, Mexico",earthquake,,13.8,,4,reviewed,us,us
+1992-05-31T21:54:09.790Z,14.011,-93.17,42.7,4.6,mb,,,,0.9,us,usp00058g9,2014-11-07T00:50:43.180Z,"112 km SW of Puerto Madero, Mexico",earthquake,,18.6,,1,reviewed,us,us
+1992-06-01T12:59:44.070Z,18.581,-102.895,77.2,4.7,mb,,,,1.2,us,usp00058he,2014-11-07T00:50:45.333Z,"20 km SSW of Aguililla, Mexico",earthquake,,6.4,,21,reviewed,us,us
+1992-06-01T13:08:58.750Z,18.483,-102.953,72.5,4.2,mb,,,,1.1,us,usp00058hf,2014-11-07T00:50:45.376Z,"33 km SSW of Aguililla, Mexico",earthquake,,9.2,,3,reviewed,us,us
+1992-06-01T16:44:45.350Z,14.075,-92.788,61.5,4.6,mb,,,,0.6,us,usp00058hr,2014-11-07T00:50:45.862Z,"79 km SW of Brisas Barra de Suchiate, Mexico",earthquake,,11.4,,2,reviewed,us,us
+1992-06-01T17:01:46.600Z,14.502,-92.981,52.9,4.6,mb,,,,1,us,usp00058hs,2014-11-07T00:50:45.869Z,"64 km WSW of Puerto Madero, Mexico",earthquake,,11,,2,reviewed,us,us
+1992-06-05T03:42:52.190Z,18.944,-95.82,39.3,4.4,mb,,,,0.9,us,usp00058ps,2014-11-07T00:50:47.825Z,"14 km N of Arbolillo, Mexico",earthquake,,13.4,,3,reviewed,us,us
+1992-06-07T09:01:45.080Z,16.505,-98.656,5,5.4,mw,,,,0.9,us,usp00058sy,2022-04-28T18:43:08.097Z,"8 km E of Barra de Tecoanapa, Mexico",earthquake,,,,,reviewed,us,hrv
+1992-06-07T17:41:10.430Z,16.415,-98.652,5,5.2,mw,,,,0.9,us,usp00058t9,2022-04-28T18:43:18.338Z,"13 km SE of Barra de Tecoanapa, Mexico",earthquake,,,,,reviewed,us,hrv
+1992-06-08T07:52:00.570Z,14.144,-92.68,39.7,4.6,mb,,,,1,us,usp00058tv,2014-11-07T00:50:48.587Z,"65 km SW of Brisas Barra de Suchiate, Mexico",earthquake,,8.2,,17,reviewed,us,us
+1992-06-19T11:17:02.850Z,20.998,-108.8,10,4.6,ms,,,,1,us,usp00059am,2014-11-07T00:50:50.894Z,"239 km SSE of Cabo San Lucas, Mexico",earthquake,,,,8,reviewed,us,us
+1992-06-30T09:13:04.130Z,17.205,-94.256,172.6,3.8,mb,,,,1.3,us,usp00059yq,2014-11-07T00:50:55.909Z,"5 km W of La Horqueta (Poblado Doce), Mexico",earthquake,,12.7,,3,reviewed,us,us
+1992-07-04T06:26:19.770Z,15.445,-99.276,33,4.2,mb,,,,1.5,us,usp0005a8j,2014-11-07T00:51:00.362Z,"131 km SSW of Barra de Tecoanapa, Mexico",earthquake,,,,2,reviewed,us,us
+1992-07-04T08:43:56.610Z,26.94,-111.722,10,4.4,mb,,,,1.4,us,usp0005a8v,2014-11-07T00:51:00.422Z,"26 km ENE of Mulegé, Mexico",earthquake,,,,5,reviewed,us,us
+1992-07-09T18:02:04.060Z,15.652,-95.644,53.2,4.1,mb,,,,1.4,us,usp0005ak6,2014-11-07T00:51:02.561Z,"34 km SSE of El Coyul, Mexico",earthquake,,18.7,,3,reviewed,us,us
+1992-07-13T07:57:32.760Z,15.874,-93.813,115.9,4.1,mb,,,,1.2,us,usp0005as6,2014-11-07T00:51:03.595Z,"7 km SSW of Cabeza de Toro, Mexico",earthquake,,15.6,,2,reviewed,us,us
+1992-07-14T06:20:18.650Z,14.958,-94.806,33,4,mb,,,,1.5,us,usp0005atr,2014-11-07T00:51:03.967Z,"137 km SSE of El Carrizal, Mexico",earthquake,,,,2,reviewed,us,us
+1992-07-17T22:59:48.570Z,15.789,-93.769,109.5,4.3,mb,,,,1.7,us,usp0005b0c,2014-11-07T00:51:04.930Z,"13 km SSW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,,13.7,,2,reviewed,us,us
+1992-07-19T06:52:27.040Z,17.506,-94.38,174.8,3.9,mb,,,,1.7,us,usp0005b3y,2014-11-07T00:51:05.789Z,"14 km ENE of Niños Héroes, Mexico",earthquake,,26.2,,3,reviewed,us,us
+1992-07-19T11:25:10.540Z,15.842,-94.241,88.9,3.7,mb,,,,1.5,us,usp0005b47,2014-11-07T00:51:05.806Z,"36 km SSW of La Gloria, Mexico",earthquake,,16.2,,1,reviewed,us,us
+1992-07-21T17:11:26.240Z,19.849,-108.093,10,4.1,mb,,,,1.3,us,usp0005b87,2014-11-07T00:51:06.265Z,"276 km W of La Cruz de Loreto, Mexico",earthquake,,,,4,reviewed,us,us
+1992-07-22T01:14:07.810Z,15.713,-95.863,30.1,4.5,mb,,,,0.9,us,usp0005b8u,2014-11-07T00:51:06.309Z,"23 km SSW of El Coyul, Mexico",earthquake,,7.6,,11,reviewed,us,us
+1992-07-24T20:45:07.420Z,16.105,-100.01,12.6,4.3,mb,,,,1.3,us,usp0005be4,2014-11-07T00:51:07.253Z,"76 km SSW of San Andrés Playa Encantada (El Podrido), Mexico",earthquake,,8.6,,1,reviewed,us,us
+1992-07-27T20:40:08.780Z,32.61,-115.627,15.914,4.03,ml,0,181.6,,0.422,ci,ci3047812,2016-02-10T22:20:40.747Z,"5km NW of Progreso, B.C., MX",earthquake,,0.166,,31,reviewed,ci,ci
+1992-07-28T06:50:12.670Z,19.58,-109.003,10,4.1,ms,,,,1.1,us,usp0005bmf,2014-11-07T00:51:08.131Z,"Revilla Gigedo Islands region",earthquake,,,,6,reviewed,us,us
+1992-07-30T14:40:55.870Z,24.705,-99.779,10,4.3,mb,,,,1.3,us,usp0005brb,2014-11-07T00:51:08.678Z,"12 km E of Iturbide, Mexico",earthquake,,,,6,reviewed,us,us
+1992-08-02T00:41:25.020Z,14.077,-91.969,50.7,5.2,ms,,,,1.1,us,usp0005bv0,2014-11-07T00:51:11.752Z,"24 km SSW of Champerico, Guatemala",earthquake,,10.9,,7,reviewed,us,us
+1992-08-02T12:54:42.290Z,17.14,-100.231,40.7,4.3,mb,,,,1.5,us,usp0005bvy,2014-11-07T00:51:12.343Z,"10 km NNE of Cayaco, Mexico",earthquake,,13.8,,5,reviewed,us,us
+1992-08-10T12:57:08.670Z,16.42,-98.211,33,3.7,mb,,,,1.1,us,usp0005c8r,2014-11-07T00:51:14.931Z,"7 km NE of San José Estancia Grande, Mexico",earthquake,,,,1,reviewed,us,us
+1992-08-17T12:01:45.730Z,17.723,-94.55,144.3,4.1,mb,,,,1,us,usp0005ckw,2014-11-07T00:51:16.680Z,"11 km ESE of Hidalgotitlán, Mexico",earthquake,,10.6,,4,reviewed,us,us
+1992-08-18T03:55:45.920Z,18.989,-106.657,20.7,4.6,mb,,,,0.7,us,usp0005cn7,2014-11-07T00:51:16.813Z,"169 km SW of La Cruz de Loreto, Mexico",earthquake,,,,2,reviewed,us,us
+1992-08-21T04:44:36.300Z,18.105,-101.549,69.9,4.4,mb,,,,0.9,us,usp0005ctw,2014-11-07T00:51:17.718Z,"30 km ENE of La Unión, Mexico",earthquake,,7.1,,3,reviewed,us,us
+1992-08-23T04:32:04.640Z,16.175,-98.023,18.3,4.8,mb,,,,1.1,us,usp0005cxc,2014-11-07T00:51:18.011Z,"5 km WSW of Collantes, Mexico",earthquake,,,,25,reviewed,us,us
+1992-08-23T05:11:29.450Z,16.116,-98.07,19,4.9,mb,,,,1.1,us,usp0005cxe,2014-11-07T00:51:18.018Z,"12 km WSW of Santa María Chico Ometepec, Mexico",earthquake,,,,31,reviewed,us,us
+1992-08-27T08:11:47.910Z,18.219,-101.433,96.1,4,mb,,,,0.9,us,usp0005d54,2014-11-07T00:51:19.466Z,"20 km WSW of Guayameo, Mexico",earthquake,,7.9,,10,reviewed,us,us
+1992-08-29T21:30:30.460Z,32.242,-115.253,6.007,4.08,mc,0,237.1,,0.355,ci,ci3058674,2016-02-10T15:31:00.073Z,"8km WNW of Alberto Oviedo Mota, B.C., MX",earthquake,,,,26,reviewed,ci,ci
+1992-08-30T01:17:45.020Z,30.144,-114.195,10,4.2,ml,,,,1.6,us,usp0005d9x,2014-11-07T00:51:20.073Z,"115 km SSE of San Felipe, Mexico",earthquake,,,,,reviewed,us,gs$
+1992-08-31T19:42:16.230Z,20.115,-94.387,10,4.2,mb,,,,1.1,us,usp0005dcb,2025-02-24T23:34:43.473Z,"Gulf of America",earthquake,,,,7,reviewed,us,us
+1992-09-02T15:27:57.250Z,14.003,-91.641,54,4.2,mb,,,,1.4,us,usp0005dg8,2014-11-07T00:51:24.116Z,"42 km WSW of Nueva Concepción, Guatemala",earthquake,,,,2,reviewed,us,us
+1992-09-07T11:53:17.810Z,16.482,-99.192,10,4.7,mb,,,,1.2,us,usp0005dpt,2014-11-07T00:51:26.063Z,"26 km WSW of Copala, Mexico",earthquake,,,,11,reviewed,us,us
+1992-09-15T21:35:34.970Z,15.191,-93.274,96.5,4.2,mb,,,,1.2,us,usp0005e1n,2014-11-07T00:51:29.012Z,"30 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,,,,6,reviewed,us,us
+1992-09-16T21:21:27.160Z,14.129,-92.33,33,4.7,mb,,,,1,us,usp0005e37,2014-11-07T00:51:29.185Z,"44 km SSW of Ocós, Guatemala",earthquake,,,,23,reviewed,us,us
+1992-09-18T04:58:19.990Z,18.066,-101.422,71,4,mb,,,,0.9,us,usp0005e54,2014-11-07T00:51:29.397Z,"19 km NNW of Vallecitos de Zaragoza, Mexico",earthquake,,7.3,,7,reviewed,us,us
+1992-09-21T09:22:26.770Z,14.03,-91.07,33,4.5,mb,,,,1.3,us,usp0005e97,2014-11-07T00:51:29.844Z,"6 km SSW of La Gomera, Guatemala",earthquake,,,,3,reviewed,us,us
+1992-09-24T06:10:25.080Z,14.319,-91.447,33,4.6,mb,,,,0.9,us,usp0005ee5,2014-11-07T00:51:30.453Z,"10 km WNW of Tiquisate, Guatemala",earthquake,,,,1,reviewed,us,us
+1992-09-27T17:02:34.310Z,28.172,-88.438,10,3.6,mb,,,,1,us,usp0005em2,2014-11-07T00:51:31.223Z,"151 km SE of Venice, Louisiana",earthquake,,,,1,reviewed,us,us
+1992-09-29T19:15:45.150Z,19.399,-103.288,95,5.3,mw,,,,0.9,us,usp0005eqc,2025-12-19T22:57:16.887Z,"8 km SSE of Tecalitlán, Mexico",earthquake,,,,,reviewed,us,hrv
+1992-10-01T01:31:48.970Z,27.832,-102.374,5,3.8,mblg,,,,1.4,us,usp0005esn,2014-11-07T00:51:35.045Z,"57 km N of Ocampo, Mexico",earthquake,,,,,reviewed,us,gs$
+1992-10-03T07:37:25.780Z,27.51,-111.364,10,5.2,ms,,,,1.2,us,usp0005ew8,2014-11-07T00:51:37.189Z,"58 km SSW of San Carlos, Mexico",earthquake,,,,8,reviewed,us,us
+1992-10-11T00:55:42.090Z,27.206,-111.782,10,4.2,mb,,,,1.1,us,usp0005f60,2014-11-07T00:51:39.086Z,"40 km NNE of Mulegé, Mexico",earthquake,,,,3,reviewed,us,us
+1992-10-11T07:39:37.520Z,15.262,-91.293,21.4,4.5,mb,,,,1.4,us,usp0005f69,2014-11-07T00:51:39.110Z,"9 km SSE of Aguacatán, Guatemala",earthquake,,,,4,reviewed,us,us
+1992-10-11T14:50:07.220Z,27.621,-111.453,10,4.8,ms,,,,1.1,us,usp0005f6u,2014-11-07T00:51:39.147Z,"54 km SW of San Carlos, Mexico",earthquake,,,,1,reviewed,us,us
+1992-10-16T17:28:21.630Z,16.783,-98.632,53.5,4.3,mb,,,,1.2,us,usp0005fdw,2014-11-07T00:51:40.273Z,"2 km SSE of Cuanacaxtitlán, Mexico",earthquake,,12.7,,7,reviewed,us,us
+1992-10-23T05:26:44.690Z,26.18,-109.847,10,4.2,mb,,,,1.5,us,usp0005frv,2014-11-07T00:51:42.467Z,"57 km WNW of El Aguajito, Mexico",earthquake,,,,5,reviewed,us,us
+1992-10-25T05:27:13.440Z,19.595,-103.93,33,4.2,mb,,,,1.3,us,usp0005fva,2014-11-07T00:51:43.166Z,"1 km WSW of Tolimán, Mexico",earthquake,,,,6,reviewed,us,us
+1992-10-26T22:28:44.490Z,15.668,-93.248,105.8,4.3,mb,,,,1.4,us,usp0005fxp,2014-11-07T00:51:43.386Z,"4 km WSW of Pijijiapan, Mexico",earthquake,,8.4,,8,reviewed,us,us
+1992-10-30T08:24:32.270Z,17.48,-100.551,38.8,4.7,mb,,,,1.2,us,usp0005g2h,2014-11-07T00:51:44.029Z,"29 km NNE of El Súchil, Mexico",earthquake,,,,26,reviewed,us,us
+1992-10-31T18:12:52.730Z,14.253,-90.772,179.8,4.7,mb,,,,0.9,us,usp0005g4r,2014-11-07T00:51:44.812Z,"5 km SSE of Escuintla, Guatemala",earthquake,,10.9,,5,reviewed,us,us
+1992-11-01T15:56:03.690Z,15.164,-92.645,123.8,3.8,mb,,,,1.2,us,usp0005g69,2014-11-07T00:51:47.422Z,"1 km W of Hidalgo, Mexico",earthquake,,9.1,,1,reviewed,us,us
+1992-11-02T15:42:57.030Z,15.915,-96.608,29.5,4.8,mb,,,,1.1,us,usp0005g76,2014-11-07T00:51:47.783Z,"1 km NNE of San Francisco Loxicha, Mexico",earthquake,,,,17,reviewed,us,us
+1992-11-03T17:06:00.970Z,17.014,-98.482,66,4.5,mb,,,,0.7,us,usp0005g8h,2014-11-07T00:51:48.155Z,"11 km ENE of Buena Vista, Mexico",earthquake,,11.6,,1,reviewed,us,us
+1992-11-05T04:21:45.420Z,15.575,-93.989,93,4.2,mb,,,,1.1,us,usp0005gar,2014-11-07T00:51:48.878Z,"45 km SSW of Cabeza de Toro, Mexico",earthquake,,8.7,,3,reviewed,us,us
+1992-11-08T02:17:23.080Z,25.904,-109.959,10,4.5,mb,,,,1.1,us,usp0005ggx,2014-11-07T00:51:50.094Z,"62 km W of Las Grullas Margen Derecha, Mexico",earthquake,,,,4,reviewed,us,us
+1992-11-08T16:46:02.760Z,17.534,-97.288,33,4.1,mb,,,,0.8,us,usp0005ghz,2014-11-07T00:51:50.556Z,"1 km NNW of Santa María Chachoápam, Mexico",earthquake,,,,1,reviewed,us,us
+1992-11-08T17:52:46.970Z,14.248,-92.987,45.2,4.8,mb,,,,1.1,us,usp0005gj2,2014-11-07T00:51:50.566Z,"80 km SW of Puerto Madero, Mexico",earthquake,,8.1,,41,reviewed,us,us
+1992-11-09T04:22:44.310Z,14.107,-93.367,33,4.3,mb,,,,1.1,us,usp0005gjz,2014-11-07T00:51:50.732Z,"122 km SW of Puerto Madero, Mexico",earthquake,,,,1,reviewed,us,us
+1992-11-09T10:39:36.120Z,14.799,-92.805,64.6,4.6,mb,,,,0.9,us,usp0005gke,2014-11-07T00:51:50.781Z,"34 km WSW of Aquiles Serdán, Mexico",earthquake,,7.5,,1,reviewed,us,us
+1992-11-09T10:45:22.560Z,14.329,-93.165,48.8,4.7,mb,,,,1.5,us,usp0005gkf,2014-11-07T00:51:50.783Z,"91 km WSW of Puerto Madero, Mexico",earthquake,,15.4,,1,reviewed,us,us
+1992-11-10T00:53:09.950Z,16.879,-99.959,29.7,4.1,mb,,,,1.5,us,usp0005gm8,2014-11-07T00:51:50.838Z,"6 km WNW of Acapulco de Juárez, Mexico",earthquake,,6.4,,9,reviewed,us,us
+1992-11-10T02:13:24.880Z,16.936,-99.931,30.8,4.6,mb,,,,1.2,us,usp0005gma,2014-11-07T00:51:50.850Z,"2 km SE of Ejido Viejo, Mexico",earthquake,,4.1,,17,reviewed,us,us
+1992-11-12T07:40:04.830Z,14.981,-94.656,33,4.8,mb,,,,1.1,us,usp0005grq,2014-11-07T00:51:51.486Z,"138 km S of San Francisco del Mar Viejo, Mexico",earthquake,,,,5,reviewed,us,us
+1992-11-14T17:57:16.620Z,14.27,-93.006,47.6,4.3,mb,,,,1.3,us,usp0005gv0,2014-11-07T00:51:51.911Z,"80 km SW of Puerto Madero, Mexico",earthquake,,,,11,reviewed,us,us
+1992-11-17T07:58:36.750Z,18.256,-100.611,82.3,4.4,mb,,,,1.3,us,usp0005gz7,2014-11-07T00:51:52.315Z,"1 km S of San Lorenzo, Mexico",earthquake,,7.5,,10,reviewed,us,us
+1992-11-19T06:50:51.590Z,15.598,-92.917,33,4.4,mb,,,,1.6,us,usp0005h23,2014-11-07T00:51:53.199Z,"10 km ENE of Hermenegildo Galeana, Mexico",earthquake,,,,11,reviewed,us,us
+1992-11-20T04:20:33.310Z,32.008,-116.222,5.936,3.65,ml,0,251.5,,0.559,ci,ci3078805,2016-02-10T01:56:34.781Z,"41km ENE of Ensenada, B.C., MX",earthquake,,,,4,reviewed,ci,ci
+1992-11-24T07:32:52.430Z,14.386,-92.948,66.2,4.5,mb,,,,1.2,us,usp0005ha2,2014-11-07T00:51:54.233Z,"67 km WSW of Puerto Madero, Mexico",earthquake,,10.1,,1,reviewed,us,us
+1992-11-25T10:37:04.730Z,14.639,-92.659,73.6,4.6,mb,,,,1,us,usp0005hc0,2014-11-07T00:51:54.501Z,"27 km WSW of Puerto Madero, Mexico",earthquake,,4.2,,14,reviewed,us,us
+1992-12-02T07:12:11.220Z,30.366,-116.382,5,4.2,mb,,,,1,us,usp0005hqv,2014-11-07T00:51:58.878Z,"46 km WSW of Pueblo Benito García, Mexico",earthquake,,,,1,reviewed,us,us
+1992-12-03T01:37:40.810Z,14.514,-93.558,55.6,4.2,mb,,,,1.1,us,usp0005hrj,2014-11-07T00:51:59.118Z,"111 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,,14.8,,1,reviewed,us,us
+1992-12-06T11:49:52.700Z,18.485,-104.408,33,4.1,mb,,,,1.1,us,usp0005hwc,2014-11-07T00:52:00.596Z,"59 km SW of Cuyutlán, Mexico",earthquake,,,,6,reviewed,us,us
+1992-12-09T22:57:03.320Z,19.629,-108.921,10,3.7,mb,,,,1.2,us,usp0005j1m,2014-11-07T00:52:01.621Z,"Revilla Gigedo Islands region",earthquake,,,,2,reviewed,us,us
+1992-12-13T04:28:48.470Z,21.122,-108.301,10,4.2,mb,,,,1,us,usp0005j7m,2014-11-07T00:52:02.414Z,"256 km SE of Cabo San Lucas, Mexico",earthquake,,,,5,reviewed,us,us
+1992-12-13T16:06:30.140Z,15.876,-92.607,183.9,4,mb,,,,1.1,us,usp0005j8g,2014-11-07T00:52:02.488Z,"7 km SE of Reforma, Mexico",earthquake,,8.1,,3,reviewed,us,us
+1992-12-14T04:15:15.050Z,19.791,-109.22,10,5.3,mw,,,,1.1,us,usp0005j96,2025-12-19T22:55:38.470Z,"Revilla Gigedo Islands region",earthquake,,,,,reviewed,us,hrv
+1992-12-15T22:10:31.900Z,18.137,-102.804,75.6,3.6,mb,,,,0.9,us,usp0005jbb,2014-11-07T00:52:02.866Z,"47 km WNW of El Habillal, Mexico",earthquake,,17.2,,1,reviewed,us,us
+1992-12-16T02:48:30.020Z,15.529,-93.078,71.6,4.2,mb,,,,1.1,us,usp0005jbh,2014-11-07T00:52:02.874Z,"2 km SE of Joaquín Miguel Gutiérrez (Margaritas), Mexico",earthquake,,,,3,reviewed,us,us
+1992-12-16T10:25:23.610Z,31.422,-115.674,10,3.7,ml,,,,0.8,us,usp0005jbz,2016-02-10T05:39:52.120Z,"55 km E of San Vicente, Mexico",earthquake,,,,,reviewed,us,gs$
+1992-12-16T15:56:30.880Z,14.749,-93.748,59.9,4.6,mb,,,,1.3,us,usp0005jce,2014-11-07T00:52:02.933Z,"99 km SW of La Esperanza (El Zapotal), Mexico",earthquake,,9.2,,14,reviewed,us,us
+1992-12-17T09:19:18.830Z,18.386,-105.478,33,5.4,mw,,,,1.3,us,usp0005jdr,2025-12-19T22:55:39.846Z,"122 km SW of La Manzanilla, Mexico",earthquake,,,,,reviewed,us,hrv
+1992-12-17T11:09:48.670Z,14.02,-91.83,32.5,4.9,mb,,,,1.1,us,usp0005jdu,2014-11-07T00:52:03.057Z,"31 km SSE of Champerico, Guatemala",earthquake,,7.7,,42,reviewed,us,us
+1992-12-18T15:53:35.880Z,17.038,-94.807,116.3,3.7,mb,,,,0.6,us,usp0005jg3,2014-11-07T00:52:03.351Z,"10 km SE of Cuauhtémoc, Mexico",earthquake,,12.4,,1,reviewed,us,us
+1992-12-18T17:15:25.860Z,18.395,-103.114,90.9,3.5,mb,,,,1.6,us,usp0005jg5,2014-11-07T00:52:03.353Z,"42 km S of Coalcomán de Vázquez Pallares, Mexico",earthquake,,17,,1,reviewed,us,us
+1992-12-22T23:23:58.140Z,18.455,-105.37,33,4.6,mb,,,,0.9,us,usp0005jpp,2014-11-07T00:52:04.523Z,"110 km SW of La Manzanilla, Mexico",earthquake,,,,22,reviewed,us,us
+1992-12-24T14:23:06.140Z,17.599,-100.58,91.4,4.2,mb,,,,1,us,usp0005jsd,2014-11-07T00:52:04.945Z,"41 km N of El Súchil, Mexico",earthquake,,7.6,,7,reviewed,us,us
+1992-12-24T18:50:48.230Z,16.75,-98.995,21.4,4.8,mb,,,,0.9,us,usp0005jsu,2014-11-07T00:52:04.978Z,"0 km E of Cuautepec, Mexico",earthquake,,,,22,reviewed,us,us
+1992-12-24T19:01:25.350Z,17.021,-98.986,33,4.5,mb,,,,1.2,us,usp0005jsv,2014-11-07T00:52:04.984Z,"9 km ENE of San José la Hacienda, Mexico",earthquake,,,,15,reviewed,us,us
+1992-12-26T07:36:25.770Z,19.041,-108.372,10,3.9,mb,,,,0.9,us,usp0005jvy,2014-11-07T00:52:05.281Z,"Revilla Gigedo Islands region",earthquake,,,,6,reviewed,us,us
+1992-12-27T16:16:28.110Z,14.47,-92.049,33,3.7,mb,,,,0.8,us,usp0005jya,2014-11-07T00:52:05.633Z,"16 km ESE of Ocós, Guatemala",earthquake,,,,1,reviewed,us,us

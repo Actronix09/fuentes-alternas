@@ -1,0 +1,34 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+1910-09-24T03:32:33.230Z,16.357,-98.005,20,6.51,mw,,,,,iscgem,iscgem16958109,2022-04-25T20:31:53.919Z,"4 km ESE of Santa María Jicaltepec, Mexico",earthquake,,8.3,0.29,,reviewed,iscgem,iscgem
+1911-06-07T11:02:49.320Z,18.362,-102.471,30,7.6,mw,,,,,iscgem,iscgem16958148,2022-04-25T20:33:05.696Z,"19 km W of Arteaga, Mexico",earthquake,,25.4,0.4,,reviewed,iscgem,iscgem
+1911-08-27T10:59:12.210Z,18.76,-98.767,55,6.16,mw,,,,,iscgemsup,iscgemsup16958158,2022-05-09T15:15:25.873Z,"1 km NE of Huazulco, Mexico",earthquake,,6,0.2,,reviewed,iscgemsup,iscgemsup
+1911-12-16T19:14:27.110Z,16.932,-100.665,30,7.51,mw,,,,,iscgem,iscgem16958175,2022-04-25T20:33:42.878Z,"25 km S of Tetitlán, Mexico",earthquake,,11.2,0.3,,reviewed,iscgem,iscgem
+1912-06-12T12:43:26.570Z,15.155,-89.104,15,6.7,mw,,,,,iscgem,iscgem16958197,2022-04-25T20:34:08.802Z,"11 km S of Los Amates, Guatemala",earthquake,,4.3,0.2,,reviewed,iscgem,iscgem
+1912-11-19T13:55:03.660Z,19.561,-99.884,15,6.73,mw,,,,,iscgem,iscgem16958218,2022-04-25T20:34:24.107Z,"2 km S of San Pedro el Alto, Mexico",earthquake,,25,0.38,,reviewed,iscgem,iscgem
+1912-12-09T08:32:23.060Z,14.6,-92.71,50,6.9,mw,,,,,iscgem,iscgem16958223,2022-04-25T20:34:26.894Z,"33 km WSW of Puerto Madero, Mexico",earthquake,,16.6,0.2,,reviewed,iscgem,iscgem
+1913-06-14T08:37:04.540Z,15.804,-95.322,35,6.35,mw,,,,,iscgem,iscgem914075,2022-04-26T00:09:12.116Z,"29 km SSE of El Carrizal, Mexico",earthquake,,14.3,0.23,,reviewed,iscgem,iscgem
+1914-03-30T00:41:04.400Z,14.608,-93.976,15,7.2,mw,,,,,iscgem,iscgem913977,2022-04-25T21:14:49.800Z,"127 km SW of La Esperanza (El Zapotal), Mexico",earthquake,,11.2,0.24,,reviewed,iscgem,iscgem
+1914-08-08T19:08:52.610Z,22.486,-106.478,15,6.43,mw,,,,,iscgem,iscgem914003,2022-04-26T00:07:28.205Z,"66 km SSW of Los Pozos, Mexico",earthquake,,25,0.28,,reviewed,iscgem,iscgem
+1915-06-23T03:59:00.000Z,32.8,-115.5,,6,mw,,,,,ushis,ushis571,2024-02-08T11:16:35.236Z,"The 1915 Imperial Valley, California Earthquakes (First Major Event)",earthquake,,,,,reviewed,ushis,cdmg
+1915-06-23T04:56:00.000Z,32.8,-115.5,,5.9,mw,,,,,ushis,ushis572,2026-03-13T08:57:15.673Z,"The 1915 Imperial Valley, California Earthquakes (Second Major Event)",earthquake,,,,,reviewed,ushis,cdmg
+1915-09-07T01:20:49.100Z,14.126,-89.007,15,7.7,mw,,,,,iscgem,iscgem913939,2022-04-26T00:05:26.446Z,"12 km NW of Chalatenango, El Salvador",earthquake,,25,0.45,,reviewed,iscgem,iscgem
+1915-11-21T00:13:42.980Z,31.932,-114.945,10,6.57,mw,,,,,iscgem,iscgem913953,2026-03-17T09:19:09.996Z,"Baja California-Sonora Border Region, Mexico",earthquake,0,3.9,0.4,,reviewed,iscgem,iscgem
+1916-06-02T13:59:25.950Z,17.507,-95.019,100,7,mB,,,,,iscgemsup,iscgemsup16958299,2026-05-27T00:04:38.841Z,"7 km N of Jesús Carranza, Mexico",earthquake,0,12.6,,,reviewed,iscgemsup,official
+1916-11-21T06:25:39.860Z,15.023,-95.61,16,6.57,mw,,,,,iscgem,iscgem913868,2022-04-26T00:03:17.416Z,"99 km SE of Crucecita, Mexico",earthquake,,9.4,0.35,,reviewed,iscgem,iscgem
+1917-03-06T03:05:58.960Z,14.873,-95.309,15,6.28,mw,,,,,iscgem,iscgem913426,2022-04-25T23:58:12.190Z,"127 km SSE of El Coyul, Mexico",earthquake,,9.4,0.24,,reviewed,iscgem,iscgem
+1917-05-28T06:06:00.000Z,32.8,-115.3,,5.5,ml,,,,,ushis,ushis613,2026-06-06T00:39:28.848Z,"Near Holtville, California",earthquake,0,,,,reviewed,ushis,cdmg
+1917-06-29T16:06:44.070Z,20.525,-112.343,15,6.06,mw,,,,,iscgemsup,iscgemsup913552,2022-05-09T18:06:52.875Z,"Revilla Gigedo Islands region",earthquake,,25,0.39,,reviewed,iscgemsup,iscgemsup
+1917-10-19T16:37:11.570Z,15.212,-94.833,15,6.3,mw,,,,,iscgem,iscgem913674,2022-04-26T00:00:40.265Z,"111 km S of San Mateo del Mar, Mexico",earthquake,,9.2,0.3,,reviewed,iscgem,iscgem
+1917-12-29T22:50:39.880Z,15.533,-96.755,20,7.18,mw,,,,,iscgem,iscgem913745,2022-04-26T00:01:19.900Z,"31 km S of San Francisco Cozoaltepec, Mexico",earthquake,,11.2,0.3,,reviewed,iscgem,iscgem
+1918-01-04T04:32:43.750Z,14.934,-90.385,10,6.23,mw,,,,,iscgem,iscgem913027,2022-04-25T23:54:43.414Z,"11 km ESE of El Chol, Guatemala",earthquake,,25,0.31,,reviewed,iscgem,iscgem
+1918-01-25T01:21:03.150Z,14.927,-90.131,15,6.4,mw,,,,,iscgem,iscgem913044,2022-04-25T23:55:00.895Z,"1 km ESE of Morazán, Guatemala",earthquake,,6.7,0.2,,reviewed,iscgem,iscgem
+1918-05-01T04:32:00.000Z,32.7,-115.5,,5,ml,,,,,ushis,ushis633,2018-06-04T20:43:44.000Z,"2 km N of Calexico, California",earthquake,,,,,reviewed,ushis,cdmg
+1918-05-16T21:25:42.750Z,19.236,-102.32,65,5.89,mw,,,,,iscgemsup,iscgemsup913144,2022-05-09T18:04:19.129Z,"6 km SSW of Condémbaro, Mexico",earthquake,,44.9,0.42,,reviewed,iscgemsup,iscgemsup
+1918-05-23T11:57:40.020Z,27.58,-111.087,10,7.01,mw,,,,,iscgem,iscgem913151,2022-05-09T22:48:41.856Z,"41 km SSW of Heroica Guaymas, Mexico",earthquake,,25,0.23,,reviewed,iscgem,iscgem
+1918-06-07T21:27:26.700Z,18.595,-102.471,60,6.47,mw,,,,,iscgem,iscgem913165,2022-04-25T23:55:39.746Z,"12 km NW of Tumbiscatío de Ruiz, Mexico",earthquake,,25.4,0.32,,reviewed,iscgem,iscgem
+1918-06-13T08:58:47.110Z,15.295,-88.498,15,5.92,mw,,,,,iscgem,iscgem913170,2022-04-25T23:55:46.246Z,"0 km WNW of La Flecha, Honduras",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1919-01-17T11:49:53.290Z,15.799,-99.847,15,6.16,mw,,,,,iscgem,iscgem912711,2022-04-25T23:50:51.990Z,"101 km SSW of San Andrés Playa Encantada (El Podrido), Mexico",earthquake,,11.4,0.34,,reviewed,iscgem,iscgem
+1919-04-17T20:53:07.270Z,14.078,-91.723,35,6.96,mw,,,,,iscgem,iscgem912762,2022-04-25T23:51:23.820Z,"31 km SE of Champerico, Guatemala",earthquake,,18.8,0.27,,reviewed,iscgem,iscgem
+1919-04-18T21:01:00.430Z,18.437,-107.329,10,6.38,mw,,,,,iscgem,iscgem912764,2022-04-25T23:51:24.848Z,"262 km SW of La Cruz de Loreto, Mexico",earthquake,,25,0.53,,reviewed,iscgem,iscgem
+1919-07-09T19:19:51.450Z,18.865,-106.957,10,6.1,mw,,,,,iscgemsup,iscgemsup912840,2022-05-09T18:01:59.523Z,"202 km SW of La Cruz de Loreto, Mexico",earthquake,,25,0.86,,reviewed,iscgemsup,iscgemsup
+1919-09-15T17:31:15.250Z,21.219,-106.108,15,6.23,mw,,,,,iscgem,iscgem912952,2022-04-25T23:53:53.765Z,"78 km NW of Corral del Risco (Punta de Mita), Mexico",earthquake,,25,0.31,,reviewed,iscgem,iscgem

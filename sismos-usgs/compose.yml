@@ -1,0 +1,85 @@
+# =====================================================================
+#  Sistema 1 · Validación cruzada del catálogo sísmico SSN ↔ USGS ComCat
+#
+#  Levantar todo (la primera vez descarga ~120 MB y tarda unos minutos):
+#      docker compose up -d --build
+#      docker compose logs -f etl        # avance del pipeline
+#  Página:        http://localhost:8091
+#  PostgreSQL:    localhost:5441  (usuario/contraseña en .env.example)
+#
+#  Recargar con sismos recientes:   FORZAR_ETL=1 docker compose up etl
+#  Borrar todo (incluida la base):  docker compose down -v
+# =====================================================================
+name: fa-sismos
+
+x-app: &app
+  build: ./app
+  image: fa-sismos-app
+  user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+  environment:
+    DATABASE_URL: postgresql://${POSTGRES_USER:-sismos}:${POSTGRES_PASSWORD:-sismos_local}@db:5432/${POSTGRES_DB:-sismos_dw}
+    DIR_DATOS: /datos
+    TZ: America/Mexico_City
+    # Parámetros del ETL (ver README)
+    USGS_MAG_MIN: ${USGS_MAG_MIN:-3.5}
+    SSN_MAG_MIN: ${SSN_MAG_MIN:-4.0}
+    VENTANA_SEG: ${VENTANA_SEG:-30}
+    DISTANCIA_KM: ${DISTANCIA_KM:-100}
+    VENTANA_SEG_HIST: ${VENTANA_SEG_HIST:-120}
+    DISTANCIA_KM_HIST: ${DISTANCIA_KM_HIST:-250}
+    DELTA_MAG_MAX: ${DELTA_MAG_MAX:-1.0}
+    ANIO_CORTE_HIST: ${ANIO_CORTE_HIST:-1964}
+    FORZAR_ETL: ${FORZAR_ETL:-0}
+    FORZAR_DESCARGA: ${FORZAR_DESCARGA:-0}
+
+services:
+  db:
+    image: postgres:16.4-alpine
+    container_name: fa-sismos-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-sismos_dw}
+      POSTGRES_USER: ${POSTGRES_USER:-sismos}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sismos_local}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C"
+      TZ: America/Mexico_City
+    ports:
+      - "${DB_PORT:-5441}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Esquema, funciones y vistas: se cargan solos al crear el volumen
+      - ./db:/docker-entrypoint-initdb.d:ro
+      # Consultas de ejemplo: docker compose exec db psql -U sismos -d sismos_dw -f /consultas/consultas.sql
+      - ./sql:/consultas:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  # Pipeline: extracción → validación → carga → transformación. Corre y termina.
+  etl:
+    <<: *app
+    container_name: fa-sismos-etl
+    command: ["python", "etl.py"]
+    volumes:
+      - ./datos:/datos
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # API REST + página (Leaflet y Chart.js). Arranca cuando el ETL terminó bien.
+  web:
+    <<: *app
+    container_name: fa-sismos-web
+    restart: unless-stopped
+    command: ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "2", "--timeout", "120", "web:app"]
+    ports:
+      - "${WEB_PORT:-8091}:8000"
+    depends_on:
+      etl:
+        condition: service_completed_successfully
+
+volumes:
+  pgdata:
+    name: fa-sismos-pgdata

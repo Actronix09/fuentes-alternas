@@ -1,0 +1,174 @@
+/* =====================================================================
+   Estilos compartidos por los tres sistemas de fuentes alternas.
+   Paleta: instancia validada (categórica, ordinal y de estado) con
+   valores propios para modo claro y oscuro.
+   ===================================================================== */
+
+:root {
+  color-scheme: light;
+  --page:            #f9f9f7;
+  --surface-1:       #fcfcfb;
+  --text-primary:    #0b0b0b;
+  --text-secondary:  #52514e;
+  --text-muted:      #898781;
+  --grid:            #e1e0d9;
+  --baseline:        #c3c2b7;
+  --border:          rgba(11, 11, 11, 0.10);
+  --wash:            rgba(11, 11, 11, 0.04);
+
+  /* Categórica (orden fijo; los tres primeros validan todos-contra-todos) */
+  --series-1:        #2a78d6;   /* azul */
+  --series-2:        #eb6834;   /* naranja */
+  --series-3:        #1baf7a;   /* aqua */
+
+  /* Rampa ordinal azul de 4 clases (validada con --ordinal):
+     de menor a mayor magnitud. En claro no se usa nada más claro que el paso 250. */
+  --ord-1: #86b6ef; --ord-2: #3987e5; --ord-3: #1c5cab; --ord-4: #0d366b;
+
+  /* Estado (significado reservado; siempre con ícono + texto) */
+  --status-good:     #0ca30c;
+  --status-warning:  #fab219;
+  --status-serious:  #ec835a;
+  --status-critical: #d03b3b;
+  --delta-good-text: #006300;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page:            #0d0d0d;
+    --surface-1:       #1a1a19;
+    --text-primary:    #f0efec;
+    --text-secondary:  #c3c2b7;
+    --text-muted:      #898781;
+    --grid:            #2c2c2a;
+    --baseline:        #383835;
+    --border:          rgba(255, 255, 255, 0.10);
+    --wash:            rgba(255, 255, 255, 0.05);
+    --series-1:        #3987e5;
+    --series-2:        #d95926;
+    --series-3:        #199e70;
+    /* En oscuro el ancla se invierte: más magnitud = más claro; nada más oscuro que el paso 600 */
+    --ord-1: #184f95; --ord-2: #2a78d6; --ord-3: #6da7ec; --ord-4: #b7d3f6;
+    --delta-good-text: #0ca30c;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text-primary);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+a { color: var(--series-1); }
+
+.cabecera {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 24px 8px;
+}
+.cabecera h1 { font-size: 26px; line-height: 1.25; margin: 4px 0 8px; font-weight: 650; }
+.cabecera .sub { color: var(--text-secondary); max-width: 900px; margin: 0; }
+.etiqueta {
+  margin: 0; color: var(--text-muted); font-size: 13px;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+
+main { max-width: 1280px; margin: 0 auto; padding: 8px 24px 32px; transition: opacity .2s; }
+main.cargando { opacity: .55; }
+
+/* Fila única de filtros, arriba de todo lo que acota */
+.filtros {
+  position: sticky; top: 0; z-index: 1000;
+  display: flex; flex-wrap: wrap; align-items: end; gap: 12px 16px;
+  margin: 12px 0 16px; padding: 12px 16px;
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+}
+.filtros label { display: flex; flex-direction: column; gap: 2px; font-size: 13px; color: var(--text-secondary); }
+.filtros input, .filtros select, .filtros button {
+  font: inherit; color: var(--text-primary); background: var(--page);
+  border: 1px solid var(--border); border-radius: 6px; padding: 5px 8px; min-height: 32px;
+}
+.filtros input[type=number] { width: 96px; }
+.filtros button {
+  background: var(--text-primary); color: var(--surface-1); border-color: transparent;
+  padding: 5px 14px; cursor: pointer; font-weight: 600;
+}
+.filtros .alcance { color: var(--text-muted); font-size: 13px; margin-left: auto; align-self: center; }
+
+/* Fila de indicadores (stat tiles) */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpi { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.kpi .kpi-etiqueta { color: var(--text-secondary); font-size: 13px; }
+.kpi .kpi-valor { font-size: 26px; font-weight: 600; line-height: 1.2; margin-top: 4px; }
+.kpi .kpi-nota { color: var(--text-muted); font-size: 12px; margin-top: 2px; }
+.kpi.heroe .kpi-valor { font-size: 48px; }
+.kpi .clave { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+
+.panel {
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px 18px; margin-bottom: 16px; min-width: 0;
+}
+.panel h2 { font-size: 16px; font-weight: 600; margin: 0 0 10px; }
+.panel h3 { font-size: 14px; font-weight: 600; margin: 14px 0 6px; color: var(--text-secondary); }
+.panel-cabecera { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; }
+
+.rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 16px; }
+.rejilla > .panel { margin-bottom: 0; }
+.rejilla + .rejilla, .rejilla + .panel, .panel + .rejilla { margin-top: 16px; }
+
+.grafica { position: relative; height: 300px; }
+.grafica.alta { height: 380px; }
+
+.mapa { height: 520px; border-radius: 8px; border: 1px solid var(--border); }
+.mapa-leyenda { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 10px 0 0; font-size: 13px; color: var(--text-secondary); }
+.mapa-leyenda label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.punto { display: inline-block; width: 10px; height: 10px; border-radius: 50%; box-shadow: 0 0 0 2px var(--surface-1); }
+
+.escala { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted); margin-top: 8px; }
+.escala .barra { display: flex; height: 10px; width: 220px; border-radius: 3px; overflow: hidden; }
+.escala .barra span { flex: 1; }
+
+.nota { color: var(--text-muted); font-size: 13px; margin: 8px 0 0; }
+
+/* Tablas: la vista accesible de cada gráfica y los listados */
+.tabla-scroll { overflow-x: auto; max-height: 420px; overflow-y: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { padding: 6px 8px; border-bottom: 1px solid var(--grid); text-align: left; vertical-align: top; }
+th { color: var(--text-secondary); font-weight: 600; position: sticky; top: 0; background: var(--surface-1); }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+tbody tr:hover { background: var(--wash); }
+
+details.vista-tabla { margin-top: 8px; }
+details.vista-tabla summary { cursor: pointer; color: var(--text-secondary); font-size: 13px; }
+details.vista-tabla .tabla-scroll { max-height: 260px; margin-top: 6px; }
+
+/* Insignias de estado: color + ícono + texto, nunca color solo */
+.estado { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.estado::before {
+  content: attr(data-icono); display: inline-grid; place-items: center;
+  width: 16px; height: 16px; border-radius: 50%; color: #fff; font-size: 11px; font-weight: 700;
+}
+.estado.good::before     { background: var(--status-good); }
+.estado.warning::before  { background: var(--status-warning); color: #0b0b0b; }
+.estado.serious::before  { background: var(--status-serious); color: #0b0b0b; }
+.estado.critical::before { background: var(--status-critical); }
+
+.fuentes li { margin-bottom: 8px; color: var(--text-secondary); }
+.fuentes code { font-size: 12px; }
+
+.pie { max-width: 1280px; margin: 0 auto; padding: 0 24px 32px; color: var(--text-muted); font-size: 12px; }
+
+/* Leaflet en modo oscuro: el panel emergente toma la superficie */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--surface-1); color: var(--text-primary); }
+.leaflet-popup-content { font-size: 13px; line-height: 1.45; }
+.leaflet-container a.leaflet-popup-close-button { color: var(--text-muted); }
+
+@media (max-width: 720px) {
+  .rejilla { grid-template-columns: 1fr; }
+  .cabecera h1 { font-size: 22px; }
+  .mapa { height: 420px; }
+}

@@ -1,0 +1,224 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+1940-04-29T08:48:01.320Z,32.5623333,-115.3681667,6,3.68,ml,2,331,1.484,0.44,ci,ci3365261,2016-01-28T01:42:18.220Z,"1km W of Puebla, B.C., MX",earthquake,5.06,31.61,0.067,10,reviewed,ci,ci
+1940-05-02T00:53:04.520Z,31.9235,-116.4825,6,3.5,ml,5,338,1.142,0.42,ci,ci3365262,2016-01-28T01:42:18.710Z,"14km ENE of Ensenada, B.C., MX",earthquake,11.41,31.61,0.083,8,reviewed,ci,ci
+1940-05-19T04:36:40.500Z,32.8441667,-115.381,6,6.9,mw,7,300,,0.42,ci,ci3365279,2024-02-16T10:28:13.282Z,"The 1940 Imperial Valley, California Earthquake",earthquake,12.77,31.61,,0,reviewed,ci,ci
+1940-05-19T04:48:49.310Z,32.833,-115.5,6,4.71,ml,0,360,2.589,0.287,ci,ci3365280,2018-06-04T20:43:44.000Z,"7km ESE of Imperial, CA",earthquake,,,,3,reviewed,ci,ci
+1940-05-19T04:54:56.180Z,32.833,-115.5,6,5.15,ml,0,360,1.477,0,ci,ci3365281,2018-06-04T20:43:44.000Z,"7km ESE of Imperial, CA",earthquake,,,,3,reviewed,ci,ci
+1940-05-19T05:03:48.300Z,32.833,-115.5,6,4.4,ml,0,360,2.589,1.207,ci,ci3365282,2018-06-04T20:43:44.000Z,"7km ESE of Imperial, CA",earthquake,,,,5,reviewed,ci,ci
+1940-05-19T05:44:37.230Z,32.833,-115.5,6,4.91,ml,0,330.5,1.477,1.486,ci,ci3365283,2018-06-04T20:43:44.000Z,"7km ESE of Imperial, CA",earthquake,,,,5,reviewed,ci,ci
+1940-05-19T05:51:38.130Z,32.855,-115.5,6,5.41,ml,0,328.1,,1.445,ci,ci3365285,2018-06-04T20:43:44.000Z,"6km E of Imperial, CA",earthquake,,,,3,reviewed,ci,ci
+1940-05-19T05:57:19.360Z,32.833,-115.5,6,4.71,ml,0,360,2.589,0.637,ci,ci3365286,2018-06-04T20:43:44.000Z,"7km ESE of Imperial, CA",earthquake,,,,5,reviewed,ci,ci
+1940-05-19T06:17:45.860Z,32.833,-115.5,6,4.71,ml,0,360,2.589,1.637,ci,ci3365287,2018-06-04T20:43:44.000Z,"7km ESE of Imperial, CA",earthquake,,,,7,reviewed,ci,ci
+1940-05-19T06:33:21.400Z,32.833,-115.5,6,5.18,ml,0,324.7,1.477,0.494,ci,ci3365288,2018-06-04T20:43:44.000Z,"7km ESE of Imperial, CA",earthquake,,,,7,reviewed,ci,ci
+1940-05-19T06:35:33.460Z,32.833,-115.5,6,5.18,ml,0,360,2.589,2.137,ci,ci3365289,2018-06-04T20:43:44.000Z,"7km ESE of Imperial, CA",earthquake,,,,6,reviewed,ci,ci
+1940-05-19T07:01:00.000Z,32.766,-115.483,16,4.5,ml,,,,,ushis,ushis1307,2018-06-04T20:43:44.000Z,"5 km NE of Heber, California",earthquake,,,,,reviewed,ushis,pas
+1940-05-19T07:01:36.540Z,32.833,-115.5,6,4.28,ml,0,360,2.589,0.886,ci,ci3365290,2016-01-28T01:31:55.840Z,"7km ESE of Imperial, CA",earthquake,,,,5,reviewed,ci,ci
+1940-05-19T08:55:07.350Z,32.833,-115.5,6,4.12,ml,0,360,2.589,1.386,ci,ci3365291,2016-01-28T01:24:15.210Z,"7km ESE of Imperial, CA",earthquake,,,,8,reviewed,ci,ci
+1940-05-19T09:17:28.380Z,32.833,-115.5,6,4.2,ml,0,360,1.477,0,ci,ci3365292,2016-01-28T01:27:53.410Z,"7km ESE of Imperial, CA",earthquake,,,,6,reviewed,ci,ci
+1940-05-19T12:09:28.780Z,32.833,-115.5,6,4.01,ml,0,324.7,1.477,0.503,ci,ci3365293,2016-01-28T01:39:56.240Z,"7km ESE of Imperial, CA",earthquake,,,,7,reviewed,ci,ci
+1940-05-19T15:30:30.330Z,32.833,-115.5,6,4.25,ml,0,360,1.477,0.347,ci,ci3365296,2018-06-04T20:43:44.000Z,"7km ESE of Imperial, CA",earthquake,,,,9,reviewed,ci,ci
+1940-05-19T15:51:48.540Z,32.833,-115.5,6,3.6,ml,0,360,1.949,0,ci,ci3365297,2016-01-28T01:36:06.120Z,"7km ESE of Imperial, CA",earthquake,,,,8,reviewed,ci,ci
+1940-05-20T07:05:58.140Z,32.7163333,-115.3233333,6,3.5,ml,2,328,1.633,0.01,ci,ci3365300,2016-01-28T01:26:36.080Z,"12km SSE of Holtville, CA",earthquake,3.01,31.61,0.177,8,reviewed,ci,ci
+1940-05-21T12:41:34.050Z,32.1511667,-114.754,6,3.8,ml,2,339,2.229,0,ci,ci3365303,2016-01-28T01:46:19.970Z,"24km ESE of Estacion Coahuila, B.C., MX",earthquake,3.85,31.61,0.222,5,reviewed,ci,ci
+1940-05-21T21:29:49.610Z,32.8123333,-115.4495,6,3.82,ml,2,326,1.52,0.12,ci,ci3365305,2016-01-28T01:42:20.160Z,"6km W of Holtville, CA",earthquake,2.1,31.61,0.069,8,reviewed,ci,ci
+1940-05-22T10:58:32.950Z,32.9198333,-115.5436667,6,4.22,ml,4,323,1.188,0.43,ci,ci3365309,2018-06-04T20:43:44.000Z,"7km S of Brawley, CA",earthquake,10.47,31.61,0.04,8,reviewed,ci,ci
+1940-05-22T18:35:09.780Z,32.2748333,-115.6416667,6,3.64,ml,4,333,1.483,0.1,ci,ci3365311,2016-01-28T01:26:37.070Z,"34km S of Progreso, B.C., MX",earthquake,5.64,31.61,0.065,8,reviewed,ci,ci
+1940-05-22T20:56:17.860Z,32.554,-115.201,6,3.51,ml,2,332,1.758,0,ci,ci3365312,2016-01-28T01:30:32.970Z,"14km E of Puebla, B.C., MX",earthquake,3.21,31.61,0.104,8,reviewed,ci,ci
+1940-05-23T00:12:15.400Z,32.6006667,-115.1106667,6,3.64,ml,2,332,1.826,0.01,ci,ci3365313,2016-01-28T01:46:20.920Z,"12km WNW of Tecolots, B.C., MX",earthquake,3.22,31.61,0.401,4,reviewed,ci,ci
+1940-05-23T03:18:16.290Z,32.8228333,-115.2691667,6,3.5,ml,2,327,1.671,0.01,ci,ci3365314,2016-01-28T01:34:31.920Z,"10km E of Holtville, CA",earthquake,2.97,31.61,0.246,8,reviewed,ci,ci
+1940-05-26T08:49:24.360Z,31,-115,6,4.47,ml,4,348,2.669,2.2,ci,ci10086862,2016-01-28T01:38:30.020Z,"133km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.123,8,reviewed,ci,ci
+1940-06-01T23:54:10.070Z,32.3731667,-115.2796667,6,4.15,ml,4,353,1.653,0.63,ci,ci3365327,2016-01-28T01:46:21.940Z,"8km WNW of Delta, B.C., MX",earthquake,35.69,31.61,0.042,8,reviewed,ci,ci
+1940-06-01T23:59:28.000Z,32.5,-115,6,4.68,ml,3,355,2.486,1.52,ci,ci3365328,2018-06-04T20:43:44.000Z,"7km W of Hermosillo, B.C., MX",earthquake,99,31.61,0.054,13,reviewed,ci,ci
+1940-06-03T18:05:27.000Z,25.378,-109.492,15,6.31,mw,,,,,iscgem,iscgem901399,2022-04-26T19:35:25.253Z,"45 km SSW of Campo Pesquero el Colorado, Mexico",earthquake,,3.5,0.2,,reviewed,iscgem,iscgem
+1940-06-04T10:35:08.120Z,32.966,-116.315,6,5.03,ml,4,348,0.6004,0.57,ci,ci3365330,2018-06-04T20:43:44.000Z,"26km NE of Pine Valley, CA",earthquake,99,31.61,0.065,14,reviewed,ci,ci
+1940-06-04T10:36:29.690Z,32.967,-116.3,6,4.31,ml,0,360,1.957,0.2,ci,ci3365331,2016-01-28T01:31:56.730Z,"25km SW of Ocotillo Wells, CA",earthquake,,,,6,reviewed,ci,ci
+1940-06-05T21:12:21.960Z,31.5,-116.136,6,3.79,ml,2,358,2.697,0.52,ci,ci3365339,2016-01-28T01:26:40.100Z,"47km ESE of Maneadero, B.C., MX",earthquake,99,31.61,0.079,6,reviewed,ci,ci
+1940-06-05T22:53:46.510Z,32.75,-115.5,6,3.74,ml,2,357,2,0.6,ci,ci3365340,2016-01-28T01:42:21.670Z,"4km NE of Heber, CA",earthquake,99,31.61,0.016,6,reviewed,ci,ci
+1940-06-07T05:14:01.340Z,32.75,-115.5,6,4.27,ml,2,357,2,2.03,ci,ci3365352,2016-01-28T01:34:34.390Z,"4km NE of Heber, CA",earthquake,99,31.61,0.083,13,reviewed,ci,ci
+1940-06-26T04:54:46.160Z,32.75,-115.5,6,3.6,ml,2,348.9,1.293,1.05,ci,ci3365383,2016-01-28T01:46:24.340Z,"4km NE of Heber, CA",earthquake,99,31.61,0.067,7,reviewed,ci,ci
+1940-06-27T07:05:00.000Z,31,-115,6,3.96,ml,0,,2.829,,ci,ci10086866,2016-01-28T01:26:43.990Z,"133km S of Estacion Coahuila, B.C., MX",earthquake,,,0.065,8,reviewed,ci,ci
+1940-07-07T18:42:55.800Z,31.454,-115.1328333,6,4.89,ml,4,345,2.283,0.29,ci,ci3366203,2016-01-28T01:46:25.330Z,"83km S of Estacion Coahuila, B.C., MX",earthquake,9.72,31.61,0.107,11,reviewed,ci,ci
+1940-07-15T02:32:41.890Z,32.7915,-115.3978333,6,3.78,ml,3,327,1.565,0.73,ci,ci3365403,2016-01-28T01:30:37.800Z,"3km SW of Holtville, CA",earthquake,7.79,31.61,0.123,8,reviewed,ci,ci
+1940-09-12T00:06:31.640Z,31.3628333,-115.5621667,6,3.75,ml,4,345,2.074,0.8,ci,ci3365447,2016-01-28T01:34:38.220Z,"103km ESE of Maneadero, B.C., MX",earthquake,23.66,31.61,0.228,8,reviewed,ci,ci
+1940-09-12T00:15:27.900Z,31.513,-115.3295,6,4.4,ml,3,345,2.116,0.54,ci,ci3365448,2016-01-28T01:34:38.690Z,"81km S of Alberto Oviedo Mota, B.C., MX",earthquake,21.9,31.61,0.163,9,reviewed,ci,ci
+1940-10-12T03:45:39.170Z,31.4151667,-117.6456667,6,4.16,ml,5,313,1.482,0.39,ci,ci3365473,2016-01-28T01:34:40.210Z,"106km WSW of El Sauzal, B.C., MX",earthquake,6.01,31.61,0.222,12,reviewed,ci,ci
+1940-11-19T16:47:41.880Z,32.7503333,-115.7871667,6,3.54,ml,3,322,1.241,0.16,ci,ci10084726,2016-01-28T01:23:11.160Z,"19km E of Ocotillo, CA",earthquake,1.98,31.61,0.037,8,reviewed,ci,ci
+1940-11-22T12:36:50.710Z,32.9033333,-115.5611667,6,3.5,ml,3,322,1.425,0.72,ci,ci3365502,2016-01-28T01:30:44.640Z,"6km N of Imperial, CA",earthquake,9.72,31.61,0.039,9,reviewed,ci,ci
+1940-11-24T13:04:39.320Z,32.6046667,-115.1496667,6,3.75,ml,3,331,1.622,0.11,ci,ci3365505,2016-01-28T01:38:38.680Z,"16km WNW of Tecolots, B.C., MX",earthquake,2.07,31.61,0.221,8,reviewed,ci,ci
+1940-12-07T22:17:00.000Z,31.0693333,-114.8526667,6,6.05,ml,6,336,2.714,42.41,ci,ci3365515,2020-07-09T21:40:38.379Z,"126km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.106,8,reviewed,ci,ci
+1940-12-09T00:34:57.180Z,30.9676667,-115.5346667,6,4.32,ml,3,349,2.39,0.42,ci,ci3365516,2016-01-28T01:30:45.590Z,"129km SE of Maneadero, B.C., MX",earthquake,12.04,31.61,0.037,7,reviewed,ci,ci
+1940-12-09T10:19:13.010Z,31.4385,-115.4005,6,4.08,ml,4,345,2.119,0.86,ci,ci3365518,2016-01-28T01:23:12.100Z,"90km SSW of Alberto Oviedo Mota, B.C., MX",earthquake,34.05,31.61,0.116,9,reviewed,ci,ci
+1940-12-11T08:51:02.520Z,30.9956667,-115.6686667,6,3.79,ml,3,350,2.299,0.72,ci,ci3365519,2016-01-28T01:19:23.940Z,"117km SE of Maneadero, B.C., MX",earthquake,33.77,31.61,0.116,8,reviewed,ci,ci
+1940-12-12T17:17:27.370Z,31.25,-115,6,3.89,ml,3,346,2.5,2.08,ci,ci3365520,2016-01-28T01:38:40.170Z,"105km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.046,8,reviewed,ci,ci
+1940-12-13T08:02:25.410Z,31.25,-115,6,3.9,ml,4,346,2.5,2.96,ci,ci3365522,2016-01-28T01:46:30.230Z,"105km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.052,8,reviewed,ci,ci
+1940-12-14T03:19:29.200Z,31.0788333,-115.268,6,3.89,ml,2,348,2.452,0.19,ci,ci3365523,2016-01-28T01:23:12.590Z,"126km SSW of Estacion Coahuila, B.C., MX",earthquake,6.17,31.61,0.059,8,reviewed,ci,ci
+1940-12-18T22:10:50.520Z,30.6635,-116.091,6,4.07,ml,2,353,2.407,0.11,ci,ci3365525,2016-01-28T01:23:13.090Z,"126km SSE of Maneadero, B.C., MX",earthquake,11.31,31.61,0.026,8,reviewed,ci,ci
+1941-01-09T10:28:37.570Z,31.1593333,-115.0568333,6,5.23,ml,5,338,2.524,1.54,ci,ci3365529,2016-01-28T01:34:46.510Z,"115km S of Estacion Coahuila, B.C., MX",earthquake,57.74,31.61,0.126,10,reviewed,ci,ci
+1941-01-12T04:21:10.110Z,32.93,-115.905,6,3.59,ml,3,352,1.624,1.19,ci,ci3365531,2016-01-28T01:34:47.000Z,"23km NNE of Ocotillo, CA",earthquake,99,31.61,0.141,14,reviewed,ci,ci
+1941-01-12T12:08:05.380Z,31,-117,6,3.86,ml,3,348,3.002,0.43,ci,ci3365532,2016-01-28T01:34:47.460Z,"90km SSW of Maneadero, B.C., MX",earthquake,99,31.61,0.07,8,reviewed,ci,ci
+1941-02-05T13:33:00.960Z,31.25,-115,6,4.77,ml,6,342,2.624,1.51,ci,ci3365551,2016-01-28T01:34:47.920Z,"105km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.046,8,reviewed,ci,ci
+1941-02-11T14:35:35.220Z,15.186,-94.698,15,6.51,mw,,,,,iscgem,iscgem900658,2022-04-26T19:24:00.588Z,"115 km S of San Francisco del Mar Viejo, Mexico",earthquake,,12.8,0.2,,reviewed,iscgem,iscgem
+1941-02-23T08:12:00.000Z,31,-115,6,4,mh,,,,,ci,ci10086886,2016-01-28T01:19:27.400Z,"133km S of Estacion Coahuila, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1941-02-26T13:09:31.300Z,32.9483333,-115.4771667,6,3.64,ml,3,324,1.231,0.71,ci,ci3365568,2016-01-28T01:46:32.660Z,"6km SE of Brawley, CA",earthquake,6.96,31.61,0.052,10,reviewed,ci,ci
+1941-03-07T02:36:55.960Z,31.456,-116.0603333,6,3.86,ml,3,344,1.73,0.42,ci,ci3365578,2016-01-28T01:46:33.650Z,"56km ESE of Maneadero, B.C., MX",earthquake,8.1,31.61,0.248,8,reviewed,ci,ci
+1941-03-15T05:46:25.380Z,28.371,-113.443,15,6.01,mw,,,,,iscgem,iscgem900710,2022-04-26T19:24:57.389Z,"30 km ESE of San Luis, Mexico",earthquake,,25,0.37,,reviewed,iscgem,iscgem
+1941-04-15T19:09:56.680Z,18.68,-102.989,30,7.6,mw,,,,,iscgem,iscgem900764,2022-04-26T19:25:52.810Z,"21 km ESE of Coalcomán de Vázquez Pallares, Mexico",earthquake,,4.5,0.4,,reviewed,iscgem,iscgem
+1941-06-25T17:14:25.680Z,31,-115,6,4.42,ml,3,354,3.597,3.63,ci,ci3365634,2016-01-28T01:30:53.460Z,"133km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.05,8,reviewed,ci,ci
+1941-07-09T01:11:04.090Z,31.25,-115,6,3.69,ml,3,354,2.624,4.45,ci,ci3365681,2016-01-28T01:23:22.010Z,"105km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.05,6,reviewed,ci,ci
+1941-07-16T03:13:31.840Z,24.573,-108.891,15,5.96,mw,,,,,iscgem,iscgem900903,2022-04-26T19:28:35.424Z,"94 km W of Dautillos, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1941-07-18T20:42:00.960Z,31,-115.5,6,4.09,ml,2,349,2.382,1.2,ci,ci3365697,2016-01-28T01:30:59.150Z,"129km SE of Maneadero, B.C., MX",earthquake,99,31.61,0.033,7,reviewed,ci,ci
+1941-07-22T18:52:05.600Z,32.75,-115.45,6,4.26,ml,3,354,2.033,0.84,ci,ci3365699,2018-06-04T20:43:44.000Z,"8km ENE of Heber, CA",earthquake,99,31.61,0.105,10,reviewed,ci,ci
+1941-07-23T21:04:50.590Z,14.553,-93.366,35,5.88,mw,,,,,iscgem,iscgem900921,2022-04-26T19:28:58.418Z,"99 km SW of El Arenal, Mexico",earthquake,,18.3,0.23,,reviewed,iscgem,iscgem
+1941-09-13T18:14:55.950Z,18.388,-106.682,20,6.22,mw,,,,,iscgem,iscgem900995,2022-04-26T19:29:53.698Z,"211 km WSW of Emiliano Zapata, Mexico",earthquake,,10.2,0.56,,reviewed,iscgem,iscgem
+1941-11-01T14:23:31.650Z,32.5733333,-115.654,6,4.15,ml,3,328,1.28,0.12,ci,ci3365798,2016-01-28T01:19:40.360Z,"7km W of Progreso, B.C., MX",earthquake,4.46,31.61,0.134,12,reviewed,ci,ci
+1941-12-24T07:30:08.650Z,32.37,-115.962,6,4.59,ml,0,360,2.007,0.126,ci,ci3365838,2018-06-04T20:43:44.000Z,"41km S of Ocotillo, CA",earthquake,,,,10,reviewed,ci,ci
+1942-04-27T11:27:57.900Z,31.8325,-116.8316667,6,4.26,ml,3,348,2.203,0.66,ci,ci3365962,2016-01-28T01:35:17.440Z,"16km WSW of El Sauzal, B.C., MX",earthquake,28.36,31.61,0.189,12,reviewed,ci,ci
+1942-05-23T15:47:33.780Z,32.9945,-116.2503333,6,4.87,ml,6,305,0.6261,0.29,ci,ci3365989,2018-06-04T20:43:44.000Z,"20km SW of Ocotillo Wells, CA",earthquake,2.38,31.61,0.108,13,reviewed,ci,ci
+1942-07-04T20:16:04.850Z,31.5458333,-116.2393333,6,3.71,ml,2,349,1.57,0.18,ci,ci3366030,2016-01-28T01:35:24.700Z,"36km ESE of Maneadero, B.C., MX",earthquake,5.37,31.61,0.104,8,reviewed,ci,ci
+1942-07-05T02:06:30.390Z,31.961,-115.817,6,3.56,ml,3,339,1.512,0.7,ci,ci3366031,2016-01-28T01:42:59.000Z,"68km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,10.39,31.61,0.159,8,reviewed,ci,ci
+1942-07-05T02:31:58.160Z,31.9615,-115.6751667,6,3.61,ml,3,339,1.61,0.56,ci,ci3366032,2016-01-28T01:23:36.350Z,"56km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,8.71,31.61,0.017,7,reviewed,ci,ci
+1942-09-04T02:53:57.940Z,14.554,-90.94,15,5.95,mw,,,,,iscgem,iscgem900463,2022-04-26T19:20:41.631Z,"Guatemala",earthquake,,25,0.35,,reviewed,iscgem,iscgem
+1942-09-12T11:18:18.520Z,31.7726667,-116.063,6,3.71,ml,3,344,1.483,0.43,ci,ci3366072,2016-01-28T01:39:12.700Z,"48km E of Maneadero, B.C., MX",earthquake,8.77,31.61,0.217,7,reviewed,ci,ci
+1942-09-14T13:44:54.540Z,32.7108333,-117.1118333,6,3.88,ml,6,292,0.1937,0.51,ci,ci3366073,2016-01-28T01:31:21.240Z,"4km NNW of National City, CA",earthquake,5.91,31.61,0.217,9,reviewed,ci,ci
+1942-09-21T16:51:55.210Z,32.017,-115.4615,6,3.96,ml,2,341,1.735,0.39,ci,ci3366082,2016-01-28T01:39:14.110Z,"36km SW of Alberto Oviedo Mota, B.C., MX",earthquake,6.89,31.61,0.116,9,reviewed,ci,ci
+1942-10-21T16:22:11.980Z,32.9753333,-115.7853333,6,6.6,mw,7,291,,0.34,ci,ci3366099,2024-02-18T09:55:01.085Z,"The 1942 Fish Creek Mountains, California Earthquake",earthquake,3.97,31.61,,0,reviewed,ci,ci
+1942-10-21T16:25:16.230Z,32.9525,-115.6748333,6,4.61,ml,4,320,1.331,0.11,ci,ci3366100,2018-06-04T20:43:44.000Z,"11km SSW of Westmorland, CA",earthquake,2.21,31.61,0.141,7,reviewed,ci,ci
+1942-10-21T16:26:57.110Z,32.9411667,-116.0441667,6,4.5,ml,3,312,1.021,0.24,ci,ci3366101,2018-06-04T20:43:44.000Z,"23km NNW of Ocotillo, CA",earthquake,4.05,31.61,0.07,7,reviewed,ci,ci
+1942-10-21T16:34:42.650Z,32.9618333,-116.062,6,4.3,ml,2,311,1.008,0.19,ci,ci3366102,2018-06-04T20:43:44.000Z,"21km SSE of Ocotillo Wells, CA",earthquake,2.62,31.61,0.048,8,reviewed,ci,ci
+1942-10-21T16:38:08.020Z,32.9513333,-115.9608333,6,4.46,ml,2,314,1.091,0.3,ci,ci3366103,2018-06-04T20:43:44.000Z,"24km N of Ocotillo, CA",earthquake,3.69,31.61,0.112,7,reviewed,ci,ci
+1942-10-21T19:10:30.790Z,32.8536667,-116.07,6,4.48,ml,2,314,0.9967,0.05,ci,ci3366104,2018-06-04T20:43:44.000Z,"15km NNW of Ocotillo, CA",earthquake,1.75,31.61,0.084,8,reviewed,ci,ci
+1942-10-21T21:49:34.230Z,32.909,-116.307,6,4.1,ml,5,306,0.6434,0.6,ci,ci3366105,2018-06-04T20:43:44.000Z,"23km ENE of Pine Valley, CA",earthquake,5.09,31.61,0.058,8,reviewed,ci,ci
+1942-10-21T22:50:34.990Z,32.9116667,-116.1166667,6,3.79,ml,4,311,0.7655,0.32,ci,ci3366106,2016-01-28T01:35:26.710Z,"23km NNW of Ocotillo, CA",earthquake,3.18,31.61,0.039,8,reviewed,ci,ci
+1942-10-22T11:39:49.640Z,32.9518333,-115.7788333,6,3.77,ml,2,318,1.244,0.1,ci,ci3366110,2016-01-28T01:19:57.090Z,"18km WSW of Westmorland, CA",earthquake,1.68,31.61,0.05,7,reviewed,ci,ci
+1942-10-22T18:13:27.660Z,32.9346667,-116.0011667,6,4.68,ml,4,314,1.056,0.3,ci,ci3366113,2018-06-04T20:43:44.000Z,"22km N of Ocotillo, CA",earthquake,3.03,31.61,0.019,6,reviewed,ci,ci
+1942-10-23T01:11:27.560Z,32.9153333,-116.0498333,6,3.68,ml,2,313,1.015,0.12,ci,ci3366114,2016-01-28T01:43:04.000Z,"21km NNW of Ocotillo, CA",earthquake,2.09,31.61,0.106,4,reviewed,ci,ci
+1942-10-25T18:59:40.560Z,32.9251667,-116.1443333,6,3.9,ml,3,310,0.7388,0.19,ci,ci3366117,2016-01-28T01:39:16.500Z,"24km S of Ocotillo Wells, CA",earthquake,2.34,31.61,0.06,14,reviewed,ci,ci
+1942-10-26T04:34:08.280Z,32.888,-116.2086667,6,3.56,ml,3,310,0.7189,0.19,ci,ci3366123,2016-01-28T01:47:03.200Z,"26km NW of Ocotillo, CA",earthquake,2.29,31.61,0.058,11,reviewed,ci,ci
+1942-10-28T10:44:43.660Z,15.005,-96.101,15,6.13,mw,,,,,iscgem,iscgem900515,2022-04-26T19:21:46.893Z,"84 km S of Sector H Tres, Mexico",earthquake,,6.8,0.47,,reviewed,iscgem,iscgem
+1942-10-29T16:21:56.970Z,32.9571667,-115.9131667,6,4.47,ml,2,315,1.132,0.54,ci,ci3366125,2018-06-04T20:43:44.000Z,"26km NNE of Ocotillo, CA",earthquake,6.14,31.61,0.082,14,reviewed,ci,ci
+1942-10-31T15:07:58.770Z,32.9453333,-116.3113333,6,3.98,ml,3,305,0.7973,0.56,ci,ci3366133,2016-01-28T01:35:29.710Z,"25km NE of Pine Valley, CA",earthquake,4.41,31.61,0.12,12,reviewed,ci,ci
+1942-11-02T12:59:38.700Z,32.8306667,-115.6415,6,4.47,ml,3,322,1.15,0.2,ci,ci3366137,2018-06-04T20:43:44.000Z,"7km WSW of Imperial, CA",earthquake,4.71,31.61,0.093,11,reviewed,ci,ci
+1942-11-03T05:06:29.990Z,32.9471667,-115.9238333,6,4.4,ml,4,315,0.8858,0.52,ci,ci3366139,2018-06-04T20:43:44.000Z,"24km NNE of Ocotillo, CA",earthquake,8.28,31.61,0.122,12,reviewed,ci,ci
+1942-11-03T10:18:42.190Z,32.9231667,-116.0635,6,4.01,ml,3,312,0.7961,0.26,ci,ci3366140,2016-01-28T01:47:04.740Z,"22km NNW of Ocotillo, CA",earthquake,2.86,31.61,0.036,14,reviewed,ci,ci
+1942-11-07T04:39:08.380Z,32.8356667,-116.0863333,6,4.01,ml,3,314,0.8315,0.43,ci,ci3366147,2016-01-28T01:23:43.290Z,"14km NW of Ocotillo, CA",earthquake,5.01,31.61,0.12,11,reviewed,ci,ci
+1942-11-12T00:07:34.750Z,32.8223333,-115.817,6,4.17,ml,3,349,1.025,0.38,ci,ci3366150,2016-01-28T01:35:31.200Z,"19km ENE of Ocotillo, CA",earthquake,4.61,31.61,0.065,12,reviewed,ci,ci
+1942-11-12T04:55:31.310Z,16.476,-94.231,65,6.28,mw,,,,,iscgem,iscgem900540,2022-04-26T19:22:17.822Z,"5 km NE of General Pascual Fentes, Mexico",earthquake,,5,0.51,,reviewed,iscgem,iscgem
+1942-11-12T17:56:05.000Z,32.1738333,-116.1786667,6,4.2,ml,2,357,1.31,0.81,ci,ci3366151,2016-01-28T01:43:08.340Z,"54km NE of Ensenada, B.C., MX",earthquake,61.21,31.61,0.09,12,reviewed,ci,ci
+1942-11-22T06:39:54.380Z,32.8506667,-116.126,6,3.53,ml,3,314,0.7962,0.38,ci,ci3366158,2016-01-28T01:23:44.290Z,"18km NW of Ocotillo, CA",earthquake,3.87,31.61,0.139,13,reviewed,ci,ci
+1942-11-25T01:18:02.700Z,16.244,-97.981,25,6.07,mw,,,,,iscgem,iscgem900565,2022-04-26T19:22:40.742Z,"5 km ESE of El Carrizo, Mexico",earthquake,,7.8,0.2,,reviewed,iscgem,iscgem
+1942-12-05T06:23:01.390Z,31,-115,6,3.75,ml,2,360,2.829,1.25,ci,ci3366171,2016-01-28T01:19:59.710Z,"133km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.269,6,reviewed,ci,ci
+1942-12-06T13:16:16.470Z,31,-115,6,3.58,ml,3,354,2.829,8.87,ci,ci3366176,2016-01-28T01:39:18.480Z,"133km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.141,4,reviewed,ci,ci
+1942-12-15T21:38:04.170Z,32.5838333,-116.1441667,6,3.63,ml,2,358,0.9768,0.39,ci,ci3366187,2016-01-28T01:35:33.750Z,"22km SW of Ocotillo, CA",earthquake,32.52,31.61,0.114,10,reviewed,ci,ci
+1943-01-08T00:24:07.580Z,32.8666667,-116.183,6,3.72,ml,3,312,0.9015,0.55,ci,ci3366207,2016-01-28T01:31:27.650Z,"23km NW of Ocotillo, CA",earthquake,5.04,31.61,0.146,14,reviewed,ci,ci
+1943-02-22T09:20:48.560Z,17.397,-101.37,20,7.4,mw,,,,,iscgem,iscgem899723,2022-04-26T19:09:49.091Z,"18 km SSW of Palos Blancos, Mexico",earthquake,,3.6,0.3,,reviewed,iscgem,iscgem
+1943-02-23T09:21:12.760Z,32.8295,-117.4885,0.09,3.7,ml,6,257,0.2002,0.42,ci,ci3366242,2016-01-28T01:35:36.790Z,"20km W of La Jolla, CA",earthquake,5.5,9.79,0.119,12,reviewed,ci,ci
+1943-02-24T01:58:34.500Z,32.8405,-116.1551667,6,3.63,ml,4,313,0.7839,0.52,ci,ci3366243,2016-01-28T01:35:37.320Z,"19km NW of Ocotillo, CA",earthquake,4.99,31.61,0.173,13,reviewed,ci,ci
+1943-02-25T06:19:37.600Z,32.8838333,-116.1683333,6,3.5,ml,4,312,0.7477,0.49,ci,ci3366244,2016-01-28T01:35:37.810Z,"23km NW of Ocotillo, CA",earthquake,4.53,31.61,0.126,10,reviewed,ci,ci
+1943-03-07T20:56:31.080Z,32.8255,-115.976,6,3.73,ml,3,317,1.077,0.52,ci,ci3366257,2016-01-28T01:47:13.070Z,"10km N of Ocotillo, CA",earthquake,5.61,31.61,0.086,13,reviewed,ci,ci
+1943-03-15T14:09:28.080Z,32.9153333,-116.1205,6,3.58,ml,3,311,0.7608,0.39,ci,ci3366261,2016-01-28T01:47:13.590Z,"23km NNW of Ocotillo, CA",earthquake,4.54,31.61,0.116,11,reviewed,ci,ci
+1943-03-17T00:40:41.120Z,32.428,-115.2696667,6,4.6,ml,4,333,1.627,0.76,ci,ci3366263,2018-06-04T20:43:44.000Z,"11km NW of Delta, B.C., MX",earthquake,8.99,31.61,0.042,13,reviewed,ci,ci
+1943-04-07T03:46:18.560Z,32.9361667,-116.1685,6,3.58,ml,3,309,0.9162,0.39,ci,ci3366279,2016-01-28T01:47:14.500Z,"23km S of Ocotillo Wells, CA",earthquake,4.34,31.61,0.092,7,reviewed,ci,ci
+1943-04-10T18:31:43.850Z,32.932,-116.033,6,3.54,ml,3,313,0.8132,0.29,ci,ci3366282,2016-01-28T01:20:05.630Z,"22km N of Ocotillo, CA",earthquake,3.14,31.61,0.088,8,reviewed,ci,ci
+1943-04-27T03:28:36.640Z,32.9353333,-116.1305,6,3.63,ml,2,310,0.948,0.38,ci,ci3366293,2016-01-28T01:35:41.340Z,"23km S of Ocotillo Wells, CA",earthquake,4.45,31.61,0.117,12,reviewed,ci,ci
+1943-04-30T15:52:59.410Z,32.932,-116.0776667,6,3.78,ml,3,312,0.9921,0.09,ci,ci3366295,2016-01-28T01:31:31.610Z,"23km NNW of Ocotillo, CA",earthquake,1.73,31.61,0.156,14,reviewed,ci,ci
+1943-05-26T10:31:28.270Z,17.273,-105.995,15,6.12,mw,,,,,iscgem,iscgem899852,2022-04-26T19:11:24.924Z,"255 km SSW of Barra de Navidad, Mexico",earthquake,,25,0.38,,reviewed,iscgem,iscgem
+1943-06-15T18:21:47.370Z,14.285,-93.037,25,6.36,mw,,,,,iscgem,iscgem899888,2022-04-26T19:12:15.340Z,"82 km SW of Puerto Madero, Mexico",earthquake,,19.4,0.31,,reviewed,iscgem,iscgem
+1943-08-17T15:51:00.750Z,32.9671667,-116.048,6,3.7,ml,3,311,0.7845,0.17,ci,ci3366367,2016-01-28T01:43:19.400Z,"21km SSE of Ocotillo Wells, CA",earthquake,2.15,31.61,0.12,11,reviewed,ci,ci
+1943-10-28T05:58:49.940Z,31.1758333,-115.3808333,6,4.05,ml,3,347,2.316,0.55,ci,ci3366412,2016-01-28T01:43:23.480Z,"119km S of Alberto Oviedo Mota, B.C., MX",earthquake,13.09,31.61,0.024,6,reviewed,ci,ci
+1943-10-30T18:54:21.300Z,32.866,-115.859,6,3.85,ml,3,319,0.9726,0.32,ci,ci3366416,2016-01-28T01:23:59.460Z,"19km NE of Ocotillo, CA",earthquake,3.35,31.61,0.111,12,reviewed,ci,ci
+1943-11-02T16:47:58.780Z,32.9371667,-115.8923333,6,4.14,ml,3,316,0.9139,0.08,ci,ci3366422,2018-06-04T20:43:44.000Z,"24km NNE of Ocotillo, CA",earthquake,1.88,31.61,0.062,14,reviewed,ci,ci
+1943-11-02T16:54:16.200Z,32.946,-115.9985,6,3.58,ml,3,313,0.8311,0.38,ci,ci3366423,2016-01-28T01:20:13.080Z,"24km N of Ocotillo, CA",earthquake,4.45,31.61,0.094,8,reviewed,ci,ci
+1943-11-02T16:57:18.340Z,33,-116,6,3.85,ml,5,311,0.8048,0.8,ci,ci3366425,2016-01-28T01:43:24.030Z,"20km SE of Ocotillo Wells, CA",earthquake,99,31.61,0.054,8,reviewed,ci,ci
+1943-11-02T17:50:45.040Z,32.91,-116.1448333,6,4.39,ml,5,311,0.7473,0.46,ci,ci3366427,2018-06-04T20:43:44.000Z,"24km NW of Ocotillo, CA",earthquake,4.83,31.61,0.18,14,reviewed,ci,ci
+1943-11-02T17:53:07.790Z,32.9893333,-116.0986667,6,4,ml,3,309,0.9799,0.61,ci,ci3366428,2016-01-28T01:31:40.540Z,"17km S of Ocotillo Wells, CA",earthquake,3.21,31.61,0.188,10,reviewed,ci,ci
+1943-11-02T18:01:40.870Z,32.967,-116,6,3.78,ml,4,330,1.539,1.14,ci,ci3366429,2016-01-28T01:27:36.540Z,"23km SSE of Ocotillo Wells, CA",earthquake,99,31.61,0.103,14,reviewed,ci,ci
+1943-11-16T18:08:44.800Z,32.9258333,-116.1033333,6,3.61,ml,3,311,0.7667,0.27,ci,ci3366441,2016-01-28T01:31:41.560Z,"24km NNW of Ocotillo, CA",earthquake,3.33,31.61,0.173,14,reviewed,ci,ci
+1943-11-16T18:09:09.000Z,32.9666667,-116,6,4,mh,,,,,ci,ci10086922,2016-01-28T01:20:14.600Z,"23km SSE of Ocotillo Wells, CA",earthquake,,,,0,reviewed,ci,ci
+1943-12-08T19:38:55.320Z,14.91,-94.341,15,6.15,mw,,,,,iscgem,iscgem900125,2022-04-26T19:15:49.746Z,"128 km SSW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,,12.8,0.2,,reviewed,iscgem,iscgem
+1944-01-10T20:09:58.410Z,17.138,-100.714,15,6.71,mw,,,,,iscgem,iscgem899264,2022-04-26T19:05:07.020Z,"6 km SW of Tenexpa, Mexico",earthquake,,11.2,0.2,,reviewed,iscgem,iscgem
+1944-01-10T20:33:21.160Z,16.327,-100.916,15,6.35,mw,,,,,iscgemsup,iscgemsup899265,2022-05-09T16:22:42.096Z,"96 km SSW of Tetitlán, Mexico",earthquake,,13.8,0.82,,reviewed,iscgemsup,iscgemsup
+1944-02-04T15:41:27.340Z,32.9153333,-116.1113333,6,3.63,ml,3,312,0.7671,0.43,ci,ci3366484,2016-01-28T01:47:28.710Z,"23km NNW of Ocotillo, CA",earthquake,4.98,31.61,0.143,14,reviewed,ci,ci
+1944-05-19T09:37:49.910Z,31.3545,-116.8423333,6,3.6,ml,2,348,1.545,0.11,ci,ci3366524,2016-01-28T01:27:43.650Z,"48km SSW of Maneadero, B.C., MX",earthquake,7.29,31.61,0.147,10,reviewed,ci,ci
+1944-06-16T21:51:34.390Z,18.661,-105.084,15,6.28,mw,,,,,iscgem,iscgem899431,2022-04-26T19:06:27.601Z,"73 km SW of Barra de Navidad, Mexico",earthquake,,19.5,0.69,,reviewed,iscgem,iscgem
+1944-06-28T07:58:55.880Z,14.295,-92.911,25,7.04,mw,,,,,iscgem,iscgem899448,2022-04-26T19:06:37.228Z,"70 km SW of Puerto Madero, Mexico",earthquake,,19.4,0.29,,reviewed,iscgem,iscgem
+1944-08-04T06:46:59.870Z,32.8983333,-116.171,6,3.71,ml,5,311,0.7369,0.65,ci,ci3366604,2016-01-28T01:24:18.570Z,"25km NW of Ocotillo, CA",earthquake,3.64,31.61,0.138,14,reviewed,ci,ci
+1944-08-20T11:33:12.720Z,32.9825,-116.0641667,6,3.79,ml,3,311,0.7652,0.15,ci,ci3366613,2016-01-28T01:39:48.570Z,"19km SSE of Ocotillo Wells, CA",earthquake,1.42,31.61,0.024,13,reviewed,ci,ci
+1944-10-27T06:25:36.120Z,31.8776667,-114.9701667,6,3.51,ml,4,354,2.172,0.83,ci,ci3363332,2016-01-28T01:27:58.130Z,"35km S of Estacion Coahuila, B.C., MX",earthquake,45.31,31.61,0.021,6,reviewed,ci,ci
+1944-10-27T06:33:00.660Z,31.9,-115,6,3.75,ml,4,354,2.138,0.89,ci,ci3363530,2016-01-28T01:32:01.310Z,"33km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.05,6,reviewed,ci,ci
+1944-10-27T12:27:10.280Z,31.2705,-115.7696667,6,3.98,ml,4,345,2.027,0.26,ci,ci3362534,2016-01-28T01:36:09.490Z,"90km ESE of Maneadero, B.C., MX",earthquake,5.33,31.61,0.064,11,reviewed,ci,ci
+1944-10-28T04:01:35.770Z,31.1626667,-115.7385,6,4.76,ml,5,347,2.129,1.03,ci,ci3362535,2016-01-28T01:24:19.080Z,"100km SE of Maneadero, B.C., MX",earthquake,22.12,31.61,0.089,9,reviewed,ci,ci
+1944-11-04T15:19:08.480Z,32.9271667,-115.9138333,6,3.69,ml,4,316,0.9025,0.94,ci,ci3362486,2016-01-28T01:43:44.360Z,"23km NNE of Ocotillo, CA",earthquake,6.83,31.61,0.124,14,reviewed,ci,ci
+1944-12-01T14:31:51.720Z,32.2046667,-115.9381667,6,3.5,ml,3,334,1.291,1.61,ci,ci10084786,2016-01-28T01:24:21.460Z,"53km SW of Progreso, B.C., MX",earthquake,16.37,31.61,0.131,7,reviewed,ci,ci
+1945-01-01T07:09:50.990Z,31.219,-115.7836667,6,3.5,ml,3,346,2.061,0.48,ci,ci10084794,2016-01-28T01:43:46.260Z,"93km SE of Maneadero, B.C., MX",earthquake,7.56,31.61,0.213,8,reviewed,ci,ci
+1945-02-20T09:35:42.480Z,31.1355,-115.7545,6,4.11,ml,3,346,2.143,0.3,ci,ci12277743,2016-01-28T01:43:50.370Z,"101km SE of Maneadero, B.C., MX",earthquake,5.91,31.61,0.055,16,reviewed,ci,ci
+1945-02-27T09:06:51.500Z,31.1616667,-116.1873333,6,3.82,ml,2,352,1.924,0.33,ci,ci10084810,2016-01-28T01:36:14.030Z,"71km SSE of Maneadero, B.C., MX",earthquake,12.59,31.61,0.116,10,reviewed,ci,ci
+1945-03-01T11:19:58.670Z,32.0276667,-116.134,6,4.25,ml,5,336,1.262,0.42,ci,ci10084814,2016-01-28T01:36:14.560Z,"49km ENE of Ensenada, B.C., MX",earthquake,5.66,31.61,0.117,13,reviewed,ci,ci
+1945-04-05T08:33:35.880Z,32.1086667,-115.545,6,3.56,ml,2,339,1.629,0.62,ci,ci3360912,2016-01-28T01:24:26.340Z,"38km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,6.37,31.61,0.08,10,reviewed,ci,ci
+1945-04-15T19:50:47.430Z,21.995,-107.294,35,6.01,mw,,,,,iscgemsup,iscgemsup898887,2022-05-09T16:15:52.679Z,"162 km SW of Los Pozos, Mexico",earthquake,,25,0.74,,reviewed,iscgemsup,iscgemsup
+1945-04-20T22:32:08.840Z,31.9416667,-114.8406667,6,4.13,ml,4,340,2.212,0.8,ci,ci10084830,2016-01-28T01:28:03.060Z,"32km SSE of Estacion Coahuila, B.C., MX",earthquake,11.42,31.61,0.132,12,reviewed,ci,ci
+1945-04-22T09:45:53.250Z,32,-114.8,6,4.19,ml,5,340,2.202,10.25,ci,ci10084834,2016-01-28T01:36:16.630Z,"29km SE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.234,14,reviewed,ci,ci
+1945-04-22T22:14:00.120Z,32,-114.5,6,4.39,ml,4,354,2.407,12.07,ci,ci10084838,2016-01-28T01:32:11.970Z,"52km ESE of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.129,12,reviewed,ci,ci
+1945-05-11T23:32:55.690Z,30.884,-115.8966667,6,5.15,ml,4,349,2.287,0.78,ci,ci10084854,2016-01-28T01:32:12.950Z,"112km SE of Maneadero, B.C., MX",earthquake,23.6,31.61,0.114,9,reviewed,ci,ci
+1945-06-27T13:08:25.350Z,26.955,-110.852,10,6.92,mw,,,,,iscgem,iscgem898976,2022-04-26T19:01:47.493Z,"59 km SW of Bahía de Lobos, Mexico",earthquake,,25,0.23,,reviewed,iscgem,iscgem
+1945-06-27T18:08:12.230Z,26.925,-111.24,15,6.05,mw,,,,,iscgemsup,iscgemsup898977,2022-05-09T16:17:52.836Z,"73 km E of Mulegé, Mexico",earthquake,,25,0.75,,reviewed,iscgemsup,iscgemsup
+1945-06-30T05:31:21.600Z,16.721,-115.786,10,6.43,mw,,,,,iscgem,iscgem898984,2022-04-26T19:01:52.821Z,"east central Pacific Ocean",earthquake,,25,0.22,,reviewed,iscgem,iscgem
+1945-08-10T11:20:20.190Z,15.361,-88.687,25,6.04,mw,,,,,iscgem,iscgem899032,2022-04-26T19:02:20.932Z,"5 km W of Joconal, Honduras",earthquake,,25,0.36,,reviewed,iscgem,iscgem
+1945-08-14T02:08:26.980Z,31.498,-115.998,6,3.67,mh,5,344,1.729,0.35,ci,ci12277759,2016-04-02T07:19:53.334Z,"59km ESE of Maneadero, B.C., MX",earthquake,7.86,31.61,0.099,17,reviewed,ci,ci
+1945-08-14T02:20:06.800Z,30.7748333,-116.8443333,6,4.27,ml,4,349,2.111,0.61,ci,ci12277763,2016-01-28T01:24:12.410Z,"108km SSW of Maneadero, B.C., MX",earthquake,25.39,31.61,0.073,9,reviewed,ci,ci
+1945-08-27T11:25:17.230Z,32.8186667,-115.7815,6,3.98,ml,4,321,1.241,0.6,ci,ci3360558,2016-01-28T01:43:55.350Z,"20km W of Imperial, CA",earthquake,3.9,31.61,0.106,13,reviewed,ci,ci
+1945-09-07T14:45:19.220Z,31.3566667,-115.2988333,6,4.22,ml,3,346,2.238,0.37,ci,ci10084882,2016-01-28T01:40:05.680Z,"97km SSW of Estacion Coahuila, B.C., MX",earthquake,7.31,31.61,0.073,10,reviewed,ci,ci
+1946-01-16T11:06:59.690Z,32.8305,-115.9355,6,4.04,ml,4,318,0.937,0.56,ci,ci3360133,2016-01-28T01:20:47.020Z,"12km NNE of Ocotillo, CA",earthquake,4.15,31.61,0.246,15,reviewed,ci,ci
+1946-03-07T19:13:01.020Z,31.4051667,-117.7688333,6,3.72,ml,3,346,1.518,0.57,ci,ci10084910,2016-01-28T01:36:24.240Z,"117km WSW of El Sauzal, B.C., MX",earthquake,16.67,31.61,0.213,7,reviewed,ci,ci
+1946-04-08T19:45:17.150Z,31.3531667,-116.247,6,4.04,ml,4,345,1.731,0.89,ci,ci10085126,2016-01-28T01:40:19.310Z,"50km SE of Maneadero, B.C., MX",earthquake,21.97,31.61,0.089,8,reviewed,ci,ci
+1946-05-09T23:34:29.690Z,22.643,-108.047,10,6.31,mw,,,,,iscgem,iscgem898384,2022-04-26T18:55:37.370Z,"172 km ESE of La Playa, Mexico",earthquake,,25,0.23,,reviewed,iscgem,iscgem
+1946-05-15T22:10:39.770Z,15.558,-96.572,15,6.31,mw,,,,,iscgem,iscgem898391,2022-04-26T18:55:45.676Z,"15 km SW of Puerto Ángel, Mexico",earthquake,,8.2,0.21,,reviewed,iscgem,iscgem
+1946-05-30T16:59:39.000Z,32.0365,-116.3046667,6,4,ml,4,336,1.151,0.37,ci,ci12277767,2016-01-28T01:31:53.600Z,"35km ENE of Ensenada, B.C., MX",earthquake,4.36,31.61,0.058,7,reviewed,ci,ci
+1946-06-15T19:46:50.850Z,32.2066667,-116.2588333,31.83,4.75,ml,5,332,1.066,0.56,ci,ci3359639,2022-05-09T15:59:34.434Z,"49km SSE of Campo, CA",earthquake,7.04,31.61,0.1,12,reviewed,ci,ci
+1946-06-16T00:39:27.250Z,31.12,-114.9555,6,4.13,ml,2,348,2.615,0.47,ci,ci10085226,2016-01-28T01:28:28.940Z,"120km S of Estacion Coahuila, B.C., MX",earthquake,11.11,31.61,0.116,7,reviewed,ci,ci
+1946-08-04T11:42:29.650Z,31.3463333,-115.7408333,6,3.96,ml,3,346,1.984,0.53,ci,ci10085270,2016-01-28T01:24:52.190Z,"88km ESE of Maneadero, B.C., MX",earthquake,11.26,31.61,0.155,10,reviewed,ci,ci
+1947-03-21T19:39:41.240Z,32.9588333,-115.4253333,6,3.68,ml,3,324,1.268,0.32,ci,ci3358919,2016-01-28T01:21:18.180Z,"10km ESE of Brawley, CA",earthquake,5,31.61,0.087,14,reviewed,ci,ci
+1947-04-02T15:15:35.410Z,32.5595,-115.1011667,6,4.28,ml,3,351,1.679,0.57,ci,ci12277775,2016-01-28T01:47:37.260Z,"11km W of Tecolots, B.C., MX",earthquake,30.37,31.61,0.112,10,reviewed,ci,ci
+1947-04-06T08:10:54.290Z,31.5,-115,6,4.9,ml,4,354,2.428,1.54,ci,ci12277783,2016-01-28T01:47:37.760Z,"77km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.107,9,reviewed,ci,ci
+1947-04-07T21:01:26.840Z,31.4738333,-115.1768333,6,3.85,ml,3,355,2.355,0.98,ci,ci10085338,2016-01-28T01:40:45.800Z,"82km SSW of Estacion Coahuila, B.C., MX",earthquake,44.94,31.61,0.105,6,reviewed,ci,ci
+1947-05-18T00:25:31.550Z,31.2263333,-116.0191667,6,3.98,ml,4,346,1.94,0.5,ci,ci12277791,2016-01-28T01:33:06.260Z,"75km SE of Maneadero, B.C., MX",earthquake,9.19,31.61,0.123,16,reviewed,ci,ci
+1947-08-31T02:20:17.570Z,32.67,-116.1355,6,3.69,ml,5,319,0.9154,0.39,ci,ci3358124,2016-01-28T01:29:14.620Z,"15km WSW of Ocotillo, CA",earthquake,1.98,31.61,0.053,11,reviewed,ci,ci
+1947-10-03T23:32:17.110Z,18.902,-101.477,65,6.3,mw,,,,,iscgem,iscgem898054,2022-04-26T18:51:31.807Z,"16 km ENE of Poturo, Mexico",earthquake,,6.2,0.29,,reviewed,iscgem,iscgem
+1947-10-25T10:55:22.340Z,32.7128333,-115.7231667,6,3.63,ml,4,324,1.298,0.33,ci,ci10085802,2016-01-28T01:17:59.360Z,"18km WSW of El Centro, CA",earthquake,3.4,31.61,0.159,14,reviewed,ci,ci
+1947-11-21T03:54:14.340Z,18.495,-107.471,15,6.3,mw,,,,,iscgem,iscgem898151,2022-04-26T18:52:36.385Z,"270 km SW of La Cruz de Loreto, Mexico",earthquake,,4.6,0.63,,reviewed,iscgem,iscgem
+1947-11-21T04:17:46.350Z,19.469,-107.439,15,6.1,mw,,,,,iscgem,iscgem898152,2022-04-26T18:52:37.722Z,"216 km WSW of La Cruz de Loreto, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1948-01-06T17:23:26.280Z,16.523,-98.829,30,6.45,mw,,,,,iscgem,iscgem897137,2022-04-26T18:38:50.323Z,"6 km SSW of El Polvorín, Mexico",earthquake,,12.2,0.2,,reviewed,iscgem,iscgem
+1948-01-12T01:19:11.680Z,32.9146667,-115.824,6,3.83,ml,5,317,0.9753,0.73,ci,ci12290291,2016-01-28T01:47:38.260Z,"23km SW of Westmorland, CA",earthquake,4.68,31.61,0.121,13,reviewed,ci,ci
+1948-05-02T00:26:05.040Z,31.813,-115.0145,6,4.07,ml,2,341,2.166,0.04,ci,ci10085866,2016-01-28T01:41:43.980Z,"42km S of Estacion Coahuila, B.C., MX",earthquake,5.11,31.61,0.153,10,reviewed,ci,ci
+1948-05-10T03:49:23.780Z,31.8903333,-117.0311667,6,3.7,ml,4,335,0.9884,0.53,ci,ci12290343,2016-01-28T01:27:51.020Z,"33km W of El Sauzal, B.C., MX",earthquake,5.55,31.61,0.219,11,reviewed,ci,ci
+1948-06-04T07:26:58.870Z,30.7858333,-115.2176667,6,4.58,ml,3,349,2.701,0.44,ci,ci12290351,2016-01-28T01:24:13.800Z,"158km S of Estacion Coahuila, B.C., MX",earthquake,99,31.61,0.136,10,reviewed,ci,ci
+1948-06-05T22:55:02.910Z,31.2923333,-115.4635,6,3.76,ml,3,346,2.183,0.99,ci,ci12290355,2016-01-28T01:47:39.740Z,"108km SSW of Alberto Oviedo Mota, B.C., MX",earthquake,15.39,31.61,0.25,5,reviewed,ci,ci
+1948-07-16T07:12:24.860Z,14.31,-91.24,41.4,6.25,mw,,,,,iscgem,iscgem897437,2022-04-26T18:43:52.646Z,"13 km SE of Río Bravo, Guatemala",earthquake,,5,0.55,,reviewed,iscgem,iscgem
+1948-07-16T07:19:39.160Z,14.364,-91.227,44.1,6.07,mw,,,,,iscgem,iscgem897438,2022-04-26T18:43:57.799Z,"7 km S of Santa Bárbara, Guatemala",earthquake,,4.9,0.21,,reviewed,iscgem,iscgem
+1948-08-29T18:36:35.590Z,17.307,-105.574,15,5.53,mw,,,,,iscgem,iscgem897526,2022-04-26T18:44:37.171Z,"230 km SSW of Barra de Navidad, Mexico",earthquake,,25,0.62,,reviewed,iscgem,iscgem
+1948-09-01T19:53:28.230Z,25.236,-109.718,10,5.98,mw,,,,,iscgem,iscgem897530,2022-04-26T18:44:43.605Z,"70 km SW of Campo Pesquero el Colorado, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1948-12-04T00:22:48.980Z,21.182,-106.818,15,6.59,mw,,,,,iscgem,iscgem897657,2022-04-26T18:45:50.257Z,"142 km WNW of Corral del Risco (Punta de Mita), Mexico",earthquake,,25,0.47,,reviewed,iscgem,iscgem
+1949-02-11T09:57:24.720Z,31.878,-117.1351667,6,3.99,ml,4,345,0.9877,0.52,ci,ci3356223,2016-01-28T01:45:45.090Z,"43km W of El Sauzal, B.C., MX",earthquake,12.23,31.61,0.108,11,reviewed,ci,ci
+1949-02-14T18:07:27.940Z,17.088,-105.719,15,6.13,mw,,,,,iscgem,iscgem896327,2022-04-26T18:34:17.558Z,"258 km SSW of Barra de Navidad, Mexico",earthquake,,25,0.24,,reviewed,iscgem,iscgem
+1949-02-24T07:13:28.530Z,31.711,-115.9573333,6,3.53,ml,2,344,1.59,0.28,ci,ci10085850,2016-01-28T01:45:46.040Z,"58km E of Maneadero, B.C., MX",earthquake,4.07,31.61,0.097,8,reviewed,ci,ci
+1949-04-13T13:06:32.390Z,32.9315,-116.4158333,6,3.54,ml,4,306,0.5637,0.52,ci,ci3356132,2016-01-28T01:18:42.410Z,"16km NE of Pine Valley, CA",earthquake,2.75,31.61,0.156,10,reviewed,ci,ci
+1949-05-29T09:10:02.670Z,32.1346667,-116.4851667,6,3.52,ml,4,333,0.9748,0.41,ci,ci3356062,2016-01-28T01:26:18.560Z,"32km NNE of Ensenada, B.C., MX",earthquake,3.14,31.61,0.101,7,reviewed,ci,ci
+1949-07-12T00:13:11.600Z,31.911,-115.8586667,6,3.76,ml,2,340,1.515,0.37,ci,ci10085906,2016-01-28T01:30:10.800Z,"70km ENE of Maneadero, B.C., MX",earthquake,4.35,31.61,0.115,7,reviewed,ci,ci
+1949-07-24T18:50:12.160Z,32.1816667,-117.8395,6,3.53,ml,6,318,0.8406,0.31,ci,ci3355929,2016-01-28T01:46:00.590Z,"78km WSW of Rosarito, B.C., MX",earthquake,3.59,31.61,0.117,14,reviewed,ci,ci
+1949-11-04T20:42:38.770Z,32.1266667,-116.7496667,6,5.66,ml,10,318,0.8494,0.35,ci,ci3355574,2022-05-09T19:35:55.271Z,"19km ESE of Primo Tapia, B.C., MX",earthquake,4.01,31.61,0.139,12,reviewed,ci,ci
+1949-11-04T20:46:48.000Z,32.2,-116.53333,6,3.8,mh,,,,,ci,ci10085966,2016-01-28T01:38:18.730Z,"36km E of Primo Tapia, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1949-11-04T22:55:46.640Z,32.1648333,-116.6466667,6,3.69,ml,5,332,0.8652,0.37,ci,ci3355577,2016-01-28T01:19:01.800Z,"26km ESE of Primo Tapia, B.C., MX",earthquake,2.51,31.61,0.113,11,reviewed,ci,ci
+1949-11-04T23:25:46.000Z,32.2,-116.5333333,6,3.5,mh,,,,,ci,ci10086002,2016-01-28T01:26:24.370Z,"36km E of Primo Tapia, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1949-11-04T23:33:56.000Z,32.2,-116.5333333,6,3.5,mh,,,,,ci,ci10086006,2016-01-28T01:26:23.940Z,"36km E of Primo Tapia, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1949-11-05T02:41:42.000Z,32.2,-116.5333333,6,3.7,mh,,,,,ci,ci10086030,2016-01-28T01:34:20.100Z,"36km E of Primo Tapia, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1949-11-05T04:28:51.000Z,32.2,-116.5333333,6,3.5,mh,,,,,ci,ci10086042,2016-01-28T01:30:21.670Z,"36km E of Primo Tapia, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1949-11-05T04:35:23.900Z,31.9823333,-116.9916667,6,5.08,ml,7,332,0.9061,0.42,ci,ci3355580,2022-05-09T20:53:37.822Z,"27km SSW of Primo Tapia, B.C., MX",earthquake,5.01,31.61,0.137,14,reviewed,ci,ci
+1949-11-05T20:02:08.560Z,32.1681667,-116.6686667,6,3.69,ml,6,332,0.8516,0.31,ci,ci3355582,2016-01-28T01:30:22.160Z,"24km ESE of Primo Tapia, B.C., MX",earthquake,2.11,31.61,0.101,13,reviewed,ci,ci
+1949-11-06T23:05:13.010Z,32.2728333,-116.6518333,6,3.64,ml,6,329,0.7781,0.34,ci,ci3355583,2016-01-28T01:30:22.810Z,"26km ENE of Primo Tapia, B.C., MX",earthquake,2.28,31.61,0.188,14,reviewed,ci,ci
+1949-11-08T01:19:41.000Z,32.2,-116.5333333,6,3.6,mh,,,,,ci,ci10086090,2016-01-28T01:22:51.070Z,"36km E of Primo Tapia, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1949-11-10T12:44:57.000Z,32.2,-116.5333333,6,3.6,mh,,,,,ci,ci10086102,2016-01-28T01:26:24.820Z,"36km E of Primo Tapia, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1949-11-11T05:34:25.200Z,32.1193333,-116.6558333,6,3.52,ml,6,334,0.8978,0.36,ci,ci3354775,2016-01-28T01:38:21.530Z,"24km N of El Sauzal, B.C., MX",earthquake,2.68,31.61,0.168,11,reviewed,ci,ci
+1949-11-11T13:54:01.570Z,32.2473333,-116.547,6,4.08,ml,6,329,0.8567,0.71,ci,ci3354776,2016-01-28T01:42:09.260Z,"35km E of Primo Tapia, B.C., MX",earthquake,4.5,31.61,0.185,12,reviewed,ci,ci
+1949-11-12T06:01:37.000Z,32.2,-116.5333333,6,3.5,mh,,,,,ci,ci10086106,2016-01-28T01:42:09.740Z,"36km E of Primo Tapia, B.C., MX",earthquake,,,,0,reviewed,ci,ci
+1949-11-19T06:06:48.840Z,31.9518333,-114.9025,6,3.67,ml,3,340,2.165,0.46,ci,ci3354823,2016-01-28T01:42:11.260Z,"28km SSE of Estacion Coahuila, B.C., MX",earthquake,5.29,31.61,0.066,8,reviewed,ci,ci
+1949-11-20T07:09:53.620Z,28.474,-112.31,10,6.84,mw,,,,,iscgem,iscgem897037,2022-04-26T18:38:22.101Z,"52 km SW of Bahía de Kino, Mexico",earthquake,,25,0.2,,reviewed,iscgem,iscgem
+1949-12-25T22:40:40.080Z,18.738,-104.583,15,6.43,mw,,,,,iscgem,iscgem897115,2022-04-26T18:38:29.100Z,"46 km SSW of El Naranjo, Mexico",earthquake,,15.9,0.3,,reviewed,iscgem,iscgem

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sismos · Validación SSN ↔ USGS ComCat</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="">
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+<header class="cabecera">
+  <p class="etiqueta">Fuente alterna · Sistema 1 de 3</p>
+  <h1>Validación cruzada del catálogo sísmico: SSN ↔ USGS ComCat</h1>
+  <p class="sub">Cada sismo del data warehouse del paper <em>Cuando México tiembla</em> (catálogo del
+    Servicio Sismológico Nacional) se busca en el catálogo independiente del U.S. Geological Survey,
+    por cercanía en tiempo y en espacio. Lo que coincide valida al SSN; lo que no, señala huecos o
+    diferencias entre redes.</p>
+</header>
+
+<main>
+  <form id="filtros" class="filtros" aria-label="Filtros del tablero">
+    <label>Desde (año) <input type="number" name="desde" value="1900" min="1900" max="{{ anio_actual }}"></label>
+    <label>Hasta (año) <input type="number" name="hasta" value="{{ anio_actual }}" min="1900" max="{{ anio_actual }}"></label>
+    <label>Magnitud de referencia ≥
+      <select name="mag_min">
+        <option selected>4.0</option><option>4.5</option><option>5.0</option><option>6.0</option><option>7.0</option>
+      </select>
+    </label>
+    <label>Fechas del SSN
+      <select name="variante">
+        <option value="corregida" selected>Corregidas a UTC (recomendado)</option>
+        <option value="dw_original">Tal como están en el DW del paper</option>
+      </select>
+    </label>
+    <label>Soluciones del USGS
+      <select name="origen">
+        <option value="independientes" selected>Solo las independientes del SSN</option>
+        <option value="todas">Todas (incluye las aportadas por el SSN)</option>
+        <option value="aportadas">Solo las aportadas por el SSN (UNM)</option>
+      </select>
+    </label>
+    <button type="submit">Aplicar</button>
+    <span class="alcance">Los filtros acotan todo el tablero. La magnitud de referencia es la del SSN; si el sismo solo está en el USGS, la del USGS.</span>
+  </form>
+  <p id="aviso" class="nota" role="alert"></p>
+
+  <section class="kpis" id="kpis" aria-live="polite"></section>
+
+  <section class="panel" id="panel-diagnostico">
+    <h2>Hallazgo: el DW del paper recorre un día la fecha de los sismos nocturnos</h2>
+    <p class="nota">El DW une la <strong>fecha local</strong> del SSN con la <strong>hora UTC</strong>. Entre las 18:00 y las
+      23:59 (hora del centro del país) la fecha local todavía es la del día anterior a la fecha UTC, así que esos sismos
+      quedan 24 horas antes de cuando ocurrieron. Con esa fecha el USGS no los encuentra; con la fecha reconstruida
+      (zona <code>America/Mexico_City</code>, con su horario de verano histórico) sí. Sismos SSN con M ≥ magnitud del filtro.</p>
+    <div class="kpis" id="kpis-diagnostico"></div>
+    <div class="grafica"><canvas id="g-diagnostico"></canvas></div>
+    <h3>Ejemplos: los sismos más fuertes con la fecha recorrida</h3>
+    <div class="tabla-scroll"><table id="t-diagnostico"></table></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-cabecera">
+      <h2>Mapa de sismos</h2>
+      <span class="nota" id="nota-mapa"></span>
+    </div>
+    <div id="mapa" class="mapa"></div>
+    <div class="mapa-leyenda" id="leyenda-mapa">
+      <label><input type="checkbox" value="ambas" checked><span class="punto" data-slot="0"></span>En ambas fuentes (línea = separación entre epicentros)</label>
+      <label><input type="checkbox" value="solo_usgs" checked><span class="punto" data-slot="1"></span>Solo USGS</label>
+      <label><input type="checkbox" value="solo_ssn" checked><span class="punto" data-slot="2"></span>Solo SSN</label>
+      <span>Tamaño = magnitud</span>
+    </div>
+  </section>
+
+  <section class="rejilla">
+    <div class="panel"><h2>Sismos por año</h2><div class="grafica"><canvas id="g-serie"></canvas></div>
+      <p class="nota">SSN: sismos con magnitud ≥ la mínima de análisis. USGS: todos los descargados. Pares: presentes en ambas.</p></div>
+    <div class="panel"><h2>¿Desde qué magnitud coinciden los catálogos?</h2><div class="grafica"><canvas id="g-cobertura"></canvas></div>
+      <p class="nota">Porcentaje de los sismos de cada fuente que también aparecen en la otra.</p></div>
+    <div class="panel"><h2>Diferencia de magnitud, USGS − SSN</h2><div class="grafica"><canvas id="g-dmag"></canvas></div></div>
+    <div class="panel"><h2>Distancia entre epicentros de cada par</h2><div class="grafica"><canvas id="g-dist"></canvas></div></div>
+    <div class="panel"><h2>Magnitud SSN contra magnitud USGS</h2><div class="grafica alta"><canvas id="g-disp"></canvas></div>
+      <p class="nota">Cada burbuja agrupa los pares con la misma magnitud (al décimo); su área es el número de pares. La diagonal es la concordancia perfecta.</p></div>
+    <div class="panel"><h2>Concordancia por década</h2><div class="tabla-scroll"><table id="t-decada"></table></div></div>
+  </section>
+
+  <section class="panel"><h2>¿Quién calculó la solución en ComCat?</h2>
+    <p class="nota">ComCat también republica soluciones que le envía el Instituto de Geofísica de la UNAM (código
+      <code>UNM</code>), donde opera el SSN. Esas coinciden casi por construcción; la validación independiente
+      es la de las soluciones calculadas por otras redes. El filtro «Soluciones del USGS» elige cuáles entran al tablero.</p>
+    <div class="tabla-scroll"><table id="t-origen"></table></div></section>
+
+  <section class="rejilla">
+    <div class="panel"><h2>Diferencia según la escala de magnitud del USGS</h2><div class="tabla-scroll"><table id="t-tipo"></table></div></div>
+    <div class="panel"><h2>Confirmación por estado (referencia del SSN)</h2><div class="tabla-scroll"><table id="t-estado"></table></div></div>
+  </section>
+
+  <section class="panel"><h2>Pares con mayor discrepancia</h2>
+    <p class="nota">|ΔM| ≥ 0.5 o epicentros separados 75 km o más: los casos que conviene revisar a mano.</p>
+    <div class="tabla-scroll"><table id="t-discrepancias"></table></div></section>
+
+  <section class="rejilla">
+    <div class="panel"><h2>Sismos que solo registra el USGS</h2><div class="tabla-scroll"><table id="t-solo-usgs"></table></div></div>
+    <div class="panel"><h2>Sismos que solo registra el SSN</h2><div class="tabla-scroll"><table id="t-solo-ssn"></table></div></div>
+  </section>
+
+  <section class="panel"><h2>Bitácora del ETL (última ejecución)</h2><div class="tabla-scroll"><table id="t-bitacora"></table></div></section>
+
+  <section class="panel fuentes"><h2>Fuentes y cómo citarlas</h2><ul id="fuentes"></ul></section>
+</main>
+
+<footer class="pie">Prototipo académico · Bases de Datos · ESCOM-IPN. Mapa base © colaboradores de OpenStreetMap.</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"
+        integrity="sha384-NrKB+u6Ts6AtkIhwPixiKTzgSKNblyhlk0Sohlgar9UHUBzai/sgnNNWWd291xqt" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='comun.js') }}"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

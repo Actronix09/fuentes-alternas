@@ -1,0 +1,424 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2026-01-02T13:58:15.741Z,16.798,-99.3939,18,6.5,mww,122,44,1.097,1.11,us,us7000rm3k,2026-04-07T22:11:51.040Z,"0 km W of San Marcos, Mexico",earthquake,8.72,1.72,0.027,135,reviewed,us,us
+2026-01-02T14:17:32.384Z,16.8335,-99.4636,10,4.3,mb,88,209,0.259,1.02,us,us7000rrer,2026-04-07T22:12:00.040Z,"7 km NE of El Cortés, Mexico",earthquake,5.71,2.249,0.06,77,reviewed,us,us
+2026-01-02T15:34:13.352Z,16.712,-99.4321,10,4.3,mb,26,197,0.289,0.68,us,us7000rm3y,2026-04-07T22:11:51.040Z,"10 km SSW of San Marcos, Mexico",earthquake,3.22,1.928,0.063,71,reviewed,us,us
+2026-01-02T15:37:04.206Z,16.7519,-99.3249,10,4.6,mb,57,184,0.411,0.92,us,us7000rm3u,2026-04-07T22:11:51.040Z,"8 km SE of San Marcos, Mexico",earthquake,8.17,1.945,0.038,205,reviewed,us,us
+2026-01-02T17:00:34.044Z,16.823,-99.387,10,4.5,mb,151,173,1.075,0.64,us,us7000rm45,2026-04-07T22:11:51.040Z,"2 km N of San Marcos, Mexico",earthquake,6.81,1.92,0.037,213,reviewed,us,us
+2026-01-03T04:42:22.059Z,16.6586,-99.5234,10,4,mb,31,193,0.38,0.94,us,us6000s6ps,2026-04-07T22:11:47.040Z,"9 km S of Llano de la Puerta, Mexico",earthquake,2.88,1.953,0.173,9,reviewed,us,us
+2026-01-04T02:22:17.175Z,16.6496,-99.5794,10,4,mb,32,147,0.349,1.24,us,us6000s6pt,2026-04-07T22:11:47.040Z,"7 km SE of San Andrés Playa Encantada (El Podrido), Mexico",earthquake,3.63,1.95,0.143,13,reviewed,us,us
+2026-01-04T13:54:20.041Z,16.8188,-99.5313,10,4.2,mb,19,187,0.291,0.96,us,us6000s6pu,2026-04-07T22:11:47.040Z,"4 km ESE of Campanario, Mexico",earthquake,2.54,1.726,0.167,10,reviewed,us,us
+2026-01-05T08:38:29.148Z,16.3075,-98.7515,14.349,4.4,mb,92,159,0.561,0.55,us,us7000rmiq,2026-04-07T22:11:55.040Z,"22 km S of Barra de Tecoanapa, Mexico",earthquake,4.96,4.774,0.046,135,reviewed,us,us
+2026-01-05T21:41:25.652Z,16.0168,-104.7192,10,4.1,mb,92,200,4.908,0.83,us,us7000rnjn,2026-04-07T22:11:59.040Z,"off the coast of Michoacan, Mexico",earthquake,12.93,1.983,0.059,79,reviewed,us,us
+2026-01-07T22:19:45.631Z,17.3791,-102.4444,10,4.3,mb,33,223,2.534,1.05,us,us7000rnbu,2026-04-07T22:11:59.040Z,"67 km S of Playa Azul, Mexico",earthquake,5.34,1.891,0.085,39,reviewed,us,us
+2026-01-09T21:28:42.015Z,16.3271,-87.6106,10,4.3,mb,30,152,2.898,0.93,us,us6000s50u,2026-04-10T15:20:38.040Z,"55 km NNE of Baja Mar, Honduras",earthquake,9.21,1.94,0.087,37,reviewed,us,us
+2026-01-11T23:54:21.451Z,31.4899,-115.7447,1.828,3.7,ml,93,204,0.475,0.62,us,us7000rp3d,2026-07-02T19:20:04.387Z,"51 km ENE of San Vicente, Mexico",earthquake,2.76,2.088,0.037,96,reviewed,us,us
+2026-01-12T23:05:03.648Z,14.3943,-93.3517,35,4,mb,21,192,2.212,0.83,us,us6000s5gv,2026-04-10T15:20:39.040Z,"106 km WSW of Puerto Madero, Mexico",earthquake,9.23,2.003,0.163,10,reviewed,us,us
+2026-01-14T11:44:30.189Z,14.3731,-91.0118,10,4,mb,24,212,1.284,0.94,us,us7000rpl4,2026-04-10T15:20:48.040Z,"4 km NNE of Santa Lucía Cotzumalguapa, Guatemala",earthquake,16.39,2.004,0.125,17,reviewed,us,us
+2026-01-14T13:18:50.800Z,20.4569,-105.3413,10,3.5,ml,6,256,3.458,0.83,us,us7000rpll,2026-04-10T15:20:48.040Z,"15 km N of El Tuito, Mexico",earthquake,10.81,2.023,0.181,4,reviewed,us,us
+2026-01-15T08:50:31.153Z,32.5097,-104.6369,5,3.5,ml,57,52,0.679,0.49,us,us7000rpti,2026-04-18T14:46:47.040Z,"34 km SSE of Hope, New Mexico",earthquake,4.51,1.971,0.091,16,reviewed,us,us
+2026-01-15T09:54:39.470Z,32.790833333333,-115.45316666667,16.24,4.0911787112618,mw,60,35,0.01541,0.26,ci,ci41158263,2026-10-22T10:04:54.107Z,"7 km WSW of Holtville, CA",earthquake,0.21,0.49,,10,reviewed,ci,ci
+2026-01-16T06:08:45.428Z,15.8229,-88.1529,11.729,5.2,mww,77,57,2.23,0.87,us,us7000rq11,2026-04-18T14:46:53.040Z,"13 km WNW of Omoa, Honduras",earthquake,6.74,4.592,0.058,29,reviewed,us,us
+2026-01-16T06:42:54.882Z,16.7862,-99.4356,10,4.9,mb,79,162,1.134,0.74,us,us7000rq15,2026-04-18T14:46:54.040Z,"5 km WSW of San Marcos, Mexico",earthquake,9.48,1.91,0.027,421,reviewed,us,us
+2026-01-16T23:05:39.231Z,15.0757,-97.5406,10,4.2,mb,21,212,0.992,0.87,us,us6000s6q6,2026-04-18T14:46:43.040Z,"99 km SSW of La Barra de Colotepec, Mexico",earthquake,3.42,1.966,0.214,6,reviewed,us,us
+2026-01-18T03:12:56.995Z,16.109,-92.7519,188.122,4.5,mb,51,143,0.615,1.09,us,us7000rqde,2026-04-18T14:47:06.040Z,"4 km ESE of Plan de Agua Prieta, Mexico",earthquake,10.12,7.485,0.045,143,reviewed,us,us
+2026-01-20T11:30:13.157Z,15.9448,-95.6059,38.829,5,mww,130,136,3.261,0.87,us,us7000rqte,2026-04-18T14:47:30.040Z,"8 km ESE of Santiago Astata, Mexico",earthquake,8.17,6.681,0.068,21,reviewed,us,us
+2026-01-21T10:39:27.624Z,16.0697,-95.0528,67.723,4.2,mb,29,121,1.784,0.92,us,us6000s6nx,2026-04-18T14:46:41.040Z,"15 km S of Colonia Juárez, Mexico",earthquake,2.73,10.479,0.118,20,reviewed,us,us
+2026-01-21T16:02:25.682Z,18.4417,-100.9877,66.693,4.8,mb,79,162,1.22,0.9,us,us7000rr4h,2026-04-18T14:47:42.040Z,"3 km SSW of Zirándaro de los Chávez, Mexico",earthquake,4.42,7.338,0.062,81,reviewed,us,us
+2026-01-24T04:03:39.150Z,14.0295,-92.8016,10,4.2,mb,41,179,2.329,0.99,us,us6000s6qa,2026-04-21T16:27:55.040Z,"83 km SW of Brisas Barra de Suchiate, Mexico",earthquake,7.68,1.959,0.093,32,reviewed,us,us
+2026-01-24T10:37:24.171Z,14.1233,-92.5657,10,4.2,mb,37,229,1.038,0.78,us,us6000s6qc,2026-04-21T16:27:55.040Z,"58 km SW of Brisas Barra de Suchiate, Mexico",earthquake,10.33,1.979,0.089,35,reviewed,us,us
+2026-01-24T22:01:50.638Z,17.0662,-99.1707,37.862,4.3,mb,53,83,0.33,0.82,us,us7000rrvb,2026-04-21T16:28:03.040Z,"2 km N of Apantla, Mexico",earthquake,4.41,8.422,0.062,73,reviewed,us,us
+2026-01-25T00:55:36.172Z,31.715,-104.523,5.6384,3.5,ml,27,66,0,0.1,tx,tx2026bsdhbc,2026-04-21T16:28:03.040Z,"52 km SSW of Whites City, New Mexico",earthquake,1.2446156936829,0.60719884584037,0.1,24,reviewed,tx,tx
+2026-01-26T10:22:37.516Z,32.563,-101.092,6.5186,4.3,ml,40,55,0.1,0.2,tx,tx2026burunl,2026-10-19T10:32:52.289Z,"23 km SW of Snyder, Texas",earthquake,0.79300395229298,1.5605420803163,0.1,21,reviewed,tx,tx
+2026-01-28T05:42:16.542Z,26.4504,-110.7386,10,4,mb,57,138,1.597,1.14,us,us6000s4xq,2026-04-21T16:27:52.040Z,"77 km NE of Loreto, Mexico",earthquake,6.62,1.962,0.149,12,reviewed,us,us
+2026-01-29T22:06:28.437Z,15.4338,-96.0877,10,4.5,mb,44,136,0.334,1.17,us,us6000s5cg,2026-04-23T20:43:16.040Z,"37 km S of Sector H Tres, Mexico",earthquake,4.62,1.88,0.068,64,reviewed,us,us
+2026-01-31T09:58:31.306Z,16.0895,-95.5588,42.297,4.6,mb,56,130,3.231,0.81,us,us6000s5qh,2026-04-23T20:43:18.040Z,"13 km ENE of San Pedro Huamelula, Mexico",earthquake,8.81,8.236,0.04,189,reviewed,us,us
+2026-02-04T22:05:57.300Z,14.9685,-91.4424,187.706,4.2,mb,30,177,1.467,0.71,us,us6000s6i8,2026-04-23T20:43:23.040Z,"2 km N of San Francisco El Alto, Guatemala",earthquake,9.61,6.613,0.11,23,reviewed,us,us
+2026-02-05T09:52:24.829Z,16.8032,-93.8081,155.321,4.3,mb,56,85,0.605,0.98,us,us6000s6km,2026-05-01T14:35:42.040Z,"5 km W of Francisco I. Madero, Mexico",earthquake,6.22,7.531,0.064,68,reviewed,us,us
+2026-02-05T18:05:15.360Z,32.3409,-104.4501,8.802,3.7,mwr,36,72,0.49,0.4,us,us6000s6n4,2026-05-01T14:35:42.040Z,"19 km NNW of Whites City, New Mexico",earthquake,3.35,8.498,0.066,22,reviewed,us,us
+2026-02-08T21:42:09.325Z,15.9691,-96.9212,22,5.7,mww,110,83,0.219,1.05,us,us6000s7cl,2026-05-01T14:35:47.040Z,"8 km NNE of Santa María Colotepec, Mexico",earthquake,4.45,1.829,0.047,44,reviewed,us,us
+2026-02-10T05:44:34.285Z,16.7112,-99.3842,18.603,4.1,mb,79,181,0.244,0.96,us,us7000s21r,2026-05-01T14:35:56.040Z,"9 km S of San Marcos, Mexico",earthquake,4.65,5.587,0.063,69,reviewed,us,us
+2026-02-10T09:34:10.128Z,16.3135,-98.2919,28.522,4.1,mb,37,186,0.176,0.83,us,us7000s21t,2026-05-01T14:35:56.040Z,"3 km W of El Ciruelo, Mexico",earthquake,2.72,7.07,0.087,36,reviewed,us,us
+2026-02-11T08:38:33.450Z,32.388,-115.24783333333,8.1,4.18,ml,38,50,0.05766,0.41,ci,ci41395584,2026-10-21T08:48:40.692Z,"6 km NW of Delta, B.C., MX",earthquake,0.5,1.92,0.14695944748965,339,reviewed,ci,ci
+2026-02-11T08:40:36.870Z,32.389833333333,-115.26766666667,3.3,3.64,ml,36,51,0.04327,0.35,ci,ci41395592,2026-07-02T19:53:11.509Z,"8 km WNW of Delta, B.C., MX",earthquake,0.43,0.76,0.15995560486772,28,reviewed,ci,ci
+2026-02-11T08:56:52.250Z,32.3985,-115.2625,4.35,3.87,ml,27,51,0.0416,0.32,ci,ci10222374,2026-07-02T19:59:04.537Z,"8 km NW of Delta, B.C., MX",earthquake,0.44,0.98,0.14771225538292,328,reviewed,ci,ci
+2026-02-12T18:33:30.674Z,17.6537,-98.4667,52.272,4.4,mb,91,81,0.131,0.72,us,us6000s8jy,2026-05-06T17:53:48.040Z,"4 km ESE of Alpoyeca, Mexico",earthquake,5.53,8.441,0.041,171,reviewed,us,us
+2026-02-13T06:03:07.179Z,15.9677,-98.2156,10,4.8,mb,52,191,1.621,1.2,us,us6000s8pv,2026-05-06T17:53:49.040Z,"30 km S of Corralero, Mexico",earthquake,9.38,1.957,0.033,276,reviewed,us,us
+2026-02-16T07:05:21.540Z,31.629,-104.364,6.0999,3.5,ml,45,69,0.1,0.2,tx,tx2026dgzmvn,2026-05-06T17:53:56.040Z,"60 km S of Whites City, New Mexico",earthquake,1.3756002966427,0.72036374196382,0.1,27,reviewed,tx,tx
+2026-02-17T06:01:17.150Z,31.667,-104.115,6.2152,3.6,ml,76,47,0,0.2,tx,tx2026ditcsc,2026-05-06T17:53:59.040Z,"49 km W of Mentone, Texas",earthquake,0.33174800755918,0.40506009494963,0.2,60,reviewed,tx,tx
+2026-02-18T00:19:12.979Z,15.6577,-98.305,10,4.8,mww,111,156,1.164,1.05,us,us6000s9wb,2026-05-06T17:54:01.040Z,"65 km S of Corralero, Mexico",earthquake,7.59,1.904,0.068,21,reviewed,us,us
+2026-02-21T07:33:38.745Z,17.6786,-94.2915,168.099,4.3,mb,42,110,0.375,1.08,us,us6000sal9,2026-05-12T17:28:05.040Z,"28 km S of Cuichapa, Mexico",earthquake,7.74,5.192,0.073,53,reviewed,us,us
+2026-02-23T19:23:56.546Z,15.9531,-96.4793,35,4.4,mb,55,156,0.401,0.7,us,us7000rztj,2026-05-12T17:28:13.040Z,"3 km NNE of Candelaria Loxicha, Mexico",earthquake,7.21,1.894,0.062,74,reviewed,us,us
+2026-02-27T05:19:08.745Z,16.5143,-98.6649,35,4.4,mb,45,184,0.498,1.24,us,us7000s0nm,2026-05-15T22:02:29.040Z,"7 km E of Barra de Tecoanapa, Mexico",earthquake,4.26,1.963,0.043,158,reviewed,us,us
+2026-02-28T08:54:50.591Z,14.0784,-93.026,10,4.3,mb,137,134,1.286,0.74,us,us7000s110,2026-05-15T22:02:32.040Z,"96 km SW of Puerto Madero, Mexico",earthquake,4.77,1.886,0.049,120,reviewed,us,us
+2026-02-28T10:40:53.926Z,14.0059,-93.0225,10,4.5,mb,43,208,1.343,1.08,us,us7000s11g,2026-05-15T22:02:32.040Z,"102 km SW of Puerto Madero, Mexico",earthquake,7.5,1.961,0.047,134,reviewed,us,us
+2026-03-04T15:33:43.234Z,32.325,-101.789,5.6885,3.8,ml,49,33,0,0.1,tx,tx2026ekzzen,2026-05-15T22:02:45.040Z,"21 km N of Stanton, Texas",earthquake,0.29851346103359,0.4942208825801,0.1,39,reviewed,tx,tx
+2026-03-04T17:55:14.476Z,14.5802,-92.5645,55.538,4.5,mb,76,165,0.976,0.61,us,usa000sf40,2026-05-15T22:02:49.040Z,"21 km SW of Puerto Madero, Mexico",earthquake,10.98,8.836,0.049,121,reviewed,us,us
+2026-03-05T11:30:08.102Z,32.0614,-93.4128,2.48,4.9,mwr,144,53,0.725,0.63,us,us7000s27e,2026-10-22T11:40:16.922Z,"2026 Red River Parish, Louisiana Earthquake",earthquake,2.69,4.425,0.044,50,reviewed,us,us
+2026-03-07T07:11:26.002Z,31.676,-104.367,6.0999,3.9,ml,62,65,0.1,0.2,tx,tx2026epwmrs,2026-05-22T21:58:38.040Z,"55 km S of Whites City, New Mexico",earthquake,0.55768784583271,0.48154617260757,0.1,35,reviewed,tx,tx
+2026-03-07T07:40:42.413Z,14.141,-90.2935,10,4.1,mb,33,173,0.552,1,us,us7000s2qy,2026-05-22T21:58:38.040Z,"5 km SSW of Santa María Ixhuatán, Guatemala",earthquake,8.11,1.943,0.089,35,reviewed,us,us
+2026-03-07T08:12:42.709Z,31.677,-104.367,6.0999,3.6,ml,53,65,0.1,0.2,tx,tx2026epynth,2026-05-22T21:58:38.040Z,"55 km S of Whites City, New Mexico",earthquake,0.53859992509023,0.52561980547983,0.1,29,reviewed,tx,tx
+2026-03-09T02:52:37.894Z,14.3802,-91.3271,104.168,4.8,mww,126,158,1.574,0.8,us,us7000s32w,2026-05-22T21:58:41.040Z,"2 km SSW of Río Bravo, Guatemala",earthquake,5.56,6.245,0.068,21,reviewed,us,us
+2026-03-09T09:40:50.823Z,32.066,-93.3479,6.075,4.1,mb,11,88,0.046,0.57,us,us7000s34u,2026-05-22T21:58:42.040Z,"2 km NW of Edgefield, Louisiana",earthquake,2.59,2.916,0.08,42,reviewed,us,us
+2026-03-09T09:41:42.302Z,32.075,-93.3624,5,4.4,mwr,54,87,0.031,0.78,us,us7000s34v,2026-10-09T20:49:20.244Z,"3 km NW of Edgefield, Louisiana",earthquake,7.19,1.956,0.038,66,reviewed,us,us
+2026-03-11T03:28:17.553Z,24.756,-109.3029,10,4.4,mb,37,120,1.681,1.27,us,us7000s3ju,2026-05-22T21:58:45.040Z,"96 km SSW of Topolobampo, Mexico",earthquake,6.81,1.935,0.085,40,reviewed,us,us
+2026-03-11T16:24:30.603Z,16.6538,-98.7876,35,4.5,mb,32,227,0.928,1.1,us,us7000s3n5,2026-05-22T21:58:46.040Z,"8 km NNE of Marquelia, Mexico",earthquake,6.42,1.986,0.098,31,reviewed,us,us
+2026-03-12T09:51:54.684Z,18.7405,-106.1025,10,4.2,mb,43,206,4.694,0.55,us,us6000shdx,2026-05-26T19:17:05.040Z,"139 km WSW of Emiliano Zapata, Mexico",earthquake,10.9,1.987,0.07,57,reviewed,us,us
+2026-03-12T10:36:09.458Z,18.0868,-106.2977,10,4.3,mb,121,149,2.651,0.75,us,us6000sfta,2026-05-26T19:16:54.040Z,"201 km SW of Emiliano Zapata, Mexico",earthquake,8.77,1.93,0.05,114,reviewed,us,us
+2026-03-12T20:45:54.828Z,17.9877,-94.945,23.399,4.5,mb,56,82,0.579,0.49,us,us6000sfxr,2026-05-26T19:16:54.040Z,"5 km WNW of Colonia Lealtad, Mexico",earthquake,6.2,5.352,0.078,49,reviewed,us,us
+2026-03-13T08:26:34.657Z,15.8763,-93.6634,89.534,4.2,mb,50,159,1.506,1.07,us,us7000s7hq,2026-05-26T19:17:07.040Z,"4 km ESE of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,7.01,10.502,0.077,47,reviewed,us,us
+2026-03-15T00:22:49.294Z,15.407,-91.7686,178.856,4.8,mww,70,99,0.939,1.06,us,us6000sgdf,2026-05-26T19:16:57.040Z,"1 km S of Ixtahuacán, Guatemala",earthquake,8.53,6.132,0.069,20,reviewed,us,us
+2026-03-15T20:20:12.339Z,31.692,-104.401,4.8181,3.5,ml,33,56,0,0.2,tx,tx2026ffolko,2026-05-26T19:16:58.040Z,"53 km S of Whites City, New Mexico",earthquake,0.73586683079627,0.78892727395326,0.2,18,reviewed,tx,tx
+2026-03-17T09:14:36.276Z,15.6809,-96.7036,13.335,4.3,mb,96,169,0.531,0.48,us,us6000sgt7,2026-05-26T19:17:01.040Z,"14 km S of San Francisco Cozoaltepec, Mexico",earthquake,6.08,5.938,0.054,96,reviewed,us,us
+2026-03-17T09:58:11.765Z,15.5443,-96.9125,21.371,4.2,mb,77,168,0.504,0.49,us,us6000sgu7,2026-05-26T19:17:01.040Z,"33 km SSE of La Barra de Colotepec, Mexico",earthquake,6.09,7.738,0.069,59,reviewed,us,us
+2026-03-17T15:36:16.596Z,15.9244,-96.4785,41.368,4.3,mb,109,179,1.168,0.55,us,us6000sgvt,2026-05-26T19:17:02.040Z,"1 km E of Candelaria Loxicha, Mexico",earthquake,8.47,10.925,0.054,99,reviewed,us,us
+2026-03-17T19:54:48.202Z,14.2346,-91.1567,82.886,4.2,mb,48,178,1.376,0.81,us,us6000sh0w,2026-05-26T19:17:02.040Z,"15 km ENE of Nueva Concepción, Guatemala",earthquake,10.41,4.646,0.086,38,reviewed,us,us
+2026-03-18T08:07:52.866Z,15.4116,-91.7187,204.429,4.1,mb,32,146,0.954,0.35,us,us7000s844,2026-05-26T19:17:09.040Z,"0 km NW of Colotenango, Guatemala",earthquake,6.75,6.367,0.123,18,reviewed,us,us
+2026-03-18T17:35:31.067Z,15.367,-89.0751,10,5,mww,110,52,1.608,0.69,us,us6000sh81,2026-05-26T19:17:04.040Z,"12 km N of Los Amates, Guatemala",earthquake,3.07,1.847,0.065,23,reviewed,us,us
+2026-03-19T11:25:57.969Z,17.3364,-100.5631,30.711,4.4,mb,94,152,0.697,1.21,us,us6000shdj,2026-06-04T18:37:51.040Z,"14 km NNE of El Súchil, Mexico",earthquake,7.6,7.39,0.058,87,reviewed,us,us
+2026-03-23T06:26:54.624Z,18.4792,-102.8486,58.89,4.5,mb,147,174,1.924,0.63,us,us6000sisy,2026-06-04T18:38:00.040Z,"29 km SSW of Aguililla, Mexico",earthquake,10.27,8.205,0.031,309,reviewed,us,us
+2026-03-23T07:48:41.359Z,15.4818,-97.2546,10,4,mb,30,202,0.523,0.74,us,us7000s9fh,2026-06-04T18:38:11.040Z,"45 km SSW of La Barra de Colotepec, Mexico",earthquake,6.49,1.976,0.183,8,reviewed,us,us
+2026-03-23T08:00:53.964Z,15.8611,-97.1635,21.173,4.2,mb,101,162,0.137,0.47,us,us6000siu1,2026-06-04T18:38:00.040Z,"8 km SSW of Bajos de Chila, Mexico",earthquake,6.46,6.492,0.052,103,reviewed,us,us
+2026-03-23T13:25:58.903Z,32.3789,-104.4632,3.142,3.6,mwr,27,91,0.496,0.33,us,us6000siwe,2026-06-04T18:38:00.040Z,"22 km WSW of Carlsbad, New Mexico",earthquake,1.76,5.924,0.059,28,reviewed,us,us
+2026-03-23T21:03:03.523Z,15.4312,-94.4278,35,4,mb,23,173,1.654,0.84,us,us7000s9gg,2026-06-04T18:38:12.040Z,"86 km SSW of La Gloria, Mexico",earthquake,6.41,1.993,0.138,14,reviewed,us,us
+2026-03-24T05:29:15.552Z,14.7108,-93.902,10,4.3,mb,22,189,1.662,1.17,us,us6000sm1n,2026-06-04T18:38:01.040Z,"113 km SW of La Esperanza (El Zapotal), Mexico",earthquake,2.6,1.957,0.16,11,reviewed,us,us
+2026-03-26T02:42:29.844Z,31.681,-104.491,6.0999,3.5,ml,67,65,0,0.1,tx,tx2026fykjyv,2026-06-10T15:14:50.040Z,"55 km S of Whites City, New Mexico",earthquake,0.80662629398096,0.48939248606681,0.1,35,reviewed,tx,tx
+2026-03-26T08:09:28.464Z,31.668,-104.491,6.0999,3.6,ml,55,67,0,0.1,tx,tx2026fyvfnb,2026-06-10T15:14:50.040Z,"57 km S of Whites City, New Mexico",earthquake,1.2483886546069,0.58757981589753,0.1,35,reviewed,tx,tx
+2026-03-26T11:07:01.338Z,15.6196,-93.1109,118.444,4.9,mww,72,120,1.145,1.04,us,us7000s7rp,2026-06-10T15:14:51.040Z,"5 km NNE of El Carmen, Mexico",earthquake,7.88,6.377,0.048,41,reviewed,us,us
+2026-03-28T04:11:16.662Z,16.0219,-98.7058,10,4.3,mb,39,204,0.667,1.1,us,us6000smf3,2026-06-10T15:14:47.040Z,"44 km SW of Santiago Tepextla, Mexico",earthquake,1.69,1.916,0.133,16,reviewed,us,us
+2026-03-28T04:27:02.039Z,16.3481,-98.485,10,4.6,mb,66,163,1.21,0.81,us,us7000s8b4,2026-06-10T15:14:54.040Z,"4 km WNW of Santiago Tepextla, Mexico",earthquake,8.6,1.929,0.035,250,reviewed,us,us
+2026-03-28T04:30:29.386Z,16.0873,-98.2441,10,4.3,mb,18,310,1.499,1.04,us,us7000sb5s,2026-06-10T15:15:03.040Z,"17 km SSW of Corralero, Mexico",earthquake,17.22,2.006,0.1,28,reviewed,us,us
+2026-03-28T06:29:15.139Z,16.3849,-98.5339,10,4.5,mww,89,145,0.39,0.95,us,us7000s8bz,2026-06-10T15:14:54.040Z,"3 km W of Montecillos, Mexico",earthquake,7.41,1.895,0.089,12,reviewed,us,us
+2026-03-28T10:36:11.978Z,15.9807,-98.617,10,4.3,mb,49,178,0.624,1.04,us,us7000s8cn,2026-06-10T15:14:54.040Z,"43 km SSW of Santiago Tepextla, Mexico",earthquake,5.87,1.912,0.051,114,reviewed,us,us
+2026-03-28T12:29:15.026Z,16.1693,-98.6436,10,4.7,mww,61,172,0.543,1.09,us,us7000s8d2,2026-06-10T15:14:54.040Z,"28 km SW of Santiago Tepextla, Mexico",earthquake,4.43,1.778,0.103,9,reviewed,us,us
+2026-03-28T12:57:53.114Z,16.3342,-98.617,10,5.1,mww,80,126,0.474,1.01,us,us7000s8d7,2026-06-10T15:14:54.040Z,"13 km SW of San Nicolás, Mexico",earthquake,3.62,1.574,0.053,34,reviewed,us,us
+2026-03-28T15:02:06.634Z,16.2207,-98.4164,10,4.9,mww,178,161,0.326,0.63,us,us7000s8dk,2026-06-10T15:14:54.040Z,"12 km SSW of Santo Domingo Armenta, Mexico",earthquake,5.93,1.88,0.063,24,reviewed,us,us
+2026-03-30T01:27:22.906Z,31.758,-103.834,8.83,3.7,ml,33,40,0,0.1,tx,tx2026gfqujs,2026-06-10T15:14:56.040Z,"22 km WNW of Mentone, Texas",earthquake,0.26572781503272,0.54868602706301,0.3,43,reviewed,tx,tx
+2026-03-30T02:22:48.306Z,26.3383,-88.2721,10,3.9,ml,30,128,4.806,1.19,us,us7000s8na,2026-06-10T15:14:56.040Z,"Gulf of America",earthquake,6.98,1.998,0.148,6,reviewed,us,us
+2026-04-01T14:02:24.851Z,16.4665,-95.0656,51.488,4.3,mb,76,113,1.425,0.66,us,us7000s9et,2026-06-10T15:15:02.040Z,"3 km SW of El Espinal, Mexico",earthquake,6.09,8.528,0.063,72,reviewed,us,us
+2026-04-02T12:37:12.832Z,15.8145,-94.7432,50.341,4.2,mb,29,177,1.601,1.22,us,us6000sp30,2026-06-20T17:05:22.040Z,"47 km SSW of San Francisco del Mar Viejo, Mexico",earthquake,5.4,11.535,0.115,21,reviewed,us,us
+2026-04-03T22:13:05.536Z,32.03,-103.282,5.9973,3.5,ml,35,44,0.1,0.2,tx,tx2026goozto,2026-06-20T17:05:11.040Z,"12 km SW of Jal, New Mexico",earthquake,0.5133612182709,0.82291425900942,0.2,25,reviewed,tx,tx
+2026-04-05T08:35:29.376Z,31.644,-104.44,6.0999,3.6,ml,26,65,0,0.1,tx,tx2026grfivz,2026-06-20T17:05:14.040Z,"59 km S of Whites City, New Mexico",earthquake,0.79080862687191,0.39624810447358,0.1,21,reviewed,tx,tx
+2026-04-06T20:01:35.706Z,32.6908,-104.424,5,4.4,mwr,64,34,0.533,0.51,us,us6000sn3a,2026-10-19T20:18:43.469Z,"9 km SSW of Atoka, New Mexico",earthquake,2.39,1.848,0.039,63,reviewed,us,us
+2026-04-07T15:13:32.125Z,19.1147,-101.9878,115.192,4.6,mb,126,77,0.892,0.78,us,us6000sn8k,2026-06-20T17:05:19.040Z,"5 km SW of Santa Casilda, Mexico",earthquake,8.42,5.176,0.042,171,reviewed,us,us
+2026-04-08T06:18:56.677Z,28.748,-98.171,4.4906,3.5,ml,25,60,0.1,0.2,tx,tx2026gwnzyp,2026-06-20T17:05:30.040Z,"19 km WNW of Pawnee, Texas",earthquake,0.74559705284556,0.71139802081559,0.1,21,reviewed,tx,tx
+2026-04-11T09:16:12.235Z,15.8688,-92.2857,205.414,4.3,mb,44,96,0.435,0.89,us,us6000spa3,2026-06-24T16:34:31.040Z,"4 km N of Pablo L. Sidar, Mexico",earthquake,6.96,2.924,0.061,77,reviewed,us,us
+2026-04-14T12:29:32.745Z,15.1666,-94.3039,32.262,4.2,mb,67,186,2,0.54,us,us6000spzy,2026-06-24T16:34:37.040Z,"101 km SSW of Cabeza de Toro, Mexico",earthquake,6.34,7.133,0.063,70,reviewed,us,us
+2026-04-14T15:43:57.014Z,14.0078,-93.0114,10,4.3,mb,29,200,2.413,0.63,us,us6000ssbw,2026-06-24T16:34:43.040Z,"101 km SW of Puerto Madero, Mexico",earthquake,8.58,1.98,0.129,17,reviewed,us,us
+2026-04-16T01:24:05.787Z,31.668,-104.392,6.0999,3.5,ml,24,69,0,0.1,tx,tx2026hkwawq,2026-07-03T01:37:50.040Z,"56 km S of Whites City, New Mexico",earthquake,0.78906656990254,0.76767599250009,0.2,19,reviewed,tx,tx
+2026-04-16T07:00:32.378Z,31.67,-104.387,5.8948,3.6,ml,23,69,0,0.1,tx,tx2026hlhety,2026-07-03T01:37:52.040Z,"56 km S of Whites City, New Mexico",earthquake,0.83357630882449,0.76570894435541,0.1,18,reviewed,tx,tx
+2026-04-17T00:58:01.538Z,16.6238,-95.7079,52.058,4.7,mb,53,130,1.955,0.66,us,us6000sqpd,2026-07-03T01:37:58.040Z,"20 km WSW of Santiago Lachiguiri, Mexico",earthquake,8.1,8.724,0.037,226,reviewed,us,us
+2026-04-17T17:10:04.216Z,18.4446,-101.5795,64.852,4.3,mb,50,161,0.953,0.5,us,us6000ssm0,2026-07-03T01:39:00.040Z,"21 km NE of Coahuayutla de Guerrero, Mexico",earthquake,6.5,8.745,0.079,45,reviewed,us,us
+2026-04-21T14:52:16.525Z,16.7579,-95.7673,73.084,4.9,mww,197,74,0.947,0.68,us,us6000sru5,2026-07-03T01:38:43.040Z,"12 km SSW of Santiago Quiavicuzas, Mexico",earthquake,4.12,6.077,0.089,12,reviewed,us,us
+2026-04-25T02:09:28.348Z,14.0716,-92.3325,35,4.3,mb,46,161,1.043,1.36,us,us6000ssqy,2026-07-11T19:57:59.040Z,"50 km SSW of Ocós, Guatemala",earthquake,6.64,1.977,0.087,38,reviewed,us,us
+2026-04-25T13:26:29.152Z,15.2557,-92.9366,81.277,4.1,mb,65,158,0.692,0.72,us,us7000si6n,2026-07-11T20:01:15.040Z,"20 km S of Mapastepec, Mexico",earthquake,8.08,5.682,0.075,51,reviewed,us,us
+2026-05-03T12:10:49.610Z,31.611333333333,-115.628,2.08,3.83,ml,17,148,0.2566,0.28,ci,ci41240383,2026-07-15T15:25:48.040Z,"81 km SSW of Alberto Oviedo Mota, B.C., MX",earthquake,0.56,2.47,0.19290291380318,84,reviewed,ci,ci
+2026-05-04T15:19:24.589Z,16.4698,-98.0183,18,5.5,mww,87,79,1.207,0.84,us,us7000si51,2026-08-18T15:52:11.288Z,"0 km SW of San Juan Jicayán, Mexico",earthquake,9.11,1.771,0.051,37,reviewed,us,us
+2026-05-04T15:30:00.635Z,16.3696,-98.3533,35,4.5,mb,41,206,0.83,1.32,us,us6000sxga,2026-07-15T15:25:51.040Z,"4 km NNE of Santo Domingo Armenta, Mexico",earthquake,5.36,1.978,0.104,27,reviewed,us,us
+2026-05-06T06:10:27.052Z,15.3502,-91.884,169.678,4.4,mb,59,79,0.322,0.89,us,us6000svjf,2026-07-15T15:25:56.040Z,"9 km SE of Cuilco, Guatemala",earthquake,6.25,3.219,0.047,131,reviewed,us,us
+2026-05-06T10:42:41.787Z,14.8548,-87.2209,10,4.4,mb,55,130,1.744,0.61,us,us6000svmi,2026-07-15T15:25:56.040Z,"6 km ENE of San José del Potrero, Honduras",earthquake,7.22,1.918,0.043,158,reviewed,us,us
+2026-05-06T17:19:49.866Z,14.7867,-91.5703,125.373,4,mb,49,196,1.584,0.86,us,us6000sxpx,2026-07-15T15:25:57.040Z,"7 km SW of Quetzaltenango, Guatemala",earthquake,9.18,9.711,0.085,39,reviewed,us,us
+2026-05-06T19:10:09.225Z,15.5897,-95.4464,10,4.4,mb,105,127,0.662,1.12,us,us6000svrf,2026-07-15T15:25:57.040Z,"50 km SSE of Santiago Astata, Mexico",earthquake,7.57,1.904,0.052,107,reviewed,us,us
+2026-05-07T08:13:51.506Z,14.1976,-93.0468,10,4.7,mb,57,176,2.25,0.58,us,us6000svvr,2026-07-18T18:23:16.040Z,"88 km SW of Puerto Madero, Mexico",earthquake,5.18,1.895,0.029,370,reviewed,us,us
+2026-05-07T17:00:16.293Z,14.2903,-93.1022,10,4.3,mb,75,193,1.175,0.71,us,us6000sxy5,2026-07-18T18:23:27.040Z,"87 km WSW of Puerto Madero, Mexico",earthquake,7.64,1.966,0.076,49,reviewed,us,us
+2026-05-08T17:44:04.483Z,16.9607,-94.7743,93.795,4.4,mb,30,120,2.617,0.77,us,us6000swan,2026-07-18T18:23:17.040Z,"11 km WNW of Santa María Chimalapa, Mexico",earthquake,7.18,10.691,0.067,64,reviewed,us,us
+2026-05-10T02:22:08.170Z,32.969333333333,-115.55916666667,15.05,4.3782298205275,mw,64,39,0.06769,0.26,ci,ci41460112,2026-10-02T23:37:35.210Z,"3 km WSW of Brawley, CA",earthquake,0.22,0.48,,10,reviewed,ci,ci
+2026-05-10T03:13:23.720Z,32.9675,-115.5555,9.17,3.979955881043,mw,59,39,0.06599,0.27,ci,ci41460416,2026-07-18T18:23:19.040Z,"3 km WSW of Brawley, CA",earthquake,0.23,0.77,,7,reviewed,ci,ci
+2026-05-10T03:39:29.810Z,32.977833333333,-115.54983333333,15.9,4.4811285884881,mw,67,39,0.0767,0.27,ci,ci41460512,2026-10-09T21:40:27.137Z,"2 km W of Brawley, CA",earthquake,0.21,0.38,,10,reviewed,ci,ci
+2026-05-10T07:10:21.250Z,32.971333333333,-115.56233333333,14.53,4.6648691912206,mw,66,39,0.06968,0.25,ci,ci41461608,2026-10-18T07:20:38.765Z,"3 km WSW of Brawley, CA",earthquake,0.22,0.49,,10,reviewed,ci,ci
+2026-05-15T10:06:55.231Z,14.272,-93.0398,35,4.3,mb,102,163,1.465,0.68,us,us6000sxwg,2026-07-25T22:12:48.040Z,"83 km SW of Puerto Madero, Mexico",earthquake,6.73,1.956,0.05,113,reviewed,us,us
+2026-05-17T22:03:13.784Z,14.2718,-93.7607,10,4.1,mb,22,208,2.154,0.66,us,us6000szjd,2026-07-25T22:12:57.040Z,"145 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,7.15,1.971,0.13,16,reviewed,us,us
+2026-05-24T14:45:25.867Z,15.5088,-94.7613,35,4.3,mb,54,122,1.323,0.77,us,us6000szxn,2026-08-05T15:58:53.040Z,"81 km SSE of San Mateo del Mar, Mexico",earthquake,3.5,1.873,0.06,78,reviewed,us,us
+2026-05-27T10:34:46.606Z,15.6996,-96.4601,21.217,4.2,mb,106,135,0.346,0.6,us,us7000snv2,2026-08-05T15:58:58.040Z,"4 km NE of Puerto Ángel, Mexico",earthquake,5.45,6.433,0.049,115,reviewed,us,us
+2026-05-28T02:23:59.383Z,18.9873,-107.7363,10,4.2,mb,43,197,5.831,0.8,us,us7000snzs,2026-08-11T13:33:58.040Z,"264 km WSW of La Cruz de Loreto, Mexico",earthquake,11.23,1.955,0.088,36,reviewed,us,us
+2026-05-28T16:18:09.662Z,19.6543,-109.4908,10,5.3,mww,62,93,1.61,1.08,us,us7000sp4a,2026-08-11T13:33:59.040Z,"Revilla Gigedo Islands region",earthquake,5.13,1.87,0.04,61,reviewed,us,us
+2026-06-01T20:42:45.245Z,15.851,-87.7141,10,4.1,mb,28,120,2.432,0.59,us,us7000sqym,2026-08-11T13:34:10.040Z,"15 km ESE of Baja Mar, Honduras",earthquake,9.38,1.937,0.117,20,reviewed,us,us
+2026-06-05T11:25:29.798Z,15.3682,-94.7554,35,4.3,mb,92,128,2.025,0.62,us,us7000squa,2026-08-15T17:27:01.040Z,"96 km SSE of San Mateo del Mar, Mexico",earthquake,6.18,1.935,0.044,149,reviewed,us,us
+2026-06-05T20:55:01.751Z,16.7194,-98.4501,22.836,5.2,mww,282,79,0.449,0.63,us,us7000sqzv,2026-08-15T17:27:02.040Z,"3 km SW of Acatepec, Mexico",earthquake,6.6,4.003,0.042,55,reviewed,us,us
+2026-06-05T22:40:10.540Z,31.661,-104.395,6.0999,3.8,ml,54,66,0,0.2,tx,tx2026lagqgm,2026-08-15T17:27:02.040Z,"57 km S of Whites City, New Mexico",earthquake,1.3333850567651,0.54251605666718,0.1,36,reviewed,tx,tx
+2026-06-07T15:33:55.895Z,14.2804,-92.2007,78.619,4,mb,32,205,1.991,1.12,us,us7000sr91,2026-08-15T17:27:04.040Z,"25 km S of Ocós, Guatemala",earthquake,8.74,12.454,0.085,37,reviewed,us,us
+2026-06-09T02:59:19.359Z,19.369,-109.0598,10,4.1,mb,29,129,1.859,0.75,us,us7000srnq,2026-08-15T17:27:08.040Z,"Revilla Gigedo Islands region",earthquake,8.54,1.941,0.101,27,reviewed,us,us
+2026-06-09T23:17:24.533Z,15.5441,-94.7834,35,4.1,mb,31,182,1.296,0.83,us,us7000t0tj,2026-08-15T17:27:17.040Z,"76 km SSE of San Mateo del Mar, Mexico",earthquake,5.83,1.993,0.185,8,reviewed,us,us
+2026-06-10T06:46:33.460Z,27.7162,-111.69,10,4,mb,16,107,0.629,1.21,us,us7000srz7,2026-08-15T17:27:10.040Z,"69 km WSW of San Carlos, Mexico",earthquake,4.4,1.866,0.164,10,reviewed,us,us
+2026-06-10T23:36:32.908Z,16.6666,-99.5993,10,4.5,mb,33,173,0.356,1.15,us,us7000t0tk,2026-08-15T17:27:17.040Z,"4 km SE of San Andrés Playa Encantada (El Podrido), Mexico",earthquake,4.02,1.481,0.135,16,reviewed,us,us
+2026-06-13T07:50:14.170Z,15.9741,-98.3705,10,4.5,mww,77,184,0.477,1.01,us,us7000ssn4,2026-08-31T21:44:01.040Z,"35 km SSW of Corralero, Mexico",earthquake,8.35,1.955,0.11,8,reviewed,us,us
+2026-06-13T18:20:42.492Z,16.7513,-99.634,10,5.1,mww,74,163,1.301,0.7,us,us7000ssq9,2026-08-31T21:44:26.040Z,"2 km S of Cerro de Piedra, Mexico",earthquake,7.89,1.912,0.052,36,reviewed,us,us
+2026-06-15T22:51:30.818Z,32.2903,-103.287,1.299,3.6,mwr,38,89,0.253,0.33,us,us7000st7u,2026-08-31T21:46:32.040Z,"20 km SW of Eunice, New Mexico",earthquake,1.3,5.93,0.083,14,reviewed,us,us
+2026-06-17T15:32:12.091Z,16.7339,-94.3771,113.737,4.2,mb,82,105,0.622,0.84,us,us7000stnu,2026-08-31T21:48:41.040Z,"27 km N of Santo Domingo Zanatepec, Mexico",earthquake,6.7,6.534,0.066,64,reviewed,us,us
+2026-06-18T04:37:21.113Z,18.4882,-101.3589,68.085,4.1,mb,51,109,0.952,0.69,us,us7000su8t,2026-09-04T15:40:55.040Z,"1 km NNE of Aratichanguío, Mexico",earthquake,3.54,9.014,0.086,37,reviewed,us,us
+2026-06-21T06:31:58.883Z,24.2567,-115.773,10,4.6,mb,61,196,6.413,0.88,us,us7000suy7,2026-09-04T15:40:59.040Z,"Off the coast of Baja California Sur, Mexico",earthquake,11.81,1.953,0.031,311,reviewed,us,us
+2026-06-21T09:00:09.283Z,19.6882,-87.5678,13.996,4.1,mb,77,90,0.855,0.64,us,us7000suys,2026-09-04T15:40:59.040Z,"51 km ENE of Felipe Carrillo Puerto, Mexico",earthquake,4.77,4.983,0.053,96,reviewed,us,us
+2026-06-24T12:16:29.128Z,15.3469,-93.435,74.211,4.9,mb,139,119,1.557,1.26,us,us6000t7uf,2026-09-04T15:40:49.040Z,"28 km SW of El Palmarcito, Mexico",earthquake,7.04,7.064,0.028,409,reviewed,us,us
+2026-06-26T03:45:25.432Z,16.0172,-95.0088,10,4,mb,37,98,1.086,0.99,us,us6000t8cz,2026-09-15T23:40:36.040Z,"21 km S of Colonia Juárez, Mexico",earthquake,5.8,1.851,0.122,18,reviewed,us,us
+2026-06-26T04:58:59.426Z,14.0897,-92.7547,35,4.1,mb,49,200,2.259,0.79,us,us6000t8d7,2026-09-15T23:40:37.040Z,"75 km SW of Brisas Barra de Suchiate, Mexico",earthquake,7.65,1.984,0.067,61,reviewed,us,us
+2026-06-30T19:45:39.422Z,24.8088,-108.8902,10,6,mww,101,62,3.597,0.51,us,us6000t99j,2026-09-15T23:41:27.040Z,"75 km SSW of El Progreso, Mexico",earthquake,10.26,1.853,0.038,68,reviewed,us,us
+2026-06-30T20:07:59.684Z,24.3968,-109.1928,10,4.4,mb,66,186,4.865,0.47,us,us6000taq0,2026-09-15T23:41:27.040Z,"94 km NNE of Los Barriles, Mexico",earthquake,12.08,1.932,0.08,45,reviewed,us,us
+2026-06-30T20:29:33.749Z,24.634,-108.9755,10,4.5,mb,118,126,1.679,0.51,us,us6000t99v,2026-09-15T23:41:27.040Z,"96 km SSW of El Progreso, Mexico",earthquake,9.14,1.863,0.035,243,reviewed,us,us
+2026-06-30T21:01:34.117Z,24.6635,-109.0413,10,5.3,mww,59,119,3.333,0.68,us,us6000t9a4,2026-09-15T23:41:28.040Z,"96 km SSW of El Progreso, Mexico",earthquake,10.16,1.889,0.066,22,reviewed,us,us
+2026-07-01T22:11:34.771Z,17.1254,-100.2952,35,4.4,mb,78,165,1.707,0.89,us,us6000t9id,2026-09-15T23:41:41.040Z,"5 km NE of Zacualpan, Mexico",earthquake,5.4,1.888,0.037,209,reviewed,us,us
+2026-07-10T20:59:35.174Z,15.5551,-92.0516,222.891,4.3,mb,97,111,0.727,0.98,us,us7000szki,2026-09-29T22:05:21.040Z,"4 km SSW of El Pacayal, Mexico",earthquake,9.48,7.731,0.061,79,reviewed,us,us
+2026-07-12T20:52:20.714Z,28.578,-99.118,6.8353,3.6,ml,27,77,0.1,0.3,tx,tx2026nqayet,2026-09-29T22:05:24.040Z,"11 km SSE of Dilley, Texas",earthquake,3.3937165593581,1.0664245408895,0.1,24,reviewed,tx,tx
+2026-07-14T01:19:58.642Z,14.5654,-92.5734,79.529,5,mww,99,90,1.758,1.12,us,us7000t07s,2026-09-29T22:05:26.040Z,"23 km SW of Puerto Madero, Mexico",earthquake,6.93,2.568,0.051,37,reviewed,us,us
+2026-07-14T23:45:16.068Z,14.3462,-93.265,10,4,mb,27,137,2.211,0.87,us,us7000t0i4,2026-09-29T22:05:28.040Z,"99 km WSW of Puerto Madero, Mexico",earthquake,6,1.938,0.098,28,reviewed,us,us
+2026-07-16T07:28:59.310Z,23.9976,-108.4019,10,4.8,mww,27,275,3.832,1.08,us,us7000t0x1,2026-10-08T15:33:15.040Z,"85 km SW of Altata, Mexico",earthquake,13.27,2.012,0.056,31,reviewed,us,us
+2026-07-16T19:02:50.414Z,14.9999,-92.1123,118.243,4.2,mb,63,151,1.275,0.95,us,us7000t28z,2026-10-08T15:35:48.040Z,"3 km SSW of Santo Domingo, Mexico",earthquake,5.42,9.134,0.075,50,reviewed,us,us
+2026-07-17T13:20:33.356Z,14.4845,-93.1554,35,4.7,mb,61,175,2.974,1.15,us,us7000t1ai,2026-10-08T15:33:30.040Z,"83 km WSW of Puerto Madero, Mexico",earthquake,4.54,1.932,0.03,339,reviewed,us,us
+2026-07-17T14:48:39.881Z,14.571,-92.9624,22,7.3,mww,249,51,3.157,1.17,us,us7000t1bu,2026-10-08T15:33:32.040Z,"60 km WSW of Puerto Madero, Mexico",earthquake,7.56,1.811,0.025,157,reviewed,us,us
+2026-07-17T14:55:04.153Z,14.3964,-93.1372,35,5.1,mb,23,208,3.293,0.79,us,us7000t2si,2026-10-08T15:37:15.040Z,"85 km WSW of Puerto Madero, Mexico",earthquake,12.56,1.619,0.147,15,reviewed,us,us
+2026-07-17T14:55:52.164Z,14.0239,-92.9831,10,5,mb,40,230,3.112,0.56,us,us7000t2se,2026-10-08T15:37:14.040Z,"98 km SW of Puerto Madero, Mexico",earthquake,12.59,1.964,0.096,35,reviewed,us,us
+2026-07-17T15:05:51.832Z,14.3178,-93.1755,10,4.5,mb,23,189,3.32,0.93,us,us7000t2q8,2026-10-08T15:36:55.040Z,"92 km WSW of Puerto Madero, Mexico",earthquake,9.4,1.854,0.15,13,reviewed,us,us
+2026-07-17T15:09:25.091Z,14.3639,-92.9715,35,4.5,mb,44,135,3.13,1.1,us,us7000t2q6,2026-10-08T15:36:54.040Z,"71 km WSW of Puerto Madero, Mexico",earthquake,11.96,1.96,0.104,28,reviewed,us,us
+2026-07-17T15:14:55.212Z,14.0904,-93.1961,10,5.3,mb,82,80,2.407,1.09,us,us7000t1c1,2026-10-08T15:33:34.040Z,"108 km SW of Puerto Madero, Mexico",earthquake,7.4,1.815,0.041,194,reviewed,us,us
+2026-07-17T15:16:42.421Z,14.4277,-92.9527,35,4.5,mb,15,187,3.121,0.76,us,us7000t2sj,2026-10-08T15:37:15.040Z,"65 km WSW of Puerto Madero, Mexico",earthquake,13.18,1.999,0.18,9,reviewed,us,us
+2026-07-17T15:19:46.024Z,14.3818,-93.348,10,5.1,mb,171,76,3.494,1.12,us,us7000t1c2,2026-10-08T15:33:34.040Z,"106 km WSW of Puerto Madero, Mexico",earthquake,9.99,1.827,0.039,215,reviewed,us,us
+2026-07-17T15:20:06.584Z,14.203,-93.1389,10,6.4,mww,95,61,2.282,1.31,us,us7000t1cc,2026-10-08T15:33:35.040Z,"96 km SW of Puerto Madero, Mexico",earthquake,5.7,2.582,0.032,93,reviewed,us,us
+2026-07-17T15:26:44.100Z,14.7242,-92.8872,52,5,mb,39,180,3.121,0.98,us,us7000t2qc,2026-10-08T15:36:57.040Z,"46 km WSW of Aquiles Serdán, Mexico",earthquake,7.02,7.18,0.118,23,reviewed,us,us
+2026-07-17T15:30:38.319Z,14.3348,-92.8866,56.114,5,mb,99,90,3.044,0.65,us,us7000t1du,2026-10-08T15:33:36.040Z,"65 km SW of Puerto Madero, Mexico",earthquake,8.12,6.489,0.06,90,reviewed,us,us
+2026-07-17T15:34:10.519Z,14.0499,-93.2923,10,4.2,mb,15,208,2.484,0.98,us,us7000t2sl,2026-10-08T15:37:16.040Z,"119 km SW of Puerto Madero, Mexico",earthquake,9.01,1.968,0.216,6,reviewed,us,us
+2026-07-17T15:34:53.876Z,14.2495,-93.2534,10,4.9,mb,45,194,3.388,1.03,us,us7000t2qa,2026-10-08T15:36:56.040Z,"103 km WSW of Puerto Madero, Mexico",earthquake,8.52,1.966,0.075,55,reviewed,us,us
+2026-07-17T15:37:01.123Z,14.388,-92.8954,35,4.7,mb,77,162,2.02,1.12,us,us7000t2qb,2026-10-08T15:36:56.040Z,"62 km SW of Puerto Madero, Mexico",earthquake,7.56,1.868,0.066,69,reviewed,us,us
+2026-07-17T15:41:50.948Z,14.1838,-93.2393,10,4.5,mb,29,224,3.369,1,us,us7000t2qf,2026-10-08T15:36:58.040Z,"106 km SW of Puerto Madero, Mexico",earthquake,12.21,1.979,0.116,22,reviewed,us,us
+2026-07-17T15:45:54.320Z,14.3493,-92.9902,35,4.5,mb,41,204,2.09,0.73,us,us7000t2qd,2026-10-08T15:36:57.040Z,"73 km SW of Puerto Madero, Mexico",earthquake,11.67,1.984,0.091,37,reviewed,us,us
+2026-07-17T15:53:45.990Z,14.3602,-93.0886,35,4.3,mb,34,172,7.426,0.74,us,us7000t2qe,2026-10-08T15:36:58.040Z,"82 km WSW of Puerto Madero, Mexico",earthquake,11.85,1.964,0.107,25,reviewed,us,us
+2026-07-17T15:57:13.771Z,14.1738,-93.1756,10,5.1,mb,74,90,3.248,1.21,us,us7000t1dv,2026-10-08T15:33:37.040Z,"101 km SW of Puerto Madero, Mexico",earthquake,8.99,1.844,0.031,329,reviewed,us,us
+2026-07-17T16:00:50.386Z,14.3443,-92.85,35,4.9,mb,160,137,3.011,0.77,us,us7000t1dz,2026-10-08T15:33:37.040Z,"62 km SW of Puerto Madero, Mexico",earthquake,8.61,1.902,0.04,191,reviewed,us,us
+2026-07-17T16:01:26.633Z,14.5,-92.5525,64.069,5.1,mb,211,141,2.754,0.81,us,us7000t1ep,2026-10-08T15:33:40.040Z,"28 km SSW of Puerto Madero, Mexico",earthquake,9.47,5.774,0.033,296,reviewed,us,us
+2026-07-17T16:06:12.137Z,14.0105,-93.2654,10,4.6,mb,29,209,2.507,0.59,us,us7000t2qk,2026-10-08T15:37:00.040Z,"120 km SW of Puerto Madero, Mexico",earthquake,7.71,1.974,0.122,20,reviewed,us,us
+2026-07-17T16:07:32.279Z,14.5415,-92.7685,35,4.8,mb,53,200,1.834,0.75,us,us7000t2qh,2026-10-08T15:36:59.040Z,"42 km WSW of Puerto Madero, Mexico",earthquake,9.25,1.978,0.077,52,reviewed,us,us
+2026-07-17T16:16:02.718Z,14.043,-92.42,35,4.4,mb,26,223,2.567,0.64,us,us7000t2qi,2026-10-08T15:37:00.040Z,"57 km SSW of Ocós, Guatemala",earthquake,15.99,2.005,0.12,21,reviewed,us,us
+2026-07-17T16:25:18.780Z,14.2524,-93.0631,10,4.4,mb,27,210,3.205,0.76,us,us7000t1ek,2026-10-08T15:33:39.040Z,"86 km SW of Puerto Madero, Mexico",earthquake,9.12,1.97,0.079,46,reviewed,us,us
+2026-07-17T16:42:26.314Z,14.0698,-93.2434,10,4.4,mb,43,182,2.445,1.15,us,us7000t1em,2026-10-08T15:33:40.040Z,"114 km SW of Puerto Madero, Mexico",earthquake,7.7,1.944,0.079,47,reviewed,us,us
+2026-07-17T16:57:37.948Z,14.2407,-93.2183,10,4.3,mb,34,184,2.282,0.45,us,us7000t1f5,2026-10-08T15:33:43.040Z,"100 km WSW of Puerto Madero, Mexico",earthquake,3.13,1.969,0.091,36,reviewed,us,us
+2026-07-17T17:00:55.784Z,14.3874,-93.2884,10,4.6,mb,101,153,2.187,0.8,us,us7000t1ev,2026-10-08T15:33:41.040Z,"100 km WSW of Puerto Madero, Mexico",earthquake,8.76,1.933,0.039,198,reviewed,us,us
+2026-07-17T17:03:38.807Z,14.2791,-93.0627,17.41,5.1,mb,91,154,3.207,0.63,us,us7000t1ey,2026-10-08T15:33:42.040Z,"84 km SW of Puerto Madero, Mexico",earthquake,11.19,5.614,0.025,522,reviewed,us,us
+2026-07-17T17:15:22.621Z,14.3646,-92.9067,35,5.1,mb,88,155,3.068,0.78,us,us7000t1f0,2026-10-08T15:33:42.040Z,"65 km SW of Puerto Madero, Mexico",earthquake,6.6,1.92,0.026,472,reviewed,us,us
+2026-07-17T17:23:30.756Z,14.2234,-92.7364,36.836,5,mb,177,90,2.887,0.94,us,us7000t1f6,2026-10-08T15:33:43.040Z,"64 km SSW of Puerto Madero, Mexico",earthquake,8.65,5.312,0.027,431,reviewed,us,us
+2026-07-17T17:27:09.946Z,14.4449,-92.9326,35,4.8,mb,107,153,1.981,0.59,us,us7000t2qw,2026-10-08T15:37:02.040Z,"62 km WSW of Puerto Madero, Mexico",earthquake,8.44,1.835,0.055,103,reviewed,us,us
+2026-07-17T17:32:15.753Z,14.4522,-92.419,43.305,4.5,mb,76,172,2.617,0.42,us,us7000t2qv,2026-10-08T15:37:02.040Z,"22 km WSW of Brisas Barra de Suchiate, Mexico",earthquake,8.99,10.03,0.057,90,reviewed,us,us
+2026-07-17T17:36:48.050Z,14.7102,-92.8172,33.303,4.2,mb,47,175,3.052,0.65,us,us7000t2qy,2026-10-08T15:37:03.040Z,"41 km WSW of Buenos Aires, Mexico",earthquake,12.87,9.103,0.088,36,reviewed,us,us
+2026-07-17T17:42:00.703Z,14.1026,-92.8521,10,4.2,mb,45,186,2.989,0.38,us,us7000t2r3,2026-10-08T15:37:04.040Z,"82 km SW of Puerto Madero, Mexico",earthquake,11.87,1.955,0.09,34,reviewed,us,us
+2026-07-17T17:43:17.922Z,14.1745,-93.0949,10,4.3,mb,40,181,3.228,0.77,us,us7000t2s9,2026-10-08T15:37:14.040Z,"94 km SW of Puerto Madero, Mexico",earthquake,11.64,1.942,0.092,33,reviewed,us,us
+2026-07-17T17:44:15.044Z,14.482,-92.8928,35,4.3,mb,57,180,3.073,0.54,us,us7000t1ff,2026-10-08T15:33:44.040Z,"57 km WSW of Puerto Madero, Mexico",earthquake,14.69,1.974,0.075,50,reviewed,us,us
+2026-07-17T17:53:50.111Z,14.5108,-93.0005,33.319,4.1,mb,49,180,3.181,0.62,us,us7000t2r0,2026-10-08T15:37:04.040Z,"66 km WSW of Puerto Madero, Mexico",earthquake,12.59,7.775,0.079,43,reviewed,us,us
+2026-07-17T17:55:52.768Z,14.1291,-93.1469,10,4.2,mb,58,155,2.352,0.56,us,us7000t2qz,2026-10-08T15:37:04.040Z,"102 km SW of Puerto Madero, Mexico",earthquake,7.99,1.952,0.08,43,reviewed,us,us
+2026-07-17T18:10:08.698Z,14.3377,-92.9608,21.241,4.5,mb,72,131,3.116,0.46,us,us7000t1fg,2026-10-08T15:33:44.040Z,"71 km SW of Puerto Madero, Mexico",earthquake,12.19,7.492,0.055,98,reviewed,us,us
+2026-07-17T18:12:49.682Z,14.489,-92.9762,35,4.6,mb,90,140,1.958,0.76,us,us7000t1fh,2026-10-08T15:33:45.040Z,"65 km WSW of Puerto Madero, Mexico",earthquake,7.88,1.919,0.04,186,reviewed,us,us
+2026-07-17T18:17:23.232Z,14.2769,-92.908,17.935,4.5,mb,78,157,2.128,0.5,us,us7000t1fj,2026-10-08T15:33:46.040Z,"71 km SW of Puerto Madero, Mexico",earthquake,9.5,5.979,0.043,157,reviewed,us,us
+2026-07-17T18:26:46.549Z,14.2804,-92.9232,35,5.1,mb,91,136,2.13,0.83,us,us7000t1fk,2026-10-08T15:33:46.040Z,"72 km SW of Puerto Madero, Mexico",earthquake,8.22,1.905,0.024,591,reviewed,us,us
+2026-07-17T19:05:37.346Z,14.0199,-93.2863,10,4.2,mb,13,222,2.508,0.92,us,us7000t2ra,2026-10-08T15:37:05.040Z,"121 km SW of Puerto Madero, Mexico",earthquake,8.19,1.98,0.306,3,reviewed,us,us
+2026-07-17T19:09:41.521Z,14.1139,-93.075,10,4.4,mb,152,151,2.338,0.85,us,us7000t1g1,2026-10-08T15:33:48.040Z,"97 km SW of Puerto Madero, Mexico",earthquake,7.57,1.924,0.044,153,reviewed,us,us
+2026-07-17T19:10:41.720Z,14.1472,-93.3779,10,4.5,mb,27,211,7.765,0.88,us,us7000t2s6,2026-10-08T15:37:13.040Z,"121 km WSW of Puerto Madero, Mexico",earthquake,12.15,1.952,0.106,27,reviewed,us,us
+2026-07-17T19:46:22.218Z,14.1836,-93.087,10,4.1,mb,47,174,2.279,0.78,us,us7000t2rb,2026-10-08T15:37:06.040Z,"93 km SW of Puerto Madero, Mexico",earthquake,8.1,1.934,0.094,32,reviewed,us,us
+2026-07-17T20:02:25.559Z,14.1341,-93.0031,10,4.6,mb,109,134,2.293,0.72,us,us7000t1gi,2026-10-08T15:33:50.040Z,"90 km SW of Puerto Madero, Mexico",earthquake,5.67,1.856,0.044,154,reviewed,us,us
+2026-07-17T20:06:25.773Z,14.0394,-93.1701,10,4,mb,28,209,3.294,0.62,us,us7000t2re,2026-10-08T15:37:06.040Z,"110 km SW of Puerto Madero, Mexico",earthquake,13.43,2.005,0.113,23,reviewed,us,us
+2026-07-17T21:11:42.522Z,14.139,-93.2012,10,4.2,mb,41,185,3.289,1.03,us,us7000t1gz,2026-10-08T15:33:51.040Z,"105 km SW of Puerto Madero, Mexico",earthquake,10.77,1.993,0.078,45,reviewed,us,us
+2026-07-17T21:38:27.278Z,14.113,-93.1751,10,4,mb,30,199,3.278,1.24,us,us7000t2rh,2026-10-08T15:37:07.040Z,"105 km SW of Puerto Madero, Mexico",earthquake,10.12,1.984,0.116,20,reviewed,us,us
+2026-07-17T21:43:37.571Z,14.249,-92.7212,24.111,4.2,mb,28,221,2.875,0.72,us,us7000t2rl,2026-10-08T15:37:08.040Z,"61 km SSW of Puerto Madero, Mexico",earthquake,12.51,10.939,0.117,21,reviewed,us,us
+2026-07-17T22:00:22.284Z,14.015,-93.1617,10,4.1,mb,35,188,3.285,0.96,us,us7000t2rp,2026-10-08T15:37:09.040Z,"111 km SW of Puerto Madero, Mexico",earthquake,9.61,1.975,0.109,23,reviewed,us,us
+2026-07-17T22:02:37.991Z,14.5351,-92.714,35,4.1,mb,20,203,2.914,0.77,us,us7000t2rr,2026-10-08T15:37:09.040Z,"37 km WSW of Puerto Madero, Mexico",earthquake,11.12,1.994,0.145,13,reviewed,us,us
+2026-07-17T22:13:03.821Z,14.2431,-93.0572,10,5.4,mww,86,90,2.213,0.96,us,us7000t1hd,2026-10-08T15:33:52.040Z,"86 km SW of Puerto Madero, Mexico",earthquake,7.47,1.837,0.089,12,reviewed,us,us
+2026-07-17T22:32:19.447Z,14.4227,-92.9552,35,4.1,mb,17,223,2.01,0.62,us,us7000t2ru,2026-10-08T15:37:10.040Z,"66 km WSW of Puerto Madero, Mexico",earthquake,10.74,2.003,0.165,10,reviewed,us,us
+2026-07-17T22:51:41.836Z,14.0065,-93.2109,10,4.3,mb,72,164,2.488,1.28,us,us7000t1hk,2026-10-08T15:33:54.040Z,"116 km SW of Puerto Madero, Mexico",earthquake,2.75,1.96,0.059,83,reviewed,us,us
+2026-07-17T22:54:28.694Z,14.4536,-93.146,35,4.2,mb,34,212,2.062,1.4,us,us7000t2rv,2026-10-08T15:37:11.040Z,"83 km WSW of Puerto Madero, Mexico",earthquake,9.71,1.975,0.095,31,reviewed,us,us
+2026-07-17T22:59:55.742Z,14.3852,-92.6075,35,4.2,mb,27,209,2.785,0.59,us,us7000t2rw,2026-10-08T15:37:11.040Z,"42 km SSW of Puerto Madero, Mexico",earthquake,9.55,1.991,0.095,31,reviewed,us,us
+2026-07-17T23:05:46.904Z,14.3401,-92.8842,35,4.1,mb,23,214,3.043,0.93,us,us7000t2s0,2026-10-08T15:37:12.040Z,"65 km SW of Puerto Madero, Mexico",earthquake,7.32,1.999,0.135,15,reviewed,us,us
+2026-07-17T23:12:40.245Z,14.1398,-93.3667,10,4.1,mb,45,156,3.248,1.29,us,us7000t2ry,2026-10-08T15:37:12.040Z,"120 km WSW of Puerto Madero, Mexico",earthquake,6.14,1.964,0.095,30,reviewed,us,us
+2026-07-17T23:35:06.312Z,14.16,-93.0114,10,4.7,mb,72,159,3.147,1.2,us,us7000t1i4,2026-10-08T15:33:54.040Z,"88 km SW of Puerto Madero, Mexico",earthquake,8.25,1.916,0.036,227,reviewed,us,us
+2026-07-17T23:47:57.486Z,14.1328,-93.0318,10,4.6,mb,61,166,2.305,0.98,us,us7000t1i9,2026-10-08T15:33:55.040Z,"92 km SW of Puerto Madero, Mexico",earthquake,7.87,1.912,0.084,42,reviewed,us,us
+2026-07-18T00:10:52.158Z,14.0632,-93.0261,10,4.3,mb,28,207,3.155,0.55,us,us7000t2xn,2026-10-08T15:37:19.040Z,"97 km SW of Puerto Madero, Mexico",earthquake,12.57,1.986,0.122,19,reviewed,us,us
+2026-07-18T00:21:08.009Z,14.3871,-93.1056,35,4.6,mb,54,145,3.081,0.83,us,us7000t1ie,2026-10-08T15:33:55.040Z,"82 km WSW of Puerto Madero, Mexico",earthquake,6.52,1.928,0.039,194,reviewed,us,us
+2026-07-18T01:11:03.644Z,14.2572,-93.0168,10,4.1,mb,28,189,2.185,0.88,us,us7000t1ii,2026-10-08T15:33:56.040Z,"82 km SW of Puerto Madero, Mexico",earthquake,7.85,1.803,0.114,21,reviewed,us,us
+2026-07-18T01:49:00.937Z,14.167,-93.4517,10,5.2,mww,77,92,2.456,1.12,us,us7000t1im,2026-10-08T15:33:57.040Z,"126 km WSW of Puerto Madero, Mexico",earthquake,7.84,1.595,0.045,47,reviewed,us,us
+2026-07-18T02:29:36.660Z,14.3051,-92.8425,35,4.4,mb,44,191,2.998,0.96,us,us7000t1iu,2026-10-08T15:33:58.040Z,"64 km SW of Puerto Madero, Mexico",earthquake,8.44,1.808,0.083,42,reviewed,us,us
+2026-07-18T04:28:28.560Z,14.1126,-93.2655,10,4,mb,31,196,3.39,0.87,us,us7000t2zl,2026-10-08T15:37:33.040Z,"113 km SW of Puerto Madero, Mexico",earthquake,10.87,1.98,0.094,30,reviewed,us,us
+2026-07-18T04:28:52.117Z,14.395,-93.0196,44.143,4.9,mb,57,164,3.18,1.15,us,us7000t1jb,2026-10-08T15:34:00.040Z,"73 km WSW of Puerto Madero, Mexico",earthquake,8.47,9.11,0.078,51,reviewed,us,us
+2026-07-18T05:26:28.574Z,14.4149,-93.1437,35,4.2,mb,66,160,3.302,0.72,us,us7000t1jn,2026-10-08T15:34:02.040Z,"84 km WSW of Puerto Madero, Mexico",earthquake,11.18,1.953,0.045,137,reviewed,us,us
+2026-07-18T06:10:14.887Z,14.1728,-92.9416,10,4.6,mb,95,145,3.08,0.88,us,us7000t1jt,2026-10-08T15:34:04.040Z,"82 km SW of Puerto Madero, Mexico",earthquake,9.12,1.906,0.029,344,reviewed,us,us
+2026-07-18T06:51:49.012Z,14.3948,-93.1793,22.449,5.3,mww,126,90,3.052,0.69,us,us7000t1jy,2026-10-08T15:34:05.040Z,"89 km WSW of Puerto Madero, Mexico",earthquake,7.3,3.938,0.042,55,reviewed,us,us
+2026-07-18T07:20:44.477Z,14.271,-92.9768,10,4.4,mb,76,174,3.123,1.09,us,us7000t1k4,2026-10-08T15:34:07.040Z,"77 km SW of Puerto Madero, Mexico",earthquake,10.19,1.955,0.05,114,reviewed,us,us
+2026-07-18T07:27:13.032Z,14.315,-93.5474,10,4,mb,35,156,2.382,0.71,us,us7000t2y8,2026-10-08T15:37:23.040Z,"129 km WSW of Puerto Madero, Mexico",earthquake,5.81,1.944,0.144,13,reviewed,us,us
+2026-07-18T07:46:19.215Z,14.3593,-92.8935,35,4.2,mb,49,180,3.054,0.57,us,us7000t1ke,2026-10-08T15:34:09.040Z,"64 km SW of Puerto Madero, Mexico",earthquake,10.91,1.986,0.061,73,reviewed,us,us
+2026-07-18T08:53:57.223Z,14.034,-93.2175,10,4.2,mb,74,192,3.34,0.88,us,us7000t1km,2026-10-08T15:34:11.040Z,"114 km SW of Puerto Madero, Mexico",earthquake,12,1.978,0.058,83,reviewed,us,us
+2026-07-18T09:34:22.011Z,14.7465,-92.9544,46.201,4.4,mb,36,142,2.801,0.49,us,us7000t1kx,2026-10-08T15:34:12.040Z,"51 km WSW of Aquiles Serdán, Mexico",earthquake,9.07,8.806,0.047,130,reviewed,us,us
+2026-07-18T09:59:22.835Z,14.365,-92.8438,51.57,5.2,mww,39,166,3.008,0.63,us,us7000t1l4,2026-10-08T15:34:14.040Z,"60 km SW of Puerto Madero, Mexico",earthquake,10.88,9.168,0.043,52,reviewed,us,us
+2026-07-18T10:08:08.168Z,14.2661,-92.8399,39.001,4,mb,36,176,2.991,0.93,us,us7000t2yh,2026-10-08T15:37:25.040Z,"67 km SW of Puerto Madero, Mexico",earthquake,9.53,12.413,0.102,26,reviewed,us,us
+2026-07-18T11:30:14.467Z,14.1109,-92.5409,35,4.4,mb,41,195,2.688,0.8,us,us7000t1lh,2026-10-08T15:34:17.040Z,"57 km SW of Ocós, Guatemala",earthquake,9.79,1.993,0.056,93,reviewed,us,us
+2026-07-18T12:42:37.033Z,14.2005,-93.1494,10,4.2,mb,36,196,2.288,0.84,us,us7000t2yr,2026-10-08T15:37:26.040Z,"97 km SW of Puerto Madero, Mexico",earthquake,7.21,1.969,0.118,20,reviewed,us,us
+2026-07-18T13:14:32.154Z,16.6741,-95.1745,91.465,4.4,mb,66,85,1.174,0.92,us,us7000t1m0,2026-10-08T15:34:18.040Z,"9 km N of Santo Domingo Chihuitán, Mexico",earthquake,5.01,8.47,0.067,64,reviewed,us,us
+2026-07-18T13:28:37.700Z,14.0158,-93.4454,10,4.3,mb,74,183,2.583,0.85,us,us7000t1m2,2026-10-08T15:34:18.040Z,"135 km SW of Puerto Madero, Mexico",earthquake,8.29,1.964,0.06,79,reviewed,us,us
+2026-07-18T16:55:57.534Z,14.1953,-93.0075,10,4.3,mb,132,176,2.238,0.86,us,us7000t1mz,2026-10-08T15:34:21.040Z,"85 km SW of Puerto Madero, Mexico",earthquake,7.76,1.951,0.047,129,reviewed,us,us
+2026-07-18T17:01:36.476Z,14.4784,-92.8327,35.412,4.6,mww,83,156,3.016,0.51,us,us7000t1n3,2026-10-08T15:34:22.040Z,"51 km WSW of Puerto Madero, Mexico",earthquake,8.57,8.27,0.089,12,reviewed,us,us
+2026-07-18T17:26:26.128Z,14.2364,-92.8589,13,5.8,mww,93,148,3.006,0.88,us,us7000t1n5,2026-10-08T15:34:23.040Z,"71 km SW of Puerto Madero, Mexico",earthquake,9.52,1.896,0.039,62,reviewed,us,us
+2026-07-18T21:35:29.329Z,14.4209,-92.7347,35,4.4,mb,50,186,2.912,0.97,us,us7000t1nr,2026-10-08T15:34:25.040Z,"47 km SW of Puerto Madero, Mexico",earthquake,7.63,1.983,0.048,124,reviewed,us,us
+2026-07-18T22:49:24.251Z,14.3078,-93.421,10,4.6,mb,59,150,3.555,1.15,us,us7000t1p8,2026-10-08T15:34:29.040Z,"117 km WSW of Puerto Madero, Mexico",earthquake,8.67,1.924,0.043,161,reviewed,us,us
+2026-07-18T23:38:01.171Z,14.3539,-92.5399,35,4.5,mb,46,171,2.715,1.3,us,us7000t1pk,2026-10-08T15:34:30.040Z,"39 km WSW of Brisas Barra de Suchiate, Mexico",earthquake,9.69,1.981,0.051,114,reviewed,us,us
+2026-07-19T00:33:49.760Z,14.4345,-93.2399,35,4.4,mb,55,138,2.996,0.94,us,us7000t1pu,2026-10-08T15:34:32.040Z,"93 km WSW of Puerto Madero, Mexico",earthquake,8.19,1.954,0.051,111,reviewed,us,us
+2026-07-19T02:01:33.292Z,14.3043,-92.7413,35,4.6,mb,62,145,2.051,0.75,us,us7000t1q5,2026-10-08T15:34:35.040Z,"57 km SW of Puerto Madero, Mexico",earthquake,7.57,1.924,0.065,71,reviewed,us,us
+2026-07-19T02:18:51.399Z,14.008,-92.8857,10,5.3,mww,55,145,2.373,1.29,us,us7000t1q6,2026-10-08T15:34:36.040Z,"92 km SW of Brisas Barra de Suchiate, Mexico",earthquake,7.6,1.91,0.041,57,reviewed,us,us
+2026-07-19T03:27:15.265Z,14.2993,-93.0196,10,4.2,mb,62,183,2.147,0.87,us,us7000t1qd,2026-10-08T15:34:39.040Z,"79 km SW of Puerto Madero, Mexico",earthquake,7.26,1.9,0.069,59,reviewed,us,us
+2026-07-19T04:35:28.274Z,14.3305,-92.7035,38.295,4,mb,56,189,2.868,0.62,us,us7000t1qp,2026-10-08T15:34:40.040Z,"52 km SW of Puerto Madero, Mexico",earthquake,10.11,11.084,0.08,42,reviewed,us,us
+2026-07-19T06:17:47.541Z,14.4022,-92.9989,35,4,mb,20,202,3.162,0.92,us,us7000t1r9,2026-10-08T15:34:43.040Z,"71 km WSW of Puerto Madero, Mexico",earthquake,5.52,2.007,0.095,30,reviewed,us,us
+2026-07-19T08:55:18.866Z,14.1377,-93.2431,10,4.1,mb,34,197,2.384,1.08,us,us7000t1rs,2026-10-08T15:34:45.040Z,"109 km SW of Puerto Madero, Mexico",earthquake,7.74,1.953,0.08,42,reviewed,us,us
+2026-07-19T14:01:11.973Z,14.3233,-93.2016,10,4.3,mb,41,206,3.113,1.34,us,us7000t1sp,2026-10-08T15:34:48.040Z,"94 km WSW of Puerto Madero, Mexico",earthquake,8.83,1.978,0.065,66,reviewed,us,us
+2026-07-19T14:21:45.722Z,14.3419,-93.2762,10,4.4,mb,49,194,2.22,0.76,us,us7000t1su,2026-10-08T15:34:49.040Z,"101 km WSW of Puerto Madero, Mexico",earthquake,6.05,1.958,0.043,155,reviewed,us,us
+2026-07-19T15:44:13.311Z,14.03,-92.9229,10,4.5,mb,61,181,2.364,0.93,us,us7000t1ta,2026-10-08T15:34:52.040Z,"93 km SW of Puerto Madero, Mexico",earthquake,8.07,1.955,0.046,139,reviewed,us,us
+2026-07-19T15:48:11.909Z,14.1885,-93.4212,10,4.3,mb,27,199,2.422,0.7,us,us7000t32j,2026-10-08T15:37:38.040Z,"122 km WSW of Puerto Madero, Mexico",earthquake,4.75,1.974,0.188,8,reviewed,us,us
+2026-07-19T16:04:59.367Z,14.2663,-93.2935,10,4,mb,22,196,3.143,1.39,us,us7000t32k,2026-10-08T15:37:38.040Z,"106 km WSW of Puerto Madero, Mexico",earthquake,5.96,1.972,0.157,11,reviewed,us,us
+2026-07-19T17:45:13.312Z,14.1732,-92.864,9,5.5,mww,105,113,2.211,1.02,us,us7000t1tp,2026-10-08T15:34:52.040Z,"77 km SW of Puerto Madero, Mexico",earthquake,7.42,1.858,0.039,62,reviewed,us,us
+2026-07-19T18:40:14.640Z,14.0892,-93.1129,10,4.3,mb,59,141,2.375,0.59,us,us7000t1tu,2026-10-08T15:34:53.040Z,"102 km SW of Puerto Madero, Mexico",earthquake,9.21,1.932,0.061,76,reviewed,us,us
+2026-07-20T01:53:39.390Z,14.2676,-93.3009,15.892,4.7,mww,61,155,3.14,0.88,us,us7000t1vd,2026-10-08T15:35:01.040Z,"107 km WSW of Puerto Madero, Mexico",earthquake,13.66,12.656,0.078,16,reviewed,us,us
+2026-07-20T01:54:15.554Z,14.7337,-93.0554,35,4.4,mb,24,220,3.281,1.34,us,us7000t35k,2026-10-08T15:37:52.040Z,"61 km SW of El Arenal, Mexico",earthquake,14.12,2,0.117,21,reviewed,us,us
+2026-07-20T07:19:38.421Z,14.1621,-93.091,10,4.1,mb,43,166,2.3,0.5,us,us7000t1wa,2026-10-08T15:35:06.040Z,"95 km SW of Puerto Madero, Mexico",earthquake,9.19,1.95,0.077,46,reviewed,us,us
+2026-07-20T10:53:45.345Z,14.1688,-92.823,10,5.1,mww,75,78,2.965,1.18,us,us7000t1x3,2026-10-08T15:35:12.040Z,"74 km SW of Puerto Madero, Mexico",earthquake,3.26,1.816,0.045,48,reviewed,us,us
+2026-07-20T11:10:48.628Z,14.2261,-92.8576,35,4.5,mb,57,141,3.004,0.7,us,us7000t1x8,2026-10-08T15:35:14.040Z,"72 km SW of Puerto Madero, Mexico",earthquake,9.5,1.96,0.041,170,reviewed,us,us
+2026-07-20T13:36:36.494Z,14.0848,-92.8551,10,4.2,mb,75,199,2.292,0.61,us,us7000t34z,2026-10-08T15:37:45.040Z,"84 km SW of Brisas Barra de Suchiate, Mexico",earthquake,8.74,1.959,0.075,50,reviewed,us,us
+2026-07-20T14:49:24.294Z,14.3142,-93.3627,14.873,4.2,mb,77,155,2.286,0.82,us,us7000t1y3,2026-10-08T15:35:16.040Z,"110 km WSW of Puerto Madero, Mexico",earthquake,10.4,6.866,0.065,66,reviewed,us,us
+2026-07-20T15:14:56.739Z,14.3608,-93.0345,35,4.3,mb,29,181,2.097,0.79,us,us7000t351,2026-10-08T15:37:46.040Z,"77 km WSW of Puerto Madero, Mexico",earthquake,5.69,1.965,0.2,7,reviewed,us,us
+2026-07-20T20:41:52.982Z,14.2827,-93.1173,10,4.6,mb,90,178,3.176,0.51,us,us7000t218,2026-10-08T15:35:19.040Z,"89 km WSW of Puerto Madero, Mexico",earthquake,9.97,1.953,0.049,124,reviewed,us,us
+2026-07-20T20:53:28.791Z,14.3735,-93.0039,32.688,4.3,mb,69,186,3.127,0.59,us,us7000t21f,2026-10-08T15:35:19.040Z,"73 km WSW of Puerto Madero, Mexico",earthquake,11.21,9.135,0.062,75,reviewed,us,us
+2026-07-20T23:02:15.326Z,14.1241,-93.1949,10,4.1,mb,28,136,2.376,0.34,us,us7000t35j,2026-10-08T15:37:51.040Z,"106 km SW of Puerto Madero, Mexico",earthquake,6.46,1.936,0.135,15,reviewed,us,us
+2026-07-21T00:48:22.040Z,14.1063,-93.252,10,4.2,mb,39,166,2.416,0.78,us,us7000t23g,2026-10-08T15:35:25.040Z,"112 km SW of Puerto Madero, Mexico",earthquake,6.83,1.644,0.071,56,reviewed,us,us
+2026-07-21T05:06:47.520Z,14.1335,-93.0813,10,4.4,mb,56,137,3.212,0.83,us,us7000t24f,2026-10-08T15:35:30.040Z,"96 km SW of Puerto Madero, Mexico",earthquake,10.06,1.964,0.056,93,reviewed,us,us
+2026-07-21T06:43:16.057Z,14.2712,-92.9649,35,4.6,mb,64,145,7.424,0.77,us,us7000t24u,2026-10-08T15:35:31.040Z,"76 km SW of Puerto Madero, Mexico",earthquake,8.94,1.928,0.034,263,reviewed,us,us
+2026-07-21T09:09:59.552Z,14.1047,-92.6026,33.142,4.1,mb,73,164,2.747,0.39,us,us7000t256,2026-10-08T15:35:32.040Z,"62 km SW of Brisas Barra de Suchiate, Mexico",earthquake,8.41,7.711,0.069,58,reviewed,us,us
+2026-07-21T14:59:00.360Z,14.0083,-93.2355,10,4.2,mb,30,205,2.497,1.05,us,us6000tg48,2026-10-08T15:32:58.040Z,"117 km SW of Puerto Madero, Mexico",earthquake,16.24,2.011,0.121,19,reviewed,us,us
+2026-07-21T15:21:21.145Z,14.3277,-93.4146,10,4.4,mb,95,206,2.301,0.67,us,us7000t26t,2026-10-08T15:35:42.040Z,"115 km WSW of Puerto Madero, Mexico",earthquake,7.78,1.972,0.054,99,reviewed,us,us
+2026-07-21T18:27:02.299Z,14.4101,-92.8134,36.874,4.3,mb,76,192,2.985,0.79,us,us7000t2a3,2026-10-08T15:35:54.040Z,"54 km SW of Puerto Madero, Mexico",earthquake,10.38,11.218,0.065,67,reviewed,us,us
+2026-07-21T18:36:21.248Z,14.1408,-92.9899,10,4.3,mb,50,206,3.124,0.53,us,us6000tg4d,2026-10-08T15:32:59.040Z,"88 km SW of Puerto Madero, Mexico",earthquake,10.67,1.981,0.076,50,reviewed,us,us
+2026-07-21T21:39:25.951Z,14.08,-93.5732,10,4.2,mb,19,202,2.591,0.88,us,us7000t2c5,2026-10-08T15:35:59.040Z,"143 km WSW of Puerto Madero, Mexico",earthquake,7.16,1.994,0.214,6,reviewed,us,us
+2026-07-22T03:48:24.353Z,14.0453,-93.1443,10,4.1,mb,37,195,2.427,1.16,us,us7000t2dw,2026-10-08T15:36:07.040Z,"107 km SW of Puerto Madero, Mexico",earthquake,7.46,1.971,0.123,18,reviewed,us,us
+2026-07-22T08:32:12.123Z,14.1948,-93.3263,10,4.2,mb,51,156,2.371,1.13,us,us7000t2f3,2026-10-08T15:36:13.040Z,"113 km WSW of Puerto Madero, Mexico",earthquake,6.72,1.674,0.074,51,reviewed,us,us
+2026-07-22T10:24:48.703Z,14.1204,-93.0034,10,4.5,mb,103,199,3.136,0.58,us,us7000t2fq,2026-10-08T15:36:17.040Z,"91 km SW of Puerto Madero, Mexico",earthquake,7.21,1.937,0.036,224,reviewed,us,us
+2026-07-22T17:03:25.467Z,14.0879,-92.8164,10,4.3,mb,61,126,2.953,0.65,us,us7000t2h4,2026-10-08T15:36:23.040Z,"80 km SW of Brisas Barra de Suchiate, Mexico",earthquake,7.4,1.891,0.074,51,reviewed,us,us
+2026-07-22T18:13:02.887Z,14.2887,-93.1899,10,4,mb,27,178,2.227,0.87,us,us6000tge9,2026-10-08T15:33:03.040Z,"95 km WSW of Puerto Madero, Mexico",earthquake,7.3,1.985,0.144,13,reviewed,us,us
+2026-07-23T02:01:05.962Z,30.2905,-113.8297,10,4.1,mb,37,127,1.153,1.25,us,us7000t2ki,2026-10-13T22:44:59.040Z,"117 km SSW of Puerto Peñasco, Mexico",earthquake,3.72,1.526,0.123,18,reviewed,us,us
+2026-07-23T06:47:19.540Z,14.2298,-93.7414,10,4.2,mb,29,187,2.561,0.97,us,us7000t2ma,2026-10-13T22:46:31.040Z,"148 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,6.99,1.979,0.082,41,reviewed,us,us
+2026-07-23T07:31:48.370Z,32.915166666667,-115.5345,9.36,3.6170398868239,mw,52,36,0.02594,0.29,ci,ci40659802,2026-10-13T22:42:18.040Z,"7 km S of Brawley, CA",earthquake,0.24,0.54,,13,reviewed,ci,ci
+2026-07-23T15:29:58.545Z,14.5797,-93.4418,28.723,4.5,mb,66,181,2.109,0.99,us,us7000t2tf,2026-10-13T22:46:15.040Z,"100 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,5.49,6.139,0.048,129,reviewed,us,us
+2026-07-23T17:15:26.799Z,32.504,-101.191,7.7393,3.9,ml,25,51,0.1,0.1,tx,tx2026ojysxv,2026-10-13T22:42:15.040Z,"23 km NW of Westbrook, Texas",earthquake,0.59166252727706,0.85633900024702,0.1,36,reviewed,tx,tx
+2026-07-23T23:03:56.737Z,14.3921,-93.5013,10,4.3,mb,14,194,2.294,1.35,us,us6000tgpb,2026-10-13T22:46:43.040Z,"121 km WSW of Puerto Madero, Mexico",earthquake,7.32,1.951,0.238,5,reviewed,us,us
+2026-07-23T23:21:05.347Z,14.1012,-93.2537,10,4.2,mb,30,181,2.421,1.07,us,us6000tgpc,2026-10-13T22:46:14.040Z,"112 km SW of Puerto Madero, Mexico",earthquake,3.96,1.974,0.121,19,reviewed,us,us
+2026-07-24T09:31:59.353Z,14.1501,-93.2592,20.906,4.2,mb,79,133,2.38,0.45,us,us6000tgq1,2026-10-13T22:45:10.040Z,"110 km SW of Puerto Madero, Mexico",earthquake,6.72,6.524,0.071,55,reviewed,us,us
+2026-07-24T09:36:57.618Z,14.2921,-93.7495,10,4.3,mb,47,153,2.517,0.66,us,us7000t2zy,2026-10-13T22:45:44.040Z,"142 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,6.11,1.948,0.054,99,reviewed,us,us
+2026-07-24T13:57:37.560Z,14.1315,-93.435,10,4.3,mb,47,186,2.478,1.12,us,us7000t31p,2026-10-13T22:46:28.040Z,"127 km WSW of Puerto Madero, Mexico",earthquake,7.46,1.968,0.067,63,reviewed,us,us
+2026-07-24T17:33:33.671Z,17.6913,-94.2042,183.546,4.5,mb,45,84,0.375,0.66,us,us7000t35u,2026-10-13T22:43:42.040Z,"26 km SSW of Las Choapas, Mexico",earthquake,6.01,3.748,0.07,60,reviewed,us,us
+2026-07-24T18:26:50.087Z,14.3081,-93.0097,35,4.1,mb,61,207,2.135,0.88,us,us6000tgqn,2026-10-13T22:47:01.040Z,"78 km SW of Puerto Madero, Mexico",earthquake,10.9,8.502,0.076,47,reviewed,us,us
+2026-07-24T18:43:22.878Z,14.4827,-92.9601,33.578,4.2,mb,66,161,3.138,0.51,us,us6000tgqp,2026-10-13T22:45:56.040Z,"63 km WSW of Puerto Madero, Mexico",earthquake,10.01,8.344,0.07,56,reviewed,us,us
+2026-07-25T05:26:33.729Z,14.4725,-92.7787,35,5.1,mww,80,130,2.963,0.96,us,us7000t3a0,2026-10-13T22:45:05.040Z,"47 km SW of Puerto Madero, Mexico",earthquake,4.37,1.916,0.055,32,reviewed,us,us
+2026-07-25T21:36:35.293Z,14.023,-92.0771,46.041,4.1,mb,25,184,2.233,0.95,us,us6000tgz9,2026-10-13T22:46:23.040Z,"34 km SSW of Champerico, Guatemala",earthquake,15.39,13.507,0.123,18,reviewed,us,us
+2026-07-26T10:04:54.444Z,14.1489,-92.3106,35,4.2,mb,35,174,2.468,0.75,us,us7000t3fw,2026-10-13T22:46:09.040Z,"41 km SSW of Ocós, Guatemala",earthquake,4.95,1.92,0.064,67,reviewed,us,us
+2026-07-26T15:33:59.937Z,14.0032,-91.3501,74.674,4.3,mb,55,200,1.528,0.72,us,us7000t3hw,2026-10-13T22:46:50.040Z,"22 km SSW of Nueva Concepción, Guatemala",earthquake,13.37,11.613,0.046,131,reviewed,us,us
+2026-07-26T20:16:55.738Z,17.57,-94.458,171.75,4.3,mb,58,62,0.389,0.87,us,us7000t3j7,2026-10-13T22:42:53.040Z,"15 km NNE of Niños Héroes, Mexico",earthquake,6.29,4.678,0.044,145,reviewed,us,us
+2026-07-27T23:23:02.096Z,31.84,-102.684,9.9121,3.5,ml,29,57,0.3,0.1,tx,tx2026ortuwy,2026-10-13T22:42:16.040Z,"16 km SSW of Goldsmith, Texas",earthquake,0.52880589490843,1.4078045075251,0.2,44,reviewed,tx,tx
+2026-07-28T05:35:14.794Z,14.239,-92.6259,13,5.9,mww,110,86,2.782,0.92,us,us6000tgau,2026-10-13T22:43:48.040Z,"54 km SW of Brisas Barra de Suchiate, Mexico",earthquake,7.85,1.846,0.037,70,reviewed,us,us
+2026-07-28T09:48:04.086Z,14.1885,-92.9818,10,4.1,mb,24,165,3.12,0.78,us,us6000titx,2026-10-13T22:46:00.040Z,"84 km SW of Puerto Madero, Mexico",earthquake,10.34,1.954,0.15,12,reviewed,us,us
+2026-07-28T14:18:13.976Z,14.0542,-93.0766,10,4,mb,24,224,2.393,0.47,us,us6000thae,2026-10-13T22:47:39.040Z,"102 km SW of Puerto Madero, Mexico",earthquake,7.86,1.784,0.138,16,reviewed,us,us
+2026-07-28T16:14:16.288Z,14.385,-92.6289,47.279,4.7,mb,141,143,2.805,0.55,us,us6000tget,2026-10-13T22:45:30.040Z,"43 km SSW of Puerto Madero, Mexico",earthquake,8.13,7.308,0.03,344,reviewed,us,us
+2026-07-29T03:35:44.901Z,14.0556,-93.2468,10,4.3,mb,60,182,2.459,1.06,us,us6000tgk6,2026-10-13T22:46:18.040Z,"115 km SW of Puerto Madero, Mexico",earthquake,5.03,1.966,0.075,50,reviewed,us,us
+2026-07-29T23:17:38.357Z,14.4002,-93.2964,35,4.4,mb,56,182,2.18,1.14,us,us6000tgup,2026-10-13T22:46:20.040Z,"100 km WSW of Puerto Madero, Mexico",earthquake,7.12,1.974,0.084,41,reviewed,us,us
+2026-07-30T06:58:55.505Z,14.2218,-91.0582,91.052,5,mww,60,142,1.281,1.02,us,us6000tgwd,2026-10-17T22:26:27.040Z,"11 km W of La Democracia, Guatemala",earthquake,8.91,6.954,0.06,27,reviewed,us,us
+2026-07-30T10:27:01.696Z,14.1076,-93.283,10,4.1,mb,30,182,2.428,0.84,us,us6000ti2d,2026-10-17T22:26:37.040Z,"115 km SW of Puerto Madero, Mexico",earthquake,6.78,1.966,0.174,9,reviewed,us,us
+2026-07-30T15:28:49.432Z,14.424,-93.5521,10,4.1,mb,15,185,2.297,1.12,us,us6000ti2w,2026-10-17T22:26:37.040Z,"120 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,7.57,1.91,0.185,8,reviewed,us,us
+2026-07-30T18:20:32.621Z,14.2669,-93.0973,8.468,5,mww,126,92,2.207,0.79,us,us6000th1t,2026-10-17T22:26:27.040Z,"88 km SW of Puerto Madero, Mexico",earthquake,7.35,4.492,0.049,40,reviewed,us,us
+2026-07-30T23:42:36.970Z,15.0975,-93.4059,35,4.1,mb,37,177,1.697,0.86,us,us6000ti3h,2026-10-17T22:26:37.040Z,"46 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,8.34,1.995,0.094,31,reviewed,us,us
+2026-07-31T09:40:08.628Z,14.1222,-93.2828,10,4.4,mb,101,146,2.415,0.63,us,us6000th7g,2026-10-17T22:26:28.040Z,"114 km SW of Puerto Madero, Mexico",earthquake,8.6,1.913,0.045,142,reviewed,us,us
+2026-07-31T09:41:24.570Z,17.2609,-99.914,35,4.2,mb,50,116,0.347,0.81,us,us6000tiuc,2026-10-17T22:26:42.040Z,"3 km ESE of San Cristóbal, Mexico",earthquake,4.46,1.937,0.132,16,reviewed,us,us
+2026-07-31T15:20:46.482Z,14.1912,-93.2959,10,4.3,mb,18,206,3.424,0.57,us,us6000tibr,2026-10-17T22:26:39.040Z,"111 km WSW of Puerto Madero, Mexico",earthquake,11.42,1.99,0.168,10,reviewed,us,us
+2026-07-31T15:55:03.506Z,14.1949,-93.2996,10,4.4,mb,31,202,2.359,0.99,us,us6000th8j,2026-10-17T22:26:28.040Z,"111 km WSW of Puerto Madero, Mexico",earthquake,5.7,1.891,0.092,35,reviewed,us,us
+2026-07-31T16:15:57.845Z,14.5274,-93.2513,10,5.2,mww,49,205,3.423,0.85,us,us6000th8n,2026-10-17T22:26:28.040Z,"91 km WSW of Aquiles Serdán, Mexico",earthquake,11.68,1.955,0.045,47,reviewed,us,us
+2026-07-31T19:57:29.065Z,15.1384,-92.9687,83.056,4.3,mb,64,195,1.391,0.84,us,us6000thbi,2026-10-17T22:26:29.040Z,"29 km W of El Arenal, Mexico",earthquake,14.27,8.783,0.064,70,reviewed,us,us
+2026-07-31T20:59:14.233Z,14.2064,-93.4344,10,4.4,mb,92,124,2.414,0.75,us,us6000thc1,2026-10-17T22:26:29.040Z,"123 km WSW of Puerto Madero, Mexico",earthquake,7.24,1.884,0.057,89,reviewed,us,us
+2026-08-01T08:21:48.692Z,14.3484,-93.2644,19.04,4.6,mb,161,145,2.209,0.49,us,us6000thfh,2026-10-17T22:26:30.040Z,"99 km WSW of Puerto Madero, Mexico",earthquake,7.51,5.14,0.037,215,reviewed,us,us
+2026-08-01T23:35:22.417Z,14.3992,-93.4384,10,4.4,mb,56,188,2.254,0.91,us,us6000thit,2026-10-17T22:26:31.040Z,"115 km WSW of Puerto Madero, Mexico",earthquake,8.7,1.964,0.057,90,reviewed,us,us
+2026-08-01T23:39:57.425Z,15.029,-92.6828,92.052,4.2,mb,36,155,1.352,1.09,us,us6000thj0,2026-10-17T22:26:31.040Z,"15 km WSW of Francisco I. Madero, Mexico",earthquake,8.12,10.583,0.104,26,reviewed,us,us
+2026-08-02T13:10:46.579Z,27.2104,-111.2632,10,5.1,mww,63,126,1.824,1.32,us,us6000thm1,2026-10-17T22:26:32.040Z,"79 km ENE of Mulegé, Mexico",earthquake,9.75,1.88,0.039,62,reviewed,us,us
+2026-08-03T09:19:09.863Z,14.0298,-93.5912,10,4.5,mb,58,139,2.643,0.83,us,us6000thr2,2026-10-17T22:26:34.040Z,"147 km WSW of Puerto Madero, Mexico",earthquake,4.84,1.849,0.055,98,reviewed,us,us
+2026-08-04T04:27:59.906Z,14.4961,-93.2123,10,4.1,mb,39,164,2.946,0.5,us,us6000thxh,2026-10-17T22:26:35.040Z,"88 km WSW of Puerto Madero, Mexico",earthquake,9.14,1.946,0.081,42,reviewed,us,us
+2026-08-04T05:58:47.934Z,14.2884,-93.4238,10,4.3,mb,58,134,2.339,0.97,us,us6000thyc,2026-10-17T22:26:36.040Z,"118 km WSW of Puerto Madero, Mexico",earthquake,7.18,1.923,0.074,52,reviewed,us,us
+2026-08-04T06:52:27.538Z,14.4439,-93.3194,35,4.2,mb,49,166,2.154,0.62,us,us6000thyi,2026-10-17T22:26:36.040Z,"101 km WSW of Puerto Madero, Mexico",earthquake,5.82,1.94,0.063,69,reviewed,us,us
+2026-08-04T07:01:39.596Z,14.3168,-93.3154,10,4,mb,27,190,2.26,0.85,us,us6000thyk,2026-10-17T22:26:36.040Z,"106 km WSW of Puerto Madero, Mexico",earthquake,10.19,1.979,0.111,22,reviewed,us,us
+2026-08-04T07:07:07.847Z,14.2171,-93.5477,10,4.6,mb,114,152,2.463,1.21,us,us6000thym,2026-10-17T22:26:36.040Z,"133 km WSW of Puerto Madero, Mexico",earthquake,6.77,1.913,0.04,185,reviewed,us,us
+2026-08-04T11:07:46.655Z,14.3025,-93.5216,10,4.3,mb,97,134,2.379,0.55,us,us6000thzg,2026-10-17T22:26:36.040Z,"127 km WSW of Puerto Madero, Mexico",earthquake,7.33,1.918,0.058,85,reviewed,us,us
+2026-08-06T04:37:29.642Z,17.2894,-101.5492,10,4.4,mb,58,178,0.367,1.2,us,us6000tihs,2026-09-21T05:36:20.040Z,"37 km SSW of Los Achotes, Mexico",earthquake,4.42,1.889,0.076,49,reviewed,us,us
+2026-08-07T00:06:16.123Z,15.4868,-96.3179,10,4.1,mb,34,89,0.346,0.82,us,us6000tjyy,2026-09-14T23:29:14.040Z,"27 km SE of Puerto Ángel, Mexico",earthquake,8.16,1.872,0.094,31,reviewed,us,us
+2026-08-08T09:13:39.582Z,14.1911,-93.027,10,4.2,mb,37,187,2.249,0.67,us,us6000tj80,2026-09-20T05:11:53.040Z,"87 km SW of Puerto Madero, Mexico",earthquake,6.29,1.95,0.074,51,reviewed,us,us
+2026-08-08T12:28:59.472Z,14.7589,-92.3805,74.748,4.3,mb,31,174,1.532,1.11,us,us6000tk91,2026-09-20T05:28:24.040Z,"4 km NE of El Encanto, Mexico",earthquake,6.52,11.698,0.104,26,reviewed,us,us
+2026-08-10T03:16:21.166Z,19.8535,-105.467,10,3.9,mb,45,195,0.905,1.03,us,us6000tjm0,2026-09-14T16:47:11.040Z,"17 km S of La Cruz de Loreto, Mexico",earthquake,7.3,1.999,0.104,24,reviewed,us,us
+2026-08-10T22:41:51.050Z,14.09,-93.1153,10,4.2,mb,44,203,2.375,0.77,us,us6000tju1,2026-09-14T22:07:38.040Z,"102 km SW of Puerto Madero, Mexico",earthquake,9.55,2.011,0.084,39,reviewed,us,us
+2026-08-12T02:48:58.617Z,14.1111,-93.2134,10,4.1,mb,27,199,2.395,1.24,us,us6000tl75,2026-09-16T19:01:59.040Z,"108 km SW of Puerto Madero, Mexico",earthquake,7.38,1.979,0.12,19,reviewed,us,us
+2026-08-12T11:56:30.570Z,14.0746,-92.3107,37.724,4.6,mb,82,176,1.039,1.03,us,us6000tk75,2026-09-28T10:38:40.040Z,"49 km WSW of Champerico, Guatemala",earthquake,6.31,9.57,0.029,347,reviewed,us,us
+2026-08-12T12:14:43.321Z,14.0655,-93.2307,15.872,4.1,mb,39,200,1.422,0.69,us,us6000tl6v,2026-09-21T14:37:35.040Z,"113 km SW of Puerto Madero, Mexico",earthquake,9.04,8.221,0.106,24,reviewed,us,us
+2026-08-13T05:02:05.936Z,18.6941,-104.1041,38.521,4.4,mb,60,199,0.707,0.8,us,us6000tkdq,2026-09-24T09:12:08.040Z,"25 km S of Cuyutlán, Mexico",earthquake,5.66,7.835,0.039,190,reviewed,us,us
+2026-08-14T17:49:26.590Z,14.1325,-93.1385,10,4.3,mb,75,181,1.313,0.58,us,us6000tlwb,2026-09-10T17:07:04.040Z,"101 km SW of Puerto Madero, Mexico",earthquake,6.86,1.952,0.063,70,reviewed,us,us
+2026-08-15T00:23:17.767Z,19.3336,-108.1495,10,4.2,mb,24,210,6.234,0.83,us,us7000tfc7,2026-10-16T05:13:51.040Z,"292 km WSW of La Cruz de Loreto, Mexico",earthquake,12.43,1.984,0.093,32,reviewed,us,us
+2026-08-15T03:50:28.944Z,15.1541,-93.8805,35,4.3,mb,57,130,1.59,1.21,us,us6000tkw8,2026-09-18T22:03:01.040Z,"78 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,6.36,1.943,0.084,40,reviewed,us,us
+2026-08-16T09:57:37.514Z,31.1407,-109.1716,8.737,4,mb,53,108,0.252,0.95,us,usd0015e7e,2026-09-21T14:28:15.196Z,"41 km ESE of Agua Prieta, Mexico",earthquake,4.07,5.878,0.088,38,reviewed,us,us
+2026-08-16T15:52:47.714Z,14.1201,-93.1987,10,5.3,mww,63,111,2.381,1.34,us,usd0015e8n,2026-09-04T19:01:36.040Z,"106 km SW of Puerto Madero, Mexico",earthquake,9.28,1.698,0.045,48,reviewed,us,us
+2026-08-16T17:10:51.962Z,14.2635,-93.1407,10,4.2,mb,42,181,2.228,0.97,us,usd0015e92,2026-09-10T17:32:39.040Z,"92 km WSW of Puerto Madero, Mexico",earthquake,8.52,1.955,0.074,50,reviewed,us,us
+2026-08-18T05:02:31.383Z,14.1855,-93.1997,9,5.8,mww,92,133,1.316,0.64,us,us6000tlkl,2026-09-19T13:36:39.379Z,"102 km SW of Puerto Madero, Mexico",earthquake,6.25,1.862,0.037,70,reviewed,us,us
+2026-08-18T05:25:01.732Z,14.1752,-93.1591,10,4.3,mb,32,205,1.295,0.67,us,us6000tn56,2026-09-21T13:19:42.040Z,"99 km SW of Puerto Madero, Mexico",earthquake,7.13,1.977,0.119,20,reviewed,us,us
+2026-08-19T18:56:04.945Z,14.0572,-93.2435,10,4.1,mb,36,201,1.437,0.91,us,us7000tbrj,2026-09-10T18:58:57.040Z,"115 km SW of Puerto Madero, Mexico",earthquake,5.8,1.972,0.127,17,reviewed,us,us
+2026-08-19T20:06:29.351Z,17.6468,-94.3229,176.597,4.6,mb,110,96,0.368,1.14,us,us6000tlzp,2026-09-22T13:36:23.040Z,"29 km NE of Niños Héroes, Mexico",earthquake,7.43,5.826,0.036,235,reviewed,us,us
+2026-08-20T20:38:37.152Z,15.9565,-95.2089,42.627,4,mb,48,153,1.695,0.79,us,us7000tc75,2026-09-08T14:05:55.040Z,"23 km ESE of Santa Gertrudis Miramar, Mexico",earthquake,6.39,18.887,0.106,24,reviewed,us,us
+2026-08-21T12:07:22.627Z,15.213,-93.3459,58.579,4.2,mb,50,177,1.078,0.79,us,us7000tcb1,2026-09-15T08:19:38.040Z,"32 km SW of La Esperanza (El Zapotal), Mexico",earthquake,8.19,9.81,0.068,60,reviewed,us,us
+2026-08-22T00:36:04.245Z,16.7754,-93.7556,157.881,4.2,mb,28,134,0.656,0.8,us,us7000tccg,2026-09-13T04:11:12.040Z,"3 km S of Francisco I. Madero, Mexico",earthquake,7.02,3.947,0.187,8,reviewed,us,us
+2026-08-22T21:53:41.566Z,14.2546,-93.2061,10,4.5,mb,50,188,2.264,1.14,us,us6000tmuq,2026-09-14T02:38:31.040Z,"99 km WSW of Puerto Madero, Mexico",earthquake,4.83,1.959,0.043,156,reviewed,us,us
+2026-08-24T03:33:57.397Z,14.2001,-93.2288,10,4,mb,40,155,1.326,0.72,us,us6000tn20,2026-09-16T23:50:28.040Z,"104 km WSW of Puerto Madero, Mexico",earthquake,6.14,1.938,0.095,30,reviewed,us,us
+2026-08-25T07:37:38.239Z,14.1693,-93.3506,10,4,mb,44,166,1.434,1.03,us,us7000tfjd,2026-09-15T12:30:05.040Z,"117 km WSW of Puerto Madero, Mexico",earthquake,6.29,1.951,0.105,24,reviewed,us,us
+2026-08-25T12:27:40.153Z,14.9576,-91.5652,134.578,4.3,mb,63,167,1.427,0.49,us,us6000tncq,2026-09-17T07:27:44.040Z,"3 km SSW of San Carlos Sija, Guatemala",earthquake,8.96,8.915,0.056,91,reviewed,us,us
+2026-08-26T19:53:55.397Z,14.0852,-93.2386,10,4.2,mb,79,180,1.413,0.86,us,us7000tdm9,2026-09-18T17:49:19.040Z,"112 km SW of Puerto Madero, Mexico",earthquake,6.79,1.925,0.071,58,reviewed,us,us
+2026-08-26T20:10:36.017Z,17.4437,-94.8653,130.286,4.1,mb,45,83,0.698,0.79,us,us7000tfk0,2026-09-18T18:05:36.040Z,"14 km ENE of Suchilapan del Río, Mexico",earthquake,5.75,7.804,0.107,25,reviewed,us,us
+2026-08-28T22:30:30.170Z,15.0062,-93.1064,77.978,4.1,mb,33,147,1.575,1.39,us,us7000tcqc,2026-09-15T01:05:45.040Z,"47 km WSW of El Arenal, Mexico",earthquake,8.4,9.501,0.076,51,reviewed,us,us
+2026-08-29T00:19:38.478Z,25.6765,-109.9009,10,4.2,mb,32,131,2.549,1.17,us,us7000tcqv,2026-09-15T02:44:05.353Z,"59 km W of Campo Pesquero el Colorado, Mexico",earthquake,6.49,1.733,0.064,69,reviewed,us,us
+2026-08-30T11:21:26.796Z,14.1739,-92.9057,10,4.3,mb,50,186,1.235,0.72,us,us7000tcyl,2026-09-22T19:13:42.040Z,"79 km SW of Puerto Madero, Mexico",earthquake,5.2,1.962,0.07,57,reviewed,us,us
+2026-09-01T14:26:42.369Z,28.897,-98.102,8.6209,3.6,ml,26,71,0.1,0.2,tx,tx2026rfeetf,2026-09-24T20:37:34.040Z,"12 km SW of Falls City, Texas",earthquake,0.59147478094414,1.1475994720576,0.2,20,reviewed,tx,tx
+2026-09-01T18:58:19.539Z,14.1633,-93.1371,10,4.2,mb,74,210,2.317,0.9,us,us7000tfwe,2026-09-30T19:12:15.040Z,"98 km SW of Puerto Madero, Mexico",earthquake,11.49,1.952,0.068,60,reviewed,us,us
+2026-09-02T06:06:28.149Z,14.3038,-92.7548,10,4.1,mb,64,154,0.952,0.95,us,us7000tdj6,2026-10-08T13:31:33.040Z,"58 km SW of Puerto Madero, Mexico",earthquake,3.99,1.846,0.057,85,reviewed,us,us
+2026-09-02T12:28:30.120Z,14.2517,-93.2663,11,5.6,mww,225,88,1.318,1.11,us,us7000tdmp,2026-10-12T15:34:37.141Z,"104 km WSW of Puerto Madero, Mexico",earthquake,5.81,1.818,0.04,60,reviewed,us,us
+2026-09-02T13:43:15.046Z,14.2993,-93.3008,10,4.3,mb,60,187,2.269,0.54,us,us7000tdn2,2026-09-30T19:18:51.521Z,"105 km WSW of Puerto Madero, Mexico",earthquake,5.09,1.954,0.075,50,reviewed,us,us
+2026-09-02T20:06:26.218Z,14.8934,-92.1954,106.916,4.2,mb,105,172,1.382,0.76,us,us7000tdqd,2026-09-30T14:39:22.040Z,"1 km NW of 2da. Sección de Medio Monte, Mexico",earthquake,8.34,10.305,0.057,87,reviewed,us,us
+2026-09-03T11:33:51.860Z,17.6885,-94.5465,144.259,4.8,mb,69,105,2.697,1.11,us,us7000tdw2,2026-10-15T13:20:58.040Z,"14 km SE of Hidalgotitlán, Mexico",earthquake,6.7,7.965,0.032,298,reviewed,us,us
+2026-09-05T14:46:57.836Z,31.715,-101.703,6.8115,3.6,ml,36,59,0.1,0.1,tx,tx2026rmntsl,2026-09-30T19:40:18.197Z,"26 km SW of Garden City, Texas",earthquake,0.63037351414987,0.62745645254609,0.1,36,reviewed,tx,tx
+2026-09-06T02:56:32.292Z,14.1649,-93.3004,10,5.3,mww,72,149,2.386,1.07,us,us7000tem2,2026-10-06T21:47:23.040Z,"112 km WSW of Puerto Madero, Mexico",earthquake,3.9,1.894,0.044,49,reviewed,us,us
+2026-09-06T18:46:18.374Z,16.3468,-99.2958,10,4.8,mww,79,162,1.396,0.82,us,us7000terb,2026-09-13T17:24:37.526Z,"44 km SW of Copala, Mexico",earthquake,7.07,1.907,0.052,35,reviewed,us,us
+2026-09-09T21:08:30.964Z,14.1582,-93.1815,35,4.3,mb,51,180,1.323,0.98,us,us7000tg67,2026-10-06T20:33:05.040Z,"102 km SW of Puerto Madero, Mexico",earthquake,6.74,1.977,0.066,66,reviewed,us,us
+2026-09-10T13:29:03.231Z,14.1667,-93.0934,10,4.5,mb,38,184,1.259,1.16,us,us7000tgb4,2026-10-15T18:37:17.040Z,"94 km SW of Puerto Madero, Mexico",earthquake,6.92,1.968,0.051,113,reviewed,us,us
+2026-09-11T21:31:39.536Z,14.3203,-92.9928,35,4,mb,25,190,1.08,0.77,us,us7000tgrn,2026-10-15T23:37:48.040Z,"75 km SW of Puerto Madero, Mexico",earthquake,5.2,1.975,0.119,19,reviewed,us,us
+2026-09-12T08:17:32.896Z,14.0942,-92.5296,35,4.2,mb,77,159,1.056,0.68,us,us7000tgxv,2026-10-06T17:06:50.040Z,"58 km SW of Ocós, Guatemala",earthquake,5.45,1.939,0.048,123,reviewed,us,us
+2026-09-14T20:38:59.683Z,15.1975,-104.3677,10,5.3,mww,76,184,5.344,0.72,us,us7000thgs,2026-10-17T12:23:54.040Z,"off the coast of Michoacan, Mexico",earthquake,11.21,1.932,0.041,57,reviewed,us,us
+2026-09-14T22:42:57.105Z,14.2422,-93.2047,10,4.2,mb,56,196,1.28,0.92,us,us7000thhw,2026-10-14T23:14:04.040Z,"99 km WSW of Puerto Madero, Mexico",earthquake,6.71,1.972,0.08,44,reviewed,us,us
+2026-09-15T17:44:09.588Z,14.0647,-93.1817,10,4.1,mb,44,180,2.424,0.68,us,us7000tiyt,2026-10-06T17:27:21.040Z,"109 km SW of Puerto Madero, Mexico",earthquake,7.78,1.969,0.108,23,reviewed,us,us
+2026-09-15T19:07:33.647Z,14.5243,-92.7368,10,4.2,mb,43,202,2.933,0.72,us,us7000tiyu,2026-10-15T14:11:46.040Z,"40 km WSW of Puerto Madero, Mexico",earthquake,12.29,1.98,0.092,33,reviewed,us,us
+2026-09-18T13:12:48.560Z,14.2991,-93.5694,10,4.6,mb,39,190,1.527,0.65,us,us7000tiaq,2026-10-10T16:04:55.040Z,"132 km WSW of Puerto Madero, Mexico",earthquake,7.13,1.963,0.045,151,reviewed,us,us
+2026-09-21T11:02:38.303Z,15.7429,-93.0517,139.955,4.2,mb,116,129,1.03,0.75,us,us7000tix2,2026-10-12T15:18:05.040Z,"17 km SW of El Ramal (Porvenir), Mexico",earthquake,9.1,8.15,0.05,111,reviewed,us,us
+2026-09-22T11:43:45.870Z,14.2013,-91.0504,90.318,4.6,mb,187,152,1.268,0.52,us,us7000tj58,2026-10-15T14:31:47.277Z,"11 km WSW of La Democracia, Guatemala",earthquake,8.61,7.142,0.026,446,reviewed,us,us
+2026-09-23T21:29:28.406Z,16.9095,-95.0733,92.58,4.1,mb,31,98,0.975,0.81,us,us6000u0bk,2026-10-14T22:04:46.040Z,"3 km SE of El Chocolate, Mexico",earthquake,3.71,11.778,0.233,5,reviewed,us,us
+2026-09-24T03:28:37.619Z,16.5296,-98.4264,32.436,4.1,mb,30,170,0.318,0.83,us,us6000u0bs,2026-10-14T03:50:31.040Z,"6 km NNW of Cuajinicuilapa, Mexico",earthquake,2.13,8.374,0.262,4,reviewed,us,us
+2026-09-24T08:36:08.785Z,31.671,-101.742,5.542,3.6,ml,37,40,0,0.1,tx,tx2026suygvy,2026-10-07T12:32:20.284Z,"32 km SW of Garden City, Texas",earthquake,0.65224989222147,0.59000503743581,0.2,28,reviewed,tx,tx
+2026-09-24T14:02:42.494Z,14.184,-93.2081,10,4.5,mb,33,221,1.322,0.94,us,us6000txc1,2026-10-10T16:48:40.040Z,"103 km SW of Puerto Madero, Mexico",earthquake,6.46,1.905,0.079,47,reviewed,us,us
+2026-09-26T04:10:48.758Z,16.7998,-95.3008,85.459,4.1,mb,33,93,1.026,1.29,us,us6000u0d5,2026-10-12T22:41:20.040Z,"8 km NE of Santa María Guenagati, Mexico",earthquake,4.85,11.973,0.213,6,reviewed,us,us
+2026-09-26T17:30:17.245Z,14.2383,-93.4103,10,4.2,mb,40,193,1.435,0.63,us,us6000txu6,2026-10-18T06:47:14.040Z,"119 km WSW of Puerto Madero, Mexico",earthquake,5.8,1.863,0.081,42,reviewed,us,us
+2026-09-27T08:20:33.384Z,14.5663,-92.3885,66.862,4,mb,26,180,0.567,1.34,us,us6000txxq,2026-10-11T12:23:48.040Z,"17 km SSE of Puerto Madero, Mexico",earthquake,7.06,8.938,0.126,17,reviewed,us,us
+2026-09-28T07:21:55.131Z,18.9102,-104.3766,51.814,4.4,mb,86,162,3.064,0.83,us,us6000ty3k,2026-09-29T07:22:46.082Z,"20 km SW of El Colomo, Mexico",earthquake,7.21,7.654,0.04,178,reviewed,us,us
+2026-09-30T00:25:24.836Z,14.3327,-93.9387,10,4.4,mb,57,174,2.603,0.91,us,us6000tygh,2026-10-22T05:18:43.040Z,"149 km SW of La Esperanza (El Zapotal), Mexico",earthquake,7.11,1.941,0.062,75,reviewed,us,us
+2026-09-30T04:06:59.509Z,17.3222,-93.9281,197.453,4.2,mb,38,73,0.208,0.99,us,us6000tyhe,2026-10-15T02:19:59.040Z,"31 km ENE of La Horqueta (Poblado Doce), Mexico",earthquake,6.41,3.368,0.1,28,reviewed,us,us
+2026-10-01T08:14:57.691Z,14.6889,-92.8947,53.879,4.1,mb,28,180,1.744,0.75,us,us6000tyqw,2026-10-16T06:11:14.040Z,"49 km SW of Aquiles Serdán, Mexico",earthquake,10.35,10.362,0.092,32,reviewed,us,us
+2026-10-02T06:53:35.007Z,18.7561,-104.3753,23.972,4.8,mww,57,191,3.104,1.32,us,us6000tyzx,2026-10-02T07:11:55.040Z,"35 km SSW of El Colomo, Mexico",earthquake,8.61,4.908,0.052,36,reviewed,us,us
+2026-10-02T11:35:16.003Z,14.4208,-90.9832,115.214,4.2,mb,42,165,2.106,0.6,us,us6000tz0z,2026-10-12T16:02:20.751Z,"9 km SSW of Yepocapa, Guatemala",earthquake,10.22,11.012,0.072,54,reviewed,us,us
+2026-10-03T20:33:44.836Z,14.0036,-93.3587,10,4.5,mb,51,166,2.554,0.7,us,us6000tze6,2026-10-18T09:51:58.040Z,"128 km SW of Puerto Madero, Mexico",earthquake,9.36,1.95,0.048,128,reviewed,us,us
+2026-10-07T07:43:19.524Z,14.6207,-93.1891,61.654,4.9,mb,70,142,1.938,1.24,us,us6000u0q1,2026-10-07T08:02:16.040Z,"80 km SW of El Arenal, Mexico",earthquake,7.69,7.31,0.026,463,reviewed,us,us
+2026-10-07T17:17:08.236Z,31.171,-103.137,2.511,3.6,ml,38,67,0,0.3,tx,tx2026ttlzei,2026-10-08T17:21:50.227Z,"10 km SW of Coyanosa, Texas",earthquake,1.2390786183469,1.1169512760771,0.2,18,reviewed,tx,tx
+2026-10-08T02:21:27.461Z,31.659,-104.44,6.0999,3.6,ml,56,65,0,0.2,tx,tx2026tueaim,2026-10-09T02:25:46.658Z,"57 km S of Whites City, New Mexico",earthquake,0.70474835160398,0.39083271981479,0.1,30,reviewed,tx,tx
+2026-10-08T13:53:51.822Z,14.0066,-91.5106,60.54,4,mb,19,225,1.683,0.76,us,us6000u2r9,2026-10-18T19:21:29.040Z,"31 km SW of Nueva Concepción, Guatemala",earthquake,11.22,10.842,0.232,5,reviewed,us,us
+2026-10-10T07:47:00.391Z,17.8191,-92.7794,10,4.2,mb,57,110,1.648,0.62,us,us6000u1dh,2026-10-10T12:37:34.918Z,"4 km W of Aquiles Serdán 1ra. Sección, Mexico",earthquake,8.49,1.919,0.053,101,reviewed,us,us
+2026-10-11T08:04:54.794Z,31.666,-104.427,5.946,4,ml,57,66,0,0.2,tx,tx2026uacobs,2026-10-22T08:15:07.352Z,"56 km S of Whites City, New Mexico",earthquake,0.88302992230117,0.66657745835234,0.1,27,reviewed,tx,tx
+2026-10-12T00:49:56.433Z,14.0137,-93.195,10,4.1,mb,21,191,2.476,0.65,us,us6000u3v3,2026-10-21T23:42:54.040Z,"114 km SW of Puerto Madero, Mexico",earthquake,8.26,1.976,0.13,16,reviewed,us,us
+2026-10-13T22:39:00.232Z,32.3762,-104.478,10,3.6,ml,44,73,0.2,0.37,us,us6000u25y,2026-10-14T22:43:07.475Z,"23 km WSW of Carlsbad, New Mexico",earthquake,2.04,2.006,0.064,117,reviewed,us,us
+2026-10-14T22:55:19.298Z,32.3282,-104.4459,9.465,3.6,ml,31,78,0.145,0.36,us,us6000u2cy,2026-10-15T22:59:08.282Z,"18 km NNW of Whites City, New Mexico",earthquake,1.65,6.932,0.038,90,reviewed,us,us
+2026-10-16T11:39:44.878Z,15.2777,-92.7881,108.908,4.8,mb,62,132,1.179,1.16,us,us6000u2ph,2026-10-16T11:52:45.040Z,"7 km WSW of Soconusco, Mexico",earthquake,7.66,7.806,0.031,328,reviewed,us,us
+2026-10-17T01:03:00.020Z,14.0576,-93.2479,10,4.9,mb,57,153,2.458,1,us,us6000u2x7,2026-10-17T01:18:02.040Z,"115 km SW of Puerto Madero, Mexico",earthquake,10.01,1.921,0.035,264,reviewed,us,us
+2026-10-17T13:30:16.104Z,28.633,-100.083,6.0303,3.5,ml,25,88,0.2,0.4,tx,tx2026ulnsow,2026-10-17T14:40:22.805Z,"24 km WNW of Carrizo Springs, Texas",earthquake,1.5286804875878,1.2785927711465,0.2,15,reviewed,tx,tx
+2026-10-17T13:59:34.575Z,14.0469,-92.8552,10,5.2,mww,210,64,2.328,0.81,us,us6000u309,2026-10-17T14:17:39.040Z,"86 km SW of Brisas Barra de Suchiate, Mexico",earthquake,6.61,1.834,0.06,27,reviewed,us,us
+2026-10-19T14:47:45.038Z,14.4536,-91.373,109.709,4.6,mb,115,156,1.961,0.69,us,us6000u3cu,2026-10-19T21:35:28.705Z,"5 km E of San José El Ídolo, Guatemala",earthquake,9.26,8.116,0.039,198,reviewed,us,us
+2026-10-21T12:45:57.181Z,31.652,-104.14,6.0999,3.8,ml,73,51,0.1,0.2,tx,tx2026usvdxs,2026-10-21T15:49:49.178Z,"49 km NW of Toyah, Texas",earthquake,0.39541240756064,0.48676041913836,0.2,72,reviewed,tx,tx
+2026-10-22T03:35:17.429Z,14.8614,-93.8388,49.131,4.6,mb,39,145,2.164,0.93,us,us6000u40r,2026-10-22T03:54:26.040Z,"97 km SW of El Palmarcito, Mexico",earthquake,7.05,8.135,0.044,153,reviewed,us,us
+2026-10-22T07:28:10.068Z,14.9718,-91.2421,176.976,4.2,mb,24,173,1.562,0.62,us,us6000u41s,2026-10-22T08:54:13.040Z,"3 km WNW of Patzité, Guatemala",earthquake,13.52,9.613,0.081,43,reviewed,us,us

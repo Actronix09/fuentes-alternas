@@ -1,0 +1,375 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2023-01-01T19:37:15.835Z,15.7411,-92.2028,199.949,4.6,mb,95,67,0.541,0.73,us,us7000j1gs,2024-01-18T19:07:59.757Z,"1 km S of Nueva Libertad, Mexico",earthquake,6.37,4.897,0.039,195,reviewed,us,us
+2023-01-02T09:57:49.954Z,16.0955,-95.5745,41.488,4.1,mb,63,99,0.607,1.08,us,us7000j1ky,2023-03-11T22:51:32.040Z,"12 km NE of San Pedro Huamelula, Mexico",earthquake,4.25,7.828,0.069,57,reviewed,us,us
+2023-01-05T15:27:38.116Z,14.2773,-94.0954,10,5.2,mww,197,79,2.746,0.93,us,us7000j2ce,2023-03-11T22:51:41.040Z,"163 km SW of La Esperanza (El Zapotal), Mexico",earthquake,7.19,1.721,0.044,49,reviewed,us,us
+2023-01-07T10:45:02.911Z,19.5168,-109.2864,10,4.3,mb,54,233,4.194,0.7,us,us7000j2sb,2024-01-18T19:09:47.127Z,"Revilla Gigedo Islands region",earthquake,11.68,2,0.054,98,reviewed,us,us
+2023-01-08T02:03:01.639Z,16.3251,-93.9968,104.976,4.1,mb,42,128,0.952,0.8,us,us7000j2w4,2023-03-20T06:02:56.040Z,"4 km NNW of Lázaro Cárdenas, Mexico",earthquake,4.89,6.729,0.123,18,reviewed,us,us
+2023-01-11T02:02:50.919Z,16.6797,-98.9887,31.898,4.1,mb,29,173,0.148,0.88,us,us6000jm8y,2023-03-20T06:02:54.040Z,"7 km S of Cuautepec, Mexico",earthquake,3.23,7.722,0.261,4,reviewed,us,us
+2023-01-12T16:01:25.117Z,19.6248,-92.4468,9.818,4.2,mb,24,55,1.359,0.98,us,us7000j5ty,2023-03-20T06:04:01.040Z,"Bay of Campeche",earthquake,5.33,5.06,0.152,12,reviewed,us,us
+2023-01-15T02:37:58.151Z,16.0898,-87.501,10,4.5,mb,21,68,2.033,0.72,us,us7000j4gd,2023-03-31T19:44:19.040Z,"35 km N of Tela, Honduras",earthquake,6.83,1.896,0.077,50,reviewed,us,us
+2023-01-15T23:07:53.815Z,14.0226,-89.7977,10,5.2,mww,105,68,0.121,0.81,us,us7000j4ld,2023-03-31T19:44:30.040Z,"7 km NW of Atiquizaya, El Salvador",earthquake,6.56,1.799,0.078,16,reviewed,us,us
+2023-01-16T01:54:02.874Z,14.0685,-89.8253,10.534,4.4,mwr,78,93,0.17,0.67,us,us7000j4ly,2023-03-31T19:44:31.040Z,"7 km S of Zapotitlán, Guatemala",earthquake,6.46,4.962,0.069,20,reviewed,us,us
+2023-01-16T04:47:12.256Z,14.0805,-89.8596,7.997,5,mww,143,127,0.193,0.62,us,us7000j4mi,2023-03-31T19:44:33.040Z,"6 km ESE of Comapa, Guatemala",earthquake,4.52,4.2,0.052,35,reviewed,us,us
+2023-01-16T11:43:18.483Z,14.055,-89.8418,10,4,mb,20,148,0.163,0.38,us,us7000j4ny,2023-03-31T19:44:37.040Z,"9 km S of Zapotitlán, Guatemala",earthquake,2.77,1.895,0.173,9,reviewed,us,us
+2023-01-18T02:20:02.867Z,14.3601,-91.2682,121.397,4.2,mb,78,124,0.766,0.6,us,us7000j543,2023-03-31T19:45:02.040Z,"6 km SE of Río Bravo, Guatemala",earthquake,7.65,6.754,0.073,52,reviewed,us,us
+2023-01-21T19:00:07.569Z,15.8285,-96.3798,37.995,4.2,mb,46,185,0.268,0.97,us,us7000j656,2023-03-31T19:46:09.040Z,"3 km NW of San Isidro Apango, Mexico",earthquake,7.29,11.766,0.152,12,reviewed,us,us
+2023-01-22T22:08:56.492Z,14.1103,-91.3508,76.109,4,mb,17,220,0.927,0.29,us,us7000j6a4,2023-04-11T18:51:53.040Z,"11 km SSW of Nueva Concepción, Guatemala",earthquake,3.55,15.194,0.3,3,reviewed,us,us
+2023-01-24T19:57:04.255Z,31.67159174,-104.3897618,6.131567383,3.5,ml,19,57,0.03919691074,0.2,tx,tx2023brob,2023-04-11T18:51:29.040Z,"55 km S of Whites City, New Mexico",earthquake,0.9973028217,1.160193788,0.1,19,reviewed,tx,tx
+2023-01-27T15:40:29.601Z,16.9061,-86.1829,41.336,4.4,mb,10,146,3.021,0.85,us,us6000jm15,2023-04-11T18:51:48.040Z,"59 km NNW of Guanaja, Honduras",earthquake,10.72,12.722,0.31,3,reviewed,us,us
+2023-01-29T03:19:37.782Z,15.3662,-91.7543,205.98,4.3,mb,24,146,0.982,0.79,us,us6000jmx4,2023-04-13T21:53:32.040Z,"3 km SW of San Gaspar Ixchil, Guatemala",earthquake,8.34,7.554,0.142,14,reviewed,us,us
+2023-01-30T16:24:39.467Z,16.7549,-100.1983,10,4.3,mb,105,193,0.299,0.67,us,us6000jm93,2023-04-13T21:53:25.040Z,"near the coast of Guerrero, Mexico",earthquake,3.56,1.915,0.054,98,reviewed,us,us
+2023-02-01T04:05:53.132Z,28.0165,-111.963,10,4.1,mb,61,62,0.737,1.05,us,us6000jknf,2024-01-18T19:17:37.910Z,"80 km NNE of Santa Rosal?a, Mexico",earthquake,4.21,1.909,0.112,22,reviewed,us,us
+2023-02-01T23:10:56.567Z,14.0522,-89.9163,12.668,4.4,mb,68,140,0.199,0.66,us,us6000jkv9,2023-04-13T21:53:17.040Z,"6 km S of Comapa, Guatemala",earthquake,6.32,4.502,0.076,50,reviewed,us,us
+2023-02-02T17:42:18.946Z,14.0205,-91.4021,74.172,4.7,mb,130,89,1.013,0.56,us,us6000jl0g,2023-04-13T21:53:19.040Z,"22 km SSW of Nueva Concepción, Guatemala",earthquake,5.64,5.062,0.03,331,reviewed,us,us
+2023-02-03T19:18:33.507Z,32.75482178,-100.6529869,8.290161133,3.5,ml,14,57,0.0752195689,0.2,tx,tx2023cjtv,2023-04-13T21:53:21.040Z,"16 km NE of Hermleigh, Texas",earthquake,0.7909934576,1.272461096,0.1,10,reviewed,tx,tx
+2023-02-04T05:21:36.778Z,16.4754,-95.0367,10,4,mb,42,115,0.629,0.84,us,us6000jn28,2024-01-18T19:18:28.693Z,"1 km SSE of El Espinal, Mexico",earthquake,2.73,1.965,0.156,11,reviewed,us,us
+2023-02-04T19:40:20.272Z,31.61968782,-103.9800113,6.992785645,3.7,ml,22,54,0.01310956398,0.1,tx,tx2023clqb,2023-04-13T21:53:25.040Z,"37 km WSW of Mentone, Texas",earthquake,0.5672051847,0.3908792803,0.2,12,reviewed,tx,tx
+2023-02-05T09:06:30.156Z,16.8301,-99.7892,22.002,4.5,mb,55,129,0.088,0.64,us,us6000jljd,2023-04-15T21:39:32.040Z,"1 km W of Tres Palos, Mexico",earthquake,4.68,6.123,0.091,35,reviewed,us,us
+2023-02-06T17:33:46.677Z,16.5957,-98.1903,11.021,4.5,mb,80,125,0.67,1.03,us,us6000jlyh,2023-04-15T21:39:39.040Z,"4 km WSW of San Juan Cacahuatepec, Mexico",earthquake,3.02,4.161,0.055,95,reviewed,us,us
+2023-02-08T02:24:12.957Z,15.1737,-94.7611,10,4.6,mb,86,92,1.578,0.83,us,us6000jmen,2024-01-18T19:19:45.463Z,"117 km SSE of San Mateo del Mar, Mexico",earthquake,4.77,1.822,0.035,250,reviewed,us,us
+2023-02-08T14:30:26.524Z,15.257,-94.7338,36.061,4.3,mb,124,152,1.829,0.54,us,us6000jmha,2023-04-15T21:39:47.040Z,"108 km S of San Francisco del Mar Viejo, Mexico",earthquake,6.5,7.805,0.052,103,reviewed,us,us
+2023-02-08T15:16:16.982Z,16.7337,-86.0574,10,5.5,mww,201,22,2.908,0.55,us,us6000jmhm,2023-04-15T21:39:48.040Z,"north of Honduras",earthquake,6.18,1.777,0.034,84,reviewed,us,us
+2023-02-11T20:27:18.949Z,32.75115967,-100.6529869,8.925984701,3.5,ml,21,70,0.07756297623,0.2,tx,tx2023cymd,2023-04-15T21:39:58.040Z,"16 km NE of Hermleigh, Texas",earthquake,0.6606063484,1.090392179,0.1,11,reviewed,tx,tx
+2023-02-12T04:49:51.273Z,14.5482,-93.0984,38.477,4.1,mb,32,181,1.009,0.72,us,us6000jne5,2023-04-22T21:33:01.040Z,"75 km WSW of Puerto Madero, Mexico",earthquake,8.5,10.703,0.104,25,reviewed,us,us
+2023-02-12T10:30:37.367Z,14.7707,-87.3034,12.66,4.2,mb,21,86,0.71,0.81,us,us6000jnf8,2023-04-22T21:33:02.040Z,"5 km ESE of Minas de Oro, Honduras",earthquake,4.73,6.28,0.199,7,reviewed,us,us
+2023-02-13T22:34:40.288Z,18.5112,-106.2914,10,4.3,mb,37,170,2.316,0.66,us,us7000jhrk,2023-04-22T21:33:28.040Z,"169 km SW of Emiliano Zapata, Mexico",earthquake,9.01,1.961,0.099,29,reviewed,us,us
+2023-02-16T05:38:01.731Z,22.0371,-106.2409,15.62,4,mb,58,188,3.088,0.53,us,us6000jpb0,2023-04-22T21:33:13.040Z,"64 km WSW of Palmar de Cuautla, Mexico",earthquake,7.4,6,0.084,38,reviewed,us,us
+2023-02-16T10:29:04.966Z,32.7456665,-100.6594179,7.849975586,4.7,ml,33,48,0.08525345248,0.3,tx,tx2023dgvx,2023-09-22T20:29:18.612Z,"15 km NE of Hermleigh, Texas",earthquake,1.270893694,2.612447472,0.1,16,reviewed,tx,tx
+2023-02-17T09:50:21.247Z,14.962,-93.454,35,4.2,mb,55,209,1.826,0.7,us,us7000jhrl,2023-04-22T21:33:28.040Z,"62 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,13.66,2.014,0.074,50,reviewed,us,us
+2023-02-18T06:04:30.919Z,16.014,-97.2014,10,4.4,mb,63,190,0.901,0.87,us,us6000jpv2,2023-04-22T21:33:18.040Z,"5 km SSW of Santiago Cuixtla, Mexico",earthquake,4.46,1.938,0.072,55,reviewed,us,us
+2023-02-21T22:20:58.943Z,15.128,-94.8084,10,4.2,mb,21,180,1.406,0.87,us,us7000jglf,2023-04-29T21:57:23.040Z,"121 km SSE of Santa Gertrudis Miramar, Mexico",earthquake,5.32,1.971,0.237,5,reviewed,us,us
+2023-02-22T07:44:10.283Z,31.67352601,-104.374706,6.645727539,4.2,ml,50,45,0.05186318022,0.2,tx,tx2023drpm,2024-10-09T17:26:21.094Z,"western Texas",earthquake,0.7295566402,0.9313321991,0.1,29,reviewed,tx,tx
+2023-02-22T08:51:24.649Z,31.6721879,-104.3682345,7.211303711,4,ml,45,46,0.05669957537,0.2,tx,tx2023drrr,2023-04-29T21:57:25.040Z,"55 km S of Whites City, New Mexico",earthquake,0.7595570506,0.8489505565,0.2,26,reviewed,tx,tx
+2023-02-23T08:27:11.563Z,15.1557,-104.5558,10,4.6,mb,63,200,5.481,0.5,us,us6000jqzl,2023-04-29T21:57:29.040Z,"off the coast of Michoacan, Mexico",earthquake,10.22,1.83,0.055,98,reviewed,us,us
+2023-02-24T03:28:44.754Z,18.8825,-103.4299,82.829,4.2,mb,26,233,2.215,0.95,us,us6000jr6h,2023-04-29T21:57:32.040Z,"15 km NNW of Villa Victoria, Mexico",earthquake,11.18,10.607,0.132,16,reviewed,us,us
+2023-02-25T03:35:30.143Z,18.7931,-106.6729,10,4.4,mb,24,177,2.344,0.7,us,us6000jrgx,2023-04-29T21:57:36.040Z,"184 km WSW of José María Morelos, Mexico",earthquake,9.54,1.958,0.105,27,reviewed,us,us
+2023-02-25T06:51:38.403Z,15.4112,-104.5171,10,4.7,mb,78,203,4.007,0.66,us,us6000jrhz,2023-04-29T21:57:36.040Z,"off the coast of Michoacan, Mexico",earthquake,10.69,1.957,0.054,103,reviewed,us,us
+2023-02-25T06:56:52.920Z,15.2189,-104.1764,10,4.4,mb,20,203,5.226,0.56,us,us6000jri1,2023-04-29T21:57:36.040Z,"off the coast of Michoacan, Mexico",earthquake,7.81,1.98,0.101,28,reviewed,us,us
+2023-02-25T07:28:08.725Z,15.1845,-104.417,10,4.3,mb,52,199,4.932,0.6,us,us6000jria,2023-04-29T21:57:37.040Z,"off the coast of Michoacan, Mexico",earthquake,11.63,1.973,0.063,70,reviewed,us,us
+2023-02-26T16:30:06.807Z,15.5538,-104.3521,17.485,4.4,mb,31,202,3.44,0.75,us,us6000jrrn,2024-01-18T19:24:13.525Z,"off the coast of Michoacan, Mexico",earthquake,11.92,6.71,0.06,81,reviewed,us,us
+2023-02-26T21:35:02.971Z,15.2753,-104.6608,10,4.5,mb,63,152,5.444,0.94,us,us6000jrsv,2023-05-08T01:59:36.040Z,"off the coast of Michoacan, Mexico",earthquake,8.77,1.927,0.038,204,reviewed,us,us
+2023-02-27T09:53:36.712Z,14.2126,-91.9996,69.013,4.3,mb,56,103,0.737,1.32,us,us6000jrwq,2023-05-08T01:59:42.040Z,"12 km SW of Champerico, Guatemala",earthquake,5.57,4.29,0.067,64,reviewed,us,us
+2023-02-28T23:26:08.542Z,31.61345334,-103.9891287,8.483850098,4.1,ml,45,50,0.017525607,0.1,tx,tx2023edto,2024-10-09T17:55:01.475Z,"37 km NNW of Toyah, Texas",earthquake,0.3391566765,0.366288038,0.2,29,reviewed,tx,tx
+2023-03-01T22:04:17.522Z,15.5169,-94.8364,35,4.2,mb,45,142,1.251,1.42,us,us7000jgnl,2023-05-08T02:00:12.040Z,"78 km SSE of San Mateo del Mar, Mexico",earthquake,5.63,1.975,0.121,19,reviewed,us,us
+2023-03-02T04:40:43.135Z,16.2561,-94.4102,95.635,5.7,mww,156,55,0.946,0.9,us,us7000jgr1,2026-03-23T08:01:08.814Z,"Oaxaca, Mexico",earthquake,4.25,3.475,0.031,97,reviewed,us,us
+2023-03-02T10:36:00.143Z,14.3168,-93.7462,10,4.2,mb,29,204,1.471,1.29,us,us7000jgsq,2023-05-08T02:00:19.040Z,"140 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,5.91,1.993,0.118,20,reviewed,us,us
+2023-03-02T11:58:51.427Z,14.348,-93.73,10,4.6,mb,60,91,1.436,0.99,us,us7000jgsx,2023-05-08T02:00:19.040Z,"136 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,5.15,1.536,0.046,142,reviewed,us,us
+2023-03-03T01:02:57.961Z,16.7388,-101.0501,10,4.1,mb,32,204,0.757,0.59,us,us7000jijj,2023-05-08T02:00:30.040Z,"60 km SSW of Nuxco, Mexico",earthquake,2.08,1.951,0.135,15,reviewed,us,us
+2023-03-03T15:04:06.500Z,17.2957,-93.9447,179.537,4.3,mb,45,74,0.193,0.98,us,us7000jh2s,2023-05-08T02:00:36.040Z,"29 km ENE of La Horqueta (Poblado Doce), Mexico",earthquake,6.02,2.584,0.085,39,reviewed,us,us
+2023-03-05T14:29:49.876Z,25.7487,-110.1881,10,4.4,mb,29,120,3.328,0.63,us,us7000jhgu,2023-05-15T02:50:38.040Z,"Gulf of California",earthquake,9.12,1.929,0.074,53,reviewed,us,us
+2023-03-06T22:29:22.266Z,15.4629,-94.17,58.017,4.1,mb,43,157,0.948,1.03,us,us7000jiwk,2023-05-15T02:50:25.040Z,"66 km SW of Cabeza de Toro, Mexico",earthquake,6.43,10.56,0.104,25,reviewed,us,us
+2023-03-07T09:36:44.257Z,31.66331812,-104.3533553,6.260107422,3.7,ml,42,57,0.06745722267,0.2,tx,tx2023epmt,2023-05-15T02:50:20.040Z,"56 km S of Whites City, New Mexico",earthquake,0.7452833048,0.8287262985,0.1,27,reviewed,tx,tx
+2023-03-08T06:24:20.365Z,31.6662738,-104.3584941,6.131567383,3.6,ml,49,69,0.06350384435,0.3,tx,tx2023erbw,2024-10-09T14:50:18.210Z,"western Texas",earthquake,0.7996673437,0.8070807722,0.1,31,reviewed,tx,tx
+2023-03-09T04:22:44.388Z,15.4837,-92.8591,108.761,4.9,mb,105,75,0.41,0.82,us,us7000jidj,2023-05-15T02:49:52.040Z,"7 km NE of Mapastepec, Mexico",earthquake,2.47,3.921,0.025,506,reviewed,us,us
+2023-03-09T04:37:43.623Z,16.462,-95.1211,10,3.7,mb,34,120,0.665,0.51,us,us6000k1sj,2023-05-15T02:49:52.040Z,"4 km SE of San Pedro Comitancillo, Mexico",earthquake,2.95,1.945,0.225,5,reviewed,us,us
+2023-03-09T05:00:31.374Z,15.567,-93.2383,101.244,4,mb,52,152,0.138,0.61,us,us7000jie5,2023-05-15T02:49:52.040Z,"8 km NNW of El Palmarcito, Mexico",earthquake,6.01,7.71,0.094,31,reviewed,us,us
+2023-03-09T12:01:36.092Z,17.0444,-95.0692,106.909,4.7,mb,76,83,0.183,0.73,us,us7000jifx,2023-05-15T02:49:46.040Z,"2 km ESE of Santa Ana, Mexico",earthquake,4.33,3.861,0.041,183,reviewed,us,us
+2023-03-10T13:11:41.535Z,14.098,-91.4625,58.456,4.2,mb,77,157,1.03,0.67,us,us7000jist,2023-05-15T02:49:26.040Z,"20 km WSW of Nueva Concepción, Guatemala",earthquake,7.36,12.578,0.062,72,reviewed,us,us
+2023-03-13T18:49:26.603Z,18.0688,-105.9369,10,4.5,mb,73,157,2.369,0.85,us,us7000jjld,2023-05-20T23:20:20.040Z,"178 km SW of Emiliano Zapata, Mexico",earthquake,4.3,1.952,0.042,170,reviewed,us,us
+2023-03-13T21:21:15.727Z,31.72314461,-104.3013508,5.874487305,3.5,ml,18,90,0.05161511719,0.1,tx,tx2023fbiz,2024-01-18T19:28:56.608Z,"50 km S of Whites City, New Mexico",earthquake,0.7711526805,0.9182876985,0.2,12,reviewed,tx,tx
+2023-03-14T02:55:35.768Z,14.3347,-93.2516,10,4.5,mb,77,134,1.112,0.88,us,us7000jjqm,2023-05-20T23:20:21.040Z,"99 km WSW of Puerto Madero, Mexico",earthquake,3.61,1.813,0.039,197,reviewed,us,us
+2023-03-14T02:57:18.070Z,14.2292,-93.2314,10,4.4,mb,29,197,1.153,0.88,us,us7000jkw8,2023-05-20T23:20:34.040Z,"102 km WSW of Puerto Madero, Mexico",earthquake,6.22,1.914,0.134,16,reviewed,us,us
+2023-03-14T10:35:46.288Z,14.4412,-91.5121,116.622,4.2,mb,62,150,1.707,0.74,us,us7000jjsx,2023-05-20T23:20:23.040Z,"Guatemala",earthquake,4.74,8.947,0.071,55,reviewed,us,us
+2023-03-15T06:36:24.975Z,18.4937,-106.72,10,4.5,mb,70,104,2.587,1.13,us,us7000jk0l,2023-05-20T23:20:25.040Z,"off the coast of Jalisco, Mexico",earthquake,7.5,1.865,0.048,129,reviewed,us,us
+2023-03-15T14:44:31.388Z,19.5191,-102.3151,9.928,4.4,mb,38,176,1.034,0.37,us,us7000jk4e,2023-05-20T23:20:26.040Z,"2 km SSE of Santa Ana Zirosto, Mexico",earthquake,6.87,4.846,0.086,40,reviewed,us,us
+2023-03-15T14:54:01.421Z,19.5811,-102.4285,5.119,4.2,mwr,40,65,0.37,1.03,us,us6000k1sp,2023-05-20T23:20:15.040Z,"4 km NW of San Francisco Peribán, Mexico",earthquake,2.92,3.132,0.089,12,reviewed,us,us
+2023-03-15T14:58:15.155Z,19.5913,-102.4312,5.909,4.1,mwr,59,58,0.377,0.81,us,us7000jlgt,2023-05-20T23:20:39.040Z,"Michoacan, Mexico",earthquake,3.07,4.697,0.093,11,reviewed,us,us
+2023-03-18T00:41:17.327Z,22.2969,-108.581,10,4.2,mb,63,124,1.868,0.78,us,us7000jkzv,2024-01-18T19:30:08.510Z,"140 km SE of La Playa, Mexico",earthquake,7.12,1.898,0.12,19,reviewed,us,us
+2023-03-18T01:01:01.263Z,22.0991,-108.6583,10,4.2,mb,23,214,3.503,0.7,us,us7000jkzz,2023-05-20T23:20:35.040Z,"149 km SE of La Playa, Mexico",earthquake,9.86,1.959,0.083,40,reviewed,us,us
+2023-03-18T01:13:59.342Z,21.6097,-108.9141,10,4.1,mb,25,253,2.275,1.11,us,us6000k1sq,2024-01-18T19:30:11.881Z,"175 km SE of Cabo San Lucas, Mexico",earthquake,10.45,2.02,0.117,20,reviewed,us,us
+2023-03-18T01:42:14.399Z,22.486,-108.841,10,4,mb,24,233,1.568,1.2,us,us6000k1sr,2023-05-20T23:20:15.040Z,"106 km SE of La Playa, Mexico",earthquake,10.52,2.009,0.099,27,reviewed,us,us
+2023-03-18T04:31:18.563Z,22.1938,-108.5891,10,4.5,mb,54,104,1.941,0.9,us,us7000jl0w,2023-05-20T23:20:36.040Z,"146 km SE of La Playa, Mexico",earthquake,9.41,1.693,0.035,246,reviewed,us,us
+2023-03-18T06:33:41.855Z,18.4481,-106.3807,10,4.2,mb,14,228,3.129,0.95,us,us7000jm7a,2023-05-20T23:20:43.040Z,"181 km SW of Emiliano Zapata, Mexico",earthquake,4.68,2.013,0.146,13,reviewed,us,us
+2023-03-18T10:05:48.639Z,22.1209,-108.3518,10,4.1,mb,52,244,5.383,0.51,us,us7000jl23,2023-05-20T23:20:37.040Z,"Off the coast of Baja California Sur, Mexico",earthquake,11.08,2.02,0.094,31,reviewed,us,us
+2023-03-18T16:33:32.271Z,22.242,-108.525,10,4.4,mb,85,104,5.35,0.8,us,us7000jl3e,2023-05-20T23:20:38.040Z,"148 km SE of La Playa, Mexico",earthquake,6.88,1.896,0.047,130,reviewed,us,us
+2023-03-19T04:09:25.669Z,21.8943,-108.8168,10,4.2,mb,24,249,2.064,0.96,us,us7000jl6s,2023-05-26T21:54:05.040Z,"Off the coast of Baja California Sur, Mexico",earthquake,11.7,2.017,0.124,18,reviewed,us,us
+2023-03-20T09:38:50.348Z,16.7854,-94.9086,100.227,4.2,mb,48,103,0.305,0.93,us,us7000jle0,2023-05-26T21:54:07.040Z,"8 km NW of Lázaro Cárdenas, Mexico",earthquake,5.05,4.828,0.153,12,reviewed,us,us
+2023-03-22T15:27:02.331Z,16.7326,-99.1618,23.743,4.5,mb,63,176,0.03,0.72,us,us6000k0az,2024-01-18T19:31:24.745Z,"4 km WNW of Cruz Grande, Mexico",earthquake,3.29,6.112,0.09,36,reviewed,us,us
+2023-03-23T09:53:00.860Z,31.1275,-116.675,10.04,3.94,ml,6,229,0.4297,0.14,ci,ci40188551,2023-03-23T13:50:07.153Z,"66km S of Maneadero, B.C., MX",earthquake,0.61,1.35,0.188,44,reviewed,ci,ci
+2023-03-24T14:41:36.772Z,15.7117,-96.5474,10,4.3,mb,43,178,0.427,0.58,us,us7000jmmj,2023-05-26T21:54:19.040Z,"4 km S of Santa María Tonameca, Mexico",earthquake,8.05,1.971,0.101,28,reviewed,us,us
+2023-03-26T02:17:45.353Z,15.0119,-94.3865,34.512,4.3,mb,45,179,1.32,0.95,us,us7000jmsd,2023-06-03T22:06:24.040Z,"121 km SSW of Cabeza de Toro, Mexico",earthquake,6.08,6.789,0.104,28,reviewed,us,us
+2023-03-26T17:58:08.680Z,18.5978,-101.8105,74.721,4.2,mb,115,96,0.857,0.83,us,us7000jmw6,2023-06-03T22:06:25.040Z,"17 km ENE of Las Cañas, Mexico",earthquake,2.51,6.506,0.055,91,reviewed,us,us
+2023-03-27T16:31:20.543Z,14.095,-90.9261,102.524,4.3,mb,103,128,0.601,0.7,us,us7000jn1g,2023-06-03T22:06:27.040Z,"13 km E of La Gomera, Guatemala",earthquake,7.77,5.576,0.061,76,reviewed,us,us
+2023-03-30T15:46:15.282Z,16.958,-100.0518,23.047,4.6,mb,105,118,0.225,1.09,us,us6000k0wi,2023-06-03T22:06:08.040Z,"3 km NE of Los Mogotes, Mexico",earthquake,2.14,5.045,0.038,217,reviewed,us,us
+2023-03-31T04:12:39.328Z,17.6201,-94.5057,160.77,4.6,mb,71,45,0.456,0.95,us,us6000k114,2024-01-18T19:39:03.992Z,"20 km N of Ni?os H?roes, Mexico",earthquake,4.28,4.263,0.036,235,reviewed,us,us
+2023-03-31T16:48:01.647Z,31.2078,-115.9585,16.181,3.6,ml,30,125,0.236,0.85,us,us6000k16e,2023-06-03T22:06:14.040Z,"Baja California, Mexico",earthquake,3.01,5.357,0.056,42,reviewed,us,us
+2023-04-02T03:09:58.011Z,19.3319,-108.471,10,4,mb,25,203,4.544,1.24,us,us6000k1fi,2023-06-13T03:13:29.040Z,"Revilla Gigedo Islands region",earthquake,7.13,1.978,0.073,51,reviewed,us,us
+2023-04-02T21:31:01.656Z,31.3791,-116.9557,19.433,3.9,ml,50,216,0.615,0.65,us,us6000k1ld,2023-06-13T03:13:22.040Z,"Baja California, Mexico",earthquake,3.41,6.978,0.043,72,reviewed,us,us
+2023-04-04T02:11:57.992Z,16.0809,-96.9831,31,5.4,mww,125,78,0.178,0.64,us,us6000k1uw,2024-10-09T15:16:15.689Z,"10 km E of San Gabriel Mixtepec, Mexico",earthquake,4.3,1.831,0.043,53,reviewed,us,us
+2023-04-05T19:06:54.900Z,15.1393,-91.1083,263.055,4.4,mb,109,95,2.537,0.67,us,us6000k27e,2023-06-13T03:12:48.040Z,"6 km SSW of San Bartolomé Jocotenango, Guatemala",earthquake,8.89,6.672,0.056,97,reviewed,us,us
+2023-04-06T21:38:17.867Z,15.205,-93.3463,69.713,4.8,mb,110,88,0.512,0.52,us,us6000k2j4,2023-06-13T03:12:37.040Z,"33 km SW of La Esperanza (El Zapotal), Mexico",earthquake,6.64,5.499,0.031,315,reviewed,us,us
+2023-04-09T00:58:42.705Z,18.1801,-103.2131,35,4.4,mb,104,158,3.027,0.57,us,us6000k2xk,2023-06-17T21:36:39.040Z,"Colima-Michoacan border region, Mexico",earthquake,6.9,1.92,0.041,176,reviewed,us,us
+2023-04-09T02:06:52.420Z,32.4946667,-115.5726667,14.57,3.65,ml,45,49,0.04365,0.33,ci,ci40438576,2023-06-17T21:36:39.040Z,"10km S of Progreso, B.C., MX",earthquake,0.4,0.89,0.161,72,reviewed,ci,ci
+2023-04-09T03:18:00.923Z,14.1303,-91.6438,87.642,4.3,mb,43,136,1.823,1.18,us,us6000k2yb,2023-06-17T21:36:39.040Z,"Guatemala",earthquake,9.93,8.293,0.065,67,reviewed,us,us
+2023-04-10T06:14:48.892Z,32.262,-101.933,6.4209,3.7,ml,29,66,0,0.1,tx,tx2023gzjd,2024-11-19T18:51:42.343Z,"20 km NW of Stanton, Texas",earthquake,0.50217613130915,1.2841847582715,0,9,reviewed,tx,tx
+2023-04-10T15:25:51.900Z,31.69370137,-104.4513412,5.257495117,3.5,ml,31,52,0.02550372161,0.2,tx,tx2023habk,2023-06-17T21:36:43.040Z,"western Texas",earthquake,0.8833979492,0.5716902338,0.2,24,reviewed,tx,tx
+2023-04-11T19:04:58.151Z,14.3905,-90.4617,177.891,4.4,mb,71,83,0.82,0.76,us,us6000k5b7,2023-06-17T21:37:00.040Z,"8 km SSW of Fraijanes, Guatemala",earthquake,9.15,5.839,0.073,58,reviewed,us,us
+2023-04-12T11:35:54.313Z,14.203,-93.2095,28.988,4.3,mb,65,178,1.152,0.68,us,us6000k5hy,2024-01-18T19:46:21.766Z,"102 km SW of Puerto Madero, Mexico",earthquake,6.99,6.391,0.088,36,reviewed,us,us
+2023-04-13T03:14:43.345Z,15.4758,-94.5532,38.07,4.1,mb,37,179,1.306,0.93,us,us6000k3yz,2023-06-17T21:36:50.040Z,"84 km S of San Francisco del Mar Viejo, Mexico",earthquake,6.07,10.9,0.111,22,reviewed,us,us
+2023-04-13T05:31:49.655Z,15.0284,-92.7942,73.375,4.3,mb,24,167,0.525,0.43,us,us6000kald,2023-06-17T21:37:04.040Z,"18 km SSW of El Arenal, Mexico",earthquake,6,8.34,0.266,4,reviewed,us,us
+2023-04-13T17:20:20.760Z,24.0474,-108.9527,10,5.3,mww,128,92,0.977,0.86,us,us6000k447,2023-06-17T21:36:51.040Z,"81 km NE of La Rivera, Mexico",earthquake,3.63,1.705,0.055,32,reviewed,us,us
+2023-04-14T14:56:56.320Z,32.5215,-115.6255,15.53,3.52,mlr,65,48,0.04057,0.27,ci,ci40440784,2023-06-17T21:36:54.040Z,"8km SSW of Progreso, B.C., MX",earthquake,0.23,0.5,0.146,205,reviewed,ci,ci
+2023-04-14T17:06:19.464Z,14.2282,-92.2331,46.851,4.4,mb,124,182,2.403,0.56,us,us6000k4if,2023-06-17T21:36:54.040Z,"near the coast of Chiapas, Mexico",earthquake,14.21,10.383,0.048,125,reviewed,us,us
+2023-04-14T20:04:46.149Z,18.5549,-101.4682,69.656,4.2,mb,142,74,0.943,0.83,us,us6000k4js,2023-06-17T21:36:55.040Z,"14 km NW of Aratichanguío, Mexico",earthquake,3.8,6.223,0.063,73,reviewed,us,us
+2023-04-14T21:27:13.415Z,14.1529,-92.9659,35,4.6,mb,68,137,3.102,0.48,us,us6000k4ke,2023-06-17T21:36:55.040Z,"85 km SW of Puerto Madero, Mexico",earthquake,4.78,1.915,0.041,174,reviewed,us,us
+2023-04-15T04:27:00.784Z,16.0191,-97.4782,10,4,mb,26,190,0.726,0.88,us,us6000kalf,2023-06-17T21:37:04.040Z,"4 km WNW of Río Grande, Mexico",earthquake,2.85,1.948,0.259,5,reviewed,us,us
+2023-04-15T19:35:24.134Z,25.6536,-105.0195,10,4,mb,43,66,1.403,0.73,us,us6000k4se,2023-06-17T21:36:57.040Z,"35 km SE of Indé, Mexico",earthquake,4.26,1.967,0.173,9,reviewed,us,us
+2023-04-17T18:03:41.349Z,31.66484022,-104.2901214,9.319360352,3.7,ml,30,66,0.09611179668,0.3,tx,tx2023hnbc,2023-07-03T02:47:27.040Z,"57 km S of Whites City, New Mexico",earthquake,0.9952050698,1.418577979,0,7,reviewed,tx,tx
+2023-04-17T20:55:01.275Z,31.65706908,-104.3605682,6.697143555,3.5,ml,23,67,0.06093761793,0.3,tx,tx2023hngs,2023-07-03T02:47:24.040Z,"57 km S of Whites City, New Mexico",earthquake,1.196482152,1.248748303,0.2,15,reviewed,tx,tx
+2023-04-19T04:55:28.151Z,17.2744,-101.0622,21.079,5.2,mww,148,70,0.507,0.72,us,us6000k5fw,2023-07-03T02:47:11.040Z,"6 km SSW of Papanoa, Mexico",earthquake,4.97,3.559,0.043,52,reviewed,us,us
+2023-04-19T05:17:05.242Z,17.2217,-101.1182,35.017,3.8,mb,33,192,0.507,1.09,us,us6000kalj,2023-07-03T02:47:11.040Z,"near the coast of Guerrero, Mexico",earthquake,3.64,17.625,0.161,10,reviewed,us,us
+2023-04-22T07:49:12.689Z,19.5875,-109.4536,10,4,mb,42,264,4.104,0.87,us,us6000kaln,2023-07-03T02:46:43.040Z,"Revilla Gigedo Islands region",earthquake,6.73,2.006,0.129,16,reviewed,us,us
+2023-04-22T13:40:38.602Z,14.1505,-93.2467,10,4.3,mb,36,193,1.545,0.95,us,us6000k6dj,2023-07-03T02:46:39.040Z,"109 km SW of Puerto Madero, Mexico",earthquake,4.52,1.944,0.073,54,reviewed,us,us
+2023-04-28T06:53:51.832Z,19.4224,-108.4698,10,4.5,mb,78,180,4.459,0.73,us,us7000jwkk,2023-07-11T01:44:49.040Z,"Revilla Gigedo Islands region",earthquake,9.28,1.936,0.065,69,reviewed,us,us
+2023-04-29T12:07:03.500Z,32.711,-115.5448333,10.43,4.09,mw,57,43,0.05872,0.3,ci,ci40214151,2025-06-04T16:24:17.715Z,"3 km SSW of Heber, CA",earthquake,0.25,0.51,,6,reviewed,ci,ci
+2023-04-29T21:06:47.870Z,32.709,-115.5406667,11.34,3.71,mw,59,43,0.06265,0.31,ci,ci40214935,2024-05-03T00:37:28.524Z,"3km SSW of Heber, CA",earthquake,0.27,0.48,,4,reviewed,ci,ci
+2023-04-30T15:48:30.804Z,18.5654,-104.0213,35.456,4.5,mb,36,215,0.698,0.95,us,us7000jx76,2023-07-15T22:15:59.040Z,"37 km WSW of Cerro de Ortega, Mexico",earthquake,5.27,9.32,0.059,85,reviewed,us,us
+2023-05-01T13:07:08.380Z,16.5311,-95.2011,8.529,4.1,mb,52,109,0.634,0.9,us,us6000k9s3,2023-07-15T22:09:54.040Z,"2 km N of Magdalena Tlacotepec, Mexico",earthquake,2.44,5.426,0.109,23,reviewed,us,us
+2023-05-03T08:03:44.612Z,27.6325,-111.5669,10,4.2,mb,44,80,0.675,1.09,us,us7000jxpy,2023-07-15T22:11:04.040Z,"62 km SW of San Carlos, Mexico",earthquake,4.52,1.902,0.199,7,reviewed,us,us
+2023-05-05T01:36:37.840Z,14.4463,-93.6328,10,4.5,mb,60,134,1.313,1.18,us,us6000k9l9,2023-07-15T22:09:44.040Z,"121 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,5.33,1.908,0.042,168,reviewed,us,us
+2023-05-05T07:41:05.170Z,28.0496,-112.14,10,4,mb,15,118,0.733,0.61,us,us6000k9n1,2023-07-15T22:09:47.040Z,"79 km N of Santa Rosalía, Mexico",earthquake,3.41,1.901,0.3,3,reviewed,us,us
+2023-05-06T04:56:24.543Z,15.882,-92.4035,177.839,5,mww,65,94,0.473,0.95,us,us6000k9yt,2023-07-15T22:10:05.040Z,"11 km WSW of Nueva América, Mexico",earthquake,5.42,5.392,0.048,41,reviewed,us,us
+2023-05-06T14:16:02.550Z,32.7175,-115.5491667,5.15,3.55,mw,57,40,0.05164,0.29,ci,ci40219807,2023-07-15T22:10:07.040Z,"2km SW of Heber, CA",earthquake,0.24,0.63,,4,reviewed,ci,ci
+2023-05-08T01:00:06.119Z,17.6438,-103.9554,10,4.4,mb,48,220,0.865,0.57,us,us6000kaaq,2023-07-22T19:16:20.040Z,"near the coast of Michoacan, Mexico",earthquake,5.25,1.949,0.082,43,reviewed,us,us
+2023-05-09T09:56:09.304Z,16.6358,-95.1141,76.902,4.4,mb,112,137,0.503,0.55,us,us6000kakf,2023-07-22T19:16:29.040Z,"7 km NE of Santo Domingo Chihuitán, Mexico",earthquake,6.49,8.866,0.049,123,reviewed,us,us
+2023-05-09T13:53:44.761Z,17.4169,-94.9785,128.718,4.2,mb,35,49,0.336,0.83,us,us6000kbfw,2023-07-22T19:17:07.040Z,"3 km NNE of Suchilapan del Río, Mexico",earthquake,4.81,1.707,0.137,15,reviewed,us,us
+2023-05-10T07:05:23.641Z,25.4966,-109.8101,10,4.9,mb,156,55,0.703,0.95,us,us6000kasv,2023-07-22T19:16:35.040Z,"57 km WSW of Campo Pesquero el Colorado, Mexico",earthquake,4.82,1.813,0.033,295,reviewed,us,us
+2023-05-10T08:45:50.874Z,25.4406,-109.6761,10,4.9,mb,172,106,0.596,0.68,us,us6000kata,2023-07-22T19:16:35.040Z,"50 km SW of Campo Pesquero el Colorado, Mexico",earthquake,5.57,1.076,0.038,222,reviewed,us,us
+2023-05-10T08:55:32.823Z,25.2588,-109.5992,10,4.6,mb,70,102,0.609,1.25,us,us6000kate,2023-07-22T19:16:36.040Z,"Gulf of California",earthquake,3.66,1.697,0.066,71,reviewed,us,us
+2023-05-10T09:28:39.770Z,25.4361,-109.7955,10,4.7,mb,79,111,0.702,0.79,us,us6000katj,2023-07-22T19:16:36.040Z,"60 km SW of Campo Pesquero el Colorado, Mexico",earthquake,5.82,1.883,0.074,56,reviewed,us,us
+2023-05-10T22:19:54.167Z,14.8455,-94.5184,24.413,4.1,mb,27,203,2.26,0.73,us,us6000kc2p,2024-01-18T19:56:02.487Z,"144 km SSW of Cabeza de Toro, Mexico",earthquake,8.38,6.851,0.145,13,reviewed,us,us
+2023-05-10T23:20:50.829Z,31.52984619,-104.1643245,7.214152018,3.8,ml,43,65,0.05848236298,0.1,tx,tx2023jdmd,2023-07-22T19:16:42.040Z,"42 km NW of Toyah, Texas",earthquake,0.6320636504,0.8470576082,0.2,24,reviewed,tx,tx
+2023-05-11T07:31:20.882Z,31.53639665,-104.1531231,7.262719727,3.6,ml,45,65,0.04793494915,0.2,tx,tx2023jech,2023-07-22T19:16:44.040Z,"42 km NW of Toyah, Texas",earthquake,0.8085155942,1.016823938,0.2,25,reviewed,tx,tx
+2023-05-13T03:04:16.677Z,26.4438,-111.0277,10,4.4,mb,43,149,1.391,1.32,us,us6000kbm0,2023-07-22T19:17:14.040Z,"Baja California Sur, Mexico",earthquake,5.59,1.887,0.048,125,reviewed,us,us
+2023-05-14T15:18:15.416Z,30.9225,-116.4154,10,4.5,mwr,109,180,0.443,0.75,us,us6000kbvb,2023-07-24T01:16:58.040Z,"24 km W of Las Brisas, Mexico",earthquake,5.25,1.855,0.031,102,reviewed,us,us
+2023-05-15T00:13:11.434Z,30.9615,-116.304,3.814,4.3,mwr,84,117,0.532,0.79,us,us6000kbxp,2025-10-08T17:31:50.413Z,"13 km W of Las Brisas, Mexico",earthquake,4.49,3.998,0.038,68,reviewed,us,us
+2023-05-16T06:28:39.345Z,16.7269,-86.194,10,4.2,mb,61,138,2.851,0.34,us,us6000kc89,2023-07-24T01:16:38.040Z,"44 km NW of Guanaja, Honduras",earthquake,7.92,1.942,0.057,87,reviewed,us,us
+2023-05-16T18:22:12.049Z,23.0943,-100.1202,10,5,mww,172,61,2.279,0.76,us,us6000kccg,2023-07-24T01:16:32.040Z,"15 km NNW of Lázaro Cárdenas, Mexico",earthquake,6.89,1.821,0.093,11,reviewed,us,us
+2023-05-17T23:01:59.919Z,15.1066,-90.8052,252,6.4,mww,349,37,1.556,0.86,us,us6000kcnb,2024-06-12T03:06:12.807Z,"8 km SE of Canillá, Guatemala",earthquake,6.92,1.674,0.024,174,reviewed,us,us
+2023-05-19T18:37:30.445Z,31.608853,-103.9904524,8.715222168,3.8,ml,19,60,0.0185295217,0.1,tx,tx2023jtoh,2023-07-24T01:15:46.040Z,"37 km NNW of Toyah, Texas",earthquake,0.4361738279,0.3744686651,0.1,11,reviewed,tx,tx
+2023-05-21T03:28:56.706Z,14.711,-92.3372,87.294,4,mb,27,176,0.208,0.84,us,us6000kdjt,2023-07-29T22:00:24.040Z,"1 km SW of Tinajas 1ra. Sección, Mexico",earthquake,5.88,4.139,0.139,14,reviewed,us,us
+2023-05-22T22:59:08.816Z,31.61294221,-103.9696252,7.828295898,3.5,ml,14,66,0.00234372761,0.1,tx,tx2023jzjl,2023-07-29T22:00:29.040Z,"36 km WSW of Mentone, Texas",earthquake,0.6499950038,0.9338917133,0.2,12,reviewed,tx,tx
+2023-05-22T22:59:55.841Z,31.61062189,-103.9766083,7.828295898,3.9,ml,16,60,0.03628708444,0.2,tx,tx2023jzjn,2023-07-29T22:00:29.040Z,"37 km NNW of Toyah, Texas",earthquake,0.807453328,0.7759110122,0.1,13,reviewed,tx,tx
+2023-05-23T03:09:45.869Z,14.2364,-94.0793,10,4.3,mb,49,169,1.68,0.79,us,us7000k35e,2023-07-29T22:00:30.040Z,"166 km SW of La Esperanza (El Zapotal), Mexico",earthquake,5,1.852,0.062,74,reviewed,us,us
+2023-05-25T09:29:51.108Z,31.70610769,-104.5465081,6.362939453,3.5,ml,25,83,0.01979104714,0.3,tx,tx2023kdvg,2023-07-29T22:00:36.040Z,"54 km SSW of Whites City, New Mexico",earthquake,1.440917657,0.7989859935,0.2,18,reviewed,tx,tx
+2023-05-28T13:33:24.290Z,31.0733333,-116.6141667,5.67,3.58,ml,7,225,0.4174,0.12,ci,ci40235983,2023-05-31T17:03:03.514Z,"72km S of Maneadero, B.C., MX",earthquake,0.48,31.61,0.218,170,reviewed,ci,ci
+2023-05-28T16:16:02.323Z,18.3383,-105.8644,10,4.4,mb,19,235,2.17,1.02,us,us7000k4n1,2023-08-05T22:07:37.040Z,"off the coast of Jalisco, Mexico",earthquake,5.94,1.999,0.047,133,reviewed,us,us
+2023-06-01T10:02:08.943Z,14.6587,-90.6804,211.792,4.6,mb,71,113,1.152,0.99,us,us7000k5gi,2023-08-05T22:07:44.040Z,"Guatemala",earthquake,6.18,6.371,0.045,148,reviewed,us,us
+2023-06-01T16:00:49.932Z,19.6767,-109.2322,10,4,mb,85,206,4.044,0.79,us,us7000k5j7,2024-01-18T20:03:48.930Z,"Revilla Gigedo Islands region",earthquake,10.87,1.975,0.057,85,reviewed,us,us
+2023-06-01T18:07:27.983Z,14.2395,-93.0873,10,4.2,mb,21,170,2.228,0.58,us,us7000k738,2023-08-05T22:08:00.040Z,"near the coast of Chiapas, Mexico",earthquake,8.06,1.936,0.167,10,reviewed,us,us
+2023-06-03T08:21:52.309Z,26.9661,-111.483,10,4.1,mb,27,141,0.762,0.64,us,us7000k61s,2023-08-05T22:07:52.040Z,"50 km E of Mulegé, Mexico",earthquake,5.03,1.977,0.086,37,reviewed,us,us
+2023-06-05T18:01:04.651Z,23.0196,-100.1513,10,4.6,mb,152,39,0.906,0.68,us,us7000k6gw,2023-08-12T17:15:03.040Z,"11 km WNW of Lázaro Cárdenas, Mexico",earthquake,5.66,1.846,0.032,294,reviewed,us,us
+2023-06-09T14:22:48.349Z,14.3757,-93.0283,20.165,4.3,mb,60,184,0.908,0.76,us,us7000k8p7,2023-08-12T17:15:24.040Z,"75 km WSW of Puerto Madero, Mexico",earthquake,4.46,8.469,0.074,51,reviewed,us,us
+2023-06-09T15:12:00.216Z,16.0691,-97.5525,35.003,3.9,mb,32,188,0.396,0.95,us,us7000kf8i,2023-08-12T17:15:27.040Z,"6 km SE of La Luz, Mexico",earthquake,2.32,12.471,0.172,9,reviewed,us,us
+2023-06-12T03:43:31.748Z,15.5331,-96.7899,17.997,4.1,mb,27,199,0.576,0.62,us,us7000kf8m,2023-08-21T04:19:49.040Z,"31 km SSW of San Francisco Cozoaltepec, Mexico",earthquake,5.83,9.708,0.369,2,reviewed,us,us
+2023-06-15T15:14:55.043Z,15.8337,-95.0294,40.383,4.2,mb,90,186,2.817,0.78,us,us7000k8nl,2023-08-21T04:18:59.040Z,"41 km S of Colonia Juárez, Mexico",earthquake,9.22,14.184,0.058,88,reviewed,us,us
+2023-06-16T02:03:39.352Z,15.6953,-96.5222,12.649,4.8,mb,93,119,0.405,0.89,us,us7000k8uk,2023-08-21T04:19:03.040Z,"4 km NW of Puerto Ángel, Mexico",earthquake,3.57,4.459,0.029,370,reviewed,us,us
+2023-06-16T05:14:28.710Z,17.5499,-95.4601,111.574,4.2,mb,51,69,0.364,0.97,us,us7000k8uy,2023-08-21T04:19:04.040Z,"7 km ESE of Nuevo San Martín, Mexico",earthquake,4.23,7.692,0.082,41,reviewed,us,us
+2023-06-16T05:32:18.044Z,15.6305,-96.4376,28.229,4.1,mb,31,175,0.346,1.08,us,us7000kaix,2023-08-21T04:19:40.040Z,"7 km SE of Puerto Ángel, Mexico",earthquake,4.91,6.02,0.127,17,reviewed,us,us
+2023-06-18T09:54:45.171Z,15.6691,-95.9744,10,4.5,mb,75,148,0.163,0.75,us,us7000k9cd,2023-08-26T20:54:16.040Z,"20 km ESE of Crucecita, Mexico",earthquake,6.52,1.911,0.043,160,reviewed,us,us
+2023-06-18T20:30:21.227Z,23.1671,-108.6922,4,6.4,mww,101,100,1.261,0.73,us,us7000k9f0,2023-08-26T20:54:15.040Z,"Gulf of California",earthquake,5.68,1.597,0.033,88,reviewed,us,us
+2023-06-19T08:55:08.984Z,23.1118,-108.5169,10,5.2,mww,277,84,1.43,0.68,us,us7000k9ja,2023-08-26T20:54:14.040Z,"118 km E of La Playa, Mexico",earthquake,6.16,1.846,0.045,48,reviewed,us,us
+2023-06-23T10:15:10.558Z,14.0533,-90.9124,98.675,4.3,mb,127,151,1.11,0.46,us,us7000kaig,2023-08-26T20:54:27.040Z,"15 km ESE of La Gomera, Guatemala",earthquake,8.37,7.227,0.039,187,reviewed,us,us
+2023-06-24T01:46:08.814Z,14.5558,-90.6806,188.338,4.3,mb,30,124,1.089,0.52,us,us6000kpvr,2023-08-26T20:54:21.040Z,"1 km NW of Magdalena Milpas Altas, Guatemala",earthquake,10.61,7.301,0.08,45,reviewed,us,us
+2023-07-01T03:22:25.828Z,17.9206,-102.8777,10,4.5,mb,62,120,1.676,1.16,us,us6000kpca,2023-09-08T14:18:31.040Z,"54 km W of El Habillal, Mexico",earthquake,4.18,1.862,0.031,306,reviewed,us,us
+2023-07-01T13:43:09.484Z,16.0739,-93.8293,94.638,4.2,mb,35,147,0.693,0.8,us,us6000kpgd,2023-09-08T14:18:32.040Z,"3 km NW of Huizachal, Mexico",earthquake,4.54,5.967,0.101,27,reviewed,us,us
+2023-07-04T16:43:35.109Z,26.8818,-111.317,10,4,mb,80,136,0.932,0.8,us,us6000kq2f,2023-09-09T21:54:47.040Z,"66 km E of Mulegé, Mexico",earthquake,6.09,1.962,0.093,31,reviewed,us,us
+2023-07-06T04:35:25.013Z,26,-110.3935,10,4.2,mb,57,131,1.891,0.65,us,us6000kqdh,2023-09-09T21:54:50.040Z,"95 km E of Loreto, Mexico",earthquake,6.03,1.933,0.075,50,reviewed,us,us
+2023-07-08T14:46:24.538Z,14.7847,-93.4147,47.94,4.4,mb,39,143,0.934,0.94,us,us6000kqza,2023-09-09T21:55:00.040Z,"78 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,4.69,7.433,0.054,106,reviewed,us,us
+2023-07-10T10:06:56.784Z,14.5073,-93.7895,28.019,4.6,mb,83,91,1.312,0.86,us,us6000kram,2023-09-16T19:16:08.040Z,"124 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,4.87,2.646,0.034,261,reviewed,us,us
+2023-07-11T11:14:56.086Z,16.8815,-93.9539,146.847,4.6,mb,101,114,0.803,0.58,us,us7000keuc,2023-09-16T19:16:09.040Z,"22 km WNW of Francisco I. Madero, Mexico",earthquake,6.89,5.467,0.048,127,reviewed,us,us
+2023-07-12T15:02:39.764Z,31.55997914,-104.0939955,6.118713379,3.8,ml,26,63,0.03080808351,0.1,tx,tx2023nnyj,2023-09-16T19:16:11.040Z,"39 km NW of Toyah, Texas",earthquake,0.5205406364,0.3517246045,0.2,19,reviewed,tx,tx
+2023-07-13T01:42:53.250Z,31.7611667,-115.9215,12.58,3.96,ml,20,56,0.244,0.19,ci,ci39611306,2023-09-16T19:16:12.040Z,"61km E of Maneadero, B.C., MX",earthquake,0.28,0.92,0.169,230,reviewed,ci,ci
+2023-07-14T09:29:00.404Z,14.9004,-93.9011,34,6.3,mww,358,83,2.186,0.64,us,us7000kfnc,2023-09-16T19:16:15.040Z,"Offshore Chiapas, Mexico",earthquake,5.25,1.821,0.033,89,reviewed,us,us
+2023-07-14T10:37:08.530Z,31.5298333,-114.3758333,5.97,3.81,ml,12,133,0.5315,0.35,ci,ci39612546,2023-10-16T23:34:15.770Z,"95km SE of Estacion Coahuila, B.C., MX",earthquake,0.54,31.61,0.129,56,reviewed,ci,ci
+2023-07-14T16:33:12.055Z,14.8727,-94.1187,35,5,mww,52,156,1.199,0.94,us,us7000kfsa,2023-09-16T19:16:15.040Z,"off the coast of Chiapas, Mexico",earthquake,5.24,1.922,0.05,38,reviewed,us,us
+2023-07-14T20:17:13.542Z,14.0728,-89.7397,195.629,4.3,mb,94,57,0.174,0.82,us,us7000khdz,2023-09-16T19:16:25.040Z,"2 km SSE of Jerez, Guatemala",earthquake,7.28,4.334,0.063,76,reviewed,us,us
+2023-07-14T21:21:22.867Z,14.9499,-94.1918,35,4,mb,34,185,2.089,0.5,us,us7000khe0,2023-09-16T19:16:25.040Z,"115 km SW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,5.1,2.021,0.102,26,reviewed,us,us
+2023-07-16T01:10:22.822Z,17.3045,-95.4309,106.483,4.1,mb,62,63,0.539,0.94,us,us7000kg1l,2023-09-28T21:33:22.040Z,"5 km SSW of Jaltepec de Candayoc, Mexico",earthquake,5.3,4.238,0.066,63,reviewed,us,us
+2023-07-16T02:08:03.639Z,17.7673,-106.1473,10,4.4,mb,46,123,4.645,0.85,us,us7000kg1w,2023-09-28T21:33:23.040Z,"218 km SW of Emiliano Zapata, Mexico",earthquake,7.87,1.905,0.036,221,reviewed,us,us
+2023-07-16T10:37:12.520Z,31.5388333,-115.6795,5.82,4.18,ml,18,67,0.172,0.25,ci,ci39614090,2023-09-28T21:33:26.040Z,"86km ESE of Maneadero, B.C., MX",earthquake,0.37,2.15,0.125,62,reviewed,ci,ci
+2023-07-16T10:37:34.290Z,31.5368333,-115.667,8.84,3.73,ml,13,66,0.1761,0.27,ci,ci37557572,2023-09-28T21:33:30.040Z,"88km ESE of Maneadero, B.C., MX",earthquake,0.43,1.92,0.137,8,reviewed,ci,ci
+2023-07-16T13:44:34.199Z,18.3051,-100.8784,62.74,5.1,mww,104,86,0.505,0.89,us,us7000kg5l,2023-09-28T21:33:29.040Z,"3 km W of Paso de Arena, Mexico",earthquake,4.09,5.426,0.098,10,reviewed,us,us
+2023-07-16T19:16:05.100Z,31.5663333,-114.4146667,5.97,4.57,mw,14,127,0.4826,0.33,ci,ci39614322,2023-09-28T21:33:31.040Z,"89km SE of Estacion Coahuila, B.C., MX",earthquake,0.53,31.61,,6,reviewed,ci,ci
+2023-07-16T19:37:19.980Z,31.5421667,-114.3971667,5.97,4.28,mw,12,130,0.5109,0.54,ci,ci39614338,2023-09-28T21:33:31.040Z,"92km SE of Estacion Coahuila, B.C., MX",earthquake,0.83,31.61,,6,reviewed,ci,ci
+2023-07-17T03:46:31.060Z,31.5365,-115.6796667,6.52,3.86,ml,16,67,0.1699,0.18,ci,ci39614514,2023-09-28T21:33:34.040Z,"86km ESE of Maneadero, B.C., MX",earthquake,0.24,1.33,0.144,75,reviewed,ci,ci
+2023-07-18T01:27:47.583Z,17.9969,-95.6068,129.704,4,mb,37,49,1.127,0.75,us,us6000kx5z,2023-09-28T21:33:21.040Z,"8 km WSW of Isla, Mexico",earthquake,5.29,8.672,0.211,6,reviewed,us,us
+2023-07-18T10:03:55.429Z,17.9317,-105.7612,10,4.6,mb,253,186,4.621,0.39,us,us7000kgjc,2023-09-28T21:33:43.040Z,"181 km SW of La Manzanilla, Mexico",earthquake,10.16,1.948,0.031,313,reviewed,us,us
+2023-07-18T10:13:48.543Z,17.9986,-105.731,10,5.6,mww,246,170,4.57,0.48,us,us7000kgje,2023-09-28T21:33:43.040Z,"173 km SW of La Manzanilla, Mexico",earthquake,9.24,1.9,0.032,95,reviewed,us,us
+2023-07-18T10:36:21.072Z,18.1244,-105.5266,10,4.4,mb,27,173,2.022,0.7,us,us6000kvpa,2023-09-28T21:33:03.040Z,"149 km SW of Barra de Navidad, Mexico",earthquake,8.23,1.947,0.117,21,reviewed,us,us
+2023-07-18T15:12:59.978Z,17.0616,-99.9394,28.348,4.2,mb,101,108,0.279,0.8,us,us7000kgle,2023-09-28T21:33:44.040Z,"2 km E of Tixtlancingo, Mexico",earthquake,4.79,6.414,0.059,79,reviewed,us,us
+2023-07-19T02:54:51.538Z,19.366,-103.7431,35,4,mb,44,154,1.136,0.52,us,us6000kx60,2023-09-28T21:33:22.040Z,"3 km WSW of Suchitlán, Mexico",earthquake,5.91,1.955,0.164,10,reviewed,us,us
+2023-07-19T04:22:07.591Z,28.967,-98.282,8.8201,3.8,ml,14,87,0.1,0.1,tx,tx2023nzxt,2025-07-02T20:07:22.582Z,"19 km E of Pleasanton, Texas",earthquake,0.58720225323032,2.0995372167207,0.2,10,reviewed,tx,tx
+2023-07-21T03:15:59.686Z,16.0811,-94.7202,56.163,4.3,mb,49,97,1.016,1.05,us,us7000khbj,2023-09-28T21:34:02.040Z,"19 km SSW of San Francisco del Mar Viejo, Mexico",earthquake,3.91,7.643,0.056,91,reviewed,us,us
+2023-07-22T09:24:21.998Z,31.93450928,-102.3464891,7.801066081,3.5,ml,19,61,0.02774057982,0.1,tx,tx2023ofue,2023-09-28T21:34:08.040Z,"10 km SSE of Gardendale, Texas",earthquake,0.6832292661,0.5709666219,0.2,29,reviewed,tx,tx
+2023-07-23T18:05:24.989Z,28.1123,-112.1679,10,4.1,mb,83,132,0.792,0.66,us,us7000khud,2023-09-30T21:36:39.040Z,"81 km SSW of Bahía de Kino, Mexico",earthquake,6.32,1.948,0.058,83,reviewed,us,us
+2023-07-23T18:23:08.997Z,16.0371,-91.2293,10,4.7,mb,226,57,0.905,0.87,us,us7000khuf,2023-09-30T21:36:39.040Z,"13 km SSE of Maravilla Tenejapa, Mexico",earthquake,4.54,1.813,0.031,312,reviewed,us,us
+2023-07-23T19:35:11.701Z,28.0837,-112.1731,10,4.1,mb,40,132,0.763,0.59,us,us7000khur,2023-09-30T21:36:39.040Z,"82 km N of Santa Rosalía, Mexico",earthquake,6.45,1.953,0.08,43,reviewed,us,us
+2023-07-24T14:22:05.563Z,16.041,-91.3174,12.128,4.1,mb,44,93,0.823,0.79,us,us6000kxau,2023-09-30T21:36:35.040Z,"10 km S of Santo Domingo de las Palmas, Mexico",earthquake,3.8,5.322,0.092,32,reviewed,us,us
+2023-07-25T03:42:19.364Z,14.0117,-92.0828,52.665,4.5,mb,171,95,2.258,0.86,us,us7000ki5i,2023-09-30T21:36:40.040Z,"36 km SSW of Champerico, Guatemala",earthquake,7.05,5.875,0.029,366,reviewed,us,us
+2023-07-26T02:02:42.565Z,14.821,-94.0692,35,4.7,mb,73,83,1.202,0.64,us,us6000kvkf,2023-09-30T21:36:31.040Z,"118 km SW of El Palmarcito, Mexico",earthquake,1.83,1.883,0.032,304,reviewed,us,us
+2023-07-27T22:08:15.327Z,15.4432,-93.4296,90.114,4.1,mb,23,158,0.33,0.45,us,us6000kx69,2023-09-30T21:36:35.040Z,"23 km WSW of El Palmarcito, Mexico",earthquake,6.55,6.604,0.185,8,reviewed,us,us
+2023-07-28T02:06:23.285Z,15.9489,-95.3916,33.296,4.2,mb,42,137,0.713,0.73,us,us6000kx6a,2023-09-30T21:36:35.040Z,"12 km S of Santa Gertrudis Miramar, Mexico",earthquake,3.59,6.391,0.113,22,reviewed,us,us
+2023-07-28T10:44:12.913Z,14.8219,-94.1053,35,4.1,mb,45,171,1.226,0.55,us,us6000kw75,2023-09-30T21:36:32.040Z,"121 km SW of El Palmarcito, Mexico",earthquake,3.62,1.951,0.087,37,reviewed,us,us
+2023-07-31T09:25:21.341Z,32.37762451,-101.6605135,5.844685872,3.5,ml,20,74,0.04747227338,0.1,tx,tx2023owfu,2023-10-07T21:38:55.040Z,"17 km SSE of Ackerly, Texas",earthquake,0.4742464735,0.5466117712,0.2,16,reviewed,tx,tx
+2023-07-31T21:51:17.889Z,16.3052,-97.7005,21.981,4.8,mb,165,130,0.568,0.66,us,us6000kwxr,2023-10-07T21:38:55.040Z,"5 km ESE of Santiago Tetepec, Mexico",earthquake,3.26,3.955,0.053,112,reviewed,us,us
+2023-08-01T09:57:52.177Z,19.5911,-109.2809,10,4.1,mb,104,113,1.751,0.62,us,us6000kx0q,2023-10-07T21:38:55.040Z,"Revilla Gigedo Islands region",earthquake,7.02,1.905,0.046,131,reviewed,us,us
+2023-08-05T00:05:35.214Z,29.3270874,-103.4183134,0.0244547526,3.7,ml,10,140,0.2301718818,0.4,tx,tx2023peqx,2023-10-07T21:38:58.040Z,"10 km E of Study Butte, Texas",earthquake,4.5935947,2.924065463,0.1,6,reviewed,tx,tx
+2023-08-05T20:57:20.812Z,14.7548,-94.0551,10,4.5,mb,53,136,1.797,0.65,us,us6000kzwd,2023-10-07T21:39:02.040Z,"122 km SW of El Palmarcito, Mexico",earthquake,9.4,1.908,0.089,37,reviewed,us,us
+2023-08-07T22:19:43.257Z,15.3871,-94.146,54.899,4.1,mb,58,122,0.948,0.87,us,us6000kyiu,2023-10-17T22:01:27.040Z,"72 km SSW of Cabeza de Toro, Mexico",earthquake,5.37,7.862,0.097,29,reviewed,us,us
+2023-08-08T00:04:16.474Z,14.0458,-92.2697,35,4.1,mb,41,181,0.857,0.66,us,us6000kyjc,2023-10-17T22:01:27.040Z,"47 km SW of Champerico, Guatemala",earthquake,3.4,1.976,0.112,22,reviewed,us,us
+2023-08-08T01:30:40.365Z,23.039,-108.7166,10,4,mb,33,208,1.299,0.86,us,us6000kyjq,2023-10-17T22:01:27.040Z,"97 km E of La Playa, Mexico",earthquake,8.15,1.945,0.077,45,reviewed,us,us
+2023-08-08T08:12:14.476Z,16.7215,-86.0272,10,4.8,mb,78,35,2.909,0.81,us,us6000kyl1,2023-10-17T22:01:27.040Z,"33 km NNW of Guanaja, Honduras",earthquake,7.09,1.871,0.032,308,reviewed,us,us
+2023-08-08T15:58:35.000Z,32.3811667,-115.1225,15.6,3.58,ml,31,70,0.06771,0.32,ci,ci40531840,2023-10-17T22:01:28.040Z,"7 km ENE of Delta, B.C., MX",earthquake,0.4,0.81,0.118,27,reviewed,ci,ci
+2023-08-08T22:34:51.029Z,31.67836631,-104.4081261,6.851391602,3.6,ml,45,69,0.01527432582,0.2,tx,tx2023plvw,2023-10-17T22:01:28.040Z,"55 km S of Whites City, New Mexico",earthquake,0.8735812779,0.9449143938,0.1,31,reviewed,tx,tx
+2023-08-09T09:33:26.267Z,16.1516,-93.7276,103,5.8,mww,226,77,0.661,1.43,us,us6000kyty,2023-10-17T22:01:28.040Z,"7 km NNE of Tonalá, Mexico",earthquake,3.72,1.863,0.037,71,reviewed,us,us
+2023-08-09T20:03:08.589Z,25.7684,-110.0928,10,4.5,mb,75,172,2.468,0.67,us,us6000kyxh,2023-10-17T22:01:29.040Z,"76 km W of Las Grullas Margen Derecha, Mexico",earthquake,6.18,1.659,0.046,143,reviewed,us,us
+2023-08-13T06:22:03.852Z,14.3381,-89.7713,236.904,4.8,mb,108,129,0.433,0.56,us,us6000kzng,2023-10-27T21:39:00.040Z,"6 km W of Asunción Mita, Guatemala",earthquake,9.66,6.539,0.028,391,reviewed,us,us
+2023-08-14T11:09:47.265Z,14.2591,-91.7394,73.912,4.2,mb,50,155,1.934,0.48,us,us6000kzu8,2023-10-27T21:39:01.040Z,"19 km ESE of Champerico, Guatemala",earthquake,9.05,10.898,0.062,71,reviewed,us,us
+2023-08-15T02:08:31.511Z,14.1633,-92.6129,35,4.1,mb,40,179,0.813,0.59,us,us6000kzzt,2023-10-27T21:39:01.040Z,"58 km SW of Brisas Barra de Suchiate, Mexico",earthquake,4.35,1.958,0.075,49,reviewed,us,us
+2023-08-17T11:12:39.336Z,14.3641,-93.1958,47.103,4.7,mb,99,135,1.05,0.9,us,us7000knzu,2023-10-27T21:39:03.040Z,"92 km WSW of Puerto Madero, Mexico",earthquake,6.97,6.093,0.032,294,reviewed,us,us
+2023-08-18T10:46:10.340Z,32.3973333,-115.1366667,10.81,3.67,mw,32,67,0.05577,0.29,ci,ci39643754,2023-10-27T21:39:03.040Z,"7 km NE of Delta, B.C., MX",earthquake,0.35,0.77,,4,reviewed,ci,ci
+2023-08-19T02:17:52.859Z,31.67760404,-104.3838935,5.874487305,3.5,ml,53,65,0.03590953944,0.2,tx,tx2023qekg,2023-10-27T21:39:04.040Z,"55 km S of Whites City, New Mexico",earthquake,0.7391071269,0.7234472668,0.1,29,reviewed,tx,tx
+2023-08-19T14:54:43.948Z,15.9962,-94.2789,81.025,4.5,mb,46,144,1.061,1,us,us7000kpgr,2023-10-27T21:39:04.040Z,"24 km SW of La Gloria, Mexico",earthquake,4.4,6.749,0.051,114,reviewed,us,us
+2023-08-19T23:06:46.616Z,16.8267,-94.293,122.662,4.5,mb,96,111,0.624,0.74,us,us7000kpis,2023-10-27T21:39:04.040Z,"Oaxaca, Mexico",earthquake,5.62,6.328,0.074,54,reviewed,us,us
+2023-08-22T06:15:17.593Z,31.61195834,-103.9895253,8.342456055,3.8,ml,26,58,0.0176906721,0.1,tx,tx2023qkep,2023-10-28T19:15:34.040Z,"37 km NNW of Toyah, Texas",earthquake,0.6931852227,0.7184626195,0.3,19,reviewed,tx,tx
+2023-08-22T07:00:13.301Z,31.61457704,-103.9966655,8.895178223,3.7,ml,40,57,0.01873879714,0.1,tx,tx2023qkgd,2023-10-28T19:15:34.040Z,"38 km NNW of Toyah, Texas",earthquake,0.5222862519,0.4599644025,0.2,25,reviewed,tx,tx
+2023-08-22T20:07:43.792Z,17.9827,-96.4522,85.75,4.1,mb,36,48,0.593,1.02,us,us7000kv3p,2023-10-28T19:15:35.040Z,"Oaxaca, Mexico",earthquake,2.61,6.847,0.166,10,reviewed,us,us
+2023-08-22T22:58:00.335Z,31.66055222,-104.3164618,7.93112793,4,ml,40,68,0.04533120359,0.2,tx,tx2023qlls,2023-10-28T19:15:35.040Z,"57 km S of Whites City, New Mexico",earthquake,0.7897495234,0.8566542976,0.1,24,reviewed,tx,tx
+2023-08-24T15:57:55.769Z,15.0679,-93.5512,61.338,4.1,mb,80,128,0.71,0.96,us,us7000ks3x,2023-10-28T19:15:36.040Z,"59 km SW of La Esperanza (El Zapotal), Mexico",earthquake,5.89,8.177,0.068,62,reviewed,us,us
+2023-08-25T04:56:02.071Z,18.0931,-94.5328,10,4.3,mb,49,53,1.051,1.11,us,us7000kqvs,2023-10-28T19:15:37.040Z,"4 km SE of Residencial las Olas, Mexico",earthquake,4.2,1.873,0.051,115,reviewed,us,us
+2023-08-25T08:24:03.929Z,20.3065,-109.1418,10,4.4,mb,48,201,4.39,0.78,us,us7000kqwh,2025-02-03T06:24:26.727Z,"297 km SSE of Cabo San Lucas, Mexico",earthquake,10.41,1.962,0.062,75,reviewed,us,us
+2023-08-26T13:30:11.770Z,31.61387718,-104.4957689,6.902807617,3.8,ml,47,138,0.05498202743,0.2,tx,tx2023qsaz,2023-10-28T19:15:38.040Z,"63 km S of Whites City, New Mexico",earthquake,1.165787626,0.858726603,0.2,23,reviewed,tx,tx
+2023-08-27T11:33:01.308Z,14.4002,-93.3872,10,4.5,mb,73,182,1.197,0.8,us,us7000krbv,2023-11-04T21:35:36.040Z,"109 km WSW of Puerto Madero, Mexico",earthquake,4.38,1.901,0.035,243,reviewed,us,us
+2023-08-28T22:18:55.025Z,14.3713,-92.1968,60.367,4.2,mb,64,159,0.537,0.76,us,us7000krp9,2023-11-04T21:35:43.040Z,"15 km S of Ocós, Guatemala",earthquake,6.03,6.817,0.076,48,reviewed,us,us
+2023-08-28T22:32:12.475Z,16.4377,-96.3647,52.626,4.9,mb,195,69,0.709,0.9,us,us7000krpi,2023-11-04T21:35:43.040Z,"7 km NNW of San José Lachiguirí, Mexico",earthquake,5.56,4.271,0.041,186,reviewed,us,us
+2023-08-30T20:26:54.535Z,17.6579,-101.2008,42.711,4.4,mb,53,102,0.257,0.7,us,us7000ks6u,2023-11-04T21:35:55.040Z,"15 km NNE of Petatlán, Mexico",earthquake,3.72,3.932,0.064,70,reviewed,us,us
+2023-09-05T12:43:23.689Z,14.257,-94.2005,10,4.3,mb,19,154,2.832,0.8,us,us7000kuag,2023-11-17T19:47:47.040Z,"172 km SW of La Esperanza (El Zapotal), Mexico",earthquake,5.69,1.942,0.168,10,reviewed,us,us
+2023-09-08T09:40:04.942Z,14.7304,-94.5146,10,4.2,mb,46,158,1.582,0.73,us,us7000kvjq,2023-11-17T19:47:46.040Z,"154 km SSW of Cabeza de Toro, Mexico",earthquake,3.7,1.95,0.115,21,reviewed,us,us
+2023-09-08T15:53:18.596Z,19.3843,-105.0882,14,5.6,mww,99,133,3.651,0.66,us,us7000kub5,2023-11-17T19:47:51.040Z,"12 km W of Emiliano Zapata, Mexico",earthquake,10.51,1.856,0.032,91,reviewed,us,us
+2023-09-08T16:37:11.830Z,19.436,-104.981,13,5.8,mww,188,61,3.546,1.08,us,us7000kubt,2023-11-17T19:47:51.040Z,"5 km NNW of Emiliano Zapata, Mexico",earthquake,8.83,1.84,0.03,105,reviewed,us,us
+2023-09-08T19:27:52.777Z,16.7591,-100.0386,10,4.5,mb,102,140,0.361,0.84,us,us7000kudi,2023-11-17T19:47:46.040Z,"17 km SW of Acapulco de Juárez, Mexico",earthquake,4.25,1.875,0.044,156,reviewed,us,us
+2023-09-09T12:24:18.323Z,15.8185,-96.1484,27.664,4.2,mb,48,138,0.062,0.65,us,us7000kuku,2023-11-17T19:47:45.040Z,"5 km NNW of Crucecita, Mexico",earthquake,4.83,7.186,0.06,79,reviewed,us,us
+2023-09-09T13:57:54.353Z,15.8371,-96.6968,26.148,4.5,mb,53,179,0.571,1.36,us,us7000kulb,2023-11-17T19:47:45.040Z,"3 km W of Santo Domingo de Morelos, Mexico",earthquake,2.49,7.495,0.044,154,reviewed,us,us
+2023-09-11T05:51:00.225Z,16.0207,-94.0922,88.598,4.1,mb,82,164,0.897,0.68,us,us7000kuym,2023-11-18T22:29:32.040Z,"13 km S of La Gloria, Mexico",earthquake,5.72,7.457,0.048,118,reviewed,us,us
+2023-09-12T02:40:50.492Z,15.1471,-93.4529,64.444,5.1,mww,117,92,1.697,0.64,us,us7000kv78,2023-11-18T22:29:33.040Z,"45 km SW of La Esperanza (El Zapotal), Mexico",earthquake,9.82,5.176,0.048,42,reviewed,us,us
+2023-09-13T00:53:57.922Z,18.4162,-105.5971,10,4.6,mb,115,185,1.174,0.65,us,us7000kveh,2023-11-18T22:29:33.040Z,"126 km SSW of Emiliano Zapata, Mexico",earthquake,5.98,1.953,0.049,126,reviewed,us,us
+2023-09-13T02:24:33.874Z,16.4637,-98.4687,35,4,mb,42,179,0.335,0.59,us,us7000kvf2,2023-11-18T22:29:33.040Z,"5 km W of Cuajinicuilapa, Mexico",earthquake,4.85,1.983,0.183,8,reviewed,us,us
+2023-09-14T07:32:51.010Z,28.0038,-112.1522,10,4,mb,29,120,0.686,0.54,us,us7000kvns,2023-11-18T22:29:34.040Z,"74 km N of Santa Rosalía, Mexico",earthquake,4.92,1.99,0.172,9,reviewed,us,us
+2023-09-14T10:44:52.588Z,18.1016,-99.2511,52.052,4,mb,74,29,0.375,0.65,us,us7000kvp7,2023-11-18T22:29:34.040Z,"5 km W of Tequicuilco, Mexico",earthquake,3.43,1.986,0.055,89,reviewed,us,us
+2023-09-14T18:50:39.761Z,29.049,-97.864,7.9254,4.1,ml,18,76,0.1,0.2,tx,tx2023sbec,2025-07-02T20:06:47.083Z,"16 km ENE of Falls City, Texas",earthquake,0.69102484571602,0.95310807648206,0.2,13,reviewed,tx,tx
+2023-09-16T02:52:37.772Z,14.6911,-94.5262,10,4.3,mb,37,182,1.615,1.09,us,us6000lcia,2023-11-18T22:29:31.040Z,"159 km SSW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,5.44,1.954,0.102,27,reviewed,us,us
+2023-09-16T04:50:59.614Z,14.9716,-94.4431,10,4.2,mb,39,188,1.388,1.01,us,us7000kw4q,2023-11-18T22:29:35.040Z,"128 km SSW of Cabeza de Toro, Mexico",earthquake,3.52,1.907,0.074,53,reviewed,us,us
+2023-09-16T04:51:22.884Z,14.8748,-94.2223,10,4.3,mb,35,89,2.294,1,us,us7000kx3a,2023-11-18T22:29:36.040Z,"123 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,5.81,1.82,0.116,23,reviewed,us,us
+2023-09-16T06:44:06.648Z,14.858,-94.4992,10,4.2,mb,49,179,1.495,1.01,us,us7000kw55,2023-11-18T22:29:35.040Z,"142 km SSW of Cabeza de Toro, Mexico",earthquake,2.32,1.957,0.078,46,reviewed,us,us
+2023-09-16T09:57:40.282Z,14.9202,-94.4984,10,4.3,mb,38,154,1.46,0.71,us,us7000kw5s,2023-11-18T22:29:35.040Z,"136 km SW of Cabeza de Toro, Mexico",earthquake,4.27,1.935,0.08,45,reviewed,us,us
+2023-09-18T08:38:13.221Z,14.0922,-92.3444,35,4.2,mb,146,133,0.814,0.5,us,us7000kwf2,2023-12-02T23:01:07.040Z,"49 km SSW of Ocós, Guatemala",earthquake,4.62,1.922,0.047,129,reviewed,us,us
+2023-09-19T15:01:22.629Z,16.5652,-100.3574,10,4.2,mb,85,192,0.488,0.85,us,us7000kwnr,2024-01-18T20:55:14.482Z,"51 km SW of Los Mogotes, Mexico",earthquake,3.64,1.921,0.059,80,reviewed,us,us
+2023-09-19T22:18:39.831Z,21.9271,-107.6799,17.13,4,mb,35,198,3.052,0.75,us,us6000lcid,2023-12-02T23:01:05.040Z,"195 km SW of Mazatlán, Mexico",earthquake,7.83,7.654,0.138,14,reviewed,us,us
+2023-09-20T02:25:45.809Z,16.2813,-98.2972,28.502,4.1,mb,34,179,0.197,0.67,us,us6000lcie,2023-12-02T23:01:05.040Z,"5 km SW of El Ciruelo, Mexico",earthquake,3.35,9.113,0.233,5,reviewed,us,us
+2023-09-21T18:41:56.123Z,17.754,-95.5183,107.58,4.2,mb,56,58,0.274,0.8,us,us6000lcig,2023-12-02T23:01:05.040Z,"4 km SE of Abasolo del Valle, Mexico",earthquake,5.11,9.516,0.084,39,reviewed,us,us
+2023-09-22T12:18:31.454Z,32.2871,-103.3149,7.7,3.5,ml,33,61,0.098,0.5,us,us7000kxci,2023-12-02T23:01:10.040Z,"New Mexico",earthquake,1.94,6.915,0.085,26,reviewed,us,us
+2023-09-22T20:15:58.090Z,32.685,-100.689,6.774,3.9,ml(texnet),23,56,0,0.1,tx,tx2023spwx,2023-12-02T23:01:11.040Z,"8 km NE of Hermleigh, Texas",earthquake,0.7517569669,1.262697308,0,6,reviewed,tx,tx
+2023-09-23T08:53:14.935Z,16.6141,-94.8807,84.306,4.2,mb,39,111,0.474,1.15,us,us7000kxm4,2023-12-02T23:01:11.040Z,"8 km NW of La Venta, Mexico",earthquake,4.87,14.208,0.108,24,reviewed,us,us
+2023-09-26T06:21:38.974Z,15.0877,-104.3164,10,5.4,mww,122,171,3.316,0.83,us,us7000ky4p,2023-12-09T22:00:45.040Z,"off the coast of Michoacan, Mexico",earthquake,8.77,1.909,0.075,17,reviewed,us,us
+2023-09-26T17:40:52.370Z,17.4403,-94.5971,142.937,4.8,mb,119,58,0.443,1.26,us,us6000laxz,2023-12-09T22:00:40.040Z,"10 km W of Niños Héroes, Mexico",earthquake,5.59,4.198,0.036,239,reviewed,us,us
+2023-09-27T16:04:04.167Z,14.9835,-94.0217,44.712,4.6,mb,135,187,1.795,0.85,us,us6000lb4c,2023-12-09T22:00:40.040Z,"102 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,8.06,10.628,0.05,121,reviewed,us,us
+2023-09-29T03:41:51.793Z,16.1318,-93.6999,112.097,4.5,mb,23,129,0.628,0.93,us,us6000lcik,2023-12-09T22:00:42.040Z,"7 km NE of Tonalá, Mexico",earthquake,5.09,5.161,0.241,5,reviewed,us,us
+2023-09-29T15:32:36.746Z,16.6527,-95.7313,52.394,4.4,mb,23,128,2.038,0.88,us,us6000lbqn,2023-12-09T22:00:41.040Z,"21 km W of Santiago Lachiguiri, Mexico",earthquake,9.93,11.317,0.063,74,reviewed,us,us
+2023-10-02T03:21:22.285Z,32.758,-100.655,3.8394,3.6,ml(texnet),14,54,0.1,0.1,tx,tx2023tgwm,2023-12-14T21:26:51.040Z,"16 km NE of Hermleigh, Texas",earthquake,0.8525087612,1.486177393,0.1,13,reviewed,tx,tx
+2023-10-02T14:54:07.076Z,19.8928,-105.3653,10,4.4,mb,65,184,0.696,1.11,us,us6000ldhi,2023-12-14T21:26:54.040Z,"7 km SSW of José María Pino Suárez (Nuevo Nahuapa), Mexico",earthquake,3.5,1.944,0.079,46,reviewed,us,us
+2023-10-03T06:06:21.042Z,32.749,-100.617,3.9861,3.5,ml(texnet),32,71,0.1,0.3,tx,tx2023tixl,2023-12-14T21:26:51.040Z,"18 km SW of Rotan, Texas",earthquake,0.8806643368,1.681531794,0.1,17,reviewed,tx,tx
+2023-10-04T01:45:14.388Z,17.3405,-94.9298,130.184,4.3,mb,29,54,0.252,0.79,us,us7000lars,2023-12-14T21:26:58.040Z,"7 km SE of Suchilapan del Río, Mexico",earthquake,5.63,3.624,0.147,13,reviewed,us,us
+2023-10-07T05:06:55.520Z,17.0471,-95.0442,108,5.9,mww,143,89,0.159,1,us,us6000ldny,2024-11-24T01:36:39.703Z,"2 km S of Paso Real de Sarabia, Mexico",earthquake,4.78,1.9,0.032,91,reviewed,us,us
+2023-10-08T11:13:35.963Z,16.1304,-95.0995,10.691,4.5,mb,114,90,1.035,0.79,us,us6000le0c,2023-12-16T22:13:05.040Z,"10 km SSE of Huazantlán del Río, Mexico",earthquake,4.24,4.802,0.039,194,reviewed,us,us
+2023-10-09T13:59:22.407Z,28.953,-97.611,4.5498,3.9,ml,29,104,0.1,0.3,tx,tx2023tumb,2025-07-02T20:07:44.749Z,"3 km N of Nordheim, Texas",earthquake,1.1598451493574,0.81045552923557,0.2,19,reviewed,tx,tx
+2023-10-11T10:28:52.343Z,18.2319,-106.0559,10,4.2,mb,31,276,3.158,0.41,us,us6000leqr,2023-12-16T22:13:07.040Z,"171 km SW of Emiliano Zapata, Mexico",earthquake,12.58,2.023,0.084,39,reviewed,us,us
+2023-10-12T10:08:35.591Z,18.9606,-107.9109,10,4.5,mb,18,236,3.018,0.77,us,us7000larv,2023-12-16T22:13:11.040Z,"282 km WSW of La Cruz de Loreto, Mexico",earthquake,8.74,1.988,0.163,11,reviewed,us,us
+2023-10-12T20:00:40.564Z,14.8674,-87.5535,10,4.5,mwr,100,40,0.85,0.77,us,us6000lf7c,2023-12-16T22:13:08.040Z,"13 km NNE of La Libertad, Honduras",earthquake,5.35,1.86,0.063,24,reviewed,us,us
+2023-10-13T17:38:16.983Z,19.414,-104.9784,41.921,4.2,mb,84,128,0.273,1.35,us,us6000lgkf,2023-12-16T22:13:10.040Z,"3 km NNW of Emiliano Zapata, Mexico",earthquake,3.65,8.803,0.064,75,reviewed,us,us
+2023-10-14T00:31:57.611Z,14.9005,-94.1613,35,4.1,mb,62,183,1.875,0.61,us,us6000lfgj,2023-12-16T22:13:08.040Z,"117 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,4.94,1.95,0.084,39,reviewed,us,us
+2023-10-14T02:05:54.340Z,16.0647,-98.8294,10,4.9,mb,58,149,0.749,0.97,us,us6000lfgt,2023-12-16T22:13:08.040Z,"50 km SSW of Barra de Tecoanapa, Mexico",earthquake,5.03,1.578,0.033,294,reviewed,us,us
+2023-10-14T22:11:04.614Z,14.8821,-87.522,10,4.9,mwr,59,56,0.855,0.6,us,us6000lflx,2023-12-16T22:13:09.040Z,"16 km NE of La Libertad, Honduras",earthquake,5.11,1.315,0.08,15,reviewed,us,us
+2023-10-15T08:42:34.476Z,17.5287,-94.5971,146.384,4.1,mb,61,71,0.479,0.53,us,us6000lgui,2023-12-26T21:24:42.040Z,"13 km ENE of Vicente Guerrero, Mexico",earthquake,7.23,5.541,0.089,34,reviewed,us,us
+2023-10-16T09:08:12.518Z,16.3591,-98.7263,10,4.1,mb,38,191,0.54,1.16,us,us7000larw,2023-12-26T21:25:09.040Z,"16 km S of Barra de Tecoanapa, Mexico",earthquake,2.64,1.918,0.145,13,reviewed,us,us
+2023-10-17T12:01:25.734Z,14.8807,-94.1996,10,4.4,mb,9,198,1.87,0.7,us,us6000lg4n,2023-12-26T21:24:27.040Z,"121 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,4.21,1.945,0.046,137,reviewed,us,us
+2023-10-17T20:16:41.184Z,31.676,-104.37,6.1187,3.5,ml(texnet),32,57,0,0.2,tx,tx2023ujon,2024-10-09T12:41:53.512Z,"55 km S of Whites City, New Mexico",earthquake,0.5605538314,0.5884364837,0.1,23,reviewed,tx,tx
+2023-10-18T05:41:02.785Z,31.69,-104.444,5.6174,3.9,ml(texnet),37,44,0,0.2,tx,tx2023ukhe,2024-10-09T12:25:51.856Z,"western Texas",earthquake,0.8117200766,0.5488639299,0.1,19,reviewed,tx,tx
+2023-10-18T09:22:17.012Z,31.671,-104.371,6.183,3.9,ml(texnet),25,57,0,0.2,tx,tx2023ukol,2024-10-09T12:13:35.870Z,"55 km S of Whites City, New Mexico",earthquake,0.8150984855,0.8575098542,0.1,13,reviewed,tx,tx
+2023-10-18T14:52:43.058Z,14.7845,-93.741,45.638,4.6,mb,198,91,1.432,0.81,us,us6000lgd3,2023-12-26T21:24:33.040Z,"96 km SW of La Esperanza (El Zapotal), Mexico",earthquake,6.79,6.224,0.035,250,reviewed,us,us
+2023-10-19T00:09:57.825Z,31.627,-104.507,7.5198,3.5,ml(texnet),39,73,0,0.2,tx,tx2023ulrs,2023-12-26T21:24:35.040Z,"62 km SSW of Whites City, New Mexico",earthquake,1.641068932,0.6793014203,0.1,25,reviewed,tx,tx
+2023-10-20T22:04:15.705Z,14.2981,-93.3789,10,4.4,mb,42,201,1.237,0.41,us,us6000lh1e,2023-12-26T21:24:50.040Z,"113 km WSW of Puerto Madero, Mexico",earthquake,6.52,1.975,0.12,20,reviewed,us,us
+2023-10-20T23:00:21.109Z,14.3667,-93.4221,10,4.9,mww,100,91,2.272,0.57,us,us6000lh1j,2023-12-26T21:24:50.040Z,"114 km WSW of Puerto Madero, Mexico",earthquake,5.62,1.757,0.058,29,reviewed,us,us
+2023-10-20T23:07:28.547Z,28.923,-98.067,7.0127,3.7,ml,11,80,0.2,0.1,tx,tx2023upgr,2025-07-02T20:02:20.796Z,"8 km SW of Falls City, Texas",earthquake,0.99854915588675,2.0956909062814,0.1,7,reviewed,tx,tx
+2023-10-21T04:27:08.167Z,14.8378,-87.5283,10,4.4,mb,34,47,0.815,1.23,us,us6000lh2y,2023-12-26T21:24:51.040Z,"12 km NE of La Libertad, Honduras",earthquake,5.43,1.904,0.098,31,reviewed,us,us
+2023-10-21T08:21:03.286Z,14.4575,-93.3842,15.062,4.4,mb,63,141,1.172,0.89,us,us6000lh4d,2023-12-26T21:24:52.040Z,"107 km WSW of Puerto Madero, Mexico",earthquake,6.32,6.606,0.08,45,reviewed,us,us
+2023-10-21T09:17:19.018Z,27.5429,-93.8739,9.947,3.6,mb,68,236,2.966,0.49,us,us6000lh4t,2023-12-26T21:24:52.040Z,"208 km SE of Surfside Beach, Texas",earthquake,10.89,8.879,0.287,3,reviewed,us,us
+2023-10-21T17:05:14.079Z,14.3111,-93.4545,10,4.6,mb,202,134,1.295,0.66,us,us6000lh6l,2023-12-26T21:24:54.040Z,"120 km WSW of Puerto Madero, Mexico",earthquake,5.19,1.808,0.037,217,reviewed,us,us
+2023-10-21T17:10:01.535Z,14.1937,-93.41,9.756,5.1,mww,229,124,1.316,0.7,us,us6000lh6m,2023-12-26T21:24:55.040Z,"121 km WSW of Puerto Madero, Mexico",earthquake,5.41,3.376,0.048,41,reviewed,us,us
+2023-10-22T02:05:15.873Z,16.3994,-99.0491,10,4.9,mb,83,185,0.344,1.11,us,us6000lh8d,2024-01-04T04:21:49.040Z,"24 km SSW of Copala, Mexico",earthquake,4.24,1.877,0.026,455,reviewed,us,us
+2023-10-22T02:25:41.373Z,16.2756,-99.0828,10,4.3,mb,47,197,0.46,0.91,us,us7000las0,2024-01-04T04:21:49.040Z,"38 km SSW of Copala, Mexico",earthquake,2.78,1.91,0.105,26,reviewed,us,us
+2023-10-22T04:36:51.671Z,14.337,-93.4614,10,4.1,mb,31,193,1.289,1.22,us,us6000lh96,2024-01-04T04:21:50.040Z,"119 km WSW of Puerto Madero, Mexico",earthquake,6.1,1.991,0.12,19,reviewed,us,us
+2023-10-24T03:30:05.162Z,14.6577,-94.2325,38.824,4.2,mb,31,179,1.919,0.68,us,us7000l6we,2024-01-04T04:22:03.040Z,"143 km SW of El Palmarcito, Mexico",earthquake,3.79,9.894,0.096,30,reviewed,us,us
+2023-10-24T04:30:47.793Z,23.8594,-108.9037,10,4.1,mb,40,128,0.969,0.8,us,us7000l5x1,2024-01-04T04:22:03.040Z,"75 km ENE of La Rivera, Mexico",earthquake,4.39,1.857,0.059,78,reviewed,us,us
+2023-10-25T17:06:12.519Z,17.3901,-101.8577,10,4.2,mb,98,103,0.432,1.15,us,us7000l6bc,2024-10-12T22:32:18.929Z,"38 km SW of Ixtapa, Mexico",earthquake,3.67,1.662,0.059,80,reviewed,us,us
+2023-10-26T01:19:25.334Z,16.3189,-98.4739,10,4.2,mb,83,207,1.038,0.77,us,us7000l6ei,2024-01-04T04:22:14.040Z,"3 km SW of Santiago Tepextla, Mexico",earthquake,8.58,1.991,0.068,60,reviewed,us,us
+2023-10-26T07:34:55.989Z,17.5973,-94.6615,157.884,4.4,mb,119,83,0.49,0.72,us,us7000l6gy,2024-01-04T04:22:17.040Z,"11 km ESE of Venustiano Carranza (Peña Blanca), Mexico",earthquake,2.75,4.812,0.047,129,reviewed,us,us
+2023-10-26T07:53:53.091Z,15.3021,-94.4374,42.481,4.2,mb,66,163,1.676,0.71,us,us7000l6h2,2024-01-04T04:22:17.040Z,"99 km SW of Cabeza de Toro, Mexico",earthquake,6.22,10.39,0.064,68,reviewed,us,us
+2023-10-26T09:34:20.440Z,14.5283,-92.6953,57.614,4.6,mb,76,110,0.563,1.29,us,us7000l6hq,2024-01-04T04:22:17.040Z,"36 km SW of Puerto Madero, Mexico",earthquake,5.92,3.76,0.033,271,reviewed,us,us
+2023-10-27T09:01:02.035Z,14.1765,-93.3804,10,4.7,mb,124,156,2.413,0.69,us,us7000l6t0,2024-01-04T04:22:24.040Z,"119 km WSW of Puerto Madero, Mexico",earthquake,6.63,1.866,0.031,324,reviewed,us,us
+2023-10-27T09:31:21.088Z,14.1854,-93.3654,10,4.2,mb,94,208,2.398,0.62,us,us7000l6t6,2024-01-04T04:22:24.040Z,"117 km WSW of Puerto Madero, Mexico",earthquake,9.97,1.967,0.056,89,reviewed,us,us
+2023-10-27T13:23:59.032Z,14.7448,-92.0963,103.182,4,mb,43,126,0.23,0.74,us,us7000l835,2024-01-04T04:22:25.040Z,"7 km WNW of Pajapita, Guatemala",earthquake,6.34,4.295,0.093,31,reviewed,us,us
+2023-10-27T18:39:31.472Z,16.8782,-94.5845,115.626,4.8,mb,208,83,0.356,0.95,us,us7000l6yb,2024-01-04T04:22:27.040Z,"10 km ESE of Santa María Chimalapa, Mexico",earthquake,5.99,5.394,0.032,315,reviewed,us,us
+2023-11-02T23:58:35.829Z,17.0609,-94.2235,140.297,4.9,mb,135,79,0.632,0.46,us,us7000l8gq,2024-01-10T06:01:44.040Z,"16 km S of La Horqueta (Poblado Doce), Mexico",earthquake,5.78,4.653,0.026,467,reviewed,us,us
+2023-11-04T14:03:24.877Z,14.0528,-91.5399,60.967,4.2,mb,32,178,1.715,1.11,us,us7000l8vc,2024-01-10T06:01:57.040Z,"30 km WSW of Nueva Concepción, Guatemala",earthquake,9.47,12.464,0.08,43,reviewed,us,us
+2023-11-04T23:39:55.917Z,32.312,-101.828,6.7251,4.1,ml(texnet),30,45,0,0.1,tx,tx2023vqsh,2024-01-10T06:01:58.040Z,"20 km N of Stanton, Texas",earthquake,0.3733968354,0.5894399804,0.3,24,reviewed,tx,tx
+2023-11-05T00:49:51.985Z,32.309,-101.827,6.9941,4.1,ml(texnet),25,59,0,0.1,tx,tx2023vqus,2024-01-13T23:10:01.040Z,"20 km N of Stanton, Texas",earthquake,0.4075488477,0.6522286896,0.2,94,reviewed,tx,tx
+2023-11-05T05:12:57.650Z,32.8643333,-115.7388333,13.16,3.87,ml,70,39,0.01633,0.31,ci,ci39708250,2024-01-13T23:10:02.040Z,"16 km W of Imperial, CA",earthquake,0.24,0.52,0.163,138,reviewed,ci,ci
+2023-11-05T18:56:08.102Z,14.15,-91.2104,93.012,4.4,mb,110,98,1.78,0.77,us,us7000l91w,2024-01-13T23:10:07.040Z,"11 km ESE of Nueva Concepción, Guatemala",earthquake,7.73,4.634,0.042,165,reviewed,us,us
+2023-11-08T10:27:49.034Z,31.622,-103.982,7.417,5.2,ml(texnet),31,52,0,0.2,tx,tx2023vxae,2025-10-23T20:54:46.130Z,"Coalson Draw, Texas",earthquake,0.6306655439,0.8419580201,0.2,41,reviewed,tx,tx
+2023-11-09T08:23:42.787Z,14.4511,-91.3596,11.188,4.4,mb,63,182,1.626,0.57,us,us7000l9sw,2024-01-13T23:10:49.040Z,"6 km E of San José El Ídolo, Guatemala",earthquake,10.98,6.409,0.067,63,reviewed,us,us
+2023-11-11T21:07:15.359Z,15.8416,-89.1655,10,4.3,mb,42,81,2.018,0.68,us,us7000lae0,2024-01-13T23:11:39.040Z,"38 km NNE of El Estor, Guatemala",earthquake,6.84,1.956,0.086,38,reviewed,us,us
+2023-11-12T23:21:56.005Z,32.224,-101.997,8.9749,3.5,ml(texnet),16,72,0.1,0.1,tx,tx2023wfhu,2024-01-26T16:37:58.040Z,"22 km WNW of Stanton, Texas",earthquake,0.4781169874,0.768797658,0.1,8,reviewed,tx,tx
+2023-11-13T07:07:48.263Z,25.7449,-110.139,10,4.5,mb,145,131,1.002,0.59,us,us7000lale,2024-01-26T16:37:37.040Z,"81 km W of Las Grullas Margen Derecha, Mexico",earthquake,4.39,1.899,0.05,119,reviewed,us,us
+2023-11-15T10:58:32.905Z,31.1,-103.265,0.0902,3.5,ml(texnet),18,70,0,0.2,tx,tx2023wjvs,2024-01-26T16:37:43.040Z,"24 km SW of Coyanosa, Texas",earthquake,0.8790168247,0.9820288713,0.4,13,reviewed,tx,tx
+2023-11-18T14:16:11.317Z,32.761,-100.658,9.195,3.5,ml(texnet),21,79,0.1,0.2,tx,tx2023wpos,2024-01-26T16:37:52.040Z,"16 km NE of Hermleigh, Texas",earthquake,1.117491097,1.314211667,0.1,7,reviewed,tx,tx
+2023-11-18T21:06:42.875Z,17.2335,-95.2935,110.899,4.4,mb,102,94,0.416,0.59,us,us6000lpd5,2024-01-26T16:37:25.040Z,"14 km SE of Constitución Mexicana, Mexico",earthquake,5.94,5.993,0.039,186,reviewed,us,us
+2023-11-19T10:08:09.085Z,17.6699,-94.6702,142.14,4.5,mb,71,129,2.79,0.68,us,us6000lpfb,2024-02-01T15:13:41.040Z,"9 km ENE of Venustiano Carranza (Peña Blanca), Mexico",earthquake,10.42,8.59,0.04,185,reviewed,us,us
+2023-11-19T18:24:28.725Z,14.2055,-93.0469,10,4.1,mb,58,201,1.2,0.66,us,us6000lqbs,2024-02-01T15:13:43.040Z,"88 km SW of Puerto Madero, Mexico",earthquake,3.59,1.982,0.084,39,reviewed,us,us
+2023-11-19T18:25:52.202Z,14.1032,-93.0987,10,4.4,mb,110,189,1.31,0.68,us,us6000lph3,2024-02-01T15:13:41.040Z,"100 km SW of Puerto Madero, Mexico",earthquake,6.77,1.928,0.054,99,reviewed,us,us
+2023-11-19T19:31:45.260Z,31.672,-104.535,5.5146,3.6,ml(texnet),44,79,0,0.2,tx,tx2023wruq,2024-02-01T15:13:41.040Z,"57 km SSW of Whites City, New Mexico",earthquake,1.271798825,0.5726897481,0.2,12,reviewed,tx,tx
+2023-11-21T03:27:58.870Z,16.1257,-99.019,10,3.9,mb,27,205,1.077,0.62,us,us7000lg46,2024-02-01T15:13:47.040Z,"52 km SW of Barra de Tecoanapa, Mexico",earthquake,3.21,1.881,0.363,2,reviewed,us,us
+2023-11-21T20:24:29.925Z,16.8091,-99.4766,23.521,4.5,mb,111,117,0.269,0.7,us,us6000lpwq,2024-02-01T15:13:42.040Z,"4 km NE of El Cortés, Mexico",earthquake,5.62,5.585,0.045,145,reviewed,us,us
+2023-11-23T23:14:34.607Z,32.409,-102.019,7.6054,4.2,ml,19,56,0.1,0.2,tx,tx2023wzka,2024-02-01T15:13:43.040Z,"31 km WSW of Ackerly, Texas",earthquake,1.197982683,1.98300421,0,6,reviewed,tx,tx
+2023-11-24T19:26:03.401Z,19.8673,-109.2911,10,5.5,mww,174,101,3.848,0.63,us,us6000lqk3,2024-02-01T15:13:44.040Z,"Revilla Gigedo Islands region",earthquake,8.9,1.857,0.037,71,reviewed,us,us
+2023-11-28T04:11:07.246Z,27.5951,-111.4402,10,4.2,mb,32,116,0.763,0.69,us,us7000le8s,2024-02-06T21:53:53.040Z,"56 km SW of San Carlos, Mexico",earthquake,4.54,1.953,0.079,44,reviewed,us,us
+2023-11-28T18:34:24.774Z,15.4034,-92.8041,109.261,4,mb,35,91,0.717,0.72,us,us7000lecp,2024-02-06T21:53:54.040Z,"1 km E of Nueva Sesecapa, Mexico",earthquake,5,6.259,0.13,19,reviewed,us,us
+2023-11-30T03:38:24.619Z,16.232,-98.0846,27.9,4.1,mb,27,187,0.808,0.58,us,us7000lg4f,2024-02-06T21:53:59.040Z,"6 km WSW of El Carrizo, Mexico",earthquake,4.71,4.232,0.135,15,reviewed,us,us
+2023-12-01T07:43:27.480Z,32.7518333,-115.8728333,8.69,4.8,mw,95,29,0.1121,0.26,ci,ci39720706,2024-10-21T23:22:41.422Z,"11 km E of Ocotillo, CA",earthquake,0.17,0.56,,6,reviewed,ci,ci
+2023-12-02T00:59:16.643Z,15.1695,-91.6718,185.813,4.2,mb,32,114,1.193,0.59,us,us7000lgyl,2024-02-06T21:54:00.040Z,"6 km SW of Sipacapa, Guatemala",earthquake,8.65,5.506,0.118,20,reviewed,us,us
+2023-12-03T03:47:48.524Z,17.0589,-94.7183,122.219,4.3,mb,93,86,0.162,1,us,us7000lfr5,2024-02-10T23:47:23.040Z,"17 km NNW of Santa María Chimalapa, Mexico",earthquake,5.39,6.112,0.053,101,reviewed,us,us
+2023-12-04T16:12:29.203Z,16.5593,-98.4311,10,4.3,mb,60,171,0.698,0.82,us,us7000lhie,2024-02-10T23:47:30.040Z,"9 km N of Cuajinicuilapa, Mexico",earthquake,3.03,1.917,0.079,45,reviewed,us,us
+2023-12-04T23:59:09.290Z,31.666,-104.376,6.5943,4,ml,21,69,0,0.2,tx,tx2023xtoa,2024-02-10T23:47:32.040Z,"56 km S of Whites City, New Mexico",earthquake,1.173953394,1.042688788,0,7,reviewed,tx,tx
+2023-12-06T04:30:22.080Z,32.737,-115.8783333,9.29,3.65,ml,69,29,0.09661,0.25,ci,ci40616768,2024-06-07T00:31:41.502Z,"11 km E of Ocotillo, CA",earthquake,0.21,0.57,0.136,134,reviewed,ci,ci
+2023-12-07T00:45:21.213Z,18.2348,-94.3709,10.28,4.3,mb,21,66,0.937,0.59,us,us7000lgsi,2024-02-10T23:47:39.040Z,"9 km NNE of Allende, Mexico",earthquake,1.82,6.464,0.108,24,reviewed,us,us
+2023-12-07T20:03:38.568Z,18.2702,-98.7384,54,5.7,mww,212,24,0.666,1.06,us,us7000lh50,2024-11-19T03:23:33.560Z,"12 km SSW of Huehuetlan el Chico, Mexico",earthquake,1.14,1.844,0.036,73,reviewed,us,us
+2023-12-09T11:20:55.843Z,28.0706,-112.189,10,4.1,mb,24,133,0.749,0.94,us,us7000lhqi,2024-02-10T23:47:45.040Z,"81 km N of Santa Rosalía, Mexico",earthquake,5.31,1.974,0.151,12,reviewed,us,us
+2023-12-12T03:18:22.318Z,31.656,-104.028,6.7614,3.6,ml,43,43,0,0.2,tx,tx2023ygpd,2024-02-17T22:43:06.040Z,"41 km W of Mentone, Texas",earthquake,0.3825006455,0.4550984901,0.1,25,reviewed,tx,tx
+2023-12-12T21:07:08.497Z,14.6225,-91.6098,115.425,4.6,mb,133,132,1.726,0.62,us,us7000lii1,2024-02-17T22:43:07.040Z,"1 km W of San Felipe, Guatemala",earthquake,9.26,6.397,0.048,130,reviewed,us,us
+2023-12-13T15:47:58.913Z,31.737,-104.112,7.4684,3.8,ml,42,52,0,0.2,tx,tx2023yjji,2024-02-17T22:43:09.040Z,"48 km W of Mentone, Texas",earthquake,0.46734374,0.8493216721,0.2,25,reviewed,tx,tx
+2023-12-13T19:40:10.695Z,14.446,-93.2368,39.398,4.1,mb,50,176,1.046,1.2,us,us7000lk38,2024-02-17T22:43:13.040Z,"92 km WSW of Puerto Madero, Mexico",earthquake,5.04,11.45,0.097,29,reviewed,us,us
+2023-12-14T01:14:48.329Z,32.759,-100.643,7.8744,3.8,ml,22,51,0.1,0.1,tx,tx2023ykca,2024-02-17T22:43:09.040Z,"17 km NE of Hermleigh, Texas",earthquake,0.7208216943,1.10977718,0.2,12,reviewed,tx,tx
+2023-12-14T16:21:26.606Z,14.2679,-92.8796,42.012,5,mb,217,61,0.871,0.79,us,us7000lj2f,2024-02-17T22:43:09.040Z,"70 km SW of Puerto Madero, Mexico",earthquake,5.49,4.552,0.024,566,reviewed,us,us
+2023-12-14T17:00:46.452Z,14.0372,-93.0557,10,4.6,mb,77,160,2.401,0.48,us,us7000lj2l,2024-02-17T22:43:09.040Z,"101 km SW of Puerto Madero, Mexico",earthquake,5.16,1.925,0.053,107,reviewed,us,us
+2023-12-16T09:34:32.109Z,16.8464,-93.8153,158.698,4.2,mb,81,117,0.566,0.65,us,us7000lkl6,2024-02-17T22:43:14.040Z,"7 km NW of Francisco I. Madero, Mexico",earthquake,5.97,5.164,0.061,75,reviewed,us,us
+2023-12-16T16:10:09.535Z,15.0336,-92.5961,80.78,4.4,mb,19,180,0.343,0.56,us,us7000lklq,2024-02-17T22:43:14.040Z,"6 km SW of Francisco I. Madero, Mexico",earthquake,5.79,4.892,0.267,4,reviewed,us,us
+2023-12-17T03:24:35.658Z,14.3892,-92.8289,45.111,4.4,mb,58,118,0.751,0.81,us,us7000ljm8,2024-02-27T22:56:59.040Z,"57 km SW of Puerto Madero, Mexico",earthquake,6.29,4.064,0.051,112,reviewed,us,us
+2023-12-17T14:35:04.574Z,31.68,-104.535,5.7717,3.6,ml,15,80,0,0.4,tx,tx2023yqoy,2024-02-27T22:57:00.040Z,"56 km SSW of Whites City, New Mexico",earthquake,1.789120557,0.9551133697,0.1,8,reviewed,tx,tx
+2023-12-17T19:34:55.095Z,31.618,-103.968,6.71,3.9,ml,17,67,0,0.1,tx,tx2023yqyv,2024-02-27T22:57:00.040Z,"36 km WSW of Mentone, Texas",earthquake,0.3785050318,0.3814819298,0.2,13,reviewed,tx,tx
+2023-12-18T00:15:07.716Z,14.3027,-93.9214,10,4.9,mb,138,94,1.55,0.74,us,us7000ljru,2024-02-27T22:57:00.040Z,"150 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,5.8,1.756,0.051,118,reviewed,us,us
+2023-12-19T07:35:28.237Z,14.8848,-93.1961,51.792,4.2,mb,34,179,0.815,0.53,us,us6000m16n,2024-02-27T22:56:56.040Z,"62 km WSW of El Arenal, Mexico",earthquake,3.14,9.396,0.124,18,reviewed,us,us
+2023-12-20T14:19:17.742Z,32.385,-101.635,6.2849,3.5,ml,22,81,0,0.2,tx,tx2023ywba,2024-02-27T22:57:02.040Z,"17 km SSE of Ackerly, Texas",earthquake,0.8497987126,1.074000404,0.2,19,reviewed,tx,tx
+2023-12-22T02:49:18.738Z,32.764,-100.636,8.6325,3.6,ml,19,80,0.1,0.2,tx,tx2023yyve,2024-02-27T22:57:04.040Z,"18 km NE of Hermleigh, Texas",earthquake,0.8642210617,1.12294068,0.2,14,reviewed,tx,tx
+2023-12-29T12:33:33.662Z,14.2517,-91.4038,83.572,4.1,mb,49,176,1.614,0.5,us,us6000m2qf,2024-03-02T21:39:37.040Z,"5 km SW of Tiquisate, Guatemala",earthquake,9.88,11.185,0.087,36,reviewed,us,us
+2023-12-30T19:32:33.585Z,31.616,-103.975,7.7383,3.9,ml,36,54,0,0.1,tx,tx2023zosh,2024-03-02T21:39:34.040Z,"36 km WSW of Mentone, Texas",earthquake,0.4603198214,0.622913158,0.1,29,reviewed,tx,tx
+2023-12-30T20:28:48.125Z,31.594,-103.953,7.674,3.5,ml,29,55,0.1,0.1,tx,tx2023zoue,2024-03-02T21:39:34.040Z,"34 km NNW of Toyah, Texas",earthquake,0.9388235241,1.499240103,0.1,36,reviewed,tx,tx

@@ -1,0 +1,331 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2018-01-01T09:40:08.750Z,16.6729,-86.1807,16.34,4.5,mwr,,35,2.492,0.93,us,us1000byr6,2018-03-23T23:16:47.040Z,"39 km NW of Guanaja, Honduras",earthquake,6.8,5.4,0.073,18,reviewed,us,us
+2018-01-02T09:48:39.220Z,15.9239,-94.8354,48.41,4.6,mwr,,93,1.161,1.2,us,us1000byz4,2018-03-23T23:16:48.040Z,"35 km SSE of San Mateo del Mar, Mexico",earthquake,2.4,6.2,0.11,8,reviewed,us,us
+2018-01-03T02:29:03.280Z,15.3209,-94.557,10,4.3,mb,,166,1.345,1.24,us,us1000bz7m,2018-03-23T23:16:49.040Z,"101 km S of San Francisco del Mar Viejo, Mexico",earthquake,5.8,2,0.073,53,reviewed,us,us
+2018-01-04T11:43:06.610Z,15.5007,-90.5691,40.45,4.6,mb,,142,1.696,1.49,us,us1000c0mp,2018-03-23T23:16:50.040Z,"11 km N of San Cristóbal Verapaz, Guatemala",earthquake,8,6.2,0.039,192,reviewed,us,us
+2018-01-04T16:09:46.160Z,15.4793,-94.7374,27.67,4.4,mb,,164,1.351,1.31,us,us1000c0qh,2018-03-23T23:16:50.040Z,"84 km S of San Francisco del Mar Viejo, Mexico",earthquake,5.6,8,0.073,54,reviewed,us,us
+2018-01-06T08:22:01.310Z,16.0834,-93.7313,107.55,4,mb,,134,0.62,1.07,us,us1000c1e8,2018-03-23T23:16:52.040Z,"2 km ESE of Tonalá, Mexico",earthquake,2.8,8.8,0.195,7,reviewed,us,us
+2018-01-06T15:37:17.770Z,28.8497,-98.119,5,3.6,mb_lg,,82,0.272,1.07,us,us1000c1fk,2025-07-02T19:49:39.632Z,"17 km SW of Falls City, Texas",earthquake,4.1,2,0.068,56,reviewed,us,us
+2018-01-07T19:30:21.330Z,31.616,-115.8161667,13.98,3.91,ml,19,118,0.2256,0.1,ci,ci37848759,2018-03-23T23:16:54.040Z,"72km E of Maneadero, B.C., MX",earthquake,0.19,0.38,0.179,270,reviewed,ci,ci
+2018-01-08T17:01:00.860Z,16.4522,-99.18,10,4.1,mb,,200,0.286,1.47,us,us1000c223,2018-04-03T01:40:23.040Z,"27 km SW of Copala, Mexico",earthquake,4.2,1.9,0.107,24,reviewed,us,us
+2018-01-09T07:27:29.000Z,15.0083,-94.2172,35.36,4.5,mb,,152,1.889,1.31,us,us1000c2ep,2018-04-03T01:40:23.040Z,"111 km SW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,6.2,9.7,0.077,50,reviewed,us,us
+2018-01-10T15:43:03.360Z,14.4351,-89.9521,246.21,4.1,mb,,141,0.574,0.77,us,us2000cnvs,2018-04-03T01:40:25.040Z,"11 km SW of Monjas, Guatemala",earthquake,7.8,10.6,0.198,7,reviewed,us,us
+2018-01-10T23:44:55.940Z,17.073,-101.3687,10,4.3,mb,,202,0.538,1.12,us,us2000ci08,2018-04-03T01:40:25.040Z,"44 km SW of Papanoa, Mexico",earthquake,3.4,1.9,0.103,27,reviewed,us,us
+2018-01-13T20:08:44.670Z,17.3029,-100.8574,10,4.2,mb,,179,0.618,1.01,us,us2000cjch,2018-04-03T01:40:29.040Z,"4 km NNE of San Luis San Pedro, Mexico",earthquake,2.1,2,0.167,10,reviewed,us,us
+2018-01-18T08:43:55.520Z,16.9826,-94.8324,111.92,4.4,mb,,86,0.118,1.06,us,us2000ckpj,2018-04-10T01:11:45.040Z,"14 km SSE of Cuauhtémoc, Mexico",earthquake,3.7,8,0.078,48,reviewed,us,us
+2018-01-18T14:58:42.040Z,14.5745,-93.1769,24.28,5,mww,,109,0.942,1.4,us,us2000cksw,2025-12-22T17:29:52.855Z,"81 km WSW of Aquiles Serdán, Mexico",earthquake,6.4,4.5,0.069,20,reviewed,us,us
+2018-01-19T06:09:37.010Z,15.3172,-94.6242,44.04,4.2,mb,,172,1.408,0.76,us,us1000cgut,2018-04-10T01:11:46.040Z,"101 km S of San Francisco del Mar Viejo, Mexico",earthquake,4.7,15.1,0.159,11,reviewed,us,us
+2018-01-19T16:17:44.720Z,26.6862,-111.0785,10,6.3,mww,,109,1.214,1.45,us,us2000cl83,2023-04-01T14:47:14.196Z,"79 km NNE of Loreto, Mexico",earthquake,5.7,1.8,0.035,79,reviewed,us,us
+2018-01-19T16:48:28.010Z,26.6067,-111.1312,10,4.5,mb,,146,1.218,1.47,us,us2000cl8x,2018-04-10T01:11:47.040Z,"69 km NNE of Loreto, Mexico",earthquake,7.4,1.9,0.058,87,reviewed,us,us
+2018-01-20T13:48:54.420Z,26.6362,-111.0263,10,4.5,mb,,141,1.28,1.42,us,us2000clsy,2022-08-07T23:16:46.683Z,"76 km NNE of Loreto, Mexico",earthquake,5.2,1.9,0.088,38,reviewed,us,us
+2018-01-20T18:12:26.630Z,15.3728,-94.7482,29.35,4.1,mb,,169,1.368,1.41,us,us1000cgwp,2018-04-10T01:11:49.040Z,"95 km S of San Francisco del Mar Viejo, Mexico",earthquake,2.7,11.3,0.302,3,reviewed,us,us
+2018-01-20T21:49:49.370Z,15.3396,-94.7671,10,4,mb,,169,1.361,1.46,us,us1000cgwv,2018-04-10T01:11:49.040Z,"99 km SSE of San Mateo del Mar, Mexico",earthquake,3.6,2,0.231,5,reviewed,us,us
+2018-01-21T04:30:30.150Z,15.4682,-94.7567,10,4,mb,,166,1.336,1.42,us,us2000cm1u,2018-04-10T01:11:50.040Z,"85 km S of San Francisco del Mar Viejo, Mexico",earthquake,4.9,2,0.126,17,reviewed,us,us
+2018-01-21T07:30:13.230Z,15.4559,-94.9729,10,4.1,mb,,121,1.137,0.81,us,us1000cgxa,2018-04-10T01:11:50.040Z,"81 km SSE of El Carrizal, Mexico",earthquake,5.6,2,0.197,7,reviewed,us,us
+2018-01-21T09:00:48.990Z,15.8362,-94.9991,29.42,4.2,mb,,172,1.252,1.31,us,us2000cm35,2022-08-07T23:18:17.482Z,"41 km S of Colonia Juárez, Mexico",earthquake,2.7,9.5,0.081,42,reviewed,us,us
+2018-01-21T09:45:08.730Z,14.1858,-91.9609,66.8,4.2,mb,,151,2.09,1.06,us,us2000cm3d,2018-04-10T01:11:50.040Z,"13 km SSW of Champerico, Guatemala",earthquake,10.4,14.6,0.092,33,reviewed,us,us
+2018-01-21T17:04:12.580Z,30.2302,-114.2468,10,4.5,mb,,197,0.958,1.25,us,us2000cm5c,2022-08-07T23:20:36.403Z,"104 km SSE of San Felipe, Mexico",earthquake,7,1.9,0.058,89,reviewed,us,us
+2018-01-22T06:36:39.450Z,17.4035,-96.3987,10,4.1,mb,,73,0.458,1.13,us,us2000cmby,2018-04-20T07:05:06.040Z,"10 km WNW of Tanetze de Zaragoza, Mexico",earthquake,5,1.9,0.07,56,reviewed,us,us
+2018-01-25T11:32:17.270Z,15.3203,-94.5866,35,4.3,mb,,156,1.372,0.95,us,us2000cp7w,2018-04-20T07:05:22.040Z,"100 km S of San Francisco del Mar Viejo, Mexico",earthquake,4.9,2,0.068,62,reviewed,us,us
+2018-01-26T19:54:18.110Z,26.7086,-111.0119,14.69,4.4,mb,,133,1.254,1.16,us,us2000cq0x,2018-04-20T07:05:27.040Z,"84 km NNE of Loreto, Mexico",earthquake,3.2,5,0.07,58,reviewed,us,us
+2018-01-28T17:05:23.220Z,15.7636,-94.9277,41.47,4.4,mb,,120,1.136,1.23,us,us2000cqpg,2018-04-20T07:05:34.040Z,"49 km S of San Mateo del Mar, Mexico",earthquake,5.2,8.3,0.062,75,reviewed,us,us
+2018-01-29T17:41:51.850Z,17.4301,-101.59,10,4.1,mb,,189,1.32,1.33,us,us1000ch5k,2022-08-08T00:19:01.908Z,"23 km S of Ixtapa-Zihuatanejo, Mexico",earthquake,3.3,2,0.15,12,reviewed,us,us
+2018-01-30T07:09:23.310Z,14.9877,-94.2567,10,4.3,mb,,188,1.229,1.22,us,us1000ch63,2018-04-25T01:39:37.040Z,"115 km SW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,5.7,2,0.142,14,reviewed,us,us
+2018-01-30T13:18:36.310Z,16.4589,-94.624,90.74,4.2,mb,,121,0.676,0.92,us,us1000ch6d,2018-04-25T01:39:37.040Z,"10 km N of Las Amilpas, Mexico",earthquake,4.8,8.4,0.236,5,reviewed,us,us
+2018-01-30T20:50:15.980Z,15.6615,-94.8885,35,4.3,mb,,166,1.179,1.3,us,us1000ch6h,2018-04-25T01:39:38.040Z,"61 km S of San Mateo del Mar, Mexico",earthquake,6.9,2,0.266,4,reviewed,us,us
+2018-01-30T21:54:42.100Z,18.2338,-107.2314,10,4.2,mb,,203,3.572,0.54,us,us2000cri5,2018-04-25T01:39:38.040Z,"268 km SW of José María Morelos, Mexico",earthquake,8.8,2,0.098,29,reviewed,us,us
+2018-02-02T01:56:23.960Z,15.243,-94.7114,29.94,4,mb,,190,1.444,0.45,us,us2000da5h,2018-04-25T01:39:42.040Z,"109 km S of San Francisco del Mar Viejo, Mexico",earthquake,9.6,9.2,0.366,2,reviewed,us,us
+2018-02-02T03:58:58.610Z,16.1408,-95.0994,35,4.3,mb,,129,0.967,0.85,us,us1000ce58,2018-04-25T01:39:42.040Z,"9 km SSE of Huazantlán del Río, Mexico",earthquake,8.1,2,0.108,24,reviewed,us,us
+2018-02-02T12:22:39.170Z,15.33,-90.4866,10,3.9,ml,,105,0.98,0.83,us,us1000cftj,2018-04-25T01:39:43.040Z,"7 km SW of Santa Cruz Verapaz, Guatemala",earthquake,3.8,2,0.077,22,reviewed,us,us
+2018-02-05T01:24:21.570Z,17.8044,-102.431,35,4.1,mb,,152,0.994,1.18,us,us1000cfv0,2018-05-03T22:14:57.040Z,"21 km SSW of Playa Azul, Mexico",earthquake,4.8,1.9,0.07,55,reviewed,us,us
+2018-02-05T06:08:56.690Z,14.4007,-92.8023,24.29,4.2,mb,,175,0.724,1.39,us,us1000cfw5,2018-05-03T22:14:57.040Z,"54 km SW of Puerto Madero, Mexico",earthquake,7,11.3,0.091,34,reviewed,us,us
+2018-02-07T09:21:04.580Z,15.7571,-96.4759,10,4.6,mb,,152,0.354,1.04,us,us1000ci5h,2018-05-03T22:15:01.040Z,"1 km NW of San Pedro Pochutla, Mexico",earthquake,3.9,1.8,0.03,334,reviewed,us,us
+2018-02-09T10:19:55.490Z,15.3199,-88.8958,10,4.2,mb,,44,0.506,0.98,us,us2000czfr,2022-08-08T00:11:37.565Z,"17 km SSW of Morales, Guatemala",earthquake,5.8,1.9,0.052,102,reviewed,us,us
+2018-02-09T14:05:48.330Z,18.9311,-104.6522,13,5.8,mww,,89,1.132,1.44,us,us2000czig,2025-01-12T08:53:54.525Z,"30 km S of Barra de Navidad, Mexico",earthquake,4,1.7,0.044,49,reviewed,us,us
+2018-02-10T01:31:40.050Z,14.8248,-92.5941,46.12,4.1,mb,,165,0.328,0.98,us,us2000d01n,2018-05-03T22:15:07.040Z,"14 km WSW of Buenos Aires, Mexico",earthquake,6.1,13.7,0.131,16,reviewed,us,us
+2018-02-10T11:04:13.530Z,15.1058,-92.347,94.99,5,mww,,69,0.212,1.33,us,us2000d07k,2025-12-22T17:30:30.232Z,"1 km SSE of Cantón Villaflor, Mexico",earthquake,6.4,3.7,0.061,26,reviewed,us,us
+2018-02-10T15:15:32.600Z,14.1487,-91.2282,83.4,4.3,mb,,201,0.586,1.09,us,us2000d09k,2018-05-03T22:15:08.040Z,"9 km SE of Nueva Concepción, Guatemala",earthquake,8,8.7,0.095,31,reviewed,us,us
+2018-02-11T23:44:21.700Z,15.5912,-92.9418,117.93,4.5,mb,,117,0.289,1.28,us,us2000d0qb,2018-05-03T22:15:11.040Z,"8 km ENE of Hermenegildo Galeana, Mexico",earthquake,5.9,3,0.041,175,reviewed,us,us
+2018-02-13T10:03:43.910Z,19.3091,-109.0708,10,4,mb,,153,1.826,1.17,us,us2000daes,2018-05-15T06:29:04.040Z,"Revilla Gigedo Islands region",earthquake,7.5,2,0.085,37,reviewed,us,us
+2018-02-14T08:35:32.050Z,15.5393,-95.6953,16.1,5,mb,,132,0.458,1.12,us,us2000d1wu,2025-12-22T16:53:08.895Z,"43 km SSE of El Coyul, Mexico",earthquake,5.1,4.3,0.028,391,reviewed,us,us
+2018-02-14T13:06:36.980Z,16.0653,-98.3835,10,4.4,mb,,197,0.407,1.46,us,us2000d1zi,2018-05-15T06:29:06.040Z,"28 km SW of Corralero, Mexico",earthquake,4.1,1.9,0.095,32,reviewed,us,us
+2018-02-14T16:28:55.040Z,15.1429,-91.0858,253.85,4.4,mb,,77,0.438,0.94,us,us2000d6z3,2018-05-15T06:29:06.040Z,"5 km S of San Bartolomé Jocotenango, Guatemala",earthquake,8.8,8.4,0.098,30,reviewed,us,us
+2018-02-16T01:54:42.060Z,15.6331,-95.0178,39.07,4.6,mwr,,119,1.058,0.94,us,us2000d30g,2022-08-08T00:24:09.662Z,"62 km SE of El Carrizal, Mexico",earthquake,5.3,2.8,0.098,10,reviewed,us,us
+2018-02-16T23:39:39.280Z,16.3855,-97.9787,22,7.2,mww,,82,0.142,1.23,us,us2000d3km,2024-10-07T06:48:33.331Z,"4 km S of Pinotepa de Don Luis, Mexico",earthquake,4.3,1.8,0.062,25,reviewed,us,us
+2018-02-17T00:36:52.130Z,16.1557,-97.8665,3.48,5.8,mww,,90,0.708,1.27,us,us2000d3m0,2022-05-03T19:02:57.492Z,"8 km SE of José María Morelos, Mexico",earthquake,5.5,3.5,0.071,19,reviewed,us,us
+2018-02-17T02:01:32.090Z,16.4168,-98.1242,18.45,4.3,mb,,155,0.706,0.95,us,us2000d3q6,2018-05-15T06:29:12.040Z,"3 km NNW of Mancuernas, Mexico",earthquake,3.8,4.4,0.072,55,reviewed,us,us
+2018-02-17T03:28:46.730Z,16.0163,-98.1762,20.86,4.2,mb,,209,0.989,0.7,us,us2000d3qi,2018-05-15T06:29:12.040Z,"24 km S of Corralero, Mexico",earthquake,10.5,14.2,0.088,36,reviewed,us,us
+2018-02-17T03:54:46.400Z,16.4032,-97.4865,34.38,5,mb,,98,0.518,0.86,us,us2000d3ql,2022-05-03T18:47:54.057Z,"12 km N of Tepenixtlahuaca, Mexico",earthquake,6.3,5,0.045,159,reviewed,us,us
+2018-02-17T07:23:31.300Z,16.0294,-98.0833,10.34,4.2,mb,,168,0.9,1.25,us,us2000d3sw,2018-05-15T06:29:12.040Z,"20 km SW of Santa María Chico Ometepec, Mexico",earthquake,5.5,6.7,0.107,24,reviewed,us,us
+2018-02-17T10:49:07.370Z,22.2881,-108.1607,10,4,mb,,216,1.836,0.83,us,us2000d3u6,2022-08-08T00:26:28.350Z,"177 km ESE of La Playa, Mexico",earthquake,3.4,2,0.051,101,reviewed,us,us
+2018-02-17T14:07:32.960Z,16.4722,-97.9128,10,4.1,mb,,149,1.197,0.79,us,us2000d3ut,2018-05-15T06:29:13.040Z,"4 km ENE of San Juan Colorado, Mexico",earthquake,4.3,2,0.073,51,reviewed,us,us
+2018-02-17T14:57:07.440Z,16.4835,-99.9465,28.94,4.3,mb,,251,0.392,0.93,us,us2000daif,2018-05-15T06:29:13.040Z,"40 km SW of San Andrés Playa Encantada (El Podrido), Mexico",earthquake,4.8,10.4,0.177,9,reviewed,us,us
+2018-02-17T19:42:44.560Z,16.1884,-98.1324,18.99,4,mb,,199,0.202,0.73,us,us2000d3xq,2018-05-15T06:29:13.040Z,"8 km SE of Corralero, Mexico",earthquake,3.5,8.5,0.157,11,reviewed,us,us
+2018-02-17T21:30:43.760Z,16.5065,-97.8801,19.23,5.2,mww,,85,0.262,0.72,us,us2000d3yq,2022-05-03T19:18:42.373Z,"9 km ENE of San Juan Colorado, Mexico",earthquake,6.7,3.4,0.056,31,reviewed,us,us
+2018-02-18T13:42:15.200Z,15.4097,-87.8617,10,4,ml,,135,0.765,0.4,us,us2000d7vr,2022-08-08T00:40:12.614Z,"6 km ESE of La Lima, Honduras",earthquake,3.5,2,0.073,25,reviewed,us,us
+2018-02-19T06:56:58.170Z,16.2857,-97.7314,22,5.9,mww,,72,0.394,1.43,us,us2000d4lg,2022-05-03T19:08:52.800Z,"4 km SSE of Santiago Tetepec, Mexico",earthquake,3.6,1.7,0.046,46,reviewed,us,us
+2018-02-19T13:12:25.030Z,16.3112,-97.9966,13.78,4.5,mb,,192,0.149,0.83,us,us2000dakh,2018-05-22T02:00:17.040Z,"4 km SW of Rancho Viejo, Mexico",earthquake,5.2,5.8,0.09,36,reviewed,us,us
+2018-02-19T18:16:03.310Z,19.2411,-108.7625,10,4.6,mb,,112,2.092,1.44,us,us2000d4up,2018-05-22T02:00:17.040Z,"Revilla Gigedo Islands region",earthquake,4.9,1.9,0.033,273,reviewed,us,us
+2018-02-20T06:28:44.460Z,15.5037,-94.8467,34.93,4.9,mb,,117,1.243,1.32,us,us2000d578,2025-12-22T17:30:47.584Z,"79 km S of San Mateo del Mar, Mexico",earthquake,4.9,7.9,0.031,328,reviewed,us,us
+2018-02-20T10:04:06.730Z,15.6274,-94.8328,34.9,4.2,mb,,131,1.236,1.13,us,us2000d9pe,2018-05-22T02:00:19.040Z,"66 km SSE of San Mateo del Mar, Mexico",earthquake,5,7,0.065,66,reviewed,us,us
+2018-02-20T10:22:30.000Z,31.7986667,-116.1098333,10.68,3.56,ml,19,134,0.2474,0.24,ci,ci38112440,2018-05-22T02:00:19.040Z,"44km ENE of Maneadero, B.C., MX",earthquake,0.41,1.61,0.128,229,reviewed,ci,ci
+2018-02-20T15:05:48.510Z,15.7646,-97.8159,19.46,4.4,mb,,196,0.683,0.81,us,us2000dalb,2018-05-22T02:00:19.040Z,"38 km SSW of San José del Progreso, Mexico",earthquake,3.3,8.8,0.219,6,reviewed,us,us
+2018-02-20T23:18:31.060Z,15.2961,-94.1838,30.29,4.3,mb,,158,1.015,1.2,us,us2000d5ma,2018-05-22T02:00:19.040Z,"82 km SSW of Cabeza de Toro, Mexico",earthquake,3.9,9.1,0.106,25,reviewed,us,us
+2018-02-21T16:11:33.620Z,15.2108,-94.1809,35,4.7,mwr,,145,1.049,1.03,us,us2000d5wp,2018-05-22T02:00:20.040Z,"90 km SW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,6.4,2,0.061,26,reviewed,us,us
+2018-02-23T05:43:39.070Z,16.0084,-97.8646,12.7,4.8,mb,,142,0.457,1.39,us,us2000d6sm,2022-08-08T00:33:32.573Z,"20 km WSW of San José del Progreso, Mexico",earthquake,4.4,4.8,0.056,99,reviewed,us,us
+2018-02-24T15:11:47.040Z,16.0288,-95.0834,69.28,4.2,mb,,133,1.019,1.38,us,us2000d7e7,2018-05-22T02:00:25.040Z,"20 km SE of Salina Cruz, Mexico",earthquake,4.8,9.9,0.125,18,reviewed,us,us
+2018-02-25T12:51:38.750Z,15.4356,-94.4579,49.12,4.7,mb,,150,1.223,1.13,us,us2000d7nh,2018-05-22T02:00:26.040Z,"87 km SSW of La Gloria, Mexico",earthquake,6,7.6,0.051,115,reviewed,us,us
+2018-02-26T04:44:54.500Z,26.1169,-92.1408,10,4.3,mb,,90,4.707,0.85,us,us2000d7y1,2025-02-24T23:34:02.626Z,"Gulf of America",earthquake,5.7,1.9,0.072,55,reviewed,us,us
+2018-02-26T08:56:02.950Z,15.7938,-95.7811,31.2,4,mb,,107,0.315,1.31,us,us2000daql,2018-05-27T01:06:01.040Z,"13 km SSE of El Coyul, Mexico",earthquake,4.1,7,0.076,47,reviewed,us,us
+2018-02-27T04:13:58.920Z,18.2572,-103.1965,14.03,4.4,mb,,170,0.145,0.83,us,us2000d8q6,2018-05-27T01:06:03.040Z,"49 km SE of Aquila, Mexico",earthquake,8.6,3.6,0.071,57,reviewed,us,us
+2018-02-28T12:29:58.570Z,16.2765,-97.9733,10,4.4,mb,,174,0.187,0.89,us,us2000d94f,2018-05-27T01:06:05.040Z,"6 km ENE of El Carrizo, Mexico",earthquake,4.2,1.9,0.048,123,reviewed,us,us
+2018-02-28T21:48:28.140Z,15.1926,-94.7273,10,3.9,mb,,187,1.449,1.24,us,us2000d9el,2018-05-27T01:06:06.040Z,"115 km S of San Francisco del Mar Viejo, Mexico",earthquake,4.2,2,0.137,14,reviewed,us,us
+2018-03-01T15:41:54.750Z,16.352,-98.7132,12.41,4.6,mb,,180,0.553,0.87,us,us2000d9sa,2018-05-27T01:06:07.040Z,"17 km S of Barra de Tecoanapa, Mexico",earthquake,5.8,5.3,0.033,275,reviewed,us,us
+2018-03-02T00:23:16.020Z,23.8194,-108.9081,10,4.3,mb,,135,0.958,1.27,us,us2000da3n,2022-08-08T00:51:16.343Z,"73 km ENE of La Rivera, Mexico",earthquake,6.7,1.9,0.044,151,reviewed,us,us
+2018-03-02T04:37:34.150Z,16.2204,-98.8282,10,4.1,mb,,199,0.589,0.98,us,us1000dct6,2018-05-27T01:06:08.040Z,"33 km SSW of Barra de Tecoanapa, Mexico",earthquake,5.2,2,0.087,36,reviewed,us,us
+2018-03-03T14:33:37.290Z,14.1546,-91.7208,61.57,4.4,mb,,197,0.368,1.12,us,us2000dbp8,2018-05-27T01:06:11.040Z,"25 km SE of Champerico, Guatemala",earthquake,7.5,6.5,0.079,46,reviewed,us,us
+2018-03-05T14:30:21.480Z,16.2231,-98.0589,19.53,4.6,mb,,187,0.18,0.73,us,us1000dcv9,2018-06-08T05:12:10.040Z,"4 km SW of El Carrizo, Mexico",earthquake,3.9,5.4,0.192,8,reviewed,us,us
+2018-03-06T06:48:10.400Z,15.3377,-95.7653,10,4.3,mb,,181,0.54,1.23,us,us2000dcs1,2018-06-08T05:12:10.040Z,"62 km SE of Crucecita, Mexico",earthquake,4.9,2,0.062,74,reviewed,us,us
+2018-03-06T20:41:23.370Z,15.4251,-94.348,52.33,4.8,mb,,122,1.123,1.21,us,us2000ddb6,2018-06-08T05:12:12.040Z,"82 km SW of Cabeza de Toro, Mexico",earthquake,5.2,6.3,0.027,437,reviewed,us,us
+2018-03-07T06:14:01.850Z,14.0389,-91.2896,72.42,4.4,mb,,154,0.622,1.22,us,us2000ddmz,2018-06-08T05:12:13.040Z,"17 km S of Nueva Concepción, Guatemala",earthquake,8.4,10.5,0.061,78,reviewed,us,us
+2018-03-09T15:53:22.250Z,15.6971,-97.7487,10,4.4,mb,,186,0.651,1.43,us,us1000d29h,2018-06-08T05:12:17.040Z,"43 km SSW of Santa Rosa de Lima, Mexico",earthquake,5.4,1.9,0.069,60,reviewed,us,us
+2018-03-10T18:57:18.730Z,15.0133,-94.2232,34.42,4,mb,,124,1.188,0.92,us,us1000dcya,2018-06-08T05:12:19.040Z,"111 km SW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,5.9,11,0.093,31,reviewed,us,us
+2018-03-11T12:24:34.840Z,14.7683,-91.8761,89.08,4.3,mb,,150,0.299,1.05,us,us1000d32d,2018-06-08T05:12:20.040Z,"5 km ESE of Nuevo Progreso, Guatemala",earthquake,8.2,6.8,0.068,60,reviewed,us,us
+2018-03-12T23:48:16.060Z,17.4073,-96.3963,35,4,mb,,66,0.462,0.99,us,us1000d74g,2018-06-11T21:53:42.040Z,"10 km WNW of Tanetze de Zaragoza, Mexico",earthquake,4.6,2,0.065,64,reviewed,us,us
+2018-03-13T09:43:58.720Z,15.0238,-94.2375,34.98,4.2,mb,,124,1.193,1,us,us1000dd03,2018-06-11T21:53:42.040Z,"111 km SW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,4.9,9.4,0.059,80,reviewed,us,us
+2018-03-13T16:25:44.810Z,15.5811,-94.8927,34.88,4.2,mb,,161,1.185,0.68,us,us1000dd07,2018-06-11T21:53:43.040Z,"70 km S of San Mateo del Mar, Mexico",earthquake,4.2,11.4,0.305,3,reviewed,us,us
+2018-03-16T14:00:15.980Z,16.4247,-98.0201,16.97,4.5,mb,,136,0.107,1.2,us,us1000d56m,2018-06-11T21:53:47.040Z,"3 km SSW of San Pedro Jicayán, Mexico",earthquake,4.3,6.9,0.062,75,reviewed,us,us
+2018-03-17T07:39:18.180Z,17.7321,-95.3688,116.08,4.4,mb,,45,0.787,0.78,us,us1000d5kp,2018-06-11T21:53:49.040Z,"12 km NE of Nuevo Ixcatlán, Mexico",earthquake,5.6,4.7,0.097,31,reviewed,us,us
+2018-03-18T02:31:09.530Z,15.6751,-95.0642,34.36,4.1,mb,,157,1.009,1.43,us,us1000d5z8,2018-06-11T21:53:50.040Z,"55 km SE of El Carrizal, Mexico",earthquake,4.8,9.7,0.095,30,reviewed,us,us
+2018-03-18T07:47:23.530Z,16.5626,-94.6369,96.53,4.2,mb,,101,0.576,1.03,us,us1000d612,2022-08-08T01:18:33.161Z,"2 km W of Niltepec, Mexico",earthquake,3.8,8.6,0.091,34,reviewed,us,us
+2018-03-18T09:22:04.900Z,16.7078,-94.8697,39.2,4.5,mb,,164,0.381,0.73,us,us1000d61h,2018-06-11T21:53:51.040Z,"2 km SSW of Lázaro Cárdenas, Mexico",earthquake,6.4,6.7,0.073,55,reviewed,us,us
+2018-03-18T22:30:33.920Z,15.4142,-92.0301,208.93,4.6,mb,,71,0.517,0.87,us,us1000d696,2018-06-11T21:53:51.040Z,"8 km W of Cuilco, Guatemala",earthquake,7.8,6.4,0.075,53,reviewed,us,us
+2018-03-19T23:36:41.520Z,31.0935,-114.275,10,4.8,mwr,,111,0.497,0.84,us,us1000d760,2025-12-22T17:31:48.987Z,"54 km E of San Felipe, Mexico",earthquake,4.6,1.9,0.037,72,reviewed,us,us
+2018-03-19T23:56:10.310Z,31.005,-114.2547,10,4,mb,,150,0.512,0.91,us,us1000d76f,2018-07-27T03:47:23.484Z,"55 km E of San Felipe, Mexico",earthquake,5.6,2,0.085,37,reviewed,us,us
+2018-03-20T16:43:58.330Z,16.4163,-98.4418,10,5,mb,,126,0.303,0.97,us,us1000d6tb,2018-06-19T01:35:45.040Z,"6 km ENE of Montecillos, Mexico",earthquake,6.1,1.9,0.027,435,reviewed,us,us
+2018-03-20T17:46:55.590Z,16.3103,-98.4707,6.69,5.2,mww,,93,0.339,1.25,us,us1000d6ul,2022-05-03T18:49:56.101Z,"4 km SW of Santiago Tepextla, Mexico",earthquake,5.2,3.6,0.057,30,reviewed,us,us
+2018-03-20T18:07:18.610Z,16.2816,-98.5127,10,4.3,mb,,167,0.386,0.9,us,us1000d6uy,2018-06-19T01:35:45.040Z,"9 km SW of Santiago Tepextla, Mexico",earthquake,5.6,1.9,0.05,112,reviewed,us,us
+2018-03-20T22:56:07.660Z,15.893,-95.2126,38.9,4.1,mb,,144,0.87,1.3,us,us1000dd5k,2018-06-19T01:35:45.040Z,"27 km SE of El Carrizal, Mexico",earthquake,3.4,17.5,0.117,20,reviewed,us,us
+2018-03-21T20:48:52.030Z,16.3823,-98.1025,20.54,4.5,mb,,157,0.025,1.39,us,us1000da3d,2018-06-19T01:35:46.040Z,"1 km SE of Mancuernas, Mexico",earthquake,4.3,6.1,0.042,168,reviewed,us,us
+2018-03-22T10:47:28.320Z,16.0371,-98.6541,23.78,4.3,mb,,173,0.617,1.18,us,us1000d7gm,2018-06-19T01:35:47.040Z,"40 km SSW of Santiago Tepextla, Mexico",earthquake,4,9.1,0.168,10,reviewed,us,us
+2018-03-23T17:16:25.420Z,14.383,-91.2201,104.24,4.6,mb,,129,0.481,0.95,us,us1000d865,2022-08-08T01:28:14.311Z,"5 km S of Santa Bárbara, Guatemala",earthquake,7.9,5.6,0.044,152,reviewed,us,us
+2018-03-24T22:12:02.730Z,15.0655,-94.1768,35.49,4,mb,,186,1.121,1.04,us,us1000dd8r,2018-06-19T01:35:52.040Z,"103 km SW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,5.3,25.9,0.15,12,reviewed,us,us
+2018-03-26T07:11:49.360Z,14.587,-94.1973,10,4.2,mb,,188,1.458,1.41,us,us1000dda2,2018-06-22T21:32:09.040Z,"146 km SW of El Palmarcito, Mexico",earthquake,5.4,2,0.147,13,reviewed,us,us
+2018-03-26T15:21:43.590Z,14.2135,-92.9608,15.31,4.5,mb,,177,0.964,0.66,us,us1000ddag,2018-06-22T21:32:09.040Z,"80 km SW of Puerto Madero, Mexico",earthquake,3.8,6.3,0.116,22,reviewed,us,us
+2018-03-26T23:21:22.490Z,14.4758,-93.26,35,4.5,mb,,158,1.054,0.87,us,us1000d9db,2018-06-22T21:32:10.040Z,"94 km WSW of Puerto Madero, Mexico",earthquake,4.1,1.9,0.037,214,reviewed,us,us
+2018-03-28T07:50:28.800Z,21.0235,-109.276,10,4,mb,,226,2.72,1.05,us,us1000da0h,2018-06-22T21:32:12.040Z,"216 km SSE of Cabo San Lucas, Mexico",earthquake,12.1,2,0.081,41,reviewed,us,us
+2018-03-29T01:21:48.590Z,14.117,-91.2375,70.33,4.7,mwr,,121,0.6,0.74,us,us1000daje,2018-06-22T21:32:13.040Z,"11 km SE of Nueva Concepción, Guatemala",earthquake,6.4,6.8,0.086,13,reviewed,us,us
+2018-03-30T15:07:56.270Z,16.0771,-98.6695,10,4.7,mb,,175,0.608,1.24,us,us1000dbez,2018-06-22T21:32:16.040Z,"37 km SW of Santiago Tepextla, Mexico",earthquake,4,1.9,0.028,390,reviewed,us,us
+2018-04-01T12:13:04.730Z,14.2535,-92.0767,65.9,4.7,mb,,122,0.457,0.85,us,us1000dc3u,2018-06-22T21:32:19.040Z,"18 km WSW of Champerico, Guatemala",earthquake,9.3,7.3,0.057,92,reviewed,us,us
+2018-04-01T16:43:52.890Z,15.6594,-94.8115,35.52,4.4,mb,,126,1.253,1.25,us,us1000dc4z,2018-06-22T21:32:20.040Z,"63 km SSE of San Mateo del Mar, Mexico",earthquake,4.8,9,0.048,124,reviewed,us,us
+2018-04-03T01:50:10.220Z,22.0704,-108.7174,10,4.3,mb,,186,1.966,1.01,us,us1000ddf9,2018-06-30T01:11:25.040Z,"Off the coast of Baja California Sur, Mexico",earthquake,5.7,1.9,0.045,140,reviewed,us,us
+2018-04-04T00:55:22.380Z,22.1964,-108.5222,10,4.1,mb,,236,1.978,1.3,us,us1000ddye,2018-06-30T01:11:27.040Z,"152 km SE of La Playa, Mexico",earthquake,3.8,2,0.119,19,reviewed,us,us
+2018-04-04T01:26:34.020Z,14.0322,-91.6981,63.16,4.3,mb,,194,0.489,0.9,us,us2000dyus,2018-06-30T01:11:27.040Z,"36 km SE of Champerico, Guatemala",earthquake,8,8.9,0.119,20,reviewed,us,us
+2018-04-04T21:23:20.560Z,22.0548,-108.7016,10,4.7,mb,,110,1.987,0.99,us,us2000dumn,2025-12-22T17:35:42.119Z,"149 km SE of La Playa, Mexico",earthquake,6.6,1.9,0.058,91,reviewed,us,us
+2018-04-04T22:07:49.500Z,22.0633,-108.7002,10,4.6,mb,,195,1.981,0.97,us,us2000dunu,2018-06-30T01:11:29.040Z,"148 km SE of La Playa, Mexico",earthquake,6.5,1.9,0.06,82,reviewed,us,us
+2018-04-05T14:56:51.630Z,16.2426,-95.2144,135.34,4.4,mb,,121,0.98,1.19,us,us2000duza,2018-06-30T01:11:29.040Z,"1 km SSE of La Noria, Mexico",earthquake,6.6,11.4,0.202,7,reviewed,us,us
+2018-04-06T20:09:20.090Z,16.6091,-95.1454,43.84,4,mb,,107,0.54,1.36,us,us1000dwsa,2018-06-30T01:11:31.040Z,"2 km NE of Santo Domingo Chihuitán, Mexico",earthquake,4.2,3.6,0.134,15,reviewed,us,us
+2018-04-07T01:32:59.470Z,16.0366,-95.233,35,4,mb,,139,0.883,1.45,us,us1000dwsf,2018-06-30T01:11:32.040Z,"15 km SSW of Salina Cruz, Mexico",earthquake,3.2,2,0.196,7,reviewed,us,us
+2018-04-07T08:06:29.100Z,14.2841,-91.3111,45.36,4.1,mb,,127,0.442,0.94,us,us2000dvyg,2018-06-30T01:11:32.040Z,"5 km E of Tiquisate, Guatemala",earthquake,8,16.7,0.157,11,reviewed,us,us
+2018-04-07T18:57:56.810Z,15.3132,-94.1261,48.46,4.6,mb,,153,0.957,0.88,us,us2000dw4n,2018-06-30T01:11:33.040Z,"78 km SW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,6.3,10.5,0.043,164,reviewed,us,us
+2018-04-10T11:23:53.540Z,28.9758,-113.2809,10,4,mb,,166,2.042,1.33,us,us2000dxgx,2018-07-07T02:25:16.040Z,"75 km NE of San Luis, Mexico",earthquake,7.5,2,0.232,5,reviewed,us,us
+2018-04-10T15:29:57.830Z,15.4119,-94.727,35,4.4,mb,,178,1.377,1.53,us,us1000dwva,2018-07-07T02:25:16.040Z,"91 km S of San Francisco del Mar Viejo, Mexico",earthquake,5.7,2,0.239,5,reviewed,us,us
+2018-04-10T17:15:00.830Z,15.3489,-89.6541,10,3.9,mb,,80,0.84,0.88,us,us2000dxti,2022-08-08T02:03:26.040Z,"5 km SSW of Panzos, Guatemala",earthquake,3.2,2,0.182,8,reviewed,us,us
+2018-04-11T07:30:38.310Z,15.6823,-95.0117,25.6,5.5,mww,,91,1.059,1.24,us,us2000dxxe,2025-12-22T17:35:48.955Z,"57 km SSE of Salina Cruz, Mexico",earthquake,5.3,3.6,0.058,29,reviewed,us,us
+2018-04-11T23:25:44.010Z,14.2899,-92.8589,10,4.2,mb,,175,0.841,1.09,us,us2000dyhi,2018-07-07T02:25:18.040Z,"67 km SW of Puerto Madero, Mexico",earthquake,3,1.9,0.115,21,reviewed,us,us
+2018-04-12T04:00:28.110Z,15.299,-94.1025,40.12,4.5,mwr,,119,0.942,0.98,us,us2000dylc,2018-07-07T02:25:19.040Z,"78 km SSW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,3.8,7.7,0.098,10,reviewed,us,us
+2018-04-12T06:42:30.830Z,15.3001,-95.9148,10,4.5,mb,,184,3.396,0.82,us,us2000dyt6,2018-07-07T02:25:19.040Z,"56 km SSE of Crucecita, Mexico",earthquake,11,1.9,0.057,89,reviewed,us,us
+2018-04-13T14:58:01.590Z,15.6059,-92.7488,142.87,4.3,mb,,127,0.463,1.43,us,us2000dzqj,2018-07-07T02:25:21.040Z,"10 km SSW of Nueva Colombia, Mexico",earthquake,6.3,6.1,0.111,23,reviewed,us,us
+2018-04-14T18:38:10.060Z,19.1941,-108.1556,10,4.6,mb,,185,4.308,0.97,us,us2000e0d1,2022-08-08T02:10:07.684Z,"297 km WSW of La Cruz de Loreto, Mexico",earthquake,8.3,1.9,0.04,186,reviewed,us,us
+2018-04-15T02:13:26.320Z,15.7738,-95.0409,12.1,4.5,mb,,116,1.027,0.87,us,us2000e0gi,2022-08-08T02:10:54.139Z,"47 km SSE of Salina Cruz, Mexico",earthquake,5.4,6,0.048,125,reviewed,us,us
+2018-04-15T05:54:43.730Z,17.2215,-101.1592,10,4,mb,,163,0.481,1.26,us,us2000e0ig,2018-07-07T02:25:24.040Z,"16 km SW of Papanoa, Mexico",earthquake,4.7,1.6,0.096,30,reviewed,us,us
+2018-04-18T11:59:20.150Z,16.4611,-95.1951,71.71,4.6,mb,,73,0.693,1.02,us,us2000e22h,2018-07-17T02:05:30.040Z,"4 km S of Magdalena Tlacotepec, Mexico",earthquake,5.5,7.9,0.057,91,reviewed,us,us
+2018-04-18T21:43:06.870Z,15.4152,-94.5993,42.12,4.3,mb,,154,1.361,1,us,us1000dncl,2018-07-17T02:05:30.040Z,"90 km S of San Francisco del Mar Viejo, Mexico",earthquake,6.6,10.3,0.073,54,reviewed,us,us
+2018-04-19T10:06:21.030Z,17.1823,-95.3149,109.5,4.7,mb,,50,0.422,1.03,us,us1000dnja,2022-08-08T02:21:44.316Z,"18 km SSE of Constitución Mexicana, Mexico",earthquake,5.8,5,0.036,230,reviewed,us,us
+2018-04-19T20:08:42.300Z,14.3968,-93.2458,10,4.2,mb,,180,1.076,1.18,us,us1000drzi,2018-07-17T02:05:32.040Z,"95 km WSW of Puerto Madero, Mexico",earthquake,4,1.9,0.106,25,reviewed,us,us
+2018-04-21T11:14:50.940Z,14.3433,-90.2646,193.23,4.4,mb,,163,0.877,1.09,us,us1000dpu1,2018-07-17T02:05:34.040Z,"4 km SSE of Nueva Santa Rosa, Guatemala",earthquake,11.6,11.5,0.107,25,reviewed,us,us
+2018-04-23T13:18:26.390Z,17.6133,-105.5955,10,4.3,mb,,228,2.177,0.78,us,us1000dqn6,2018-07-25T21:36:01.040Z,"201 km SSW of Barra de Navidad, Mexico",earthquake,8.4,2,0.042,159,reviewed,us,us
+2018-04-25T11:53:18.660Z,15.8474,-95.0013,10,4.2,mb,,144,1.068,1.04,us,us1000dx4u,2018-07-25T21:36:39.040Z,"40 km S of Colonia Juárez, Mexico",earthquake,4,2,0.115,21,reviewed,us,us
+2018-04-25T22:18:24.560Z,14.2824,-89.9947,192.89,4.9,mb,,111,0.625,0.88,us,us1000dsd7,2018-07-25T21:36:49.040Z,"5 km ENE of Quesada, Guatemala",earthquake,6.6,4.9,0.05,125,reviewed,us,us
+2018-04-27T00:22:38.460Z,15.0975,-94.2041,26.25,4.6,mwr,,121,1.125,0.86,us,us1000dt4w,2022-08-08T02:41:47.724Z,"102 km SSW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,4.2,5.5,0.08,15,reviewed,us,us
+2018-04-27T10:17:50.140Z,15.1922,-94.1588,31.05,4,mb,,170,1.039,0.87,us,us1000dt8x,2018-07-25T21:37:21.040Z,"91 km SSW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,4.6,8.7,0.071,54,reviewed,us,us
+2018-04-29T03:52:04.220Z,15.7172,-95.0549,36.07,4,mb,,150,1.015,1.09,us,us1000dx71,2018-07-25T21:37:52.040Z,"52 km SE of El Carrizal, Mexico",earthquake,5.4,19.4,0.125,17,reviewed,us,us
+2018-04-29T17:19:27.230Z,14.1423,-89.6989,10,4.2,mb,,178,0.415,0.98,us,us1000duck,2018-07-25T21:38:03.040Z,"5 km SE of Atescatempa, Guatemala",earthquake,6.4,1.9,0.147,13,reviewed,us,us
+2018-04-29T22:55:39.120Z,31.2555,-115.616,9.36,3.51,ml,5,197,0.1975,0.13,ci,ci38160704,2018-07-27T03:56:17.370Z,"104km ESE of Maneadero, B.C., MX",earthquake,1.83,1.55,0.178,188,reviewed,ci,ci
+2018-05-01T16:28:56.060Z,28.9476,-98.0015,5,4,mwr,,74,0.192,0.62,us,us1000dvdg,2025-07-02T19:50:29.186Z,"4 km SSE of Falls City, Texas",earthquake,3.2,2,,15,reviewed,us,slm
+2018-05-02T22:47:52.170Z,18.1705,-102.3694,10,4.2,mb,,206,1.823,0.9,us,us1000dwam,2018-07-27T20:20:37.040Z,"15 km NNW of La Mira, Mexico",earthquake,5.7,2,0.146,13,reviewed,us,us
+2018-05-04T15:16:56.210Z,16.2833,-98.9332,10,5,mb,,89,1.319,1.13,us,us1000dxxd,2018-07-27T20:20:30.040Z,"Guerrero-Oaxaca border region, Mexico",earthquake,4.3,1.9,0.029,372,reviewed,us,us
+2018-05-06T03:03:16.620Z,16.844,-94.9198,90.03,4.5,mb,,123,2.726,0.84,us,us1000dz4c,2018-07-27T20:20:43.040Z,"13 km ESE of El Bajío, Mexico",earthquake,8.4,9,0.07,60,reviewed,us,us
+2018-05-06T07:07:26.040Z,14.4026,-91.7978,81.48,4,mb,,172,0.157,0.81,us,us1000dz83,2018-07-27T20:20:43.040Z,"17 km NE of Champerico, Guatemala",earthquake,4.6,15.4,0.074,49,reviewed,us,us
+2018-05-06T16:47:09.220Z,27.871,-88.6778,10,4.6,mb,,71,2.684,0.77,us,us1000dzed,2019-07-18T05:24:54.376Z,"169 km SSE of Venice, Louisiana",earthquake,7.1,1.9,0.042,170,reviewed,us,us
+2018-05-08T07:56:03.790Z,15.3639,-94.5344,31.09,4.1,mb,,152,1.312,1.21,us,us1000e0iq,2018-08-08T15:19:27.040Z,"96 km S of San Francisco del Mar Viejo, Mexico",earthquake,5.5,10.3,0.099,28,reviewed,us,us
+2018-05-09T02:10:17.040Z,18.6786,-105.3838,10,4.4,mb,,167,1.413,0.69,us,us1000e14n,2018-08-08T15:19:42.040Z,"89 km SSW of Emiliano Zapata, Mexico",earthquake,6.6,2,0.059,82,reviewed,us,us
+2018-05-10T09:50:32.960Z,17.0231,-99.8359,10,3.7,ml,,85,0.155,0.95,us,us1000e2fd,2018-08-08T15:20:17.040Z,"1 km NW of Texca, Mexico",earthquake,3,2,0.128,8,reviewed,us,us
+2018-05-12T12:41:06.040Z,15.9901,-94.5648,38,4.1,mb,,139,1.136,0.77,us,us1000e3l6,2018-08-08T15:21:10.040Z,"27 km SSE of San Francisco del Mar Viejo, Mexico",earthquake,8.4,23,0.079,44,reviewed,us,us
+2018-05-13T05:43:06.150Z,15.5158,-94.9999,35,4,mb,,166,1.096,0.92,us,us1000e3z8,2018-08-08T15:21:28.040Z,"73 km SE of El Carrizal, Mexico",earthquake,3.7,2,0.15,12,reviewed,us,us
+2018-05-13T17:10:40.170Z,16.974,-95.1198,106.8,4.5,mb,,74,1.528,1.37,us,us1000e468,2022-08-08T03:27:52.662Z,"3 km WNW of San Juan Guichicovi, Mexico",earthquake,2.6,8,0.048,130,reviewed,us,us
+2018-05-16T14:20:27.470Z,18.2208,-100.4896,50.99,5,mb,,67,0.147,1.4,us,us1000e6dc,2022-05-03T19:13:17.671Z,"Guerrero-Michoacan border region, Mexico",earthquake,3.4,6.4,0.053,114,reviewed,us,us
+2018-05-18T06:33:34.150Z,15.464,-94.2289,67.17,4.3,mb,,176,1.735,1.27,us,us1000e7uh,2018-08-15T19:46:56.040Z,"70 km SW of Cabeza de Toro, Mexico",earthquake,9.1,10.8,0.109,24,reviewed,us,us
+2018-05-19T08:43:22.960Z,15.1542,-94.2165,25.73,4.3,mb,,169,1.107,1.25,us,us1000e8hm,2018-08-15T19:46:58.040Z,"98 km SW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,5.1,10.7,0.122,19,reviewed,us,us
+2018-05-19T17:48:48.820Z,14.8658,-94.2177,27.33,4.2,mb,,177,1.274,1.07,us,us1000e8lt,2018-08-15T19:46:58.040Z,"124 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,4.8,7.7,0.078,46,reviewed,us,us
+2018-05-21T01:38:26.170Z,14.802,-92.0221,113.44,4.1,mb,,153,0.257,0.76,us,us1000eqre,2018-08-21T21:23:57.040Z,"8 km SE of Catarina, Guatemala",earthquake,7.7,6.2,0.116,20,reviewed,us,us
+2018-05-21T02:15:18.300Z,17.071,-98.6744,36.61,5.2,mb,,91,0.499,1.3,us,us1000e95q,2022-05-03T19:13:36.871Z,"3 km NNE of Iliatenco, Mexico",earthquake,3.2,7.1,0.023,624,reviewed,us,us
+2018-05-23T23:26:34.700Z,14.6465,-94.181,10,3.7,mb,,179,1.403,1.37,us,us1000eqt9,2018-08-21T21:23:57.040Z,"140 km SW of El Palmarcito, Mexico",earthquake,5.9,2,0.292,3,reviewed,us,us
+2018-05-26T11:13:45.510Z,15.9752,-97.6396,10,4.1,mb,,195,0.625,1.15,us,us1000ecng,2018-08-21T21:23:53.040Z,"10 km S of Santa Rosa de Lima, Mexico",earthquake,4.2,1.9,0.09,34,reviewed,us,us
+2018-05-27T09:02:33.950Z,16.7927,-95.0893,113.6,4,mb,,100,0.355,1.42,us,us1000eqw1,2018-08-21T21:23:57.040Z,"1 km SW of Colonia Progreso, Mexico",earthquake,5.8,12.8,0.172,9,reviewed,us,us
+2018-05-27T13:33:43.780Z,15.2973,-94.7713,10,4.3,mb,,188,1.371,1.31,us,us1000eqw5,2018-08-21T21:23:57.040Z,"103 km SSE of San Mateo del Mar, Mexico",earthquake,6.1,1.9,0.177,9,reviewed,us,us
+2018-05-27T19:16:40.290Z,14.2623,-89.8769,188.83,4.4,mb,,120,0.597,0.73,us,us1000ed0q,2018-08-21T21:23:54.040Z,"3 km SSE of Jutiapa, Guatemala",earthquake,10.4,8.7,0.109,24,reviewed,us,us
+2018-05-28T06:08:51.390Z,16.2703,-98.2726,10,4.4,mb,,150,0.185,1.03,us,us1000ed8b,2022-08-08T04:07:11.664Z,"5 km SSW of El Ciruelo, Mexico",earthquake,4,1.9,0.042,164,reviewed,us,us
+2018-05-30T14:53:25.950Z,17.5702,-97.963,58.08,4.4,mb,,46,0.299,0.88,us,us1000eese,2018-08-28T16:28:48.040Z,"6 km SE of San Agustín Atenango, Mexico",earthquake,3.1,5.6,0.109,24,reviewed,us,us
+2018-06-01T13:48:42.650Z,15.9085,-98.2309,10,4.3,mb,,205,0.491,1.18,us,us1000egkq,2018-08-28T16:29:44.040Z,"36 km S of Corralero, Mexico",earthquake,4.4,1.9,0.071,56,reviewed,us,us
+2018-06-01T13:52:43.070Z,16.0437,-98.3596,10,4.3,mb,,173,0.412,1.14,us,us1000egkw,2018-08-28T16:29:45.040Z,"28 km SW of Corralero, Mexico",earthquake,4.7,1.9,0.069,59,reviewed,us,us
+2018-06-02T02:12:30.840Z,14.1448,-91.3202,53.8,4,mb,,155,0.523,0.75,us,us1000eh88,2018-08-28T16:30:05.040Z,"6 km SSW of Nueva Concepción, Guatemala",earthquake,7.4,10,0.108,23,reviewed,us,us
+2018-06-05T08:16:57.020Z,31.8501667,-116.3445,22.01,3.6,mw,46,141,0.2728,0.24,ci,ci37957087,2018-08-29T16:33:59.040Z,"26km NE of Maneadero, B.C., MX",earthquake,0.29,0.6,,4,reviewed,ci,ci
+2018-06-05T09:01:32.840Z,15.1696,-94.661,10,3.9,mb,,188,1.489,1.45,us,us2000fuax,2018-08-29T16:34:01.040Z,"117 km S of San Francisco del Mar Viejo, Mexico",earthquake,5.5,2,0.096,29,reviewed,us,us
+2018-06-10T01:03:24.860Z,15.0628,-94.14,35,4.5,mwr,,140,1.094,1.1,us,us1000emem,2018-08-29T16:36:26.040Z,"101 km SW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,4.9,2,0.068,21,reviewed,us,us
+2018-06-11T04:24:53.280Z,29.5088,-105.0258,10,3.6,ml,,105,1.197,0.46,us,us1000en3f,2018-09-07T17:46:59.040Z,"Chihuahua, Mexico",earthquake,3.1,2,0.097,44,reviewed,us,us
+2018-06-12T00:09:46.500Z,15.8982,-95.2097,19.18,4,mb,,150,0.874,0.95,us,us1000erm8,2018-09-07T17:47:04.040Z,"26 km SE of El Carrizal, Mexico",earthquake,3,7.7,0.116,20,reviewed,us,us
+2018-06-12T04:45:10.380Z,16.0514,-95.1799,35,4.2,mb,,145,1.792,0.95,us,us1000envu,2018-09-07T17:47:00.040Z,"13 km S of Salina Cruz, Mexico",earthquake,4.7,2,0.057,86,reviewed,us,us
+2018-06-13T09:28:44.980Z,14.6108,-94.3845,10,4.3,mb,,150,1.565,0.76,us,us1000epsi,2022-08-08T04:44:21.635Z,"157 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,3.9,1.9,0.042,164,reviewed,us,us
+2018-06-13T18:17:12.970Z,14.6109,-92.8734,10,4.3,mb,,167,0.658,1.27,us,us1000eq54,2018-09-07T17:47:02.040Z,"50 km WSW of Puerto Madero, Mexico",earthquake,3.9,2,0.111,23,reviewed,us,us
+2018-06-16T22:20:00.480Z,17.272,-99.5979,31.01,4.4,mb,,70,0.254,0.86,us,us1000ethq,2018-09-07T17:47:07.040Z,"8 km SE of Coacoyulillo, Mexico",earthquake,3.4,7.1,0.071,57,reviewed,us,us
+2018-06-17T06:55:46.300Z,17.5327,-95.3225,117.74,4.1,mb,,67,0.607,0.98,us,us1000etn0,2018-09-07T17:47:07.040Z,"7 km NE of San Felipe Cihualtepec, Mexico",earthquake,6.2,8.7,0.06,76,reviewed,us,us
+2018-06-18T02:32:55.870Z,14.1325,-90.7154,99.17,5.7,mww,,51,0.899,1.45,us,us1000eu39,2022-05-03T19:19:43.027Z,"12 km SW of Guanagazapa, Guatemala",earthquake,6.1,3.2,0.065,23,reviewed,us,us
+2018-06-20T04:57:08.150Z,16.2394,-98.0741,17.95,4,mb,,186,0.16,0.76,us,us1000ew6f,2018-09-19T15:15:50.040Z,"4 km WSW of El Carrizo, Mexico",earthquake,3.2,7.1,0.122,18,reviewed,us,us
+2018-06-24T08:46:42.860Z,15.683,-95.2987,10,4.2,mb,,161,0.784,1.26,us,us1000f05i,2018-09-19T15:15:57.040Z,"near the coast of Oaxaca, Mexico",earthquake,4.6,1.9,0.068,60,reviewed,us,us
+2018-06-24T15:21:45.050Z,16.3408,-93.1652,173.7,4.2,mb,,74,0.436,1.14,us,us2000frbm,2018-09-19T15:16:01.040Z,"4 km NNW of Villa Hidalgo, Mexico",earthquake,7.3,4.3,0.094,31,reviewed,us,us
+2018-06-25T10:49:17.040Z,14.9423,-93.6857,49.96,4.1,mb,,166,0.881,1.2,us,us2000futk,2018-09-21T16:25:57.040Z,"79 km SW of La Esperanza (El Zapotal), Mexico",earthquake,5.4,9.6,0.123,18,reviewed,us,us
+2018-06-25T12:47:57.890Z,15.8629,-96.7948,23.98,4.3,mb,,191,0.364,1.35,us,us1000f14h,2018-09-21T16:25:57.040Z,"9 km NW of San Francisco Cozoaltepec, Mexico",earthquake,5.8,9.6,0.086,38,reviewed,us,us
+2018-06-26T18:02:18.110Z,15.6434,-94.059,66.85,5.2,mww,,68,0.811,1.17,us,us1000f2gp,2025-12-22T17:48:39.008Z,"43 km SW of Cabeza de Toro, Mexico",earthquake,5,4.3,0.047,43,reviewed,us,us
+2018-06-27T14:45:20.930Z,14.127,-91.5616,68.84,4.8,mb,,170,0.415,0.78,us,us1000f3bt,2025-12-22T17:48:41.352Z,"27 km SW of Tiquisate, Guatemala",earthquake,8.8,8.2,0.065,74,reviewed,us,us
+2018-06-29T09:16:39.690Z,15.4688,-94.5764,35,4.7,mb,,126,1.329,1.21,us,us2000fr3d,2018-09-21T16:25:57.040Z,"84 km S of San Francisco del Mar Viejo, Mexico",earthquake,5.4,2,0.029,348,reviewed,us,us
+2018-06-30T03:56:49.410Z,19.0222,-105.119,15,5.9,mww,,63,1.598,1,us,us2000frwr,2022-05-03T19:20:24.947Z,"43 km SSW of Emiliano Zapata, Mexico",earthquake,6,1.7,0.038,66,reviewed,us,us
+2018-07-01T05:03:37.590Z,18.9358,-105.3309,10,4.7,mb,,143,3.939,0.91,us,us2000fssd,2025-12-22T17:48:46.481Z,"62 km SW of Emiliano Zapata, Mexico",earthquake,8.7,1.9,0.065,71,reviewed,us,us
+2018-07-01T17:21:11.870Z,14.519,-90.6129,207.44,4.1,mb,,132,1.047,0.89,us,us2000ft3z,2018-09-21T16:25:48.040Z,"3 km WSW of Villa Nueva, Guatemala",earthquake,8.8,8.8,0.103,26,reviewed,us,us
+2018-07-03T02:44:28.790Z,15.3493,-98.7367,35,4,mb,,216,2.207,0.75,us,us2000fvdc,2018-09-27T14:03:38.040Z,"114 km SSW of Santiago Tepextla, Mexico",earthquake,12,2,0.076,47,reviewed,us,us
+2018-07-03T03:49:05.380Z,15.3683,-97.9113,36.56,4.7,mb,,194,2.27,0.64,us,us2000fvex,2018-09-27T14:03:38.040Z,"83 km SSW of Santa Rosa de Lima, Mexico",earthquake,9.7,9,0.033,279,reviewed,us,us
+2018-07-04T23:59:17.320Z,15.6602,-96.5974,26.28,4.1,mb,,231,2.672,0.71,us,us2000fx60,2018-09-27T14:03:41.040Z,"11 km SSW of Santa María Tonameca, Mexico",earthquake,14.7,26.5,0.145,13,reviewed,us,us
+2018-07-05T09:47:40.360Z,16.4961,-98.2619,10,4.3,mb,,154,1.1,0.8,us,us2000fxar,2018-09-27T14:03:41.040Z,"3 km ENE of Santiago Llano Grande, Mexico",earthquake,9.2,1.9,0.037,209,reviewed,us,us
+2018-07-09T04:15:21.570Z,15.2412,-93.0357,96.49,4.7,mb,,172,1.348,0.87,us,us2000g032,2018-10-02T16:40:30.040Z,"25 km SW of Mapastepec, Mexico",earthquake,7,7.4,0.036,239,reviewed,us,us
+2018-07-10T01:52:46.700Z,16.3084,-96.9427,35,4.2,mb,,193,1.992,0.9,us,us2000g0u9,2018-10-02T16:40:31.040Z,"10 km E of San Cristóbal Honduras, Mexico",earthquake,10.8,2.4,0.087,37,reviewed,us,us
+2018-07-10T07:50:12.890Z,15.2623,-104.9007,10,4.4,mb,,211,5.594,0.93,us,us2000g0y8,2025-12-22T17:49:00.302Z,"off the coast of Michoacan, Mexico",earthquake,13.8,2,0.061,79,reviewed,us,us
+2018-07-10T20:07:48.490Z,27.7479,-105.6469,10,4.2,mb,,105,0.808,0.88,us,us2000g1j3,2022-08-08T05:55:19.796Z,"19 km SW of Naica, Mexico",earthquake,5.4,1.9,0.065,66,reviewed,us,us
+2018-07-13T16:02:19.010Z,14.7225,-93.6855,59.14,4.2,mb,,196,1.936,0.97,us,us2000g49g,2018-10-02T16:40:39.040Z,"98 km SW of La Esperanza (El Zapotal), Mexico",earthquake,6.9,11.2,0.1,28,reviewed,us,us
+2018-07-14T06:20:42.650Z,14.6466,-91.7346,99.53,4.1,mb,,132,0.127,1.15,us,us2000g4wv,2018-10-02T16:40:40.040Z,"5 km N of El Asintal, Guatemala",earthquake,10,9.9,0.102,26,reviewed,us,us
+2018-07-17T08:54:41.120Z,18.4075,-103.369,35,5.1,mww,,192,2.371,1.38,us,us2000g6w8,2022-05-03T19:22:43.868Z,"25 km SE of Aquila, Mexico",earthquake,9.7,1.9,0.063,24,reviewed,us,us
+2018-07-19T13:31:53.780Z,17.9318,-97.7158,48.46,5.8,mww,,50,0.89,1.04,us,us2000g8sc,2022-05-03T19:23:05.502Z,"4 km NNW of Santa María Camotlán, Mexico",earthquake,4.8,3.9,0.037,70,reviewed,us,us
+2018-07-20T17:42:04.440Z,17.8246,-95.4698,95.6,4.6,mb,,111,0.919,0.95,us,us2000g9y5,2018-10-04T14:15:35.040Z,"9 km ENE of Abasolo del Valle, Mexico",earthquake,8.5,9.1,0.033,275,reviewed,us,us
+2018-07-20T23:33:44.590Z,16.1017,-94.9465,27.85,4,mb,,163,2.705,0.52,us,us2000ga9r,2018-10-04T14:15:32.040Z,"12 km SSE of San Mateo del Mar, Mexico",earthquake,9.3,8.4,0.073,51,reviewed,us,us
+2018-07-21T01:29:40.090Z,16.2317,-99.1406,10,4.6,mb,,163,1.433,0.83,us,us2000gach,2018-10-04T14:15:32.040Z,"45 km SSW of Copala, Mexico",earthquake,6.6,1.9,0.058,90,reviewed,us,us
+2018-07-22T12:39:41.060Z,17.5362,-94.537,141.78,5.1,mww,,92,2.614,0.87,us,us2000gb6j,2025-12-22T17:47:20.767Z,"Veracruz, Mexico",earthquake,7.4,4.9,0.051,37,reviewed,us,us
+2018-07-23T07:17:11.310Z,19.6658,-109.451,10,4.6,mb,,94,1.656,0.96,us,us2000gbpx,2025-12-22T17:49:18.415Z,"Revilla Gigedo Islands region",earthquake,7.4,1.9,0.055,100,reviewed,us,us
+2018-07-24T12:48:43.670Z,18.0383,-97.7555,64.99,4.2,mb,,83,0.905,1.39,us,us2000gckx,2018-10-09T16:43:30.040Z,"4 km NNE of San Miguel Ixitlán, Mexico",earthquake,6.5,9.4,0.045,136,reviewed,us,us
+2018-07-25T20:17:56.910Z,31.9508333,-116.299,15.83,4.19,mw,32,115,0.3031,0.27,ci,ci38230144,2018-10-09T16:43:19.040Z,"32km ENE of Ensenada, B.C., MX",earthquake,0.41,1.53,,6,reviewed,ci,ci
+2018-07-27T17:56:08.900Z,17.9848,-105.0908,30.92,4,mb,,223,4.015,1.44,us,us2000gfei,2018-10-09T16:43:29.040Z,"142 km SSW of Barra de Navidad, Mexico",earthquake,10,10.2,0.052,99,reviewed,us,us
+2018-07-28T02:19:27.120Z,31.1845,-114.3418,10,4.3,mb,,130,0.46,1.02,us,us2000gilt,2018-10-09T16:43:19.040Z,"Baja California-Sonora border region, Mexico",earthquake,5.6,1.9,0.133,16,reviewed,us,us
+2018-07-28T02:33:49.530Z,31.3986,-114.3941,10,4.8,mww,,76,0.531,1.1,us,us2000gft1,2022-08-08T06:35:20.440Z,"33 km SSE of Golfo de Santa Clara, Mexico",earthquake,5.4,1.9,0.055,32,reviewed,us,us
+2018-07-28T02:38:40.440Z,31.1809,-114.3925,6.37,4.3,mb,,158,0.418,1.18,us,us1000g1y8,2018-10-09T16:43:19.040Z,"46 km ENE of San Felipe, Mexico",earthquake,6.4,5.2,0.147,13,reviewed,us,us
+2018-07-28T04:12:19.750Z,31.3913333,-114.3925,5.94,3.5,mlr,4,152,0.5279,0.04,ci,ci38231872,2018-07-31T22:11:03.490Z,"106km SSE of Estacion Coahuila, B.C., MX",earthquake,0.71,31.61,0.093,23,reviewed,ci,ci
+2018-07-28T17:36:41.300Z,16.1195,-92.8396,162.78,4.3,mb,,140,0.694,0.63,us,us1000g1yw,2018-10-09T16:43:20.040Z,"2 km NNW of El Ámbar (El Ámbar de Echeverría), Mexico",earthquake,5.7,7.9,0.062,75,reviewed,us,us
+2018-07-29T13:54:07.330Z,31.8983333,-115.8495,6.57,4.02,mw,48,95,0.1352,0.3,ci,ci38232616,2018-10-09T16:43:19.040Z,"71km ENE of Maneadero, B.C., MX",earthquake,0.26,1.05,,7,reviewed,ci,ci
+2018-07-31T04:12:23.830Z,16.688,-94.9587,73.31,4.1,mb,,161,2.737,0.97,us,us2000ghw0,2018-10-16T15:34:13.040Z,"5 km W of Santiago Ixtaltepec, Mexico",earthquake,7.1,17.9,0.09,34,reviewed,us,us
+2018-08-01T16:05:56.820Z,14.9288,-93.6554,66.7,5,mww,,123,0.879,1.11,us,us2000gj0x,2025-12-22T17:49:38.653Z,"78 km SW of La Esperanza (El Zapotal), Mexico",earthquake,5.5,4.7,0.053,34,reviewed,us,us
+2018-08-04T07:57:11.580Z,15.6469,-95.0506,35,4.1,mb,,162,1.025,1.36,us,us2000h7gf,2018-10-16T15:34:13.040Z,"58 km SE of El Carrizal, Mexico",earthquake,5.6,2,0.13,16,reviewed,us,us
+2018-08-05T04:53:10.420Z,14.4934,-91.384,112.98,4.3,mb,,133,0.302,1.13,us,us1000g3r2,2018-10-16T15:34:16.040Z,"4 km SSW of San Miguel Panán, Guatemala",earthquake,6.3,5.1,0.047,126,reviewed,us,us
+2018-08-06T13:18:04.800Z,18.4801,-101.2936,68.87,4.6,mb,,74,0.883,0.87,us,us1000g43d,2018-10-17T18:11:46.040Z,"7 km E of Aratichanguío, Mexico",earthquake,3.3,6.6,0.038,203,reviewed,us,us
+2018-08-10T03:44:50.930Z,15.0745,-94.5437,37.65,4.2,mb,,157,1.423,0.94,us,us1000g67b,2018-10-17T18:11:54.040Z,"125 km SW of Cabeza de Toro, Mexico",earthquake,6.5,9.1,0.053,101,reviewed,us,us
+2018-08-12T08:05:06.590Z,15.5757,-98.66,10,4,mb,,210,0.96,1.07,us,us2000h7la,2018-10-17T18:11:55.040Z,"87 km SSW of Santiago Tepextla, Mexico",earthquake,4,2,0.125,17,reviewed,us,us
+2018-08-12T14:42:09.110Z,17.1286,-100.8147,35,4.6,mb,,141,0.782,1.42,us,us1000g775,2018-10-17T18:11:55.040Z,"10 km SW of Nuxco, Mexico",earthquake,3.3,2,0.032,287,reviewed,us,us
+2018-08-15T06:17:43.270Z,16.8327,-94.8321,108.23,4.3,mb,,103,1.619,1.34,us,us1000gekm,2018-10-27T16:22:07.040Z,"11 km NNE of Lázaro Cárdenas, Mexico",earthquake,5.5,12.9,0.129,17,reviewed,us,us
+2018-08-16T16:15:28.780Z,16.2073,-98.0998,10,4.5,mb,,166,0.185,1.4,us,us1000gakz,2018-10-27T16:22:04.040Z,"9 km SW of El Carrizo, Mexico",earthquake,3.2,1.9,0.036,225,reviewed,us,us
+2018-08-22T18:03:07.550Z,16.6048,-98.7299,16.92,5.3,mww,,145,0.406,1.2,us,us1000gfiy,2022-05-03T19:28:04.497Z,"3 km SW of Agua Zarca, Mexico",earthquake,3.7,1,0.065,23,reviewed,us,us
+2018-08-23T13:30:15.680Z,17.5508,-104.997,17.86,4.1,mb,,235,1.735,1.14,us,us1000gg0u,2018-11-01T17:50:56.040Z,"180 km SSW of Cuyutlán, Mexico",earthquake,11.6,6,0.078,45,reviewed,us,us
+2018-08-25T23:39:55.000Z,16.2821,-95.1399,10,4.3,mb,,112,0.841,0.9,us,us1000ghe0,2022-08-08T07:29:20.846Z,"4 km NNE of San Pedro Huilotepec, Mexico",earthquake,4.4,1.6,0.076,49,reviewed,us,us
+2018-08-28T17:01:24.630Z,17.1665,-94.6002,141.65,4.3,mb,,89,0.281,1.31,us,us1000gj0f,2018-11-07T18:37:03.040Z,"9 km S of Hermanos Cedillo, Mexico",earthquake,6,5.2,0.079,45,reviewed,us,us
+2018-09-01T12:19:54.550Z,32.0881667,-115.023,20,3.99,mw,24,285,0.2188,0.32,ci,ci38043735,2018-11-07T18:37:08.040Z,"12km S of Estacion Coahuila, B.C., MX",earthquake,1.18,1.61,,4,reviewed,ci,ci
+2018-09-02T21:35:36.410Z,16.5182,-95.1827,25.85,4.5,mb,,91,1.16,1.03,us,us2000h6yc,2018-11-07T18:37:09.040Z,"2 km NE of Magdalena Tlacotepec, Mexico",earthquake,4.7,5.9,0.044,153,reviewed,us,us
+2018-09-03T18:11:34.460Z,15.0661,-91.5483,179.11,4.6,mb,,96,0.254,1.23,us,us2000h78f,2018-11-14T17:40:12.040Z,"9 km N of San Carlos Sija, Guatemala",earthquake,10.1,6.7,0.042,172,reviewed,us,us
+2018-09-04T15:06:46.490Z,31.9613,-94.4343,5,3.5,mwr,,73,1.168,0.29,us,us2000h85v,2020-03-20T02:24:25.532Z,"7 km NNW of Timpson, Texas",earthquake,2.3,2,,13,reviewed,us,slm
+2018-09-08T13:24:56.160Z,31.8488333,-117.1963333,26.1,3.75,mw,24,271,0.453,0.24,ci,ci38052847,2018-11-09T21:54:44.040Z,"49km W of El Sauzal, B.C., MX",earthquake,0.96,0.43,,4,reviewed,ci,ci
+2018-09-10T12:39:17.210Z,14.4378,-93.0418,35,4.6,mb,,129,0.885,1.01,us,us2000hbvx,2018-11-21T18:19:06.040Z,"73 km WSW of Puerto Madero, Mexico",earthquake,5.4,2,0.048,128,reviewed,us,us
+2018-09-10T17:15:47.970Z,16.0263,-98.28,3.64,4.9,mww,,99,1.085,0.96,us,us2000hbzi,2022-05-03T19:40:22.041Z,"Guerrero-Oaxaca border region, Mexico",earthquake,5.4,4.1,0.052,35,reviewed,us,us
+2018-09-11T15:30:36.000Z,16.6606,-93.8598,143.09,4.2,mb,,101,0.716,1.1,us,us1000h8qq,2018-11-21T18:19:06.040Z,"7 km N of Pomposo Castellanos, Mexico",earthquake,5.6,7.4,0.528,1,reviewed,us,us
+2018-09-12T02:35:26.690Z,14.8462,-94.0518,23.95,4.8,mb,,159,1.172,1.39,us,us2000hd7p,2018-11-21T18:19:06.040Z,"115 km SW of El Palmarcito, Mexico",earthquake,4.2,4.7,0.029,381,reviewed,us,us
+2018-09-15T00:28:34.770Z,14.5201,-92.7695,35,4.4,mb,,155,0.621,0.85,us,us2000hewy,2018-11-21T18:19:06.040Z,"43 km WSW of Puerto Madero, Mexico",earthquake,5.7,2,0.038,201,reviewed,us,us
+2018-09-16T04:30:14.200Z,16.2384,-98.4345,10,4.7,mb,,159,0.332,0.84,us,us2000hfck,2018-11-21T18:19:06.040Z,"11 km S of Santiago Tepextla, Mexico",earthquake,3.4,1.9,0.028,380,reviewed,us,us
+2018-09-20T09:21:18.080Z,14.6858,-93.7899,9,5.4,mww,,67,1.153,1.21,us,us2000hhh4,2022-05-03T19:31:15.963Z,"107 km SW of La Esperanza (El Zapotal), Mexico",earthquake,5.4,1.8,0.039,63,reviewed,us,us
+2018-09-20T09:57:43.840Z,14.6031,-93.8654,23.79,4.4,mb,,169,1.26,1.08,us,us2000hhhu,2018-11-27T15:52:00.040Z,"120 km SW of La Esperanza (El Zapotal), Mexico",earthquake,4.6,6.9,0.05,114,reviewed,us,us
+2018-09-20T20:51:12.910Z,14.4914,-93.8842,10,4.1,mb,,210,1.366,0.72,us,us1000h3aq,2018-11-27T15:51:55.040Z,"131 km SW of La Esperanza (El Zapotal), Mexico",earthquake,3.3,2,0.14,14,reviewed,us,us
+2018-09-20T22:30:09.910Z,14.5974,-93.8631,10,4.6,mb,,143,1.264,0.83,us,us2000hhw1,2018-11-27T15:52:01.040Z,"120 km SW of La Esperanza (El Zapotal), Mexico",earthquake,4.1,1.9,0.028,372,reviewed,us,us
+2018-09-21T03:27:45.780Z,15.566,-95.0745,22,4.3,mb,,160,1.527,1.48,us,us2000hhzl,2018-11-27T15:52:01.040Z,"64 km SSE of El Carrizal, Mexico",earthquake,4.4,7.3,0.054,96,reviewed,us,us
+2018-09-21T16:38:15.010Z,17.5725,-102.7687,10,4.6,mb,,184,0.899,1.44,us,us1000h3cq,2018-11-27T15:51:55.040Z,"63 km SW of Playa Azul, Mexico",earthquake,3.3,2,0.165,11,reviewed,us,us
+2018-09-22T15:51:52.070Z,15.7782,-98.0499,10,4.1,mb,,211,1.176,1.03,us,us1000h3qj,2018-11-27T15:51:56.040Z,"44 km SSW of Santa María Chico Ometepec, Mexico",earthquake,2.8,1.9,0.107,24,reviewed,us,us
+2018-09-22T17:00:00.310Z,16.9236,-94.6158,120.35,4.2,mb,,100,1.437,1.29,us,us1000h8r3,2018-11-27T15:51:56.040Z,"7 km ENE of Santa María Chimalapa, Mexico",earthquake,5.5,9.2,0.108,24,reviewed,us,us
+2018-09-25T02:22:17.020Z,16.5079,-99.0131,8.24,4.5,mb,,167,0.253,0.96,us,us2000hjkn,2018-12-01T16:41:27.040Z,"11 km SSW of Copala, Mexico",earthquake,4.2,4.7,0.04,181,reviewed,us,us
+2018-09-25T03:17:15.940Z,16.4642,-99.0472,13.89,4.3,mb,,146,0.282,0.99,us,us2000hjks,2018-12-01T16:41:28.040Z,"17 km SSW of Copala, Mexico",earthquake,6.2,5,0.043,155,reviewed,us,us
+2018-09-27T17:32:11.750Z,14.5696,-92.6378,64.63,4.5,mb,,134,0.492,1.26,us,us1000h3d9,2022-08-08T08:40:16.452Z,"28 km SW of Puerto Madero, Mexico",earthquake,4,8.5,0.038,197,reviewed,us,us
+2018-09-29T02:17:46.720Z,32.3476667,-115.184,28.67,4.41,mw,34,172,0.1018,0.29,ci,ci37373442,2018-12-01T16:43:15.040Z,"1km SE of Delta, B.C., MX",earthquake,0.74,0.41,,6,reviewed,ci,ci
+2018-10-01T15:47:06.840Z,15.8351,-96.73,31.55,4.4,mb,,182,0.602,0.43,us,us2000i6fz,2018-12-14T20:32:36.040Z,"2 km NNW of San Francisco Cozoaltepec, Mexico",earthquake,3.3,9.7,0.535,1,reviewed,us,us
+2018-10-01T17:26:47.450Z,15.9025,-96.7805,20.61,4.6,mb,,188,0.66,1.13,us,us2000i6g2,2018-12-14T20:32:36.040Z,"10 km SW of San Bartolomé Loxícha, Mexico",earthquake,2.4,9.7,0.193,8,reviewed,us,us
+2018-10-01T21:43:03.070Z,16.7656,-94.0096,119.8,5.3,mww,,68,0.85,1.13,us,us1000h5c4,2025-12-22T17:51:12.626Z,"21 km WNW of Emiliano Zapata, Mexico",earthquake,5.4,3.6,0.044,50,reviewed,us,us
+2018-10-02T02:07:41.740Z,17.5569,-101.1024,36.91,4.1,mb,,156,0.349,0.75,us,us1000h5fk,2018-12-14T20:32:36.040Z,"17 km E of Petatlán, Mexico",earthquake,6,18.5,0.097,29,reviewed,us,us
+2018-10-02T17:45:03.250Z,15.9693,-95.1752,35,4.4,mb,,128,0.919,1.32,us,us1000h5sq,2018-12-14T20:32:36.040Z,"22 km S of Salina Cruz, Mexico",earthquake,5.3,2,0.051,109,reviewed,us,us
+2018-10-03T23:51:17.300Z,15.2721,-90.9686,10,4,mb,,91,0.517,1.07,us,us1000h6pi,2022-08-08T08:54:06.179Z,"9 km SE of Cunén, Guatemala",earthquake,2.3,1.9,0.116,20,reviewed,us,us
+2018-10-04T00:38:14.850Z,15.2761,-90.9884,10,4,mb,,90,0.497,0.92,us,us1000haj3,2018-12-14T20:32:45.040Z,"7 km SSE of Cunén, Guatemala",earthquake,4.1,1.9,0.143,13,reviewed,us,us
+2018-10-04T15:37:54.180Z,15.4949,-104.3891,10,4.2,mb,,225,5.112,0.89,us,us1000h6zu,2018-12-14T20:32:41.040Z,"off the coast of Michoacan, Mexico",earthquake,11.9,2,0.044,146,reviewed,us,us
+2018-10-05T20:24:29.890Z,16.2225,-94.1253,98.82,4.3,mb,,131,1.012,1.3,us,us2000i6g6,2018-12-14T20:32:36.040Z,"5 km WNW of Los Corazones, Mexico",earthquake,5.5,7.5,0.16,11,reviewed,us,us
+2018-10-07T20:56:01.900Z,19.4678,-108.9457,10,4.5,mb,,204,4.298,1.42,us,us1000h8i2,2025-12-22T17:51:23.897Z,"Revilla Gigedo Islands region",earthquake,12,2,0.044,152,reviewed,us,us
+2018-10-08T12:05:56.150Z,23.6344,-108.9329,7,5.5,mww,,150,0.928,1.36,us,us1000h8pv,2025-12-22T17:51:24.808Z,"66 km E of La Rivera, Mexico",earthquake,7.4,1.9,0.057,30,reviewed,us,us
+2018-10-09T22:08:55.240Z,14.7539,-104.3415,10,4.4,mb,,174,3.96,0.73,us,us1000h9q5,2018-12-21T21:15:48.040Z,"northern East Pacific Rise",earthquake,9.8,2,0.098,30,reviewed,us,us
+2018-10-12T21:09:49.310Z,14.1973,-91.1973,64.33,5.7,mww,,74,0.581,0.79,us,us1000hbcu,2022-05-03T19:35:21.374Z,"11 km E of Nueva Concepción, Guatemala",earthquake,6.1,3.8,0.043,51,reviewed,us,us
+2018-10-14T01:32:15.170Z,16.5305,-98.1429,35,4.2,mb,,179,0.657,1.27,us,us1000hbur,2022-08-08T09:09:58.895Z,"1 km S of San Sebastián Ixcapa, Mexico",earthquake,5.5,2,0.05,112,reviewed,us,us
+2018-10-17T00:34:16.620Z,14.1629,-93.0034,10,4.3,mb,,161,1.029,0.97,us,us1000hd5d,2018-12-21T22:27:02.040Z,"88 km SW of Puerto Madero, Mexico",earthquake,5.5,1.9,0.081,43,reviewed,us,us
+2018-10-17T17:47:19.600Z,30.6628,-114.194,10,4.1,mb,,179,0.677,0.74,us,us1000hdh6,2018-12-21T22:27:03.040Z,"73 km ESE of San Felipe, Mexico",earthquake,6.6,2,0.369,2,reviewed,us,us
+2018-10-24T17:12:05.350Z,15.9427,-94.9041,39.46,4.4,mb,,143,1.142,1.12,us,us1000hgl1,2019-01-10T17:18:35.040Z,"30 km SSE of San Mateo del Mar, Mexico",earthquake,5,11.4,0.065,68,reviewed,us,us
+2018-10-26T09:48:11.930Z,15.9674,-98.9298,10,4.8,mww,,164,0.788,0.92,us,us1000hhhd,2019-01-10T17:18:38.040Z,"63 km SSW of Barra de Tecoanapa, Mexico",earthquake,3.9,1.9,0.127,6,reviewed,us,us
+2018-10-27T18:50:18.750Z,15.0106,-94.0464,35.53,4.5,mb,,123,1.055,0.86,us,us1000hi1x,2019-01-10T17:18:40.040Z,"101 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,3,7,0.046,139,reviewed,us,us
+2018-10-30T18:39:46.090Z,17.6946,-95.4841,118.72,4.4,mb,,150,2.942,1.09,us,us1000hj8k,2019-01-21T14:29:40.040Z,"7 km NW of Nuevo Ixcatlán, Mexico",earthquake,14.2,22.7,0.069,60,reviewed,us,us
+2018-11-01T11:07:57.700Z,15.2269,-94.5222,38.44,4.3,mb,,171,1.343,1,us,us1000hp7u,2019-01-21T14:29:42.040Z,"110 km SSW of La Gloria, Mexico",earthquake,5.9,14.5,0.091,34,reviewed,us,us
+2018-11-03T01:49:06.960Z,15.1227,-93.9221,26.68,4.1,mb,,159,0.891,1.25,us,us2000i6aa,2019-01-21T14:29:45.040Z,"83 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,2.7,8.6,0.151,12,reviewed,us,us
+2018-11-05T10:36:44.270Z,16.0839,-95.1615,27.45,4.4,mb,,124,1.036,1.2,us,us2000i6yq,2019-01-21T16:42:54.040Z,"10 km SSE of Salina Cruz, Mexico",earthquake,4.4,6.6,0.05,116,reviewed,us,us
+2018-11-06T05:00:59.530Z,15.3663,-94.7415,10,4.3,mb,,169,1.376,1.47,us,us2000i7b4,2019-01-21T16:42:54.040Z,"96 km S of San Francisco del Mar Viejo, Mexico",earthquake,4.9,1.9,0.073,53,reviewed,us,us
+2018-11-07T21:34:39.120Z,17.3477,-94.0559,170.49,4.2,mb,,78,1.057,0.78,us,us1000i2c7,2019-01-21T16:42:51.040Z,"21 km NE of La Horqueta (Poblado Doce), Mexico",earthquake,3.7,12.1,0.187,8,reviewed,us,us
+2018-11-09T14:33:51.830Z,25.9824,-110.4898,10,4.9,mb,,153,2.339,1.06,us,us1000hpq9,2025-12-22T18:04:45.698Z,"86 km E of Loreto, Mexico",earthquake,8.2,1.9,0.048,136,reviewed,us,us
+2018-11-10T21:22:08.050Z,16.3902,-94.1947,107.63,4.1,mb,,159,0.96,1.27,us,us1000hqfp,2019-01-21T16:42:54.040Z,"2 km N of San Pedro Tapanatepec, Mexico",earthquake,7.9,10.1,0.104,25,reviewed,us,us
+2018-11-11T17:45:56.840Z,14.3311,-91.5715,75.63,4.1,mb,,169,0.226,1.11,us,us1000hqlt,2019-01-21T16:42:52.040Z,"18 km SSW of San Lorenzo, Guatemala",earthquake,9.1,10.7,0.103,26,reviewed,us,us
+2018-11-12T15:54:59.190Z,16.0402,-97.3792,20.32,4.4,mb,,178,2.611,0.87,us,us1000hquk,2019-01-30T18:36:22.040Z,"6 km ENE of Río Grande, Mexico",earthquake,9.8,5.7,0.062,75,reviewed,us,us
+2018-11-13T01:21:42.310Z,24.1579,-109.0843,10,4.3,mb,,112,0.916,0.94,us,us1000hr40,2019-01-30T18:36:23.040Z,"80 km NE of La Rivera, Mexico",earthquake,8.6,1.9,0.049,121,reviewed,us,us
+2018-11-14T09:26:15.860Z,14.7575,-94.2455,10,4.5,mb,,156,1.367,0.87,us,us1000hrin,2019-01-30T18:36:21.040Z,"136 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,6.5,2,0.046,135,reviewed,us,us
+2018-11-15T06:16:11.320Z,16.0772,-95.1852,35,4,mb,,132,0.939,1.32,us,us1000hs23,2019-01-30T18:36:21.040Z,"10 km S of Salina Cruz, Mexico",earthquake,3.6,2,0.101,26,reviewed,us,us
+2018-11-17T19:37:58.470Z,14.2999,-92.9881,10,4.3,mb,,215,1.272,1.11,us,us1000hvv4,2019-01-30T18:36:28.040Z,"76 km SW of Puerto Madero, Mexico",earthquake,8.5,2,0.114,22,reviewed,us,us
+2018-11-19T20:18:42.510Z,32.2065,-115.2535,10.95,4.82,mw,29,149,0.2168,0.38,ci,ci38138175,2019-02-02T20:02:26.040Z,"8km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,0.79,31.61,,6,reviewed,ci,ci
+2018-11-19T23:49:15.230Z,32.2073333,-115.226,18.63,3.51,ml,28,167,0.2219,0.37,ci,ci38138415,2019-02-02T20:02:27.040Z,"6km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,0.89,1.37,0.216,226,reviewed,ci,ci
+2018-11-20T01:37:39.420Z,32.2201653,-115.231163,22.52,3.52,ml,28,164,0.2084,0.33,ci,ci38138535,2019-02-02T20:02:27.040Z,"6km W of Alberto Oviedo Mota, B.C., MX",earthquake,0.89,2.15,0.308,22,reviewed,ci,ci
+2018-11-22T20:45:17.780Z,15.7497,-98.3385,10,4.1,mb,,206,0.67,0.98,us,us1000i2cg,2019-02-02T20:02:25.040Z,"56 km SSW of Corralero, Mexico",earthquake,5.2,2,0.086,37,reviewed,us,us
+2018-11-24T19:54:42.150Z,15.5878,-94.9225,35.1,4.1,mb,,162,1.156,1.19,us,us1000hw72,2019-02-02T20:02:25.040Z,"69 km S of San Mateo del Mar, Mexico",earthquake,4.5,18,0.135,15,reviewed,us,us
+2018-11-26T19:32:57.250Z,15.9404,-95.2971,36.73,4.1,mb,,186,3.056,1.14,us,us1000hwrr,2019-02-09T19:02:10.040Z,"17 km SE of El Carrizal, Mexico",earthquake,11.3,12.8,0.086,37,reviewed,us,us
+2018-11-27T05:37:59.180Z,19.3732,-108.3512,10,5.6,mww,,135,4.54,1.45,us,us1000hwxu,2022-05-03T19:40:11.553Z,"Revilla Gigedo Islands region",earthquake,9.3,1.8,0.032,95,reviewed,us,us
+2018-12-02T16:52:52.050Z,15.9024,-93.7278,92.67,4.7,mb,,130,1.575,0.82,us,us1000i0k0,2019-02-09T19:02:21.040Z,"2 km WNW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,4.8,7.2,0.032,298,reviewed,us,us
+2018-12-03T20:00:33.260Z,18.3181,-101.105,63.12,4.2,mb,,91,0.72,0.94,us,us1000i1c4,2019-02-16T19:52:17.040Z,"16 km E of Guayameo, Mexico",earthquake,2.2,8,0.055,90,reviewed,us,us
+2018-12-05T23:00:10.910Z,19.3817,-109.0991,10,4.2,mb,,122,1.823,0.95,us,us1000i34e,2019-02-16T19:52:25.040Z,"Revilla Gigedo Islands region",earthquake,6.9,1.9,0.074,50,reviewed,us,us
+2018-12-07T12:14:12.310Z,17.2858,-101.6775,10,4,mb,,169,0.378,1.3,us,us1000i443,2019-03-03T15:46:41.510Z,"41 km SSW of Ixtapa-Zihuatanejo, Mexico",earthquake,4.2,1.9,0.071,53,reviewed,us,us
+2018-12-07T23:50:58.810Z,14.1182,-91.1269,62.16,4.2,mb,,153,0.682,0.66,us,us1000i4nw,2019-02-16T19:52:30.040Z,"8 km WNW of La Gomera, Guatemala",earthquake,5.6,8.1,0.055,92,reviewed,us,us
+2018-12-12T18:57:17.620Z,15.7143,-92.2369,205.6,4.4,mb,,88,0.572,1.06,us,us2000it04,2019-02-16T22:29:06.040Z,"1 km E of Lázaro Cárdenas, Mexico",earthquake,5.8,6.5,0.127,18,reviewed,us,us
+2018-12-13T03:20:50.500Z,14.2931,-93.3685,18.29,4.3,mb,,129,1.23,0.94,us,us2000iv1f,2019-02-16T22:29:06.040Z,"112 km WSW of Puerto Madero, Mexico",earthquake,4.3,5.9,0.079,45,reviewed,us,us
+2018-12-13T07:13:58.490Z,15.2071,-94.4457,35,4.2,mb,,172,1.92,1.44,us,us2000it63,2019-02-16T22:29:07.040Z,"107 km SW of Cabeza de Toro, Mexico",earthquake,5.4,2,0.088,36,reviewed,us,us
+2018-12-16T22:47:21.710Z,16.5996,-94.6362,115.18,4.1,mb,,114,0.543,0.98,us,us2000iu8d,2019-02-16T22:29:11.040Z,"4 km NNW of Niltepec, Mexico",earthquake,6.1,3.9,0.123,18,reviewed,us,us
+2018-12-19T23:38:55.740Z,15.153,-94.2039,35,4,mb,,192,2.034,0.89,us,us2000j0b2,2019-02-23T20:22:57.040Z,"97 km SSW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,7.8,2,0.26,4,reviewed,us,us
+2018-12-20T17:01:49.130Z,14.1216,-90.2242,165.54,4.6,mb,,160,0.881,0.88,us,us2000j1sa,2019-02-23T20:23:05.040Z,"6 km NE of San Juan Tecuaco, Guatemala",earthquake,6.9,8.6,0.08,46,reviewed,us,us
+2018-12-20T23:04:11.840Z,15.091,-94.264,35.12,4.3,mb,,171,1.178,0.96,us,us2000ivnc,2019-02-23T20:20:45.040Z,"106 km SW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,5.5,10.2,0.082,42,reviewed,us,us
+2018-12-21T01:59:10.070Z,15.017,-94.1927,35,5,mww,,79,1.162,1.33,us,us2000ivq8,2025-12-22T17:47:45.779Z,"109 km SW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,5.4,1.9,0.086,13,reviewed,us,us
+2018-12-24T04:04:31.150Z,18.0727,-104.8121,10,4.4,mb,,224,3.738,0.94,us,us2000iwzb,2019-03-05T17:46:31.040Z,"122 km SW of Cuyutlán, Mexico",earthquake,10.4,2,0.061,77,reviewed,us,us
+2018-12-25T04:46:06.570Z,14.484,-90.4992,204.2,4.4,mb,,132,1.106,0.84,us,us2000j31h,2019-03-05T17:46:33.040Z,"3 km E of Villa Canales, Guatemala",earthquake,7.1,6.2,0.081,44,reviewed,us,us
+2018-12-25T06:55:28.010Z,19.3313,-108.7861,10,4.2,mb,,225,4.465,0.6,us,us2000ixdn,2019-03-05T17:46:33.040Z,"Revilla Gigedo Islands region",earthquake,9.1,1.9,0.083,41,reviewed,us,us
+2018-12-25T20:24:35.350Z,15.3548,-94.7283,50.76,4,mb,,180,1.392,0.95,us,us2000izw1,2019-03-05T17:46:33.040Z,"97 km S of San Francisco del Mar Viejo, Mexico",earthquake,6.3,9.5,0.106,24,reviewed,us,us
+2018-12-27T09:00:43.670Z,16.5643,-94.5451,101.03,4.3,mb,,116,0.616,1.14,us,us2000izw3,2019-03-05T17:46:35.040Z,"7 km E of Niltepec, Mexico",earthquake,5,4.9,0.266,4,reviewed,us,us
+2018-12-27T15:37:11.970Z,17.3657,-100.7042,40.8,4.2,mb,,161,0.523,1.47,us,us2000iy4g,2019-03-05T17:46:36.040Z,"16 km NNW of El Súchil, Mexico",earthquake,3.9,6.8,0.089,35,reviewed,us,us
+2018-12-27T19:37:14.470Z,14.9985,-94.327,30.08,4.4,mb,,161,1.279,1.39,us,us2000iy6s,2019-03-05T17:46:36.040Z,"119 km SW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,6.3,2.9,0.072,55,reviewed,us,us
+2018-12-30T14:28:12.850Z,17.8507,-95.6568,117.57,4,mb,,56,1.055,0.9,us,us2000iz8e,2019-03-05T17:46:39.040Z,"13 km ENE of Arenal Santa Ana, Mexico",earthquake,5.3,9.7,0.116,20,reviewed,us,us
+2018-12-31T10:13:30.530Z,17.2942,-93.9147,166.15,4.6,mb,,75,0.915,1.02,us,us2000izep,2019-03-05T17:46:41.040Z,"31 km ENE of La Horqueta (Poblado Doce), Mexico",earthquake,6.2,5,0.043,162,reviewed,us,us
+2018-12-31T14:05:33.880Z,15.0403,-94.4568,10,3.9,mb,,190,1.364,0.97,us,us2000j5n0,2019-03-05T17:46:41.040Z,"122 km SW of Cabeza de Toro, Mexico",earthquake,5.6,2,0.21,6,reviewed,us,us
+2018-12-31T17:34:53.690Z,16.2792,-93.7476,115.96,4.3,mb,,138,0.764,0.64,us,us2000izw8,2019-03-05T17:46:41.040Z,"16 km SE of Tierra y Libertad, Mexico",earthquake,5.3,7.6,0.308,3,reviewed,us,us

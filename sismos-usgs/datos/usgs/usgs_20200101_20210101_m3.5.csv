@@ -1,0 +1,322 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2020-01-05T04:40:49.332Z,16.4011,-94.489,87,5.9,mww,,36,0.783,1.14,us,us70006uwq,2025-12-22T18:34:58.016Z,"3 km W of Reforma de Pineda, Mexico",earthquake,3.9,1.8,0.029,117,reviewed,us,us
+2020-01-08T14:07:02.225Z,15.3063,-94.2184,35,4.2,mb,,163,1.041,1.16,us,us70007jzq,2020-04-02T21:28:48.040Z,"83 km SW of Cabeza de Toro, Mexico",earthquake,6.8,2,0.153,12,reviewed,us,us
+2020-01-10T15:21:21.632Z,18.4552,-105.2328,10,5.6,mww,,102,1.64,0.97,us,us70006xjw,2025-12-22T18:26:02.768Z,"101 km SW of Barra de Navidad, Mexico",earthquake,6.4,1.9,0.043,52,reviewed,us,us
+2020-01-11T14:22:02.982Z,16.335,-98.2422,22.03,4.8,mb,,182,0.124,1.02,us,us70006yeh,2025-12-22T18:26:13.307Z,"2 km NE of El Ciruelo, Mexico",earthquake,4.6,6.3,0.034,261,reviewed,us,us
+2020-01-12T05:21:02.820Z,32.3661667,-115.2131667,27.69,3.98,mw,34,108,0.09415,0.31,ci,ci39033039,2024-10-16T23:32:46.290Z,"2km WNW of Delta, B.C., MX",earthquake,0.63,0.45,,4,reviewed,ci,ci
+2020-01-12T07:43:07.994Z,16.1781,-98.3731,10,4.3,mb,,182,0.318,0.88,us,us70006yn8,2020-04-02T21:28:19.040Z,"17 km S of Santo Domingo Armenta, Mexico",earthquake,4.2,1.9,0.049,121,reviewed,us,us
+2020-01-12T16:58:15.495Z,25.4678,-109.7957,10,4.2,mb,,112,0.695,1.15,us,us70006ytm,2020-04-02T21:28:21.040Z,"58 km SW of Campo Pesquero el Colorado, Mexico",earthquake,3.4,1.9,0.096,30,reviewed,us,us
+2020-01-13T07:07:05.645Z,15.7432,-94.8589,35,4.2,mb,,133,1.34,1.06,us,us70006z2b,2020-04-02T21:28:23.040Z,"53 km SSE of San Mateo del Mar, Mexico",earthquake,4.1,2,0.059,81,reviewed,us,us
+2020-01-14T05:42:44.666Z,15.6916,-93.6511,80.22,4.1,mb,,112,0.416,1.04,us,us70006zid,2020-04-02T21:28:30.040Z,"14 km SSW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,3.9,8.5,0.078,45,reviewed,us,us
+2020-01-15T07:44:33.690Z,16.3194,-98.0329,10.03,4.8,mb,,151,0.115,1.26,us,us7000702h,2025-12-22T18:26:22.534Z,"3 km SE of Pinotepa Nacional, Mexico",earthquake,5.2,5.1,0.029,367,reviewed,us,us
+2020-01-15T08:15:27.440Z,16.4901,-97.9016,32,5,mww,,147,0.499,1.29,us,us70007035,2025-12-22T17:56:43.854Z,"6 km ENE of San Juan Colorado, Mexico",earthquake,5.6,4.1,0.062,25,reviewed,us,us
+2020-01-15T10:45:38.215Z,16.8785,-100.1092,10,4.1,mb,,201,0.213,0.71,us,us60007i8k,2020-04-08T19:40:00.040Z,"7 km SSW of Los Mogotes, Mexico",earthquake,3.8,1.9,0.165,10,reviewed,us,us
+2020-01-16T22:59:10.491Z,16.2034,-94.896,56.53,4.1,mb,,137,0.882,0.81,us,us70007jzr,2020-04-08T19:40:19.040Z,"9 km E of San Mateo del Mar, Mexico",earthquake,4,13.3,0.198,7,reviewed,us,us
+2020-01-17T02:07:21.193Z,16.5949,-95.0581,17.46,5.2,mww,,95,0.52,1.11,us,us700071ey,2025-12-22T18:26:34.043Z,"6 km NE of Ixtepec, Mexico",earthquake,3.7,1.4,0.049,40,reviewed,us,us
+2020-01-17T02:11:05.496Z,16.5778,-95.1975,6.85,5,mb,,94,0.592,1.04,us,us700071f1,2025-12-22T18:26:31.975Z,"1 km SE of Santiago Laollaga, Mexico",earthquake,3.9,4.4,0.063,80,reviewed,us,us
+2020-01-19T02:13:44.633Z,17.6021,-94.3766,174.48,4,mb,,74,0.358,0.97,us,us60007k6n,2020-04-08T19:40:05.040Z,"22 km NE of Niños Héroes, Mexico",earthquake,5.4,4.2,0.126,17,reviewed,us,us
+2020-01-19T15:04:21.219Z,16.4899,-95.0955,10,4,mb,,113,0.631,0.63,us,us70007jzw,2020-04-08T19:40:19.040Z,"3 km WSW of Asunción Ixtaltepec, Mexico",earthquake,2.4,1.9,0.211,6,reviewed,us,us
+2020-01-20T16:56:02.322Z,15.4866,-95.0032,23.87,4.5,mb,,178,1.1,0.74,us,us70007jzz,2020-04-08T19:40:19.040Z,"76 km SSE of El Carrizal, Mexico",earthquake,4.1,10.7,0.121,20,reviewed,us,us
+2020-01-21T09:49:16.030Z,17.0888,-94.5653,128.12,4.7,mb,,66,0.304,0.76,us,us60007c0a,2020-04-08T19:39:47.040Z,"18 km SSE of Hermanos Cedillo, Mexico",earthquake,5.7,4.7,0.034,259,reviewed,us,us
+2020-01-21T23:49:23.122Z,14.5394,-94.1043,10,4.3,mb,,236,1.44,0.77,us,us60007lgk,2020-04-08T19:40:07.040Z,"142 km SW of La Esperanza (El Zapotal), Mexico",earthquake,6.4,2,0.071,57,reviewed,us,us
+2020-01-24T10:47:50.807Z,16.1964,-97.0739,35,4.8,mb,,81,0.209,1.1,us,us60007elk,2025-12-22T18:27:01.482Z,"6 km NE of San Juan Lachao, Mexico",earthquake,6.1,2,0.027,433,reviewed,us,us
+2020-01-25T14:29:08.774Z,15.5452,-93.3278,98.46,4.6,mb,,153,0.19,0.66,us,us70007k02,2020-04-11T18:21:14.040Z,"13 km WNW of El Palmarcito, Mexico",earthquake,5,8.8,0.386,2,reviewed,us,us
+2020-01-27T18:00:15.518Z,14.5025,-92.6756,35,4.2,mb,,170,0.745,0.55,us,us70007k03,2020-04-11T18:21:15.040Z,"36 km SW of Puerto Madero, Mexico",earthquake,4.7,2,0.372,2,reviewed,us,us
+2020-01-28T12:56:38.988Z,16.4936,-95.1217,10,4.1,mb,,117,0.636,0.76,us,us70007k04,2020-04-11T18:21:15.040Z,"3 km E of San Pedro Comitancillo, Mexico",earthquake,2.1,1.9,0.158,11,reviewed,us,us
+2020-01-29T07:14:55.437Z,14.4057,-89.9472,247.91,4.1,mb,,112,0.568,0.94,us,us60007ivt,2020-04-18T22:09:51.040Z,"11 km WNW of El Progreso, Guatemala",earthquake,8.5,5.8,0.099,28,reviewed,us,us
+2020-01-29T23:17:47.302Z,16.9133,-100.0341,10,4.8,mb,,109,0.146,0.85,us,us60007jlz,2021-06-07T13:30:06.149Z,"2 km WSW of Colonia Luces en el Mar, Mexico",earthquake,4.8,1.8,0.057,96,reviewed,us,us
+2020-01-30T06:47:22.416Z,16.9407,-99.9791,13.59,5.2,mww,,153,0.11,0.79,us,us60007juk,2025-12-22T18:27:27.584Z,"1 km W of El Conchero, Mexico",earthquake,5.8,3.5,0.041,58,reviewed,us,us
+2020-01-30T07:01:52.687Z,16.6629,-100.1306,10,4,mb,,203,0.404,1.28,us,us70007k0a,2020-04-18T22:10:27.040Z,"31 km SSW of Colonia Luces en el Mar, Mexico",earthquake,2,2,0.143,13,reviewed,us,us
+2020-01-30T07:09:01.467Z,16.7697,-99.9292,10,4.3,mb,,210,1.522,0.98,us,us60007jv9,2020-04-18T22:09:55.040Z,"9 km SSW of Acapulco de Juárez, Mexico",earthquake,11.1,2,0.088,37,reviewed,us,us
+2020-01-31T01:08:59.359Z,16.7516,-100.1174,10,4.2,mb,,193,0.252,0.7,us,us60007kxz,2020-04-18T22:09:58.040Z,"21 km SSW of Los Mogotes, Mexico",earthquake,2.8,1.9,0.115,21,reviewed,us,us
+2020-01-31T03:25:51.533Z,31.7083,-104.0187,5,3.6,mwr,,48,0.213,0.43,us,us60007kzz,2020-04-18T22:09:59.040Z,"39 km W of Mentone, Texas",earthquake,2.6,1.9,0.127,6,reviewed,us,us
+2020-01-31T03:27:37.381Z,31.7132,-104.0271,5,3.6,mwr,,49,0.221,0.4,us,us60007l03,2020-04-18T22:09:59.040Z,"40 km W of Mentone, Texas",earthquake,0.8,1.5,0.06,27,reviewed,us,us
+2020-02-03T13:02:51.688Z,14.1166,-91.2983,89.89,4.2,mb,,176,0.558,0.6,us,us60007ndp,2020-04-18T22:10:20.040Z,"9 km S of Nueva Concepción, Guatemala",earthquake,6.7,6.3,0.099,28,reviewed,us,us
+2020-02-05T10:43:06.434Z,19.8937,-109.4208,10,5.2,mww,,181,3.804,0.9,us,us70007iz7,2025-12-22T18:27:51.603Z,"Revilla Gigedo Islands region",earthquake,9.7,1.9,0.066,22,reviewed,us,us
+2020-02-05T23:44:30.741Z,14.5774,-94.293,10,4.1,mb,,206,1.527,1.11,us,us600089wl,2020-04-25T22:17:44.040Z,"154 km SW of El Palmarcito, Mexico",earthquake,3.7,2,0.234,5,reviewed,us,us
+2020-02-09T15:57:37.614Z,15.7551,-98.4601,10,3.9,mb,,217,0.709,0.69,us,us600089wp,2020-04-25T22:17:44.040Z,"60 km SSW of Corralero, Mexico",earthquake,4.2,2,0.23,5,reviewed,us,us
+2020-02-09T16:19:37.303Z,17.5066,-102.0552,19.95,4.1,mb,,198,0.571,0.46,us,us600089wq,2020-04-25T22:17:44.040Z,"47 km WSW of Ixtapa, Mexico",earthquake,6.2,7.6,0.12,19,reviewed,us,us
+2020-02-09T21:33:49.014Z,15.9162,-94.2601,78.11,4.2,mb,,145,1.024,0.96,us,us70007m8f,2020-04-25T22:19:02.040Z,"30 km SW of La Gloria, Mexico",earthquake,4.8,8.2,0.074,51,reviewed,us,us
+2020-02-10T02:54:35.291Z,14.649,-87.4576,10,4.4,mb,,83,0.615,1.17,us,us70007mdh,2020-04-25T22:19:06.040Z,"5 km SE of El Rancho, Honduras",earthquake,2.3,1.9,0.066,67,reviewed,us,us
+2020-02-12T07:41:08.950Z,18.3724,-101.8168,58.33,4.2,mb,,98,0.831,1.33,us,us70007nnd,2020-05-02T22:09:40.040Z,"10 km NW of Coahuayutla de Guerrero, Mexico",earthquake,3.8,6.7,0.039,183,reviewed,us,us
+2020-02-13T08:16:46.832Z,29.0856,-113.1275,10,4.3,mb,,191,2.452,1,us,us70007p8d,2025-12-22T18:28:59.396Z,"94 km NE of San Luis, Mexico",earthquake,9.3,2,0.122,19,reviewed,us,us
+2020-02-14T07:35:14.363Z,15.5149,-87.799,10,3.6,mb_lg,,77,1.536,0.52,us,us70007pwg,2020-05-02T22:09:49.040Z,"3 km ENE of Victoria, Honduras",earthquake,3,2,0.136,14,reviewed,us,us
+2020-02-15T21:23:41.230Z,25.0563,-109.6626,10,4.6,mb,,111,1.117,0.82,us,us70007r0d,2025-12-22T18:29:19.790Z,"85 km SSW of Campo Pesquero el Colorado, Mexico",earthquake,6.6,1.9,0.08,46,reviewed,us,us
+2020-02-18T13:28:06.682Z,31.7299,-104.0257,5,3.9,mwr,,48,0.205,0.66,us,us70007scn,2020-05-02T22:10:20.040Z,"40 km W of Mentone, Texas",earthquake,4.4,1.9,0.061,26,reviewed,us,us
+2020-02-19T13:55:53.594Z,23.8085,-108.8845,10,4.1,mb,,149,0.978,0.78,us,us70007t0n,2020-05-09T21:41:00.040Z,"75 km ENE of La Rivera, Mexico",earthquake,7.1,2,0.186,8,reviewed,us,us
+2020-02-20T03:39:24.690Z,15.5164,-95.0515,35,4,mb,,186,1.048,0.86,us,us600089wv,2020-05-09T21:40:55.040Z,"70 km SSE of El Carrizal, Mexico",earthquake,2.4,2,0.184,8,reviewed,us,us
+2020-02-21T01:48:14.355Z,17.3288,-100.4434,31.57,4.7,mb,,62,0.115,1,us,us70007typ,2020-05-09T21:41:05.040Z,"12 km N of El Ticui, Mexico",earthquake,3.9,4.9,0.026,446,reviewed,us,us
+2020-02-22T16:43:23.542Z,18.159,-105.55,10,4.2,mb,,234,4.351,1.28,us,us70007ut5,2020-05-09T21:41:11.040Z,"147 km SW of Barra de Navidad, Mexico",earthquake,13.2,2,0.083,42,reviewed,us,us
+2020-02-26T08:23:53.686Z,16.0434,-95.2189,10,4.3,mb,,134,0.898,1,us,us600089wy,2020-05-19T22:14:29.040Z,"14 km S of Salina Cruz, Mexico",earthquake,2.2,2,0.153,12,reviewed,us,us
+2020-02-26T08:33:24.615Z,16.0654,-95.2188,10,4.4,mb,,139,0.905,1.28,us,us600089wz,2020-05-19T22:14:29.040Z,"12 km SSW of Salina Cruz, Mexico",earthquake,3.3,1.8,0.268,4,reviewed,us,us
+2020-02-28T22:04:11.948Z,19.5815,-109.3028,10,4.1,mb,,278,4.127,0.93,us,us600086ik,2020-05-19T22:14:09.040Z,"Revilla Gigedo Islands region",earthquake,13.3,2,0.045,136,reviewed,us,us
+2020-02-29T05:46:47.296Z,16.2916,-92.9985,10,4,mb,,114,0.49,1.09,us,us600086rw,2020-05-19T22:14:11.040Z,"3 km W of Jericó, Mexico",earthquake,4.5,2,0.157,11,reviewed,us,us
+2020-02-29T11:54:22.763Z,14.8409,-93.7741,35,4.6,mb,,103,1.012,0.69,us,us600086vt,2020-05-19T22:14:12.040Z,"93 km SW of La Esperanza (El Zapotal), Mexico",earthquake,6.6,2,0.033,268,reviewed,us,us
+2020-03-01T03:01:31.171Z,16.6449,-98.4274,10,4.2,mb,,147,0.382,0.5,us,us70008n55,2020-05-19T22:14:37.040Z,"5 km SSW of Ometepec, Mexico",earthquake,0.9,1.9,0.265,4,reviewed,us,us
+2020-03-03T05:43:16.459Z,18.0791,-105.1036,10,4.2,mb,,253,3.987,1.15,us,us600088fc,2020-05-19T22:14:22.040Z,"132 km SSW of Barra de Navidad, Mexico",earthquake,11.8,2,0.072,54,reviewed,us,us
+2020-03-06T20:30:43.168Z,14.3746,-93.1636,14.53,4.9,mwr,,106,1.018,0.94,us,us60008bc6,2025-12-22T18:30:36.865Z,"near the coast of Chiapas, Mexico",earthquake,5.6,3.3,0.086,13,reviewed,us,us
+2020-03-06T22:01:02.069Z,14.5092,-93.1086,35,4.7,mb,,167,0.907,0.85,us,us60008bdv,2020-05-23T22:03:19.040Z,"77 km WSW of Puerto Madero, Mexico",earthquake,4.9,1.9,0.029,359,reviewed,us,us
+2020-03-07T03:52:03.180Z,31.6893333,-114.5405,9.98,5.49,mw,13,106,0.3208,0.35,ci,ci38385946,2025-12-22T18:30:37.537Z,"71km SE of Estacion Coahuila, B.C., MX",earthquake,0.78,31.61,,6,reviewed,ci,ci
+2020-03-07T10:29:10.461Z,16.0967,-92.9885,172.84,4.5,mb,,60,0.448,0.71,us,us60008blq,2020-05-23T22:03:08.040Z,"6 km SSE of Manuel Ávila Camacho, Mexico",earthquake,5.6,4.7,0.037,208,reviewed,us,us
+2020-03-07T20:30:30.931Z,15.3414,-94.4507,38.88,4.3,mb,,151,1.241,0.94,us,us60008bre,2020-05-23T22:03:19.040Z,"96 km SSW of La Gloria, Mexico",earthquake,6.1,9.8,0.089,36,reviewed,us,us
+2020-03-08T03:52:49.138Z,15.7452,-95.4573,10,4.2,mb,,164,0.627,1.03,us,us70008n5g,2020-05-23T22:03:21.040Z,"35 km SE of Santiago Astata, Mexico",earthquake,4.9,2,0.236,5,reviewed,us,us
+2020-03-11T06:43:45.151Z,17.5168,-95.4671,51.2,4.5,mb,,84,0.699,0.92,us,us60008diy,2020-05-30T22:17:01.040Z,"8 km NNW of María Lombardo de Caso, Mexico",earthquake,5.9,5,0.035,235,reviewed,us,us
+2020-03-11T13:50:43.693Z,15.9417,-96.6706,11.02,4.3,mb,,160,0.462,1.01,us,us60008dmy,2020-05-30T22:17:02.040Z,"4 km S of Quelové, Mexico",earthquake,5.8,7.6,0.064,69,reviewed,us,us
+2020-03-11T16:49:22.653Z,15.8822,-96.7442,12.24,4.3,mb,,179,0.404,1.12,us,us60008dr6,2020-05-30T22:17:02.040Z,"7 km NNW of San Francisco Cozoaltepec, Mexico",earthquake,5.3,7.2,0.085,39,reviewed,us,us
+2020-03-15T01:22:16.792Z,15.0599,-92.769,80.22,5.1,mww,,91,0.509,0.92,us,us60008fuy,2025-12-22T18:31:06.262Z,"14 km SSW of El Arenal, Mexico",earthquake,5.6,3.7,0.041,56,reviewed,us,us
+2020-03-15T09:34:52.470Z,14.8859,-91.1962,162.24,4.4,mb,,94,0.521,0.95,us,us60008fzz,2020-05-30T22:17:10.040Z,"8 km S of Patzité, Guatemala",earthquake,6.7,9.9,0.135,16,reviewed,us,us
+2020-03-20T09:03:31.235Z,16.7315,-95.3769,10,4.8,mww,,58,0.592,0.94,us,us70008csr,2021-05-21T20:47:11.910Z,"2 km WSW of Santa María Guenagati, Mexico",earthquake,3.6,1.8,0.05,38,reviewed,us,us
+2020-03-21T18:50:06.403Z,16.4354,-99.2527,10,4,mb,,214,0.321,1.14,us,us70008dnb,2020-06-06T20:54:03.040Z,"34 km SSW of Cruz Grande, Mexico",earthquake,3.9,1.9,0.079,47,reviewed,us,us
+2020-03-22T11:22:02.930Z,15.5,-87.8005,10,4,ml,,77,1.522,0.91,us,us70008eaj,2020-06-06T20:54:05.040Z,"2 km E of Victoria, Honduras",earthquake,6.2,2,0.077,22,reviewed,us,us
+2020-03-23T22:32:43.211Z,15.0441,-92.6411,92.97,4.2,mb,,158,0.387,0.84,us,us70008n5r,2020-06-06T20:54:12.040Z,"10 km WSW of Francisco I. Madero, Mexico",earthquake,4.3,4.5,0.132,16,reviewed,us,us
+2020-03-26T08:52:41.840Z,31.7065,-104.0237,5,3.8,mwr,,49,0.214,0.38,us,us70008gas,2020-06-13T18:44:33.040Z,"40 km W of Mentone, Texas",earthquake,1.2,1.7,0.046,45,reviewed,us,us
+2020-03-26T15:16:27.940Z,31.7168,-104.0419,9.51,5,mww,,25,0.218,0.64,us,us70008ggn,2025-12-22T18:31:47.684Z,"41 km W of Mentone, Texas",earthquake,2.4,3.3,0.034,81,reviewed,us,us
+2020-03-26T23:45:58.917Z,14.7647,-93.1898,35,4.8,mb,,71,1.466,1.09,us,us70008h21,2020-06-13T18:44:43.040Z,"69 km SW of El Arenal, Mexico",earthquake,5.6,1.9,0.027,421,reviewed,us,us
+2020-03-27T21:36:20.279Z,31.6969,-104.0642,5.83,3.5,mwr,,50,0.216,0.33,us,us70008hjq,2020-06-13T18:44:33.040Z,"44 km W of Mentone, Texas",earthquake,0.7,4.9,,20,reviewed,us,slm
+2020-03-29T01:27:06.255Z,31.7029,-104.0288,5,3.5,mwr,,49,0.215,0.72,us,us70008i15,2020-06-13T18:44:33.040Z,"40 km W of Mentone, Texas",earthquake,1.4,1.9,0.063,24,reviewed,us,us
+2020-03-30T05:08:18.698Z,16.4346,-98.8845,10,4.7,mb,,134,0.382,0.84,us,us70008iib,2021-06-07T13:22:07.858Z,"17 km SSW of Marquelia, Mexico",earthquake,4.8,1.9,0.027,409,reviewed,us,us
+2020-04-01T12:39:59.543Z,15.9941,-96.1421,35,4.2,mb,,165,2.797,0.78,us,us70008kdh,2020-06-21T00:54:31.040Z,"8 km NNE of San Miguel del Puerto, Mexico",earthquake,8.9,2,0.087,37,reviewed,us,us
+2020-04-01T18:40:43.506Z,14.7115,-92.1324,101.18,4.2,mb,,179,0.233,0.98,us,us700099nn,2020-06-21T00:54:34.040Z,"3 km NNE of Ciudad Tecún Umán, Guatemala",earthquake,4,4.1,0.215,6,reviewed,us,us
+2020-04-01T23:38:06.707Z,29.9683,-114.1944,10,4.3,mb,,166,1.207,1.35,us,us70008l20,2020-06-21T00:54:36.040Z,"132 km SSE of San Felipe, Mexico",earthquake,5.2,2,0.089,36,reviewed,us,us
+2020-04-02T19:15:34.418Z,16.1208,-97.547,20.02,4.1,mb,,175,0.403,1.11,us,us700099nq,2020-06-21T00:54:44.040Z,"4 km SW of Santa María Acatepec, Mexico",earthquake,4.2,10.1,0.083,40,reviewed,us,us
+2020-04-04T20:58:36.002Z,14.148,-92.7142,10,4.4,mb,,173,0.871,0.89,us,us70008nup,2020-06-21T00:55:00.040Z,"68 km SW of Brisas Barra de Suchiate, Mexico",earthquake,3.8,1.9,0.077,49,reviewed,us,us
+2020-04-04T21:31:55.368Z,14.0595,-92.8393,10,4.1,mb,,204,1.01,0.78,us,us700099nc,2020-06-21T00:55:00.040Z,"84 km SW of Brisas Barra de Suchiate, Mexico",earthquake,3.5,2,0.302,3,reviewed,us,us
+2020-04-07T01:52:15.511Z,17.4725,-101.0968,10,4.8,mb,,104,0.685,0.94,us,us70008qbg,2025-12-22T18:32:11.503Z,"11 km NNW of Coyuquilla Norte, Mexico",earthquake,2.6,1.8,0.024,529,reviewed,us,us
+2020-04-07T09:15:34.106Z,28.0019,-111.9706,10,4.3,mb,,160,3.169,1.14,us,us70008qgs,2020-06-21T00:55:16.040Z,"78 km NNE of Santa Rosalía, Mexico",earthquake,7.7,2,0.238,5,reviewed,us,us
+2020-04-08T03:32:40.650Z,15.585,-93.978,52.27,4.1,mb,,157,0.741,1.03,us,us70008rbm,2020-06-30T14:02:44.040Z,"44 km SSW of Cabeza de Toro, Mexico",earthquake,5.3,12.6,0.065,65,reviewed,us,us
+2020-04-11T18:00:08.009Z,14.1693,-92.643,38.69,4.3,mb,,180,0.82,1.19,us,us70008u31,2020-06-30T14:02:58.040Z,"60 km SW of Brisas Barra de Suchiate, Mexico",earthquake,5.7,7.9,0.079,51,reviewed,us,us
+2020-04-13T06:00:44.209Z,18.9686,-95.6667,10,4.2,mb,,44,0.666,0.88,us,us70008vcf,2020-06-30T14:03:04.040Z,"23 km NNE of Paso Nacional, Mexico",earthquake,3.9,1.9,0.084,40,reviewed,us,us
+2020-04-15T09:44:43.016Z,15.17,-94.1893,41.41,5,mww,,129,1.076,0.79,us,us70008wn7,2025-12-22T18:32:36.810Z,"95 km SSW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,5.6,4.8,0.055,32,reviewed,us,us
+2020-04-19T07:12:08.198Z,16.0279,-95.1255,35,4,mb,,156,1.082,1.01,us,us700099nh,2020-07-09T14:31:29.040Z,"17 km SSE of Salina Cruz, Mexico",earthquake,4.4,2,0.183,8,reviewed,us,us
+2020-04-19T08:18:31.919Z,14.4079,-90.4682,10,4.2,mb,,135,1.073,0.7,us,us70008ztt,2020-07-09T14:31:29.040Z,"7 km SSW of Fraijanes, Guatemala",earthquake,3.5,2,0.08,44,reviewed,us,us
+2020-04-19T08:22:35.842Z,16.4927,-95.1002,35,4,mb,,136,1.228,0.63,us,us700099ni,2020-07-09T14:31:29.040Z,"4 km WSW of Asunción Ixtaltepec, Mexico",earthquake,4.2,2,0.15,12,reviewed,us,us
+2020-04-19T14:46:17.542Z,15.4131,-94.6018,34.62,4.2,mb,,145,1.364,0.65,us,us700099nj,2020-07-09T14:31:31.040Z,"90 km S of San Francisco del Mar Viejo, Mexico",earthquake,3,8.7,0.235,5,reviewed,us,us
+2020-04-22T00:50:08.153Z,16.9327,-95.7792,10,4,mb,,75,0.776,1.28,us,us700091ex,2020-07-11T22:19:20.040Z,"4 km SSW of San Miguel Quetzaltepec, Mexico",earthquake,5.7,2,0.084,38,reviewed,us,us
+2020-04-22T01:06:41.978Z,31.5852,-109.1083,21.23,3.5,ml,,111,0.255,0.45,us,us700091f5,2020-07-11T22:19:20.040Z,"28 km SSW of Rodeo, New Mexico",earthquake,2.8,8.3,0.05,52,reviewed,us,us
+2020-04-22T21:15:48.230Z,15.4375,-92.0688,179.19,4.3,mb,,71,0.263,0.41,us,us700099nk,2020-07-11T22:19:29.040Z,"5 km E of Amatenango de la Frontera, Mexico",earthquake,4.1,4.7,0.168,10,reviewed,us,us
+2020-04-24T08:21:54.395Z,17.4315,-101.346,16.85,4,mb,,199,0.13,0.89,us,us60009b8m,2020-07-11T22:18:56.040Z,"14 km S of Palos Blancos, Mexico",earthquake,3.8,8.3,0.163,10,reviewed,us,us
+2020-04-24T22:01:43.934Z,16.6839,-86.2843,10,4.4,mb,,55,3.291,0.78,us,us60009bur,2020-07-11T22:18:59.040Z,"40 km NNE of French Harbor, Honduras",earthquake,4.9,1.9,0.085,40,reviewed,us,us
+2020-04-25T06:32:12.428Z,14.6314,-92.8011,57.82,4.2,mb,,177,1.076,0.96,us,us60009c2j,2020-07-11T22:19:01.040Z,"42 km WSW of Puerto Madero, Mexico",earthquake,8.4,13.2,0.108,24,reviewed,us,us
+2020-04-28T01:44:31.618Z,14.6357,-93.7521,10,4.4,mb,,159,1.994,0.79,us,us60009dne,2020-07-11T22:19:13.040Z,"109 km SW of La Esperanza (El Zapotal), Mexico",earthquake,7,1.9,0.057,88,reviewed,us,us
+2020-04-28T11:18:52.525Z,15.7516,-94.7114,35,4.1,mb,,193,2.531,1.02,us,us60009duw,2020-07-11T22:19:15.040Z,"53 km S of San Francisco del Mar Viejo, Mexico",earthquake,5.2,2,0.091,33,reviewed,us,us
+2020-04-29T09:41:33.925Z,16.5018,-92.8564,217.32,4.2,mb,,132,0.724,0.74,us,us70009afu,2020-07-18T21:57:37.040Z,"2 km NE of Nuevo Vicente Guerrero (El Chichonal), Mexico",earthquake,11.4,12.6,0.1,29,reviewed,us,us
+2020-05-01T22:53:10.909Z,14.4479,-93.1347,35,4.3,mb,,179,0.957,0.92,us,usd000cj19,2020-07-18T21:57:49.040Z,"82 km WSW of Puerto Madero, Mexico",earthquake,5.1,2,0.045,138,reviewed,us,us
+2020-05-02T22:02:08.013Z,17.0632,-95.2286,113.92,4.1,mb,,87,0.33,1.03,us,us6000a3zl,2020-07-18T21:57:04.040Z,"13 km N of Zacatal, Mexico",earthquake,5.6,8.7,0.094,31,reviewed,us,us
+2020-05-02T23:44:37.050Z,32.7553333,-115.4306667,16.91,3.58,ml,82,36,0.05166,0.3,ci,ci38477458,2020-07-18T21:57:14.040Z,"8km SW of Holtville, CA",earthquake,0.22,0.41,0.123,179,reviewed,ci,ci
+2020-05-05T07:41:22.067Z,16.0837,-98.7191,10,4.1,mb,,141,0.646,1.27,us,us70009aam,2020-07-18T21:57:35.040Z,"40 km SW of Santiago Tepextla, Mexico",earthquake,2.9,1.9,0.071,55,reviewed,us,us
+2020-05-07T22:58:09.268Z,14.7739,-93.7304,35,4.1,mb,,203,1.048,1.1,us,us70009c1c,2020-07-29T22:14:17.040Z,"96 km SW of La Esperanza (El Zapotal), Mexico",earthquake,4.8,2,0.087,36,reviewed,us,us
+2020-05-11T10:48:02.653Z,16.695,-99.9524,10,4,mb,,213,1.581,1.07,us,us70009dzt,2020-07-29T22:14:31.040Z,"17 km SSW of Acapulco de Juárez, Mexico",earthquake,8.1,1.7,0.092,32,reviewed,us,us
+2020-05-13T11:52:03.798Z,31.655,-104.3103,5,3.5,mwr,,59,0.119,0.55,us,us70009f9i,2020-08-02T00:32:24.040Z,"58 km S of Whites City, New Mexico",earthquake,1.2,1.7,0.052,35,reviewed,us,us
+2020-05-20T07:49:54.631Z,14.1859,-91.358,75.13,4.1,mb,,202,0.469,1.33,us,us70009lfm,2020-08-08T18:17:41.040Z,"6 km WSW of Nueva Concepción, Guatemala",earthquake,7.4,8.7,0.084,38,reviewed,us,us
+2020-05-21T04:28:52.851Z,15.6657,-94.7523,26.14,4.9,mww,,114,1.422,0.96,us,us70009m9h,2020-08-08T18:17:45.040Z,"63 km SSW of San Francisco del Mar Viejo, Mexico",earthquake,4.1,5,0.069,20,reviewed,us,us
+2020-05-21T05:59:16.924Z,15.5989,-94.8483,35,4.1,mb,,161,1.484,0.79,us,us70009mal,2020-08-08T18:17:46.040Z,"69 km SSE of San Mateo del Mar, Mexico",earthquake,6,2,0.069,58,reviewed,us,us
+2020-05-21T17:04:52.612Z,22.1412,-108.2273,10,4.1,mb,,208,2.206,1.18,us,us70009mlh,2020-08-08T18:17:47.040Z,"179 km SE of La Playa, Mexico",earthquake,7.3,2,0.054,95,reviewed,us,us
+2020-05-22T05:23:12.430Z,17.3773,-94.9081,124.16,4.3,mb,,85,0.285,0.66,us,us6000a1sj,2020-08-08T18:17:34.040Z,"8 km E of Suchilapan del Río, Mexico",earthquake,7.1,5.2,0.187,8,reviewed,us,us
+2020-05-22T07:15:15.022Z,14.6203,-92.3848,58.45,4.1,mb,,165,0.308,0.69,us,us6000a3zw,2020-08-08T18:17:36.040Z,"11 km SSE of Puerto Madero, Mexico",earthquake,6.5,7.1,0.233,5,reviewed,us,us
+2020-05-22T08:46:06.973Z,22.4152,-108.1275,10,6.1,mww,,151,2.097,0.7,us,us70009n5p,2025-12-22T18:34:35.709Z,"173 km ESE of La Playa, Mexico",earthquake,5.5,1.7,0.032,91,reviewed,us,us
+2020-05-23T08:56:56.315Z,14.8219,-93.7088,35,4.6,mb,,180,0.997,0.77,us,us70009p1s,2020-08-08T18:17:52.040Z,"90 km SW of La Esperanza (El Zapotal), Mexico",earthquake,7.5,2,0.079,47,reviewed,us,us
+2020-05-24T02:34:59.241Z,14.3088,-93.0263,35,4.3,mb,,183,0.947,1.07,us,us70009pa8,2020-08-08T18:17:54.040Z,"79 km SW of Puerto Madero, Mexico",earthquake,6.1,2,0.058,84,reviewed,us,us
+2020-05-24T03:52:21.175Z,14.5973,-93.814,11.92,5.3,mww,,113,1.241,1.03,us,us70009pb6,2025-12-22T18:34:49.124Z,"117 km SW of La Esperanza (El Zapotal), Mexico",earthquake,3.9,1.4,0.048,42,reviewed,us,us
+2020-05-24T05:53:05.578Z,14.7219,-92.4554,75.63,4.2,mb,,143,0.26,0.8,us,us70009pc1,2020-08-08T18:17:54.040Z,"3 km W of Puerto Madero, Mexico",earthquake,6.4,5.8,0.061,74,reviewed,us,us
+2020-05-24T09:55:43.952Z,14.6614,-93.8363,18.36,4.4,mb,,175,1.196,0.79,us,us70009peh,2020-08-08T18:17:55.040Z,"113 km SW of La Esperanza (El Zapotal), Mexico",earthquake,4.1,6.8,0.095,32,reviewed,us,us
+2020-05-24T10:32:30.780Z,17.3969,-94.9967,121.94,4.1,mb,,53,0.322,0.6,us,us70009pes,2020-08-08T18:17:55.040Z,"1 km NW of Suchilapan del Río, Mexico",earthquake,5.3,8.2,0.158,11,reviewed,us,us
+2020-05-24T13:42:01.229Z,14.3748,-93.4181,10,4.1,mb,,205,1.235,0.74,us,us6000a3l7,2020-08-08T18:17:36.040Z,"114 km WSW of Puerto Madero, Mexico",earthquake,3.9,2,0.175,9,reviewed,us,us
+2020-05-26T12:00:52.413Z,14.4037,-92.8116,33.31,4.1,mb,,169,0.902,1.18,us,us70009qld,2020-08-08T18:18:01.040Z,"54 km SW of Puerto Madero, Mexico",earthquake,6,8,0.151,12,reviewed,us,us
+2020-05-26T19:53:46.400Z,32.7123333,-115.7691667,10.2,3.59,ml,61,43,0.05631,0.3,ci,ci39218391,2020-08-24T08:29:02.873Z,"21km E of Ocotillo, CA",earthquake,0.29,0.49,0.158,105,reviewed,ci,ci
+2020-05-27T04:01:03.282Z,15.38,-95.1143,17.57,4.1,mb,,193,1.715,0.75,us,us6000a401,2020-08-15T20:19:35.040Z,"81 km SSE of El Carrizal, Mexico",earthquake,8.1,5.5,0.369,2,reviewed,us,us
+2020-05-28T13:06:25.480Z,15.3056,-95.1389,10,4.3,mb,,187,1.792,0.89,us,us6000a10m,2020-08-15T20:19:43.040Z,"88 km SSE of El Carrizal, Mexico",earthquake,4.9,2,0.084,40,reviewed,us,us
+2020-05-28T16:15:42.764Z,15.6446,-94.8164,38.95,4.5,mb,,157,1.439,0.61,us,us6000a13v,2020-08-15T20:19:43.040Z,"65 km SSE of San Mateo del Mar, Mexico",earthquake,5.8,8,0.044,150,reviewed,us,us
+2020-05-29T04:28:45.996Z,16.7801,-93.7226,155.89,4.2,mb,,120,0.575,1,us,us6000a1hr,2020-08-15T20:19:47.040Z,"4 km SE of Francisco I. Madero, Mexico",earthquake,6.5,5.2,0.053,99,reviewed,us,us
+2020-05-30T01:24:01.303Z,15.8353,-94.0669,64.65,4,mb,,150,1.304,0.89,us,us6000a403,2020-08-15T20:19:50.040Z,"30 km SW of San Luqueño, Mexico",earthquake,5.6,20.3,0.129,16,reviewed,us,us
+2020-05-31T01:57:45.482Z,21.8945,-108.0388,10,4.1,mb,,270,2.504,1.36,us,us6000a2ya,2020-08-15T20:19:55.040Z,"211 km SE of La Playa, Mexico",earthquake,6.1,2,0.15,12,reviewed,us,us
+2020-06-01T14:59:01.851Z,22.0233,-108.194,10,4.1,mb,,135,2.311,0.84,us,us6000a3pz,2020-08-15T20:20:01.040Z,"190 km SE of La Playa, Mexico",earthquake,6,1.8,0.047,122,reviewed,us,us
+2020-06-01T19:28:15.135Z,15.2256,-94.3984,35,4.1,mb,,169,1.912,1.25,us,us6000a8e9,2020-08-15T20:20:02.040Z,"102 km SW of Cabeza de Toro, Mexico",earthquake,8.9,2,0.073,52,reviewed,us,us
+2020-06-02T18:38:37.637Z,14.3659,-90.7538,186.03,4.4,mb,,151,0.693,1.01,us,us6000a8pm,2020-08-15T20:20:06.040Z,"7 km SW of Palín, Guatemala",earthquake,6.9,6.2,0.087,38,reviewed,us,us
+2020-06-04T23:15:05.437Z,14.5922,-93.791,11.33,4.2,mb,,230,1.509,1.16,us,us6000a683,2020-08-18T17:58:51.040Z,"116 km SW of La Esperanza (El Zapotal), Mexico",earthquake,7.8,8.1,0.166,10,reviewed,us,us
+2020-06-05T01:46:12.068Z,15.117,-97.2094,10,4.2,mb,,219,0.877,1.18,us,us6000a6a4,2020-08-18T17:58:51.040Z,"80 km SSW of La Barra de Colotepec, Mexico",earthquake,2.7,1.9,0.093,32,reviewed,us,us
+2020-06-05T19:20:54.282Z,15.7507,-90.9834,10,4.1,mb,,61,0.659,1.19,us,us6000a6tp,2020-08-18T17:58:54.040Z,"12 km ESE of San Luis Ixcán, Guatemala",earthquake,2.9,1.9,0.081,47,reviewed,us,us
+2020-06-07T09:05:51.644Z,15.1583,-94.3072,35.26,4.1,mb,,143,1.839,0.84,us,us6000a7fr,2020-08-18T17:59:01.040Z,"102 km SSW of Cabeza de Toro, Mexico",earthquake,5.4,10,0.135,15,reviewed,us,us
+2020-06-13T19:30:22.258Z,15.454,-94.5745,35.37,4.2,mb,,180,2.486,1.01,us,us6000abg9,2020-08-22T19:14:50.040Z,"86 km S of San Francisco del Mar Viejo, Mexico",earthquake,4.3,21.4,0.11,23,reviewed,us,us
+2020-06-19T16:12:06.204Z,16.306,-98.2829,10,4.3,mb,,186,0.894,1.22,us,us6000aez4,2020-08-30T00:00:51.040Z,"3 km WSW of El Ciruelo, Mexico",earthquake,2.8,1.9,0.077,48,reviewed,us,us
+2020-06-20T00:57:50.467Z,14.843,-92.2611,102.68,4.4,mb,,125,0.064,0.94,us,us7000aj8u,2020-08-30T00:01:28.040Z,"1 km S of Los Palacios, Mexico",earthquake,6.1,3.7,0.18,9,reviewed,us,us
+2020-06-20T11:59:46.351Z,18.0508,-105.9794,10,4.7,mb,,197,2.515,1.09,us,us6000aff7,2025-12-22T18:36:45.516Z,"182 km SW of Emiliano Zapata, Mexico",earthquake,9.2,1.9,0.028,396,reviewed,us,us
+2020-06-20T18:13:48.973Z,18.0861,-105.8971,10,4.3,mb,,196,2.434,0.86,us,us6000afih,2020-08-30T00:00:56.040Z,"174 km SW of Emiliano Zapata, Mexico",earthquake,8.1,1.9,0.039,194,reviewed,us,us
+2020-06-22T08:45:00.918Z,14.2813,-94.0178,10,4.1,mb,,134,1.807,0.82,us,us6000agbq,2020-08-30T00:01:02.040Z,"158 km SW of La Esperanza (El Zapotal), Mexico",earthquake,7.4,1.7,0.061,73,reviewed,us,us
+2020-06-22T12:02:17.627Z,14.7727,-92.3348,83.4,4,mb,,121,0.15,0.94,us,us6000agg3,2020-08-30T00:01:03.040Z,"2 km WSW of Congregación Reforma, Mexico",earthquake,6.8,4.1,0.062,70,reviewed,us,us
+2020-06-23T01:17:18.161Z,16.208,-95.6869,35,4.9,mb,,58,1.167,0.56,us,us6000agwf,2021-07-06T15:39:52.782Z,"10 km SSE of Asunción Tlacolulita, Mexico",earthquake,5.4,1.9,0.025,512,reviewed,us,us
+2020-06-23T09:07:13.069Z,17.2421,-94.6945,138.1,4.3,mb,,90,0.235,0.55,us,us6000ah3p,2020-08-30T00:01:07.040Z,"8 km W of Hermanos Cedillo, Mexico",earthquake,4.4,9.8,0.104,26,reviewed,us,us
+2020-06-23T15:29:04.350Z,15.8861,-96.0077,20,7.4,mww,,30,0.151,1.14,us,us6000ah9t,2025-12-22T18:36:59.213Z,"9 km SE of Santa María Xadani, Mexico",earthquake,2.1,1.8,0.035,79,reviewed,us,us
+2020-06-23T16:20:23.182Z,15.8265,-95.8784,16.61,4.3,mb,,148,0.228,1.17,us,us7000af1t,2020-08-30T00:01:26.040Z,"12 km SW of El Coyul, Mexico",earthquake,6.5,7.6,0.1,28,reviewed,us,us
+2020-06-23T16:24:16.397Z,15.2107,-96.0991,10,4.3,mb,,282,2.204,0.46,us,us7000af24,2020-08-30T00:01:26.040Z,"61 km S of Sector H Tres, Mexico",earthquake,10.4,2,0.154,12,reviewed,us,us
+2020-06-23T16:31:03.574Z,15.7814,-95.8841,10,4.6,mb,,115,0.216,0.92,us,us6000ahbh,2020-08-30T00:01:09.040Z,"16 km SSW of El Coyul, Mexico",earthquake,3.5,1.9,0.034,263,reviewed,us,us
+2020-06-23T17:45:22.671Z,16.1743,-96.2606,10,4.2,mb,,142,0.428,1.05,us,us6000ahcl,2020-08-30T00:01:09.040Z,"4 km N of San Juan Ozolotepec, Mexico",earthquake,10.3,2,0.07,56,reviewed,us,us
+2020-06-23T17:52:15.087Z,15.4288,-96.5895,10,4,mb,,198,0.78,1.34,us,us7000aj8y,2020-08-30T00:01:28.040Z,"28 km SSW of Puerto Ángel, Mexico",earthquake,4.3,2,0.116,21,reviewed,us,us
+2020-06-23T18:27:07.840Z,15.7674,-95.7891,10,5,mb,,83,0.307,0.84,us,us6000ahdb,2022-08-08T23:14:14.931Z,"16 km S of El Coyul, Mexico",earthquake,4.8,1.8,0.023,590,reviewed,us,us
+2020-06-23T20:54:31.008Z,15.7442,-95.9901,10,4.6,mb,,144,0.116,1.1,us,us6000ahft,2020-08-30T00:01:10.040Z,"15 km E of Crucecita, Mexico",earthquake,6,1.9,0.036,237,reviewed,us,us
+2020-06-23T21:27:46.068Z,15.5938,-96.5216,10,4.2,mb,,203,0.434,0.85,us,us6000ahgq,2020-08-30T00:01:10.040Z,"8 km SSW of Puerto Ángel, Mexico",earthquake,4.9,2,0.065,66,reviewed,us,us
+2020-06-24T02:33:19.930Z,15.7688,-96.3698,4.21,5.4,mww,,89,0.782,0.59,us,us6000ahkh,2025-12-22T18:42:21.984Z,"4 km ESE of San Miguel Figueroa, Mexico",earthquake,5.8,3,0.043,52,reviewed,us,us
+2020-06-24T03:11:20.289Z,15.9773,-95.996,10,4.5,mb,,50,0.233,0.81,us,us6000ahl5,2020-09-05T17:35:14.040Z,"8 km ENE of Santa María Xadani, Mexico",earthquake,5.4,1.8,0.036,221,reviewed,us,us
+2020-06-24T03:27:05.138Z,15.9654,-96.1057,10,4,mb,,91,0.195,0.87,us,us6000ahlk,2020-09-05T17:35:15.040Z,"3 km WNW of Santa María Xadani, Mexico",earthquake,5.6,2,0.077,45,reviewed,us,us
+2020-06-24T03:44:41.465Z,15.778,-96.4198,10,4.1,mb,,213,0.3,0.81,us,us6000ahm4,2020-09-05T17:35:15.040Z,"1 km WSW of San Miguel Figueroa, Mexico",earthquake,4.7,1.8,0.087,36,reviewed,us,us
+2020-06-24T18:01:06.699Z,15.6888,-96.0764,17.71,4.3,mb,,248,0.085,1.08,us,us7000aj91,2020-09-05T17:35:43.040Z,"10 km SE of Crucecita, Mexico",earthquake,9.1,12.1,0.148,13,reviewed,us,us
+2020-06-24T20:06:22.566Z,15.9084,-96.3099,20,4.4,mb,,151,0.238,0.82,us,us7000aacd,2020-09-05T17:35:17.040Z,"3 km NNE of Benito Juárez, Mexico",earthquake,6.8,1.9,0.049,119,reviewed,us,us
+2020-06-30T04:05:52.650Z,17.9501,-98.5747,54.12,4.3,mb,,55,0.385,0.87,us,us7000aeus,2020-09-05T17:35:35.040Z,"8 km SSW of Acaxtlahuacán de Albino Zertuche, Mexico",earthquake,3.6,5.9,0.039,182,reviewed,us,us
+2020-06-30T19:31:15.276Z,14.4551,-93.711,14.87,4,mb,,178,1.469,1.17,us,us7000aj95,2020-09-05T17:35:43.040Z,"124 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,5.2,6.4,0.126,20,reviewed,us,us
+2020-07-01T14:31:50.442Z,15.6277,-95.9847,10,4.5,mb,,160,0.184,0.67,us,us7000afvr,2020-09-11T22:13:47.040Z,"22 km SE of Crucecita, Mexico",earthquake,4.6,1.8,0.036,234,reviewed,us,us
+2020-07-01T19:54:08.627Z,15.9904,-96.6396,21.47,4.9,mb,,82,2.132,0.84,us,us7000ag4g,2025-12-22T18:42:22.854Z,"3 km SW of San Agustín Loxicha, Mexico",earthquake,7.9,4.8,0.03,358,reviewed,us,us
+2020-07-02T16:17:55.106Z,16.5395,-97.8039,8.29,4.9,mww,,90,0.829,0.93,us,us7000agrw,2025-12-22T18:37:25.407Z,"10 km SSE of La Reforma, Mexico",earthquake,7,4.1,0.075,17,reviewed,us,us
+2020-07-03T02:33:43.698Z,17.1092,-100.1783,34.81,4.4,mb,,79,0.104,0.96,us,us7000ah2l,2020-09-11T22:13:57.040Z,"11 km NE of El Papayo, Mexico",earthquake,4,5,0.069,61,reviewed,us,us
+2020-07-04T01:29:20.744Z,15.6545,-96.2131,10,4.5,mb,,132,1.479,1.01,us,us7000ahp9,2020-09-11T22:14:07.040Z,"near the coast of Oaxaca, Mexico",earthquake,2.9,1.9,0.036,225,reviewed,us,us
+2020-07-05T12:58:51.441Z,15.7916,-96.0801,27.74,4.3,mb,,171,1.4,1.19,us,us7000ai9z,2020-09-11T22:14:14.040Z,"6 km ENE of Crucecita, Mexico",earthquake,5.2,7.6,0.074,51,reviewed,us,us
+2020-07-07T01:34:18.085Z,14.4924,-93.0165,35,4.1,mb,,177,0.836,0.89,us,us7000andt,2020-09-11T22:14:23.040Z,"68 km WSW of Puerto Madero, Mexico",earthquake,6.1,2,0.097,29,reviewed,us,us
+2020-07-08T17:22:49.171Z,16.8232,-100.14,15.73,4.5,mb,,148,0.254,1.18,us,us7000ak87,2020-09-19T20:57:57.040Z,"14 km SSW of Los Mogotes, Mexico",earthquake,4.6,4.1,0.032,285,reviewed,us,us
+2020-07-10T00:48:55.103Z,16.9618,-105.3391,10,4,mb,,249,4.731,0.75,us,us7000al55,2020-09-19T20:58:02.040Z,"254 km SW of La Placita de Morelos, Mexico",earthquake,7.6,2,0.102,26,reviewed,us,us
+2020-07-10T06:49:24.190Z,16.9227,-105.4746,10,4.5,mb,,242,4.86,0.76,us,us7000al82,2020-09-19T20:58:03.040Z,"266 km SSW of Barra de Navidad, Mexico",earthquake,13.7,2,0.128,18,reviewed,us,us
+2020-07-11T05:53:39.590Z,17.5781,-105.1504,10,4.2,mb,,245,4.251,0.69,us,us7000altw,2022-08-08T23:36:46.431Z,"186 km SSW of Barra de Navidad, Mexico",earthquake,5.6,2,0.087,37,reviewed,us,us
+2020-07-12T03:33:16.408Z,17.552,-101.3603,35,4.2,mb,,176,0.094,1.2,us,us7000am5f,2020-09-19T20:58:10.040Z,"2 km SW of San Jeronimito, Mexico",earthquake,2.8,2,0.066,64,reviewed,us,us
+2020-07-12T15:09:37.090Z,17.7107,-105.397,10,4.7,mb,,111,2.035,0.55,us,us7000amas,2025-12-22T18:37:55.792Z,"182 km SSW of Barra de Navidad, Mexico",earthquake,8.6,1.9,0.03,336,reviewed,us,us
+2020-07-14T04:13:00.807Z,17.6345,-101.0835,35,4.3,mb,,82,0.197,0.91,us,us7000an5l,2020-09-19T20:58:19.040Z,"22 km ENE of Petatlán, Mexico",earthquake,4.7,1.9,0.046,134,reviewed,us,us
+2020-07-18T10:59:49.920Z,16.0325,-95.2136,35,4.2,mb,,135,0.899,0.85,us,us7000aqte,2020-09-26T16:58:36.040Z,"15 km S of Salina Cruz, Mexico",earthquake,4.8,2,0.048,119,reviewed,us,us
+2020-07-21T19:09:21.606Z,24.9708,-100.9265,10,4.2,mb,,88,2.484,1.3,us,us7000asjy,2020-09-26T16:58:44.040Z,"28 km SSW of Huachichil, Mexico",earthquake,5.1,1.9,0.066,67,reviewed,us,us
+2020-07-24T03:19:50.979Z,15.5641,-96.0043,11,5.5,mww,,95,0.227,1.14,us,us6000b35c,2025-12-22T18:38:42.344Z,"26 km SSE of Crucecita, Mexico",earthquake,5.5,1.9,0.036,75,reviewed,us,us
+2020-07-24T03:31:55.881Z,14.9919,-94.2345,10,4.1,mb,,172,1.936,0.95,us,us6000b35p,2020-10-03T17:32:19.040Z,"113 km SW of Manuel Ávila Camacho (Ponte Duro), Mexico",earthquake,5.6,2,0.234,5,reviewed,us,us
+2020-07-28T22:29:47.220Z,17.2062,-94.3837,143.16,4.4,mb,,89,0.491,1.27,us,us6000b5pj,2020-10-03T17:32:29.040Z,"10 km SE of Poblado 10, Mexico",earthquake,5.8,5.1,0.082,42,reviewed,us,us
+2020-07-29T02:30:12.665Z,17.2972,-94.9218,130.78,4.3,mb,,69,0.208,1,us,us6000b5sy,2020-10-10T17:10:59.040Z,"12 km SE of Suchilapan del Río, Mexico",earthquake,5.9,6.5,0.083,41,reviewed,us,us
+2020-07-29T12:24:03.014Z,23.8934,-112.0855,10,4,mb,,235,1.638,0.93,us,us6000b62b,2020-10-10T17:11:00.040Z,"99 km S of Puerto San Carlos, Mexico",earthquake,6.8,2,0.139,14,reviewed,us,us
+2020-07-30T18:23:52.531Z,14.2203,-93.593,10,4.2,mb,,186,1.456,1.18,us,us6000b9qf,2020-10-10T17:11:16.040Z,"137 km WSW of Puerto Madero, Mexico",earthquake,4.9,2,0.115,21,reviewed,us,us
+2020-07-31T01:19:19.899Z,15.3399,-96.0688,10,4.1,mb,,221,0.428,1.25,us,us6000b78x,2020-10-10T17:11:04.040Z,"47 km S of Sector H Tres, Mexico",earthquake,3.4,2,0.102,26,reviewed,us,us
+2020-07-31T23:22:34.673Z,15.3258,-94.8336,35,4.3,mb,,183,1.305,1.23,us,us6000b9y2,2020-10-10T17:11:17.040Z,"99 km S of San Mateo del Mar, Mexico",earthquake,6,2,0.266,4,reviewed,us,us
+2020-08-01T10:09:48.212Z,17.6346,-105.9859,10,4.5,mb,,241,4.935,0.85,us,us6000b7xd,2020-10-10T17:11:07.040Z,"221 km SSW of Emiliano Zapata, Mexico",earthquake,9.9,2,0.037,210,reviewed,us,us
+2020-08-03T06:46:51.169Z,17.9876,-102.8577,10,4.6,mb,,169,0.552,0.99,us,us6000b8lq,2020-10-10T17:11:10.040Z,"51 km W of El Habillal, Mexico",earthquake,4.2,1.9,0.026,449,reviewed,us,us
+2020-08-07T02:23:30.273Z,15.9875,-95.1859,10,4.1,mb,,144,0.913,1.21,us,us7000bgy1,2020-10-21T22:04:18.040Z,"20 km S of Salina Cruz, Mexico",earthquake,3.8,2,0.184,8,reviewed,us,us
+2020-08-13T13:43:43.355Z,17.5947,-101.7344,27.84,4.3,mb,,183,0.257,0.41,us,us6000be14,2020-10-24T20:08:49.040Z,"12 km SW of Ixtapa, Mexico",earthquake,3.7,7.5,0.154,12,reviewed,us,us
+2020-08-14T09:30:50.185Z,17.9884,-105.8403,10,5.3,mww,,166,4.67,0.61,us,us6000belh,2025-12-22T18:40:27.474Z,"180 km SSW of Emiliano Zapata, Mexico",earthquake,6.1,1.7,0.042,54,reviewed,us,us
+2020-08-17T15:09:03.818Z,31.4445,-115.5807,10,4.4,mwr,,98,0.64,0.64,us,us6000bfyt,2021-02-19T19:22:19.139Z,"64 km ENE of San Vicente, Mexico",earthquake,3.4,2,0.037,69,reviewed,us,us
+2020-08-17T15:30:33.530Z,31.5366667,-115.6613333,16.22,5.12,mw,42,231,0.5267,0.34,ci,ci39347679,2025-12-22T18:40:38.654Z,"88km ESE of Maneadero, B.C., MX",earthquake,0.72,0.81,,6,reviewed,ci,ci
+2020-08-17T15:31:39.571Z,31.4138,-115.7552,10,4.5,mb,,229,0.611,0.47,us,us6000bg04,2020-10-24T20:08:59.040Z,"47 km ENE of San Vicente, Mexico",earthquake,2.7,1.8,0.27,5,reviewed,us,us
+2020-08-17T15:32:40.777Z,31.3613,-115.6231,10,4.3,mwr,,242,0.698,0.79,us,us6000bfzq,2020-10-24T20:08:59.040Z,"59 km E of San Vicente, Mexico",earthquake,2.4,2,,6,reviewed,us,ci
+2020-08-17T16:29:54.920Z,31.523,-115.6843333,9.19,3.72,mw,21,232,0.5303,0.21,ci,ci39347839,2022-06-19T00:33:43.600Z,"86km ESE of Maneadero, B.C., MX",earthquake,0.7,31.61,,4,reviewed,ci,ci
+2020-08-17T20:14:59.508Z,15.15,-98.358,10,4.8,mb,,96,1.439,0.99,us,us6000bg6m,2025-12-22T18:40:39.298Z,"120 km SSW of Santa María Chico Ometepec, Mexico",earthquake,4,1.8,0.026,460,reviewed,us,us
+2020-08-18T10:01:35.465Z,14.2893,-91.0294,96.37,4.8,mb,,135,1.621,1,us,us6000bggm,2025-12-22T18:40:40.704Z,"5 km S of Santa Lucía Cotzumalguapa, Guatemala",earthquake,7.9,5.2,0.029,373,reviewed,us,us
+2020-08-18T20:51:23.555Z,19.362,-108.6418,10,4.7,mb,,77,2.271,0.95,us,us6000bgti,2020-10-24T20:09:04.040Z,"Revilla Gigedo Islands region",earthquake,5.9,1.8,0.029,373,reviewed,us,us
+2020-08-18T23:07:33.710Z,15.1286,-93.1826,54.66,4.2,mb,,171,0.913,1.06,us,us7000bcmb,2020-10-24T20:09:13.040Z,"35 km S of La Esperanza (El Zapotal), Mexico",earthquake,6.1,12,0.127,17,reviewed,us,us
+2020-08-21T19:36:35.054Z,15.8817,-96.2068,10,4.4,mb,,138,0.146,1.15,us,us6000bimq,2020-10-31T19:06:15.040Z,"5 km SW of San Miguel del Puerto, Mexico",earthquake,5.8,2,0.054,104,reviewed,us,us
+2020-08-26T20:32:03.877Z,15.6902,-96.2641,5.06,4.4,mb,,228,0.169,0.84,us,us7000bfty,2020-11-07T18:48:44.040Z,"15 km SW of Sector H Tres, Mexico",earthquake,7.1,7.6,0.085,40,reviewed,us,us
+2020-08-28T11:26:03.310Z,32.5673333,-115.6891667,15.01,3.65,ml,60,86,0.08759,0.3,ci,ci39363095,2021-02-08T05:09:52.131Z,"10km W of Progreso, B.C., MX",earthquake,0.36,0.59,0.128,119,reviewed,ci,ci
+2020-08-31T00:28:27.087Z,15.4944,-95.0096,35,4.1,mb,,182,1.592,0.98,us,us7000bf4g,2020-11-07T18:48:38.040Z,"75 km SSE of El Carrizal, Mexico",earthquake,6.7,2,0.064,66,reviewed,us,us
+2020-09-03T12:46:31.635Z,18.56,-106.07,10,4.2,mb,,221,2.251,1.3,us,us7000bh4q,2020-11-17T19:44:26.040Z,"147 km SW of Emiliano Zapata, Mexico",earthquake,8.9,2,0.046,132,reviewed,us,us
+2020-09-03T15:07:53.153Z,31.0271,-87.1846,4,3.8,mwr,,78,0.182,0.8,us,us7000bh6x,2020-12-05T16:29:19.553Z,"1 km W of Pollard, Alabama",earthquake,2.4,1.9,0.063,24,reviewed,us,us
+2020-09-08T01:40:00.116Z,19.4699,-92.4047,10,4.2,mb,,48,1.256,0.89,us,us7000bji5,2020-11-17T19:44:53.040Z,"89 km N of Colonia Emiliano Zapata, Mexico",earthquake,5.7,2,0.062,72,reviewed,us,us
+2020-09-09T09:16:42.822Z,15.625,-96.0775,16.64,4.4,mb,,160,0.146,1,us,us7000bk9w,2020-11-21T20:10:33.040Z,"17 km SSE of Crucecita, Mexico",earthquake,7.3,6.3,0.081,44,reviewed,us,us
+2020-09-09T11:59:36.864Z,15.3316,-91.6945,181.32,4.5,mb,,99,0.185,0.75,us,us7000bn35,2020-11-21T20:10:42.040Z,"6 km WNW of Santa Bárbara, Guatemala",earthquake,9.1,5.1,0.242,5,reviewed,us,us
+2020-09-10T12:47:42.393Z,15.9116,-92.5694,191.86,4.4,mb,,108,0.808,1.33,us,us7000bl22,2020-11-21T20:10:35.040Z,"10 km E of Reforma, Mexico",earthquake,7.1,5.9,0.064,71,reviewed,us,us
+2020-09-13T09:54:09.191Z,16.8023,-99.6648,10,3.7,ml,,227,1.293,0.71,us,us7000bmnb,2020-11-21T20:10:39.040Z,"1 km SSE of San Pedro Cacahuatepec, Mexico",earthquake,8.8,2,0.148,6,reviewed,us,us
+2020-09-14T06:29:01.402Z,16.5847,-94.8535,96.43,4,mb,,113,0.504,0.81,us,us6000c6ba,2020-11-21T20:10:32.040Z,"4 km WNW of La Venta, Mexico",earthquake,5.6,7.3,0.108,23,reviewed,us,us
+2020-09-14T14:29:28.426Z,14.4089,-91.1015,137.36,4.6,mb,,120,0.586,0.87,us,us7000bn11,2020-11-21T20:10:41.040Z,"6 km ESE of Patulul, Guatemala",earthquake,2.6,4.9,0.059,87,reviewed,us,us
+2020-09-15T16:49:09.703Z,15.8343,-97.7931,19.95,4.3,mb,,142,0.642,0.62,us,us6000c6bc,2020-11-21T20:10:32.040Z,"30 km SSW of San José del Progreso, Mexico",earthquake,5,7.4,0.116,21,reviewed,us,us
+2020-09-17T01:13:59.399Z,15.2631,-92.4356,95.58,5.2,mww,,30,0.243,1.05,us,us7000bp7s,2025-12-22T17:58:46.553Z,"7 km SW of Belisario Domínguez, Mexico",earthquake,5.8,3.3,0.04,61,reviewed,us,us
+2020-09-17T08:17:22.347Z,15.2342,-94.3083,30.5,4.2,mb,,120,1.912,0.62,us,us7000bpba,2020-11-28T21:31:48.040Z,"96 km SW of Cabeza de Toro, Mexico",earthquake,6.5,9,0.054,97,reviewed,us,us
+2020-09-18T21:48:27.469Z,31.7061,-104.1334,5,3.5,mwr,,49,0.091,0.44,us,us7000bq0y,2020-11-28T21:31:52.040Z,"50 km W of Mentone, Texas",earthquake,1.1,0.9,0.093,11,reviewed,us,us
+2020-09-19T06:03:04.162Z,14.7767,-92.5161,66.06,4.4,mb,,140,0.275,0.84,us,us7000bq4s,2020-11-28T21:31:53.040Z,"11 km SW of Mazatán, Mexico",earthquake,7.8,7.4,0.064,70,reviewed,us,us
+2020-09-20T17:31:02.389Z,31.4921,-115.6756,10,3.6,ml,,103,0.136,1.07,us,us7000bqiw,2022-08-09T00:26:52.187Z,"57 km ENE of San Vicente, Mexico",earthquake,1.7,2,0.06,36,reviewed,us,us
+2020-09-21T04:22:10.893Z,19.6478,-109.4273,10,4.5,mb,,89,1.671,0.93,us,us7000bqnj,2025-12-22T18:42:32.335Z,"Revilla Gigedo Islands region",earthquake,6.4,1.6,0.06,81,reviewed,us,us
+2020-09-21T04:35:53.049Z,23.9865,-108.5768,10,4.4,mb,,165,3.944,0.91,us,us7000bqnk,2020-11-28T21:31:59.040Z,"97 km SW of Altata, Mexico",earthquake,9.4,1.9,0.072,55,reviewed,us,us
+2020-09-21T09:00:01.567Z,19.6802,-109.4142,10,4.9,mb,,105,1.697,1.25,us,us7000bqpl,2025-12-22T18:42:33.125Z,"Revilla Gigedo Islands region",earthquake,6.2,1.9,0.026,468,reviewed,us,us
+2020-09-22T22:56:31.099Z,14.2293,-92.323,62.19,4.8,mb,,184,0.675,0.96,us,us6000bzvq,2020-11-28T21:32:05.040Z,"34 km SSW of Ocós, Guatemala",earthquake,4.1,6.6,0.059,88,reviewed,us,us
+2020-09-24T03:55:21.238Z,15.8366,-94.1964,71.35,4.4,mb,,98,1.393,0.71,us,us6000c0ec,2020-12-05T21:02:56.040Z,"35 km SSW of La Gloria, Mexico",earthquake,4.2,7.1,0.04,182,reviewed,us,us
+2020-09-24T08:46:50.931Z,15.5296,-95.8188,10,4.2,mb,,134,0.366,0.76,us,us6000c6bh,2020-12-05T21:03:13.040Z,"42 km S of El Coyul, Mexico",earthquake,4.2,1.9,0.101,27,reviewed,us,us
+2020-09-24T23:01:30.369Z,27.1573,-111.4068,10,5.3,mww,,125,0.76,0.66,us,us6000c0ww,2025-12-22T18:42:48.201Z,"64 km ENE of Mulegé, Mexico",earthquake,7.3,1.9,0.046,45,reviewed,us,us
+2020-09-24T23:06:42.138Z,27.0779,-111.2685,10,4.6,mb,,112,0.899,0.93,us,us6000c0xh,2020-12-05T21:02:57.040Z,"73 km ENE of Mulegé, Mexico",earthquake,6.9,1.9,0.057,90,reviewed,us,us
+2020-09-27T09:40:56.522Z,14.2028,-90.7908,109.83,5.3,mww,,124,1.305,0.81,us,us6000c1w6,2025-12-22T19:05:31.543Z,"6 km E of Masagua, Guatemala",earthquake,7,6.7,0.034,82,reviewed,us,us
+2020-09-28T16:21:47.736Z,17.5576,-94.6384,153.5,4.3,mb,,89,0.52,0.71,us,us6000c6bl,2020-12-05T21:03:13.040Z,"10 km NE of Vicente Guerrero, Mexico",earthquake,7.3,6,0.094,32,reviewed,us,us
+2020-09-28T23:27:20.878Z,15.9947,-97.9285,20.08,4.5,mb,,101,0.751,1.31,us,us6000c2ch,2020-12-05T21:03:04.040Z,"20 km SSE of Santa María Chico Ometepec, Mexico",earthquake,4.8,5.3,0.03,337,reviewed,us,us
+2020-09-30T17:40:58.637Z,14.5596,-93.9152,9.33,4.4,mb,,136,1.717,0.86,us,us6000c650,2020-12-12T22:28:43.040Z,"127 km SW of La Esperanza (El Zapotal), Mexico",earthquake,6.1,4.5,0.055,97,reviewed,us,us
+2020-10-01T22:56:18.239Z,14.3116,-92.9151,35,4.6,mb,,108,0.864,1.11,us,us6000c4dl,2020-12-12T22:28:31.040Z,"near the coast of Chiapas, Mexico",earthquake,5.8,2,0.032,298,reviewed,us,us
+2020-10-02T07:35:20.124Z,16.9751,-95.8419,10,4.2,mb,,104,0.734,0.7,us,us6000c4md,2020-12-12T22:28:34.040Z,"2 km N of San Pedro Ocotepec, Mexico",earthquake,3.8,1.8,0.132,16,reviewed,us,us
+2020-10-03T02:18:47.529Z,14.4918,-92.8228,10,4.3,mb,,178,0.679,0.76,us,us6000c530,2020-12-12T22:28:36.040Z,"50 km WSW of Puerto Madero, Mexico",earthquake,4.4,1.9,0.065,68,reviewed,us,us
+2020-10-04T03:36:18.960Z,17.4751,-100.6425,10,4.1,mb,,136,0.555,0.88,us,us6000c5cm,2020-12-12T22:28:38.040Z,"27 km N of El Súchil, Mexico",earthquake,2.5,1.9,0.114,21,reviewed,us,us
+2020-10-06T06:19:51.214Z,15.9076,-96.404,28.13,4,mb,,187,1.193,0.87,us,us6000c5zs,2020-12-12T22:28:42.040Z,"2 km SE of Pluma Hidalgo, Mexico",earthquake,7.6,7.3,0.062,71,reviewed,us,us
+2020-10-07T00:53:50.274Z,17.4338,-94.6388,135.79,4.2,mb,,80,0.413,1.1,us,us7000cb4b,2020-12-19T17:22:58.040Z,"10 km SE of Vicente Guerrero, Mexico",earthquake,8.1,9.6,0.084,40,reviewed,us,us
+2020-10-09T06:27:50.354Z,14.9052,-91.9157,109.22,4.5,mb,,120,0.337,0.51,us,us6000c6z8,2020-12-19T17:22:41.040Z,"2 km S of San Rafael Pie de la Cuesta, Guatemala",earthquake,6.3,4.9,0.096,32,reviewed,us,us
+2020-10-10T16:47:39.710Z,16.3857,-96.1233,64.83,4.4,mb,,71,0.613,0.8,us,us7000cb4h,2020-12-19T17:22:58.040Z,"12 km S of San Carlos Yautepec, Mexico",earthquake,3.8,9.3,0.155,12,reviewed,us,us
+2020-10-10T21:10:11.869Z,16.3979,-96.0721,55.45,4.1,mb,,66,0.626,0.8,us,us6000c7e7,2020-12-19T17:22:44.040Z,"11 km WSW of San Bartolo Yautepec, Mexico",earthquake,2.9,11,0.131,16,reviewed,us,us
+2020-10-11T16:54:59.733Z,19.3331,-104.4515,32.77,4.7,mb,,121,0.276,1.36,us,us7000cb4i,2020-12-19T17:22:58.040Z,"9 km SE of Tequesquitlán, Mexico",earthquake,4.4,6.7,0.118,22,reviewed,us,us
+2020-10-12T04:13:53.429Z,14.8318,-93.6423,18,5.6,mww,,63,1.39,0.83,us,us6000c7ne,2025-12-22T18:43:39.582Z,"85 km SW of La Esperanza (El Zapotal), Mexico",earthquake,3.8,1.6,0.071,19,reviewed,us,us
+2020-10-12T04:14:27.168Z,14.5482,-93.5454,10,5.5,mb,,87,1.792,0.81,us,us6000c8sb,2020-12-19T17:22:55.040Z,"107 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,9.4,1.8,0.083,50,reviewed,us,us
+2020-10-12T04:17:33.721Z,14.6726,-93.7508,10,5,mb,,92,1.455,0.64,us,us6000c8s9,2020-12-19T17:22:55.040Z,"106 km SW of La Esperanza (El Zapotal), Mexico",earthquake,6.9,1.9,0.103,30,reviewed,us,us
+2020-10-12T06:06:55.814Z,14.5717,-91.7423,100.9,5.1,mww,,131,0.065,0.95,us,us6000c7q4,2025-12-22T18:43:40.273Z,"3 km SSW of El Asintal, Guatemala",earthquake,4.4,3.9,0.043,53,reviewed,us,us
+2020-10-12T06:58:33.351Z,14.6453,-93.7499,23.45,4.3,mb,,162,1.459,0.84,us,us6000c7qc,2020-12-19T17:22:47.040Z,"108 km SW of La Esperanza (El Zapotal), Mexico",earthquake,3.5,7.2,0.057,86,reviewed,us,us
+2020-10-12T07:03:07.735Z,14.7766,-93.6474,37.95,4.8,mb,,67,1.906,0.58,us,us6000c7qe,2020-12-19T17:22:47.040Z,"90 km SW of La Esperanza (El Zapotal), Mexico",earthquake,3.2,5.8,0.025,490,reviewed,us,us
+2020-10-12T15:25:24.337Z,14.8933,-92.9951,79.3,4.2,mb,,139,1.31,0.48,us,us6000c8su,2020-12-19T17:22:55.040Z,"near the coast of Chiapas, Mexico",earthquake,7.4,11,0.086,38,reviewed,us,us
+2020-10-12T16:38:31.105Z,15.121,-93.1368,40.44,4,mb,,173,1.515,0.71,us,us6000c7te,2020-12-19T17:22:48.040Z,"36 km S of La Esperanza (El Zapotal), Mexico",earthquake,7.2,24.8,0.15,12,reviewed,us,us
+2020-10-12T21:06:39.942Z,14.6871,-93.8425,10,4.2,mb,,183,2.085,1.05,us,us6000c7vc,2020-12-19T17:22:49.040Z,"111 km SW of La Esperanza (El Zapotal), Mexico",earthquake,7,1.9,0.088,36,reviewed,us,us
+2020-10-13T00:12:40.123Z,15.0887,-92.5886,83.1,4.3,mb,,159,1.03,0.79,us,us6000c7w2,2022-08-09T00:55:02.276Z,"5 km WNW of Francisco I. Madero, Mexico",earthquake,6.8,5.6,0.051,111,reviewed,us,us
+2020-10-13T00:31:22.895Z,14.9363,-93.6304,26.22,4,mb,,178,1.916,1.29,us,us6000c7we,2020-12-19T17:22:49.040Z,"near the coast of Chiapas, Mexico",earthquake,10.6,9,0.098,28,reviewed,us,us
+2020-10-14T00:40:02.070Z,15.4921,-88.8688,10,4.3,mb,,87,1.186,1,us,us6000c856,2022-08-09T00:57:00.929Z,"3 km NW of Morales, Guatemala",earthquake,12.2,1.9,0.084,40,reviewed,us,us
+2020-10-14T10:17:04.661Z,15.6038,-88.7618,10,4.1,mb,,65,1.33,0.76,us,us6000c87u,2020-12-29T23:07:20.040Z,"16 km NNE of Morales, Guatemala",earthquake,6.1,1.8,0.099,28,reviewed,us,us
+2020-10-15T17:51:57.546Z,14.806,-93.7241,14.54,4.1,mb,,172,1.414,0.99,us,us6000c8kf,2020-12-29T23:07:24.040Z,"93 km SW of La Esperanza (El Zapotal), Mexico",earthquake,4.4,3.1,0.105,25,reviewed,us,us
+2020-10-15T21:40:56.563Z,15.3061,-89.041,10,4,mwr,,71,0.953,0.75,us,us6000c8lx,2020-12-29T23:07:25.040Z,"8 km NE of Los Amates, Guatemala",earthquake,2.3,2,0.063,24,reviewed,us,us
+2020-10-16T06:34:44.609Z,19.3425,-108.881,10,4.3,mb,,184,6.81,0.77,us,us6000c8pt,2020-12-29T23:07:26.040Z,"Revilla Gigedo Islands region",earthquake,11.6,2,0.147,13,reviewed,us,us
+2020-10-18T10:31:34.980Z,32.4648333,-115.178,19.86,3.5,mw,49,55,0.1165,0.34,ci,ci39666952,2021-02-08T05:09:52.131Z,"12km N of Delta, B.C., MX",earthquake,0.35,0.57,,4,reviewed,ci,ci
+2020-10-19T03:24:17.226Z,16.2099,-86.9818,10,4.5,mb,,60,2.158,1.01,us,us6000c9as,2020-12-29T23:07:37.040Z,"46 km WSW of Sandy Bay, Honduras",earthquake,6.4,1.8,0.053,104,reviewed,us,us
+2020-10-19T06:25:24.324Z,24.3482,-109.0131,10,4.6,mb,,185,3.972,1.08,us,us6000c9bs,2020-12-29T23:07:38.040Z,"101 km NE of Los Barriles, Mexico",earthquake,9.4,1.9,0.041,177,reviewed,us,us
+2020-10-21T20:51:18.849Z,14.0796,-92.3091,41.88,4.5,mb,,211,0.741,0.72,us,us6000cb02,2021-01-09T20:05:17.040Z,"48 km WSW of Champerico, Guatemala",earthquake,11.1,13.8,0.063,73,reviewed,us,us
+2020-10-22T01:46:22.097Z,16.3697,-94.4384,81.45,3.8,mb,,125,0.834,0.76,us,us7000cb4k,2021-01-09T20:05:55.040Z,"4 km SSE of Reforma de Pineda, Mexico",earthquake,4.3,13.7,0.228,5,reviewed,us,us
+2020-10-22T03:59:41.492Z,14.6314,-93.7913,10,4,mb,,207,2.032,0.85,us,us6000cb4p,2021-01-09T20:05:17.040Z,"112 km SW of La Esperanza (El Zapotal), Mexico",earthquake,7.8,1.9,0.085,37,reviewed,us,us
+2020-10-23T18:21:18.961Z,14.1517,-91.2007,73.42,4.2,mb,,154,0.605,0.77,us,us6000cc8q,2021-01-09T20:05:22.040Z,"11 km ESE of Nueva Concepción, Guatemala",earthquake,6.9,7.4,0.06,87,reviewed,us,us
+2020-10-24T10:11:07.260Z,25.7224,-110.1051,10,4.6,mb,,130,0.968,0.93,us,us6000ccj8,2021-01-09T20:05:23.040Z,"78 km WSW of Las Grullas Margen Derecha, Mexico",earthquake,3.1,1.9,0.055,99,reviewed,us,us
+2020-10-25T07:58:56.240Z,15.7315,-96.3157,18.2,4.4,mb,,178,0.203,0.78,us,us6000ccwv,2021-01-09T20:05:25.040Z,"9 km SSE of San Isidro Apango, Mexico",earthquake,4.9,5.2,0.04,180,reviewed,us,us
+2020-10-25T12:47:58.915Z,14.765,-92.5894,67.22,5.1,mww,,130,0.344,1.07,us,us6000ccys,2025-12-22T18:44:21.518Z,"18 km SW of Buenos Aires, Mexico",earthquake,6.8,7.1,0.047,44,reviewed,us,us
+2020-10-28T14:07:37.662Z,31.7011,-104.1244,5,3.7,mwr,,49,0.085,0.42,us,us7000c6s7,2021-01-18T23:01:36.040Z,"49 km W of Mentone, Texas",earthquake,1.4,1.9,0.057,30,reviewed,us,us
+2020-10-29T01:40:07.164Z,31.6721,-104.322,5,3.6,mwr,,56,0.103,0.51,us,us7000c7c5,2021-01-18T23:01:39.040Z,"56 km S of Whites City, New Mexico",earthquake,1.2,1.3,0.08,15,reviewed,us,us
+2020-10-29T17:37:04.176Z,16.1868,-98.2552,12.57,4.4,mb,,163,0.238,1.08,us,us7000c7lw,2021-01-18T23:01:42.040Z,"9 km SW of Corralero, Mexico",earthquake,5.2,4.6,0.055,95,reviewed,us,us
+2020-10-31T20:59:16.488Z,14.5911,-93.6773,10,4.4,mb,,170,1.192,0.69,us,us7000c8re,2021-01-18T23:01:54.040Z,"109 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,5.1,1.9,0.072,56,reviewed,us,us
+2020-11-02T03:26:43.880Z,17.4138,-101.4561,10,4.2,mb,,218,2.231,0.98,us,us7000c94w,2021-01-18T23:02:00.040Z,"20 km SW of San Jeronimito, Mexico",earthquake,7.3,2,0.064,68,reviewed,us,us
+2020-11-02T03:40:24.915Z,19.6318,-108.7458,10,4.4,mb,,114,4.679,1.31,us,us7000c951,2021-01-18T23:02:00.040Z,"Revilla Gigedo Islands region",earthquake,9.5,0.9,0.033,266,reviewed,us,us
+2020-11-02T23:25:27.736Z,14.3261,-93.0406,34.53,4.7,mb,,136,0.947,0.91,us,us7000c9i8,2021-01-18T23:02:04.040Z,"79 km WSW of Puerto Madero, Mexico",earthquake,3.4,5.3,0.029,355,reviewed,us,us
+2020-11-03T11:00:39.520Z,31.5295,-115.7046667,8.4,3.74,ml,16,145,0.1535,0.17,ci,ci39455079,2021-01-18T23:02:08.040Z,"84km ESE of Maneadero, B.C., MX",earthquake,0.35,31.61,0.157,237,reviewed,ci,ci
+2020-11-05T22:54:27.027Z,14.3873,-92.8588,18.82,4.6,mb,,190,0.773,0.81,us,us7000cmqr,2021-01-23T22:25:50.040Z,"59 km SW of Puerto Madero, Mexico",earthquake,3.8,7.3,0.274,4,reviewed,us,us
+2020-11-07T05:43:17.465Z,15.1762,-104.4478,10,4.4,mb,,199,5.404,1.13,us,us7000cbpx,2021-01-23T22:25:33.040Z,"off the coast of Michoacan, Mexico",earthquake,12.1,2,0.091,35,reviewed,us,us
+2020-11-07T06:30:35.229Z,15.8949,-98.1479,10,4.2,mb,,190,0.967,0.77,us,us7000cmqt,2021-01-23T22:25:50.040Z,"36 km SSW of Santa María Chico Ometepec, Mexico",earthquake,6.3,2,0.199,7,reviewed,us,us
+2020-11-09T03:18:20.732Z,15.6935,-103.6117,10,4.5,mb,,231,2.802,0.94,us,us7000cca8,2021-01-23T22:25:38.040Z,"286 km SSW of Playa Azul, Mexico",earthquake,11.4,2,0.06,80,reviewed,us,us
+2020-11-10T16:32:53.550Z,22.2811,-107.7901,10,4.4,mb,,109,2.596,1.32,us,us7000ccx5,2025-12-22T18:45:05.988Z,"176 km SW of Mazatlán, Mexico",earthquake,7.7,1.9,0.042,167,reviewed,us,us
+2020-11-10T20:12:27.518Z,15.2249,-104.4359,10,4.4,mb,,200,5.358,0.78,us,us7000cczu,2021-01-23T22:25:42.040Z,"off the coast of Michoacan, Mexico",earthquake,11.6,2,0.061,78,reviewed,us,us
+2020-11-12T02:38:32.431Z,27.5631,-111.4731,10,3.9,mb,,181,0.724,0.81,us,us7000cdm4,2021-01-27T17:28:44.040Z,"60 km SW of San Carlos, Mexico",earthquake,7.6,2,0.149,12,reviewed,us,us
+2020-11-12T03:21:45.155Z,14.2305,-91.8961,52.43,4.7,mwr,,67,0.351,0.83,us,us7000cdmk,2021-01-27T17:28:44.040Z,"7 km SSE of Champerico, Guatemala",earthquake,6.2,1.9,0.078,16,reviewed,us,us
+2020-11-12T11:58:16.512Z,15.875,-95.0273,26.25,4.4,mb,,146,1.045,1.13,us,us7000cdsa,2021-01-27T17:28:48.040Z,"37 km S of Colonia Juárez, Mexico",earthquake,5.2,11.2,0.096,31,reviewed,us,us
+2020-11-13T19:04:13.456Z,22.3829,-107.7985,11.85,5.3,mww,,165,3.441,0.82,us,us7000celp,2025-12-22T18:45:15.828Z,"171 km WSW of Mazatlán, Mexico",earthquake,9.8,4.8,0.046,45,reviewed,us,us
+2020-11-15T04:27:02.281Z,32.9113,-100.8806,5,3.5,mwr,,36,0.015,0.89,us,us7000cf5p,2021-01-27T17:29:37.040Z,"21 km N of Snyder, Texas",earthquake,1.7,1.7,0.071,19,reviewed,us,us
+2020-11-16T20:58:21.499Z,16.0854,-95.9076,38.79,4.4,mb,,101,0.369,0.86,us,us7000cmr2,2021-01-27T17:30:40.040Z,"7 km SW of Santa María Zapotitlán, Mexico",earthquake,5.2,7.5,0.1,29,reviewed,us,us
+2020-11-17T13:09:51.570Z,22.2767,-107.8031,10,4.1,mb,,186,2.824,1.16,us,us7000cg3m,2021-01-27T17:30:09.040Z,"178 km SW of Mazatlán, Mexico",earthquake,3.4,2,0.075,53,reviewed,us,us
+2020-11-17T14:04:52.026Z,16.6577,-94.5819,10,4.1,mb,,112,0.519,0.49,us,us7000cmr4,2021-01-27T17:30:40.040Z,"10 km NNE of Niltepec, Mexico",earthquake,1.5,1.8,0.261,6,reviewed,us,us
+2020-11-17T23:55:54.239Z,15.465,-94.5526,35,4.3,mb,,122,1.307,1.31,us,us6000cpnw,2021-01-27T17:28:15.040Z,"85 km S of San Francisco del Mar Viejo, Mexico",earthquake,5.2,2,0.067,64,reviewed,us,us
+2020-11-17T23:57:47.435Z,15.4205,-94.5561,35,4.1,mb,,176,1.319,0.95,us,us7000cmr5,2021-01-27T17:30:40.040Z,"90 km S of San Francisco del Mar Viejo, Mexico",earthquake,2.9,2,0.174,9,reviewed,us,us
+2020-11-18T03:12:59.536Z,21.9759,-107.717,10,4.1,mb,,195,2.88,0.85,us,us6000cppr,2021-02-03T17:50:09.040Z,"193 km SW of Mazatlán, Mexico",earthquake,6.1,2,0.174,9,reviewed,us,us
+2020-11-19T13:05:18.145Z,14.6555,-93.6585,35.52,4.5,mb,,186,1.126,1.14,us,us6000cqd1,2021-02-03T17:50:09.040Z,"102 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,5,10.1,0.041,176,reviewed,us,us
+2020-11-20T08:43:53.570Z,16.2043,-94.4255,77.52,4.6,mb,,99,0.985,0.86,us,us6000cqqi,2021-02-03T17:50:13.040Z,"17 km SSE of San Francisco Ixhuatan, Mexico",earthquake,4.1,8.7,0.089,38,reviewed,us,us
+2020-11-21T00:05:50.469Z,24.1398,-109.1819,10,4,mb,,120,1.029,1.42,us,us6000cr3j,2021-02-03T17:49:30.040Z,"73 km NE of La Rivera, Mexico",earthquake,3.6,1.9,0.055,93,reviewed,us,us
+2020-11-23T01:24:19.786Z,14.8935,-93.6428,35,4.2,mb,,156,0.904,1.3,us,us6000crjg,2021-02-03T17:50:11.040Z,"80 km SW of La Esperanza (El Zapotal), Mexico",earthquake,3.3,2,0.075,49,reviewed,us,us
+2020-11-24T03:49:00.656Z,17.3513,-94.0182,174.9,4.4,mb,,72,0.126,0.69,us,us6000crww,2021-02-03T17:51:04.040Z,"25 km NE of La Horqueta (Poblado Doce), Mexico",earthquake,5.8,3.8,0.063,73,reviewed,us,us
+2020-11-25T12:36:57.260Z,14.9165,-92.5125,102.18,4.2,mb,,168,0.881,0.31,us,us7000cmr8,2021-02-06T18:29:51.040Z,"2 km S of Aquiles Serdán, Mexico",earthquake,8.3,4.6,0.186,8,reviewed,us,us
+2020-11-29T08:07:31.784Z,17.419,-92.5529,10,4.6,mb,,41,0.838,1.03,us,us7000ckt2,2025-12-22T18:46:05.242Z,"4 km NNE of Chulum Cárdenas, Mexico",earthquake,2.9,1.9,0.033,269,reviewed,us,us
+2020-11-29T09:20:38.678Z,31.1553,-103.257,5,3.6,ml,,35,0.03,0.55,us,us7000cktv,2021-02-06T18:28:55.040Z,"20 km WSW of Coyanosa, Texas",earthquake,1.4,2,0.04,86,reviewed,us,us
+2020-11-30T13:46:10.213Z,15.6312,-93.8999,67.15,4.2,mb,,157,0.66,0.6,us,us7000cmre,2021-02-06T18:29:51.040Z,"35 km SW of Doctor Belisario Domínguez (La Barra), Mexico",earthquake,5.4,10.4,0.303,5,reviewed,us,us
+2020-12-02T02:59:33.458Z,19.3393,-108.41,10,4.2,mb,,203,2.995,0.88,us,us7000clwh,2025-12-22T18:46:23.172Z,"Revilla Gigedo Islands region",earthquake,3.1,2,0.104,26,reviewed,us,us
+2020-12-02T09:29:54.076Z,27.9728,-111.3037,10,4.4,mb,,235,1.088,0.62,us,us7000cm22,2021-03-22T18:44:03.567Z,"25 km W of San Carlos, Mexico",earthquake,6.2,2,0.169,10,reviewed,us,us
+2020-12-05T19:30:32.528Z,15.6389,-90.0179,2.09,4.3,mb,,62,0.764,0.67,us,us7000cnh0,2021-02-12T22:39:29.040Z,"9 km NW of Lanquín, Guatemala",earthquake,3.7,5.9,0.084,40,reviewed,us,us
+2020-12-08T17:56:42.337Z,16.0067,-95.2266,28.86,5.4,mww,,75,1.665,0.92,us,us7000cp6z,2025-12-22T17:59:32.109Z,"18 km ESE of El Carrizal, Mexico",earthquake,4.2,3.4,0.044,49,reviewed,us,us
+2020-12-09T07:03:59.639Z,24.8762,-108.8901,10,4.4,mb,,70,1.504,0.83,us,us7000cpec,2021-02-20T16:10:52.040Z,"68 km SSW of El Progreso, Mexico",earthquake,6.6,1.9,0.055,97,reviewed,us,us
+2020-12-10T04:25:26.086Z,15.4176,-93.1582,84.31,4.3,mb,,127,0.291,0.64,us,us7000cpnh,2021-02-20T16:11:02.040Z,"3 km S of La Esperanza (El Zapotal), Mexico",earthquake,6.7,6.7,0.041,168,reviewed,us,us
+2020-12-14T19:52:01.232Z,17.173,-94.8853,125.9,4.3,mb,,52,0.081,0.37,us,us6000d5y4,2021-02-20T16:10:49.040Z,"7 km N of Cuauhtémoc, Mexico",earthquake,8.4,2.4,0.2,7,reviewed,us,us
+2020-12-15T04:05:10.879Z,15.5738,-95.7553,10,4.1,mb,,181,1.405,0.88,us,us6000d5y5,2021-02-20T16:10:49.040Z,"38 km S of El Coyul, Mexico",earthquake,4.2,2,0.369,2,reviewed,us,us
+2020-12-16T15:53:23.344Z,16.0994,-98.7751,10,4,mb,,228,0.687,1.25,us,us7000cs7r,2021-02-27T23:25:54.040Z,"43 km SW of Montecillos, Mexico",earthquake,5,1.6,0.116,20,reviewed,us,us
+2020-12-18T01:06:59.444Z,17.0431,-95.1482,107.8,4.6,mb,,57,0.257,0.89,us,us7000crzm,2022-08-09T01:52:50.280Z,"5 km NW of Encinal Colorado, Mexico",earthquake,5,6.1,0.039,195,reviewed,us,us
+2020-12-22T00:30:00.240Z,32.3371667,-115.3908333,15.21,4.05,mw,54,76,0.1096,0.32,ci,ci39500455,2021-07-19T21:07:19.912Z,"19km W of Delta, B.C., MX",earthquake,0.41,0.68,,6,reviewed,ci,ci
+2020-12-23T14:00:10.153Z,17.0501,-95.4471,105.72,4.3,mb,,85,0.54,0.93,us,us6000d5y7,2021-03-06T23:17:57.040Z,"2 km N of San Juan Mazatlán, Mexico",earthquake,4.8,8.4,0.111,23,reviewed,us,us
+2020-12-24T12:17:05.882Z,16.2601,-93.9196,102.92,4.1,mb,,136,0.871,1.05,us,us6000d2jp,2021-03-06T23:18:18.040Z,"3 km NW of Arriaga, Mexico",earthquake,5.1,7.4,0.151,12,reviewed,us,us
+2020-12-26T10:15:55.223Z,16.8231,-99.6234,10,4.3,mb,,118,0.655,0.84,us,us6000d36h,2021-03-06T23:19:06.040Z,"2 km SE of Aguas Calientes, Mexico",earthquake,3.2,1.9,0.046,133,reviewed,us,us
+2020-12-26T12:28:06.747Z,14.6423,-93.4345,37.57,4.4,mb,,136,1.076,1.04,us,us6000d36x,2021-03-06T23:19:09.040Z,"93 km SSW of La Esperanza (El Zapotal), Mexico",earthquake,5.2,7.7,0.04,185,reviewed,us,us
+2020-12-26T18:54:23.084Z,14.6752,-93.9379,10.97,4.7,mb,,140,1.236,0.87,us,us6000d38x,2021-03-06T23:19:14.040Z,"119 km SW of La Esperanza (El Zapotal), Mexico",earthquake,5,3.5,0.032,311,reviewed,us,us
+2020-12-30T18:24:48.962Z,18.8531,-107.0019,10,4,mb,,200,2.17,1.09,us,us6000d4de,2021-03-06T23:20:44.040Z,"206 km SW of La Cruz de Loreto, Mexico",earthquake,7.1,1.9,0.063,67,reviewed,us,us
+2020-12-31T19:12:33.783Z,32.2909,-101.7932,7.98,3.6,mwr,,78,0.312,0.24,us,us6000d4la,2021-03-06T23:21:05.040Z,"17 km N of Stanton, Texas",earthquake,1.3,3,,31,reviewed,us,slm
+2020-12-31T20:44:20.034Z,32.2951,-101.7941,5,4,mwr,,35,0.316,0.41,us,us6000d4mj,2021-03-06T23:21:06.040Z,"18 km N of Stanton, Texas",earthquake,1.5,1.9,0.04,60,reviewed,us,us

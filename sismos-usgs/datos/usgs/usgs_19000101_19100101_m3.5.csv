@@ -1,0 +1,23 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+1900-01-20T06:33:00.000Z,20,-105,,7.3,mw,,,,,cent,cent19000120063300000,2025-04-19T23:36:34.400Z,"Jalisco, Mexico",earthquake,,,,,reviewed,cent,cent
+1901-12-09T02:17:00.000Z,26,-110,,7.1,mw,,,,,cent,cent19011209021700000,2025-05-01T00:18:06.958Z,"Gulf of California",earthquake,,,,,reviewed,cent,cent
+1902-01-18T23:23:00.000Z,14.71,-91.59,,6.3,ms,,,,,official,official19020118232300000,2025-05-11T21:46:10.341Z,"Near Quetzaltenango, Guatemala",earthquake,,,,,reviewed,official,official
+1902-04-19T02:24:00.000Z,14.93,-91.5,,7.5,mw,,,,,official,official19020419022400000,2025-05-15T18:24:45.513Z,"Near Quetzaltenango, Guatemala",earthquake,,,,,reviewed,official,official
+1902-09-23T20:18:00.000Z,16.5,-92.5,,7.8,mw,,,,,official,official19020923201800000,2025-05-20T23:49:53.143Z,"Central Chiapas, Mexico",earthquake,,,,,reviewed,official,official
+1902-12-12T23:10:00.000Z,29,-114,,7.1,mw,,,,,cent,cent19021212231000000,2025-05-22T23:16:05.111Z,"Baja California, Mexico",earthquake,,,,,reviewed,cent,cent
+1903-01-14T01:48:00.000Z,15,-95,,7.4,mw,,,,,official,official19030114014800000,2025-05-24T00:23:52.492Z,"Near the coast of Oaxaca, Mexico",earthquake,,,,,reviewed,official,official
+1903-01-24T05:27:00.000Z,31.5,-115,,6.6,ms,,,,,official,official19030124052700000,2024-04-30T23:49:10.661Z,"Colorado River Delta area, Baja California, Mexico",earthquake,,,,,reviewed,official,official
+1905-05-09T06:39:49.670Z,20.462,-107.078,10,6.97,mw,,,,,iscgemsup,iscgemsup610548601,2022-05-09T15:22:50.464Z,"166 km WSW of Corral del Risco (Punta de Mita), Mexico",earthquake,,25,0.96,,reviewed,iscgemsup,iscgemsup
+1905-12-17T05:30:32.210Z,18.32,-108.557,10,6.96,mw,,,,,iscgemsup,iscgemsup16957881,2022-05-09T15:10:38.461Z,"Revilla Gigedo Islands region",earthquake,,25,0.2,,reviewed,iscgemsup,iscgemsup
+1906-03-03T20:25:00.000Z,33,-117,,4.5,ml,,,,,ushis,ushis449,2024-08-18T00:18:44.689Z,"San Diego County, California",earthquake,,,,,reviewed,ushis,cdmg
+1906-04-10T21:22:53.950Z,24.684,-110.436,15,7.29,mw,,,,,iscgem,iscgem16957902,2022-04-25T20:24:49.639Z,"61 km NNW of La Paz, Mexico",earthquake,,25,0.39,,reviewed,iscgem,iscgem
+1906-04-19T00:30:00.000Z,32.9,-115.5,,6.28,mw,,,,,ushis,ushis451,2024-08-20T22:41:44.780Z,"The 1906 Imperial Valley, California Earthquake",earthquake,,,,,reviewed,ushis,hht
+1906-06-22T03:15:57.190Z,16.751,-94.79,60,5.66,mw,,,,,iscgem,iscgem610548646,2022-04-25T20:40:19.791Z,"6 km NW of San Miguel Chimalapa, Mexico",earthquake,,17.5,0.65,,reviewed,iscgem,iscgem
+1907-04-15T06:08:25.350Z,16.606,-97.246,30,7.8,mw,,,,,iscgem,iscgem16957951,2022-04-25T20:28:25.890Z,"2 km NW of Teojomulco, Mexico",earthquake,,3.9,0.4,,reviewed,iscgem,iscgem
+1907-10-16T13:57:22.760Z,29.379,-113.059,15,7.44,mw,,,,,iscgem,iscgem914271,2022-04-26T00:10:29.409Z,"69 km SSW of La Libertad, Mexico",earthquake,,25,0.38,,reviewed,iscgem,iscgem
+1908-03-26T23:03:30.300Z,16.546,-98.986,25,7.46,mw,,,,,iscgem,iscgem16957987,2022-04-25T20:29:33.681Z,"6 km S of Copala, Mexico",earthquake,,12.2,0.3,,reviewed,iscgem,iscgem
+1908-03-27T03:47:23.710Z,16.79,-100.054,25,7.18,mw,,,,,iscgem,iscgem16957988,2022-04-25T20:29:34.887Z,"15 km SSW of Colonia Luces en el Mar, Mexico",earthquake,,8.2,0.3,,reviewed,iscgem,iscgem
+1908-10-13T05:06:40.480Z,17.012,-100.416,35,6.72,mw,,,,,iscgem,iscgem16958000,2022-04-25T20:29:41.940Z,"11 km SSE of Hacienda de Cabañas, Mexico",earthquake,,11.2,0.2,,reviewed,iscgem,iscgem
+1909-07-30T10:51:51.970Z,16.463,-99.529,20,7.5,mw,,,,,iscgem,iscgem16958045,2022-04-25T20:30:11.296Z,"27 km SSE of San Andrés Playa Encantada (El Podrido), Mexico",earthquake,,10.5,0.4,,reviewed,iscgem,iscgem
+1909-07-31T19:18:52.380Z,16.3,-99.523,15,6.88,mw,,,,,iscgemsup,iscgemsup16958046,2022-05-09T15:13:21.488Z,"44 km SSE of San Andrés Playa Encantada (El Podrido), Mexico",earthquake,,10.5,0.24,,reviewed,iscgemsup,iscgemsup
+1909-10-31T10:23:21.770Z,16.643,-100.966,10,7.07,mw,,,,,iscgem,iscgem16958056,2022-04-25T20:30:36.321Z,"66 km SSW of Nuxco, Mexico",earthquake,,13.8,0.43,,reviewed,iscgem,iscgem
