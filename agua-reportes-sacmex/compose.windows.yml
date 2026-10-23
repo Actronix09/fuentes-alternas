@@ -1,0 +1,5 @@
+# Usa la imagen PostgreSQL 16 ya disponible en este equipo.
+# docker compose -f compose.yml -f compose.windows.yml up -d db
+services:
+  db:
+    image: postgres:16

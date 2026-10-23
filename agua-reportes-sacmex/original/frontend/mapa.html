@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Consumo - CDMX</title>
+    <link rel="stylesheet" href="assets/vendor/leaflet-1.9.4.css">
+        <link rel="preload" as="fetch" href="consumo.json" crossorigin>
+    <meta name="description" content="Almacen de datos y grafo de conocimiento del consumo de agua en la Ciudad de Mexico, construido con datos abiertos de SACMEX. Consulta por alcaldia y colonia, mapa coropletico y SPARQL en el navegador.">
+    <!-- sistema de diseño compartido: inicio -->
+    <link rel="stylesheet" href="assets/estilo.css">
+    <link rel="stylesheet" href="assets/paginas.css">
+    <script src="assets/i18n.js"></script>
+    <!-- sistema de diseño compartido: fin -->
+</head>
+<body>
+<header data-barra></header>
+    <div class="app-container" role="main">
+        <div class="header">
+            <h1 data-i18n="map.h1">🗺️ Mapa de consumo — CDMX</h1>
+            <nav class="nav">
+                <a href="index.html" data-i18n="nav.index">📊 Dashboard</a>
+
+                <a href="grafo.html" data-i18n="nav.grafo">&#128279; Grafo de conocimiento</a>
+
+                <a href="vecindad.html" data-i18n="nav.vecindad">&#127758; Vecindad territorial</a>
+            </nav>
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="fAnio" data-i18n="com.anio">Año</label>
+                <select id="fAnio"><option value="" data-i18n="com.todos">Todos</option></select>
+            </div>
+            <div class="filter-group">
+                <label for="fBimestre" data-i18n="com.bimestre">Bimestre</label>
+                <select id="fBimestre"><option value="" data-i18n="com.todos">Todos</option></select>
+            </div>
+            <div class="actions">
+                <button class="btn btn-primary" onclick="aplicarFiltros()" data-i18n="com.consultar">🔍 Consultar</button>
+                <button class="btn btn-secondary" onclick="limpiarFiltros()" data-i18n="com.limpiar">↺ Limpiar</button>
+            </div>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <div id="selectionBar" class="selection-bar">
+            <div>
+                <span class="label" data-i18n="map.selAlcaldia">Alcaldía seleccionada:</span>
+                <span class="name" id="selectionName">—</span>
+            </div>
+            <button onclick="limpiarSeleccion()" data-i18n="map.limpiarSel">✕ Limpiar selección</button>
+        </div>
+
+        <div class="layout">
+            <div class="map-wrap">
+                <div id="map"></div>
+            </div>
+            <aside class="legend">
+                <div id="detailPanel" class="detail-panel" style="display:none;">
+                    <div class="detail-title" data-i18n="map.detalle">💧 Datos de agua</div>
+                    <div class="detail-name" id="detailName">—</div>
+                    <div class="detail-grid">
+                        <div class="detail-cell"><div class="k" data-i18n="map.d.total">Consumo total</div><div class="v" id="detailTotal">—</div></div>
+                        <div class="detail-cell"><div class="k" data-i18n="map.d.prom">Consumo prom.</div><div class="v" id="detailProm">—</div></div>
+                        <div class="detail-cell"><div class="k" data-i18n="map.d.dom">🏠 Doméstico</div><div class="v" id="detailDom">—</div></div>
+                        <div class="detail-cell"><div class="k" data-i18n="map.d.noDom">🏢 No doméstico</div><div class="v" id="detailNoDom">—</div></div>
+                        <div class="detail-cell"><div class="k" data-i18n="map.d.mixto">🏬 Mixto</div><div class="v" id="detailMixto">—</div></div>
+                        <div class="detail-cell"><div class="k" data-i18n="map.d.promDom">Prom. dom.</div><div class="v" id="detailPromDom">—</div></div>
+                        <div class="detail-cell"><div class="k" data-i18n="map.d.colonias">Colonias</div><div class="v" id="detailColonias">—</div></div>
+                        <div class="detail-cell"><div class="k" data-i18n="map.d.registros">Registros</div><div class="v" id="detailRegistros">—</div></div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top:18px;" data-i18n="map.leyenda">Intensidad de consumo</h3>
+                <div class="legend-row"><span class="legend-swatch" style="background:#e0f2f1;"></span> <span data-i18n="map.ly.muyBajo">Muy bajo</span></div>
+                <div class="legend-row"><span class="legend-swatch" style="background:#80cbc4;"></span> <span data-i18n="map.ly.bajo">Bajo</span></div>
+                <div class="legend-row"><span class="legend-swatch" style="background:#26a69a;"></span> <span data-i18n="map.ly.medio">Medio</span></div>
+                <div class="legend-row"><span class="legend-swatch" style="background:#00897b;"></span> <span data-i18n="map.ly.alto">Alto</span></div>
+                <div class="legend-row"><span class="legend-swatch" style="background:#004d40;"></span> <span data-i18n="map.ly.muyAlto">Muy alto</span></div>
+
+                <h3 style="margin-top:18px;" data-i18n="map.top">📌 Top alcaldías</h3>
+                <ul id="topList" class="top-list"></ul>
+            </aside>
+        </div>
+    </div>
+
+    <script src="assets/vendor/leaflet-1.9.4.js" defer></script>
+    <script src="assets/mapa-teselas.js" defer></script>
+    <script>
+        const GEOJSON_URL = "alcaldias.geojson";
+        const DATOS_URL = "consumo.json";
+        const T = (k, v) => I18N.t(k, v);
+        const fmt = n => n == null ? '—' : Number(n).toLocaleString(I18N.locale(), { maximumFractionDigits: 2 });
+        const fmtInt = n => n == null ? '—' : Number(n).toLocaleString(I18N.locale());
+
+        const CDMX_CENTER = [19.4326, -99.1332];
+        const CDMX_ZOOM = 11;
+
+        let map;
+        let geoJsonLayer = null;
+        let alcaldiasGeoJson = null;
+        let alcaldiaSeleccionada = null;
+        let layersByAlcaldia = new Map();
+        let ultimoResultado = [];
+        let dataset = { consumo_colonia: [], anios: [], bimestres: [], colonias_por_alcaldia: {} };
+
+        function initMap() {
+            map = L.map('map').setView(CDMX_CENTER, CDMX_ZOOM);
+            /* El mapa base lo pone assets/mapa-teselas.js: prueba y vigila
+               varios proveedores y, si ninguno responde, dibuja la copia
+               local. Si ese script faltara, queda la capa de siempre. */
+            try {
+                MapaTeselas.montar(map, { maxZoom: 19 });
+            } catch (e) {
+                console.error(e);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+            }
+            map.on('click', (e) => {
+                if (e.originalEvent.target.closest('.leaflet-interactive')) return;
+                if (alcaldiaSeleccionada) limpiarSeleccion();
+            });
+        }
+
+        function setStatus(msg, tipo) {
+            const el = document.getElementById('status');
+            el.textContent = msg;
+            el.className = 'status show ' + tipo;
+        }
+
+        function hideStatus() {
+            document.getElementById('status').className = 'status';
+        }
+
+        function norm(s) {
+            return (s == null ? '' : String(s)).trim().toLowerCase()
+                .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function getNombreAlcaldia(props) {
+            if (!props) return '';
+            return props.NOMGEO || props.nomgeo ||
+                   props.nom_mun || props.NOM_MUN || props.alcaldia ||
+                   props.ALCALDIA || props.municipio || props.MUNICIPIO ||
+                   props.name || props.NAME || props.nombre || '';
+        }
+
+        function getColorChoropleth(t) {
+            if (t == null || isNaN(t)) return '#cfd8dc';
+            if (t < 0.2) return '#e0f2f1';
+            if (t < 0.4) return '#80cbc4';
+            if (t < 0.6) return '#26a69a';
+            if (t < 0.8) return '#00897b';
+            return '#004d40';
+        }
+
+        function estiloPoligonoNormal(consumo, min, max) {
+            const range = max - min || 1;
+            const t = consumo != null ? (consumo - min) / range : null;
+            return {
+                color: '#00695c',
+                weight: 1.5,
+                fillColor: getColorChoropleth(t),
+                fillOpacity: consumo == null ? 0.25 : 0.7,
+            };
+        }
+
+        function estiloPoligonoSel() {
+            return {
+                color: '#ff6f00',
+                weight: 3.5,
+                fillColor: '#ffa726',
+                fillOpacity: 0.85,
+            };
+        }
+
+        function estiloPoligonoHover(consumo, min, max) {
+            const range = max - min || 1;
+            const t = consumo != null ? (consumo - min) / range : null;
+            return {
+                color: '#ff6f00',
+                weight: 2.5,
+                fillColor: getColorChoropleth(t),
+                fillOpacity: 0.85,
+            };
+        }
+
+        function filtrarFilas() {
+            const anio = document.getElementById('fAnio').value;
+            const bim = document.getElementById('fBimestre').value;
+            return dataset.consumo_colonia.filter(f => {
+                if (anio && String(f.anio) !== String(anio)) return false;
+                if (bim && String(f.bimestre) !== String(bim)) return false;
+                return true;
+            });
+        }
+
+        function agregarPorAlcaldia(filas) {
+            const agg = new Map();
+            filas.forEach(f => {
+                const k = f.alcaldia;
+                const cur = agg.get(k) || {
+                    alcaldia: k,
+                    consumo_total: 0,
+                    consumo_total_dom: 0,
+                    consumo_total_no_dom: 0,
+                    consumo_total_mixto: 0,
+                    consumo_prom: 0,
+                    consumo_prom_dom: 0,
+                    consumo_prom_mixto: 0,
+                    consumo_prom_no_dom: 0,
+                    num_colonias: 0,
+                    num_registros: 0,
+                    _n: 0,
+                };
+                cur.consumo_total += f.consumo_total || 0;
+                cur.consumo_total_dom += f.consumo_total_dom || 0;
+                cur.consumo_total_no_dom += f.consumo_total_no_dom || 0;
+                cur.consumo_total_mixto += f.consumo_total_mixto || 0;
+                cur.consumo_prom += f.consumo_prom || 0;
+                cur.consumo_prom_dom += f.consumo_prom_dom || 0;
+                cur.consumo_prom_mixto += f.consumo_prom_mixto || 0;
+                cur.consumo_prom_no_dom += f.consumo_prom_no_dom || 0;
+                cur.num_registros += 1;
+                cur._n += 1;
+                agg.set(k, cur);
+            });
+
+            const coloniasPorAlc = {};
+            filas.forEach(f => {
+                const k = f.alcaldia;
+                coloniasPorAlc[k] = (coloniasPorAlc[k] || new Set());
+                coloniasPorAlc[k].add(f.colonia);
+            });
+
+            const out = [];
+            agg.forEach(v => {
+                if (v._n > 0) {
+                    v.consumo_prom = v.consumo_prom / v._n;
+                    v.consumo_prom_dom = v.consumo_prom_dom / v._n;
+                    v.consumo_prom_mixto = v.consumo_prom_mixto / v._n;
+                    v.consumo_prom_no_dom = v.consumo_prom_no_dom / v._n;
+                }
+                v.num_colonias = coloniasPorAlc[v.alcaldia] ? coloniasPorAlc[v.alcaldia].size : 0;
+                delete v._n;
+                out.push(v);
+            });
+            return out.sort((a, b) => (b.consumo_total || 0) - (a.consumo_total || 0));
+        }
+
+        function renderAlcaldiasPoligonos(data) {
+            if (geoJsonLayer) {
+                map.removeLayer(geoJsonLayer);
+                geoJsonLayer = null;
+            }
+            layersByAlcaldia.clear();
+            if (!alcaldiasGeoJson) {
+                setStatus(T('map.err.geojson'), 'error');
+                return;
+            }
+
+            const dataByAlcaldia = new Map();
+            data.forEach(d => { if (d.alcaldia) dataByAlcaldia.set(d.alcaldia, d); });
+            const dataByNorm = new Map();
+            data.forEach(d => { if (d.alcaldia) dataByNorm.set(norm(d.alcaldia), d); });
+
+            const consumos = data.map(d => d.consumo_total || 0);
+            const min = consumos.length ? Math.min(...consumos) : 0;
+            const max = consumos.length ? Math.max(...consumos) : 1;
+
+            geoJsonLayer = L.geoJSON(alcaldiasGeoJson, {
+                style: (feature) => {
+                    const nombre = getNombreAlcaldia(feature.properties);
+                    const d = dataByAlcaldia.get(nombre) || dataByNorm.get(norm(nombre));
+                    const consumo = d ? (d.consumo_total || 0) : null;
+                    if (alcaldiaSeleccionada && nombre === alcaldiaSeleccionada) {
+                        return estiloPoligonoSel();
+                    }
+                    return estiloPoligonoNormal(consumo, min, max);
+                },
+                onEachFeature: (feature, layer) => {
+                    const nombre = getNombreAlcaldia(feature.properties);
+                    const d = dataByAlcaldia.get(nombre) || dataByNorm.get(norm(nombre));
+
+                    layer.bindPopup(buildPopupHtml(nombre, d, true));
+
+                    layer.on('click', (e) => {
+                        L.DomEvent.stopPropagation(e);
+                        seleccionarAlcaldia(nombre);
+                        const datos = consultarAlcaldiaLocal(nombre);
+                        const layerRef = e.target;
+                        if (layerRef.getPopup()) {
+                            layerRef.setPopupContent(buildPopupHtml(nombre, datos, true));
+                        }
+                        layerRef.openPopup(e.latlng);
+                        actualizarDetalleConDatosBD(datos);
+                    });
+
+                    layer.on('mouseover', (e) => {
+                        const t = e.target;
+                        if (alcaldiaSeleccionada !== nombre) {
+                            const dLocal = dataByAlcaldia.get(nombre) || dataByNorm.get(norm(nombre));
+                            t.setStyle(estiloPoligonoHover(dLocal ? (dLocal.consumo_total || 0) : null, min, max));
+                        }
+                        t.bringToFront();
+                    });
+                    layer.on('mouseout', (e) => {
+                        const t = e.target;
+                        if (alcaldiaSeleccionada !== nombre && geoJsonLayer) {
+                            geoJsonLayer.resetStyle(t);
+                        }
+                    });
+
+                    if (nombre) layersByAlcaldia.set(nombre, layer);
+                }
+            }).addTo(map);
+
+            try {
+                const b = geoJsonLayer.getBounds();
+                if (b.isValid()) map.fitBounds(b, { padding: [40, 40] });
+            } catch (e) {}
+        }
+
+        function consultarAlcaldiaLocal(nombre) {
+            const filas = filtrarFilas().filter(f => norm(f.alcaldia) === norm(nombre));
+            if (!filas.length) {
+                return {
+                    alcaldia: nombre,
+                    consumo_total: 0,
+                    consumo_prom: 0,
+                    consumo_total_dom: 0,
+                    consumo_prom_dom: 0,
+                    consumo_total_mixto: 0,
+                    consumo_prom_mixto: 0,
+                    consumo_total_no_dom: 0,
+                    consumo_prom_no_dom: 0,
+                    num_colonias: 0,
+                    num_registros: 0,
+                    anio_min: null,
+                    anio_max: null,
+                    sin_datos: true,
+                };
+            }
+            const out = {
+                alcaldia: nombre,
+                consumo_total: 0,
+                consumo_total_dom: 0,
+                consumo_total_no_dom: 0,
+                consumo_total_mixto: 0,
+                consumo_prom: 0,
+                consumo_prom_dom: 0,
+                consumo_prom_mixto: 0,
+                consumo_prom_no_dom: 0,
+                num_registros: filas.length,
+                num_colonias: new Set(filas.map(f => f.colonia)).size,
+                anio_min: Infinity,
+                anio_max: -Infinity,
+            };
+            filas.forEach(f => {
+                out.consumo_total += f.consumo_total || 0;
+                out.consumo_total_dom += f.consumo_total_dom || 0;
+                out.consumo_total_no_dom += f.consumo_total_no_dom || 0;
+                out.consumo_total_mixto += f.consumo_total_mixto || 0;
+                out.consumo_prom += f.consumo_prom || 0;
+                out.consumo_prom_dom += f.consumo_prom_dom || 0;
+                out.consumo_prom_mixto += f.consumo_prom_mixto || 0;
+                out.consumo_prom_no_dom += f.consumo_prom_no_dom || 0;
+                if (f.anio < out.anio_min) out.anio_min = f.anio;
+                if (f.anio > out.anio_max) out.anio_max = f.anio;
+            });
+            out.consumo_prom = out.consumo_prom / filas.length;
+            out.consumo_prom_dom = out.consumo_prom_dom / filas.length;
+            out.consumo_prom_mixto = out.consumo_prom_mixto / filas.length;
+            out.consumo_prom_no_dom = out.consumo_prom_no_dom / filas.length;
+            out.sin_datos = false;
+            return out;
+        }
+
+        function actualizarDetalleConDatosBD(d) {
+            if (!d) return;
+            const panel = document.getElementById('detailPanel');
+            panel.style.display = 'block';
+            const setTxt = (id, v, unit) => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                el.textContent = v == null ? '—' : (unit ? fmt(v) + ' ' + unit : fmt(v));
+            };
+            document.getElementById('detailName').textContent = d.alcaldia;
+            setTxt('detailTotal', d.consumo_total, 'm³');
+            setTxt('detailProm', d.consumo_prom, 'm³');
+            setTxt('detailDom', d.consumo_total_dom, 'm³');
+            setTxt('detailNoDom', d.consumo_total_no_dom, 'm³');
+            setTxt('detailMixto', d.consumo_total_mixto, 'm³');
+            setTxt('detailPromDom', d.consumo_prom_dom, 'm³');
+            document.getElementById('detailColonias').textContent = d.num_colonias != null ? fmtInt(d.num_colonias) : '—';
+            document.getElementById('detailRegistros').textContent = d.num_registros != null ? fmtInt(d.num_registros) : '—';
+        }
+
+        function buildPopupHtml(nombre, d, esPoligono) {
+            if (!d || d.sin_datos) {
+                return `<div class="popup-title">💧 ${nombre}</div>
+                    <div class="popup-row"><span class="k" style="color:#999;">${T('map.popup.sinDatos')}</span></div>`;
+            }
+            const row = (k, v, unidad = 'm³') =>
+                v != null ? `<div class="popup-row"><span class="k">${k}</span><span class="v">${fmt(v)} ${unidad}</span></div>` : '';
+            const rowInt = (k, v) =>
+                v != null ? `<div class="popup-row"><span class="k">${k}</span><span class="v">${fmtInt(v)}</span></div>` : '';
+
+            const desglose = (d.consumo_total_dom != null || d.consumo_total_mixto != null || d.consumo_total_no_dom != null)
+                ? `<div style="margin-top:8px;padding-top:6px;border-top:1px dashed #ddd;">
+                       <div class="popup-section" style="font-size:11px;font-weight:700;color:#00695c;margin-bottom:4px;letter-spacing:0.3px;">${T('map.popup.desglose')}</div>
+                       ${row(T('map.d.dom'), d.consumo_total_dom)}
+                       ${row(T('map.d.noDom'), d.consumo_total_no_dom)}
+                       ${row(T('map.d.mixto'), d.consumo_total_mixto)}
+                   </div>` : '';
+
+            const rangoAnios = (d.anio_min != null && d.anio_max != null && d.anio_min !== Infinity)
+                ? `<div style="margin-top:6px;font-size:11px;color:#888;text-align:right;">${T('map.popup.periodo',
+                     { rango: d.anio_min + (d.anio_min !== d.anio_max ? '–' + d.anio_max : '') })}</div>`
+                : '';
+
+            return `<div class="popup-title">💧 ${nombre}</div>
+                <div class="popup-row"><span class="k">${T('map.d.total')}</span><span class="v">${fmt(d.consumo_total)} m³</span></div>
+                <div class="popup-row"><span class="k">${T('map.d.prom')}</span><span class="v">${fmt(d.consumo_prom)} m³</span></div>
+                ${rowInt(T('map.d.colonias'), d.num_colonias)}
+                ${rowInt(T('map.d.registros'), d.num_registros)}
+                ${desglose}
+                ${rangoAnios}`;
+        }
+
+        function renderMapa(data) {
+            renderAlcaldiasPoligonos(data);
+            renderTopList(data);
+        }
+
+        function renderTopList(data) {
+            const ul = document.getElementById('topList');
+            if (!ul) return;
+            const top = [...data].sort((a, b) => (b.consumo_total || 0) - (a.consumo_total || 0)).slice(0, 8);
+            ul.innerHTML = top.map(d => `
+                <li>
+                    <span class="name">${d.alcaldia}</span>
+                    <span class="val">${fmt(d.consumo_total)} m³</span>
+                </li>
+            `).join('');
+        }
+
+        function renderDetailPanel(data) {
+            const panel = document.getElementById('detailPanel');
+            if (!alcaldiaSeleccionada) { panel.style.display = 'none'; return; }
+            const d = data.find(x => x.alcaldia === alcaldiaSeleccionada)
+                || data.find(x => norm(x.alcaldia) === norm(alcaldiaSeleccionada));
+            if (!d) { panel.style.display = 'none'; return; }
+            actualizarDetalleConDatosBD(d);
+        }
+
+        function aplicarEstiloSeleccion() {
+            if (!geoJsonLayer) return;
+            const data = ultimoResultado;
+            const dataByAlcaldia = new Map();
+            data.forEach(d => { if (d.alcaldia) dataByAlcaldia.set(d.alcaldia, d); });
+            const dataByNorm = new Map();
+            data.forEach(d => { if (d.alcaldia) dataByNorm.set(norm(d.alcaldia), d); });
+            const consumos = data.map(d => d.consumo_total || 0);
+            const min = consumos.length ? Math.min(...consumos) : 0;
+            const max = consumos.length ? Math.max(...consumos) : 1;
+            layersByAlcaldia.forEach((layer, nombre) => {
+                if (alcaldiaSeleccionada === nombre) {
+                    layer.setStyle(estiloPoligonoSel());
+                    layer.bringToFront();
+                } else {
+                    const d = dataByAlcaldia.get(nombre) || dataByNorm.get(norm(nombre));
+                    const consumo = d ? (d.consumo_total || 0) : null;
+                    layer.setStyle(estiloPoligonoNormal(consumo, min, max));
+                }
+            });
+        }
+
+        function seleccionarAlcaldia(nombre) {
+            alcaldiaSeleccionada = nombre;
+            document.getElementById('selectionName').textContent = nombre;
+            document.getElementById('selectionBar').classList.add('show');
+            aplicarEstiloSeleccion();
+            renderDetailPanel(ultimoResultado);
+        }
+
+        function limpiarSeleccion() {
+            alcaldiaSeleccionada = null;
+            document.getElementById('selectionBar').classList.remove('show');
+            map.closePopup();
+            aplicarEstiloSeleccion();
+            renderDetailPanel(ultimoResultado);
+        }
+
+        function aplicarFiltros() {
+            const filas = filtrarFilas();
+            ultimoResultado = agregarPorAlcaldia(filas);
+            renderMapa(ultimoResultado);
+            hideStatus();
+            if (alcaldiaSeleccionada) {
+                renderDetailPanel(ultimoResultado);
+            }
+        }
+
+        function limpiarFiltros() {
+            ['fAnio', 'fBimestre'].forEach(id => document.getElementById(id).value = '');
+            aplicarFiltros();
+        }
+
+        async function cargarGeojsonAlcaldias() {
+            try {
+                const r = await fetch(GEOJSON_URL);
+                if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                alcaldiasGeoJson = await r.json();
+            } catch (e) {
+                setStatus(T('map.err.carga', { url: GEOJSON_URL, msg: e.message }), 'error');
+            }
+        }
+
+        async function cargarDatos() {
+            try {
+                const r = await fetch(DATOS_URL);
+                if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                dataset = await r.json();
+            } catch (e) {
+                setStatus(T('map.err.carga', { url: DATOS_URL, msg: e.message }), 'error');
+                throw e;
+            }
+        }
+
+        /* Rehace las opciones conservando lo elegido; la primera lleva
+           data-i18n y la traduce i18n.js. */
+        function opciones(sel, valores, etiqueta) {
+            const elegido = sel.value;
+            while (sel.options.length > 1) sel.remove(1);
+            (valores || []).forEach(v => sel.add(new Option(etiqueta ? etiqueta(v) : v, v)));
+            sel.value = elegido;
+        }
+
+        function cargarCatalogos() {
+            opciones(document.getElementById('fAnio'), dataset.anios);
+            opciones(document.getElementById('fBimestre'), dataset.bimestres,
+                     v => T('com.bimN', { n: v }));
+        }
+
+        /* Cambio de idioma. No se vuelve a llamar a aplicarFiltros(): eso
+           reconstruiría la capa GeoJSON y con ella se perderían el encuadre
+           del mapa y el globo abierto. Se traduce lo que este script genera
+           —globos, lista y detalle— dejando las capas donde están. */
+        function repintarIdioma() {
+            cargarCatalogos();
+            const porNombre = new Map();
+            ultimoResultado.forEach(d => { if (d.alcaldia) porNombre.set(norm(d.alcaldia), d); });
+            layersByAlcaldia.forEach((layer, nombre) => {
+                if (!layer.getPopup()) return;
+                const d = alcaldiaSeleccionada === nombre
+                    ? consultarAlcaldiaLocal(nombre)
+                    : porNombre.get(norm(nombre));
+                layer.setPopupContent(buildPopupHtml(nombre, d, true));
+            });
+            renderTopList(ultimoResultado);
+            renderDetailPanel(ultimoResultado);
+        }
+        document.addEventListener('idiomacambiado', repintarIdioma);
+
+        async function inicializar() {
+            initMap();
+            await Promise.all([cargarGeojsonAlcaldias(), cargarDatos()]);
+            cargarCatalogos();
+            aplicarFiltros();
+        }
+
+        /* Leaflet se carga con defer para no bloquear el primer pintado, de
+           modo que aún no existe cuando el analizador llega hasta aquí:
+           initMap() lanzaba «L is not defined» y el mapa no se dibujaba.
+           Los scripts diferidos corren antes de DOMContentLoaded, así que
+           esperar a ese evento basta. */
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', inicializar);
+        } else {
+            inicializar();
+        }
+    </script>
+<footer data-pie></footer>
+<script src="assets/nav.js"></script>
+<script src="assets/enlace-vecindad.js"></script>
+</body>
+</html>

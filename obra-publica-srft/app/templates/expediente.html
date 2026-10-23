@@ -1,0 +1,34 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Expedientes administrativos · SHCP</title><link rel="stylesheet" href="/static/tablero.css"></head><body>
+<header><nav><span>OBRAS PÚBLICAS / EXPEDIENTES IMPORTADOS</span><a href="/">Volver al mapa y presupuesto</a></nav>
+<p class="eyebrow">REGISTROS OFICIALES · TRAZABILIDAD DOCUMENTAL</p><h1>Expedientes de obra.</h1>
+<p class="intro">Datos administrativos publicados por SHCP, incorporados a las tablas originales de obras, presupuestos y financiamiento. Los campos no publicados permanecen vacíos. Todos los montos se expresan en pesos mexicanos (MXN).</p></header>
+<main>{% if e %}
+<section class="panel"><p><a href="/expedientes/">← Los {{expedientes|length}} expedientes</a></p><h2>{{e.nombre_obra}}</h2>
+<p><strong>{{e.folio}}</strong> · Estatus publicado: {{e.estatus_fuente}} · Referencia: {{e.fecha_referencia}}</p>
+<p>Inicio: {{e.fecha_inicio}} · Término estimado: {{e.fecha_final}} · Localidad: {{e.comunidad or 'No se publica una localidad única'}}</p>
+<p><a href="/api/srft/expediente/{{e.folio}}">Consultar expediente en la API</a> · <a href="/api/srft/proyecto/{{e.folio}}">Ver registros originales del CSV</a></p></section>
+<section class="indicadores">
+{% for titulo,valor in [('Presupuesto aprobado',e.presupuesto_total),('Pagado al cierre',e.pagado),('Avance físico %',e.avance_fisico_pct),('Contratos publicados',e.contrato_srft|length)] %}
+<article class="indicador"><span>{{titulo}}</span><strong>{{valor if valor is not none else 'No publicado'}}</strong><small>Fuente SHCP · cierre de 2025</small></article>{% endfor %}</section>
+<section class="doble"><article class="panel"><h2>Identificación administrativa</h2>
+<p>Clave técnica local: <code>{{e.id_obra}}</code></p><p>Folio oficial: {{e.codigo_expediente}}</p>
+<p>Contratista único: {{e.nombre_const or 'No determinado; consultar contratos'}}<br>RFC del contratista: {{e.rfc or 'No publicado (el RFC del convocante no se atribuye al contratista)'}}</p>
+<p>Supervisor: {{e.codigo_supervisor or 'No publicado'}}<br>Barrio: {{e.barrio or 'No publicado'}}</p>
+<p>La clave local sirve para relacionar tablas; no es un número de expediente emitido por el municipio. Los números de expediente y contrato publicados se muestran abajo.</p></article>
+<article class="panel"><h2>Información pendiente de publicación</h2><ul>{% for campo in e.campos_no_publicados %}<li>{{campo|replace('_',' ')}}</li>{% endfor %}</ul>
+<p>Sin nombres, firmas, permisos ni evidencia fotográfica inventados. Los eventos de auditoría registran la importación local, no una inspección histórica.</p></article></section>
+<section class="panel"><h2>Contratos y enlaces publicados</h2><div class="scroll"><table><thead><tr><th>Expediente / contrato</th><th>Contratista y modalidad</th><th>Monto</th><th>Fechas y enlaces</th></tr></thead><tbody>
+{% for c in e.contrato_srft %}<tr><td>{{c.numero_expediente or 'No publicado'}}<small>{{c.numero_contrato or 'Sin número publicado'}} · ID {{c.id_contrato_fuente}}</small></td>
+<td>{{c.contratista or 'No publicado'}}<small>{{c.modalidad or 'Modalidad no publicada'}}</small></td><td>{{c.monto if c.monto is not none else 'No publicado'}}</td>
+<td>Firma: {{c.fecha_firma or 'No publicada'}}<br>Conclusión: {{c.fecha_conclusion or 'No publicada'}}
+{% for etiqueta,url in [('Enlace publicado',c.url_publicada),('Enlace documental publicado',c.url_documento)] %}{% if url_segura(url) %}<br><a href="{{url_segura(url)}}" target="_blank" rel="noopener noreferrer">{{etiqueta}}</a>{% endif %}{% endfor %}</td></tr>
+{% else %}<tr><td colspan="4">La fuente no publica contratos para este folio.</td></tr>{% endfor %}</tbody></table></div>
+<p>Los enlaces proceden del CSV. Pueden apuntar a un portal general; no se certifica que sean un acta o un PDF específico. Los importes de contratos no se suman al presupuesto como gastos adicionales.</p></section>
+<section class="panel"><h2>Fuentes de financiamiento</h2><div class="scroll"><table><thead><tr><th>Fuente técnica / programa publicado</th><th>Aprobado</th><th>Modificado</th></tr></thead><tbody>
+{% for f in e.financiamiento_srft %}<tr><td>{{f.id_fuente}}<small>{{f.datos_originales.TIPO_RECURSO}}</small></td><td>{{f.aprobado}}</td><td>{{f.modificado}}</td></tr>{% endfor %}</tbody></table></div></section>
+<section class="panel"><h2>Procedencia</h2><p><a href="{{e.fuente_url}}">ZIP oficial de SHCP</a> · Huella del archivo: <code>{{e.sha256}}</code>.</p><p>Importación local: {{e.importado_en}}. Los datos de cierre conservan su referencia de 2025.</p></section>
+{% else %}<section class="panel"><h2>{{expedientes|length}} expedientes administrativos reales</h2><p>Elegir un folio para ver contratos, presupuesto, financiamiento y los campos que no publica la fuente.</p>
+<div class="scroll"><table><thead><tr><th>Folio</th><th>Obra</th><th>Estatus</th><th>Contratos</th></tr></thead><tbody>
+{% for x in expedientes %}<tr><td><a href="/expedientes/{{x.folio}}">{{x.folio}}</a></td><td>{{x.nombre_obra}}</td><td>{{x.estatus_fuente}}</td><td>{{x.contratos}}</td></tr>{% endfor %}</tbody></table></div></section>{% endif %}
+</main><footer>Expedientes importados de SHCP · Datos faltantes explícitos · Sin registros ficticios</footer></body></html>

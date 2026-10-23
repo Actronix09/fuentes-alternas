@@ -1,0 +1,47 @@
+name: fa-obras
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: obras_publicas
+      POSTGRES_USER: obras
+      POSTGRES_PASSWORD: obras_local
+    ports: ["5443:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./original/db/DDLBASEObPub.sql:/docker-entrypoint-initdb.d/01_original.sql:ro
+      - ./original/db/arquitectura/ESQUEMA DEL DATA WAREHOUSE.sql:/docker-entrypoint-initdb.d/02_warehouse.sql:ro
+      - ./original/db/arquitectura/FUNCIONES Y TRIGGERS.sql:/docker-entrypoint-initdb.d/03_triggers.sql:ro
+      - ./db/04_srft.sql:/docker-entrypoint-initdb.d/04_srft.sql:ro
+      - ./db/05_expedientes.sql:/docker-entrypoint-initdb.d/05_expedientes.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U obras -d obras_publicas"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+  etl:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    environment:
+      DATABASE_URL: postgresql://obras:obras_local@db:5432/obras_publicas
+      DIR_DATOS: /proyecto/datos
+    volumes: ["./datos:/proyecto/datos"]
+    command: ["python", "etl.py"]
+    depends_on:
+      db:
+        condition: service_healthy
+  web:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    environment:
+      DATABASE_URL: postgresql://obras:obras_local@db:5432/obras_publicas
+      SECRET_KEY: desarrollo-local-obras
+    ports: ["8093:8000"]
+    command: ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "2", "web:app"]
+    depends_on:
+      etl:
+        condition: service_completed_successfully
+volumes:
+  pgdata:

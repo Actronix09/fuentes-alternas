@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grafo de conocimiento — Consumo de Agua CDMX</title>
+<meta name="description" content="Explorador SPARQL sobre el grafo RDF materializado desde el almacén de datos de consumo de agua de la Ciudad de México.">
+<link rel="stylesheet" href="assets/estilo.css">
+<script src="assets/i18n.js"></script>
+<style>
+  .split{display:grid; gap:1.1rem; grid-template-columns:minmax(0,4fr) minmax(0,5fr); align-items:start}
+  @media (max-width:1000px){ .split{grid-template-columns:1fr} }
+  .ejemplos{display:flex; flex-direction:column; gap:.3rem; max-height:none}
+  .ejemplo{
+    text-align:left; cursor:pointer; padding:.55rem .7rem; font:inherit; font-size:.84rem;
+    background:transparent; color:var(--texto); border:1px solid var(--borde);
+    border-radius:var(--r-s); transition:.12s; line-height:1.35;
+  }
+  .ejemplo:hover{border-color:var(--marca-500); background:var(--superficie-2)}
+  .ejemplo[aria-pressed="true"]{border-color:var(--marca-700); background:var(--marca-100); font-weight:600}
+  .ejemplo b{display:block; font-size:.8rem; color:var(--texto-3); font-weight:600; margin-top:.15rem}
+  #consulta{min-height:230px}
+  .barra-acc{display:flex; gap:.5rem; align-items:center; flex-wrap:wrap; margin-top:.7rem}
+  .metrica{display:flex; gap:1.4rem; flex-wrap:wrap; font-size:.82rem; color:var(--texto-2)}
+  .metrica b{color:var(--texto); font-variant-numeric:tabular-nums}
+  .aviso{
+    padding:.7rem .9rem; border-radius:var(--r-s); font-size:.84rem;
+    background:var(--marca-100); color:var(--marca-700); border:1px solid var(--borde);
+  }
+  .aviso.err{background:rgba(185,28,28,.1); color:var(--error); border-color:rgba(185,28,28,.3)}
+  .uri{color:var(--marca-700); font-family:var(--mono); font-size:.8rem}
+</style>
+</head>
+<body>
+<header data-barra></header>
+
+<main class="envoltura">
+  <div class="aviso" id="reportesIntegrados" style="margin-bottom:1rem" role="status">Cargando el grafo actualizado desde el DW local…</div>
+
+  <div class="kpis" id="kpis">
+    <div class="kpi"><div class="kpi-et" data-i18n="gr.kpi.triples">Triples cargados</div><div class="kpi-val" id="kTriples">—</div><div class="kpi-nota" id="kCarga" data-i18n="gr.kpi.esperando">esperando…</div></div>
+    <div class="kpi t2"><div class="kpi-et" data-i18n="gr.kpi.obs">Observaciones</div><div class="kpi-val" id="kObs">—</div><div class="kpi-nota">qb:Observation</div></div>
+    <div class="kpi t3"><div class="kpi-et" data-i18n="gr.kpi.feat">Unidades territoriales</div><div class="kpi-val" id="kFeat">—</div><div class="kpi-nota" data-i18n="gr.kpi.featNota">geo:Feature con geometría</div></div>
+    <div class="kpi"><div class="kpi-et" data-i18n="gr.kpi.ady">Relaciones de vecindad</div><div class="kpi-val" id="kAdy">—</div><div class="kpi-nota">agua:nearbyWithin1500m</div></div>
+  </div>
+
+  <div class="tarjeta" style="margin-bottom:1.25rem">
+    <div class="tarjeta-cuerpo" style="padding:.9rem 1.1rem">
+      <p class="sub" style="margin:0">
+        Esta versión incorpora los reportes oficiales de SACMEX al grafo de consumo y clima.
+        El ETL materializa el RDF desde PostgreSQL; las consultas SPARQL se ejecutan en el backend local.
+        Los reportes están agregados por colonia, año, tipo, clasificación y recurso: sumar
+        <code>agua:reportCount</code> recupera su cantidad real. Los datos sin colonia conservan una marca de ubicación desconocida.
+      </p><p hidden>
+        Este grafo se materializa desde el almacén relacional con un mapeo
+        <b>R2RML</b> declarativo, alineado a <b>RDF Data Cube</b> (el cubo de observaciones),
+        <b>GeoSPARQL</b> (territorio), una relación propia de proximidad entre centroides,
+        <b>SKOS</b> (índice de desarrollo) y
+        <b>OWL-Time</b> (periodos). Las consultas se ejecutan íntegramente en tu navegador:
+        no hay servidor detrás.
+      </p>
+    </div>
+  </div>
+
+  <div class="split">
+
+    <section class="tarjeta">
+      <div class="tarjeta-cab"><h2 data-i18n="gr.ejemplos">Consultas de ejemplo</h2></div>
+      <div class="tarjeta-cuerpo">
+        <div class="ejemplos" id="ejemplos"></div>
+      </div>
+    </section>
+
+    <section class="tarjeta">
+      <div class="tarjeta-cab">
+        <h2>SPARQL 1.1</h2>
+        <span class="chip" id="motor">SPARQL sobre el grafo local</span>
+      </div>
+      <div class="tarjeta-cuerpo">
+        <label for="consulta" data-i18n="gr.etiqueta">Consulta — puedes editarla libremente</label>
+        <textarea id="consulta" spellcheck="false"></textarea>
+        <div class="barra-acc">
+          <button class="btn" id="btnRun" disabled data-i18n="gr.ejecutar">Ejecutar</button>
+          <button class="btn sec" id="btnCopiar" data-i18n="gr.copiar">Copiar</button>
+          <span class="estado" id="estado"><span class="spinner"></span> cargando el grafo…</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="tarjeta" style="margin-top:1.25rem">
+    <div class="tarjeta-cab">
+      <h2 data-i18n="gr.resultados">Resultados</h2>
+      <span class="metrica" style="margin-left:auto">
+        <span><span data-i18n="gr.filas">Filas</span> <b id="mFilas">—</b></span>
+        <span><span data-i18n="gr.tiempo">Tiempo</span> <b id="mTiempo">—</b></span>
+      </span>
+    </div>
+    <div class="tarjeta-cuerpo" style="padding:0">
+      <div id="salida" style="padding:1.1rem"><span class="sub" data-i18n="gr.elige">Elige una consulta o escribe la tuya.</span></div>
+    </div>
+  </section>
+
+</main>
+<footer data-pie></footer>
+
+<script src="assets/nav.js"></script>
+<script>
+(function () {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const T = (k, v) => I18N.t(k, v);
+  const fmt = n => I18N.num(n);
+  const SPINNER = '<span class="spinner"></span> ';
+
+  const PREFIJOS = [
+    'PREFIX agua: <https://w3id.org/cdmx/agua/>',
+    'PREFIX col:  <https://w3id.org/cdmx/agua/colonia/>',
+    'PREFIX geo:  <http://www.opengis.net/ont/geosparql#>',
+    'PREFIX qb:   <http://purl.org/linked-data/cube#>',
+    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>',
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>',
+    ''
+  ].join('\n');
+
+  /* El texto de cada ejemplo vive en el diccionario (gr.ej.<clave>.t y .d);
+     la consulta no se traduce: es SPARQL sobre el mismo vocabulario. */
+  const EJEMPLOS = [
+    { titulo:'Reportes reales por año', descripcion:'Suma los reportes oficiales representados en el grafo.',
+      q:`SELECT ?anio (SUM(?n) AS ?reportes) WHERE {
+  ?o qb:dataSet agua:reportesSACMEX ; agua:reportYear ?anio ; agua:reportCount ?n .
+} GROUP BY ?anio ORDER BY ?anio` },
+    { titulo:'Reportes por tipo de falla', descripcion:'Incluye todos los tipos publicados, sin inventar clasificaciones.',
+      q:`SELECT ?tipo (SUM(?n) AS ?reportes) WHERE {
+  ?o qb:dataSet agua:reportesSACMEX ; agua:reportType ?t ; agua:reportCount ?n .
+  ?t skos:prefLabel ?tipo .
+} GROUP BY ?tipo ORDER BY DESC(?reportes)` },
+    { titulo:'Colonias con más reportes en 2019', descripcion:'Reportes del año completo; el consumo original cubre solo su primer semestre.',
+      q:`SELECT ?alcaldia ?colonia (SUM(?n) AS ?reportes) WHERE {
+  ?o qb:dataSet agua:reportesSACMEX ; agua:reportYear 2019 ; agua:reportCount ?n ; agua:location ?l .
+  ?l rdfs:label ?colonia ; agua:borough ?a . ?a rdfs:label ?alcaldia .
+} GROUP BY ?alcaldia ?colonia ORDER BY DESC(?reportes) LIMIT 25` },
+    { titulo:'Reportes sin colonia asignable', descripcion:'También se conservan en RDF; no se les inventa una ubicación.',
+      q:`SELECT ?anio (SUM(?n) AS ?reportesSinColonia) WHERE {
+  ?o qb:dataSet agua:reportesSACMEX ; agua:hasUnassignedLocation true ;
+     agua:reportYear ?anio ; agua:reportCount ?n .
+} GROUP BY ?anio ORDER BY ?anio` },
+    { k:'vecindad',
+      q:`SELECT ?vecina (ROUND(SUM(?c)) AS ?consumo) WHERE {
+  col:500 agua:nearbyWithin1500m ?v .
+  ?v rdfs:label ?vecina .
+  ?o agua:location ?v ; agua:totalConsumption ?c .
+} GROUP BY ?vecina ORDER BY DESC(?consumo)` },
+
+    { k:'clima',
+      q:`SELECT ?bimestre ?agua ?tempMedia WHERE {
+  { SELECT ?bimestre (ROUND(SUM(?c)) AS ?agua) WHERE {
+      ?o qb:dataSet agua:consumoCDMXDemo ; agua:period ?p ; agua:totalConsumption ?c .
+      ?p agua:bimester ?bimestre .
+    } GROUP BY ?bimestre }
+  { SELECT ?bimestre (ROUND(AVG(?t)) AS ?tempMedia) WHERE {
+      ?cl qb:dataSet agua:climaCDMX ; agua:period ?p2 ; agua:meanTemperature ?t .
+      ?p2 agua:bimester ?bimestre .
+    } GROUP BY ?bimestre }
+} ORDER BY ?bimestre` },
+
+    { k:'noDom',
+      q:`SELECT ?alcaldia (ROUND(100*SUM(?nd)/SUM(?t)) AS ?pctNoDomestico) WHERE {
+  ?o agua:location ?l ;
+     agua:nonDomesticConsumption ?nd ;
+     agua:totalConsumption ?t .
+  ?l agua:borough ?alcaldiaIri .
+  ?alcaldiaIri rdfs:label ?alcaldia .
+} GROUP BY ?alcaldia ORDER BY DESC(?pctNoDomestico)` },
+
+    { k:'indice',
+      q:`SELECT ?nivel (COUNT(?o) AS ?observaciones) (ROUND(SUM(?c)) AS ?total) WHERE {
+  ?o agua:developmentIndex ?i ; agua:totalConsumption ?c .
+  ?i skos:prefLabel ?nivel .
+} GROUP BY ?nivel ORDER BY DESC(?total)` },
+
+    { k:'grado',
+      q:`SELECT ?colonia (COUNT(?v) AS ?vecinas) WHERE {
+  ?c agua:nearbyWithin1500m ?v ; rdfs:label ?colonia .
+} GROUP BY ?colonia ORDER BY DESC(?vecinas) LIMIT 15` },
+
+    { k:'clases',
+      q:`SELECT ?clase (COUNT(?s) AS ?instancias) WHERE {
+  ?s a ?clase .
+} GROUP BY ?clase ORDER BY DESC(?instancias)` },
+  ];
+
+  let engine = null, segCarga = null, ultimasFilas = null;
+
+  // ---------------- interfaz de ejemplos ----------------
+  /* El ejemplo activo se guarda por índice, no por texto: al cambiar de
+     idioma se rehacen los botones y el resaltado sobrevive. Vale -1 en
+     cuanto el usuario edita la consulta, para no señalar un ejemplo que
+     ya no es el que está en el editor. */
+  const cont = $('ejemplos');
+  let elegido = 0;
+
+  function pintarEjemplos() {
+    cont.innerHTML = '';
+    EJEMPLOS.forEach((e, i) => {
+      const b = document.createElement('button');
+      b.className = 'ejemplo'; b.type = 'button';
+      b.setAttribute('aria-pressed', String(i === elegido));
+      b.innerHTML = `${e.titulo || T('gr.ej.' + e.k + '.t')}<b>${e.descripcion || T('gr.ej.' + e.k + '.d')}</b>`;
+      b.onclick = () => {
+        elegido = i;
+        cont.querySelectorAll('.ejemplo').forEach((x, j) =>
+          x.setAttribute('aria-pressed', String(j === i)));
+        $('consulta').value = PREFIJOS + e.q;
+        if (engine) ejecutar();
+      };
+      cont.appendChild(b);
+    });
+  }
+  pintarEjemplos();
+  $('consulta').value = PREFIJOS + EJEMPLOS[0].q;
+  $('consulta').addEventListener('input', () => {
+    if (elegido < 0) return;
+    elegido = -1;
+    cont.querySelectorAll('.ejemplo').forEach(x => x.setAttribute('aria-pressed', 'false'));
+  });
+
+  $('btnCopiar').onclick = async () => {
+    try { await navigator.clipboard.writeText($('consulta').value);
+          $('btnCopiar').textContent = T('gr.copiado');
+          setTimeout(()=>$('btnCopiar').textContent = T('gr.copiar'), 1400); }
+    catch { $('btnCopiar').textContent = T('gr.noCopio'); }
+  };
+
+  function estado(html, clase) {
+    $('estado').innerHTML = html;
+    $('estado').className = 'estado' + (clase ? ' ' + clase : '');
+  }
+
+  /* Los estados estables se recuerdan por clave para poder rehacerlos en
+     el otro idioma; los transitorios (spinner) no hace falta. */
+  let claveEstado = null, claseChip = '';
+  function estadoChip(clave, clase) {
+    claveEstado = clave; claseChip = clase;
+    estado(`<span class="chip ${clase}">${T(clave)}</span>`);
+  }
+  estado(SPINNER + T('gr.est.cargando'));
+
+  // ---------------- carga del grafo ----------------
+  async function cargar() {
+    const t0 = performance.now();
+    try {
+      const metaResp = await fetch('/api/grafo');
+      if (!metaResp.ok) throw new Error('El ETL todavía no generó el grafo actualizado.');
+      const meta = await metaResp.json();
+      $('reportesIntegrados').textContent = `${fmt(meta.reportes_representados)} reportes reales en ${fmt(meta.agregados_reportes)} observaciones agregadas. ` +
+        `${fmt(meta.sin_colonia)} reportes sin colonia conservados. Generado desde PostgreSQL: ${meta.generado_utc}.`;
+      engine = { servidor: true };
+      segCarga = ((performance.now() - t0) / 1000).toFixed(1);
+      $('kCarga').textContent = 'Consultas al backend local; la primera prepara el grafo';
+      $('kCarga').removeAttribute('data-i18n');
+      $('kObs').textContent=fmt(meta.consumos_agregados+meta.clima+meta.agregados_reportes);
+      $('kFeat').textContent=fmt(meta.colonias);
+      $('btnRun').disabled = false;
+      estadoChip('gr.est.listo', 'ok');
+      ejecutar();
+    } catch (e) {
+      estado(T('gr.est.errorCarga'), '');
+      const pista = '<br><br>' + (location.protocol === 'file:'
+        ? T('gr.av.file', { pagina: 'grafo.html' })
+        : T('gr.av.publicado'));
+      $('salida').innerHTML = `<div class="aviso err"><b>${T('gr.av.noCarga')}</b><br>` +
+        String(e.message || e) + pista + '</div>';
+    }
+  }
+
+  // ---------------- ejecución ----------------
+  let corriendo = false;
+  async function ejecutar() {
+    if (!engine || corriendo) return;
+    corriendo = true; $('btnRun').disabled = true;
+    estado(SPINNER + T('gr.est.ejecutando'));
+    const t0 = performance.now();
+    try {
+      const resp=await fetch('/api/grafo/sparql',{
+        method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({query:$('consulta').value})
+      });
+      const datos=await resp.json();
+      if(!resp.ok)throw new Error(datos.error || 'No se pudo consultar el grafo');
+      const filas=(datos.results?.bindings || []).map(f=>new Map(Object.entries(f).map(([k,t])=>
+        [k,{value:t.value,termType:t.type==='uri'?'NamedNode':'Literal'}])));
+      if('boolean' in datos)filas.push(new Map([['resultado',{value:String(datos.boolean),termType:'Literal'}]]));
+      $('kTriples').textContent=fmt(datos.meta.triples);
+      $('kAdy').textContent=fmt(datos.meta.adyacencias);
+      const ms = performance.now() - t0;
+      $('mFilas').textContent = fmt(filas.length);
+      $('mTiempo').textContent = ms < 1000 ? Math.round(ms) + ' ms' : (ms/1000).toFixed(1) + ' s';
+      pintar(filas);
+      estadoChip('gr.est.ok', 'ok');
+    } catch (e) {
+      ultimasFilas = null;
+      $('mFilas').textContent = '—'; $('mTiempo').textContent = '—';
+      $('salida').innerHTML = `<div class="aviso err"><b>${T('gr.av.consulta')}</b><br>` +
+        String(e.message || e).replace(/</g,'&lt;') + '</div>';
+      estadoChip('gr.est.error', 'err');
+    } finally {
+      corriendo = false; $('btnRun').disabled = false;
+    }
+  }
+
+  function corto(v) {
+    if (!v) return '';
+    const s = v.value !== undefined ? v.value : String(v);
+    if (v.termType === 'NamedNode') {
+      const m = s.match(/[/#]([^/#]+)$/);
+      return '<span class="uri" title="' + s + '">' + (m ? m[1] : s) + '</span>';
+    }
+    if (/^-?\d+(\.\d+)?$/.test(s)) return fmt(Number(s));
+    return s.replace(/</g,'&lt;');
+  }
+
+  function pintar(filas) {
+    ultimasFilas = filas;
+    if (!filas.length) {
+      $('salida').innerHTML = `<div class="aviso">${T('gr.av.sinFilas')}</div>`;
+      return;
+    }
+    const cols = [...filas[0].keys()].map(k => typeof k === 'string' ? k : k.value);
+    const esNum = c => filas.slice(0, 30).every(f => {
+      const t = f.get(c); return !t || /^-?\d+(\.\d+)?$/.test(t.value);
+    });
+    const numericas = new Set(cols.filter(esNum));
+    const th = cols.map(c => `<th class="${numericas.has(c)?'num':''}">${c}</th>`).join('');
+    const tr = filas.slice(0, 500).map(f =>
+      '<tr>' + cols.map(c =>
+        `<td class="${numericas.has(c)?'num':''}">${corto(f.get(c))}</td>`).join('') + '</tr>'
+    ).join('');
+    const extra = filas.length > 500
+      ? `<p class="sub" style="padding:.6rem 1.1rem">${T('gr.primeras', { total: fmt(filas.length) })}</p>` : '';
+    $('salida').innerHTML =
+      `<div class="tabla-env"><table><thead><tr>${th}</tr></thead><tbody>${tr}</tbody></table></div>${extra}`;
+  }
+
+  $('btnRun').onclick = ejecutar;
+  $('consulta').addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); ejecutar(); }
+  });
+
+  /* Cambio de idioma: se rehace lo que este script escribe. La consulta
+     del editor no se toca —puede ser la del usuario— y el resultado se
+     vuelve a pintar desde las filas que ya están en memoria, sin
+     consultar el grafo otra vez. Los nombres de columna son variables
+     SPARQL, así que se quedan como están. */
+  document.addEventListener('idiomacambiado', () => {
+    pintarEjemplos();
+    if (segCarga !== null) $('kCarga').textContent = 'Consultas al backend local';
+    /* Si hay una consulta en vuelo, el estado visible es su spinner: se
+       repinta en el idioma nuevo en vez de restaurar el chip anterior,
+       que ya no describe lo que está pasando. */
+    if (corriendo) estado(SPINNER + T('gr.est.ejecutando'));
+    else if (claveEstado) estadoChip(claveEstado, claseChip);
+    if (ultimasFilas) pintar(ultimasFilas);
+  });
+
+  cargar();
+})();
+</script>
+</body>
+</html>

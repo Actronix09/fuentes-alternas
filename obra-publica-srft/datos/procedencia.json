@@ -1,0 +1,22 @@
+{
+  "url": "https://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/Entidades_Federativas/2025/ef2025.zip",
+  "sha256_zip": "8ea8f91a96760332697a4ef4d1d7c0bd74a919c20fe1a9a58c9eb5bb9b765c2e",
+  "bytes_zip": 23653848,
+  "extraido_utc": "2026-10-23T19:33:46.277433+00:00",
+  "filas_nacionales": 91062,
+  "proyectos_municipio": 59,
+  "filtro": {
+    "fuente": "https://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/Entidades_Federativas/2025/ef2025.zip",
+    "entidad": 15,
+    "municipio": 86,
+    "ciclo": 2025,
+    "periodo": 5
+  },
+  "sha256_extractos": {
+    "ef2025_temascaltepec.csv": "d646eb5205d88a93fa0710a9ae1621d23050bc19e6d5084694158a74392d141a",
+    "georreferencias_temascaltepec.csv": "23c514e7c58ddd9895ed126deb50bef75a1e02d25e359dec0d4c390da5b31be5",
+    "metas_avances_temascaltepec.csv": "1947bf837e911acfd86d48a4632ee186b50c9b0d318f51ac6d35afd3fc4a7401",
+    "contratos_temascaltepec.csv": "d8acaa2083ec0abc6b1b567cefad019fcb4affe2a36e9a440adadaa678e056f7",
+    "fuentes_financiamiento_temascaltepec.csv": "0b9721af43098a973ca582409544c16a5560bd146f8685c7926afc4f197dde6b"
+  }
+}

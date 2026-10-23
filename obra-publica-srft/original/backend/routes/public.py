@@ -1,0 +1,333 @@
+"""
+backend/routes/public.py
+═══════════════════════════════════════════════════════════════
+PUBLIC API ENDPOINTS — Smart City Map Module
+═══════════════════════════════════════════════════════════════
+"""
+
+from flask import Blueprint, make_response, jsonify, request
+from sqlalchemy import func
+from sqlalchemy.orm import joinedload
+from datetime import datetime, date
+from app.database import db
+from app.helpers import ok, db_error_response
+from app.models import Obra, Region, Constructora, PresupuestoObra, Informe, Supervisor, Personal
+
+public_bp = Blueprint("public", __name__)
+
+
+# ═══════════════════════════════════════════════════════════════
+#  CORS HELPER FUNCTIONS
+# ═══════════════════════════════════════════════════════════════
+
+def _add_cors_headers(response):
+    """Add CORS headers to a Flask response object."""
+    # Ensure response is a Response object (convert tuple if needed)
+    if isinstance(response, tuple):
+        response = make_response(response[0], response[1] if len(response) > 1 else 200)
+    elif not isinstance(response, make_response.__self__):  # not a Response instance
+        response = make_response(response)
+
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add("Access-Control-Allow-Headers", "Content-Type, Authorization")
+    response.headers.add("Access-Control-Allow-Methods", "GET, OPTIONS")
+    return response
+
+
+def _cors_preflight_response():
+    """Return an empty response with CORS headers for OPTIONS requests."""
+    response = make_response()
+    return _add_cors_headers(response)
+
+
+# ═══════════════════════════════════════════════════════════════
+#  STATUS DERIVATION LOGIC
+# ═══════════════════════════════════════════════════════════════
+
+def _derive_obra_status(obra: Obra, latest_avance_fisico: int) -> str:
+    if obra.origen_datos == 'SHCP_SRFT':
+        publicado = (obra.estatus_fuente or '').lower()
+        return {'terminado':'completada','en ejecución':'en_progreso','en ejecucion':'en_progreso'}.get(publicado,'sin_dato')
+    today = date.today()
+    fecha_fin = obra.fecha_final
+
+    if latest_avance_fisico >= 95:
+        return "completada"
+
+    if fecha_fin and fecha_fin < today:
+        if latest_avance_fisico >= 90:
+            return "completada"
+        else:
+            return "retrasada"
+
+    return "en_progreso"
+
+
+def _informes_por_obra() -> dict:
+    """El último informe y el total de informes de cada obra, en dos consultas.
+
+    Antes esto se resolvía obra por obra: por cada una de las 1,247 obras se
+    lanzaban una consulta para el último informe, otra para contarlos, otra
+    para el presupuesto y las cargas perezosas de región, constructora y
+    supervisor. Cerca de siete mil idas y vueltas para una sola respuesta, que
+    en la base sembrada tardaba diez segundos —contra los 187 ms que este
+    capítulo daba como objetivo—. El coste no estaba en PostgreSQL sino en el
+    número de viajes.
+    """
+    totales = dict(
+        db.session.query(Informe.id_obra, func.count(Informe.id_informe))
+        .group_by(Informe.id_obra).all()
+    )
+    ultimos = {}
+    for inf in (Informe.query
+                .order_by(Informe.id_obra, Informe.ano_infor, Informe.mes)
+                .all()):
+        ultimos[(inf.id_obra or "").strip()] = inf
+
+    datos = {}
+    for clave, inf in ultimos.items():
+        try:
+            mes_int = int(str(inf.mes).strip())
+            fecha = date(int(inf.ano_infor), mes_int, 1).isoformat()
+        except (ValueError, TypeError):
+            fecha = None
+        datos[clave] = {
+            "avance_fisico": inf.porcentaje_avance_fisico or 0,
+            "avance_financiero": inf.porcentaje_avance_presupuestario or 0,
+            "total_informes": totales.get(inf.id_obra, 0),
+            "ultimo_informe_fecha": fecha,
+        }
+    # El cierre anual de SHCP se conserva separado de los informes mensuales
+    # firmados por supervisores; no crear un informe ni un supervisor ficticios.
+    from sqlalchemy import text
+    for f in db.session.execute(text('SELECT * FROM public.informe_fuente_srft')).mappings():
+        if f['id_obra'] not in datos:
+            datos[f['id_obra']] = {
+                'avance_fisico': float(f['avance_fisico_pct']) if f['avance_fisico_pct'] is not None else None,
+                'avance_financiero': round(100*float(f['pagado'])/float(f['aprobado']),2) if f['aprobado'] else None,
+                'total_informes': 0, 'ultimo_informe_fecha': f['fecha_referencia'].isoformat(),
+            }
+    return datos
+
+
+SIN_INFORME = {"avance_fisico": 0, "avance_financiero": 0,
+               "total_informes": 0, "ultimo_informe_fecha": None}
+
+
+def _get_latest_informe_data(obra_id: str) -> dict:
+    try:
+        clean_id = obra_id.strip()
+        latest = (
+            Informe.query
+            .filter(Informe.id_obra == clean_id)
+            .order_by(Informe.ano_infor.desc(), Informe.mes.desc())
+            .first()
+        )
+        if latest:
+            # Construir fecha aproximada del informe a partir de año+mes
+            # (la tabla no tiene columna fecha_creacion; usamos año+mes como proxy)
+            try:
+                mes_int = int(str(latest.mes).strip())
+                informe_fecha = date(int(latest.ano_infor), mes_int, 1).isoformat()
+            except (ValueError, TypeError):
+                informe_fecha = None
+
+            return {
+                "avance_fisico": latest.porcentaje_avance_fisico or 0,
+                "avance_financiero": latest.porcentaje_avance_presupuestario or 0,
+                "total_informes": Informe.query.filter(Informe.id_obra == clean_id).count(),
+                "ultimo_informe_fecha": informe_fecha,
+            }
+    except Exception:
+        pass
+    return {"avance_fisico": 0, "avance_financiero": 0, "total_informes": 0, "ultimo_informe_fecha": None}
+
+
+# ═══════════════════════════════════════════════════════════════
+#  PUBLIC ENDPOINTS
+# ═══════════════════════════════════════════════════════════════
+
+@public_bp.route("/api/public/obras", methods=["GET", "OPTIONS"])
+def get_public_obras():
+    if request.method == "OPTIONS":
+        return _cors_preflight_response()
+
+    try:
+        obras = (Obra.query
+                 .options(joinedload(Obra.region),
+                          joinedload(Obra.constructora),
+                          joinedload(Obra.supervisor).joinedload(Supervisor.personal))
+                 .all())
+        informes = _informes_por_obra()
+        presupuestos = {
+            (pid or "").strip(): float(total or 0)
+            for pid, total in db.session.query(
+                PresupuestoObra.id_obra, PresupuestoObra.presupuesto_total).all()
+        }
+        result = []
+
+        for obra in obras:
+            clave = (obra.id_obra or "").strip()
+            informe_data = informes.get(clave, SIN_INFORME)
+            presupuesto_total = presupuestos.get(clave, 0)
+
+            supervisor_nombre = ""
+            if obra.supervisor and obra.supervisor.personal:
+                s = obra.supervisor.personal
+                supervisor_nombre = f"{(s.nombre or '').strip()} {(s.apellido_paterno or '').strip()}".strip()
+
+            status = _derive_obra_status(obra, informe_data["avance_fisico"])
+
+            result.append({
+                "id": (obra.id_obra or "").strip(),
+                "expediente": (obra.codigo_expediente or "").strip(),
+                "nombre": (obra.nombre_obra or "").strip(),
+                "descripcion": (obra.descripcion or "").strip(),
+                "beneficiarios": (obra.beneficiarios or "").strip(),
+                "fechaInicio": obra.fecha_inicio.isoformat() if obra.fecha_inicio else None,
+                "fechaFin": obra.fecha_final.isoformat() if obra.fecha_final else None,
+                "status": status,
+                "avanceFisico": informe_data["avance_fisico"],
+                "avanceFinanciero": informe_data["avance_financiero"],
+                "presupuestoTotal": presupuesto_total,
+                "regionId": (obra.id_region or "").strip(),
+                "regionComunidad": (obra.region.comunidad or "").strip() if obra.region else "",
+                "regionBarrio": (obra.region.barrio or "").strip() if obra.region else "",
+                "constructoraNombre": (obra.constructora.nombre_const or "").strip() if obra.constructora else "",
+                "constructoraTipo": (obra.constructora.tipo_ejecutor or "").strip() if obra.constructora else "",
+                "supervisorNombre": supervisor_nombre,
+                "totalInformes": informe_data["total_informes"],
+                "origenDatos": obra.origen_datos,
+                "estatusPublicado": obra.estatus_fuente,
+                "ultimoInformeFecha": informe_data["ultimo_informe_fecha"],
+            })
+
+        return _add_cors_headers(ok(result))
+    except Exception as exc:
+        return _add_cors_headers(db_error_response(exc))
+
+
+@public_bp.route("/api/public/regiones", methods=["GET", "OPTIONS"])
+def get_public_regiones():
+    if request.method == "OPTIONS":
+        return _cors_preflight_response()
+
+    try:
+        rows = Region.query.order_by(Region.comunidad, Region.barrio).all()
+        return _add_cors_headers(ok([
+            {
+                "id": (r.id_region or "").strip(),
+                "comunidad": (r.comunidad or "").strip(),
+                "barrio": (r.barrio or "").strip(),
+                "colonia": (r.colonia or "").strip() if r.colonia else None,
+            }
+            for r in rows
+        ]))
+    except Exception as exc:
+        return _add_cors_headers(db_error_response(exc))
+
+
+@public_bp.route("/api/public/resumen", methods=["GET", "OPTIONS"])
+def get_public_resumen():
+    if request.method == "OPTIONS":
+        return _cors_preflight_response()
+
+    try:
+        # Mismo motivo que en /api/public/obras: resolver el informe y el
+        # presupuesto obra por obra costaba doce segundos y medio.
+        obras = Obra.query.all()
+        informes = _informes_por_obra()
+        presupuestos = {
+            (pid or "").strip(): float(total or 0)
+            for pid, total in db.session.query(
+                PresupuestoObra.id_obra, PresupuestoObra.presupuesto_total).all()
+        }
+
+        obra_data_list = []
+        region_budget_map = {}
+        status_counts = {"completada": 0, "en_progreso": 0, "retrasada": 0}
+        const_counts = {}
+        total_budget = 0
+        total_avance = 0
+        total_duracion = 0
+        communities = set()
+
+        for obra in obras:
+            clave = (obra.id_obra or "").strip()
+            informe_data = informes.get(clave, SIN_INFORME)
+            presupuesto_total = presupuestos.get(clave, 0)
+            status = _derive_obra_status(obra, informe_data["avance_fisico"])
+
+            comunidad = (obra.region.comunidad or "").strip() if obra.region else ""
+            communities.add(comunidad)
+
+            obra_data_list.append({
+                "obra": obra,
+                "status": status,
+                "avance_fisico": informe_data["avance_fisico"],
+                "presupuesto_total": presupuesto_total,
+                "comunidad": comunidad,
+            })
+
+            status_counts[status] = status_counts.get(status, 0) + 1
+            total_budget += presupuesto_total
+            total_avance += informe_data["avance_fisico"] or 0
+
+            if comunidad:
+                region_id = (obra.id_region or comunidad).strip()
+                if region_id in region_budget_map:
+                    region_budget_map[region_id]["total"] += presupuesto_total
+                else:
+                    region_budget_map[region_id] = {
+                        "region": region_id,
+                        "comunidad": comunidad,
+                        "total": presupuesto_total,
+                    }
+
+            const_name = (obra.constructora.nombre_const or "").strip() if obra.constructora else ""
+            if const_name:
+                const_counts[const_name] = const_counts.get(const_name, 0) + 1
+
+            if obra.fecha_inicio and obra.fecha_final:
+                dias = (obra.fecha_final - obra.fecha_inicio).days
+                if dias > 0:
+                    total_duracion += dias
+
+        recent = sorted(
+            obra_data_list,
+            key=lambda x: x["obra"].fecha_inicio or date.min,
+            reverse=True,
+        )[:8]
+
+        result = {
+            "obrasActivas": len(obras),
+            "obrasCompletadas": status_counts["completada"],
+            "obrasRetrasadas": status_counts["retrasada"],
+            "inversionTotal": total_budget,
+            "avancePromedio": round(total_avance / len(obras)) if obras else 0,
+            "comunidadesImpactadas": len(communities),
+            "presupuestoPorRegion": list(region_budget_map.values()),
+            "obrasPorStatus": [
+                {"status": k, "count": v} for k, v in status_counts.items() if v > 0
+            ],
+            "obrasRecientes": [
+                {
+                    "id": (o["obra"].id_obra or "").strip(),
+                    "nombre": (o["obra"].nombre_obra or "").strip(),
+                    "fechaInicio": o["obra"].fecha_inicio.isoformat() if o["obra"].fecha_inicio else None,
+                    "status": o["status"],
+                    "avanceFisico": o["avance_fisico"],
+                }
+                for o in recent
+            ],
+            "promedioDuracionDias": round(total_duracion / len(obras)) if obras else 0,
+            "topConstructoras": sorted(
+                [{"nombre": k, "obrasCount": v} for k, v in const_counts.items()],
+                key=lambda x: x["obrasCount"],
+                reverse=True,
+            )[:5],
+        }
+
+        return _add_cors_headers(ok(result))
+    except Exception as exc:
+        return _add_cors_headers(db_error_response(exc))

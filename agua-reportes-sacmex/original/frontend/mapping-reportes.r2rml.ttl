@@ -1,0 +1,19 @@
+# Extensión del mapeo original. La vista es creada por app/grafo.py.
+# Grano: colonia (si se conoce), año, tipo, clasificación y recurso.
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix agua: <https://w3id.org/cdmx/agua/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<#ReportesMap> a rr:TriplesMap ;
+ rr:logicalTable [rr:tableName "public.v_rdf_reportes"] ;
+ rr:subjectMap [rr:template "https://w3id.org/cdmx/agua/reportes/{id_agregado}" ; rr:class qb:Observation] ;
+ rr:predicateObjectMap [rr:predicate qb:dataSet ; rr:objectMap [rr:constant agua:reportesSACMEX]] ;
+ rr:predicateObjectMap [rr:predicate agua:location ; rr:objectMap [rr:template "https://w3id.org/cdmx/agua/colonia/{id_ubicacion}"]] ;
+ rr:predicateObjectMap [rr:predicate agua:reportLocationKey ; rr:objectMap [rr:column "ubicacion_clave"]] ;
+ rr:predicateObjectMap [rr:predicate agua:hasUnassignedLocation ; rr:objectMap [rr:column "sin_ubicacion" ; rr:datatype xsd:boolean]] ;
+ rr:predicateObjectMap [rr:predicate agua:reportYear ; rr:objectMap [rr:column "anio" ; rr:datatype xsd:integer]] ;
+ rr:predicateObjectMap [rr:predicate agua:reportType ; rr:objectMap [rr:template "https://w3id.org/cdmx/agua/tipo-reporte/{tipo_reporte}"]] ;
+ rr:predicateObjectMap [rr:predicate agua:reportClassification ; rr:objectMap [rr:column "clasificacion"]] ;
+ rr:predicateObjectMap [rr:predicate agua:sourceResource ; rr:objectMap [rr:column "recurso"]] ;
+ rr:predicateObjectMap [rr:predicate agua:reportCount ; rr:objectMap [rr:column "reportes" ; rr:datatype xsd:integer]] ;
+ rr:predicateObjectMap [rr:predicate agua:nearbyAssignedReports ; rr:objectMap [rr:column "ubicados_por_cercania" ; rr:datatype xsd:integer]] .

@@ -1,0 +1,134 @@
+{
+  "verificado_utc": "2026-10-23T19:44:43.470235+00:00",
+  "pruebas": [
+    {
+      "prueba": "API original visualiza 59 obras oficiales",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "Estatus original respeta el cierre SHCP",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "Expediente incluye contrato oficial y presupuesto",
+      "ok": true,
+      "detalle": "MEX250202529773"
+    },
+    {
+      "prueba": "59 expedientes vinculados a obra y presupuesto originales",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "No se inventó personal para importar expedientes",
+      "ok": true,
+      "detalle": 0
+    },
+    {
+      "prueba": "No se inventaron actas de entrega",
+      "ok": true,
+      "detalle": 0
+    },
+    {
+      "prueba": "Supervisores no publicados permanecen nulos",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "RFC del convocante no se atribuye a contratistas",
+      "ok": true,
+      "detalle": 0
+    },
+    {
+      "prueba": "Se conservan todos los contratos publicados",
+      "ok": true,
+      "detalle": 68
+    },
+    {
+      "prueba": "Presupuesto administrativo coincide con SHCP",
+      "ok": true,
+      "detalle": "58834555"
+    },
+    {
+      "prueba": "Auditoría distingue importaciones de creación histórica",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "Una versión vigente por expediente después de recargar",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "RDF Turtle integrado válido",
+      "ok": true,
+      "detalle": 415844
+    },
+    {
+      "prueba": "RDF conserva los 555752 reportes",
+      "ok": true,
+      "detalle": 555752
+    },
+    {
+      "prueba": "RDF conserva 4804 reportes sin inventar colonia",
+      "ok": true,
+      "detalle": 4804
+    },
+    {
+      "prueba": "Consumo y reportes comparten colonias del DW vivo",
+      "ok": true,
+      "detalle": 0
+    },
+    {
+      "prueba": "SPARQL por año coincide con SQL",
+      "ok": true,
+      "detalle": {
+        "2018": 67799,
+        "2019": 69378,
+        "2020": 33559,
+        "2021": 83989,
+        "2022": 152328,
+        "2023": 130839,
+        "2024": 17860
+      }
+    },
+    {
+      "prueba": "Endpoint SPARQL del explorador coincide con SQL",
+      "ok": true,
+      "detalle": {
+        "2018": 67799,
+        "2019": 69378,
+        "2020": 33559,
+        "2021": 83989,
+        "2022": 152328,
+        "2023": 130839,
+        "2024": 17860
+      }
+    },
+    {
+      "prueba": "Agregados no ubicados carecen de colonia inventada",
+      "ok": true,
+      "detalle": 32
+    },
+    {
+      "prueba": "Mapeo R2RML de reportes sintácticamente válido",
+      "ok": true,
+      "detalle": 50
+    }
+  ],
+  "grafo": {
+    "triples": 415844,
+    "sha256": "fcaa0243146ea9e657b20752be8f4cd2ca3b624e73280c73506392c7199ff29d",
+    "reportes_por_anio": {
+      "2018": 67799,
+      "2019": 69378,
+      "2020": 33559,
+      "2021": 83989,
+      "2022": 152328,
+      "2023": 130839,
+      "2024": 17860
+    }
+  }
+}

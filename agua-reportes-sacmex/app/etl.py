@@ -243,6 +243,10 @@ def cargar_y_transformar(meta: dict[str, dict], consumo: list[list], reportes: l
 def main() -> int:
     esperar_bd()
     if not FORZAR_ETL and ya_cargado(PARAMETROS):
+        from integrar_original import integrar_original
+        integrar_original()
+        from grafo import materializar
+        materializar()
         log.info("La base ya tiene una carga exitosa con estos parámetros; no se repite. "
                  "Usa FORZAR_ETL=1 para recargar.")
         return 0
@@ -254,6 +258,10 @@ def main() -> int:
         reportes = validar_reportes({k: meta[k]["archivo"] for k in ("historico_2018_2021",
                                                                       "incidentes_2022_2024")}, registrar)
         resumen = cargar_y_transformar(meta, consumo, reportes, registrar)
+        from integrar_original import integrar_original
+        integrar_original(registrar)
+        from grafo import materializar
+        materializar(registrar)
         registrar.terminar("ok", resumen)
         log.info("ETL terminado: %s", resumen)
         return 0

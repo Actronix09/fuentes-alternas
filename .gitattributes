@@ -1,0 +1,5 @@
+# Conservar los bytes de los CSV oficiales: sus hashes verifican procedencia.
+*.csv -text -whitespace
+**/datos/** -whitespace
+# Los componentes originales conservan el formato de sus autores.
+**/original/** whitespace=-blank-at-eol,-blank-at-eof

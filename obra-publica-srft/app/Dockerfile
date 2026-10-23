@@ -6,12 +6,14 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PIP_NO_CACHE_DIR=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1
 
-WORKDIR /app
+WORKDIR /proyecto/app
 
-COPY requirements.txt .
+COPY app/requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY . .
+COPY app /proyecto/app
+COPY original /proyecto/original
+COPY db /proyecto/db
 
 # El usuario se fija en compose.yml (por defecto 1000:1000) para que los
 # archivos descargados en ./datos pertenezcan al usuario del equipo.

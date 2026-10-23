@@ -10,7 +10,7 @@
 </head>
 <body>
 <header class="cabecera">
-  <p class="etiqueta">Fuente alterna · Sistema 2 de 3</p>
+  <p class="etiqueta">Fuente alterna · Agua CDMX</p>
   <h1>Consumo de agua en la CDMX: el puntaje de atipicidad frente a los reportes reales</h1>
   <p class="sub">El paper prioriza inspecciones con el puntaje <em>A<sub>g</sub> = |x<sub>g</sub> − μ| / (σ + ε)</em>
     (consumo de cada colonia contra las de su alcaldía), pero no tenía reportes reales para evaluarlo. Aquí se
@@ -18,6 +18,15 @@
 </header>
 
 <main>
+  <section class="panel" aria-label="Integración con el proyecto original">
+    <h2>Ampliación del data warehouse original</h2>
+    <p id="integracion-original">Comprobando consumo, clima y reportes integrados…</p>
+    <p class="nota">Se conservan las tablas originales de consumo y clima en el esquema public.
+      Los reportes reales se incorporan como un nuevo hecho que comparte sus dimensiones de tiempo y colonia.
+      <a href="/api/original" target="_blank" rel="noopener">Consultar evidencia en la API</a>.</p>
+    <p><a href="/sistema/">Abrir la interfaz original del artículo, conectada a PostgreSQL →</a></p>
+    <p><a href="/sistema/grafo.html">Consultar los reportes reales en el grafo RDF y SPARQL →</a></p>
+  </section>
   <form id="filtros" class="filtros" aria-label="Filtros del tablero">
     <label>Tipo de reporte
       <select name="tipo">
@@ -33,6 +42,7 @@
         <option value="2021-01-01,2021-12-31">2021</option>
         <option value="2022-01-01,2022-12-31">2022</option>
         <option value="2023-01-01,2023-12-31">2023</option>
+        <option value="2024-01-01,2024-12-31">2024 (cobertura parcial)</option>
         <option value="2018-01-01,2024-12-31">2018–2024 completo</option>
       </select>
     </label>

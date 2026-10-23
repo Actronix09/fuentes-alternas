@@ -312,6 +312,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     pintarEscala();
   });
   try {
+    const original = await api('/api/original');
+    document.getElementById('integracion-original').textContent =
+      `${num(original.consumo_original)} registros originales de consumo · ` +
+      `${num(original.clima_original)} días de clima · ${num(original.reportes_integrados)} reportes integrados. ` +
+      `${num(original.sin_colonia)} reportes conservados sin colonia asignable.`;
     const op = await api('/api/opciones');
     disponibilidad = op.disponibilidad;
     const sel = document.querySelector('select[name=alcaldia]');

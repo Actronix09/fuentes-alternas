@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vecindad territorial — Consumo de Agua CDMX</title>
+<meta name="description" content="Recorrido de grafo sobre la relación agua:nearbyWithin1500m: elige una colonia y consulta sus vecinas con SPARQL.">
+<link rel="stylesheet" href="assets/vendor/leaflet-1.9.4.css">
+<link rel="stylesheet" href="assets/estilo.css">
+<script src="assets/i18n.js"></script>
+<style>
+  .split{display:grid; gap:1.1rem; grid-template-columns:minmax(0,3fr) minmax(0,2fr); align-items:start}
+  @media (max-width:1000px){ .split{grid-template-columns:1fr} }
+  #mapa{height:min(68vh,620px); border-radius:var(--r-m); z-index:1}
+  .leaflet-container{background:var(--superficie-2); font:inherit}
+  .buscador{position:relative}
+  .sugerencias{
+    position:absolute; z-index:20; left:0; right:0; top:100%; margin-top:2px;
+    background:var(--superficie); border:1px solid var(--borde); border-radius:var(--r-s);
+    box-shadow:var(--sombra-3); max-height:240px; overflow:auto; display:none;
+  }
+  .sugerencias.abierto{display:block}
+  .sug{padding:.45rem .7rem; cursor:pointer; font-size:.85rem}
+  .sug:hover,.sug.sel{background:var(--marca-100)}
+  .sug small{display:block; color:var(--texto-3); font-size:.74rem}
+  .consulta-viva{
+    font-family:var(--mono); font-size:.76rem; line-height:1.55; white-space:pre-wrap;
+    background:var(--superficie-2); border:1px solid var(--borde); border-radius:var(--r-s);
+    padding:.7rem .8rem; color:var(--texto-2); max-height:210px; overflow:auto; margin:0;
+  }
+  .aviso-filtro{
+    display:flex; align-items:center; justify-content:space-between; gap:1rem;
+    flex-wrap:wrap; margin-bottom:1rem; padding:.7rem 1rem; font-size:.88rem;
+    background:var(--superficie); color:var(--texto);
+    border:1px solid var(--borde); border-left:3px solid var(--marca-600);
+    border-radius:var(--r-m); box-shadow:var(--sombra-1);
+  }
+  .aviso-filtro .quitar{
+    font-size:.82rem; font-weight:600; color:var(--marca-700);
+    border:1px solid var(--borde); border-radius:var(--r-s); padding:.3rem .7rem;
+  }
+  .aviso-filtro .quitar:hover{background:var(--marca-100); text-decoration:none}
+  .aviso{padding:.7rem .9rem; border-radius:var(--r-s); font-size:.84rem;
+         background:var(--marca-100); color:var(--marca-700); border:1px solid var(--borde)}
+  .aviso.err{background:rgba(185,28,28,.1); color:var(--error); border-color:rgba(185,28,28,.3)}
+  .leyenda{display:flex; gap:1rem; flex-wrap:wrap; font-size:.78rem; color:var(--texto-2); margin-top:.6rem}
+  .punto{display:inline-block; width:11px; height:11px; border-radius:50%; margin-right:.3rem; vertical-align:-1px}
+</style>
+</head>
+<body>
+<header data-barra></header>
+
+<main class="envoltura">
+
+  <div class="kpis">
+    <div class="kpi"><div class="kpi-et" data-i18n="vec.kpi.col">Unidades territoriales</div><div class="kpi-val" id="kCol">—</div><div class="kpi-nota" data-i18n="vec.kpi.colNota">colonias con centroide</div></div>
+    <div class="kpi t2"><div class="kpi-et" data-i18n="vec.kpi.ady">Relaciones de vecindad</div><div class="kpi-val" id="kAdy">—</div><div class="kpi-nota" data-i18n="vec.kpi.adyNota">agua:nearbyWithin1500m, ≤ 1.5 km</div></div>
+    <div class="kpi t3"><div class="kpi-et" data-i18n="vec.kpi.sel">Seleccionada</div><div class="kpi-val nombre-largo" id="kSel" data-i18n="vec.kpi.ninguna">ninguna</div><div class="kpi-nota" id="kSelAlc" data-i18n="vec.kpi.elige">elige una en el mapa</div></div>
+    <div class="kpi"><div class="kpi-et" data-i18n="vec.kpi.vec">Vecinas encontradas</div><div class="kpi-val" id="kVec">—</div><div class="kpi-nota" id="kTiempo">—</div></div>
+  </div>
+
+  <div id="avisoFiltro" class="aviso-filtro" style="display:none"></div>
+
+  <div class="tarjeta" style="margin-bottom:1.25rem">
+    <div class="tarjeta-cuerpo" style="padding:.9rem 1.1rem">
+      <p class="sub" style="margin:0" data-i18n-html="vec.intro">
+        Cada punto es una colonia, representada por el centroide de sus lecturas. Al elegir una,
+        se lanza una consulta <b>SPARQL</b> que recorre <code>agua:nearbyWithin1500m</code> sobre el grafo RDF
+        y suma el consumo de cada vecina. La consulta que se ejecuta aparece abajo, tal cual.
+        Todo ocurre en tu navegador.
+      </p>
+    </div>
+  </div>
+
+  <div class="split">
+    <section class="tarjeta">
+      <div class="tarjeta-cab">
+        <h2 data-i18n="vec.mapa">Mapa territorial</h2>
+        <span class="estado" id="estado" style="margin-left:auto"><span class="spinner"></span> cargando el grafo…</span>
+      </div>
+      <div class="tarjeta-cuerpo">
+        <div class="buscador" style="margin-bottom:.8rem">
+          <label for="buscar" data-i18n="vec.buscar">Buscar colonia</label>
+          <input id="buscar" type="text" placeholder="Escribe al menos tres letras…" autocomplete="off" disabled
+                 data-i18n-attr="placeholder:vec.placeholder">
+          <div class="sugerencias" id="sugerencias"></div>
+        </div>
+        <div id="mapa"></div>
+        <div class="leyenda">
+          <span><span class="punto" style="background:var(--marca-700)"></span><span data-i18n="vec.ly.sel">seleccionada</span></span>
+          <span><span class="punto" style="background:var(--acento-500)"></span><span data-i18n="vec.ly.vecina">vecina directa</span></span>
+          <span><span class="punto" style="background:var(--marca-200)"></span><span data-i18n="vec.ly.resto">resto</span></span>
+        </div>
+      </div>
+    </section>
+
+    <div style="display:grid; gap:1.1rem">
+      <section class="tarjeta">
+        <div class="tarjeta-cab"><h2 data-i18n="vec.consulta">Consulta ejecutada</h2></div>
+        <div class="tarjeta-cuerpo"><pre class="consulta-viva" id="sparql" data-i18n="vec.eligeColonia">Elige una colonia.</pre></div>
+      </section>
+      <section class="tarjeta">
+        <div class="tarjeta-cab"><h2 data-i18n="vec.vecinas">Vecinas</h2></div>
+        <div class="tarjeta-cuerpo" style="padding:0">
+          <div id="salida" style="padding:1.1rem"><span class="sub" data-i18n="vec.sinSeleccion">Sin selección.</span></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</main>
+<footer data-pie></footer>
+
+<script src="assets/nav.js"></script>
+<script src="assets/vendor/leaflet-1.9.4.js"></script>
+<script src="assets/mapa-teselas.js"></script>
+<script src="assets/vendor/n3-1.17.2.min.js"></script>
+<script src="assets/vendor/comunica-browser-v3.js"></script>
+<script>
+(function () {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const T = (k, v) => I18N.t(k, v);
+  const fmt = n => I18N.num(Math.round(n));
+  const SPINNER = '<span class="spinner"></span> ';
+
+  const PREFIJOS =
+`PREFIX agua: <https://w3id.org/cdmx/agua/>
+PREFIX col:  <https://w3id.org/cdmx/agua/colonia/>
+PREFIX geo:  <http://www.opengis.net/ont/geosparql#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+`;
+
+  // Filtro que llega desde el mapa: vecindad.html?alcaldia=IZTAPALAPA
+  // Comparación insensible a acentos: el mapa muestra "Cuauhtémoc" y el
+  // almacén guarda "CUAUHTEMOC".
+  const plano = t => (t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+                              .trim().toUpperCase();
+  const params = new URLSearchParams(location.search);
+  const filtroAlcaldia = plano(params.get('alcaldia'));
+  const coloniaPedida  = plano(params.get('colonia'));
+
+  let store = null, engine = null, mapa = null, capaLineas = null;
+  const marcadores = new Map();      // id -> circleMarker
+  const colonias = [];               // {id, nombre, alcaldia, lat, lon}
+  let seleccion = null, listas = false;
+
+  function estado(html) { $('estado').innerHTML = html; }
+  estado(SPINNER + T('vec.est.cargando'));
+
+  // ---------------- mapa ----------------
+  mapa = L.map('mapa', { preferCanvas: true, zoomControl: true }).setView([19.38, -99.13], 11);
+  // Mapa base: assets/mapa-teselas.js, o la capa de siempre si faltara.
+  try {
+    MapaTeselas.montar(mapa, { maxZoom: 18 });
+  } catch (e) {
+    console.error(e);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mapa);
+  }
+  capaLineas = L.layerGroup().addTo(mapa);
+
+  // Los marcadores toman su color del tema activo, leyendo las variables CSS.
+  // Marca = seleccion, acento = vecinas, gris del texto = el resto.
+  function css(v) {
+    return getComputedStyle(document.documentElement).getPropertyValue(v).trim() || '#666';
+  }
+  let ESTILO_BASE, ESTILO_SEL, ESTILO_VEC, COLOR_LINEA;
+  function paleta() {
+    ESTILO_BASE = { radius:4,  color:css('--texto-3'),   weight:1,   fillColor:css('--marca-200'), fillOpacity:.7 };
+    ESTILO_SEL  = { radius:10, color:css('--marca-900'), weight:2.5, fillColor:css('--marca-700'), fillOpacity:1 };
+    ESTILO_VEC  = { radius:7,  color:css('--acento-700'),    weight:2,   fillColor:css('--acento-500'),    fillOpacity:.95 };
+    COLOR_LINEA = css('--marca-600');
+  }
+  paleta();
+  document.addEventListener('temacambiado', () => {
+    paleta();
+    marcadores.forEach(m => m.setStyle(ESTILO_BASE));
+    if (seleccion) seleccionar(seleccion.id);
+  });
+
+  // ---------------- carga ----------------
+  async function cargar() {
+    if (typeof N3 === 'undefined' || typeof Comunica === 'undefined') {
+      estado(T('vec.est.sinLibs'));
+      $('salida').innerHTML = `<div class="aviso err">${T('vec.av.sinLibs')}</div>`;
+      return;
+    }
+    try {
+      const resp = await fetch('kg_demo.ttl');
+      if (!resp.ok) throw new Error(T('gr.av.http', { codigo: resp.status }));
+      const texto = await resp.text();
+      estado(SPINNER + T('vec.est.analizando', { mb: (texto.length/1048576).toFixed(1) }));
+
+      store = new N3.Store();
+      const parser = new N3.Parser({ format: 'text/turtle' });
+      await new Promise((res, rej) => {
+        parser.parse(texto, (err, quad) => {
+          if (err) return rej(err); if (quad) store.addQuad(quad); else res();
+        });
+      });
+      engine = new Comunica.QueryEngine();
+
+      const { namedNode } = N3.DataFactory;
+      $('kAdy').textContent = fmt(store.countQuads(
+        null, namedNode('https://w3id.org/cdmx/agua/nearbyWithin1500m'), null, null));
+
+      estado(SPINNER + T('vec.est.ubicando'));
+      await construirColonias();
+      listas = true;
+      estado(`<span class="chip ok">${T('vec.est.listas', { n: fmt(colonias.length) })}</span>`);
+      $('buscar').disabled = false;
+      const candidatas = filtroAlcaldia ? colonias.filter(c => c.enFiltro) : colonias;
+      const inicial =
+        (coloniaPedida && colonias.find(c => plano(c.nombre) === coloniaPedida)) ||
+        candidatas.find(c => /CENTRO|JUAREZ|ROMA/.test(c.nombre)) || candidatas[0];
+      if (inicial) { seleccionar(inicial.id); mapa.setView([inicial.lat, inicial.lon], 14); }
+    } catch (e) {
+      estado(T('vec.est.error'));
+      const pista = '<br><br>' + (location.protocol === 'file:'
+        ? T('gr.av.file', { pagina: 'vecindad.html' })
+        : T('gr.av.publicado'));
+      $('salida').innerHTML = `<div class="aviso err"><b>${T('gr.av.noCarga')}</b><br>` +
+        String(e.message || e) + pista + '</div>';
+    }
+  }
+
+  async function construirColonias() {
+    const q = PREFIJOS + `SELECT ?c ?nombre ?alc ?lat ?lon WHERE {
+  ?c a geo:Feature ; rdfs:label ?nombre ; agua:borough ?alcIri ;
+     agua:latitude ?lat ; agua:longitude ?lon .
+  ?alcIri rdfs:label ?alc .
+}`;
+    const filas = await (await engine.queryBindings(q, { sources: [store] })).toArray();
+    for (const f of filas) {
+      const uri = f.get('c').value;
+      const id = uri.split('/').pop();
+      const lat = parseFloat(f.get('lat').value), lon = parseFloat(f.get('lon').value);
+      const c = { id, uri, nombre: f.get('nombre').value, alcaldia: f.get('alc').value, lat, lon };
+      colonias.push(c);
+      c.enFiltro = !filtroAlcaldia || plano(c.alcaldia) === filtroAlcaldia;
+      const m = L.circleMarker([lat, lon], ESTILO_BASE).addTo(mapa);
+      m.bindTooltip(c.nombre + ' — ' + c.alcaldia, { direction:'top' });
+      m.on('click', () => seleccionar(id));
+      marcadores.set(id, m);
+    }
+    colonias.sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+    $('kCol').textContent = fmt(colonias.length);
+    aplicarFiltro();
+  }
+
+  // ---------------- filtro por alcaldía ----------------
+  /* El texto del aviso y el marcador de posición se rehacen aparte del
+     encuadre: al cambiar de idioma hay que traducirlos sin volver a
+     mover el mapa. */
+  function textosFiltro() {
+    if (!filtroAlcaldia) return;
+    const dentro = colonias.filter(c => c.enFiltro);
+    if (!dentro.length) {
+      $('avisoFiltro').innerHTML = T('vec.filtro.vacio', { alcaldia: filtroAlcaldia });
+      return;
+    }
+    $('avisoFiltro').innerHTML =
+      '<span>' + T('vec.filtro.cuenta', { n: dentro.length, alcaldia: dentro[0].alcaldia }) + '</span>' +
+      `<a href="vecindad.html" class="quitar">${T('vec.filtro.verTodo')}</a>`;
+    $('buscar').placeholder = T('vec.placeholderAlc', { alcaldia: dentro[0].alcaldia });
+  }
+
+  function aplicarFiltro() {
+    if (!filtroAlcaldia) return;
+    const dentro = colonias.filter(c => c.enFiltro);
+    textosFiltro();
+    $('avisoFiltro').style.display = 'flex';
+    if (!dentro.length) return;
+    // atenúa lo que queda fuera y encuadra la alcaldía
+    colonias.forEach(c => {
+      const m = marcadores.get(c.id);
+      if (m && !c.enFiltro) m.setStyle({ opacity:.18, fillOpacity:.14 });
+    });
+    mapa.fitBounds(L.latLngBounds(dentro.map(c => [c.lat, c.lon])).pad(0.12));
+  }
+
+  // ---------------- traversal ----------------
+  async function seleccionar(id) {
+    const c = colonias.find(x => x.id === id);
+    if (!c || !engine) return;
+    seleccion = c;
+    /* Estos tres nodos traen data-i18n con su texto de reposo
+       ("ninguna", "elige una en el mapa", "Elige una colonia."). En
+       cuanto llevan datos dejan de ser traducibles: si conservaran el
+       atributo, el siguiente cambio de idioma los devolvería a cero. */
+    ['kSel', 'kSelAlc', 'sparql'].forEach(id => $(id).removeAttribute('data-i18n'));
+    $('kSel').textContent = c.nombre;
+    $('kSel').title = c.nombre + ' — ' + c.alcaldia;
+    $('kSelAlc').textContent = c.alcaldia;
+
+    const q = PREFIJOS + `
+SELECT ?vecina ?alcaldia (ROUND(SUM(?c)) AS ?consumo) WHERE {
+  col:${id} agua:nearbyWithin1500m ?v .
+  ?v rdfs:label ?vecina ; agua:borough ?alcaldiaIri .
+  ?alcaldiaIri rdfs:label ?alcaldia .
+  ?o agua:location ?v ; agua:totalConsumption ?c .
+}
+GROUP BY ?vecina ?alcaldia
+ORDER BY DESC(?consumo)`;
+    $('sparql').textContent = q.trim();
+
+    marcadores.forEach(m => m.setStyle(ESTILO_BASE));
+    capaLineas.clearLayers();
+    marcadores.get(id).setStyle(ESTILO_SEL).bringToFront();
+    mapa.setView([c.lat, c.lon], Math.max(mapa.getZoom(), 13), { animate:true });
+
+    const t0 = performance.now();
+    try {
+      const filas = await (await engine.queryBindings(q, { sources: [store] })).toArray();
+      const ms = performance.now() - t0;
+      $('kVec').textContent = filas.length;
+      $('kTiempo').textContent = T('vec.deSparql',
+        { t: ms < 1000 ? Math.round(ms) + ' ms' : (ms/1000).toFixed(1) + ' s' });
+
+      if (!filas.length) {
+        $('salida').innerHTML = `<div class="aviso">${T('vec.sinVecinas')}</div>`;
+        return;
+      }
+      const nombres = new Set(filas.map(f => f.get('vecina').value));
+      colonias.forEach(o => {
+        if (nombres.has(o.nombre) && o.id !== id) {
+          const m = marcadores.get(o.id);
+          if (m) { m.setStyle(ESTILO_VEC).bringToFront();
+            L.polyline([[c.lat, c.lon], [o.lat, o.lon]],
+              { color:COLOR_LINEA, weight:1.8, opacity:.6 }).addTo(capaLineas); }
+        }
+      });
+
+      const tr = filas.map(f =>
+        `<tr><td class="nombre-largo" title="${f.get('vecina').value}">${f.get('vecina').value}</td>` +
+        `<td>${f.get('alcaldia').value}</td>` +
+        `<td class="num">${fmt(f.get('consumo').value)}</td></tr>`).join('');
+      $('salida').innerHTML =
+        `<div class="tabla-env"><table><thead><tr><th>${T('vec.th.vecina')}</th><th>${T('vec.th.alcaldia')}</th>` +
+        `<th class="num">${T('vec.th.consumo')}</th></tr></thead><tbody>${tr}</tbody></table></div>`;
+    } catch (e) {
+      $('salida').innerHTML = `<div class="aviso err">` +
+        T('vec.errConsulta', { msg: String(e.message || e).replace(/</g,'&lt;') }) + '</div>';
+    }
+  }
+
+  // ---------------- buscador ----------------
+  const inp = $('buscar'), sug = $('sugerencias');
+  let idx = -1, lista = [];
+  inp.addEventListener('input', () => {
+    const t = inp.value.trim().toUpperCase();
+    if (t.length < 3) { sug.classList.remove('abierto'); return; }
+    lista = colonias.filter(c => plano(c.nombre).includes(plano(t)) &&
+                                 (!filtroAlcaldia || c.enFiltro)).slice(0, 40);
+    idx = -1;
+    sug.innerHTML = lista.length
+      ? lista.map((c, i) => `<div class="sug" data-i="${i}">${c.nombre}<small>${c.alcaldia}</small></div>`).join('')
+      : `<div class="sug" style="color:var(--texto-3)">${T('vec.sinCoincidencias')}</div>`;
+    sug.classList.add('abierto');
+    sug.querySelectorAll('.sug[data-i]').forEach(d => {
+      d.onclick = () => { elegir(lista[+d.dataset.i]); };
+    });
+  });
+  function elegir(c) {
+    if (!c) return;
+    inp.value = c.nombre; sug.classList.remove('abierto'); seleccionar(c.id);
+  }
+  inp.addEventListener('keydown', e => {
+    const items = sug.querySelectorAll('.sug[data-i]');
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault(); if (!items.length) return;
+      idx = e.key === 'ArrowDown' ? Math.min(idx + 1, items.length - 1) : Math.max(idx - 1, 0);
+      items.forEach(x => x.classList.remove('sel')); items[idx].classList.add('sel');
+      items[idx].scrollIntoView({ block:'nearest' });
+    } else if (e.key === 'Enter') { e.preventDefault(); elegir(lista[idx >= 0 ? idx : 0]); }
+    else if (e.key === 'Escape') sug.classList.remove('abierto');
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.buscador')) sug.classList.remove('abierto');
+  });
+
+  /* Cambio de idioma: mismo patrón que 'temacambiado' unas líneas arriba.
+     Se rehace la selección, que vuelve a lanzar la consulta y repinta la
+     tabla ya traducida; la colonia elegida y el encuadre se conservan. */
+  document.addEventListener('idiomacambiado', () => {
+    textosFiltro();
+    if (listas) estado(`<span class="chip ok">${T('vec.est.listas', { n: fmt(colonias.length) })}</span>`);
+    if (seleccion) seleccionar(seleccion.id);
+  });
+
+  cargar();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+{
+  "verificado_utc": "2026-10-23T19:37:43.510781+00:00",
+  "pruebas": [
+    {
+      "prueba": "Agua conserva consumo y clima originales",
+      "ok": true,
+      "detalle": {
+        "consumo_original": 70886,
+        "clima_original": 181,
+        "reportes_integrados": 555752,
+        "sin_colonia": 4804,
+        "colonias_vinculadas": 1550
+      }
+    },
+    {
+      "prueba": "Reportes integrados completos y consumo preservado",
+      "ok": true,
+      "detalle": [
+        "555752",
+        "555752",
+        "120357145.332",
+        "120357145.332"
+      ]
+    },
+    {
+      "prueba": "Reportes enlazados al tiempo del modelo original",
+      "ok": true,
+      "detalle": 0
+    },
+    {
+      "prueba": "Frontend original de agua recibe datos de PostgreSQL",
+      "ok": true,
+      "detalle": {
+        "filas": 10641
+      }
+    },
+    {
+      "prueba": "API agua /resumen",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API agua /colonias",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API agua /curva_pr",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API agua /clases",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API agua /serie_mensual",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API agua /alcaldias",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API agua /puntos",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API agua /ubicacion",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API agua /bitacora",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "Agua rechaza periodos invertidos",
+      "ok": true,
+      "detalle": 400
+    },
+    {
+      "prueba": "Obras: folios de la API coinciden con CSV oficial",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "Obras: montos coinciden con CSV sin duplicar relaciones",
+      "ok": true,
+      "detalle": {
+        "aprobado": "58834555",
+        "pagado": "58803710.52"
+      }
+    },
+    {
+      "prueba": "Obras vinculadas a dimensiones originales",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "Sin dimensiones de obra duplicadas",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "Expedientes operativos corresponden a obras oficiales",
+      "ok": true,
+      "detalle": 59
+    },
+    {
+      "prueba": "Filtro de sector en backend de obras",
+      "ok": true,
+      "detalle": 12
+    },
+    {
+      "prueba": "Búsqueda sin coincidencias no devuelve datos de ejemplo",
+      "ok": true,
+      "detalle": 0
+    },
+    {
+      "prueba": "Trazabilidad a registros originales y relaciones",
+      "ok": true,
+      "detalle": "MEX250202529784"
+    }
+  ],
+  "archivos_fuente": {
+    "agua-reportes-sacmex/datos/clima_original_2019.csv": {
+      "bytes": 134323,
+      "sha256": "d540ef2f7665352fced631c816ae912ee5929fc8d19a59b8cbe43ea8ae543a69"
+    },
+    "agua-reportes-sacmex/datos/consumo.csv": {
+      "bytes": 10539826,
+      "sha256": "5b0abf9613a77cc46cebebd34236c89b57b37b1e588dc7963c278dbcb6c5f905"
+    },
+    "agua-reportes-sacmex/datos/historico_2018_2021.csv": {
+      "bytes": 32456141,
+      "sha256": "baab0a98482c29adcf76cc9bb8cf9b5ea052336df2240569050533d595602105"
+    },
+    "agua-reportes-sacmex/datos/incidentes_2022_2024.csv": {
+      "bytes": 53023436,
+      "sha256": "03dd9a0afe3cffaa4f8c6dd2d45e85e6da916333e34b3192a74e87d0bba79d3a"
+    },
+    "obra-publica-srft/datos/contratos_temascaltepec.csv": {
+      "bytes": 51246,
+      "sha256": "d8acaa2083ec0abc6b1b567cefad019fcb4affe2a36e9a440adadaa678e056f7"
+    },
+    "obra-publica-srft/datos/ef2025_temascaltepec.csv": {
+      "bytes": 23861,
+      "sha256": "d646eb5205d88a93fa0710a9ae1621d23050bc19e6d5084694158a74392d141a"
+    },
+    "obra-publica-srft/datos/fuentes_financiamiento_temascaltepec.csv": {
+      "bytes": 6709,
+      "sha256": "0b9721af43098a973ca582409544c16a5560bd146f8685c7926afc4f197dde6b"
+    },
+    "obra-publica-srft/datos/georreferencias_temascaltepec.csv": {
+      "bytes": 18738,
+      "sha256": "23c514e7c58ddd9895ed126deb50bef75a1e02d25e359dec0d4c390da5b31be5"
+    },
+    "obra-publica-srft/datos/metas_avances_temascaltepec.csv": {
+      "bytes": 3851,
+      "sha256": "1947bf837e911acfd86d48a4632ee186b50c9b0d318f51ac6d35afd3fc4a7401"
+    }
+  }
+}

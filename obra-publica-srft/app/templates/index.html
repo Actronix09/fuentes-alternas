@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Obras reales · Temascaltepec</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/static/tablero.css"></head><body>
+<header><nav><span>FUENTES ALTERNAS / OBRAS PÚBLICAS</span><span><a href="/expedientes/">Expedientes administrativos ↗</a> · <a href="/sistema/">Sistema original ↗</a></span></nav>
+<p class="eyebrow">SHCP · INFORME DEFINITIVO 2025</p><h1>Obras reales.<br><em>Datos que se pueden rastrear.</em></h1>
+<p class="intro">Inversión federal en Temascaltepec, Estado de México. CSV oficiales integrados al data warehouse del proyecto original.</p>
+<div class="estado" id="estado" role="status">Consultando la base de datos…</div></header>
+<main><form id="filtros"><label>Sector<select name="clasificacion"><option value="">Todos los sectores</option></select></label>
+<label class="buscar">Buscar obra o folio<input name="q" placeholder="Agua, pavimentación, MEX…" maxlength="200"></label><button>Aplicar filtros</button></form>
+<section id="indicadores" class="indicadores" aria-label="Indicadores"></section>
+<section class="doble"><article class="panel"><h2>Dónde se invierte</h2><p>Un punto de referencia por obra. El detalle conserva todas las georreferencias de la fuente.</p><div id="mapa"></div><p id="sin-coordenadas"></p></article>
+<article class="panel"><h2>Inversión por sector</h2><p>Presupuesto aprobado en pesos mexicanos.</p><div id="sectores"></div></article></section>
+<section class="panel"><div class="titulo-tabla"><h2>Del presupuesto a la obra</h2><span id="conteo"></span></div>
+<p>Los montos son acumulados al cierre de 2025. El avance financiero mostrado es pagado / aprobado; no sustituye al avance físico.</p>
+<div class="scroll"><table><thead><tr><th>Obra / folio verificable</th><th>Sector / localidad</th><th>Aprobado</th><th>Pagado</th><th>Avance físico</th><th>Estatus</th></tr></thead><tbody id="obras"></tbody></table></div></section>
+<section class="doble"><article class="panel"><h2>Una extensión del modelo original</h2><p id="modelo"></p>
+<p>Las dimensiones <code>warehouse.dim_obra</code> y <code>warehouse.dim_tiempo</code> se comparten con el nuevo hecho <code>warehouse.fact_srft</code>. Se conservan el esquema operacional, las dimensiones y los disparadores originales.</p>
+<p>Los supervisores, actas y auditorías no publicados por SHCP permanecen sin datos. No se ejecutó el generador sintético.</p></article>
+<article class="panel"><h2>Fuente y límites</h2><p>Secretaría de Hacienda y Crédito Público. <cite>Gasto federalizado: Destino del Gasto, informe definitivo 2025.</cite></p>
+<p><a href="https://www.transparenciapresupuestaria.gob.mx/Datos-Abiertos" target="_blank" rel="noopener">Consultar portal oficial ↗</a> · <a href="/api/srft/resumen">Ver API conectada ↗</a></p>
+<p>Incluye recursos federales; no representa toda la obra municipal. “Terminado” es el estatus declarado por la fuente, no una verificación de campo. Los avances con varias unidades de medida se conservan en detalle y no se suman.</p></article></section>
+<section class="panel"><h2>Bitácora de extracción, limpieza y carga</h2><div id="bitacora"></div></section>
+</main><footer>Datos oficiales · Sin registros inventados · Integración académica local</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="/static/tablero.js"></script></body></html>

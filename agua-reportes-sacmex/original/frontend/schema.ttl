@@ -1,0 +1,88 @@
+@prefix agua: <https://w3id.org/cdmx/agua/> .
+@prefix qb:   <http://purl.org/linked-data/cube#> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Data sets and their Data Cube structures. The demo dataset reuses consumoDSD;
+# its distinct identity and provenance are declared in kg_demo.ttl.
+agua:consumoCDMX a qb:DataSet ;
+  qb:structure agua:consumoDSD ;
+  agua:unit agua:cubicMetre .
+agua:climaCDMX a qb:DataSet ; qb:structure agua:climaDSD .
+
+agua:consumoDSD a qb:DataStructureDefinition ;
+  rdfs:label "Consumption data structure definition"@en ;
+  qb:component [ qb:dimension agua:period ; qb:order 1 ] ;
+  qb:component [ qb:dimension agua:location ; qb:order 2 ] ;
+  qb:component [ qb:dimension agua:developmentIndex ; qb:order 3 ] ;
+  qb:component [ qb:measure agua:totalConsumption ] ;
+  qb:component [ qb:measure agua:averageConsumption ] ;
+  qb:component [ qb:measure agua:domesticConsumption ] ;
+  qb:component [ qb:measure agua:nonDomesticConsumption ] ;
+  qb:component [ qb:measure agua:mixedConsumption ] ;
+  qb:component [ qb:attribute agua:unit ; qb:componentAttachment qb:DataSet ] .
+
+agua:climaDSD a qb:DataStructureDefinition ;
+  rdfs:label "Climate data structure definition"@en ;
+  qb:component [ qb:dimension agua:period ; qb:order 1 ] ;
+  qb:component [ qb:measure agua:maxTemperature ] ;
+  qb:component [ qb:measure agua:minTemperature ] ;
+  qb:component [ qb:measure agua:meanTemperature ] ;
+  qb:component [ qb:measure agua:meanHumidity ] ;
+  qb:component [ qb:measure agua:totalRainfall ] .
+
+# Properties materialised by mapping.r2rml.ttl.
+agua:period a qb:DimensionProperty ; rdfs:range time:TemporalEntity .
+agua:location a qb:DimensionProperty ; rdfs:range geo:Feature .
+agua:developmentIndex a qb:DimensionProperty ; rdfs:range skos:Concept .
+agua:borough a qb:DimensionProperty ; rdfs:range rdfs:Resource .
+agua:year a qb:DimensionProperty ; rdfs:range xsd:gYear .
+agua:bimester a qb:DimensionProperty ; rdfs:range xsd:integer .
+agua:date a qb:DimensionProperty ; rdfs:range xsd:date .
+
+agua:totalConsumption a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:averageConsumption a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:domesticConsumption a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:nonDomesticConsumption a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:mixedConsumption a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:maxTemperature a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:minTemperature a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:meanTemperature a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:meanHumidity a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:totalRainfall a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:latitude a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:longitude a qb:MeasureProperty ; rdfs:range xsd:decimal .
+agua:distanceKm a qb:MeasureProperty ; rdfs:range xsd:decimal .
+
+agua:unit a qb:AttributeProperty ; rdfs:range skos:Concept .
+agua:cubicMetre a skos:Concept ; skos:prefLabel "cubic metre"@en .
+
+agua:nearbyWithin1500m a rdf:Property ;
+  rdfs:domain geo:Feature ;
+  rdfs:range geo:Feature ;
+  rdfs:label "nearby within 1500 m"@en ;
+  rdfs:comment "Derived from proximity between centroids with a threshold of 1500 m; it is not a Simple Features topological relation."@en .
+
+# Explicit, queryable ordinal scale for the development index.  The textual
+# notation is part of each IRI so ranks do not depend on database SERIAL values.
+agua:indiceDesarrollo a skos:ConceptScheme ;
+  rdfs:label "Índice de desarrollo"@es ;
+  skos:hasTopConcept <https://w3id.org/cdmx/agua/devindex/POPULAR>,
+                     <https://w3id.org/cdmx/agua/devindex/BAJO>,
+                     <https://w3id.org/cdmx/agua/devindex/MEDIO>,
+                     <https://w3id.org/cdmx/agua/devindex/ALTO> .
+
+agua:ordinalRank a rdf:Property ; rdfs:range xsd:integer .
+
+<https://w3id.org/cdmx/agua/devindex/POPULAR> skos:topConceptOf agua:indiceDesarrollo ;
+  skos:prefLabel "POPULAR"@es ; skos:notation "POPULAR" ; agua:ordinalRank 1 .
+<https://w3id.org/cdmx/agua/devindex/BAJO> skos:topConceptOf agua:indiceDesarrollo ;
+  skos:prefLabel "BAJO"@es ; skos:notation "BAJO" ; agua:ordinalRank 2 .
+<https://w3id.org/cdmx/agua/devindex/MEDIO> skos:topConceptOf agua:indiceDesarrollo ;
+  skos:prefLabel "MEDIO"@es ; skos:notation "MEDIO" ; agua:ordinalRank 3 .
+<https://w3id.org/cdmx/agua/devindex/ALTO> skos:topConceptOf agua:indiceDesarrollo ;
+  skos:prefLabel "ALTO"@es ; skos:notation "ALTO" ; agua:ordinalRank 4 .

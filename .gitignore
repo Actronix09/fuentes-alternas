@@ -1,0 +1,8 @@
+.runtime/
+referencias/
+__pycache__/
+*.pyc
+.env
+*.log
+obra-publica-srft/datos/*.zip
+agua-reportes-sacmex/datos/grafo_integrado.ttl*

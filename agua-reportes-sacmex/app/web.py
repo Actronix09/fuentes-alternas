@@ -7,12 +7,14 @@ from __future__ import annotations
 
 import datetime as dt
 import decimal
+import sys
+from pathlib import Path
 
-from flask import Flask, abort, jsonify, render_template, request
+from flask import Flask, abort, jsonify, render_template, request, send_from_directory, send_file
 from flask.json.provider import DefaultJSONProvider
 from psycopg.rows import dict_row
 
-from comun import conectar
+from comun import conectar, DIR_DATOS
 
 
 class ProveedorJSON(DefaultJSONProvider):
@@ -30,6 +32,61 @@ class ProveedorJSON(DefaultJSONProvider):
 
 app = Flask(__name__)
 app.json = ProveedorJSON(app)
+RAIZ = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(RAIZ / 'original/scripts'))
+
+
+@app.get('/sistema/consumo.json')
+def consumo_original_en_vivo():
+    from exportar_estatico import construir
+    with conectar() as conn, conn.cursor() as cur:
+        return jsonify(construir(cur))
+
+
+@app.get('/api/grafo')
+def metadatos_grafo():
+    import json
+    archivo=DIR_DATOS/'grafo_integrado.json'
+    if not archivo.exists():
+        abort(503,'Ejecuta el ETL para materializar el grafo integrado')
+    return jsonify(json.loads(archivo.read_text(encoding='utf-8')))
+
+
+@app.post('/api/grafo/sparql')
+def sparql_local():
+    from consultar_grafo import consultar
+    cuerpo=request.get_json(silent=True) or {}
+    consulta=cuerpo.get('query','')
+    if not isinstance(consulta,str) or not consulta.strip() or len(consulta)>20000:
+        return jsonify(error='La consulta debe contener entre 1 y 20000 caracteres'),400
+    archivo=DIR_DATOS/'grafo_integrado.ttl'
+    if not archivo.exists():
+        return jsonify(error='Ejecuta el ETL para generar el grafo'),503
+    try:
+        return jsonify(consultar(archivo,consulta))
+    except Exception as e:
+        return jsonify(error=str(e)),400
+
+
+@app.get('/sistema/kg_demo.ttl')
+def grafo_integrado():
+    archivo=DIR_DATOS/'grafo_integrado.ttl'
+    if not archivo.exists():
+        abort(503,'El grafo integrado no está materializado; ejecuta el ETL')
+    if 'gzip' in request.headers.get('Accept-Encoding','') and archivo.with_suffix('.ttl.gz').exists():
+        respuesta=send_file(archivo.with_suffix('.ttl.gz'),mimetype='text/turtle',conditional=True)
+        respuesta.headers['Content-Encoding']='gzip'
+        respuesta.headers['Vary']='Accept-Encoding'
+        return respuesta
+    return send_file(archivo,mimetype='text/turtle',conditional=True)
+
+
+@app.get('/sistema/')
+@app.get('/sistema/<path:archivo>')
+def interfaz_original(archivo='index.html'):
+    if Path(archivo).suffix.lower() not in ('.html','.js','.css','.svg','.png','.jpg','.webp','.geojson','.ttl'):
+        abort(404)
+    return send_from_directory(RAIZ / 'original/frontend', archivo)
 
 TIPOS = ("Falta de agua", "Fuga", "Mala calidad")
 CITAS = [
@@ -78,6 +135,8 @@ def filtros() -> dict:
         hasta = dt.date.fromisoformat(request.args.get("hasta", "2019-06-30"))
     except ValueError:
         abort(400, "desde y hasta deben ser fechas AAAA-MM-DD")
+    if desde > hasta:
+        abort(400, "desde no puede ser posterior a hasta")
     alcaldia = request.args.get("alcaldia") or None
     if alcaldia and alcaldia not in alcaldias():
         abort(400, "alcaldía desconocida")
@@ -100,6 +159,17 @@ def inicio():
 def salud():
     consulta("SELECT 1")
     return {"ok": True}
+
+
+@app.get("/api/original")
+def original():
+    return jsonify(consulta('''
+        SELECT (SELECT count(*) FROM public.fact_consumo_agua) AS consumo_original,
+               (SELECT count(*) FROM public.fact_clima) AS clima_original,
+               (SELECT count(*) FROM public.fact_reporte_agua) AS reportes_integrados,
+               (SELECT count(*) FROM public.fact_reporte_agua WHERE id_ubicacion IS NULL) AS sin_colonia,
+               (SELECT count(*) FROM public.dim_equivalencia_colonia) AS colonias_vinculadas
+    ''')[0])
 
 
 @app.get("/api/opciones")
@@ -184,12 +254,13 @@ def clases():
 def serie_mensual():
     p = filtros()
     return jsonify(consulta("""
-        SELECT date_trunc('month', t.fecha)::date AS mes, tr.reporte, count(*) AS reportes
-        FROM dw.fact_reporte_agua r
-        JOIN dw.dim_tiempo t        ON t.id_tiempo = r.id_tiempo
-        JOIN dw.dim_tipo_reporte tr ON tr.id_tipo = r.id_tipo
-        LEFT JOIN dw.dim_ubicacion u ON u.id_ubicacion = r.id_ubicacion
-        WHERE tr.es_agua_potable AND tr.reporte = ANY(%(tipos)s)
+        SELECT date_trunc('month', t.fecha)::date AS mes, r.tipo_reporte AS reporte, count(*) AS reportes
+        FROM public.fact_reporte_agua r
+        JOIN public.dim_tiempo t ON t.id_tiempo = r.id_tiempo
+        LEFT JOIN public.dim_equivalencia_colonia e ON e.id_original = r.id_ubicacion
+        LEFT JOIN dw.dim_ubicacion u ON u.id_ubicacion = e.id_dw
+        WHERE r.clasificacion = 'Agua Potable' AND r.tipo_reporte = ANY(%(tipos)s)
+          AND t.fecha BETWEEN %(desde)s AND %(hasta)s
           AND (%(alcaldia)s::text IS NULL OR u.alcaldia = %(alcaldia)s::text)
         GROUP BY 1, 2 ORDER BY 1, 2""", {**p, "tipos": list(TIPOS)}))
 

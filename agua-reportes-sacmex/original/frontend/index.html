@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de Agua CDMX - Dashboard</title>
+    <script src="assets/vendor/plotly-basic-3.0.1.min.js" defer charset="utf-8"></script>
+        <link rel="preload" as="fetch" href="consumo.json" crossorigin>
+    <meta name="description" content="Almacen de datos y grafo de conocimiento del consumo de agua en la Ciudad de Mexico, construido con datos abiertos de SACMEX. Consulta por alcaldia y colonia, mapa coropletico y SPARQL en el navegador.">
+    <!-- sistema de diseño compartido: inicio -->
+    <link rel="stylesheet" href="assets/estilo.css">
+    <link rel="stylesheet" href="assets/paginas.css">
+    <script src="assets/i18n.js"></script>
+    <script src="assets/tema-graficas.js" defer></script>
+    <!-- sistema de diseño compartido: fin -->
+</head>
+<body>
+<header data-barra></header>
+    <div class="app-container" role="main">
+        <div class="header">
+            <h1 data-i18n="idx.h1">💧 Consumo de Agua en CDMX</h1>
+            <nav class="nav">
+                <a href="/">Reportes ciudadanos · nueva integración</a>
+                <a href="mapa.html" data-i18n="nav.mapa">🗺️ Mapa</a>
+
+                <a href="grafo.html" data-i18n="nav.grafo">&#128279; Grafo de conocimiento</a>
+
+                <a href="vecindad.html" data-i18n="nav.vecindad">&#127758; Vecindad territorial</a>
+            </nav>
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="fAnio" data-i18n="com.anio">Año</label>
+                <select id="fAnio"><option value="" data-i18n="com.todos">Todos</option></select>
+            </div>
+            <div class="filter-group">
+                <label for="fBimestre" data-i18n="com.bimestre">Bimestre</label>
+                <select id="fBimestre"><option value="" data-i18n="com.todos">Todos</option></select>
+            </div>
+            <div class="filter-group">
+                <label for="fAlcaldia" data-i18n="com.alcaldia">Alcaldía</label>
+                <select id="fAlcaldia"><option value="" data-i18n="com.todas">Todas</option></select>
+            </div>
+            <div class="filter-group">
+                <label for="fColonia" data-i18n="com.colonia">Colonia</label>
+                <select id="fColonia"><option value="" data-i18n="com.todas">Todas</option></select>
+            </div>
+            <div class="filter-group">
+                <label for="fIndice" data-i18n="com.indice">Índice de desarrollo</label>
+                <select id="fIndice"><option value="" data-i18n="com.todos">Todos</option></select>
+            </div>
+            <div class="filter-group">
+                <label for="fLimit" data-i18n="idx.porPagina">Resultados por página</label>
+                <select id="fLimit">
+                    <option>25</option>
+                    <option selected>50</option>
+                    <option>100</option>
+                    <option>250</option>
+                </select>
+            </div>
+            <div class="actions">
+                <button class="btn btn-primary" onclick="cargarDatos()" data-i18n="com.consultar">🔍 Consultar</button>
+                <button class="btn btn-secondary" onclick="limpiarFiltros()" data-i18n="com.limpiar">↺ Limpiar</button>
+            </div>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <div class="kpis">
+            <div class="kpi">
+                <div class="label" data-i18n="idx.kpi.registros">Registros</div>
+                <div class="value" id="kpiRegistros">—</div>
+                <div class="sub" data-i18n="idx.kpi.registrosSub">Coincidencias con los filtros</div>
+            </div>
+            <div class="kpi">
+                <div class="label" data-i18n="idx.kpi.total">Consumo total (m³)</div>
+                <div class="value" id="kpiTotal">—</div>
+                <div class="sub" data-i18n="idx.kpi.totalSub">Suma del consumo total</div>
+            </div>
+            <div class="kpi">
+                <div class="label" data-i18n="idx.kpi.promedio">Consumo promedio</div>
+                <div class="value" id="kpiPromedio">—</div>
+                <div class="sub" data-i18n="idx.kpi.promedioSub">Promedio por registro</div>
+            </div>
+            <div class="kpi">
+                <div class="label" data-i18n="idx.kpi.colonias">Colonias únicas</div>
+                <div class="value" id="kpiColonias">—</div>
+                <div class="sub" data-i18n="idx.kpi.coloniasSub">Distintas en el resultado</div>
+            </div>
+        </div>
+
+        <div class="panels">
+            <div class="panel">
+                <h3 data-i18n="idx.panel.top">📊 Top 10 colonias con mayor consumo</h3>
+                <div id="chartTop" class="chart"></div>
+            </div>
+            <div class="panel">
+                <h3 data-i18n="idx.panel.corr">🌡️ Correlación consumo vs. temperatura promedio (por bimestre)</h3>
+                <div id="chartCorr" class="chart"></div>
+            </div>
+            <div class="panel" style="grid-column: 1 / -1;">
+                <h3 data-i18n="idx.panel.alcaldia">📈 Consumo total por alcaldía</h3>
+                <div id="chartAlcaldia" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="data-section">
+            <h3 data-i18n="idx.panel.tabla">📋 Detalle de registros</h3>
+            <div class="table-wrap">
+                <table id="tabla">
+                    <thead>
+                        <tr>
+                            <th data-i18n="idx.th.anio">Año</th><th data-i18n="idx.th.bim">Bim.</th><th data-i18n="idx.th.fecha">Fecha</th>
+                            <th data-i18n="idx.th.alcaldia">Alcaldía</th><th data-i18n="idx.th.colonia">Colonia</th><th data-i18n="idx.th.indice">Índice</th>
+                            <th data-i18n="idx.th.total">Consumo total (m³)</th><th data-i18n="idx.th.prom">Consumo prom.</th>
+                            <th data-i18n="idx.th.domTotal">Doméstico total</th><th data-i18n="idx.th.domProm">Doméstico prom.</th>
+                            <th data-i18n="idx.th.mixtoTotal">Mixto total</th><th data-i18n="idx.th.noDomTotal">No dom. total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaBody"></tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <span id="pagInfo">—</span>
+                <div class="pages">
+                    <button id="btnPrev" onclick="cambiarPagina(-1)" data-i18n="idx.pag.anterior">◀ Anterior</button>
+                    <button id="btnNext" onclick="cambiarPagina(1)" data-i18n="idx.pag.siguiente">Siguiente ▶</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const DATOS_URL = "consumo.json";
+        const T = (k, v) => I18N.t(k, v);
+        const fmt = n => n == null ? '—' : Number(n).toLocaleString(I18N.locale(), { maximumFractionDigits: 2 });
+        const fmtInt = n => n == null ? '—' : Number(n).toLocaleString(I18N.locale());
+
+        let dataset = null;
+        let filtradoCache = [];
+        let paginaActual = 0;
+        let totalRegistros = 0;
+
+        function setStatus(msg, tipo) {
+            const el = document.getElementById('status');
+            el.textContent = msg;
+            el.className = 'status show ' + tipo;
+        }
+
+        function hideStatus() {
+            document.getElementById('status').className = 'status';
+        }
+
+        function norm(s) {
+            return (s == null ? '' : String(s)).trim().toLowerCase()
+                .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        /* Rehace las opciones de un selector conservando lo elegido. La
+           primera opción ("Todos"/"Todas") no se toca: lleva data-i18n y la
+           traduce i18n.js. Los valores siguen siendo los del almacén; sólo
+           cambia la etiqueta que se ve. */
+        function opciones(sel, valores, etiqueta) {
+            const elegido = sel.value;
+            while (sel.options.length > 1) sel.remove(1);
+            valores.forEach(v => sel.add(new Option(etiqueta ? etiqueta(v) : v, v)));
+            sel.value = elegido;
+        }
+
+        function cargarCatalogos() {
+            opciones(document.getElementById('fAnio'), dataset.anios);
+            opciones(document.getElementById('fBimestre'), dataset.bimestres,
+                     v => T('com.bimestreN', { n: v }));
+            opciones(document.getElementById('fAlcaldia'), dataset.alcaldias);
+            opciones(document.getElementById('fIndice'), dataset.indices,
+                     v => I18N.indice(v));
+        }
+
+        function coloniasPara(alcaldia) {
+            if (!alcaldia) return [];
+            const lista = dataset.colonias_por_alcaldia[alcaldia] || [];
+            return lista.slice().sort();
+        }
+
+        function opcionTodas(sel) {
+            sel.innerHTML = `<option value="" data-i18n="com.todas">${T('com.todas')}</option>`;
+        }
+
+        document.getElementById('fAlcaldia').addEventListener('change', (e) => {
+            const sel = document.getElementById('fColonia');
+            opcionTodas(sel);
+            coloniasPara(e.target.value).forEach(v => sel.add(new Option(v, v)));
+        });
+
+        function aplicarFiltros() {
+            const vAnio = document.getElementById('fAnio').value;
+            const vBim = document.getElementById('fBimestre').value;
+            const vAlc = document.getElementById('fAlcaldia').value;
+            const vCol = document.getElementById('fColonia').value;
+            const vInd = document.getElementById('fIndice').value;
+
+            return dataset.consumo_colonia.filter(r => {
+                if (vAnio && String(r.anio) !== String(vAnio)) return false;
+                if (vBim && String(r.bimestre) !== String(vBim)) return false;
+                if (vAlc && r.alcaldia !== vAlc) return false;
+                if (vCol && r.colonia !== vCol) return false;
+                if (vInd && r.indice_des !== vInd) return false;
+                return true;
+            });
+        }
+
+        function cargarDatos() {
+            setStatus(T('idx.est.cargando'), 'loading');
+            try {
+                filtradoCache = aplicarFiltros();
+                totalRegistros = filtradoCache.length;
+                const lim = parseInt(document.getElementById('fLimit').value);
+                const desde = totalRegistros === 0 ? 0 : paginaActual * lim + 1;
+                const hasta = Math.min((paginaActual + 1) * lim, totalRegistros);
+
+                document.getElementById('pagInfo').textContent =
+                    totalRegistros === 0
+                        ? T('com.sinResultados')
+                        : T('idx.pag.mostrando',
+                            { desde, hasta, total: fmtInt(totalRegistros) });
+                document.getElementById('btnPrev').disabled = paginaActual === 0;
+                document.getElementById('btnNext').disabled = hasta >= totalRegistros;
+
+                const tot = filtradoCache.reduce((acc, r) => acc + (r.consumo_total || 0), 0);
+                const prom = filtradoCache.length
+                    ? filtradoCache.reduce((acc, r) => acc + (r.consumo_prom || 0), 0) / filtradoCache.length
+                    : 0;
+                const colonias = new Set(filtradoCache.map(r => r.colonia).filter(Boolean));
+
+                document.getElementById('kpiRegistros').textContent = fmtInt(totalRegistros);
+                document.getElementById('kpiTotal').textContent = fmt(tot);
+                document.getElementById('kpiPromedio').textContent = fmt(prom);
+                document.getElementById('kpiColonias').textContent = fmtInt(colonias.size);
+
+                const slice = filtradoCache.slice(paginaActual * lim, (paginaActual + 1) * lim);
+                const tbody = document.getElementById('tablaBody');
+                tbody.innerHTML = slice.map(r => `
+                    <tr>
+                        <td>${r.anio}</td>
+                        <td>${r.bimestre}</td>
+                        <td>${r.fecha || '—'}</td>
+                        <td>${r.alcaldia || '—'}</td>
+                        <td>${r.colonia || '—'}</td>
+                        <td><span class="badge badge-${r.indice_des}">${I18N.indice(r.indice_des)}</span></td>
+                        <td>${fmt(r.consumo_total)}</td>
+                        <td>${fmt(r.consumo_prom)}</td>
+                        <td>${fmt(r.consumo_total_dom)}</td>
+                        <td>${fmt(r.consumo_prom_dom)}</td>
+                        <td>${fmt(r.consumo_total_mixto)}</td>
+                        <td>${fmt(r.consumo_total_no_dom)}</td>
+                    </tr>
+                `).join('') || `<tr><td colspan="12" style="text-align:center; padding:20px;">${T('com.sinResultados')}</td></tr>`;
+
+                graficarTop(filtradoCache);
+                graficarCorrelacion(filtradoCache);
+                graficarAlcaldia(filtradoCache);
+
+                hideStatus();
+            } catch (e) {
+                setStatus(T('idx.est.error', { msg: e.message }), 'error');
+            }
+        }
+
+        function graficarTop(rows) {
+            const agg = new Map();
+            rows.forEach(r => {
+                const k = r.colonia + '||' + r.alcaldia;
+                agg.set(k, (agg.get(k) || 0) + (r.consumo_total || 0));
+            });
+            const arr = [...agg.entries()]
+                .map(([k, v]) => {
+                    const [colonia, alcaldia] = k.split('||');
+                    return { colonia, alcaldia, total: v };
+                })
+                .sort((a, b) => b.total - a.total)
+                .slice(0, 10);
+
+            if (!arr.length) {
+                Plotly.purge('chartTop');
+                return;
+            }
+            const labels = arr.map(r => r.colonia + ' (' + r.alcaldia + ')');
+            const values = arr.map(r => r.total);
+            Plotly.newPlot('chartTop', [{
+                type: 'bar',
+                orientation: 'h',
+                x: values.reverse(),
+                y: labels.reverse(),
+                /* sin color propio: lo pone el colorway del tema activo */
+                hovertemplate: `<b>%{y}</b><br>${T('idx.g.consumoTotal')}: %{x:,.2f} m³<extra></extra>`,
+            }], {
+                margin: { l: 220, r: 20, t: 10, b: 40 },
+                /* Plotly 3 ya no acepta el título de eje como cadena suelta:
+                   con {title:'m³'} dibuja su marcador de posición vacío. */
+                xaxis: { title: { text: T('idx.g.ejeM3') }, automargin: true },
+                yaxis: { automargin: true },
+            }, { displayModeBar: false, responsive: true });
+        }
+
+        function graficarCorrelacion(rows) {
+            const vAnio = document.getElementById('fAnio').value;
+            const corr = dataset.correlacion.filter(r => !vAnio || String(r.anio) === String(vAnio));
+            const consumosPorPeriodo = new Map();
+            rows.forEach(r => {
+                const k = r.anio + '-' + r.bimestre;
+                consumosPorPeriodo.set(k, (consumosPorPeriodo.get(k) || 0) + (r.consumo_total || 0));
+            });
+            const data = corr.map(c => ({
+                ...c,
+                total_agua: consumosPorPeriodo.get(c.anio + '-' + c.bimestre) ?? c.total_agua,
+            }));
+            if (!data.length) {
+                Plotly.purge('chartCorr');
+                return;
+            }
+            Plotly.newPlot('chartCorr', [{
+                x: data.map(r => r.temp_promedio),
+                y: data.map(r => r.total_agua),
+                text: data.map(r => T('idx.g.bimAnio', { b: r.bimestre, a: r.anio })),
+                customdata: data.map(r => [r.total_lluvia, r.dias_ola_calor, r.dias_frio]),
+                mode: 'markers+text',
+                textposition: 'top center',
+                marker: {
+                    size: data.map(r => Math.max((r.total_lluvia || 0) / 5, 8)),
+                    sizemode: 'area',
+                    sizeref: 0.3,
+                    color: data.map(r => r.temp_promedio),
+                    colorscale: 'Teal',
+                    showscale: true,
+                    colorbar: { title: { text: T('idx.g.barraTemp') } },
+                },
+                hovertemplate:
+                    '<b>%{text}</b>' +
+                    `<br>${T('idx.g.hoverTemp')}: %{x:.1f} °C` +
+                    `<br>${T('idx.g.hoverAgua')}: %{y:,.0f} m³` +
+                    `<br>${T('idx.g.hoverLluvia')}: %{customdata[0]:,.1f} mm` +
+                    `<br>${T('idx.g.hoverCalor')}: %{customdata[1]}` +
+                    `<br>${T('idx.g.hoverFrio')}: %{customdata[2]}` +
+                    '<extra></extra>',
+            }], {
+                xaxis: { title: { text: T('idx.g.ejeTemp') }, automargin: true },
+                yaxis: { title: { text: T('idx.g.ejeConsumo') }, automargin: true },
+                margin: { t: 20, b: 50, l: 60, r: 20 },
+            }, { displayModeBar: false, responsive: true });
+        }
+
+        function graficarAlcaldia(rows) {
+            const porAlcaldia = {};
+            rows.forEach(r => {
+                if (!r.alcaldia) return;
+                porAlcaldia[r.alcaldia] = (porAlcaldia[r.alcaldia] || 0) + (r.consumo_total || 0);
+            });
+            const entries = Object.entries(porAlcaldia).sort((a, b) => b[1] - a[1]);
+            if (!entries.length) {
+                Plotly.purge('chartAlcaldia');
+                return;
+            }
+            Plotly.newPlot('chartAlcaldia', [{
+                type: 'bar',
+                x: entries.map(e => e[0]),
+                y: entries.map(e => e[1]),
+                /* sin color propio: lo pone el colorway del tema activo. El
+                   degradado anterior variaba el tono por posición, que no
+                   codifica nada; un solo color de marca dice lo mismo. */
+                hovertemplate: '<b>%{x}</b><br>%{y:,.2f} m³<extra></extra>',
+            }], {
+                xaxis: { tickangle: -30, automargin: true },
+                yaxis: { title: { text: T('idx.g.ejeConsumo') }, automargin: true },
+                margin: { t: 20, b: 90, l: 70, r: 20 },
+            }, { displayModeBar: false, responsive: true });
+        }
+
+        function cambiarPagina(delta) {
+            paginaActual = Math.max(0, paginaActual + delta);
+            cargarDatos();
+        }
+
+        function limpiarFiltros() {
+            ['fAnio', 'fBimestre', 'fAlcaldia', 'fIndice'].forEach(id => document.getElementById(id).value = '');
+            opcionTodas(document.getElementById('fColonia'));
+            paginaActual = 0;
+            cargarDatos();
+        }
+
+        async function inicializar() {
+            setStatus(T('idx.est.dataset'), 'loading');
+            try {
+                const r = await fetch(DATOS_URL);
+                if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                dataset = await r.json();
+                cargarCatalogos();
+                cargarDatos();
+            } catch (e) {
+                setStatus(T('idx.est.noSePudo', { url: DATOS_URL, msg: e.message }), 'error');
+            }
+        }
+
+        /* Cambio de idioma: se rehace lo que genera este script, no la página.
+           Los filtros se leen del propio marcado y la página actual vive en
+           paginaActual, así que ambos sobreviven; cargarDatos() vuelve a
+           dibujar tabla, KPIs, paginación y las tres gráficas ya traducidas. */
+        document.addEventListener('idiomacambiado', () => {
+            if (!dataset) return;
+            cargarCatalogos();
+            cargarDatos();
+        });
+
+        /* Plotly se carga con defer para no bloquear el primer pintado, así
+           que se ejecuta al terminar el análisis. consumo.json viene
+           precargado y resuelve en unos milisegundos, de modo que la carrera
+           la ganaba el fetch y graficar*() lanzaba «Plotly is not defined»:
+           salían la tabla y los KPI, pero ninguna gráfica. DOMContentLoaded
+           ocurre después de los scripts diferidos, así que ordena las dos. */
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', inicializar);
+        } else {
+            inicializar();
+        }
+    </script>
+<footer data-pie></footer>
+<script src="assets/nav.js"></script>
+<script src="assets/paginacion.js"></script>
+<script src="assets/atipicos.js"></script>
+</body>
+</html>

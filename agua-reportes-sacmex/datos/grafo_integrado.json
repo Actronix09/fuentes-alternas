@@ -1,0 +1,13 @@
+{
+  "triples_base": 148667,
+  "consumos_agregados": 10641,
+  "clima": 181,
+  "colonias": 1553,
+  "reportes_representados": 555752,
+  "agregados_reportes": 26711,
+  "sin_colonia": 4804,
+  "generado_utc": "2026-10-23T19:42:25.035267+00:00",
+  "granularidad": "colonia, año, tipo, clasificación y recurso",
+  "bytes": 14231508,
+  "sha256": "fcaa0243146ea9e657b20752be8f4cd2ca3b624e73280c73506392c7199ff29d"
+}

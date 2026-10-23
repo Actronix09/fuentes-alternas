@@ -1,0 +1,236 @@
+# =====================================================================
+# mapping.r2rml.ttl
+# R2RML: star schema (PostgreSQL) -> RDF knowledge graph
+# Vocabularies: RDF Data Cube (qb), GeoSPARQL (geo), SKOS, OWL-Time
+#
+# Artefact referenced in Section 4 of the ICOKG 2026 paper.
+#
+# IMPORTANT -- this mapping targets the ACTUAL schema of the warehouse, as
+# defined in warehouse/ddl/0_schema.sql by Omar Pulido Morales, extended by
+# warehouse/etl/2_geo.sql which restores the coordinates the original DDL
+# discarded. Table and column identifiers below are the real ones; do not
+# rename them without updating the DDL.
+#
+# Requires no PostGIS: the geometry is exposed as WKT by the view
+# v_ubicacion_geom, created in 2_geo.sql.
+#
+# Run with any R2RML engine:
+#   java -jar rmlmapper.jar -m mapping.r2rml.ttl -o kg.nt
+#   morph-kgc config.ini
+# =====================================================================
+
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix qb:   <http://purl.org/linked-data/cube#> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix agua: <https://w3id.org/cdmx/agua/> .
+
+# ---------------------------------------------------------------------
+# 1. Water-consumption observations (fact_consumo_agua -> qb:Observation)
+# ---------------------------------------------------------------------
+<#ObservationMap> a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "fact_consumo_agua" ] ;
+
+  rr:subjectMap [
+    rr:template "https://w3id.org/cdmx/agua/obs/{id_fact}" ;
+    rr:class    qb:Observation
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate qb:dataSet ;
+    rr:objectMap [ rr:constant agua:consumoCDMX ]
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate agua:period ;
+    rr:objectMap [ rr:parentTriplesMap <#TimeMap> ;
+                   rr:joinCondition [ rr:child "id_tiempo" ; rr:parent "id_tiempo" ] ]
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate agua:location ;
+    rr:objectMap [ rr:parentTriplesMap <#LocationMap> ;
+                   rr:joinCondition [ rr:child "id_ubicacion" ; rr:parent "id_ubicacion" ] ]
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate agua:developmentIndex ;
+    rr:objectMap [ rr:parentTriplesMap <#DevIndexMap> ;
+                   rr:joinCondition [ rr:child "id_indice_des" ; rr:parent "id_indice_des" ] ]
+  ] ;
+
+  # --- measures (cubic metres) ---
+  rr:predicateObjectMap [
+    rr:predicate agua:totalConsumption ;
+    rr:objectMap [ rr:column "consumo_total" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:averageConsumption ;
+    rr:objectMap [ rr:column "consumo_prom" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:domesticConsumption ;
+    rr:objectMap [ rr:column "consumo_total_dom" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:nonDomesticConsumption ;
+    rr:objectMap [ rr:column "consumo_total_no_dom" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:mixedConsumption ;
+    rr:objectMap [ rr:column "consumo_total_mixto" ; rr:datatype xsd:decimal ]
+  ] .
+
+# ---------------------------------------------------------------------
+# 2. Climate observations (fact_clima -> qb:Observation)
+#    The warehouse has two fact tables sharing dim_tiempo; the graph makes
+#    the shared temporal dimension explicit, which is what allows a single
+#    SPARQL query to join consumption against weather.
+# ---------------------------------------------------------------------
+<#ClimateMap> a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "fact_clima" ] ;
+
+  rr:subjectMap [
+    rr:template "https://w3id.org/cdmx/agua/clima/{id_fact_clima}" ;
+    rr:class    qb:Observation
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate qb:dataSet ;
+    rr:objectMap [ rr:constant agua:climaCDMX ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:period ;
+    rr:objectMap [ rr:parentTriplesMap <#TimeMap> ;
+                   rr:joinCondition [ rr:child "id_tiempo" ; rr:parent "id_tiempo" ] ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:maxTemperature ;
+    rr:objectMap [ rr:column "temp_maxima" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:minTemperature ;
+    rr:objectMap [ rr:column "temp_minima" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:meanTemperature ;
+    rr:objectMap [ rr:column "temp_promedio" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:meanHumidity ;
+    rr:objectMap [ rr:column "humedad_promedio" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:totalRainfall ;
+    rr:objectMap [ rr:column "lluvia_total" ; rr:datatype xsd:decimal ]
+  ] .
+
+# ---------------------------------------------------------------------
+# 3. Territory (dim_ubicacion -> geo:Feature)
+# ---------------------------------------------------------------------
+<#LocationMap> a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "dim_ubicacion" ] ;
+
+  rr:subjectMap [
+    rr:template "https://w3id.org/cdmx/agua/colonia/{id_ubicacion}" ;
+    rr:class    geo:Feature
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [ rr:column "colonia" ; rr:language "es" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:borough ;
+    rr:objectMap [ rr:template "https://w3id.org/cdmx/agua/alcaldia/{alcaldia}" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:latitude ;
+    rr:objectMap [ rr:column "latitud" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:longitude ;
+    rr:objectMap [ rr:column "longitud" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate geo:hasGeometry ;
+    rr:objectMap [ rr:template "https://w3id.org/cdmx/agua/geom/{id_ubicacion}" ]
+  ] .
+
+# Geometry from the view created by 2_geo.sql (WKT built by concatenation,
+# so no PostGIS is required).
+<#GeometryMap> a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "v_ubicacion_geom" ] ;
+  rr:subjectMap [
+    rr:template "https://w3id.org/cdmx/agua/geom/{id_ubicacion}" ;
+    rr:class    geo:Geometry
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate geo:asWKT ;
+    rr:objectMap [ rr:column "wkt" ; rr:datatype geo:wktLiteral ]
+  ] .
+
+# ---------------------------------------------------------------------
+# 4. Territorial proximity (dim_ubicacion_adyacencia -> agua:nearbyWithin1500m)
+#    Derived in 2_geo.sql by centroid proximity (<= 1.5 km), NOT by polygon
+#    topology: the warehouse stores points, not polygons. The paper must
+#    describe it as a proximity relation, which is what it is.
+# ---------------------------------------------------------------------
+<#AdjacencyMap> a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "dim_ubicacion_adyacencia" ] ;
+  rr:subjectMap [
+    rr:template "https://w3id.org/cdmx/agua/colonia/{id_origen}" ;
+    rr:class    geo:Feature
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:nearbyWithin1500m ;
+    rr:objectMap [ rr:template "https://w3id.org/cdmx/agua/colonia/{id_vecino}" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:distanceKm ;
+    rr:objectMap [ rr:column "distancia_km" ; rr:datatype xsd:decimal ]
+  ] .
+
+# ---------------------------------------------------------------------
+# 5. Time (dim_tiempo -> OWL-Time)
+# ---------------------------------------------------------------------
+<#TimeMap> a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "dim_tiempo" ] ;
+  rr:subjectMap [
+    rr:template "https://w3id.org/cdmx/agua/period/{id_tiempo}" ;
+    rr:class    time:TemporalEntity
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:year ;
+    rr:objectMap [ rr:column "anio" ; rr:datatype xsd:gYear ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:bimester ;
+    rr:objectMap [ rr:column "bimestre" ; rr:datatype xsd:integer ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate agua:date ;
+    rr:objectMap [ rr:column "fecha" ; rr:datatype xsd:date ]
+  ] .
+
+# ---------------------------------------------------------------------
+# 6. Development index (dim_indice_des -> SKOS ordinal scheme)
+#    Four members in the source scale: ALTO, MEDIO, BAJO, POPULAR.
+# ---------------------------------------------------------------------
+<#DevIndexMap> a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "dim_indice_des" ] ;
+  rr:subjectMap [
+    rr:template "https://w3id.org/cdmx/agua/devindex/{indice_des}" ;
+    rr:class    skos:Concept
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [ rr:column "indice_des" ; rr:language "es" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate skos:inScheme ;
+    rr:objectMap [ rr:constant agua:indiceDesarrollo ]
+  ] .

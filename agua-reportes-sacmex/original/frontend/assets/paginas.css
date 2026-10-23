@@ -1,0 +1,312 @@
+/* =====================================================================
+   paginas.css — mapea las clases originales del panel y del mapa
+   al sistema de diseño compartido.
+
+   No se tocó el marcado ni los identificadores de esas dos páginas: su
+   JavaScript sigue funcionando igual. Esta hoja sustituye a los estilos
+   incrustados que traían, para que las cuatro páginas se vean como un
+   solo producto y respondan al tema y al modo claro/oscuro.
+   ===================================================================== */
+
+.app-container{max-width:1440px; margin:0 auto; padding:1.25rem}
+
+/* la cabecera propia de cada página desaparece: la barra la pone nav.js */
+.app-container > .header{display:none}
+
+/* ---------------- filtros ---------------- */
+.filters{
+  background:var(--superficie); border:1px solid var(--borde); border-radius:var(--r-m);
+  box-shadow:var(--sombra-1); padding:1.1rem; margin-bottom:1.25rem;
+  display:grid; gap:.85rem; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  align-items:end;
+}
+.filter-group{min-width:0}
+.filters label{
+  display:block; font-size:.74rem; font-weight:600; letter-spacing:.03em;
+  color:var(--texto-2); margin-bottom:.3rem;
+}
+.filters select,.filters input{
+  width:100%; padding:.5rem .65rem; font:inherit; font-size:.88rem;
+  color:var(--texto); background:var(--superficie);
+  border:1px solid var(--borde); border-radius:var(--r-s); outline:none;
+}
+.filters select:focus,.filters input:focus{
+  border-color:var(--marca-600); box-shadow:0 0 0 3px var(--marca-100);
+}
+.actions{display:flex; gap:.5rem; flex-wrap:wrap}
+
+/* ---------------- botones ---------------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.4rem;
+  cursor:pointer; padding:.5rem .95rem; font:inherit; font-size:.87rem; font-weight:600;
+  border-radius:var(--r-s); border:1px solid transparent; transition:background .12s;
+}
+.btn-primary{color:#fff; background:var(--marca-700); border-color:var(--marca-700)}
+.btn-primary:hover{background:var(--marca-800)}
+.btn-secondary{color:var(--marca-700); background:transparent; border-color:var(--borde)}
+.btn-secondary:hover{background:var(--superficie-2)}
+
+/* ---------------- KPIs ---------------- */
+.kpis{display:grid; gap:.9rem; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); margin-bottom:1.25rem}
+.kpi{
+  background:var(--superficie); border:1px solid var(--borde); border-radius:var(--r-m);
+  padding:1rem 1.1rem; box-shadow:var(--sombra-1); position:relative; overflow:hidden;
+}
+.kpi::before{content:""; position:absolute; inset:0 auto 0 0; width:3px; background:var(--marca-600)}
+.kpi:nth-child(2)::before{background:var(--acento-500)}
+.kpi:nth-child(3)::before{background:var(--agua-500,var(--marca-500))}
+.kpi:nth-child(4)::before{background:var(--ok)}
+.kpi .label{font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; color:var(--texto-3); font-weight:600}
+.kpi .value{font-size:1.75rem; font-weight:680; letter-spacing:-.02em; margin-top:.2rem; font-variant-numeric:tabular-nums; color:var(--texto)}
+.kpi .sub{font-size:.78rem; color:var(--texto-2); margin-top:.1rem}
+
+/* ---------------- paneles y gráficas ---------------- */
+.panels{display:grid; gap:1.1rem; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); margin-bottom:1.25rem}
+.panel,.data-section,.detail-panel,.map-wrap,.top-list{
+  background:var(--superficie); border:1px solid var(--borde);
+  border-radius:var(--r-m); box-shadow:var(--sombra-1); overflow:hidden;
+}
+.panel h3,.data-section h3,.panel h2,.data-section h2,.detail-title{
+  margin:0; padding:.85rem 1.1rem; font-size:.98rem; font-weight:650; color:var(--texto);
+  border-bottom:1px solid var(--borde); background:var(--superficie);
+}
+.chart{
+  padding:.6rem;
+  min-height:400px;          /* Plotly no dibuja si el contenedor mide 0 */
+}
+.chart .js-plotly-plot,.chart .plot-container{width:100%}
+
+/* ---------------- tablas ---------------- */
+.table-wrap{overflow:auto; max-height:58vh}
+.data-section table{width:100%; border-collapse:collapse; font-size:.85rem}
+.data-section thead th{
+  position:sticky; top:0; z-index:2; text-align:left; white-space:nowrap;
+  background:var(--superficie-2); color:var(--texto-2);
+  font-size:.73rem; text-transform:uppercase; letter-spacing:.05em; font-weight:650;
+  padding:.55rem .7rem; border-bottom:1px solid var(--borde);
+}
+.data-section tbody td{
+  padding:.45rem .7rem; border-bottom:1px solid var(--borde);
+  font-variant-numeric:tabular-nums; color:var(--texto);
+}
+.data-section tbody tr:hover{background:var(--superficie-2)}
+
+.badge{
+  display:inline-block; padding:.15rem .5rem; border-radius:999px;
+  font-size:.72rem; font-weight:600; background:var(--superficie-2); color:var(--texto-2);
+}
+.badge-ALTO{background:var(--marca-100); color:var(--marca-700)}
+.badge-MEDIO{background:var(--acento-100); color:var(--acento-700)}
+.badge-BAJO{background:var(--superficie-2); color:var(--texto-2)}
+.badge-POPULAR{background:rgba(26,122,76,.12); color:var(--ok)}
+.badge-Alto{background:var(--marca-100); color:var(--marca-700)}
+.badge-Medio{background:var(--acento-100); color:var(--acento-700)}
+.badge-Bajo{background:var(--superficie-2); color:var(--texto-2)}
+
+.pagination{display:flex; align-items:center; gap:.75rem; padding:.75rem 1.1rem; border-top:1px solid var(--borde)}
+.pages{font-size:.83rem; color:var(--texto-2); font-variant-numeric:tabular-nums}
+.status{
+  display:none;                       /* el JS la muestra con .show */
+  background:var(--marca-100); border:1px solid var(--borde);
+  border-left:4px solid var(--marca-600); border-radius:var(--r-s);
+  padding:.7rem 1rem; margin-bottom:1.25rem; font-size:.86rem; color:var(--texto-2);
+}
+.status.show{display:block}
+.status.loading{background:var(--acento-100); border-left-color:var(--acento-500); color:var(--acento-700)}
+.status.error{background:rgba(161,29,43,.09); border-left-color:var(--error); color:var(--error)}
+
+/* ---------------- mapa ---------------- */
+.layout{display:grid; gap:1.1rem; grid-template-columns:minmax(0,3fr) minmax(0,1fr); align-items:start}
+@media (max-width:1000px){ .layout{grid-template-columns:1fr} }
+#map{width:100%; height:70vh; min-height:560px}
+.map-wrap{min-height:560px}
+.top-list{max-height:none}
+.top-list ol{max-height:280px; overflow-y:auto}
+.detail-panel{height:fit-content}
+.leaflet-container{background:var(--superficie-2); font:inherit}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{
+  background:var(--superficie); color:var(--texto); box-shadow:var(--sombra-3);
+}
+.popup-title{font-weight:650; color:var(--marca-700); margin-bottom:.3rem}
+.popup-section{margin-top:.4rem; padding-top:.4rem; border-top:1px solid var(--borde)}
+.popup-row{display:flex; justify-content:space-between; gap:1rem; font-size:.82rem}
+.popup-row .k{color:var(--texto-2)}
+.popup-row .v{font-variant-numeric:tabular-nums; font-weight:600}
+
+.selection-bar{
+  background:var(--superficie); border:1px solid var(--borde); border-left:3px solid var(--marca-600);
+  border-radius:var(--r-m); padding:.7rem 1rem; margin-bottom:1rem;
+  display:none;                       /* el JS la muestra con .show */
+  align-items:center; justify-content:space-between; gap:.6rem;
+  flex-wrap:wrap; font-size:.88rem;
+}
+.selection-bar.show{display:flex}
+.selection-bar .label{font-size:.78rem; color:var(--texto-3); margin-right:.4rem;
+  text-transform:none; letter-spacing:0; font-weight:500}
+.selection-bar .name{font-size:.95rem; font-weight:700; color:var(--marca-700)}
+.detail-grid{display:grid; gap:.7rem; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); padding:1.1rem}
+.detail-cell{background:var(--superficie-2); border-radius:var(--r-s); padding:.6rem .7rem}
+.detail-cell .label{font-size:.7rem; text-transform:uppercase; letter-spacing:.05em; color:var(--texto-3); font-weight:600}
+.detail-cell .val{font-size:1.05rem; font-weight:650; font-variant-numeric:tabular-nums; color:var(--texto)}
+.detail-name{font-size:1.1rem; font-weight:650; color:var(--marca-700)}
+
+.leaflet-popup-content{font-family:var(--sans); font-size:.82rem; margin:.7rem .9rem}
+.leaflet-interactive{cursor:pointer; transition:filter .12s}
+.leaflet-interactive:hover{filter:brightness(1.08)}
+.legend{padding:1.1rem; font-size:.82rem}
+.legend-row{display:flex; align-items:center; gap:.5rem; margin-bottom:.3rem; color:var(--texto-2)}
+.legend-swatch{width:16px; height:16px; border-radius:3px; flex:none; border:1px solid var(--borde)}
+
+.top-list ol{margin:0; padding:.6rem 1.1rem 1.1rem 2.2rem; font-size:.85rem; color:var(--texto)}
+.top-list li{margin-bottom:.3rem}
+.top-list .name{color:var(--texto)}
+.top-list .val{color:var(--texto-2); font-variant-numeric:tabular-nums}
+
+@media (max-width:640px){
+  .app-container{padding:.85rem}
+  .kpi .value{font-size:1.45rem}
+}
+
+/* ---------- pulido del panel y del mapa ---------- */
+.app-container{padding:1.5rem 1.4rem}
+.filters{position:relative}
+.filters::before{
+  content:""; position:absolute; inset:0 auto 0 0; width:3px;
+  border-radius:var(--r-m) 0 0 var(--r-m); background:var(--marca-600);
+}
+.kpi{transition:transform .16s, box-shadow .16s}
+.kpi:hover{transform:translateY(-1px); box-shadow:var(--sombra-2)}
+.panel,.data-section,.detail-panel,.map-wrap,.top-list{transition:border-color .16s}
+.panel:hover,.data-section:hover,.detail-panel:hover{border-color:var(--marca-200)}
+.panel h3,.data-section h3,.detail-title{
+  background:linear-gradient(var(--superficie-2),var(--superficie));
+  border-radius:var(--r-m) var(--r-m) 0 0;
+}
+.btn{box-shadow:var(--sombra-1)}
+.btn:active{transform:translateY(1px)}
+.data-section tbody tr{transition:background .1s}
+.data-section tbody tr:last-child td{border-bottom:0}
+.selection-bar{box-shadow:var(--sombra-1)}
+.detail-cell{transition:background .14s}
+.detail-cell:hover{background:var(--marca-100)}
+
+/* ---------- salto de página ---------- */
+.pagination{flex-wrap:wrap; gap:.75rem 1rem}
+.pages{display:flex; align-items:center; gap:.35rem}
+.pages button{
+  cursor:pointer; padding:.35rem .7rem; font:inherit; font-size:.83rem; font-weight:600;
+  color:var(--marca-700); background:var(--superficie);
+  border:1px solid var(--borde); border-radius:var(--r-s); transition:background .12s;
+}
+.pages button:hover:not(:disabled){background:var(--marca-100)}
+.pages button:disabled{opacity:.4; cursor:not-allowed}
+.salto{display:flex; align-items:center; gap:.4rem; font-size:.82rem; color:var(--texto-2)}
+.salto label{margin:0; font-size:.82rem; font-weight:500; color:var(--texto-2)}
+.salto input{
+  width:5.5rem; padding:.3rem .45rem; font:inherit; font-size:.83rem; text-align:center;
+  color:var(--texto); background:var(--superficie);
+  border:1px solid var(--borde); border-radius:var(--r-s); outline:none;
+}
+.salto input:focus{border-color:var(--marca-600); box-shadow:0 0 0 3px var(--marca-100)}
+.salto .de b{color:var(--texto); font-variant-numeric:tabular-nums}
+
+/* ---------- puente al explorador de vecindad ---------- */
+.ir-vecindad{
+  display:block; margin-top:.6rem; padding:.45rem .6rem; text-align:center;
+  font-size:.8rem; font-weight:600; border-radius:var(--r-s);
+  color:#fff; background:var(--marca-700); text-decoration:none;
+}
+.ir-vecindad:hover{background:var(--marca-800); text-decoration:none; color:#fff}
+
+/* ---------- desbordes de texto ----------
+   Los títulos de panel y las etiquetas de botón se cortaban cuando la
+   columna era estrecha. Se permite que envuelvan en vez de recortarse. */
+.panel h3,.data-section h3,.detail-title,.tarjeta-cab h2{
+  white-space:normal; overflow-wrap:anywhere; hyphens:auto; line-height:1.35;
+}
+.panel,.data-section,.detail-panel,.map-wrap,.top-list,.kpi,.filters{min-width:0}
+.panels,.layout,.kpis{min-width:0}
+.panels > *,.layout > *{min-width:0}
+
+.btn,.pages button,.ir-vecindad{white-space:normal; text-align:center; line-height:1.25}
+.actions{gap:.5rem}
+.actions .btn{flex:1 1 auto; min-width:0}
+
+.kpi .label{white-space:normal; overflow-wrap:anywhere}
+.kpi .value{overflow-wrap:anywhere}
+
+.detail-cell .label{white-space:normal; line-height:1.3}
+.detail-name{white-space:normal; overflow-wrap:anywhere}
+.selection-bar{row-gap:.4rem}
+.selection-bar .name{overflow-wrap:anywhere}
+
+.top-list li{overflow-wrap:anywhere}
+.legend-row{align-items:flex-start; line-height:1.35}
+
+.data-section thead th{white-space:normal; line-height:1.25}
+.data-section tbody td{overflow-wrap:anywhere}
+
+/* los paneles de gráfica necesitan ancho mínimo real para que Plotly
+   no comprima las etiquetas de los ejes */
+@media (min-width:1000px){
+  .panels{grid-template-columns:repeat(auto-fit,minmax(420px,1fr))}
+}
+
+/* nombres largos en el mapa y el panel */
+.detail-name,.selection-bar .name,.top-list .name{
+  white-space:nowrap; overflow-x:auto; overflow-y:hidden; scrollbar-width:thin;
+  display:block; max-width:100%; padding-bottom:2px;
+}
+.detail-name::-webkit-scrollbar,.selection-bar .name::-webkit-scrollbar,
+.top-list .name::-webkit-scrollbar{height:5px}
+.detail-name::-webkit-scrollbar-thumb,.selection-bar .name::-webkit-scrollbar-thumb,
+.top-list .name::-webkit-scrollbar-thumb{background:var(--marca-200); border-radius:3px}
+.data-section tbody td{overflow-wrap:normal; white-space:nowrap}
+.data-section tbody td:first-child,.data-section tbody td:nth-child(2){
+  max-width:16rem; overflow-x:auto; scrollbar-width:thin;
+}
+
+/* ---------- modulo de consumos atipicos ---------- */
+.atipicos{margin-bottom:1.25rem}
+.atip-cuerpo{padding:1.1rem}
+.atip-nota{margin:0 0 .8rem; font-size:.83rem; color:var(--texto-2); line-height:1.5}
+.atip-controles{display:flex; gap:.8rem; align-items:end; flex-wrap:wrap; margin-bottom:.9rem}
+.atip-controles label{margin:0 0 .25rem}
+.atip-controles select{min-width:180px; width:auto}
+.atip-sent{font-size:.78rem; font-weight:700; white-space:nowrap}
+.atip-sent.alto{color:var(--alerta)}
+.atip-sent.bajo{color:var(--marca-600)}
+.atip-por{font-size:.8rem; color:var(--texto-2); white-space:nowrap}
+.atipicos .tabla-env{max-height:none}
+
+/* tabla y controles del modulo de atipicos (no viven dentro de .data-section) */
+.atipicos table{width:100%; border-collapse:collapse; font-size:.85rem}
+.atipicos thead th{
+  position:sticky; top:0; z-index:2; text-align:left; white-space:normal; line-height:1.25;
+  background:var(--superficie-2); color:var(--texto-2);
+  font-size:.73rem; text-transform:uppercase; letter-spacing:.05em; font-weight:650;
+  padding:.55rem .7rem; border-bottom:1px solid var(--borde);
+}
+.atipicos tbody td{
+  padding:.5rem .7rem; border-bottom:1px solid var(--borde);
+  font-variant-numeric:tabular-nums; color:var(--texto); vertical-align:middle;
+}
+.atipicos tbody tr:hover{background:var(--superficie-2)}
+.atipicos tbody tr:last-child td{border-bottom:0}
+.atipicos td.num,.atipicos th.num{text-align:right}
+.atipicos tbody td:first-child{max-width:15rem}
+.atip-controles > div{display:flex; flex-direction:column}
+.atip-controles select{
+  padding:.5rem .65rem; font:inherit; font-size:.88rem; color:var(--texto);
+  background:var(--superficie); border:1px solid var(--borde);
+  border-radius:var(--r-s); outline:none;
+}
+.atip-controles select:focus{border-color:var(--marca-600); box-shadow:0 0 0 3px var(--marca-100)}
+
+.atip-cab{display:flex; align-items:center; justify-content:space-between; gap:1rem}
+.atip-toggle{
+  cursor:pointer; padding:.3rem .8rem; font:inherit; font-size:.8rem; font-weight:600;
+  color:var(--marca-700); background:var(--superficie);
+  border:1px solid var(--borde); border-radius:var(--r-s); white-space:nowrap;
+}
+.atip-toggle:hover{background:var(--marca-100)}
