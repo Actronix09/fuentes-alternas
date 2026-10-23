@@ -1,5 +1,5 @@
 {
-  "verificado_utc": "2026-10-23T19:37:43.510781+00:00",
+  "verificado_utc": "2026-10-23T22:23:11.913679+00:00",
   "pruebas": [
     {
       "prueba": "Agua conserva consumo y clima originales",
@@ -126,6 +126,123 @@
       "prueba": "Trazabilidad a registros originales y relaciones",
       "ok": true,
       "detalle": "MEX250202529784"
+    },
+    {
+      "prueba": "Sismos conserva dimensiones y hecho de impacto originales",
+      "ok": true,
+      "detalle": {
+        "sismos": 319592,
+        "tiempos": 319592,
+        "impacto": 196576
+      }
+    },
+    {
+      "prueba": "Cruce USGS enlazado a dim_sismos y dim_tiempo originales",
+      "ok": true,
+      "detalle": 0
+    },
+    {
+      "prueba": "Cruce integrado completo y sin duplicar",
+      "ok": true,
+      "detalle": {
+        "corregida": 49272,
+        "dw_original": 48159
+      }
+    },
+    {
+      "prueba": "Tehuantepec M8.2: fecha original recorrida y confirmada con UTC corregida",
+      "ok": true,
+      "detalle": {
+        "fecha_dw": "2017-09-07",
+        "fecha_utc": "2017-09-08",
+        "id_usgs": "us2000ahv0"
+      }
+    },
+    {
+      "prueba": "Sismos: la fecha corregida aumenta la confirmación M≥4.5",
+      "ok": true,
+      "detalle": {
+        "corregida": 81.7,
+        "dw_original": 61.3
+      }
+    },
+    {
+      "prueba": "API sismos /resumen",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /cobertura",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /serie",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /concordancia",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /histograma/delta_magnitud",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /dispersion",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /eventos",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /discrepancias",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /solo/usgs",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /solo/ssn",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /bitacora",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "API sismos /original",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "Sismos rechaza variantes desconocidas",
+      "ok": true,
+      "detalle": 400
+    },
+    {
+      "prueba": "Frontend original de sismos muestra el cruce desde PostgreSQL",
+      "ok": true,
+      "detalle": 200
+    },
+    {
+      "prueba": "Mapas económicos originales reciben las 32 entidades",
+      "ok": true,
+      "detalle": {
+        "std3": 32,
+        "aeconomica": 32
+      }
     }
   ],
   "archivos_fuente": {
@@ -134,16 +251,16 @@
       "sha256": "d540ef2f7665352fced631c816ae912ee5929fc8d19a59b8cbe43ea8ae543a69"
     },
     "agua-reportes-sacmex/datos/consumo.csv": {
-      "bytes": 10539826,
-      "sha256": "5b0abf9613a77cc46cebebd34236c89b57b37b1e588dc7963c278dbcb6c5f905"
+      "bytes": 10468723,
+      "sha256": "12aede58872a50856405ea24b6933e4b29b20d1de0e32d7463fabf855259b31d"
     },
     "agua-reportes-sacmex/datos/historico_2018_2021.csv": {
-      "bytes": 32456141,
-      "sha256": "baab0a98482c29adcf76cc9bb8cf9b5ea052336df2240569050533d595602105"
+      "bytes": 32201410,
+      "sha256": "2b9fb9d2022adf76d1fd5100944357c7896b4e97ad80591691913f09292994c9"
     },
     "agua-reportes-sacmex/datos/incidentes_2022_2024.csv": {
-      "bytes": 53023436,
-      "sha256": "03dd9a0afe3cffaa4f8c6dd2d45e85e6da916333e34b3192a74e87d0bba79d3a"
+      "bytes": 52709679,
+      "sha256": "b4598427aa4669259678428946a84d94341d2372d312f9c5fcc79ea35be6d809"
     },
     "obra-publica-srft/datos/contratos_temascaltepec.csv": {
       "bytes": 51246,
@@ -164,6 +281,202 @@
     "obra-publica-srft/datos/metas_avances_temascaltepec.csv": {
       "bytes": 3851,
       "sha256": "1947bf837e911acfd86d48a4632ee186b50c9b0d318f51ac6d35afd3fc4a7401"
+    },
+    "sismos-usgs/datos/ssn/8569667_02-dim_tiempo.sql": {
+      "bytes": 43982400,
+      "sha256": "2ba7ffa81738efd5acb09282bc5dae39173031ea8e42de9b4e1e96bba9bc9679"
+    },
+    "sismos-usgs/datos/ssn/8569667_03-dim_sismos.sql": {
+      "bytes": 72726451,
+      "sha256": "cb1b2314e71dcd7df56ee0974ea708be156a3fedd7727440c8a340c4f042f2aa"
+    },
+    "sismos-usgs/datos/ssn/8569667_05-fact_impacto_sismos_imputed.sql": {
+      "bytes": 59180686,
+      "sha256": "8a8f2057c08a62ad0621481aef9d7fe225d74258bcd844e481987fff65b19f5c"
+    },
+    "sismos-usgs/datos/usgs/usgs_19000101_19100101_m3.5.csv": {
+      "bytes": 4170,
+      "sha256": "3a5d71a93dcfaf1df00be6f6da6dd93b1a3d64b46608498b2a5afe5990f0cdaa"
+    },
+    "sismos-usgs/datos/usgs/usgs_19100101_19200101_m3.5.csv": {
+      "bytes": 6245,
+      "sha256": "6bb56b52d635e10f2da7d9bec068aba5627e3cfd8019d9ba7af6b6d56bbc7343"
+    },
+    "sismos-usgs/datos/usgs/usgs_19200101_19300101_m3.5.csv": {
+      "bytes": 10451,
+      "sha256": "b878895eab6d11e64d1f617f2a756dabde82006cbe97e869c354be4107873ea1"
+    },
+    "sismos-usgs/datos/usgs/usgs_19300101_19400101_m3.5.csv": {
+      "bytes": 59524,
+      "sha256": "3e2894e7338aeb37f27eb8aeeccca3db2400ab4ed0f805cc62ac218bc004c3c6"
+    },
+    "sismos-usgs/datos/usgs/usgs_19400101_19500101_m3.5.csv": {
+      "bytes": 41083,
+      "sha256": "3113b9ff3029ed2aae78c8716dbd0bacdc0fac48635bb7ee54e15daa582b2024"
+    },
+    "sismos-usgs/datos/usgs/usgs_19500101_19600101_m3.5.csv": {
+      "bytes": 119109,
+      "sha256": "e54e2ba1a057781320449f6330791a779ab83e205592613fd788567a78ba4705"
+    },
+    "sismos-usgs/datos/usgs/usgs_19600101_19700101_m3.5.csv": {
+      "bytes": 67918,
+      "sha256": "db4b8186547ebeb5f54a88b970ccf760f3796554eb464ad953aaf50cb687f5f5"
+    },
+    "sismos-usgs/datos/usgs/usgs_19700101_19800101_m3.5.csv": {
+      "bytes": 206776,
+      "sha256": "0fbea020d2cfacac489a7d859c5691d7bf464094e16079a05b92474de1c74740"
+    },
+    "sismos-usgs/datos/usgs/usgs_19800101_19900101_m3.5.csv": {
+      "bytes": 303630,
+      "sha256": "a61877613914b2db2d3cb656ed960f7827789a178420c9e7c9789dd962e855f6"
+    },
+    "sismos-usgs/datos/usgs/usgs_19900101_19910101_m3.5.csv": {
+      "bytes": 24458,
+      "sha256": "9de7d106c3d67a417bc3f1fe5904316809042ce5a52dd4ec80018bb55dec448d"
+    },
+    "sismos-usgs/datos/usgs/usgs_19910101_19920101_m3.5.csv": {
+      "bytes": 35342,
+      "sha256": "9adcd12e6f7d42f9c530d4917f5ef1803e6e1a65a49708d63720e5476044891e"
+    },
+    "sismos-usgs/datos/usgs/usgs_19920101_19930101_m3.5.csv": {
+      "bytes": 34129,
+      "sha256": "250fbf6c389aa168dd93baebda365fd3aaa55c005d354a8bc3fcb78a684c36e1"
+    },
+    "sismos-usgs/datos/usgs/usgs_19930101_19940101_m3.5.csv": {
+      "bytes": 55601,
+      "sha256": "cad3e67e284f73d689a79a0ef526bdc11d4f265c2fb8fc5c2c83991b47494077"
+    },
+    "sismos-usgs/datos/usgs/usgs_19940101_19950101_m3.5.csv": {
+      "bytes": 35543,
+      "sha256": "285446cc46ab10f5c4442a51bc8e2720d143b2718d518cea073d496cf639e7a8"
+    },
+    "sismos-usgs/datos/usgs/usgs_19950101_19960101_m3.5.csv": {
+      "bytes": 41903,
+      "sha256": "22ae253b20963c09e817f8848c7f1d665b7f3042f9acdaf0490db2857b5e80a3"
+    },
+    "sismos-usgs/datos/usgs/usgs_19960101_19970101_m3.5.csv": {
+      "bytes": 43112,
+      "sha256": "9c2e30a05b9e8e0c9bf4c2f2899bf9133aa38119d6b798db4499bfcc99f97069"
+    },
+    "sismos-usgs/datos/usgs/usgs_19970101_19980101_m3.5.csv": {
+      "bytes": 44337,
+      "sha256": "acc0014006076aedfa0a3f490bf0e68503abf0d73d3c25bacec9c725425dc1b0"
+    },
+    "sismos-usgs/datos/usgs/usgs_19980101_19990101_m3.5.csv": {
+      "bytes": 90285,
+      "sha256": "3cd1836534aa956275a79ce04658834ef3c8c999191f04b8742c835e5269a639"
+    },
+    "sismos-usgs/datos/usgs/usgs_19990101_20000101_m3.5.csv": {
+      "bytes": 103383,
+      "sha256": "038c0fad9d98858cb3af6768f805d2e675fa1f845d1c510d74163edfc8d6f151"
+    },
+    "sismos-usgs/datos/usgs/usgs_20000101_20010101_m3.5.csv": {
+      "bytes": 101809,
+      "sha256": "ac61a2afe4a7fb0c00d3d5ab1cc37f232882cf41bf66352d37b84318f4b9c8f6"
+    },
+    "sismos-usgs/datos/usgs/usgs_20010101_20020101_m3.5.csv": {
+      "bytes": 137955,
+      "sha256": "ee60b6dde7042d0d331e117c383cdc4ee7e79fdd4f877b635d0622422c7325cc"
+    },
+    "sismos-usgs/datos/usgs/usgs_20020101_20030101_m3.5.csv": {
+      "bytes": 181585,
+      "sha256": "089ecec578b4bab9fcd0cb391c81ac56d0ac784aeab9e68feae88c9e96d772a9"
+    },
+    "sismos-usgs/datos/usgs/usgs_20030101_20040101_m3.5.csv": {
+      "bytes": 148282,
+      "sha256": "b5a8839bcdac5ae5ee06dcea83e2fc34450963c006ed6b85a55947b8a2aef865"
+    },
+    "sismos-usgs/datos/usgs/usgs_20040101_20050101_m3.5.csv": {
+      "bytes": 154535,
+      "sha256": "95481e2a02b9a84009609223e2d83fa3e6b1c8fe4ab0000a82771a22f594caa4"
+    },
+    "sismos-usgs/datos/usgs/usgs_20050101_20060101_m3.5.csv": {
+      "bytes": 144040,
+      "sha256": "7a6e4f28da7ddd4d11b0ab0302d50b5e6a8918aff39319d40896e8acd7f7e5ba"
+    },
+    "sismos-usgs/datos/usgs/usgs_20060101_20070101_m3.5.csv": {
+      "bytes": 149346,
+      "sha256": "5cc1f4a551aee847a607da8b8c3191fb6e35ab865cb927724bee03b9eb81cc74"
+    },
+    "sismos-usgs/datos/usgs/usgs_20070101_20080101_m3.5.csv": {
+      "bytes": 195613,
+      "sha256": "578158abbd105127a8c46409d0016200d270990d35bd4b2ec052b3acb773bd30"
+    },
+    "sismos-usgs/datos/usgs/usgs_20080101_20090101_m3.5.csv": {
+      "bytes": 225698,
+      "sha256": "b59c4c91507c6657c0b1acc04fcffef15546eb69b41e502c8e3c9ef9a6368e85"
+    },
+    "sismos-usgs/datos/usgs/usgs_20090101_20100101_m3.5.csv": {
+      "bytes": 61205,
+      "sha256": "ddc7cd00759ceea5f0cf69542b6975df5d316d2f529a58120777a383a14df5e7"
+    },
+    "sismos-usgs/datos/usgs/usgs_20100101_20110101_m3.5.csv": {
+      "bytes": 164511,
+      "sha256": "91d9448db38f96c38ea3fea9d904c031588e0f0be18095fe4c6c14bb3f1ac617"
+    },
+    "sismos-usgs/datos/usgs/usgs_20110101_20120101_m3.5.csv": {
+      "bytes": 111219,
+      "sha256": "07d52ae3f2b11b4afa13c85b8130ff67dee37f72317a77fb8abc6c01e363a482"
+    },
+    "sismos-usgs/datos/usgs/usgs_20120101_20130101_m3.5.csv": {
+      "bytes": 159512,
+      "sha256": "aa56e14dcc3971680acb23db6639fc7a73065ea5e362fe993db21db12a4690af"
+    },
+    "sismos-usgs/datos/usgs/usgs_20130101_20140101_m3.5.csv": {
+      "bytes": 135830,
+      "sha256": "6f0b1ed476c64fb6e6c96a9dabd088cc685a521168f8e0a766924ccfee6508a1"
+    },
+    "sismos-usgs/datos/usgs/usgs_20140101_20150101_m3.5.csv": {
+      "bytes": 101445,
+      "sha256": "742f0032435a4db125beb65d69cf8d6fe78f85b85a1147e8088fa0ce980ee0c9"
+    },
+    "sismos-usgs/datos/usgs/usgs_20150101_20160101_m3.5.csv": {
+      "bytes": 59925,
+      "sha256": "6e7bb21a3a846a91dab003457d3421fb8caa0f5ac591da34b050d1bf5ae21f18"
+    },
+    "sismos-usgs/datos/usgs/usgs_20160101_20170101_m3.5.csv": {
+      "bytes": 63494,
+      "sha256": "0bd1626d76ee936a57c94bc30e2614288aa55eb4cd21f0e23da21a2651442607"
+    },
+    "sismos-usgs/datos/usgs/usgs_20170101_20180101_m3.5.csv": {
+      "bytes": 156764,
+      "sha256": "7cc8cdf7faa8b199b7078f002eb485096a07599f8bcd3194f583ce2701df649c"
+    },
+    "sismos-usgs/datos/usgs/usgs_20180101_20190101_m3.5.csv": {
+      "bytes": 62868,
+      "sha256": "5fb44aa565b425dc8cfc2eeaf40d5d8b51ea9636a602c8fd121e8239fad6ef16"
+    },
+    "sismos-usgs/datos/usgs/usgs_20190101_20200101_m3.5.csv": {
+      "bytes": 57189,
+      "sha256": "4ecef825e22d05efb3d7d4d168f602a577a99edcbe2616f85a268210c4c51e55"
+    },
+    "sismos-usgs/datos/usgs/usgs_20200101_20210101_m3.5.csv": {
+      "bytes": 60676,
+      "sha256": "303726f9f410562de52caebe0c868cc9d28d3b197de040e1454e89762e5e25d3"
+    },
+    "sismos-usgs/datos/usgs/usgs_20210101_20220101_m3.5.csv": {
+      "bytes": 75803,
+      "sha256": "80bbd618363c8f04659495ce0670f7c4df778887714f9a2e69297710d9529e0e"
+    },
+    "sismos-usgs/datos/usgs/usgs_20220101_20230101_m3.5.csv": {
+      "bytes": 76853,
+      "sha256": "8eba5934b29b4c709defa4c9d3c2041281b26fa64eadb73913315a7d9790691c"
+    },
+    "sismos-usgs/datos/usgs/usgs_20230101_20240101_m3.5.csv": {
+      "bytes": 73730,
+      "sha256": "9ac6735e60b0828f767d92296b3a1679878f5e3a019d10c9609c5b2bf23e5e0b"
+    },
+    "sismos-usgs/datos/usgs/usgs_20240101_20250101_m3.5.csv": {
+      "bytes": 77126,
+      "sha256": "643abe5c9e74b7572d5a515edd0ec61dc428138efe4221e815042fe3895e058f"
+    },
+    "sismos-usgs/datos/usgs/usgs_20250101_20260101_m3.5.csv": {
+      "bytes": 56517,
+      "sha256": "cab4b6875bc6d9421dbefdadad2643d257ca09173f57c545a8cb014c8016b7e4"
+    },
+    "sismos-usgs/datos/usgs/usgs_20260101_vigente_m3.5.csv": {
+      "bytes": 82664,
+      "sha256": "3011e9fa8e04256619c264b3309caa406e51418c43ed2dba21567bb1eabdc3f3"
     }
   }
 }

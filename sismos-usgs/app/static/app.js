@@ -367,8 +367,23 @@ async function cargarTodo() {
   });
 }
 
+async function pintarIntegracion() {
+  try {
+    const o = await api('/api/original');
+    document.getElementById('integracion-original').textContent =
+      `${num(o.sismos_original)} sismos, ${num(o.impacto_original)} hechos de impacto, ` +
+      `${num(o.zonas_original)} zonas y ${num(o.economia_original)} registros económicos originales. ` +
+      `${num(o.sismos_cruzados)} sismos del SSN cruzados con ComCat: ${num(o.confirmados_usgs)} confirmados ` +
+      `(${num(o.confirmados_independientes)} por redes independientes del SSN).`;
+    document.getElementById('enlace-original').href = o.url_original + '/';
+  } catch (e) {
+    document.getElementById('integracion-original').textContent = 'No se pudo consultar el DW original: ' + e.message;
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   configurarChart();
+  pintarIntegracion();
   iniciarMapa();
   pintarPuntosLeyenda();
   alCambiarTema(() => {

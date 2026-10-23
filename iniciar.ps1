@@ -21,11 +21,14 @@ if ($LASTEXITCODE -ne 0) { throw 'Abre Docker Desktop y vuelve a ejecutar este s
 if ($LASTEXITCODE -ne 0) { throw 'No arrancó PostgreSQL de agua.' }
 & docker compose -f obra-publica-srft/compose.yml up -d db
 if ($LASTEXITCODE -ne 0) { throw 'No arrancó PostgreSQL de obras.' }
+& docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml up -d db
+if ($LASTEXITCODE -ne 0) { throw 'No arrancó PostgreSQL de sismos.' }
 $env:FORZAR_ETL = if ($Recargar) { '1' } else { '0' }
 
 $servicios = @(
     @{Nombre='agua';Carpeta='agua-reportes-sacmex';Puerto=8092;Dsn='postgresql://agua:agua_local@localhost:5442/agua_dw'},
-    @{Nombre='obras';Carpeta='obra-publica-srft';Puerto=8093;Dsn='postgresql://obras:obras_local@localhost:5443/obras_publicas'}
+    @{Nombre='obras';Carpeta='obra-publica-srft';Puerto=8093;Dsn='postgresql://obras:obras_local@localhost:5443/obras_publicas'},
+    @{Nombre='sismos';Carpeta='sismos-usgs';Puerto=8091;Dsn='postgresql://sismos:sismos_local@localhost:5441/sismos_dw'}
 )
 foreach ($servicio in $servicios) {
     $env:DATABASE_URL = $servicio.Dsn
@@ -52,4 +55,10 @@ foreach ($servicio in $servicios) {
     }
     Write-Host "LISTO: $url"
 }
-Write-Host 'Datos cargados. No se ejecutó ningún commit ni push.'
+if (-not $SoloDatos) {
+    # El frontend original de sismos es PHP: se sirve en Docker sobre la misma base.
+    & docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml up -d --build --no-deps original
+    if ($LASTEXITCODE -ne 0) { throw 'No arrancó la interfaz original de sismos.' }
+    Write-Host 'LISTO: http://127.0.0.1:8094'
+}
+Write-Host 'Datos cargados.'

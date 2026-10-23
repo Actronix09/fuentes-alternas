@@ -2,7 +2,7 @@
 
 ## Ejecutar
 
-En Windows, usar `iniciar-docker.ps1` desde la raíz. Abre http://127.0.0.1:8093.
+En Windows, usar `iniciar-docker.ps1` desde la raíz; en Linux o macOS, `./iniciar.sh`. Abre http://127.0.0.1:8093.
 
 Alternativa completamente en Docker, desde esta carpeta:
 

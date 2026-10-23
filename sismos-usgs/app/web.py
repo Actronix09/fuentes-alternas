@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import datetime as dt
 import decimal
+import os
 
 from flask import Flask, abort, jsonify, render_template, request
 from flask.json.provider import DefaultJSONProvider
@@ -33,6 +34,7 @@ app = Flask(__name__)
 app.json = ProveedorJSON(app)
 
 LIMITE_MAPA = 4000
+URL_ORIGINAL = os.environ.get("URL_ORIGINAL", "http://127.0.0.1:8094")
 
 
 def consulta(sql: str, params: dict | list | None = None) -> list[dict]:
@@ -103,6 +105,23 @@ def inicio():
 def salud():
     consulta("SELECT 1")
     return {"ok": True}
+
+
+@app.get("/api/original")
+def original():
+    """Evidencia de la ampliación del DW original del paper (esquema public)."""
+    return jsonify({**consulta("""
+        SELECT (SELECT count(*) FROM public.dim_sismos)                  AS sismos_original,
+               (SELECT count(*) FROM public.dim_tiempo)                  AS tiempos_original,
+               (SELECT count(*) FROM public.fact_impacto_sismos_imputed) AS impacto_original,
+               (SELECT count(*) FROM public.dim_zonas)                   AS zonas_original,
+               (SELECT count(*) FROM public.dim_economia)                AS economia_original,
+               (SELECT count(*) FROM public.v_cruce_usgs)                AS sismos_cruzados,
+               (SELECT count(*) FROM public.v_cruce_usgs WHERE confirmado_usgs) AS confirmados_usgs,
+               (SELECT count(*) FROM public.v_cruce_usgs
+                 WHERE confirmado_usgs AND independiente)                AS confirmados_independientes,
+               (SELECT count(*) FROM public.v_cruce_usgs WHERE fecha_corregida) AS con_fecha_corregida""")[0],
+                    "url_original": URL_ORIGINAL})
 
 
 @app.get("/api/resumen")

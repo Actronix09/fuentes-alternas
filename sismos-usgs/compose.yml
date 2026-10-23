@@ -5,6 +5,7 @@
 #      docker compose up -d --build
 #      docker compose logs -f etl        # avance del pipeline
 #  Página:        http://localhost:8091
+#  Original:      http://localhost:8094  (frontend PHP del paper sobre la misma base)
 #  PostgreSQL:    localhost:5441  (usuario/contraseña en .env.example)
 #
 #  Recargar con sismos recientes:   FORZAR_ETL=1 docker compose up etl
@@ -64,6 +65,7 @@ services:
     command: ["python", "etl.py"]
     volumes:
       - ./datos:/datos
+      - ./original:/original:ro
     depends_on:
       db:
         condition: service_healthy
@@ -76,6 +78,26 @@ services:
     command: ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "2", "--timeout", "120", "web:app"]
     ports:
       - "${WEB_PORT:-8091}:8000"
+    depends_on:
+      etl:
+        condition: service_completed_successfully
+
+  # Frontend PHP original del paper, conectado al DW original ampliado (esquema public).
+  original:
+    build: ./original
+    image: fa-sismos-original
+    container_name: fa-sismos-original
+    restart: unless-stopped
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_DB: ${POSTGRES_DB:-sismos_dw}
+      POSTGRES_USER: ${POSTGRES_USER:-sismos}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sismos_local}
+      URL_VALIDACION: http://127.0.0.1:${WEB_PORT:-8091}
+    volumes:
+      - ./original/src:/var/www/html:ro
+    ports:
+      - "${ORIGINAL_PORT:-8094}:80"
     depends_on:
       etl:
         condition: service_completed_successfully

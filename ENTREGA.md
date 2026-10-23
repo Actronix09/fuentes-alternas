@@ -1,6 +1,6 @@
 # Cómo presentar la práctica
 
-## Demostración de 3–5 minutos
+## Demostración de 4–6 minutos
 
 1. Abrir agua en http://127.0.0.1:8092. Mostrar la tarjeta de integración: consumo y clima originales más 555,752 reportes reales.
 2. Abrir «interfaz original del artículo». Explicar que ahora su `consumo.json` lo construye el backend desde PostgreSQL. Regresar al módulo de reportes.
@@ -11,12 +11,23 @@
 7. Mostrar `obra-publica-srft/datos/procedencia.json`: URL oficial, filtro y hashes. Enseñar `evidencia/verificacion.json` y las consultas siguientes.
 8. Abrir http://127.0.0.1:8093/expedientes/. Elegir un folio y mostrar contratos, números administrativos, fuentes de financiamiento y campos no publicados. Explicar que los supervisores y firmas desconocidos no se inventan.
 9. Abrir http://127.0.0.1:8092/sistema/grafo.html. Ejecutar «Reportes reales por año» y «Reportes sin colonia asignable». La suma de conteos conserva los 555,752 reportes; los no ubicados suman 4,804.
+10. Abrir sismos en http://127.0.0.1:8091. Mostrar la tarjeta de ampliación del DW original y el hallazgo de fechas: con M ≥ 4.5 y «Todas» las soluciones, la confirmación pasa de 64.2 % con las fechas del DW a 83.5 % con las corregidas.
+11. Abrir la interfaz original en http://127.0.0.1:8094, entrar a «Mapa de sismos con confirmación USGS», elegir 2017 y magnitud 8. El M8.2 de Tehuantepec aparece el 7 de septiembre (fecha del DW) y su ventana indica que ComCat lo confirma a 36.4 km.
 
 ## Explicación breve
 
-«Ampliamos los data warehouses de los proyectos originales con fuentes oficiales. Para agua integramos reportes ciudadanos de SACMEX y conservamos consumo y clima del modelo anterior. Para obras descargamos el informe definitivo 2025 de SHCP, filtramos Temascaltepec y añadimos 59 obras reales al warehouse original. Los ETL extraen, validan y transforman los CSV, registran la carga y permiten rastrear cada dato. Los backend consultan las bases locales y las interfaces visualizan esos resultados. No generamos registros ficticios.»
+«Ampliamos los data warehouses de los proyectos originales con fuentes oficiales. Para sismos cargamos el DW del artículo y lo cruzamos con el catálogo ComCat del USGS. Así encontramos que el DW recorre un día la fecha de casi la cuarta parte de los sismos. Para agua integramos reportes ciudadanos de SACMEX y conservamos consumo y clima del modelo anterior. Para obras descargamos el informe definitivo 2025 de SHCP, filtramos Temascaltepec y añadimos 59 obras reales al warehouse original. Los ETL extraen, validan y transforman los CSV, registran la carga y permiten rastrear cada dato. Los backend consultan las bases locales y las interfaces visualizan esos resultados. No generamos registros ficticios.»
 
 ## Evidencia de base de datos
+
+Sismos:
+
+```powershell
+docker exec fa-sismos-db psql -U sismos -d sismos_dw -c "SELECT count(*) FROM public.dim_sismos;" -c "SELECT count(*) FROM public.fact_impacto_sismos_imputed;"
+docker exec fa-sismos-db psql -U sismos -d sismos_dw -c "SELECT variante, resultado, count(*) FROM public.fact_cruce_usgs GROUP BY 1,2 ORDER BY 1,2;"
+```
+
+Resultados esperados: **319,592 sismos** y **196,576 hechos de impacto** originales. Con la variante `corregida`, **18,489 sismos confirmados** y **30,783 solo en el SSN** (M ≥ 4.0). Con la variante `dw_original`, 14,084 y 34,075. Los conteos de ComCat pueden crecer un poco al recargar, porque el año en curso se vuelve a descargar.
 
 Agua:
 
@@ -46,6 +57,9 @@ Resultados esperados: **59 obras**, **58,834,555.00 aprobados**, **58,803,710.52
 
 ## Qué sí y qué no afirmar
 
+- Sí: el DW original de sismos se conserva intacto. El cruce con USGS se añade como un hecho nuevo, enlazado a sus dimensiones.
+- No: que todos los pares son una confirmación independiente. Cuando la solución de ComCat viene de la red `UNM` (UNAM), la aportó el propio SSN; el tablero las separa.
+- No: que la fecha corregida modifica el DW del artículo. Se conservan ambas marcas y se comparan.
 - Sí: los datos son descargables, se conservan CSV, se integran a dimensiones de los modelos originales y se visualizan con consultas al backend.
 - Sí: la carga repetida se comprueba sin duplicar los reportes ni los folios de obras.
 - No: que los reportes ciudadanos prueban físicamente una fuga o que el gasto reportado demuestra la ejecución material de una obra.
@@ -56,4 +70,4 @@ Resultados esperados: **59 obras**, **58,834,555.00 aprobados**, **58,803,710.52
 
 ## Antes de exponer
 
-Abrir Docker Desktop, ejecutar `iniciar-docker.ps1` y comprobar ambas páginas. Si está disponible el entorno Python local, ejecutar también `python verificar.py`. Conservar la carpeta completa: incluye los CSV y las copias atribuidas de los componentes originales. No hace falta realizar push para presentar localmente.
+Abrir Docker Desktop, ejecutar `iniciar-docker.ps1` (o `./iniciar.sh` en Linux) y comprobar las páginas 8091–8094. Si está disponible el entorno Python local, ejecutar también `python verificar.py`. Conservar la carpeta completa: incluye los CSV y las copias atribuidas de los componentes originales.

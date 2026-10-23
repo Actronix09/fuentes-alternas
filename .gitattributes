@@ -3,3 +3,7 @@
 **/datos/** -whitespace
 # Los componentes originales conservan el formato de sus autores.
 **/original/** whitespace=-blank-at-eol,-blank-at-eof
+# Los SQL del DW de sismos también se verifican por hash.
+sismos-usgs/datos/ssn/*.sql -text -whitespace
+# Los scripts de shell se ejecutan en Linux, macOS o WSL: siempre con LF.
+*.sh text eol=lf

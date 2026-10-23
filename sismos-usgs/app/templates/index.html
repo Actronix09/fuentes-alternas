@@ -47,6 +47,16 @@
 
   <section class="kpis" id="kpis" aria-live="polite"></section>
 
+  <section class="panel" aria-label="Integración con el proyecto original">
+    <h2>Ampliación del data warehouse original</h2>
+    <p id="integracion-original">Comprobando el DW original y el cruce integrado…</p>
+    <p class="nota">Se conservan en el esquema <code>public</code> las dimensiones y el hecho de impacto del paper,
+      cargados desde sus propios scripts. El cruce con ComCat se añade como <code>public.fact_cruce_usgs</code>,
+      enlazado por claves foráneas a <code>dim_sismos</code> y <code>dim_tiempo</code> originales.
+      <a href="/api/original" target="_blank" rel="noopener">Consultar evidencia en la API</a>.</p>
+    <p><a id="enlace-original" href="http://127.0.0.1:8094/">Abrir la interfaz original del artículo, conectada a PostgreSQL →</a></p>
+  </section>
+
   <section class="panel" id="panel-diagnostico">
     <h2>Hallazgo: el DW del paper recorre un día la fecha de los sismos nocturnos</h2>
     <p class="nota">El DW une la <strong>fecha local</strong> del SSN con la <strong>hora UTC</strong>. Entre las 18:00 y las

@@ -6,8 +6,8 @@
   "reportes_representados": 555752,
   "agregados_reportes": 26711,
   "sin_colonia": 4804,
-  "generado_utc": "2026-10-23T19:42:25.035267+00:00",
+  "generado_utc": "2026-10-23T22:32:31.827384+00:00",
   "granularidad": "colonia, año, tipo, clasificación y recurso",
   "bytes": 14231508,
-  "sha256": "fcaa0243146ea9e657b20752be8f4cd2ca3b624e73280c73506392c7199ff29d"
+  "sha256": "0b09419bbb26a36caf42c571bccaf07f473794984f08e54bbbe85f6c3c015dab"
 }

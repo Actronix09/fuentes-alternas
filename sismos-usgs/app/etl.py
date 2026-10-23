@@ -9,6 +9,8 @@ Fases (las mismas del pipeline del paper "Cuando México tiembla"):
                      sismos (sin explosiones de cantera) y sin duplicados.
   3. Carga           COPY masivo a las tablas staging.
   4. Transformación  SQL: dimensiones, emparejamiento uno a uno y hechos.
+  5. Integración     El DW original del paper se carga en public y recibe el
+                     hecho public.fact_cruce_usgs (integrar_original.py).
 
 Cada paso queda en etl.bitacora con el número de registros afectados.
 """
@@ -22,8 +24,11 @@ import sys
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import requests
+
 from comun import (DIR_DATOS, Bitacora, conectar, descargar, esperar_bd, log,
                    nueva_sesion, ya_cargado)
+from integrar_original import integrar_original
 
 
 def _float(nombre: str, defecto: float) -> float:
@@ -131,9 +136,19 @@ def extraer_usgs(registrar: Bitacora, hoy: dt.date) -> list[Path]:
             archivos.append(destino)
             continue
 
-        r = sesion.get(f"{FDSN}/count", params={**filtros_fdsn(ini, fin), "format": "geojson"}, timeout=60)
-        r.raise_for_status()
-        n = r.json()["count"]
+        try:
+            r = sesion.get(f"{FDSN}/count", params={**filtros_fdsn(ini, fin), "format": "geojson"}, timeout=60)
+            r.raise_for_status()
+            n = r.json()["count"]
+        except (requests.RequestException, ValueError) as e:
+            # Sin conexión con el USGS se reutiliza el último bloque descargado del periodo en curso.
+            if not destino.exists():
+                raise
+            log.warning("No se pudo actualizar %s (%s); se usa la copia local", destino.name, e)
+            registrar("extraccion", f"USGS {ini} → {fin}: sin conexión, se usa la última copia local", None,
+                      destino.name)
+            archivos.append(destino)
+            continue
         consultas += 1
         if n >= LIMITE_API:
             medio = ini + (fin - ini) / 2
@@ -157,11 +172,11 @@ def extraer_usgs(registrar: Bitacora, hoy: dt.date) -> list[Path]:
 def extraer_ssn(registrar: Bitacora) -> dict[str, Path]:
     commit = PARAMETROS["ssn_repo_commit"]
     rutas = {}
-    for archivo in ("02-dim_tiempo.sql", "03-dim_sismos.sql"):
+    for archivo in ("02-dim_tiempo.sql", "03-dim_sismos.sql", "05-fact_impacto_sismos_imputed.sql"):
         rutas[archivo] = descargar(RAW_SSN.format(commit=commit, archivo=archivo),
                                    DIR_DATOS / "ssn" / f"{commit[:7]}_{archivo}",
                                    forzar=FORZAR_DESCARGA)
-    registrar("extraccion", "SSN: dim_sismos y dim_tiempo del DW del paper", 2,
+    registrar("extraccion", "SSN: dim_sismos, dim_tiempo y fact_impacto_sismos_imputed del DW del paper", 3,
               f"commit {commit[:7]} de gabrielhuav/Seismic-Data-Visualization-System")
     return rutas
 
@@ -315,6 +330,11 @@ def main() -> int:
     if not FORZAR_ETL and ya_cargado(PARAMETROS):
         log.info("La base ya tiene una carga exitosa con estos parámetros; no se repite. "
                  "Usa FORZAR_ETL=1 para recargar.")
+        with conectar() as conn:
+            integrado = conn.execute("SELECT to_regclass('public.fact_cruce_usgs')").fetchone()[0]
+        if integrado is None:
+            extraer_ssn(lambda *a, **k: None)
+            log.info("Cruce integrado al DW original: %s registros", f"{integrar_original():,}")
         return 0
 
     registrar = Bitacora(PARAMETROS)
@@ -325,6 +345,7 @@ def main() -> int:
         filas_usgs = validar_usgs(archivos_usgs, registrar)
         filas_ssn = validar_ssn(rutas_ssn, registrar)
         resumen = cargar_y_transformar(filas_usgs, filas_ssn, registrar)
+        integrar_original(registrar)
         registrar.terminar("ok", resumen)
         log.info("ETL terminado: %s", resumen)
         return 0
