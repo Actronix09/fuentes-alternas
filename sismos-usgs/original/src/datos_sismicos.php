@@ -151,6 +151,10 @@
             $params[':magnitud_min'] = $magnitud_min;
         }
 
+        // fuentes-alternas: limitar solo los puntos; las estadísticas usan todo el filtro.
+        // Cargar cientos de miles de filas con fetchAll agotaba la memoria de PHP
+        // y generaba un mapa demasiado grande para el navegador.
+        $sql_mapa .= " ORDER BY t.fecha DESC, t.hora_utc DESC, s.id_sismo DESC LIMIT 2000";
         $stmt = $pdo->prepare($sql_mapa);
         $stmt->execute($params);
         $datos_mapa = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -317,6 +321,7 @@
     $filteredData = getFilteredData($pdo, $fecha_inicio, $fecha_fin, $magnitud_min);
     $datos_mapa = $filteredData['datos_mapa'];
     $estadisticas = $filteredData['estadisticas'];
+    $total_filtrado = array_sum(array_column($estadisticas['magnitudes'], 'cantidad'));
     $estados_sismos = $filteredData['estados_sismos'];
     $serie_temporal = $filteredData['serie_temporal'];
     
@@ -393,7 +398,10 @@
                         
                         <!-- Filter Information -->
                         <div class="mt-3">
-                            <p><strong>Mostrando:</strong> <?php echo count($datos_mapa); ?> sismos</p>
+                            <p><strong>Mapa:</strong> <?php echo number_format(count($datos_mapa)); ?> de <?php echo number_format($total_filtrado); ?> sismos del filtro.</p>
+                            <?php if ($total_filtrado > count($datos_mapa)): ?>
+                                <p>Se muestran los 2,000 sismos más recientes. Las gráficas y la tabla resumen incluyen todos los sismos del filtro. Acota las fechas o la magnitud para explorar otros eventos.</p>
+                            <?php endif; ?>
                             <?php if (!empty($fecha_inicio) && !empty($fecha_fin)): ?>
                                 <p><strong>Periodo:</strong> <?php echo $fecha_inicio; ?> a <?php echo $fecha_fin; ?></p>
                             <?php endif; ?>
