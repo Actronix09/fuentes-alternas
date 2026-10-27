@@ -1,0 +1,32 @@
+{
+  "extraido_utc": "2026-10-26T22:06:07.232373+00:00",
+  "fuentes": {
+    "US": {
+      "archivo": "us/cb_2024_us_state_20m.zip",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip",
+      "institucion": "U.S. Census Bureau",
+      "pagina": "https://www.census.gov/geographies/mapping-files/2024/geo/carto-boundary-file.html"
+    },
+    "CA": {
+      "archivo": "ca/provincias_canada.geojson",
+      "url": "https://geoportal.gov.mb.ca/api/download/v1/items/e46938cbb3e84c3688d03b8622d8f212/geojson?layers=0",
+      "institucion": "Government of Manitoba, catálogo Open Government Canada",
+      "pagina": "https://open.canada.ca/data/dataset/85efc01b-163f-ebba-2378-c43eadfb3b3f"
+    }
+  },
+  "archivos": [
+    {
+      "archivo": "us/cb_2024_us_state_20m.zip",
+      "sha256": "7bc773d83c01b6df69b8aada9c2b5983d97f22f4551947cc5c00b87c663223ef",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip",
+      "pais": "US"
+    },
+    {
+      "archivo": "ca/provincias_canada.geojson",
+      "sha256": "c240e701621df4eb2b81c62bace7e68e8df3218a9e7a4bdb126c2ab7cb439d3e",
+      "url": "https://geoportal.gov.mb.ca/api/download/v1/items/e46938cbb3e84c3688d03b8622d8f212/geojson?layers=0",
+      "pais": "CA"
+    }
+  ],
+  "alcance": "50 estados + DC (sin territorios) y 13 provincias/territorios; se omite el agregado nacional de Canadá."
+}

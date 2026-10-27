@@ -1,6 +1,7 @@
 """Verifica fuentes → extracto → PostgreSQL → API y página.
 
-Ejecutar con las mismas DATABASE_URL y DIR_DATOS que demografia.py.
+Ejecutar desde app/ con las mismas DATABASE_URL y DIR_DATOS que el ETL:
+    python -m verificacion.demografia
 No modifica datos ni genera evidencia de otros módulos.
 """
 import csv
@@ -11,8 +12,9 @@ import os
 import zipfile
 
 import requests
-from comun import conectar
-from demografia import DIRECTORIO, preparar, sha256
+from cargas.demografia import preparar
+from comun import conectar, sha256
+from fuentes import census_us, statcan_ca
 
 
 def main():
@@ -35,12 +37,12 @@ def main():
             GROUP BY 1,2,3 HAVING count(*)>1) d''').fetchone()[0]
         comprobar('No existen claves duplicadas', duplicados == 0)
     # Controles independientes de los originales, no una suma de los mismos datos cargados.
-    us = DIRECTORIO / meta['fuentes']['US']['archivo']
+    us = census_us.DIRECTORIO / meta['fuentes']['US']['archivo']
     comprobar('CSV original Census conserva SHA-256', sha256(us) == meta['fuentes']['US']['sha256'])
     with us.open(encoding='utf-8-sig', newline='') as f:
         nacional_us = next(r for r in csv.DictReader(f) if r['SUMLEV'] == '010')
     controles = {('US',a):int(nacional_us[f'POPESTIMATE{a}']) for a in range(2020,2026)}
-    ca = DIRECTORIO / meta['fuentes']['CA']['archivo']
+    ca = statcan_ca.DIRECTORIO / meta['fuentes']['CA']['archivo']
     # Al clonar, el ZIP canadiense se descarga si hace falta para este control de procedencia.
     if not ca.exists():
         from comun import descargar

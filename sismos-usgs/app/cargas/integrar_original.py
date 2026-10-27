@@ -7,16 +7,17 @@ resultado del emparejamiento contra USGS ComCat calculado en el esquema dw.
 """
 from pathlib import Path
 
-from comun import DIR_DATOS, conectar
+from comun import conectar
+from fuentes import ssn_original
 
-RAIZ = Path(__file__).resolve().parents[1]
+RAIZ = Path(__file__).resolve().parents[2]
 COMMIT = "8569667"
 
 
 def scripts_originales() -> list[Path]:
     """Scripts del DW original en el orden de su docker-compose."""
     sql = RAIZ / "original/sql"
-    ssn = DIR_DATOS / "ssn"
+    ssn = ssn_original.DIRECTORIO
     return [sql / "00-datawarehouse_tables.sql",
             sql / "01-dim_zonas.sql",
             ssn / f"{COMMIT}_02-dim_tiempo.sql",

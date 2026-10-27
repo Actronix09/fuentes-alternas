@@ -28,7 +28,7 @@ def get(url):
 
 
 def inserts(archivo):
-    with (RAIZ/'sismos-usgs/datos/ssn'/archivo).open(encoding='utf-8') as f:
+    with (RAIZ/'sismos-usgs/datos/original/ssn'/archivo).open(encoding='utf-8') as f:
         return sum(linea.startswith('INSERT') for linea in f)
 
 
@@ -126,7 +126,7 @@ def main():
     verificar_sismos()
     fuentes={}
     for carpeta, patron in [('agua-reportes-sacmex/datos','*.csv'),('obra-publica-srft/datos','*.csv'),
-                            ('sismos-usgs/datos/ssn','*.sql'),('sismos-usgs/datos/usgs','*.csv')]:
+                            ('sismos-usgs/datos/original/ssn','*.sql'),('sismos-usgs/datos/usgs/mexico','*.csv')]:
         for p in sorted((RAIZ/carpeta).glob(patron)):
             fuentes[p.relative_to(RAIZ).as_posix()]={'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
     salida={'verificado_utc':dt.datetime.now(dt.timezone.utc).isoformat(),'pruebas':resultados,'archivos_fuente':fuentes}

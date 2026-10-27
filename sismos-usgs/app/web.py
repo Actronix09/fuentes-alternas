@@ -30,8 +30,8 @@ class ProveedorJSON(DefaultJSONProvider):
         return DefaultJSONProvider.default(o)
 
 
-from demografia_web import demografia
-from norteamerica_web import norteamerica
+from rutas.demografia import demografia
+from rutas.norteamerica import norteamerica
 
 app = Flask(__name__)
 app.register_blueprint(demografia)

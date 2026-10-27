@@ -1,13 +1,16 @@
-"""Verificación reproducible del catálogo regional, geografía y API."""
+"""Verificación reproducible del catálogo regional, geografía y API.
+
+Desde app/: python -m verificacion.norteamerica
+"""
 import csv
 import datetime as dt
 import json
 import os
 from collections import Counter
 import requests
-from comun import conectar
-from norteamerica import DIRECTORIO, asignar, regiones
-from demografia import sha256
+from comun import conectar, sha256
+from fuentes import limites, usgs_norteamerica
+from fuentes.limites import asignar, regiones
 
 
 def main():
@@ -16,10 +19,11 @@ def main():
         pruebas.append(dict(prueba=nombre,ok=bool(ok),detalle=detalle))
         if not ok:
             raise AssertionError(nombre)
-    meta=json.loads((DIRECTORIO/'procedencia.json').read_text(encoding='utf-8'))
     raw={}
-    for archivo in meta['archivos']:
-        p=DIRECTORIO/archivo['archivo']
+    archivos=[(fuente.DIRECTORIO,archivo) for fuente in (usgs_norteamerica,limites)
+              for archivo in json.loads((fuente.DIRECTORIO/'procedencia.json').read_text(encoding='utf-8'))['archivos']]
+    for directorio,archivo in archivos:
+        p=directorio/archivo['archivo']
         comprobar('SHA-256 '+p.name,sha256(p)==archivo['sha256'])
         if 'registros' in archivo:
             with p.open(encoding='utf-8-sig',newline='') as f:

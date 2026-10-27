@@ -23,23 +23,24 @@ federal; no se afirma que ese GeoJSON sea el SHP de Statistics Canada ni se evad
 
 ### ETL y asignación territorial
 
-`app/norteamerica.py` es el script ejecutable independiente. Descarga CSV anuales de ComCat con `eventtype=earthquake`,
+`app/fuentes/usgs_norteamerica.py` es el script de la fuente. Descarga CSV anuales de ComCat con `eventtype=earthquake`,
 `minmagnitude=3.5` y dos ventanas: latitud 14 a 84, longitud −180 a −50; y latitud 50 a 73, longitud 170 a 180 para
 las Aleutianas al otro lado del antimeridiano. El periodo es `[2020-01-01, 2026-01-01)`, en UTC. Cada fin de consulta
 se ajusta un milisegundo para no repetir el inicio del siguiente bloque. Si un bloque alcanza 20,000 eventos, se divide;
 el archivo padre no se carga. Se exige encabezado CSV, coordenadas y magnitudes finitas, tipo earthquake, fechas dentro
 del periodo e identificadores únicos. No se generan eventos de ejemplo.
 
-Los límites estadounidenses se transforman de su CRS declarado a WGS84; los canadienses vienen declarados en EPSG:3857
+En `app/fuentes/limites.py`, los límites estadounidenses se transforman de su CRS declarado a WGS84; los canadienses vienen declarados en EPSG:3857
 y se transforman también a WGS84. La operación punto-en-polígono exige una única coincidencia. Los códigos estatales
 `STATEFP` y la equivalencia de abreviaturas provinciales canadienses permiten enlazar con las regiones demográficas.
 Se excluyen territorios estadounidenses distintos de los 50 estados y Washington D. C.; se excluye el polígono canadiense
 nacional para no duplicar las provincias. Se incorporan Alaska y Hawái por pertenencia a EE. UU.; Hawái no pertenece
 geográficamente al continente norteamericano.
 
-Las fuentes originales, parámetros exactos y hashes quedan en `datos/norteamerica/procedencia.json`. Se conservan
-los 12 CSV originales de esta descarga, los dos archivos de límites y el manifiesto. Los registros crudos se cargan en
-`staging.usgs_norteamerica`; las columnas normalizadas en `public.fact_sismo_norteamerica`. El ETL sustituye únicamente
+Las fuentes originales, parámetros exactos y hashes quedan en `datos/usgs/norteamerica/procedencia.json` (los 12 CSV
+originales, en `principal/` y `aleutianas_este/`) y en `datos/limites/procedencia.json` (los dos archivos de límites, en
+`us/` y `ca/`). `app/cargas/norteamerica.py` asigna cada evento a su región y carga los registros crudos en
+`staging.usgs_norteamerica` y las columnas normalizadas en `public.fact_sismo_norteamerica`. El ETL sustituye únicamente
 este catálogo acotado dentro de una transacción. No borra ni modifica el SSN original o el cruce anterior.
 
 `public.fact_sismo_norteamerica` tiene PK `id_usgs` y FK `(pais,codigo)` a `public.dim_region_demografia`.
@@ -62,7 +63,7 @@ Los conteos US/CA son eventos dentro de estos polígonos, no todos los terremoto
 
 ### API, mapa e interfaz original
 
-`app/norteamerica_web.py` registra `/norteamerica/` y `/api/norteamerica`, con `pais=US`, `CA`, `MX`, `TODOS` o
+`app/rutas/norteamerica.py` registra `/norteamerica/` y `/api/norteamerica`, con `pais=US`, `CA`, `MX`, `TODOS` o
 `SIN_ASIGNAR`, `anio=2020…2025` y `magnitud=3.5…10`. Rechaza años fuera de cobertura y valores no finitos.
 `app/templates/norteamerica.html` dibuja puntos Leaflet desde PostgreSQL, con fuente, ID, fecha UTC, magnitud, profundidad
 y población regional en el popup. Cada evento USGS enlaza a su ficha oficial. El color significa **magnitud**, no impacto.
@@ -89,13 +90,13 @@ del ETL sísmico anterior. Para actualizar solo estos módulos, con la base ya e
 
 ```powershell
 docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml build web
-docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python demografia.py
-docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python norteamerica.py
+docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python -m cargas.demografia
+docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python -m cargas.norteamerica
 docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml up -d --no-deps web
-docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps -e URL_SISMOS=http://web:8000 etl python verificar_norteamerica.py
+docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps -e URL_SISMOS=http://web:8000 etl python -m verificacion.norteamerica
 ```
 
-`norteamerica.py --descargar` actualiza los CSV del catálogo. Los límites se mantienen como las versiones conservadas;
+`python -m cargas.norteamerica --descargar` actualiza los CSV del catálogo. Los límites se mantienen como las versiones conservadas;
 los hashes del manifiesto detectan modificaciones de archivos. Se añadieron las dependencias Shapely 2.1.2, pyshp 2.3.1
 y pyproj 3.7.2 a los requisitos de Docker y al entorno local.
 
@@ -136,7 +137,8 @@ Fuentes nuevas:
   Se seleccionan `Total - gender`, `All ages`, unidad `Persons`, escala `units`, años 2020–2025.
   El campo original `STATUS` se conserva; no se interpreta un valor suprimido o ausente como cero.
 
-`app/demografia.py` descarga los originales, genera `datos/demografia/poblacion_2020_2025.csv`, valida claves y totales,
+`app/fuentes/census_us.py` y `app/fuentes/statcan_ca.py` leen los originales de `datos/demografia/us/` y
+`datos/demografia/ca/`; `app/cargas/demografia.py` genera `datos/demografia/poblacion_2020_2025.csv`, valida claves y totales,
 y carga con upsert las tablas nuevas `public.dim_fuente_demografia`, `public.dim_region_demografia`
 y `public.fact_poblacion_demografia`. La vista `public.v_poblacion_demografia` las relaciona; `etl.demografia_carga`
 guarda el manifiesto de cada extracto distinto. Se conservan fecha de referencia, códigos de origen, URLs y SHA-256
@@ -147,20 +149,20 @@ El módulo se ejecuta automáticamente al iniciar el ETL de sismos, incluso si e
 También se puede cargar por separado, sin repetir el emparejamiento ni tocar los datos originales:
 
 ```powershell
-docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python demografia.py
+docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python -m cargas.demografia
 ```
 
-Añadir `--descargar` a `demografia.py` para actualizar los archivos oficiales y el extracto. Sin esa opción, se verifica
+Añadir `--descargar` a `cargas.demografia` para actualizar los archivos oficiales y el extracto. Sin esa opción, se verifica
 el hash del extracto conservado y se reutiliza. Las recargas no duplican observaciones.
 
 Verificación independiente del extracto, PostgreSQL, 12 totales oficiales y endpoints (22 comprobaciones):
 
 ```powershell
-docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps -e URL_SISMOS=http://web:8000 etl python verificar_demografia.py
+docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps -e URL_SISMOS=http://web:8000 etl python -m verificacion.demografia
 ```
 
 Este control descarga el ZIP canadiense si no está disponible localmente. Si la fuente cambió de versión y su hash ya
-no coincide con el manifiesto, falla explícitamente: una actualización debe hacerse con `demografia.py --descargar`.
+no coincide con el manifiesto, falla explícitamente: una actualización debe hacerse con `python -m cargas.demografia --descargar`.
 
 Consulta para enseñar las tablas (desde PowerShell):
 
@@ -229,16 +231,17 @@ Todas las rutas siguientes son relativas a la raíz del repositorio.
 
 | Ruta | Función |
 |---|---|
-| `sismos-usgs/app/demografia.py` | Extracción, validación, DDL y carga demográfica independiente |
-| `sismos-usgs/app/demografia_web.py` | Blueprint Flask con `/demografia/` y `/api/demografia` |
+| `sismos-usgs/app/fuentes/census_us.py`, `fuentes/statcan_ca.py` | Extracción de cada fuente oficial |
+| `sismos-usgs/app/cargas/demografia.py` | Validación de totales, extracto, DDL y carga demográfica independiente |
+| `sismos-usgs/app/rutas/demografia.py` | Blueprint Flask con `/demografia/` y `/api/demografia` |
 | `sismos-usgs/app/templates/demografia.html` | Selector de país/año, tabla regional, participación y referencias |
-| `sismos-usgs/app/verificar_demografia.py` | Verificación de archivos, base y servicios |
+| `sismos-usgs/app/verificacion/demografia.py` | Verificación de archivos, base y servicios |
 | `sismos-usgs/app/etl.py` | Invoca el módulo demográfico antes del proceso sísmico existente |
 | `sismos-usgs/app/web.py` | Registra el blueprint demográfico |
 | `sismos-usgs/app/templates/index.html` | Añade enlace desde el tablero |
 | `sismos-usgs/original/src/demografia.php` | Redirige a la página usando la URL configurada del tablero |
 | `sismos-usgs/original/src/vista.html` | Añade enlace al menú original |
-| `sismos-usgs/datos/demografia/` | CSV de Census, ZIP de Statistics Canada, extracto y `procedencia.json` |
+| `sismos-usgs/datos/demografia/` | CSV de Census (`us/`), ZIP de Statistics Canada (`ca/`), extracto y `procedencia.json` |
 | `evidencia/demografia.json` | Resultado de 22 comprobaciones ejecutadas |
 | `evidencia/demografia-us.png` | Captura de la vista de Estados Unidos |
 | `README.md`, `sismos-usgs/README.md`, `ENTREGA.md` | Acceso, documentación técnica y guía de demostración |
@@ -259,7 +262,7 @@ cuando la base de sismos ya está levantada:
 
 ```powershell
 docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml build web
-docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python demografia.py
+docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python -m cargas.demografia
 docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml up -d --no-deps web
 ```
 
@@ -305,6 +308,37 @@ verificaciones de agua, obras y sismos de la entrega anterior.
 
 Esta ampliación no incorpora desglose demográfico por edad/sexo ni actualiza economía. Tampoco amplía agua u obras.
 Al documentar este trabajo no se realizó commit ni push; los archivos quedan locales para revisión del equipo.
+
+## Estructura de scripts y datos
+
+Hay un script por fuente de datos en `app/fuentes/` (descarga y validación, sin escribir en PostgreSQL), uno por
+destino en `app/cargas/` y `app/etl.py`, que solo los ejecuta en orden. Cada uno se puede correr por separado
+desde `app/`: `python -m fuentes.<nombre>` o `python -m cargas.<nombre>`.
+
+```text
+app/
+├── etl.py                    Orquestador
+├── parametros.py             Parámetros del cruce: rectángulo, tolerancias y commit del SSN
+├── fuentes/
+│   ├── ssn_original.py       SSN del DW original (commit 8569667)       → datos/original/ssn/
+│   ├── usgs_mexico.py        USGS ComCat, rectángulo de México, 1900–hoy → datos/usgs/mexico/
+│   ├── usgs_norteamerica.py  USGS ComCat regional, 2020–2025            → datos/usgs/norteamerica/{principal,aleutianas_este}/
+│   ├── limites.py            Estados de EE. UU. y provincias de Canadá  → datos/limites/{us,ca}/
+│   ├── census_us.py          Población de EE. UU.                       → datos/demografia/us/
+│   └── statcan_ca.py         Población de Canadá                        → datos/demografia/ca/
+├── cargas/
+│   ├── cruce_ssn_usgs.py     staging, dimensiones y emparejamiento en dw
+│   ├── integrar_original.py  DW original en public y public.fact_cruce_usgs
+│   ├── demografia.py         Extracto integrado (datos/demografia/) y tablas de población
+│   └── norteamerica.py       Asignación territorial y public.fact_sismo_norteamerica
+├── rutas/                    Blueprints de /demografia/ y /norteamerica/
+├── verificacion/             python -m verificacion.demografia, python -m verificacion.norteamerica
+└── web.py, sql/, templates/, static/
+```
+
+`datos/original/ssn/` guarda sin modificar los tres SQL de datos del programa original; los otros tres scripts
+del DW original siguen en `original/sql/`. Cada grupo con manifiesto (`procedencia.json`) registra el SHA-256 de sus
+archivos: si un archivo cambia, la carga falla en lugar de usarlo.
 
 ## Ejecutar
 
@@ -364,9 +398,9 @@ U.S. Geological Survey. (2017). *Advanced National Seismic System (ANSS) Compreh
 
 Villa Vargas, J. M., Hurtado Avilés, G., y Climent Hernández, J. A. (2026). Cuando México tiembla: la historia contada por los datos. *AZCATL Revista de Divulgación de la Ciencia, la Ingeniería y la Innovación, 4*(6), 28–33. https://doi.org/10.24275/AZC2026E1004
 
-El USGS se consulta por la API FDSN (`https://earthquake.usgs.gov/fdsnws/event/1/`). Se usa el rectángulo de México del pipeline del paper, desde 1900 y con M ≥ 3.5. La descarga se divide en bloques que no superan el límite de 20,000 eventos por consulta. Los bloques cerrados se guardan en `datos/usgs/` y el año en curso se vuelve a descargar en cada carga.
+El USGS se consulta por la API FDSN (`https://earthquake.usgs.gov/fdsnws/event/1/`). Se usa el rectángulo de México del pipeline del paper, desde 1900 y con M ≥ 3.5. La descarga se divide en bloques que no superan el límite de 20,000 eventos por consulta. Lo hace `app/fuentes/usgs_mexico.py`: los bloques cerrados se guardan en `datos/usgs/mexico/` y el año en curso se vuelve a descargar en cada carga.
 
-Los SQL del SSN se toman del commit `8569667` del repositorio original y se guardan en `datos/ssn/`. Sus SHA-256 están en `../evidencia/verificacion.json`.
+Los SQL del SSN se toman del commit `8569667` del repositorio original y se guardan en `datos/original/ssn/` (`app/fuentes/ssn_original.py`). Sus SHA-256 están en `../evidencia/verificacion.json`.
 
 ## Resultado comprobado
 

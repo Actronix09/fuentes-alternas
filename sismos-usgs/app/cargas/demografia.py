@@ -1,44 +1,22 @@
-"""ETL independiente de población anual oficial de EE. UU. y Canadá.
+"""Carga de población anual oficial de EE. UU. y Canadá (fuentes census_us y statcan_ca).
+
+Valida que las regiones sumen los totales nacionales, guarda el extracto integrado
+y lo carga en PostgreSQL.
 
 No modifica catálogos sísmicos, economía ni impactos imputados del original.
 """
 import argparse
 import csv
 import datetime as dt
-import hashlib
-import io
 import json
-import zipfile
-from pathlib import Path
 
-from comun import DIR_DATOS, conectar, descargar
+from comun import DIR_DATOS, conectar, sha256
+from fuentes import census_us, statcan_ca
 
+# Extracto integrado de ambas fuentes y su manifiesto; los originales están en us/ y ca/.
 DIRECTORIO = DIR_DATOS / 'demografia'
-FUENTES = {
-    'US': {
-        'institucion': 'U.S. Census Bureau',
-        'titulo': 'NST-EST2025-ALLDATA, Vintage 2025',
-        'pagina': 'https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html',
-        'url': 'https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv',
-        'archivo': 'NST-EST2025-ALLDATA.csv', 'doi': None,
-    },
-    'CA': {
-        'institucion': 'Statistics Canada',
-        'titulo': 'Table 17-10-0005-01, Population estimates on July 1, by age and gender',
-        'pagina': 'https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501',
-        'url': 'https://www150.statcan.gc.ca/n1/tbl/csv/17100005-eng.zip',
-        'archivo': '17100005-eng.zip', 'doi': '10.25318/1710000501-eng',
-    },
-}
+FUENTES = {'US': census_us, 'CA': statcan_ca}
 COLUMNAS = ['pais', 'codigo', 'nombre', 'nivel', 'anio', 'poblacion', 'identificador_origen', 'estado_origen']
-
-
-def sha256(path):
-    h = hashlib.sha256()
-    with path.open('rb') as f:
-        for bloque in iter(lambda: f.read(1024 * 1024), b''):
-            h.update(bloque)
-    return h.hexdigest()
 
 
 def validar(filas):
@@ -77,33 +55,8 @@ def preparar(actualizar=False):
 
     filas, fuentes = [], {}
     for pais, fuente in FUENTES.items():
-        archivo = descargar(fuente['url'], DIRECTORIO / fuente['archivo'], forzar=actualizar)
-        fuentes[pais] = {**fuente, 'sha256': sha256(archivo), 'bytes': archivo.stat().st_size}
-        if pais == 'US':
-            with archivo.open(encoding='utf-8-sig', newline='') as f:
-                for r in csv.DictReader(f):
-                    # 040 = estados/DC; 010 = nacional. Excluye regiones censales y Puerto Rico.
-                    if r['SUMLEV'] not in ('010', '040') or r['STATE'] == '72':
-                        continue
-                    for anio in range(2020, 2026):
-                        filas.append(dict(pais=pais, codigo=r['STATE'], nombre=r['NAME'],
-                                          nivel='pais' if r['SUMLEV'] == '010' else 'region',
-                                          anio=anio, poblacion=r[f'POPESTIMATE{anio}'],
-                                          identificador_origen=r['STATE'], estado_origen=''))
-        else:
-            with zipfile.ZipFile(archivo) as z, z.open('17100005.csv') as entrada:
-                for r in csv.DictReader(io.TextIOWrapper(entrada, encoding='utf-8-sig')):
-                    if r['REF_DATE'] not in {str(a) for a in range(2020, 2026)}:
-                        continue
-                    if r['Gender'] != 'Total - gender' or r['Age group'] != 'All ages':
-                        continue
-                    if r['UOM'] != 'Persons' or r['SCALAR_FACTOR'] != 'units' or not r['VALUE']:
-                        raise ValueError('Unidad o valor de población canadiense no esperado')
-                    nacional = r['GEO'] == 'Canada'
-                    filas.append(dict(pais=pais, codigo='00' if nacional else r['DGUID'][-2:],
-                                      nombre=r['GEO'], nivel='pais' if nacional else 'region',
-                                      anio=r['REF_DATE'], poblacion=r['VALUE'],
-                                      identificador_origen=r['DGUID'], estado_origen=r['STATUS']))
+        observaciones, fuentes[pais] = fuente.extraer(actualizar)
+        filas.extend(observaciones)
     validar(filas)
     filas.sort(key=lambda r: (r['pais'], r['codigo'], r['anio']))
     temporal = extracto.with_suffix('.csv.part')

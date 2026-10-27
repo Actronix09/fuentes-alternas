@@ -3,9 +3,11 @@
 - Conexión a PostgreSQL (variable DATABASE_URL).
 - Bitácora del pipeline en las tablas etl.ejecucion y etl.bitacora.
 - Descargas con caché local en /datos, reintentos y escritura atómica.
+- SHA-256 de archivos para validar la procedencia.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import os
@@ -54,6 +56,14 @@ def normalizar(parametros: dict) -> dict:
     return json.loads(json.dumps(parametros, ensure_ascii=False, default=str))
 
 
+def registrar_consola(fase: str, paso: str, registros: int | None = None,
+                      detalle: str | None = None) -> None:
+    """Misma firma que Bitacora, solo en consola: para ejecutar una fuente por separado."""
+    extra = f" · {registros:,} registros" if registros is not None else ""
+    extra += f" · {detalle}" if detalle else ""
+    log.info("[%s] %s%s", fase, paso, extra)
+
+
 class Bitacora:
     """Registra la ejecución y cada paso en una conexión propia (autocommit),
     de modo que el rastro queda aunque la transformación falle y se revierta."""
@@ -67,9 +77,7 @@ class Bitacora:
 
     def __call__(self, fase: str, paso: str, registros: int | None = None,
                  detalle: str | None = None) -> None:
-        extra = f" · {registros:,} registros" if registros is not None else ""
-        extra += f" · {detalle}" if detalle else ""
-        log.info("[%s] %s%s", fase, paso, extra)
+        registrar_consola(fase, paso, registros, detalle)
         self.conn.execute(
             "INSERT INTO etl.bitacora (id_ejecucion, fase, paso, registros, detalle) "
             "VALUES (%s, %s, %s, %s, %s)",
@@ -93,6 +101,14 @@ def ya_cargado(parametros: dict) -> bool:
             "ORDER BY id_ejecucion DESC LIMIT 1"
         ).fetchone()
     return fila is not None and fila[0] == normalizar(parametros)
+
+
+def sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for bloque in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(bloque)
+    return h.hexdigest()
 
 
 def nueva_sesion() -> requests.Session:

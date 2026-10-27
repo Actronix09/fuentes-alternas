@@ -48,10 +48,12 @@ Se cargaron 14,041 eventos reales de [USGS ComCat (DOI 10.5066/F7MS3QZH)](https:
 población de su región y año. No se calculan afectados ni impactos económicos.
 
 La [documentación de Norteamérica](sismos-usgs/README.md#ampliación-sísmica-a-norteamérica-26-de-octubre-de-2026)
-explica límites, CSV, parámetros de descarga, transformaciones, tablas, mapa y comandos. Scripts nuevos:
-[`norteamerica.py`](sismos-usgs/app/norteamerica.py), [`norteamerica_web.py`](sismos-usgs/app/norteamerica_web.py)
-y [`verificar_norteamerica.py`](sismos-usgs/app/verificar_norteamerica.py). Archivos oficiales y hashes en
-[`datos/norteamerica/procedencia.json`](sismos-usgs/datos/norteamerica/procedencia.json).
+explica límites, CSV, parámetros de descarga, transformaciones, tablas, mapa y comandos. Scripts: las fuentes
+[`fuentes/usgs_norteamerica.py`](sismos-usgs/app/fuentes/usgs_norteamerica.py) y [`fuentes/limites.py`](sismos-usgs/app/fuentes/limites.py),
+la carga [`cargas/norteamerica.py`](sismos-usgs/app/cargas/norteamerica.py), la ruta [`rutas/norteamerica.py`](sismos-usgs/app/rutas/norteamerica.py)
+y [`verificacion/norteamerica.py`](sismos-usgs/app/verificacion/norteamerica.py). Archivos oficiales y hashes en
+[`datos/usgs/norteamerica/procedencia.json`](sismos-usgs/datos/usgs/norteamerica/procedencia.json) y
+[`datos/limites/procedencia.json`](sismos-usgs/datos/limites/procedencia.json).
 Evidencia: [`63 comprobaciones aprobadas`](evidencia/norteamerica.json).
 
 Esta sección documenta el trabajo local del **25 de octubre de 2026**. El objetivo es ampliar el contexto
@@ -62,8 +64,8 @@ añadieron el 26 de octubre, como se describe arriba.
 
 | País | Institución y conjunto | Identificador verificable | Descarga oficial | Copia en este repositorio |
 |---|---|---|---|---|
-| Estados Unidos | U.S. Census Bureau, *State Population Totals and Components of Change: 2020–2025*, Vintage 2025 | `NST-EST2025-ALLDATA`. No se verificó un DOI para este archivo | [CSV oficial](https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv) | [`NST-EST2025-ALLDATA.csv`](sismos-usgs/datos/demografia/NST-EST2025-ALLDATA.csv) |
-| Canadá | Statistics Canada, *Population estimates on July 1, by age and gender* | Tabla `17-10-0005-01`; [DOI `10.25318/1710000501-eng`](https://doi.org/10.25318/1710000501-eng) | [ZIP oficial con CSV y metadatos](https://www150.statcan.gc.ca/n1/tbl/csv/17100005-eng.zip) | [`17100005-eng.zip`](sismos-usgs/datos/demografia/17100005-eng.zip) |
+| Estados Unidos | U.S. Census Bureau, *State Population Totals and Components of Change: 2020–2025*, Vintage 2025 | `NST-EST2025-ALLDATA`. No se verificó un DOI para este archivo | [CSV oficial](https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv) | [`NST-EST2025-ALLDATA.csv`](sismos-usgs/datos/demografia/us/NST-EST2025-ALLDATA.csv) |
+| Canadá | Statistics Canada, *Population estimates on July 1, by age and gender* | Tabla `17-10-0005-01`; [DOI `10.25318/1710000501-eng`](https://doi.org/10.25318/1710000501-eng) | [ZIP oficial con CSV y metadatos](https://www150.statcan.gc.ca/n1/tbl/csv/17100005-eng.zip) | [`17100005-eng.zip`](sismos-usgs/datos/demografia/ca/17100005-eng.zip) |
 
 Páginas para comprobar el título, alcance, metodología y opciones de descarga:
 
@@ -89,8 +91,9 @@ revisables, no seis censos ni un conteo de personas afectadas. La fecha de desca
 
 ### Cómo se hace el ETL y de dónde sale cada campo
 
-El ejecutable principal es [`sismos-usgs/app/demografia.py`](sismos-usgs/app/demografia.py). Es un script Python,
-no un archivo `.exe`. Usa las dependencias ya existentes del proyecto.
+Hay un script por fuente, [`fuentes/census_us.py`](sismos-usgs/app/fuentes/census_us.py) y
+[`fuentes/statcan_ca.py`](sismos-usgs/app/fuentes/statcan_ca.py) (pasos 1–3), y la carga
+[`cargas/demografia.py`](sismos-usgs/app/cargas/demografia.py) (pasos 4–6). Son scripts Python, no archivos `.exe`. Usa las dependencias ya existentes del proyecto.
 
 1. **Extraer:** descarga el CSV de Census y el ZIP de Statistics Canada. Dentro del ZIP lee `17100005.csv`.
 2. **Transformar EE. UU.:** selecciona `SUMLEV=010` (total nacional) y `040` (estados/DC), excluye Puerto Rico y
@@ -128,12 +131,12 @@ Resultado: **396 observaciones**, no 396 personas ni 396 regiones. Son 66 geogra
 | Hechos | `public.fact_poblacion_demografia`: población por país, código y fecha, con FK a la región |
 | Vista | `public.v_poblacion_demografia`: relaciona fuentes, regiones y población |
 | Registro de carga | `etl.demografia_carga`: manifiesto, hash, fecha de carga y cantidad por extracto distinto |
-| ETL | [`demografia.py`](sismos-usgs/app/demografia.py), invocado también desde [`etl.py`](sismos-usgs/app/etl.py) |
-| Backend | [`demografia_web.py`](sismos-usgs/app/demografia_web.py), registrado en [`web.py`](sismos-usgs/app/web.py) |
+| ETL | [`fuentes/census_us.py`](sismos-usgs/app/fuentes/census_us.py), [`fuentes/statcan_ca.py`](sismos-usgs/app/fuentes/statcan_ca.py) y [`cargas/demografia.py`](sismos-usgs/app/cargas/demografia.py), invocados desde [`etl.py`](sismos-usgs/app/etl.py) |
+| Backend | [`rutas/demografia.py`](sismos-usgs/app/rutas/demografia.py), registrado en [`web.py`](sismos-usgs/app/web.py) |
 | API | `http://localhost:8091/api/demografia?pais=US&anio=2025`; acepta `US`/`CA` y 2020–2025 |
 | Frontend | [`demografia.html`](sismos-usgs/app/templates/demografia.html); página `http://localhost:8091/demografia/` |
 | Menú original | [`vista.html`](sismos-usgs/original/src/vista.html) enlaza a [`demografia.php`](sismos-usgs/original/src/demografia.php), que redirige al tablero configurado |
-| Verificador | [`verificar_demografia.py`](sismos-usgs/app/verificar_demografia.py) |
+| Verificador | [`verificacion/demografia.py`](sismos-usgs/app/verificacion/demografia.py) |
 | Arranque general | [`iniciar-docker.ps1`](iniciar-docker.ps1), ejecutado desde la raíz con Docker Desktop abierto |
 
 El frontend consulta datos de PostgreSQL a través del servidor; las poblaciones no están escritas a mano en la plantilla.
@@ -151,20 +154,20 @@ Si la base de sismos ya está levantada, construir la imagen y cargar únicament
 
 ```powershell
 docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml build web
-docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python demografia.py
+docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python -m cargas.demografia
 docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml up -d --no-deps web
 ```
 
 Actualizar expresamente desde las fuentes oficiales (puede cambiar la versión de las estimaciones):
 
 ```powershell
-docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python demografia.py --descargar
+docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps etl python -m cargas.demografia --descargar
 ```
 
 Verificar archivos, base, API y páginas:
 
 ```powershell
-docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps -e URL_SISMOS=http://web:8000 etl python verificar_demografia.py
+docker compose -f sismos-usgs/compose.yml -f sismos-usgs/compose.windows.yml run --rm --no-deps -e URL_SISMOS=http://web:8000 etl python -m verificacion.demografia
 ```
 
 Mostrar la estructura y consultar datos del warehouse:
@@ -280,9 +283,9 @@ En Windows, `iniciar.ps1` instala las dependencias en `.runtime/` la primera vez
 ├── sismos-usgs/            Sistema 1: catálogo SSN cruzado con USGS ComCat
 ├── agua-reportes-sacmex/   Sistema 2: consumo de agua y reportes ciudadanos
 ├── obra-publica-srft/      Sistema 3: obras de Temascaltepec (SHCP/SRFT)
-│   ├── app/                ETL, API Flask, plantillas y estáticos
+│   ├── app/                etl.py (orquestador), fuentes/ (un script por fuente), cargas/, API Flask
 │   ├── db/                 Esquema y extensiones SQL (se cargan al crear el volumen)
-│   ├── datos/              Extractos oficiales conservados para repetir la carga
+│   ├── datos/              Extractos oficiales, una carpeta por grupo; original/ = datos del programa original
 │   ├── original/           Componentes del proyecto original con su licencia
 │   └── compose.yml
 ├── evidencia/              Resultados de verificación, hashes y capturas
