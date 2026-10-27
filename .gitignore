@@ -4,5 +4,5 @@ __pycache__/
 *.pyc
 .env
 *.log
-obra-publica-srft/datos/*.zip
+obra-publica-srft/datos/shcp_srft/*.zip
 agua-reportes-sacmex/datos/generados/grafo/grafo_integrado.ttl*

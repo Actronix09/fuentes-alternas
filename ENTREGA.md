@@ -8,7 +8,7 @@
 4. Mostrar la bitácora de agua: 71,102 filas de consumo leídas, 216 descartadas, 12,729 folios repetidos del recurso nuevo y cinco reportes sin tipo. Los rechazos no se sustituyen por datos inventados.
 5. Abrir obras en http://127.0.0.1:8093. Mostrar 59 obras, $58,834,555 aprobados, mapa y clasificación por sector.
 6. Filtrar Educación: 12 obras y $9,300,000 aprobados. Abrir un folio para mostrar el registro original y sus georreferencias, metas y contratos.
-7. Mostrar `obra-publica-srft/datos/procedencia.json`: URL oficial, filtro y hashes. Enseñar `evidencia/verificacion.json` y las consultas siguientes.
+7. Mostrar `obra-publica-srft/datos/shcp_srft/procedencia.json`: URL oficial, filtro y hashes. Enseñar `evidencia/verificacion.json` y las consultas siguientes.
 8. Abrir http://127.0.0.1:8093/expedientes/. Elegir un folio y mostrar contratos, números administrativos, fuentes de financiamiento y campos no publicados. Explicar que los supervisores y firmas desconocidos no se inventan.
 9. Abrir http://127.0.0.1:8092/sistema/grafo.html. Ejecutar «Reportes reales por año» y «Reportes sin colonia asignable». La suma de conteos conserva los 555,752 reportes; los no ubicados suman 4,804.
 10. Abrir sismos en http://127.0.0.1:8091. Mostrar la tarjeta de ampliación del DW original y el hallazgo de fechas: con M ≥ 4.5 y «Todas» las soluciones, la confirmación pasa de 64.2 % con las fechas del DW a 83.5 % con las corregidas.

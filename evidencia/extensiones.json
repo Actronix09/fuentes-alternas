@@ -1,5 +1,5 @@
 {
-  "verificado_utc": "2026-10-23T21:30:42.620091+00:00",
+  "verificado_utc": "2026-10-27T19:57:04.454323+00:00",
   "pruebas": [
     {
       "prueba": "API original visualiza 59 obras oficiales",
@@ -120,7 +120,7 @@
   ],
   "grafo": {
     "triples": 415844,
-    "sha256": "9c2866a8808efde846a2ac55e8bd8d45ccd2ba9c4d7118181d24d9402303208c",
+    "sha256": "ee627303f7e0aef1d59a6772b046ff70ad0d42d93d385b4a4d3d6467ec49f15a",
     "reportes_por_anio": {
       "2018": 67799,
       "2019": 69378,

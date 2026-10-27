@@ -40,7 +40,7 @@ def main():
         comprobar('Supervisores no publicados permanecen nulos',n==59,n)
         n=c.execute("SELECT count(*) FROM public.constructora WHERE id_constructora LIKE 'SRFT:%' AND rfc IS NOT NULL").fetchone()[0]
         comprobar('RFC del convocante no se atribuye a contratistas',n==0,n)
-        with (RAIZ/'obra-publica-srft/datos/contratos_temascaltepec.csv').open(encoding='utf-8',newline='') as f:
+        with (RAIZ/'obra-publica-srft/datos/shcp_srft/contratos_temascaltepec.csv').open(encoding='utf-8',newline='') as f:
             fuente=list(csv.DictReader(f))
         n=c.execute('SELECT count(*) FROM public.contrato_srft').fetchone()[0]
         comprobar('Se conservan todos los contratos publicados',n==len(fuente),n)

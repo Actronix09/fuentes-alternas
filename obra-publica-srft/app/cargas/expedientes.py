@@ -6,6 +6,8 @@ from pathlib import Path
 
 from psycopg.types.json import Jsonb
 
+from fuentes.shcp_srft import fecha, numero
+
 
 def texto(v):
     s = (v or '').strip()
@@ -17,8 +19,8 @@ def clave(prefijo, *partes):
     return 'SRFT:' + prefijo + ':' + hashlib.sha256(contenido.encode()).hexdigest()[:24]
 
 
-def integrar(cur, datos, asociados, folios, meta, numero, fecha):
-    sql = Path(__file__).resolve().parents[1] / 'db/05_expedientes.sql'
+def integrar(cur, datos, asociados, folios, meta):
+    sql = Path(__file__).resolve().parents[2] / 'db/05_expedientes.sql'
     # Disponible tanto para una base nueva como para los volúmenes ya creados.
     cur.execute(sql.read_text(encoding='utf-8'))
     for r in datos['ef2025.csv']:

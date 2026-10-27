@@ -100,7 +100,7 @@ def main():
         comprobar('API agua /'+ruta, r.status_code==200, r.status_code)
     invalida = requests.get('http://127.0.0.1:8092/api/resumen?desde=2025-01-01&hasta=2020-01-01',timeout=10)
     comprobar('Agua rechaza periodos invertidos', invalida.status_code==400, invalida.status_code)
-    with (RAIZ/'obra-publica-srft/datos/ef2025_temascaltepec.csv').open(encoding='utf-8',newline='') as f:
+    with (RAIZ/'obra-publica-srft/datos/shcp_srft/ef2025_temascaltepec.csv').open(encoding='utf-8',newline='') as f:
         filas=list(csv.DictReader(f))
     aprobado=sum(Decimal(r['APROBADO']) for r in filas)
     pagado=sum(Decimal(r['PAGADO']) for r in filas)
