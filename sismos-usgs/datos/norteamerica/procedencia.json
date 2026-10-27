@@ -1,0 +1,281 @@
+{
+  "extraido_utc": "2026-10-26T22:06:07.232373+00:00",
+  "institucion": "U.S. Geological Survey",
+  "doi": "10.5066/F7MS3QZH",
+  "api": "https://earthquake.usgs.gov/fdsnws/event/1",
+  "periodo": "2020-01-01 / 2026-01-01 (fin excluido)",
+  "magnitud_minima": 3.5,
+  "ventanas": [
+    [
+      "principal",
+      14,
+      84,
+      -180,
+      -50
+    ],
+    [
+      "aleutianas_este",
+      50,
+      73,
+      170,
+      180
+    ]
+  ],
+  "limites": {
+    "US": {
+      "archivo": "cb_2024_us_state_20m.zip",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip",
+      "institucion": "U.S. Census Bureau",
+      "pagina": "https://www.census.gov/geographies/mapping-files/2024/geo/carto-boundary-file.html"
+    },
+    "CA": {
+      "archivo": "provincias_canada.geojson",
+      "url": "https://geoportal.gov.mb.ca/api/download/v1/items/e46938cbb3e84c3688d03b8622d8f212/geojson?layers=0",
+      "institucion": "Government of Manitoba, catálogo Open Government Canada",
+      "pagina": "https://open.canada.ca/data/dataset/85efc01b-163f-ebba-2378-c43eadfb3b3f"
+    }
+  },
+  "archivos": [
+    {
+      "archivo": "usgs_principal_20200101_20210101_m3.5.csv",
+      "sha256": "3e4376d6b7f21e99958d8c4c806e2476c16e8078180b2fc4397e25557b61565a",
+      "registros": 2857,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2020-01-01T00:00:00",
+        "endtime": "2020-12-31T23:59:59.999000",
+        "minlatitude": 14,
+        "maxlatitude": 84,
+        "minlongitude": -180,
+        "maxlongitude": -50,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_aleutianas_este_20200101_20210101_m3.5.csv",
+      "sha256": "8198c873015cd097c5aaeeade54d4d45be71f0c97e3450dc2b0afbc56697d8f7",
+      "registros": 113,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2020-01-01T00:00:00",
+        "endtime": "2020-12-31T23:59:59.999000",
+        "minlatitude": 50,
+        "maxlatitude": 73,
+        "minlongitude": 170,
+        "maxlongitude": 180,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_principal_20210101_20220101_m3.5.csv",
+      "sha256": "db1b97ce57e493fa5bea82196a3ff53c7ab3ce09ec73720505229bada58ec22d",
+      "registros": 2242,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2021-01-01T00:00:00",
+        "endtime": "2021-12-31T23:59:59.999000",
+        "minlatitude": 14,
+        "maxlatitude": 84,
+        "minlongitude": -180,
+        "maxlongitude": -50,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_aleutianas_este_20210101_20220101_m3.5.csv",
+      "sha256": "be3f81162f2f4f1ce1d5ef29e8bb99a2611b20ead081044d1621656418d41e47",
+      "registros": 127,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2021-01-01T00:00:00",
+        "endtime": "2021-12-31T23:59:59.999000",
+        "minlatitude": 50,
+        "maxlatitude": 73,
+        "minlongitude": 170,
+        "maxlongitude": 180,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_principal_20220101_20230101_m3.5.csv",
+      "sha256": "c94d0267d820368cc62da861a97b5eaa107316985766db0a4ed214ff96d4640a",
+      "registros": 2065,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2022-01-01T00:00:00",
+        "endtime": "2022-12-31T23:59:59.999000",
+        "minlatitude": 14,
+        "maxlatitude": 84,
+        "minlongitude": -180,
+        "maxlongitude": -50,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_aleutianas_este_20220101_20230101_m3.5.csv",
+      "sha256": "2095d4f953a988780fc222995d45bd812dda8a2b69b7e56fb41b1c9274d3a1c2",
+      "registros": 153,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2022-01-01T00:00:00",
+        "endtime": "2022-12-31T23:59:59.999000",
+        "minlatitude": 50,
+        "maxlatitude": 73,
+        "minlongitude": 170,
+        "maxlongitude": 180,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_principal_20230101_20240101_m3.5.csv",
+      "sha256": "e9b8afb4c4db6e9e3f5273e240f2283134f4cecfabbeb0f4f2b369f908c0f648",
+      "registros": 2073,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2023-01-01T00:00:00",
+        "endtime": "2023-12-31T23:59:59.999000",
+        "minlatitude": 14,
+        "maxlatitude": 84,
+        "minlongitude": -180,
+        "maxlongitude": -50,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_aleutianas_este_20230101_20240101_m3.5.csv",
+      "sha256": "ca5217d969104351959829161224417fd5257d0085af74f9bcb666d6b34a9f96",
+      "registros": 150,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2023-01-01T00:00:00",
+        "endtime": "2023-12-31T23:59:59.999000",
+        "minlatitude": 50,
+        "maxlatitude": 73,
+        "minlongitude": 170,
+        "maxlongitude": 180,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_principal_20240101_20250101_m3.5.csv",
+      "sha256": "5e35e8bd18ea5257bb9fc2ab600e80dac8a5d5bcd858d828936158af9ef80aa4",
+      "registros": 2014,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2024-01-01T00:00:00",
+        "endtime": "2024-12-31T23:59:59.999000",
+        "minlatitude": 14,
+        "maxlatitude": 84,
+        "minlongitude": -180,
+        "maxlongitude": -50,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_aleutianas_este_20240101_20250101_m3.5.csv",
+      "sha256": "68e10ccad657faf28b40d3865ccf5c8f30af56ccd33cd48cf6f514630ec764c2",
+      "registros": 121,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2024-01-01T00:00:00",
+        "endtime": "2024-12-31T23:59:59.999000",
+        "minlatitude": 50,
+        "maxlatitude": 73,
+        "minlongitude": 170,
+        "maxlongitude": 180,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_principal_20250101_20260101_m3.5.csv",
+      "sha256": "68143d1dbdf23800eac2ec65509cbc907cafd207a8ccbf37cf6fe7c6d3f0ebc5",
+      "registros": 2020,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2025-01-01T00:00:00",
+        "endtime": "2025-12-31T23:59:59.999000",
+        "minlatitude": 14,
+        "maxlatitude": 84,
+        "minlongitude": -180,
+        "maxlongitude": -50,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "usgs_aleutianas_este_20250101_20260101_m3.5.csv",
+      "sha256": "9b8b7044f2414bcd8afd101b5b2148ba5c58ba0b576f90730061507d17bc91bb",
+      "registros": 106,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "parametros": {
+        "format": "csv",
+        "starttime": "2025-01-01T00:00:00",
+        "endtime": "2025-12-31T23:59:59.999000",
+        "minlatitude": 50,
+        "maxlatitude": 73,
+        "minlongitude": 170,
+        "maxlongitude": 180,
+        "minmagnitude": 3.5,
+        "eventtype": "earthquake",
+        "orderby": "time-asc",
+        "limit": 20000
+      }
+    },
+    {
+      "archivo": "cb_2024_us_state_20m.zip",
+      "sha256": "7bc773d83c01b6df69b8aada9c2b5983d97f22f4551947cc5c00b87c663223ef",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip",
+      "pais": "US"
+    },
+    {
+      "archivo": "provincias_canada.geojson",
+      "sha256": "c240e701621df4eb2b81c62bace7e68e8df3218a9e7a4bdb126c2ab7cb439d3e",
+      "url": "https://geoportal.gov.mb.ca/api/download/v1/items/e46938cbb3e84c3688d03b8622d8f212/geojson?layers=0",
+      "pais": "CA"
+    }
+  ],
+  "alcance": "Dos ventanas regionales; país/provincia solo si el punto cae en un polígono oficial. Sin asignación no significa océano necesariamente."
+}

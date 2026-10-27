@@ -3,3 +3,6 @@ gunicorn==23.0.0
 psycopg[binary]==3.2.3
 requests==2.32.3
 tzdata==2025.2
+shapely==2.1.2
+pyshp==2.3.1
+pyproj==3.7.2

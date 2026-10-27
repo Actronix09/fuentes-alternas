@@ -1,0 +1,94 @@
+{
+  "verificado_utc": "2026-10-26T00:53:06.277663+00:00",
+  "pruebas": [
+    {
+      "prueba": "Las 396 observaciones del extracto coinciden con PostgreSQL",
+      "ok": true
+    },
+    {
+      "prueba": "No existen claves duplicadas",
+      "ok": true
+    },
+    {
+      "prueba": "CSV original Census conserva SHA-256",
+      "ok": true
+    },
+    {
+      "prueba": "ZIP original Statistics Canada conserva SHA-256",
+      "ok": true
+    },
+    {
+      "prueba": "US/2020: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "US/2021: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "US/2022: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "US/2023: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "US/2024: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "US/2025: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "CA/2020: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "CA/2021: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "CA/2022: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "CA/2023: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "CA/2024: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "CA/2025: API, total de origen y suma regional coinciden",
+      "ok": true
+    },
+    {
+      "prueba": "Filtro inválido rechazado: {'pais': 'MX'}",
+      "ok": true
+    },
+    {
+      "prueba": "Filtro inválido rechazado: {'anio': '2019'}",
+      "ok": true
+    },
+    {
+      "prueba": "Filtro inválido rechazado: {'anio': 'abc'}",
+      "ok": true
+    },
+    {
+      "prueba": "Página US muestra datos y fuente",
+      "ok": true
+    },
+    {
+      "prueba": "Página CA muestra datos y fuente",
+      "ok": true
+    },
+    {
+      "prueba": "Tablero sísmico enlaza a demografía",
+      "ok": true
+    }
+  ],
+  "sha256_extracto": "d26f8ac44dbfd1818032e364f014cb810559ee8ee7145b577177f0ceebbc4b90"
+}

@@ -1,0 +1,329 @@
+{
+  "verificado_utc": "2026-10-26T22:16:51.934796+00:00",
+  "totales": {
+    "US": 2455,
+    "SIN_ASIGNAR": 11341,
+    "CA": 245
+  },
+  "pruebas": [
+    {
+      "prueba": "SHA-256 usgs_principal_20200101_20210101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_principal_20200101_20210101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_aleutianas_este_20200101_20210101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_aleutianas_este_20200101_20210101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_principal_20210101_20220101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_principal_20210101_20220101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_aleutianas_este_20210101_20220101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_aleutianas_este_20210101_20220101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_principal_20220101_20230101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_principal_20220101_20230101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_aleutianas_este_20220101_20230101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_aleutianas_este_20220101_20230101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_principal_20230101_20240101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_principal_20230101_20240101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_aleutianas_este_20230101_20240101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_aleutianas_este_20230101_20240101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_principal_20240101_20250101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_principal_20240101_20250101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_aleutianas_este_20240101_20250101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_aleutianas_este_20240101_20250101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_principal_20250101_20260101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_principal_20250101_20260101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 usgs_aleutianas_este_20250101_20260101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Conteo y exclusividad de bloque usgs_aleutianas_este_20250101_20260101_m3.5.csv",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 cb_2024_us_state_20m.zip",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "SHA-256 provincias_canada.geojson",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Asignación geográfica de control: Denver",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Asignación geográfica de control: Toronto",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Asignación geográfica de control: Winnipeg",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Asignación geográfica de control: Anchorage",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Asignación geográfica de control: Honolulu",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Asignación geográfica de control: Mar Pacífico",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Cada evento fuente tiene exactamente una fila del warehouse",
+      "ok": true,
+      "detalle": 14041
+    },
+    {
+      "prueba": "Coordenadas y magnitud coinciden con los CSV para todos los eventos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Asignación territorial reproducible para todos los eventos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Todos los eventos asignados enlazan con región y población del año",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "La vista demográfica no multiplica eventos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Catálogo y hechos originales conservan sus conteos",
+      "ok": true,
+      "detalle": [
+        319592,
+        196576,
+        49272
+      ]
+    },
+    {
+      "prueba": "API US/2020: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API US/2020: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API US/2025: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API US/2025: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API CA/2020: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API CA/2020: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API CA/2025: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API CA/2025: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API MX/2020: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API MX/2020: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API MX/2025: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API MX/2025: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API SIN_ASIGNAR/2020: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API SIN_ASIGNAR/2020: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API SIN_ASIGNAR/2025: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API SIN_ASIGNAR/2025: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API TODOS/2020: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API TODOS/2020: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API TODOS/2025: puntos acotados y agregados completos",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "API TODOS/2025: país y magnitud coherentes",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Filtro inválido {'anio': 1900}",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Filtro inválido {'magnitud': 'nan'}",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Filtro inválido {'pais': 'inventado'}",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Página del mapa US",
+      "ok": true,
+      "detalle": null
+    },
+    {
+      "prueba": "Página del mapa CA",
+      "ok": true,
+      "detalle": null
+    }
+  ]
+}

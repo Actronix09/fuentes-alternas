@@ -70,4 +70,42 @@ Resultados esperados: **59 obras**, **58,834,555.00 aprobados**, **58,803,710.52
 
 ## Antes de exponer
 
+### Demografía de Estados Unidos y Canadá (ampliación del 25 de octubre)
+
+1. Abrir http://localhost:8091/demografia/ o «Población de Estados Unidos y Canadá» en el menú original de sismos.
+2. Elegir Estados Unidos, año 2025: se muestran 341,784,857 personas, distribuidas en 50 estados y Washington D. C.
+3. Cambiar a Canadá: se muestran 41,608,982 personas en 13 provincias y territorios. Elegir otro año para mostrar
+que la consulta cambia; hay información de 2020 a 2025.
+4. Enseñar «Fuente y alcance»: Census Bureau para EE. UU. y Statistics Canada para Canadá, con enlace y DOI canadiense.
+5. Mostrar en PostgreSQL `public.fact_poblacion_demografia` y la vista `public.v_poblacion_demografia`.
+   Hay 396 observaciones: 384 regionales y 12 totales nacionales. No sumarlas todas como si fueran personas distintas.
+6. Mostrar `evidencia/demografia.json`: 22 comprobaciones aprobadas de esta ampliación. El detalle técnico y los comandos
+   están en `sismos-usgs/README.md`, sección «Registro de implementación del 25 de octubre de 2026».
+
+Explicación breve:
+
+«Mi parte fue integrar población oficial de Estados Unidos y Canadá. Descargamos los archivos, seleccionamos población
+total al 1 de julio de 2020 a 2025, validamos que las regiones sumaran los totales nacionales y cargamos tablas nuevas
+en PostgreSQL. La página consulta esa base con filtros. La ampliación posterior de Norteamérica ya relaciona los eventos
+USGS asignados con la población de su región y año. No son cifras de personas afectadas.»
+
+### Actualización: mapa de Norteamérica, 26 de octubre
+
+La integración sísmica mencionada como pendiente en la fase anterior ya se implementó en esta copia local.
+
+1. Entrar en «Sismos de Norteamérica» en el menú original, o abrir http://localhost:8091/norteamerica/.
+2. Elegir Estados Unidos, 2020 y magnitud 3.5: hay 643 eventos asignados a polígonos oficiales. Cambiar a Canadá:
+   hay 24. Los resultados pueden ser cero con magnitudes mayores; no significa que falle el mapa.
+3. Abrir un punto: mostrar fecha, magnitud, región, población regional del año y enlace a la ficha oficial USGS.
+4. Seleccionar «Área regional sin país asignado» para ver eventos que no se atribuyeron a US/CA, incluidos marítimos
+   y de otras zonas del rectángulo. No se asignan al país más cercano.
+5. Mostrar `public.fact_sismo_norteamerica`, `public.v_sismo_norteamerica`, el manifiesto de fuentes y
+   `evidencia/norteamerica.json` con 63 comprobaciones aprobadas. Hay 14,041 eventos regionales conservados,
+   2,455 asignados a EE. UU., 245 a Canadá y 11,341 sin asignación única.
+
+«Ampliamos también los eventos con USGS ComCat, fuente oficial con DOI. Los descargamos y validamos, los asignamos
+a límites gubernamentales por coordenadas y los relacionamos con población del mismo año y región. El mapa muestra
+magnitud y la fuente de cada evento, no daños inventados. México conserva el catálogo original del SSN. La cobertura
+implementada es 2020–2025 y magnitud mínima 3.5; no afirmamos que incluya todos los micro-sismos o toda jurisdicción marítima.»
+
 Abrir Docker Desktop, ejecutar `iniciar-docker.ps1` (o `./iniciar.sh` en Linux) y comprobar las páginas 8091–8094. Si está disponible el entorno Python local, ejecutar también `python verificar.py`. Conservar la carpeta completa: incluye los CSV y las copias atribuidas de los componentes originales.

@@ -30,7 +30,12 @@ class ProveedorJSON(DefaultJSONProvider):
         return DefaultJSONProvider.default(o)
 
 
+from demografia_web import demografia
+from norteamerica_web import norteamerica
+
 app = Flask(__name__)
+app.register_blueprint(demografia)
+app.register_blueprint(norteamerica)
 app.json = ProveedorJSON(app)
 
 LIMITE_MAPA = 4000

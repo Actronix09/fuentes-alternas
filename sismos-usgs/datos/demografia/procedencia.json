@@ -1,0 +1,29 @@
+{
+  "extraido_utc": "2026-10-26T00:48:28.455534+00:00",
+  "fuentes": {
+    "US": {
+      "institucion": "U.S. Census Bureau",
+      "titulo": "NST-EST2025-ALLDATA, Vintage 2025",
+      "pagina": "https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html",
+      "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv",
+      "archivo": "NST-EST2025-ALLDATA.csv",
+      "doi": null,
+      "sha256": "92188e29cb0a67dcf95afa7d6c47359409782f086478b70ea4128eb70e223ca9",
+      "bytes": 53555
+    },
+    "CA": {
+      "institucion": "Statistics Canada",
+      "titulo": "Table 17-10-0005-01, Population estimates on July 1, by age and gender",
+      "pagina": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501",
+      "url": "https://www150.statcan.gc.ca/n1/tbl/csv/17100005-eng.zip",
+      "archivo": "17100005-eng.zip",
+      "doi": "10.25318/1710000501-eng",
+      "sha256": "fe0199629d63a98b410d8a2a9300a1a94fe7f575d55f7dd99f27d49993ad45b9",
+      "bytes": 3880235
+    }
+  },
+  "filtro": "2020–2025, 1 de julio, todas las edades, población total; 50 estados + DC y 13 provincias/territorios",
+  "unidad": "personas",
+  "observaciones": 396,
+  "sha256_extracto": "d26f8ac44dbfd1818032e364f014cb810559ee8ee7145b577177f0ceebbc4b90"
+}

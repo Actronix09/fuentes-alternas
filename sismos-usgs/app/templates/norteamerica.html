@@ -1,0 +1,65 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sismos de Norteamérica · México, Estados Unidos y Canadá</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='estilos.css') }}">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>#mapa-na{height:65vh;min-height:380px}.lista-na{overflow:auto;max-height:420px}table{width:100%;border-collapse:collapse}th,td{padding:.6rem;text-align:left;border-bottom:1px solid var(--border)}.leyenda-na{background:var(--surface-1);padding:10px;color:var(--text-primary)}</style>
+</head><body>
+<header class="cabecera"><p class="etiqueta">Catálogos sísmicos y contexto demográfico</p>
+<h1>Sismos de Norteamérica</h1><p class="sub">México: catálogo SSN del proyecto original. Estados Unidos y Canadá: eventos oficiales de USGS ComCat.</p></header>
+<main><p><a href="/">Validación SSN–USGS</a> · <a href="/demografia/">Población oficial</a></p>
+<form class="filtros" method="get">
+<label for="pais-na">País o cobertura</label><select id="pais-na" name="pais">
+{% for valor,nombre in [('TODOS','México, Estados Unidos y Canadá'),('US','Estados Unidos'),('CA','Canadá'),('MX','México · SSN original'),('SIN_ASIGNAR','Área regional sin país asignado (mar y otros territorios)')] %}<option value="{{ valor }}" {% if pais==valor %}selected{% endif %}>{{ nombre }}</option>{% endfor %}</select>
+<label for="anio-na">Año UTC</label><select id="anio-na" name="anio">{% for a in range(2020,2026) %}<option {% if a==anio %}selected{% endif %}>{{ a }}</option>{% endfor %}</select>
+<label for="mag-na">Magnitud mínima</label><input id="mag-na" type="number" name="magnitud" value="{{ magnitud }}" min="3.5" max="10" step="0.1"><button>Aplicar filtros</button></form>
+<section class="panel"><h2>{{ '{:,}'.format(resumen.total) }} eventos del filtro</h2>
+<p>EE. UU.: {{ resumen.us }} · Canadá: {{ resumen.ca }} · México: {{ resumen.mx }}. Magnitud máxima: {{ resumen.maxima if resumen.maxima is not none else 'Sin datos' }}.</p>
+<p>Mapa: {{ mostrados }} eventos.{% if resumen.total>mostrados %} Se muestran los {{ limite }} de mayor magnitud; acota los filtros para explorar el resto. Los conteos y la serie mensual incluyen todos.{% endif %}</p>
+<div id="mapa-na" aria-label="Mapa de eventos sísmicos"></div>
+<p id="estado-mapa" role="status">Cargando mapa…</p>
+<p class="nota">El color representa magnitud, no impacto ni daños. La magnitud procede de cada catálogo y su escala puede variar. La población regional es contexto, no personas expuestas o afectadas.</p>
+{% if pais=='SIN_ASIGNAR' %}<p>Estos puntos no pudieron asignarse de manera única a los límites de EE. UU./Canadá. Pueden estar en el mar, cerca de costas/fronteras o en otros países. No se atribuyen a EE. UU. o Canadá.</p>{% endif %}
+</section>
+<section class="panel"><h2>Eventos y fuente verificable</h2><p>Tabla: hasta 100 eventos de mayor magnitud. Los otros puntos del mapa se pueden consultar haciendo clic sobre ellos.</p><div class="lista-na"><table><thead><tr><th>Fecha UTC</th><th>País / región</th><th>Magnitud</th><th>Lugar publicado</th><th>Fuente</th></tr></thead><tbody>
+{% for e in puntos[:100] %}<tr><td>{{ e.fecha_hora_utc }}</td><td>{{ e.pais or 'Sin asignar' }} {{ e.region or '' }}</td><td>{{ e.magnitud }} {{ e.tipo_magnitud or '' }}</td><td>{{ e.lugar }}</td><td><a href="{{ e.url_fuente }}" target="_blank" rel="noopener">{{ e.id }} · {{ e.fuente }}</a><br><button type="button" class="ver-evento-na" data-evento="{{ e.id }}" aria-label="Ver en mapa {{ e.id }}">Ver en mapa</button></td></tr>{% else %}<tr><td colspan="5">No hay eventos con estos filtros.</td></tr>{% endfor %}
+</tbody></table></div></section>
+<section class="panel"><h2>Serie mensual del filtro completo</h2><p>{% for m in meses %}{{ '%02d'|format(m.mes) }}: {{ m.eventos }} eventos{% if not loop.last %} · {% endif %}{% else %}Sin eventos.{% endfor %}</p></section>
+<section class="panel"><h2>Fuentes y cobertura</h2>
+<p><a href="https://doi.org/10.5066/F7MS3QZH">USGS ComCat · DOI 10.5066/F7MS3QZH</a> · <a href="https://earthquake.usgs.gov/fdsnws/event/1/">API oficial FDSN</a>.</p>
+<p>USGS: 2020–2025, magnitud ≥ 3.5, tipo earthquake. País/región asignados por coordenadas y polígonos gubernamentales de Census Bureau y Gobierno de Manitoba. Los límites son cartográficos y generalizados: no determinan jurisdicción marítima ni resuelven incertidumbre del epicentro. Incluye Alaska, Aleutianas y Hawái como parte de EE. UU.</p>
+<p>La cobertura no incluye todos los micro-sismos ni tiene la misma completitud en cada país. El filtro mexicano conserva el ámbito del catálogo SSN del DW original, hasta abril de 2025; no es una nueva clasificación territorial de México. Su filtrado original puede omitir eventos adicionales. Esta vista no es un catálogo único homologado ni una validación independiente de cada evento.</p>
+<p>Última carga regional: {{ carga.cargado_utc }}. Eventos conservados en toda el área: {{ carga.eventos }}.</p>
+<p><a href="{{ url_for('norteamerica.api',anio=anio,pais=pais,magnitud=magnitud) }}">Ver resultados en la API</a></p></section>
+</main>
+<script>
+const puntosNA={{ puntos|tojson }};
+const estadoNA=document.getElementById('estado-mapa');
+if(typeof L==='undefined'){estadoNA.textContent='No se pudo cargar Leaflet. Revisa la conexión a Internet; los datos siguen disponibles en la tabla.';}
+else {
+const mapaNA=L.map('mapa-na',{preferCanvas:true}).setView([49,-105],3);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors'}).addTo(mapaNA);
+const escaparNA=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const colorNA=m=>m>=7?'#b21732':m>=6?'#db5a2f':m>=5?'#b98600':m>=4?'#2475b8':'#287d4d';
+let visiblesNA=0;
+const limitesNA=[];
+const marcadoresNA=new Map();
+puntosNA.forEach(e=>{
+const lon=e.longitud>0?e.longitud-360:e.longitud;
+const poblacion=e.poblacion_region===null?'No disponible':Number(e.poblacion_region).toLocaleString('es-MX')+' personas en toda la región (no afectados), referencia '+escaparNA(e.fecha_poblacion);
+const marcadorNA=L.circleMarker([e.latitud,lon],{radius:Math.max(3,e.magnitud*1.6),color:colorNA(e.magnitud),fillOpacity:.65,weight:1})
+.bindPopup('<strong>M '+escaparNA(e.magnitud)+' '+escaparNA(e.tipo_magnitud)+'</strong><br>'+escaparNA(e.fecha_hora_utc)+' UTC<br>'+escaparNA(e.lugar)+'<br>Región: '+escaparNA(e.pais||'Sin asignar')+' '+escaparNA(e.region)+'<br>Profundidad: '+escaparNA(e.profundidad_km)+' km<br>Población regional: '+poblacion+'<br><a target="_blank" rel="noopener" href="'+escaparNA(e.url_fuente)+'">'+escaparNA(e.fuente)+' · '+escaparNA(e.id)+'</a>').addTo(mapaNA);
+limitesNA.push([e.latitud,lon]);visiblesNA++;
+marcadoresNA.set(e.id,marcadorNA);
+});
+document.querySelectorAll('.ver-evento-na').forEach(b=>b.addEventListener('click',()=>{
+const m=marcadoresNA.get(b.dataset.evento); if(!m)return;
+document.getElementById('mapa-na').scrollIntoView({block:'center'});
+mapaNA.setView(m.getLatLng(),6);m.openPopup();
+}));
+if(limitesNA.length)mapaNA.fitBounds(limitesNA,{padding:[25,25],maxZoom:7});
+estadoNA.textContent=visiblesNA+' puntos representados en el mapa.';
+const leyendaNA=L.control({position:'bottomright'});leyendaNA.onAdd=()=>{const d=L.DomUtil.create('div','leyenda-na');d.textContent='Magnitud: verde <4 · azul 4–5 · ocre 5–6 · naranja 6–7 · rojo ≥7';return d;};leyendaNA.addTo(mapaNA);
+}
+</script></body></html>

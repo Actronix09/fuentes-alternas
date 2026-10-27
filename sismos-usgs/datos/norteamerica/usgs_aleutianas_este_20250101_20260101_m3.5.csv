@@ -1,0 +1,107 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2025-01-04T03:38:40.664Z,53.1199,173.6863,10,3.8,mb,14,129,0.464,1.27,us,us6000pket,2025-03-17T21:34:32.040Z,"45 km NE of Attu Station, Alaska",earthquake,5.96,1.961,0.208,7,reviewed,us,us
+2025-01-05T13:00:02.410Z,52.7903,173.0495,10,3.8,mb,18,183,0.641,1.08,us,us6000pkgr,2025-03-17T21:34:45.040Z,"11 km SW of Attu Station, Alaska",earthquake,9.9,1.961,0.111,22,reviewed,us,us
+2025-01-10T21:04:10.223Z,51.7842,175.7306,35,3.7,ml,13,215,1.378,0.74,us,us7000pbnu,2025-03-20T20:55:53.040Z,"209 km SE of Attu Station, Alaska",earthquake,6.16,2.012,0.115,10,reviewed,us,us
+2025-01-16T00:27:22.974Z,51.1349,179.7666,27.017,3.8,mb,55,216,0.38,0.82,us,us6000pkby,2025-03-29T22:12:40.040Z,"263 km WSW of Adak, Alaska",earthquake,5.95,7.264,0.082,38,reviewed,us,us
+2025-01-18T12:50:03.182Z,51.7621,175.4966,37.584,3.9,mb,20,195,1.295,0.96,us,us7000p9md,2025-03-29T22:12:47.040Z,"198 km SE of Attu Station, Alaska",earthquake,9.77,12.354,0.162,10,reviewed,us,us
+2025-01-28T23:56:01.133Z,51.8026,170.8616,10,4.2,mb,23,182,2.195,0.95,us,us7000pbm2,2025-04-08T22:01:04.040Z,"196 km SW of Attu Station, Alaska",earthquake,11.37,1.963,0.14,14,reviewed,us,us
+2025-01-30T04:53:11.205Z,51.9763,178.2647,125.378,4.4,mb,115,141,0.155,0.94,us,us7000p9za,2025-04-15T20:55:24.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,8.98,4.566,0.063,72,reviewed,us,us
+2025-01-31T23:19:31.875Z,53.0906,173.3935,10,4.9,mb,115,85,0.56,1.05,us,us7000pai0,2025-04-15T20:55:26.040Z,"30 km NNE of Attu Station, Alaska",earthquake,7.54,1.868,0.034,278,reviewed,us,us
+2025-02-02T01:09:11.581Z,53.0154,173.3679,10,4.2,mb,38,168,0.528,0.8,us,us7000pcpa,2025-04-15T20:55:33.040Z,"22 km NNE of Attu Station, Alaska",earthquake,7.22,1.894,0.098,29,reviewed,us,us
+2025-02-03T11:15:49.275Z,50.9652,178.2945,10,3.7,mb,36,226,0.757,0.67,us,us7000pcxg,2025-04-15T20:55:34.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,3.8,1.938,0.135,14,reviewed,us,us
+2025-02-03T22:05:55.299Z,51.77,176.2878,35,3.5,ml,14,205,1.39,0.75,us,us6000pvxm,2025-04-15T20:55:23.040Z,"243 km ESE of Attu Station, Alaska",earthquake,5.55,2.003,0.128,8,reviewed,us,us
+2025-02-08T21:11:34.960Z,51.9151,173.4852,10,3.9,mb,30,207,0.898,0.53,us,us7000pdt0,2025-04-26T14:47:10.040Z,"105 km S of Attu Station, Alaska",earthquake,9.17,1.962,0.112,21,reviewed,us,us
+2025-02-09T13:09:32.393Z,52.0009,177.9622,131.904,3.8,mb,32,162,0.379,0.73,us,us7000pe9x,2025-04-26T14:47:10.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,8.2,3.767,0.16,12,reviewed,us,us
+2025-02-21T07:07:09.006Z,51.5262,178.1377,52.286,4.9,mb,246,109,0.482,0.95,us,us7000pf61,2025-05-06T21:39:17.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,4.94,5.462,0.024,552,reviewed,us,us
+2025-02-24T11:22:26.973Z,52.574,170.5711,10,4,mb,45,179,2.155,1.02,us,us6000px1p,2025-05-06T21:39:15.040Z,"179 km W of Attu Station, Alaska",earthquake,6.37,1.982,0.097,29,reviewed,us,us
+2025-02-24T18:54:28.366Z,51.4811,179.3384,64.421,3.5,ml,37,120,0.105,0.38,us,us6000pv8d,2025-05-06T21:39:12.040Z,"281 km W of Adak, Alaska",earthquake,8.77,18.719,0.085,18,reviewed,us,us
+2025-02-26T06:34:09.726Z,62.176,171.0566,10,4.7,mb,75,66,8.011,0.67,us,us6000pvje,2025-05-08T19:24:41.040Z,"Chukotskiy Avtonomnyy Okrug, Russia",earthquake,5.49,1.898,0.043,167,reviewed,us,us
+2025-02-27T12:17:15.641Z,52.6095,172.2167,10,3.9,mb,38,176,1.153,1.02,us,us6000pxfd,2025-05-08T19:24:47.040Z,"70 km WSW of Attu Station, Alaska",earthquake,10.49,1.975,0.118,19,reviewed,us,us
+2025-02-28T06:54:53.854Z,51.7603,178.6504,92.92,4.1,mb,39,157,0.179,0.24,us,us6000pw0n,2025-05-08T19:24:42.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,5.88,4.322,0.075,49,reviewed,us,us
+2025-03-02T05:02:28.551Z,51.5999,178.4922,70.514,3.8,mb,28,181,0.36,0.47,us,us6000py5f,2025-05-08T19:24:48.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,3.73,5.737,0.141,13,reviewed,us,us
+2025-03-06T22:25:26.910Z,51.1898,176.7681,10,3.5,ml,14,231,1.327,1.22,us,us6000q4ts,2025-05-16T17:30:07.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,3.23,1.994,0.121,12,reviewed,us,us
+2025-03-07T12:59:25.574Z,51.656,177.9863,118.326,3.5,mb,29,187,0.438,0.4,us,us6000q4nf,2025-05-16T17:30:07.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,5.25,5.532,0.175,8,reviewed,us,us
+2025-03-08T15:13:19.171Z,51.4358,179.723,63.85,3.9,mb,73,175,0.27,0.45,us,us6000pzd0,2025-05-16T17:30:06.040Z,"256 km WSW of Adak, Alaska",earthquake,5.75,8.314,0.078,43,reviewed,us,us
+2025-03-11T22:36:46.017Z,51.8219,176.4382,35,3.5,ml,16,200,1.291,0.84,us,us6000q5wa,2025-05-16T17:30:08.040Z,"249 km ESE of Attu Station, Alaska",earthquake,8.24,2.014,0.105,12,reviewed,us,us
+2025-03-16T22:46:21.962Z,51.8678,178.3218,108.69,4.4,mb,91,129,0.142,0.46,us,us6000pz88,2025-05-17T19:19:59.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,9.32,4.85,0.047,131,reviewed,us,us
+2025-03-25T07:38:27.772Z,51.4749,179.0303,53.898,3.9,mb,38,174,0.196,0.45,us,us7000pmia,2025-05-29T17:36:32.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,5.21,11.88,0.182,8,reviewed,us,us
+2025-03-25T16:39:03.272Z,50.3017,177.3493,10,3.8,mb,45,254,1.641,0.43,us,us6000q6wr,2025-05-29T17:36:26.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,4.95,2.01,0.147,13,reviewed,us,us
+2025-03-25T17:43:18.721Z,51.7965,174.8512,10,3.8,mb,32,187,1.042,0.64,us,us6000q3rj,2025-05-29T17:36:26.040Z,"162 km SE of Attu Station, Alaska",earthquake,3.92,1.955,0.161,10,reviewed,us,us
+2025-03-31T06:42:26.227Z,51.0996,174.508,10,3.7,mb,48,182,1.652,0.52,us,us6000q76f,2025-06-06T21:12:24.040Z,"214 km SSE of Attu Station, Alaska",earthquake,7.03,1.988,0.113,20,reviewed,us,us
+2025-03-31T06:58:14.296Z,51.8339,178.4368,138.716,4.2,mb,247,86,0.123,0.5,us,us7000pnzd,2025-06-06T21:12:29.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,8.21,4.368,0.038,190,reviewed,us,us
+2025-04-02T02:48:30.694Z,52.9668,173.2442,10,3.9,mb,25,194,0.57,0.93,us,us6000q5f9,2025-06-09T13:38:44.040Z,"13 km NNE of Attu Station, Alaska",earthquake,8.92,1.982,0.133,15,reviewed,us,us
+2025-04-02T16:26:35.709Z,53.2407,172.961,14.015,5.5,mww,278,53,0.858,0.9,us,us7000ppga,2025-06-09T13:38:49.040Z,"46 km NNW of Attu Station, Alaska",earthquake,7.08,3.892,0.039,63,reviewed,us,us
+2025-04-02T23:08:56.405Z,52.9266,172.357,33.106,3.6,mb,25,202,1.075,0.52,us,us6000q5fz,2025-06-09T13:38:45.040Z,"56 km W of Attu Station, Alaska",earthquake,15.1,9.423,0.109,21,reviewed,us,us
+2025-04-05T11:22:39.650Z,51.9805,172.8385,10,3.7,mb,25,174,1.077,0.81,us,us6000q6ia,2025-06-09T13:38:47.040Z,"99 km SSW of Attu Station, Alaska",earthquake,7.84,1.969,0.11,21,reviewed,us,us
+2025-04-12T23:54:45.307Z,52.0344,174.5812,51.238,3.7,mb,30,203,0.756,1.01,us,us7000pv2m,2025-06-14T18:26:46.040Z,"131 km SE of Attu Station, Alaska",earthquake,9.49,11.587,0.123,17,reviewed,us,us
+2025-04-20T10:26:37.459Z,50.9843,175.6757,10,3.8,mb,77,252,2.003,0.66,us,us6000q7ey,2025-07-25T21:10:49.366Z,"268 km SE of Attu Station, Alaska",earthquake,7.07,1.985,0.069,55,reviewed,us,us
+2025-04-21T06:30:57.155Z,51.8407,178.2593,159.098,3.5,mb,48,265,0.19,0.49,us,us7000pxr9,2025-06-27T00:35:09.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,12.94,4.797,0.097,26,reviewed,us,us
+2025-04-25T08:11:29.552Z,52.0256,176.5096,10,4.7,mww,72,99,1.24,0.95,us,us7000puzd,2025-08-06T18:21:42.824Z,"243 km ESE of Attu Station, Alaska",earthquake,7.09,1.853,0.11,8,reviewed,us,us
+2025-05-03T10:06:58.695Z,51.6866,178.8566,73.874,3.8,mb,61,153,0.304,0.46,us,us7000pwv9,2025-07-12T16:30:43.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,9.39,4.092,0.087,34,reviewed,us,us
+2025-05-04T12:50:54.904Z,51.9716,175.3291,58.891,3.7,mb,58,191,1.07,0.47,us,us7000pys6,2025-07-12T16:30:48.040Z,"175 km SE of Attu Station, Alaska",earthquake,8.53,9.65,0.082,38,reviewed,us,us
+2025-05-06T03:28:03.626Z,51.7842,176.1323,64.375,3.5,ml,12,207,1.484,0.48,us,us7000py40,2025-07-12T16:30:48.040Z,"233 km ESE of Attu Station, Alaska",earthquake,11.45,33.642,0.105,12,reviewed,us,us
+2025-05-06T05:30:54.772Z,51.8954,178.4163,118.112,4.1,mb,160,87,0.079,0.66,us,us7000pxfn,2025-07-12T16:30:46.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,9.22,4.928,0.04,169,reviewed,us,us
+2025-05-06T21:04:41.914Z,50.3384,177.1824,10,3.7,mb,37,254,1.699,0.49,us,us7000pxlw,2025-07-12T16:30:47.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,4.37,2.016,0.19,7,reviewed,us,us
+2025-05-09T12:02:33.917Z,51.1084,174.7868,10,3.7,mb,69,222,1.678,0.6,us,us7000py8r,2025-07-24T21:30:13.040Z,"222 km SSE of Attu Station, Alaska",earthquake,8.54,1.982,0.072,49,reviewed,us,us
+2025-05-11T21:49:56.871Z,62.6809,178.5191,10,5.3,mww,120,62,4.557,0.48,us,us7000pyqc,2025-07-24T21:30:14.040Z,"59 km SW of Beringovskiy, Russia",earthquake,10.69,1.8,0.043,53,reviewed,us,us
+2025-05-12T05:36:19.103Z,62.8631,178.671,10,4.4,mb,126,146,4.436,0.66,us,us7000pyrx,2025-07-24T21:30:15.040Z,"40 km WSW of Beringovskiy, Russia",earthquake,8.89,1.904,0.046,136,reviewed,us,us
+2025-05-12T10:05:09.330Z,51.0358,174.6866,10,3.9,mb,27,206,1.735,0.91,us,us6000qg7r,2025-07-24T21:30:09.040Z,"226 km SSE of Attu Station, Alaska",earthquake,7.74,1.794,0.148,12,reviewed,us,us
+2025-05-18T03:45:11.331Z,50.9292,178.9064,10,3.5,ml,22,275,0.514,0.72,us,us7000q0qn,2025-07-25T17:06:21.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,5.27,1.978,0.091,16,reviewed,us,us
+2025-05-20T06:58:52.099Z,50.1851,177.445,10,3.6,mb,40,256,1.678,0.56,us,us7000q17k,2025-07-25T17:06:21.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,7.04,2.006,0.114,19,reviewed,us,us
+2025-05-23T04:38:38.368Z,51.5593,178.4709,76.527,4,mb,62,176,0.378,0.65,us,us7000q10h,2025-08-13T15:14:30.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,6.28,5.556,0.069,56,reviewed,us,us
+2025-05-29T16:16:03.832Z,51.4638,176.9412,35,3.5,mb,23,214,1.091,0.72,us,us6000qi23,2025-08-16T21:54:17.040Z,"299 km ESE of Attu Station, Alaska",earthquake,7.51,2.013,0.221,5,reviewed,us,us
+2025-05-30T01:31:45.636Z,51.611,178.6772,74.68,4.2,mb,47,172,0.329,0.34,us,us6000qgu2,2025-08-16T21:54:10.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,5.1,5.106,0.136,15,reviewed,us,us
+2025-06-03T13:45:44.962Z,51.3603,179.6205,72.561,3.8,mb,81,197,0.201,0.46,us,us6000qifp,2025-08-16T21:54:17.040Z,"265 km WSW of Adak, Alaska",earthquake,6.79,9.742,0.074,47,reviewed,us,us
+2025-06-17T12:38:30.185Z,51.7897,175.7969,49.761,4.4,mb,108,155,1.405,0.52,us,us6000qkt5,2025-08-22T20:26:03.040Z,"213 km SE of Attu Station, Alaska",earthquake,8.18,8.484,0.058,84,reviewed,us,us
+2025-06-29T07:13:56.539Z,52.3128,175.8138,86.038,4.9,mb,77,105,1.128,0.51,us,us7000q9hi,2025-09-04T20:40:01.040Z,"187 km ESE of Attu Station, Alaska",earthquake,6.66,7.128,0.034,265,reviewed,us,us
+2025-07-11T04:49:00.226Z,51.9437,179.4421,183.221,3.5,ml,32,105,0.038,0.35,us,us7000qbz0,2025-11-28T20:47:59.702Z,"270 km W of Adak, Alaska",earthquake,8.53,3.82,0.081,20,reviewed,us,us
+2025-07-15T19:53:57.418Z,51.6585,176.339,35,3.7,ml,13,211,1.38,0.52,us,us7000qcxm,2025-11-28T21:22:15.797Z,"252 km ESE of Attu Station, Alaska",earthquake,6.62,2.012,0.091,16,reviewed,us,us
+2025-07-19T21:45:07.838Z,52.0022,177.5731,153.772,4.1,mb,26,170,0.583,0.48,us,us6000qx0x,2025-10-03T18:41:44.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,5.45,7.174,0.14,14,reviewed,us,us
+2025-07-21T19:07:19.999Z,51.2679,179.5187,49.643,5,mb,97,135,0.175,0.9,us,us6000qtzg,2026-07-21T19:17:28.137Z,"275 km WSW of Adak, Alaska",earthquake,5.54,6.596,0.025,519,reviewed,us,us
+2025-07-23T13:28:35.118Z,51.7041,177.2928,64.962,3.5,ml,30,195,0.795,0.47,us,us6000qudl,2025-10-11T20:57:03.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,10.34,18.744,0.085,18,reviewed,us,us
+2025-07-26T05:03:53.539Z,51.6717,178.3992,89.851,5.3,mww,143,57,0.281,0.64,us,us6000qv9g,2026-07-26T05:13:57.182Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,7.96,4.62,0.044,49,reviewed,us,us
+2025-07-26T23:09:39.073Z,52.0667,178.2398,135.161,5.1,mww,183,55,0.196,0.91,us,us6000qvdz,2026-07-26T23:19:43.853Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,7.61,4.546,0.047,44,reviewed,us,us
+2025-07-27T18:43:39.161Z,51.3745,175.213,10,4.1,mb,57,183,1.521,0.59,us,us6000qvie,2025-10-11T20:57:23.040Z,"214 km SE of Attu Station, Alaska",earthquake,6.83,1.937,0.087,36,reviewed,us,us
+2025-07-31T15:37:44.353Z,51.6456,178.5453,90.218,3.5,ml,20,236,0.287,0.33,us,us6000rd0l,2025-10-17T22:51:42.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,7.46,6.615,0.091,16,reviewed,us,us
+2025-08-02T09:04:12.141Z,51.4095,177.1479,35,3.7,mb,26,215,1.006,0.73,us,us6000rcpk,2025-10-17T22:51:42.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,7.24,2.012,0.126,16,reviewed,us,us
+2025-08-04T08:14:17.133Z,51.7707,176.4769,35,3.6,ml,28,202,1.274,0.49,us,us6000rdw2,2025-10-17T22:51:42.040Z,"254 km ESE of Attu Station, Alaska",earthquake,8.93,2.016,0.081,20,reviewed,us,us
+2025-08-09T23:51:32.555Z,52.0585,178.4925,157.232,3.7,mb,36,131,0.114,0.82,us,us7000qtju,2025-10-25T13:40:36.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,14.96,10.175,0.097,27,reviewed,us,us
+2025-08-11T18:25:29.746Z,52.1608,174.354,35,4.2,mb,51,167,0.59,0.75,us,us6000qzux,2025-10-25T13:40:41.040Z,"110 km SE of Attu Station, Alaska",earthquake,7.03,1.724,0.06,78,reviewed,us,us
+2025-08-17T11:58:48.152Z,52.0776,172.5779,10,4.3,mb,146,118,1.138,0.55,us,us6000r1q5,2025-11-04T16:43:51.040Z,"95 km SSW of Attu Station, Alaska",earthquake,8.26,1.898,0.046,132,reviewed,us,us
+2025-08-22T00:18:33.064Z,51.228,179.1883,41.151,4,mb,54,193,0.166,0.96,us,us6000r2x3,2025-11-12T16:25:36.040Z,"298 km WSW of Adak, Alaska",earthquake,6.67,9.62,0.081,43,reviewed,us,us
+2025-08-25T22:50:13.119Z,51.5983,178.3582,90.978,4,mb,30,184,0.382,0.71,us,us7000qxc4,2025-11-12T16:25:49.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,6.63,4.459,0.15,12,reviewed,us,us
+2025-08-28T11:07:48.125Z,52.1251,179.9386,130,5.9,mww,154,31,0.256,1.17,us,us7000qrj0,2026-08-28T11:17:58.992Z,"237 km W of Adak, Alaska",earthquake,5.6,1.78,0.034,82,reviewed,us,us
+2025-08-29T09:14:25.405Z,51.7122,179.5965,81.285,5.1,mww,220,65,0.189,0.6,us,us7000qru7,2026-08-29T09:24:31.177Z,"260 km W of Adak, Alaska",earthquake,5.69,3.224,0.054,33,reviewed,us,us
+2025-08-29T22:12:17.238Z,51.5963,179.5663,76.941,3.7,ml,24,125,0.274,0.26,us,us6000rmu7,2025-11-19T21:59:40.040Z,"264 km W of Adak, Alaska",earthquake,9.58,13.938,0.085,18,reviewed,us,us
+2025-09-05T11:50:56.657Z,51.5015,177.5613,51.715,3.9,mb,23,205,0.775,0.82,us,us6000rdlc,2025-11-30T23:40:05.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,7.32,9.466,0.148,12,reviewed,us,us
+2025-09-13T01:58:55.800Z,51.4762,179.634,72.5,4.5,mb,134,145,0.23,0.66,us,us7000qvw4,2025-12-03T03:58:17.040Z,"261 km W of Adak, Alaska",earthquake,5.58,5.548,0.049,121,reviewed,us,us
+2025-09-16T19:10:30.477Z,51.7045,178.15,113.077,4.5,mb,92,82,0.331,0.51,us,us7000qwjm,2025-12-03T03:58:46.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,7.9,3.881,0.053,105,reviewed,us,us
+2025-09-19T13:14:46.313Z,51.956,178.3034,112.747,3.7,mb,62,155,0.166,0.86,us,us6000rgcw,2025-12-06T16:00:13.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,11.47,8.75,0.077,43,reviewed,us,us
+2025-09-27T10:36:23.418Z,52.1226,175.9575,10,3.6,ml,16,190,1.289,1.1,us,us6000rf8b,2025-12-11T21:40:37.040Z,"204 km ESE of Attu Station, Alaska",earthquake,6.9,1.992,0.097,14,reviewed,us,us
+2025-10-05T07:00:01.646Z,52.1429,179.7058,173.056,3.8,mb,14,132,0.163,0.71,us,us6000rj88,2025-12-19T22:50:47.040Z,"253 km W of Adak, Alaska",earthquake,10.03,10.91,0.127,16,reviewed,us,us
+2025-10-05T09:11:54.977Z,51.0769,178.8163,17.521,4.2,mb,69,214,0.429,0.59,us,us6000rey2,2025-12-19T22:50:06.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,5.04,4.942,0.072,54,reviewed,us,us
+2025-10-10T13:12:58.425Z,51.1918,175.2299,10,3.5,ml,7,251,1.691,0.38,us,us6000rkmw,2026-01-01T23:11:16.040Z,"231 km SE of Attu Station, Alaska",earthquake,8.06,2.027,0.097,14,reviewed,us,us
+2025-10-14T14:10:26.344Z,53.1752,171.4114,44.019,4.2,mb,92,143,1.686,0.59,us,us6000rlfy,2026-01-01T23:11:18.040Z,"124 km WNW of Attu Station, Alaska",earthquake,10.52,10.404,0.061,75,reviewed,us,us
+2025-10-18T13:07:50.076Z,53.4214,170.5529,35,4.3,mb,59,159,2.249,1.03,us,us6000ri19,2026-01-09T15:38:40.040Z,"187 km WNW of Attu Station, Alaska",earthquake,10.59,1.863,0.059,83,reviewed,us,us
+2025-10-31T03:03:42.881Z,51.5784,178.4737,76.757,4,mb,39,184,0.359,0.72,us,us6000rkl4,2026-01-27T17:59:03.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,5.11,4.446,0.15,12,reviewed,us,us
+2025-11-02T20:19:54.336Z,51.2138,178.3018,42.317,4.5,mb,66,137,0.649,0.69,us,us6000rl2z,2026-01-27T17:59:05.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,6.38,7.416,0.05,118,reviewed,us,us
+2025-11-08T03:04:14.166Z,51.8158,178.4332,111.145,4,mb,40,155,0.164,0.75,us,us7000re6s,2026-01-29T22:05:26.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,3.83,5.787,0.126,18,reviewed,us,us
+2025-11-10T18:51:49.926Z,51.2873,174.8322,10,4.5,mb,62,207,1.514,0.92,us,us6000rmn2,2026-01-29T22:05:34.040Z,"206 km SSE of Attu Station, Alaska",earthquake,8.35,1.953,0.044,151,reviewed,us,us
+2025-11-11T14:13:39.871Z,51.5272,177.4469,50.409,4.1,mb,44,125,0.82,0.8,us,us7000regl,2026-01-29T22:05:30.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,6.6,8.041,0.097,29,reviewed,us,us
+2025-11-13T22:49:51.392Z,51.8995,178.0364,116.414,4.4,mb,55,98,0.298,0.53,us,us6000rn60,2026-02-10T15:55:09.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,8.17,4.21,0.052,107,reviewed,us,us
+2025-11-15T01:20:31.955Z,52.2528,179.0369,200.49,4.3,mb,49,107,0.414,0.94,us,us6000rne4,2026-02-10T15:55:10.040Z,"299 km W of Adak, Alaska",earthquake,9.3,10.982,0.077,48,reviewed,us,us
+2025-11-15T12:53:13.732Z,52.5725,172.3886,35.549,3.9,mb,28,206,1.054,0.81,us,us6000rs8y,2026-02-10T15:55:15.040Z,"61 km WSW of Attu Station, Alaska",earthquake,13.5,10.179,0.11,22,reviewed,us,us
+2025-11-16T21:01:14.151Z,51.7553,178.5691,96.582,4.3,mb,78,162,0.177,0.55,us,us6000rnms,2026-02-10T15:55:11.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,10.33,4.648,0.086,38,reviewed,us,us
+2025-11-18T12:40:30.409Z,51.595,177.7853,48.37,3.5,ml,17,307,0.573,0.2,us,us6000rp1x,2026-02-10T15:55:14.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,6.55,16.521,0.091,16,reviewed,us,us
+2025-11-20T00:43:23.890Z,52.8319,174.4631,111.26,3.8,mb,23,168,0.244,0.4,us,us6000rtex,2026-02-20T16:07:37.040Z,"86 km E of Attu Station, Alaska",earthquake,17.38,8.469,0.124,17,reviewed,us,us
+2025-11-29T00:43:06.687Z,51.2431,179.7669,54.379,3.7,mb,45,221,0.322,0.48,us,us7000rejl,2026-02-25T16:18:37.040Z,"259 km WSW of Adak, Alaska",earthquake,5.85,9.369,0.103,24,reviewed,us,us
+2025-12-01T13:32:25.208Z,52.059,179.6384,133.018,3.7,mb,86,125,0.07,0.78,us,us7000rewc,2026-02-25T16:18:41.040Z,"256 km W of Adak, Alaska",earthquake,9.33,8.77,0.063,65,reviewed,us,us
+2025-12-07T15:58:37.587Z,52.1684,179.5168,171.368,4.3,mb,68,58,0.171,0.67,us,us6000rt65,2026-03-04T18:42:56.040Z,"266 km W of Adak, Alaska",earthquake,8.07,5.104,0.056,89,reviewed,us,us
+2025-12-09T04:29:59.508Z,51.1565,178.5551,18.812,4.7,mb,145,140,0.519,0.64,us,us6000rtkc,2026-03-04T18:43:47.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,4.86,4.585,0.05,124,reviewed,us,us
+2025-12-12T17:22:05.400Z,50.1114,179.9086,10,3.9,mb,76,149,1.655,0.6,us,us7000rm5z,2026-03-10T22:18:46.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,6.64,1.924,0.07,59,reviewed,us,us
+2025-12-13T10:51:00.036Z,52.1512,178.3529,108,5.5,mww,106,32,0.208,0.76,us,us6000rumi,2026-10-24T11:01:12.811Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,6.42,1.775,0.048,41,reviewed,us,us
+2025-12-17T00:19:42.135Z,51.0996,174.7011,10,3.5,ml,22,266,1.674,0.72,us,us6000s8sj,2026-03-19T13:55:59.040Z,"220 km SSE of Attu Station, Alaska",earthquake,4.04,2.026,0.115,10,reviewed,us,us
+2025-12-26T18:17:08.727Z,51.5493,177.8198,93.27,4,mb,35,204,4.989,0.74,us,us7000rq6y,2026-04-01T22:48:59.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,17.18,14.053,0.096,29,reviewed,us,us
+2025-12-27T21:56:29.779Z,53.0417,171.9684,38.08,4.3,mb,84,107,1.329,0.78,us,us7000rqm2,2026-04-01T22:49:02.040Z,"84 km WNW of Attu Station, Alaska",earthquake,10.48,8.008,0.059,82,reviewed,us,us
+2025-12-27T23:30:04.817Z,51.7746,178.341,124.965,3.5,ml,17,168,0.203,0.37,us,us7000s1ux,2026-04-01T22:49:11.040Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,7.11,3.919,0.097,14,reviewed,us,us
+2025-12-30T08:08:50.121Z,51.8969,178.568,98.161,3.7,mb,36,150,0.059,0.57,us,us7000rr5b,2026-04-07T23:00:22.473Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,9.7,9.228,0.119,20,reviewed,us,us

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Población de Estados Unidos y Canadá</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+  <style>
+    .tabla-demografia {width:100%;border-collapse:collapse}
+    .tabla-demografia th,.tabla-demografia td {padding:.65rem;text-align:left;border-bottom:1px solid var(--border)}
+    .tabla-demografia .numero {text-align:right;font-variant-numeric:tabular-nums}
+    .tabla-contenedor {overflow-x:auto}
+    .barra {display:block;height:.4rem;background:var(--series-1);margin-top:.3rem;border-radius:3px}
+  </style>
+</head>
+<body>
+<header class="cabecera">
+  <p class="etiqueta">Contexto demográfico del sistema de sismos</p>
+  <h1>Población de Estados Unidos y Canadá</h1>
+  <p class="sub">Estimaciones oficiales por estado, provincia y territorio, de 2020 a 2025.</p>
+</header>
+<main>
+  <p><a href="/">Volver al tablero sísmico</a></p>
+  <form class="filtros" method="get">
+    <label>País <select name="pais">
+      <option value="CA" {% if pais == 'CA' %}selected{% endif %}>Canadá</option>
+      <option value="US" {% if pais == 'US' %}selected{% endif %}>Estados Unidos</option>
+    </select></label>
+    <label>Año <select name="anio">{% for a in range(2020,2026) %}
+      <option {% if a == anio %}selected{% endif %}>{{ a }}</option>{% endfor %}
+    </select></label><button type="submit">Consultar población</button>
+  </form>
+  <section class="panel">
+    <h2>{{ total.nombre }} · {{ anio }}</h2>
+    <p><strong>{{ '{:,}'.format(total.poblacion) }} personas</strong> al 1 de julio.</p>
+    <p>{{ regiones|length }} estados, provincias o territorios. La suma regional coincide con el total nacional.</p>
+    <p class="nota">{{ nota }} Los totales nacionales se muestran por separado para evitar duplicar población al sumar.</p>
+    <div class="tabla-contenedor"><table class="tabla-demografia">
+      <thead><tr><th scope="col">Región</th><th scope="col">Código de origen</th><th scope="col" class="numero">Personas</th><th scope="col" class="numero">% del país</th></tr></thead>
+      <tbody>{% for r in regiones %}<tr>
+        <th scope="row">{{ r.nombre }}</th><td>{{ r.pais }}-{{ r.codigo }}</td>
+        <td class="numero">{{ '{:,}'.format(r.poblacion) }}</td>
+        <td class="numero">{{ '%.2f'|format(r.poblacion * 100 / total.poblacion) }} %
+          <span class="barra" style="width:{{ r.poblacion * 100 / total.poblacion }}%"></span></td>
+      </tr>{% endfor %}</tbody>
+      <tfoot><tr><th colspan="2">Total nacional</th><td class="numero">{{ '{:,}'.format(suma_regiones) }}</td><td class="numero">100 %</td></tr></tfoot>
+    </table></div>
+  </section>
+  <section class="panel">
+    <h2>Fuente y alcance</h2>
+    <p><a href="{{ total.url }}" target="_blank" rel="noopener">{{ total.institucion }} · {{ total.titulo }}</a></p>
+    {% if total.doi %}<p>DOI: <a href="https://doi.org/{{ total.doi }}">{{ total.doi }}</a></p>{% endif %}
+    <p>Se usa población total de todas las edades. Estados Unidos incluye Washington D. C. y excluye Puerto Rico. Canadá incluye sus tres territorios. Las estimaciones pueden revisarse en nuevas publicaciones.</p>
+    <p>Esta vista incorpora contexto regional. <a href="/norteamerica/">El mapa de Norteamérica</a> relaciona los eventos asignados con su región y población del mismo año; no se calculan daños ni población expuesta.</p>
+    <a href="{{ url_for('demografia.api',pais=pais,anio=anio) }}">Consultar estos datos en la API</a>
+  </section>
+</main>
+</body></html>

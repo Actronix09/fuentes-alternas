@@ -327,6 +327,11 @@ def cargar_y_transformar(filas_usgs: list[list], filas_ssn: list[list], registra
 
 def main() -> int:
     esperar_bd()
+    # Módulo independiente: no cambia las reglas ni la bitácora del cruce sísmico.
+    from demografia import ejecutar as cargar_demografia
+    log.info("Demografía oficial: %s observaciones", cargar_demografia())
+    from norteamerica import ejecutar as cargar_norteamerica
+    log.info("Catálogo de Norteamérica: %s", cargar_norteamerica())
     if not FORZAR_ETL and ya_cargado(PARAMETROS):
         log.info("La base ya tiene una carga exitosa con estos parámetros; no se repite. "
                  "Usa FORZAR_ETL=1 para recargar.")

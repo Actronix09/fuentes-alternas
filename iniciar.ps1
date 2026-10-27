@@ -11,7 +11,7 @@ function Ejecutar-Python {
     if ($LASTEXITCODE -ne 0) { throw "Falló Python: $Argumentos" }
 }
 
-& python -c 'import flask, psycopg, psycopg2, sqlalchemy, flask_sqlalchemy, flask_cors, boto3, dotenv, cryptography, tzdata, rdflib' 2>$null
+& python -c 'import flask, psycopg, psycopg2, sqlalchemy, flask_sqlalchemy, flask_cors, boto3, dotenv, cryptography, tzdata, rdflib, shapely, shapefile, pyproj' 2>$null
 if ($LASTEXITCODE -ne 0) {
     Ejecutar-Python -Argumentos @('-m', 'pip', 'install', '--target', '.runtime', '-r', 'requirements-local.txt')
 }
