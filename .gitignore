@@ -5,4 +5,5 @@ __pycache__/
 .env
 *.log
 obra-publica-srft/datos/shcp_srft/*.zip
-agua-reportes-sacmex/datos/generados/grafo/grafo_integrado.ttl*
+# Salidas del ETL: se regeneran en cada carga.
+**/datos/generados/

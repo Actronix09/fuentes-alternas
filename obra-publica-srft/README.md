@@ -60,7 +60,7 @@ Secretaría de Hacienda y Crédito Público. (s. f.). *Gasto federalizado: Desti
 
 CSV dentro del [ZIP oficial](https://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/Entidades_Federativas/2025/ef2025.zip). Consultado el 23 de octubre de 2026. La URL figura en el catálogo oficial guardado como `datos/shcp_srft/catalogo_shcp.json`.
 
-La descarga nacional contiene 91,062 proyectos. El filtro entidad 15, municipio 86 produce 59. Se decodifica Windows-1252 y se guardan extractos UTF-8. Se validan folios únicos, fechas, números finitos y no negativos, municipio y periodo. Los rechazos se registran en `datos/generados/rechazados.json` y la bitácora. La carga comprobada tuvo cero proyectos rechazados.
+La descarga nacional contiene 91,062 proyectos. El filtro entidad 15, municipio 86 produce 59. Se decodifica Windows-1252 y se guardan extractos UTF-8. Se validan folios únicos, fechas, números finitos y no negativos, municipio y periodo. Los rechazos se registran en la bitácora y en `datos/generados/rechazados.json`, que el ETL regenera en cada carga y no se guarda en Git. La carga comprobada tuvo cero proyectos rechazados.
 
 Las relaciones se agrupan por folio antes de obtener los totales: unir directamente todos los contratos, metas y coordenadas duplicaría montos. Para el mapa se usa un punto válido por obra y se conservan todos en el detalle. El porcentaje físico se calcula solo para una meta con denominador positivo; metas de distintas unidades no se suman.
 

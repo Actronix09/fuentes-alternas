@@ -36,8 +36,8 @@ app/
 └── web.py, consultar_grafo.py, sql/, templates/, static/
 ```
 
-`datos/original/` guarda sin modificar los datos del programa original; `datos/generados/` es salida del ETL y se
-regenera en cada carga.
+`datos/original/` guarda sin modificar los datos del programa original; `datos/generados/` es salida del ETL, se
+regenera en cada carga y no se guarda en Git.
 
 ## Recorrido de los datos
 
@@ -71,7 +71,7 @@ Se preservan 70,886 consumos y 181 días de clima; se integran 555,752 reportes.
 
 `/api/original` expone la integración; `/sistema/consumo.json` consulta el DW original en cada petición. El frontend original está disponible en `/sistema/`. El grafo actualizado está en `/sistema/grafo.html`: el ETL incorpora todos los reportes a RDF, agregados por colonia, año, tipo, clasificación y recurso. Las nuevas consultas muestran reportes por año, tipo, colonia y los que no tienen ubicación asignable. Consumo y reportes comparten los identificadores territoriales del DW vivo.
 
-`datos/generados/grafo/grafo_integrado.ttl` se excluye de Git y se regenera automáticamente; se sirve comprimido al navegador. Sus metadatos están en `/api/grafo` y `datos/generados/grafo/grafo_integrado.json`. El mapeo adicional está en `original/frontend/mapping-reportes.r2rml.ttl`; el materializador Python adapta el exportador original y aplica la vista SQL `public.v_rdf_reportes`.
+La carpeta `datos/generados/grafo/` se excluye de Git y el ETL la regenera en cada carga: `grafo_integrado.ttl`, su copia comprimida que se sirve al navegador y los metadatos `grafo_integrado.json`, también disponibles en `/api/grafo`. El mapeo adicional está en `original/frontend/mapping-reportes.r2rml.ttl`; el materializador Python adapta el exportador original y aplica la vista SQL `public.v_rdf_reportes`.
 
 El grano anual de los reportes RDF es explícito: compararlos con consumo del primer semestre no representa periodos idénticos. El tablero relacional sí permite seleccionar enero–junio de 2019.
 
