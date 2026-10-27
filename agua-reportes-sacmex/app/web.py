@@ -14,7 +14,8 @@ from flask import Flask, abort, jsonify, render_template, request, send_from_dir
 from flask.json.provider import DefaultJSONProvider
 from psycopg.rows import dict_row
 
-from comun import conectar, DIR_DATOS
+from comun import conectar
+from cargas.grafo import DIRECTORIO as DIR_GRAFO
 
 
 class ProveedorJSON(DefaultJSONProvider):
@@ -46,7 +47,7 @@ def consumo_original_en_vivo():
 @app.get('/api/grafo')
 def metadatos_grafo():
     import json
-    archivo=DIR_DATOS/'grafo_integrado.json'
+    archivo=DIR_GRAFO/'grafo_integrado.json'
     if not archivo.exists():
         abort(503,'Ejecuta el ETL para materializar el grafo integrado')
     return jsonify(json.loads(archivo.read_text(encoding='utf-8')))
@@ -59,7 +60,7 @@ def sparql_local():
     consulta=cuerpo.get('query','')
     if not isinstance(consulta,str) or not consulta.strip() or len(consulta)>20000:
         return jsonify(error='La consulta debe contener entre 1 y 20000 caracteres'),400
-    archivo=DIR_DATOS/'grafo_integrado.ttl'
+    archivo=DIR_GRAFO/'grafo_integrado.ttl'
     if not archivo.exists():
         return jsonify(error='Ejecuta el ETL para generar el grafo'),503
     try:
@@ -70,7 +71,7 @@ def sparql_local():
 
 @app.get('/sistema/kg_demo.ttl')
 def grafo_integrado():
-    archivo=DIR_DATOS/'grafo_integrado.ttl'
+    archivo=DIR_GRAFO/'grafo_integrado.ttl'
     if not archivo.exists():
         abort(503,'El grafo integrado no está materializado; ejecuta el ETL')
     if 'gzip' in request.headers.get('Accept-Encoding','') and archivo.with_suffix('.ttl.gz').exists():

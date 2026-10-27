@@ -54,6 +54,14 @@ def normalizar(parametros: dict) -> dict:
     return json.loads(json.dumps(parametros, ensure_ascii=False, default=str))
 
 
+def registrar_consola(fase: str, paso: str, registros: int | None = None,
+                      detalle: str | None = None) -> None:
+    """Misma firma que Bitacora, solo en consola: para ejecutar una fuente por separado."""
+    extra = f" · {registros:,} registros" if registros is not None else ""
+    extra += f" · {detalle}" if detalle else ""
+    log.info("[%s] %s%s", fase, paso, extra)
+
+
 class Bitacora:
     """Registra la ejecución y cada paso en una conexión propia (autocommit),
     de modo que el rastro queda aunque la transformación falle y se revierta."""
@@ -67,9 +75,7 @@ class Bitacora:
 
     def __call__(self, fase: str, paso: str, registros: int | None = None,
                  detalle: str | None = None) -> None:
-        extra = f" · {registros:,} registros" if registros is not None else ""
-        extra += f" · {detalle}" if detalle else ""
-        log.info("[%s] %s%s", fase, paso, extra)
+        registrar_consola(fase, paso, registros, detalle)
         self.conn.execute(
             "INSERT INTO etl.bitacora (id_ejecucion, fase, paso, registros, detalle) "
             "VALUES (%s, %s, %s, %s, %s)",

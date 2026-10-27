@@ -125,7 +125,7 @@ def main():
     comprobar('Trazabilidad a registros originales y relaciones', detalle['datos']['FOLIO']==obras[0]['folio'] and isinstance(detalle['georreferencias'],list), detalle['folio'])
     verificar_sismos()
     fuentes={}
-    for carpeta, patron in [('agua-reportes-sacmex/datos','*.csv'),('obra-publica-srft/datos','*.csv'),
+    for carpeta, patron in [('agua-reportes-sacmex/datos','**/*.csv'),('obra-publica-srft/datos','**/*.csv'),
                             ('sismos-usgs/datos/original/ssn','*.sql'),('sismos-usgs/datos/usgs/mexico','*.csv')]:
         for p in sorted((RAIZ/carpeta).glob(patron)):
             fuentes[p.relative_to(RAIZ).as_posix()]={'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}

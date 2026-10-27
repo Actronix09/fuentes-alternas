@@ -9,7 +9,9 @@ from urllib.parse import quote
 
 from comun import DIR_DATOS, conectar
 
-RAIZ = Path(__file__).resolve().parents[1]
+RAIZ = Path(__file__).resolve().parents[2]
+# Salida generada por el ETL, no una fuente: se regenera en cada carga.
+DIRECTORIO = DIR_DATOS / 'generados' / 'grafo'
 sys.path.insert(0, str(RAIZ / 'original/scripts'))
 
 VISTA = '''CREATE OR REPLACE VIEW public.v_rdf_reportes AS
@@ -28,8 +30,9 @@ def literal(v):
 
 def materializar(registrar=None):
     from exportar_grafo_base import exportar
-    destino=DIR_DATOS/'grafo_integrado.ttl'
-    temporal=DIR_DATOS/'grafo_integrado.ttl.part'
+    DIRECTORIO.mkdir(parents=True,exist_ok=True)
+    destino=DIRECTORIO/'grafo_integrado.ttl'
+    temporal=DIRECTORIO/'grafo_integrado.ttl.part'
     with conectar() as conn:
         conn.execute(VISTA)
         resumen=exportar(conn,temporal)
@@ -86,7 +89,7 @@ def materializar(registrar=None):
         import shutil
         shutil.copyfileobj(entrada,salida)
     parcial.replace(comprimido)
-    meta=DIR_DATOS/'grafo_integrado.json'
+    meta=DIRECTORIO/'grafo_integrado.json'
     meta.write_text(json.dumps(resumen,ensure_ascii=False,indent=2),encoding='utf-8')
     if registrar:
         registrar('transformacion','Materializar reportes reales en el grafo RDF',total,

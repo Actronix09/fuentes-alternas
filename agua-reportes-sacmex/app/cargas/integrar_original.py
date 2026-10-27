@@ -4,9 +4,10 @@ import re
 import unicodedata
 from pathlib import Path
 
-from comun import DIR_DATOS, conectar
+from comun import conectar
+from fuentes import clima_original, consumo_cdmx
 
-RAIZ = Path(__file__).resolve().parents[1]
+RAIZ = Path(__file__).resolve().parents[2]
 
 
 def normalizar(texto):
@@ -19,8 +20,8 @@ def integrar_original(registrar=None):
         # Se conserva el esquema original, con sus propias claves sustitutas.
         if cur.execute("SELECT to_regclass('public.fact_consumo_agua')").fetchone()[0] is None:
             cur.execute((RAIZ / 'original/ddl/0_schema.sql').read_text(encoding='utf-8'))
-            for tabla, archivo in [('staging_consumo', DIR_DATOS / 'consumo.csv'),
-                                   ('staging_clima', DIR_DATOS / 'clima_original_2019.csv')]:
+            for tabla, archivo in [('staging_consumo', consumo_cdmx.ARCHIVO),
+                                   ('staging_clima', clima_original.ARCHIVO)]:
                 with archivo.open(encoding='utf-8-sig', newline='') as f:
                     lector = csv.reader(f)
                     next(lector)

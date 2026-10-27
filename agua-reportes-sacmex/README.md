@@ -13,6 +13,32 @@ docker compose logs -f etl
 
 La web espera que el ETL termine correctamente. El esquema `dw` se inicializa al crear el volumen; el esquema original `public` se inicializa una sola vez desde `original/ddl/0_schema.sql`. Las versiones originales se documentan en `../PROCEDENCIA_ORIGINALES.md`.
 
+## Estructura de scripts y datos
+
+Hay un script por fuente de datos en `app/fuentes/` (descarga y validación, sin escribir en PostgreSQL), uno por
+destino en `app/cargas/` y `app/etl.py`, que solo los ejecuta en orden. Cada uno se puede correr por separado
+desde `app/`: `python -m fuentes.<nombre>` o `python -m cargas.<nombre>`.
+
+```text
+app/
+├── etl.py                    Orquestador
+├── parametros.py             Recursos CKAN, rectángulo de la CDMX y distancia máxima
+├── limpieza.py               Normalización de nombres, valores NA y coordenadas
+├── fuentes/
+│   ├── ckan_cdmx.py          Descarga genérica de un recurso del portal CDMX
+│   ├── consumo_cdmx.py       Consumo 1er semestre 2019 (fuente del paper)  → datos/consumo/
+│   ├── reportes_sacmex.py    Reportes ciudadanos 2018-2021 y 2022-2024     → datos/reportes/
+│   └── clima_original.py     Clima Open-Meteo 2019 del programa original   → datos/original/clima/
+├── cargas/
+│   ├── dw_agua.py            staging, dimensiones, hechos y ubicación de reportes en dw
+│   ├── integrar_original.py  DW original en public y public.fact_reporte_agua
+│   └── grafo.py              Grafo RDF integrado                           → datos/generados/grafo/
+└── web.py, consultar_grafo.py, sql/, templates/, static/
+```
+
+`datos/original/` guarda sin modificar los datos del programa original; `datos/generados/` es salida del ETL y se
+regenera en cada carga.
+
 ## Recorrido de los datos
 
 ```mermaid
@@ -37,7 +63,7 @@ Sistema de Aguas de la Ciudad de México. (s. f.). *Consumo de agua* [Conjunto d
 
 Sistema de Aguas de la Ciudad de México. (s. f.). *Reportes de agua* [Conjunto de datos]. Portal de Datos Abiertos CDMX. https://datos.cdmx.gob.mx/dataset/reportes-de-agua
 
-Los identificadores de los recursos y sus URL se encuentran en `app/etl.py`, `etl.recurso` y la sección Fuentes de la página. Fecha de consulta: 23 de octubre de 2026. El clima de 2019 es la copia del CSV Open-Meteo distribuida con el proyecto original.
+Los identificadores de los recursos y sus URL se encuentran en `app/parametros.py`, `etl.recurso` y la sección Fuentes de la página. Fecha de consulta: 23 de octubre de 2026. El clima de 2019 es la copia del CSV Open-Meteo distribuida con el proyecto original (`datos/original/clima/`).
 
 ## Comprobaciones y límites
 
@@ -45,7 +71,7 @@ Se preservan 70,886 consumos y 181 días de clima; se integran 555,752 reportes.
 
 `/api/original` expone la integración; `/sistema/consumo.json` consulta el DW original en cada petición. El frontend original está disponible en `/sistema/`. El grafo actualizado está en `/sistema/grafo.html`: el ETL incorpora todos los reportes a RDF, agregados por colonia, año, tipo, clasificación y recurso. Las nuevas consultas muestran reportes por año, tipo, colonia y los que no tienen ubicación asignable. Consumo y reportes comparten los identificadores territoriales del DW vivo.
 
-`datos/grafo_integrado.ttl` se excluye de Git y se regenera automáticamente; se sirve comprimido al navegador. Sus metadatos están en `/api/grafo` y `datos/grafo_integrado.json`. El mapeo adicional está en `original/frontend/mapping-reportes.r2rml.ttl`; el materializador Python adapta el exportador original y aplica la vista SQL `public.v_rdf_reportes`.
+`datos/generados/grafo/grafo_integrado.ttl` se excluye de Git y se regenera automáticamente; se sirve comprimido al navegador. Sus metadatos están en `/api/grafo` y `datos/generados/grafo/grafo_integrado.json`. El mapeo adicional está en `original/frontend/mapping-reportes.r2rml.ttl`; el materializador Python adapta el exportador original y aplica la vista SQL `public.v_rdf_reportes`.
 
 El grano anual de los reportes RDF es explícito: compararlos con consumo del primer semestre no representa periodos idénticos. El tablero relacional sí permite seleccionar enero–junio de 2019.
 
